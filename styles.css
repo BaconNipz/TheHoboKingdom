@@ -57,3 +57,68 @@
 .dropdown:hover .dropdown-content {
     display: block;
   }
+
+
+
+
+body {
+    background: linear-gradient(to bottom right, #f4f4f4, #e0e0e0); /* Diagonal gradient */
+    font-family: Arial, sans-serif; /* Universal font */
+}
+
+
+
+
+
+
+
+
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif; /* A more stylish font for headings */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px; /* Slightly larger text for readability */
+    line-height: 1.5; /* Improved line spacing */
+    color: #333; /* Dark gray for better contrast */
+    margin-bottom: 15px; /* Space between paragraphs */
+}
+
+
+
+
+
+
+a {
+    color: #007BFF; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+a:hover {
+    color: #005BFF; /* Darker blue on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
