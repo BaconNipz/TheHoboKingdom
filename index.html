@@ -3,114 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
+    <title>Dungeons & Dragons Hub</title>
     <style>
-        /* Add your CSS styles here */
+        /* General Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Times New Roman', serif;
+            background-color: #fdf1dc;
+            color: #3a3b3c;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
         }
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
+            background-color: #fff8f0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
+
+        /* Header Styles */
         header {
-            background: #50b3a2;
+            background: url('castle-background.jpg') no-repeat center center/cover;
             color: white;
             padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #e8491d 3px solid;
+            min-height: 300px;
+            border-bottom: 5px solid #d3a625;
         }
-        header a {
-            color: #ffffff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
+        header h1 {
+            font-family: 'Papyrus', fantasy;
+            font-size: 3em;
+            margin: 0;
         }
-        header ul {
+
+        /* Navigation Styles */
+        nav ul {
             padding: 0;
             margin: 0;
             list-style: none;
             overflow: hidden;
+            text-align: center;
         }
-        header li {
-            float: left;
+        nav ul li {
             display: inline;
-            padding: 0 20px 0 20px;
         }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-        header .highlight, header .current a {
-            color: #e8491d;
+        nav ul li a {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fdf1dc;
+            text-decoration: none;
             font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s;
         }
-        header a:hover {
-            color: #ffffff;
-            font-weight: bold;
+        nav ul li a:hover {
+            color: #d3a625;
         }
+
+        /* Section Styles */
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            color: #fff;
+            background-color: #333;
+        }
+
+        /* Custom Fonts and Text Styles */
+        @import url('https://fonts.googleapis.com/css2?family=Papyrus&display=swap');
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <div id="branding">
-                <h1><span class="highlight">Your</span> Website Name</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li class="current"><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            <h1>Dungeons & Dragons Hub</h1>
         </div>
     </header>
-
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="adventures.html">Adventures</a></li>
+            <li><a href="characters.html">Characters</a></li>
+            <li><a href="lore.html">Lore</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
     <div class="container">
-        <section id="showcase">
-            <h1>Welcome to Your Website</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+        <section>
+            <h2>Welcome Adventurers!</h2>
+            <p>Explore the realms of fantasy, embark on epic quests, and discover ancient lore.</p>
         </section>
-        <section id="newsletter">
-            <h2>Subscribe to Our Newsletter</h2>
-            <form>
-                Enter your email: <input type="email" placeholder="Enter Email...">
-                <button type="submit">Subscribe</button>
-            </form>
+        <section>
+            <h3>Latest Adventures</h3>
+            <p>Join the latest campaigns and explore uncharted territories.</p>
         </section>
-        <section id="boxes">
-            <div class="box">
-                <img src="path-to-your-image.jpg">
-                <h3>Feature 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="box">
-                <img src="path-to-your-image.jpg">
-                <h3>Feature 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="box">
-                <img src="path-to-your-image.jpg">
-                <h3>Feature 3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
+        <section>
+            <h3>Create Your Character</h3>
+            <p>Build your hero and prepare for battle.</p>
         </section>
     </div>
-
     <footer>
-        <p>Your Website Name, &copy; 2024</p>
+        <p>&copy; 2024 Dungeons & Dragons Hub</p>
     </footer>
 </body>
 </html>
