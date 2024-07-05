@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>baldurs</title>
+    <title>S.T.A.L.K.E.R</title>
     <style>
          .black-text {
             color: black;
