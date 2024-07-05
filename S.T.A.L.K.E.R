@@ -1,8 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>S.T.A.L.K.E.R</title>
+    <title>TheHoboKingdom</title>
     <style>
          .black-text {
             color: black;
@@ -84,7 +83,7 @@
     <div class="container black-text">
         <h1><a href="index.html" style="color: black; text-decoration: none;">TheHoboKingdom</a></h1>
     </div>
-    </header>
+</header>
     <nav>
         <ul>
             <li><a href="index.html" class="black-text">Home</a></li>
@@ -97,8 +96,18 @@
     </nav>
     <div class="container">
         <section>
-            <h2>Welcome To The Baldurs Gate 3 Page.</h2>
-            <p>This page is essentially the Minecraft page. Just a collection of mods or modpacks that we may play with. </p>
+            <h2>Welcome To TheHoboKingdom's Official Website.</h2>
+            <p>This website is planned to have any and all information and data that is often used within THK. </p>
+            <p>This information includes but is not limited to tips and tricks learned overtime. Repositories of mods for games that most of us play, as well as knowledge that is often sought out and lost.</p>
+        </section>
+        <section>
+            <h3>Place Holder</h3>
+            <p>Place Holder</p>
+        </section>
+        <section>
+            <h3>Place Holder</h3>
+            <p>Place Holder</p>
+        </section>
     </div>
     <footer>
         <p>&copy; TheHoboKingdom</p>
