@@ -3,7 +3,7 @@
 <head>
     <title>S.T.A.L.K.E.R</title>
     <style>
-         .black-text {
+        .black-text {
             color: black;
         }
         /* General Styles */
@@ -29,8 +29,7 @@
             color: white;
             padding-top: 30px;
             min-height: 300px;
-            border-bottom: 5px 
-                solid #d3a625;
+            border-bottom: 5px solid #d3a625;
             text-align: center; /* Center the title */
         }
         header h1 {
@@ -74,43 +73,31 @@
             background-color: #333;
         }
 
-        
+        /* Custom button styles */
+        button {
+            font-size: 1em;
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            background-color: #d3a625;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #b5881e;
+        }
+
         /* Custom Fonts and Text Styles */
         @import url('https://fonts.googleapis.com/css2?family=Papyrus&display=swap');
-
-/* Custom button styles */
-button {
-    font-size: 1em;
-    padding: 10px;
-    margin: 5px;
-    border: none;
-    background-color: #d3a625;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-button:hover {
-    background-color: #b5881e;
-}
-
-
-<script>
-    function showContent(content) {
-        document.getElementById('content-display').innerHTML = content;
-    }
-</script>
-
-
-        
-        
     </style>
 </head>
 <body>
     <header>
-    <div class="container black-text">
-        <h1><a href="index.html" style="color: black; text-decoration: none;">TheHoboKingdom</a></h1>
-    </div>
+        <div class="container black-text">
+            <h1><a href="index.html" style="color: black; text-decoration: none;">TheHoboKingdom</a></h1>
+        </div>
     </header>
     <nav>
         <ul>
@@ -125,39 +112,30 @@ button:hover {
     <div class="container">
         <section>
             <h2>Welcome To The S.T.A.L.K.E.R page</h2>
-
-            
             <!-- Selection Interface -->
             <div>
-                <button onclick="showContent('rules')">Bet Rules</button>
-                <button onclick="showContent('tips')">Tips for Anomaly</button>
-                <button onclick="showContent('stalker2')">S.T.A.L.K.E.R 2</button>
+                <button onclick="showContent('These are the bet rules for S.T.A.L.K.E.R...')">Bet Rules</button>
+                <button onclick="showContent('Here are some tips for S.T.A.L.K.E.R: Anomaly...')">Tips for Anomaly</button>
+                <button onclick="showContent('Information about S.T.A.L.K.E.R 2...')">S.T.A.L.K.E.R 2</button>
             </div>
-
-            
             <!-- Content Display Area -->
-<div id="content-display" class="content">
-    <p>Select an option above to see more information.</p>
-</div>
-            <div id="rules" class="content" style="display: none;">
-                <p>These are the bet rules for S.T.A.L.K.E.R...</p>
+            <div id="content-display" class="content">
+                <p>Select an option above to see more information.</p>
             </div>
-            <div id="tips" class="content" style="display: none;">
-                <p>Here are some tips for S.T.A.L.K.E.R: Anomaly...</p>
-            </div>
-            <div id="stalker2" class="content" style="display: none;">
-                <p>Information about S.T.A.L.K.E.R 2...</p>
-            </div>
-
-            
-          <!-- Paragraph -->
+            <!-- Paragraph -->
             <p>This is home to any and all things related to S.T.A.L.K.E.R such as the ongoing bet rules and tips for Anomaly and soon to be S.T.A.L.K.E.R 2.</p>
-    
-          
-            
+        </section>
     </div>
     <footer>
         <p>&copy; TheHoboKingdom</p>
     </footer>
+
+    <!-- JavaScript should be placed at the end of the body -->
+    <script>
+        function showContent(content) {
+            console.log('Content to display:', content); // Debugging line
+            document.getElementById('content-display').innerHTML = content;
+        }
+    </script>
 </body>
 </html>
