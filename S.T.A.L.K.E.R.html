@@ -1,141 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <title>S.T.A.L.K.E.R</title>
-    <style>
-        .black-text {
-            color: black;
-        }
-        /* General Styles */
-        body {
-            font-family: 'Times New Roman', serif;
-            background-color: #fdf1dc;
-            color: #3a3b3c;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            background-color: #fff8f0;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        }
-
-        /* Header Styles */
-        header {
-            background: url('castle-background.jpg') no-repeat center center/cover;
-            color: white;
-            padding-top: 30px;
-            min-height: 300px;
-            border-bottom: 5px solid #d3a625;
-            text-align: center; /* Center the title */
-        }
-        header h1 {
-            font-family: 'Papyrus', fantasy;
-            font-size: 3em;
-            margin: 0;
-        }
-        /* Navigation Styles */
-        nav ul {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            overflow: hidden;
-            text-align: center;
-        }
-        nav ul li {
-            display: inline;
-        }
-        nav ul li a {
-            display: inline-block;
-            padding: 10px 20px;
-            color: #fdf1dc;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.2em;
-            transition: color 0.3s;
-        }
-        nav ul li a:hover {
-            color: #d3a625;
-        }
-
-        /* Section Styles */
-        section {
-            padding: 20px;
-            text-align: center;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            color: #fff;
-            background-color: #333;
-        }
-
-        /* Custom button styles */
-        button {
-            font-size: 1em;
-            padding: 10px;
-            margin: 5px;
-            border: none;
-            background-color: #d3a625;
-            color: #fff;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        button:hover {
-            background-color: #b5881e;
-        }
-
-        /* Custom Fonts and Text Styles */
-        @import url('https://fonts.googleapis.com/css2?family=Papyrus&display=swap');
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>THK — S.T.A.L.K.E.R. Hub</title>
+  <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-    <header>
-        <div class="container black-text">
-            <h1><a href="index.html" style="color: black; text-decoration: none;">TheHoboKingdom</a></h1>
-        </div>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html" class="black-text">Home</a></li>
-            <li><a href="S.T.A.L.K.E.R.html" class="black-text">S.T.A.L.K.E.R</a></li>
-            <li><a href="dominions.html" class="black-text">Dominions</a></li>
-            <li><a href="minecraft.html" class="black-text">Minecraft</a></li>
-            <li><a href="baldurs.html" class="black-text">Baldurs Gate 3</a></li>
-            <li><a href="dungeons.html" class="black-text">Dungeons & Dragons</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <section>
-            <h2>Welcome To The S.T.A.L.K.E.R page</h2>
-            <!-- Description Paragraph -->
-            <p>This is home to any and all things related to S.T.A.L.K.E.R such as the ongoing bet rules and tips for Anomaly and soon to be S.T.A.L.K.E.R 2.</p>
-            <!-- Selection Interface -->
-            <div>
-                <button onclick="showContent(`Warfare Mode<br>Survival progression difficulty and Hard mode<br>Campfire Mode<br>Agony Mode<br>No life granter<br>Dynamic Anomalies<br><br>Hud Optional<br>Crosshair Optional<br><br>50$ To the first to reach Legendary rank`)">Bet Rules</button>
-                <button onclick="showContent(`Easiest way to profit in order from easiest difficulty to hardest<br><br>Map with all icons.<br><br>- Do simple quests like (mutant eliminations in cordon or deliveries close by.<br>- Head to garbage<br>- Get a hunters kit<br>- Get hunting knife<br>- Get the berril suit with 20 units of nemiroff vodka from guy in Jupiter<br>- Get Multitool asap to start disassembling<br>- Get shotgun`)">Tips for Anomaly</button>
-                <button onclick="showContent('Information about S.T.A.L.K.E.R 2...')">S.T.A.L.K.E.R 2</button>
-            </div>
-            <!-- Content Display Area -->
-            <div id="content-display" class="content">
-                <p>Select an option above to see more information.</p>
-            </div>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; TheHoboKingdom</p>
-    </footer>
+<header>
+  <div class="container nav">
+    <div class="brand">TheHoboKingdom</div>
+    <div class="spacer"></div>
+    <a class="pill" href="/">Home</a>
+    <a class="pill" href="/stalker/">S.T.A.L.K.E.R.</a>
+    <a class="pill" href="/dominions/">Dominions</a>
+    <a class="pill" href="/minecraft/">Minecraft</a>
+    <a class="pill" href="/bg3/">Baldur’s Gate 3</a>
+    <a class="pill" href="/dnd/">Dungeons & Dragons</a>
+  </div>
+</header>
 
-    <!-- JavaScript should be placed at the end of the body -->
-    <script>
-        function showContent(content) {
-            console.log('Content to display:', content); // Debugging line
-            document.getElementById('content-display').innerHTML = content;
-        }
-    </script>
+<main class="container">
+  <section class="hero">
+    <h1>S.T.A.L.K.E.R. Hub</h1>
+    <p>Stable modpack, load order, performance fixes, and troubleshooting.</p>
+  </section>
+
+  <section>
+    <div class="grid">
+      <a class="card" href="/stalker/modpack-v1.html">
+        <div class="pad">
+          <span class="badge">Modlist</span><span class="badge">Load order</span>
+          <h3>THK Modpack v1</h3>
+          <p>Exact order, versions, and checksums so everyone’s in sync.</p>
+        </div>
+      </a>
+      <div class="card"><div class="pad">
+        <span class="badge">Fix</span>
+        <h3>Common crashes</h3>
+        <p>XR_3DA crashes, DX11 notes, memory tweaks (coming soon).</p>
+      </div></div>
+    </div>
+  </section>
+
+  <div class="footer">© TheHoboKingdom</div>
+</main>
 </body>
 </html>
