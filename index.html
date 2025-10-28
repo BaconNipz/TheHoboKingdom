@@ -1,116 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <title>TheHoboKingdom</title>
-    <style>
-         .black-text {
-            color: black;
-        }
-        /* General Styles */
-        body {
-            font-family: 'Times New Roman', serif;
-            background-color: #fdf1dc;
-            color: #3a3b3c;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            background-color: #fff8f0;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        }
-
-        /* Header Styles */
-        header {
-            background: url('castle-background.jpg') no-repeat center center/cover;
-            color: white;
-            padding-top: 30px;
-            min-height: 300px;
-            border-bottom: 5px 
-                solid #d3a625;
-            text-align: center; /* Center the title */
-        }
-        header h1 {
-            font-family: 'Papyrus', fantasy;
-            font-size: 3em;
-            margin: 0;
-        }
-        /* Navigation Styles */
-        nav ul {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            overflow: hidden;
-            text-align: center;
-        }
-        nav ul li {
-            display: inline;
-        }
-        nav ul li a {
-            display: inline-block;
-            padding: 10px 20px;
-            color: #fdf1dc;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.2em;
-            transition: color 0.3s;
-        }
-        nav ul li a:hover {
-            color: #d3a625;
-        }
-
-        /* Section Styles */
-        section {
-            padding: 20px;
-            text-align: center;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            color: #fff;
-            background-color: #333;
-        }
-
-        /* Custom Fonts and Text Styles */
-        @import url('https://fonts.googleapis.com/css2?family=Papyrus&display=swap');
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TheHoboKingdom — Home</title>
+  <meta name="description" content="TheHoboKingdom: tips, guides, and mod repositories for Dominions, S.T.A.L.K.E.R., D&D, and more." />
+  <meta property="og:title" content="TheHoboKingdom" />
+  <meta property="og:description" content="Guides, mods, and notes for THK." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.thehobokingdom.com/" />
+  <link rel="icon" href="/assets/favicon.png">
+  <style>
+    :root { --bg:#0b0f14; --card:#121821; --muted:#8aa0b3; --text:#e8f0f8; --accent:#7cc4ff; }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:0 auto;padding:16px}
+    header{position:sticky;top:0;backdrop-filter:saturate(1.2) blur(6px);background:rgba(11,15,20,.7);border-bottom:1px solid #1e2631}
+    .nav{display:flex;align-items:center;gap:16px;padding:12px 0}
+    .brand{font-weight:700;letter-spacing:.3px}
+    .spacer{flex:1}
+    .pill{padding:8px 12px;border-radius:999px;background:#16202b}
+    .hero{display:grid;gap:16px;padding:32px 0}
+    .hero h1{margin:0;font-size:clamp(1.6rem,3.2vw,2.4rem)}
+    .hero p{color:var(--muted);margin:0}
+    .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .card{background:var(--card);border:1px solid #1e2631;border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+    .card h3{margin:16px 16px 4px}
+    .card p{margin:0 16px 16px;color:var(--muted)}
+    .card .pad{padding:16px}
+    .badge{display:inline-block;font-size:.8rem;background:#16202b;border:1px solid #263241;border-radius:999px;padding:4px 8px;margin-right:8px;color:var(--muted)}
+    .footer{color:var(--muted);border-top:1px solid #1e2631;margin-top:32px;padding:24px 0;font-size:.95rem}
+    .list{display:grid;gap:8px}
+    .list a{display:flex;justify-content:space-between;border:1px solid #1e2631;background:#0f141b;border-radius:12px;padding:10px 12px}
+    .muted{color:var(--muted)}
+    .nowrap{white-space:nowrap}
+  </style>
 </head>
 <body>
-    <header>
-    <div class="container black-text">
-        <h1><a href="index.html" style="color: black; text-decoration: none;">TheHoboKingdom</a></h1>
+  <header>
+    <div class="container nav">
+      <div class="brand">TheHoboKingdom</div>
+      <div class="spacer"></div>
+      <a class="pill" href="/">Home</a>
+      <a class="pill" href="/stalker/">S.T.A.L.K.E.R.</a>
+      <a class="pill" href="/dominions/">Dominions</a>
+      <a class="pill" href="/minecraft/">Minecraft</a>
+      <a class="pill" href="/bg3/">Baldur’s Gate 3</a>
+      <a class="pill" href="/dnd/">Dungeons & Dragons</a>
     </div>
-</header>
-    <nav>
-        <ul>
-            <li><a href="index.html" class="black-text">Home</a></li>
-            <li><a href="S.T.A.L.K.E.R.html" class="black-text">S.T.A.L.K.E.R</a></li>
-            <li><a href="dominions.html" class="black-text">Dominions</a></li>
-            <li><a href="minecraft.html" class="black-text">Minecraft</a></li>
-            <li><a href="baldurs.html" class="black-text">Baldurs Gate 3</a></li>
-            <li><a href="dungeons.html" class="black-text">Dungeons & Dragons</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <section>
-            <h2>Welcome To TheHoboKingdom's Official Website.</h2>
-            <p>This website is planned to have any and all information and data that is often used within THK. </p>
-            <p>This information includes but is not limited to tips and tricks learned overtime. Repositories of mods for games that most of us play, as well as knowledge that is often sought out and lost.</p>
-        </section>
-        <section>
-            <h3>Place Holder</h3>
-            <p>Place Holder</p>
-        </section>
-        <section>
-            <h3>Place Holder</h3>
-            <p>Place Holder</p>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; TheHoboKingdom</p>
-    </footer>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Welcome to THK — guides, mods, and notes we don’t want to lose again.</h1>
+      <p>Centralize everything: install guides, curated mod lists, builds, session notes, and references for the crew.</p>
+    </section>
+
+    <section style="margin:8px 0 20px">
+      <h2 style="margin:0 0 8px">Latest updates</h2>
+      <div class="list">
+        <!-- Update these as you publish posts/pages -->
+        <a href="/dominions/middle-age-research-builds.html"><span>Dominions: MA research builds (WIP)</span><span class="muted nowrap">19 Sep 2025</span></a>
+        <a href="/stalker/modpack-v1.html"><span>S.T.A.L.K.E.R.: Modpack v1 + load order</span><span class="muted nowrap">18 Sep 2025</span></a>
+        <a href="/dnd/stormwreck-expansion.html"><span>D&D: Stormwreck Isle expansion notes</span><span class="muted nowrap">14 Sep 2025</span></a>
+      </div>
+    </section>
+
+    <section style="margin:24px 0">
+      <h2 style="margin:0 0 8px">Pick a hub</h2>
+      <div class="grid">
+        <a class="card" href="/dominions/">
+          <div class="pad">
+            <span class="badge">Guides</span><span class="badge">Builds</span>
+            <h3>Dominions</h3>
+            <p>Nation guides, pretender builds, rituals, and patch-safe modlists.</p>
+          </div>
+        </a>
+        <a class="card" href="/stalker/">
+          <div class="pad">
+            <span class="badge">Modlists</span><span class="badge">Fixes</span>
+            <h3>S.T.A.L.K.E.R.</h3>
+            <p>Stable modpack, load order, and troubleshooting notes.</p>
+          </div>
+        </a>
+        <a class="card" href="/dnd/">
+          <div class="pad">
+            <span class="badge">Modules</span><span class="badge">Loot</span>
+            <h3>Dungeons &amp; Dragons</h3>
+            <p>Session notes, locations, NPCs, and printable handouts.</p>
+          </div>
+        </a>
+        <a class="card" href="/minecraft/">
+          <div class="pad">
+            <span class="badge">Server</span><span class="badge">Packs</span>
+            <h3>Minecraft</h3>
+            <p>Server rules, modpack versions, and world download links.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section style="margin:24px 0">
+      <h2 style="margin:0 0 8px">Quick links</h2>
+      <div class="grid">
+        <div class="card"><div class="pad">
+          <h3>THK Mod Repository</h3>
+          <p class="muted">Direct links and checksums. Keep versions locked.</p>
+          <div class="list" style="margin-top:8px">
+            <a href="/mods/index.json"><span>mods/index.json</span><span class="muted">JSON</span></a>
+            <a href="/mods/readme.html"><span>Mod readme + install steps</span><span class="muted">HTML</span></a>
+          </div>
+        </div></div>
+        <div class="card"><div class="pad">
+          <h3>Contact / About</h3>
+          <p class="muted">What is THK, and how to reach us.</p>
+          <div class="list" style="margin-top:8px">
+            <a href="/about.html"><span>About</span><span class="muted">Bio</span></a>
+            <a href="https://github.com/YourUser/TheHoboKingdom" target="_blank" rel="noopener"><span>GitHub repo</span><span class="muted">External</span></a>
+          </div>
+        </div></div>
+      </div>
+    </section>
+
+    <div class="footer">© TheHoboKingdom</div>
+  </main>
 </body>
 </html>
