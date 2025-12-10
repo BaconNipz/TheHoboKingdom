@@ -27,3 +27,9 @@ hr.sep{border:0;border-top:1px solid #1e2631;margin:20px 0}
 blockquote{margin:0;padding:12px 16px;border-left:4px solid #263241;background:#101622;border-radius:8px}
 code, pre{background:#0f141b;border:1px solid #1e2631;border-radius:8px;padding:2px 6px}
 pre{padding:12px;overflow:auto}
+.dossier{border:1px solid #1e2631;border-radius:12px;background:#101622;padding:12px 14px}
+.dossier summary{cursor:pointer;font-weight:700;letter-spacing:.2px}
+.dossier summary::-webkit-details-marker{display:none}
+.dossier summary::after{content:"▾";padding-left:8px;font-size:.9rem;color:var(--muted)}
+.dossier[open] summary::after{content:"▴"}
+.dossier-body{display:grid;gap:12px;padding-top:8px}
