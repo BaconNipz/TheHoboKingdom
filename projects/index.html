@@ -1,0 +1,50 @@
+---
+title: Projects
+description: Every active, stable, and planned TheHoboKingdom game project in one directory.
+nav_section: projects
+---
+
+<section class="page-hero">
+  <div class="shell">
+    <p class="eyebrow">Project directory</p>
+    <h1>Everything currently being built or preserved.</h1>
+    <p class="lead">Game hubs, modpacks, tools, campaign material, and longer-running experiments are tracked here with honest status labels.</p>
+  </div>
+</section>
+
+<section class="section shell">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Current work</p>
+      <h2>Active projects</h2>
+    </div>
+  </div>
+
+  <div class="project-grid">
+    {% for project in site.data.projects %}
+      {% unless project.status == "planned" %}
+        {% include project-card.html project=project %}
+      {% endunless %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section section--tinted" id="planned-projects">
+  <div class="shell">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Not forgotten</p>
+        <h2>Planned projects</h2>
+      </div>
+    </div>
+
+    <div class="project-grid">
+      {% for project in site.data.projects %}
+        {% if project.status == "planned" %}
+          {% include project-card.html project=project %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+

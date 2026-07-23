@@ -1,0 +1,18 @@
+title: TheHoboKingdom
+description: Game projects, practical guides, modpacks, tools, and campaign material.
+url: https://www.thehobokingdom.com
+baseurl: ""
+lang: en-AU
+timezone: Australia/Adelaide
+permalink: pretty
+
+exclude:
+  - docs
+  - README.md
+  - scripts
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

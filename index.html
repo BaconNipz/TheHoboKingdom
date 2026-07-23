@@ -1,130 +1,87 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>TheHoboKingdom — Home</title>
-  <meta name="description" content="TheHoboKingdom: tips, guides, and mod repositories for Dominions, S.T.A.L.K.E.R., D&D, and more." />
-  <meta property="og:title" content="TheHoboKingdom" />
-  <meta property="og:description" content="Guides, mods, and notes for THK." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.thehobokingdom.com/" />
-  <link rel="icon" href="/assets/favicon.png">
-  <style>
-    :root { --bg:#0b0f14; --card:#121821; --muted:#8aa0b3; --text:#e8f0f8; --accent:#7cc4ff; }
-    *{box-sizing:border-box}
-    html,body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
-    a{color:var(--accent);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .container{max-width:1100px;margin:0 auto;padding:16px}
-    header{position:sticky;top:0;backdrop-filter:saturate(1.2) blur(6px);background:rgba(11,15,20,.7);border-bottom:1px solid #1e2631}
-    .nav{display:flex;align-items:center;gap:16px;padding:12px 0}
-    .brand{font-weight:700;letter-spacing:.3px}
-    .spacer{flex:1}
-    .pill{padding:8px 12px;border-radius:999px;background:#16202b}
-    .hero{display:grid;gap:16px;padding:32px 0}
-    .hero h1{margin:0;font-size:clamp(1.6rem,3.2vw,2.4rem)}
-    .hero p{color:var(--muted);margin:0}
-    .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-    .card{background:var(--card);border:1px solid #1e2631;border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
-    .card h3{margin:16px 16px 4px}
-    .card p{margin:0 16px 16px;color:var(--muted)}
-    .card .pad{padding:16px}
-    .badge{display:inline-block;font-size:.8rem;background:#16202b;border:1px solid #263241;border-radius:999px;padding:4px 8px;margin-right:8px;color:var(--muted)}
-    .footer{color:var(--muted);border-top:1px solid #1e2631;margin-top:32px;padding:24px 0;font-size:.95rem}
-    .list{display:grid;gap:8px}
-    .list a{display:flex;justify-content:space-between;border:1px solid #1e2631;background:#0f141b;border-radius:12px;padding:10px 12px}
-    .muted{color:var(--muted)}
-    .nowrap{white-space:nowrap}
-  </style>
-</head>
-<body>
-  <header>
-    <div class="container nav">
-      <div class="brand">TheHoboKingdom</div>
-      <div class="spacer"></div>
-      <a class="pill" href="/">Home</a>
-      <a class="pill" href="/stalker/">S.T.A.L.K.E.R.</a>
-      <a class="pill" href="/dominions/">Dominions</a>
-      <a class="pill" href="/minecraft/">Minecraft</a>
-      <a class="pill" href="/bg3/">Baldur’s Gate 3</a>
-      <a class="pill" href="/dnd/">Dungeons & Dragons</a>
+---
+title: Home
+description: TheHoboKingdom is a home for ongoing game projects, practical guides, modpacks, tools, and tabletop material.
+nav_section: home
+---
+
+<section class="hero hero--home">
+  <div class="shell hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Projects • Guides • Archives</p>
+      <h1>A home for game projects that keep growing.</h1>
+      <p class="lead">TheHoboKingdom collects ongoing modding work, campaign material, practical guides, and stable project records in one place.</p>
+      <div class="button-row">
+        <a class="button button--primary" href="{{ '/projects/' | relative_url }}">Browse projects</a>
+        <a class="button button--quiet" href="{{ '/guides/' | relative_url }}">Read the guides</a>
+      </div>
     </div>
-  </header>
+    <aside class="hero-panel" aria-label="Current focus">
+      <p class="panel-label">Current focus</p>
+      <ol class="focus-list">
+        <li><span>01</span><strong>Dominions 6</strong><small>Guides and diplomacy overhaul</small></li>
+        <li><span>02</span><strong>StalkerNet</strong><small>Stable app foundation and future releases</small></li>
+        <li><span>03</span><strong>Minecraft</strong><small>Forge modpack progression</small></li>
+      </ol>
+    </aside>
+  </div>
+</section>
+<section class="section shell">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">In progress</p>
+      <h2>Active projects</h2>
+    </div>
+    <a class="text-link" href="{{ '/projects/' | relative_url }}">View every project <span aria-hidden="true">→</span></a>
+  </div>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Welcome to THK — guides, mods, and notes we don’t want to lose again.</h1>
-      <p>Centralize everything: install guides, curated mod lists, builds, session notes, and references for the crew.</p>
-    </section>
+  <div class="project-grid">
+    {% for project in site.data.projects limit: 4 %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+</section>
 
-    <section style="margin:8px 0 20px">
-      <h2 style="margin:0 0 8px">Latest updates</h2>
-      <div class="list">
-        <!-- Update these as you publish posts/pages -->
-        <a href="/dominions/middle-age-research-builds.html"><span>Dominions: MA research builds (WIP)</span><span class="muted nowrap">19 Sep 2025</span></a>
-        <a href="/stalker/modpack-v1.html"><span>S.T.A.L.K.E.R.: Modpack v1 + load order</span><span class="muted nowrap">18 Sep 2025</span></a>
-        <a href="/dnd/stormwreck-expansion.html"><span>D&D: Stormwreck Isle expansion notes</span><span class="muted nowrap">14 Sep 2025</span></a>
+<section class="section section--tinted">
+  <div class="shell">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Recent work</p>
+        <h2>Latest updates</h2>
       </div>
-    </section>
+    </div>
 
-    <section style="margin:24px 0">
-      <h2 style="margin:0 0 8px">Pick a hub</h2>
-      <div class="grid">
-        <a class="card" href="/dominions/">
-          <div class="pad">
-            <span class="badge">Guides</span><span class="badge">Builds</span>
-            <h3>Dominions</h3>
-            <p>Nation guides, pretender builds, rituals, and patch-safe modlists.</p>
-          </div>
+    <div class="updates-list">
+      {% for update in site.data.updates %}
+        <a class="update-row" href="{{ update.url | relative_url }}">
+          <span class="update-type">{{ update.type }}</span>
+          <span class="update-main">
+            <strong>{{ update.title }}</strong>
+            <small>{{ update.description }}</small>
+          </span>
+          <time>{{ update.date }}</time>
+          <span class="update-arrow" aria-hidden="true">→</span>
         </a>
-        <a class="card" href="/stalker/">
-          <div class="pad">
-            <span class="badge">Modlists</span><span class="badge">Fixes</span>
-            <h3>S.T.A.L.K.E.R.</h3>
-            <p>Stable modpack, load order, and troubleshooting notes.</p>
-          </div>
-        </a>
-        <a class="card" href="/dnd/">
-          <div class="pad">
-            <span class="badge">Modules</span><span class="badge">Loot</span>
-            <h3>Dungeons &amp; Dragons</h3>
-            <p>Session notes, locations, NPCs, and printable handouts.</p>
-          </div>
-        </a>
-        <a class="card" href="/minecraft/">
-          <div class="pad">
-            <span class="badge">Server</span><span class="badge">Packs</span>
-            <h3>Minecraft</h3>
-            <p>Server rules, modpack versions, and world download links.</p>
-          </div>
-        </a>
-      </div>
-    </section>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 
-    <section style="margin:24px 0">
-      <h2 style="margin:0 0 8px">Quick links</h2>
-      <div class="grid">
-        <div class="card"><div class="pad">
-          <h3>THK Mod Repository</h3>
-          <p class="muted">Direct links and checksums. Keep versions locked.</p>
-          <div class="list" style="margin-top:8px">
-            <a href="/mods/index.json"><span>mods/index.json</span><span class="muted">JSON</span></a>
-            <a href="/mods/readme.html"><span>Mod readme + install steps</span><span class="muted">HTML</span></a>
-          </div>
-        </div></div>
-        <div class="card"><div class="pad">
-          <h3>Contact / About</h3>
-          <p class="muted">What is THK, and how to reach us.</p>
-          <div class="list" style="margin-top:8px">
-            <a href="/about.html"><span>About</span><span class="muted">Bio</span></a>
-            <a href="https://github.com/YourUser/TheHoboKingdom" target="_blank" rel="noopener"><span>GitHub repo</span><span class="muted">External</span></a>
-          </div>
-        </div></div>
-      </div>
-    </section>
-
-    <div class="footer">© TheHoboKingdom</div>
-  </main>
-</body>
-</html>
+<section class="section shell">
+  <div class="feature-grid">
+    <article>
+      <span class="feature-number">01</span>
+      <h2>Projects stay understandable</h2>
+      <p>Each hub records what the project is, its current state, what works, and where it is heading next.</p>
+    </article>
+    <article>
+      <span class="feature-number">02</span>
+      <h2>Guides stay findable</h2>
+      <p>Strategy notes and setup instructions live in consistent game sections instead of disappearing into old conversations.</p>
+    </article>
+    <article>
+      <span class="feature-number">03</span>
+      <h2>Downloads stay traceable</h2>
+      <p>Stable releases, printable material, and version notes will be linked without turning the website into a file dump.</p>
+    </article>
+  </div>
+</section>
