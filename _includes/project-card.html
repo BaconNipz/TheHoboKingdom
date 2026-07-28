@@ -1,0 +1,20 @@
+{% assign project = include.project %}
+<article class="project-card project-card--{{ project.id }}">
+  <div class="card-topline">
+    <span class="status status--{{ project.status }}">{{ project.status_label }}</span>
+    <span class="updated">{{ project.updated }}</span>
+  </div>
+  <div>
+    <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+    <p>{{ project.description }}</p>
+  </div>
+  <div class="tag-row" aria-label="{{ project.title }} categories">
+    {% for tag in project.tags %}
+      <span class="tag">{{ tag }}</span>
+    {% endfor %}
+  </div>
+  <a class="card-link" href="{{ project.url | relative_url }}">
+    Open project <span aria-hidden="true">→</span>
+  </a>
+</article>
+

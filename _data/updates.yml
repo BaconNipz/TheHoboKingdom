@@ -1,0 +1,17 @@
+- date: 23 July 2026
+  title: TheHoboKingdom hub foundation
+  description: Unified navigation, project directory, guide index, and reliable folder-based routes.
+  url: /projects/
+  type: Site
+
+- date: 23 July 2026
+  title: StalkerNet project record
+  description: The stable v4.3.6 baseline and current feature set now have a permanent home.
+  url: /stalker/stalkernet/
+  type: Project
+
+- date: 23 July 2026
+  title: Dominions research guide preserved
+  description: The existing Middle Age research notes have been moved into the new guide structure.
+  url: /dominions/guides/middle-age-research-builds/
+  type: Guide
