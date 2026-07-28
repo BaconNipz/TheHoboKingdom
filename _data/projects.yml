@@ -1,0 +1,64 @@
+- id: dominions
+  title: Dominions 6
+  url: /dominions/
+  status: active
+  status_label: Active
+  updated: 23 July 2026
+  description: Nation research, campaign notes, pretender ideas, and the AI diplomacy overhaul.
+  tags:
+    - Guides
+    - Modding
+
+- id: stalker
+  title: S.T.A.L.K.E.R.
+  url: /stalker/
+  status: active
+  status_label: Active
+  updated: 23 July 2026
+  description: StalkerNet development, stable builds, Zone references, and modding notes.
+  tags:
+    - StalkerNet
+    - Tools
+
+- id: minecraft
+  title: Minecraft
+  url: /minecraft/
+  status: active
+  status_label: Active
+  updated: 23 July 2026
+  description: Friend-group modpacks, installation notes, progression changes, and version records.
+  tags:
+    - Modpacks
+    - Forge
+
+- id: dnd
+  title: Dungeons & Dragons
+  url: /dnd/
+  status: active
+  status_label: Active
+  updated: 23 July 2026
+  description: Campaign records, characters, handouts, homebrew, and quick references.
+  tags:
+    - Campaigns
+    - Homebrew
+
+- id: tabletop
+  title: Tabletop Projects
+  url: /tabletop/
+  status: active
+  status_label: Active
+  updated: 23 July 2026
+  description: "Z-Land material and The Last of Us: Escape the Dark expansion work."
+  tags:
+    - Printables
+    - Design
+
+- id: bg3
+  title: Baldur's Gate 3
+  url: /bg3/
+  status: planned
+  status_label: Planned
+  updated: 23 July 2026
+  description: A future home for mod collections, party builds, and co-op notes.
+  tags:
+    - Future

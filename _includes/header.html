@@ -1,0 +1,22 @@
+<header class="site-header">
+  <div class="shell nav-shell">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="TheHoboKingdom home">
+      <span class="brand-mark" aria-hidden="true">THK</span>
+      <span>TheHoboKingdom</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+      <span class="sr-only">Toggle navigation</span>
+      <span aria-hidden="true">Menu</span>
+    </button>
+
+    <nav class="site-nav" id="primary-navigation" aria-label="Primary navigation">
+      <a href="{{ '/' | relative_url }}"{% if page.nav_section == "home" %} aria-current="page"{% endif %}>Home</a>
+      <a href="{{ '/projects/' | relative_url }}"{% if page.nav_section == "projects" %} aria-current="page"{% endif %}>Projects</a>
+      <a href="{{ '/guides/' | relative_url }}"{% if page.nav_section == "guides" %} aria-current="page"{% endif %}>Guides</a>
+      <a href="{{ '/downloads/' | relative_url }}"{% if page.nav_section == "downloads" %} aria-current="page"{% endif %}>Downloads</a>
+      <a href="{{ '/about/' | relative_url }}"{% if page.nav_section == "about" %} aria-current="page"{% endif %}>About</a>
+    </nav>
+  </div>
+</header>
+
