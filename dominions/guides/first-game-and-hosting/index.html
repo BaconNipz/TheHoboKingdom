@@ -1,0 +1,135 @@
+---
+title: Starting a Dominions 6 game
+description: Create a world, choose participants and settings, join the official lobby, and complete a turn in Dominions 6.
+nav_section: guides
+---
+
+<section class="page-hero">
+  <div class="shell">
+    <div class="breadcrumbs">
+      <a href="{{ '/guides/' | relative_url }}">Guides</a>
+      <span aria-hidden="true">/</span>
+      <a href="{{ '/dominions/' | relative_url }}">Dominions 6</a>
+      <span aria-hidden="true">/</span>
+      <span>Starting a game</span>
+    </div>
+    <p class="eyebrow">Official manual guide</p>
+    <h1>Start a Dominions 6 game.</h1>
+    <p class="lead">The main choices involved in creating a world, joining a multiplayer game, and completing the first turn.</p>
+    <div class="meta-row">
+      <span class="status status--stable">Official manual</span>
+      <span class="meta-chip">Revision 2</span>
+      <span class="meta-chip">Updated 2 August 2026</span>
+    </div>
+  </div>
+</section>
+
+<section class="section shell">
+  <div class="content-grid">
+    <article class="content">
+      <div class="notice" id="scope">
+        <p><strong>Scope:</strong> this page summarises the starting-game and basic-interface sections of Illwinter's Dominions 6 manual. Pretender design, combat, magic, and nation strategy have their own chapters in the manual.</p>
+      </div>
+
+      <h2 id="create-world">1. Create a world</h2>
+      <p>Choose <strong>Create World</strong> from the opening menu. Game creation and play are separate: after leaving an existing game, return through <strong>Continue Old Game</strong>.</p>
+      <ol>
+        <li><strong>Choose a map.</strong> Dominions can use a prepared map or generate a random one.</li>
+        <li><strong>Choose an age.</strong> The Early, Middle, or Late Age determines which nations are available.</li>
+        <li><strong>Choose participants.</strong> Add human or computer-controlled players and assign each one an available nation. A nation can appear only once in a game.</li>
+        <li><strong>Create Pretenders.</strong> The game opens the Pretender creation screen for each human nation. Saved Pretenders can be reused with <strong>Ctrl+S</strong> and <strong>Ctrl+L</strong>.</li>
+        <li><strong>Review the settings.</strong> These control the world, victory conditions, security, and several optional rules.</li>
+        <li><strong>Name the game.</strong> Dominions creates a folder with that name inside its saved-games directory.</li>
+      </ol>
+
+      <h2 id="ages">2. Choose an age and nation</h2>
+      <p>The age fixes the nation roster for the entire game. The manual describes Early Age nations as generally having stronger mages and weaker troops. The complete official roster is listed here:</p>
+      <div class="link-list">
+        <a class="link-card" href="{{ '/dominions/nations/early-age/' | relative_url }}">
+          <span><strong>Early Age</strong><small>35 nations</small></span>
+          <span aria-hidden="true">→</span>
+        </a>
+        <a class="link-card" href="{{ '/dominions/nations/middle-age/' | relative_url }}">
+          <span><strong>Middle Age</strong><small>37 nations</small></span>
+          <span aria-hidden="true">→</span>
+        </a>
+        <a class="link-card" href="{{ '/dominions/nations/late-age/' | relative_url }}">
+          <span><strong>Late Age</strong><small>30 nations</small></span>
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <h2 id="settings">3. Review the game settings</h2>
+      <p>The creation screen provides tooltips for its settings. The most important groups described in the manual are:</p>
+      <ul>
+        <li><strong>World settings:</strong> gold, magic-site frequency, research, independent strength, and other values that change the pace and character of a game.</li>
+        <li><strong>Score graphs:</strong> detailed comparisons between nations. These can reveal far more information than ordinary scouting.</li>
+        <li><strong>Master password:</strong> gives the host access to protected positions and allows an abandoned nation to be placed under computer control.</li>
+        <li><strong>Cheat prevention:</strong> monitors players other than the host; the manual notes that the host still has complete access to the game files.</li>
+        <li><strong>Thrones of Ascension:</strong> set the number and level of Thrones and the Ascension Points needed to win.</li>
+        <li><strong>Cataclysm:</strong> introduces horrors after a chosen time and gradually destroys Thrones to force the game toward an ending.</li>
+      </ul>
+      <div class="notice">
+        <p><strong>Online security:</strong> the manual recommends password-protecting a Pretender in multiplayer. Without a password, another person could inspect or alter that nation's turn.</p>
+      </div>
+
+      <h2 id="multiplayer">4. Join a multiplayer game</h2>
+      <p>Dominions supports hotseat, network, and play-by-email games. For online play, the manual recommends the official game lobby:</p>
+      <ol>
+        <li>Open <strong>Network</strong> from the main menu.</li>
+        <li>Choose <strong>Enter Game Lobby</strong>.</li>
+        <li>Create a lobby game or join one that has already been prepared.</li>
+      </ol>
+      <p>Turns are resolved simultaneously. Players prepare their orders independently, and the next turn is generated after the game hosts.</p>
+
+      <h2 id="first-turn">5. Learn the first-turn controls</h2>
+      <p>The main screen centres on provinces and commanders. Right-click a province to view it, left-click a commander to select it, and then left-click a destination province to give a movement order.</p>
+      <div class="link-list">
+        <div class="link-card">
+          <span><strong>Read Messages</strong><small>Review the reports generated at the start of the turn.</small></span>
+          <span>M</span>
+        </div>
+        <div class="link-card">
+          <span><strong>Nation Overview</strong><small>See the nation's units and provinces, buy province defence, and track magic-site searches.</small></span>
+          <span>F1</span>
+        </div>
+        <div class="link-card">
+          <span><strong>Army Setup</strong><small>Assign troops to commanders and arrange squads and formations.</small></span>
+          <span>T</span>
+        </div>
+        <div class="link-card">
+          <span><strong>Recruit Units</strong><small>Open the recruitment panel for the selected friendly province.</small></span>
+          <span>R</span>
+        </div>
+        <div class="link-card">
+          <span><strong>Research</strong><small>Open the research screen and choose magical schools.</small></span>
+          <span>F5</span>
+        </div>
+      </div>
+
+      <h2 id="end-turn">6. End the turn</h2>
+      <p><strong>End Turn</strong> saves the current orders to the game folder or uploads them to the server in an online game. Online orders can still be changed before the game hosts. In a solo game, ending the turn immediately starts the hosting process.</p>
+
+      <h2 id="source">Official source</h2>
+      <ul>
+        <li><a href="https://www.illwinter.com/dom6/dom6manual.pdf">Dominions 6 manual, revision 2</a> — Starting a Game, Playing a Multiplayer Game, and Basic Game Functions.</li>
+        <li><a href="https://www.illwinter.com/dom6/docs.html">Illwinter Dominions 6 documentation</a> — the official manual and introductory material.</li>
+      </ul>
+      <p><strong>Updated 2 August 2026:</strong> first website edition.</p>
+    </article>
+
+    <aside class="sidebar">
+      <h2>On this page</h2>
+      <nav>
+        <a href="#create-world">Create a world</a>
+        <a href="#ages">Choose an age</a>
+        <a href="#settings">Game settings</a>
+        <a href="#multiplayer">Multiplayer</a>
+        <a href="#first-turn">First-turn controls</a>
+        <a href="#end-turn">End the turn</a>
+        <a href="#source">Official source</a>
+        <a href="{{ '/dominions/' | relative_url }}">Dominions hub</a>
+      </nav>
+    </aside>
+  </div>
+</section>

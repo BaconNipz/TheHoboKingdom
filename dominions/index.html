@@ -1,6 +1,6 @@
 ---
 title: Dominions 6
-description: Dominions 6 guides, campaign notes, pretender ideas, and modding projects.
+description: Dominions 6 nations, guides, campaign notes, and modding projects.
 nav_section: projects
 ---
 
@@ -13,58 +13,105 @@ nav_section: projects
     </div>
     <p class="eyebrow">Active project hub</p>
     <h1>Dominions 6</h1>
-    <p class="lead">Nation research, campaign records, pretender ideas, and experiments aimed at making multiplayer worlds feel more reactive.</p>
+    <p class="lead">Official-manual reference pages, practical game guides, strategy notes, campaign material, and experiments with the game's modding systems.</p>
     <div class="meta-row">
       <span class="status status--active">Active</span>
+      <span class="meta-chip">102 nations</span>
       <span class="meta-chip">Guides</span>
       <span class="meta-chip">Modding</span>
-      <span class="meta-chip">Last updated 23 July 2026</span>
+      <span class="meta-chip">Updated 2 August 2026</span>
     </div>
   </div>
 </section>
+
 <section class="section shell">
   <div class="content-grid">
     <div class="content">
       <h2>Start here</h2>
       <div class="link-list">
-        <a class="link-card" href="{{ '/dominions/guides/middle-age-research-builds/' | relative_url }}">
+        <a class="link-card" href="{{ '/dominions/nations/' | relative_url }}">
           <span>
-            <strong>Middle Age research builds</strong>
-            <small>Three starter research lines and the breakpoints behind them.</small>
+            <strong>Nations by age</strong>
+            <small>Browse all 102 nations from the official manual across the Early, Middle, and Late Ages.</small>
           </span>
           <span aria-hidden="true">→</span>
         </a>
-        <a class="link-card" href="{{ '/dominions/guides/early-age-nation-notes/' | relative_url }}">
+        <a class="link-card" href="{{ '/dominions/guides/first-game-and-hosting/' | relative_url }}">
           <span>
-            <strong>Early Age nation notes</strong>
-            <small>The original nation dossiers, repaired and preserved as working drafts.</small>
+            <strong>Starting a game</strong>
+            <small>Create a world, choose participants and settings, use the official lobby, and finish a turn.</small>
+          </span>
+          <span aria-hidden="true">→</span>
+        </a>
+        <a class="link-card" href="{{ '/dominions/guides/middle-age-research-builds/' | relative_url }}">
+          <span>
+            <strong>Middle Age research builds</strong>
+            <small>Three general research lines and the early breakpoints behind them.</small>
           </span>
           <span aria-hidden="true">→</span>
         </a>
       </div>
 
-      <h2>Active project: AI diplomacy overhaul</h2>
-      <p>The goal is to make multiplayer feel less like nations are fighting random opponents and more like every neighbour is watching what happens. Aggressive expansion, throne claims, dominion pressure, raids, and warmongering should produce warnings, grudges, defensive pacts, and eventually coalitions.</p>
+      <h2>Nations by age</h2>
+      <div class="age-grid">
+        <a class="age-card" href="{{ '/dominions/nations/early-age/' | relative_url }}">
+          <span class="age-number">01</span>
+          <h3>Early Age</h3>
+          <p>Ancient powers, the first kingdoms, giants, demons, and strong magic.</p>
+          <strong>35 nations <span aria-hidden="true">→</span></strong>
+        </a>
+        <a class="age-card" href="{{ '/dominions/nations/middle-age/' | relative_url }}">
+          <span class="age-number">02</span>
+          <h3>Middle Age</h3>
+          <p>Established kingdoms, successor empires, and realms transformed by earlier disasters.</p>
+          <strong>37 nations <span aria-hidden="true">→</span></strong>
+        </a>
+        <a class="age-card" href="{{ '/dominions/nations/late-age/' | relative_url }}">
+          <span class="age-number">03</span>
+          <h3>Late Age</h3>
+          <p>Human expansion, fading elder peoples, fallen empires, and returning horrors.</p>
+          <strong>30 nations <span aria-hidden="true">→</span></strong>
+        </a>
+      </div>
+
+      <h2>Official references</h2>
+      <p>The nation catalogue and game-setup guide are based on Illwinter's current Dominions 6 manual. The technical side of the project will use the official modding, event, and map-making manuals where those subjects apply.</p>
+      <div class="link-list">
+        <a class="link-card" href="https://www.illwinter.com/dom6/docs.html">
+          <span>
+            <strong>Illwinter documentation</strong>
+            <small>Main manual, modding manuals, map tools, and introductory material.</small>
+          </span>
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <h2>Active project: computer diplomacy overhaul</h2>
+      <p>The aim is to make computer-controlled nations react more clearly to the state of a campaign. Expansion, throne claims, dominion pressure, raids, and prolonged wars could produce warnings, grudges, defensive agreements, and eventually coalitions.</p>
       <div class="notice">
-        <p><strong>Status:</strong> concept and feasibility work. The project is currently paused while the limits of event-driven diplomacy and possible formation additions are investigated.</p>
+        <p><strong>Status:</strong> concept and feasibility work. Development is paused while the limits of event-driven diplomacy and possible formation additions are investigated.</p>
       </div>
 
       <h2>Next additions</h2>
       <ul>
-        <li>A reusable nation-guide format covering expansion, research, magic access, and common threats.</li>
-        <li>A permanent page for the diplomacy-overhaul design and technical findings.</li>
-        <li>Campaign records for Dominions Enhanced and Divinitus games.</li>
-        <li>Pretender templates that clearly state their supported mods and game version.</li>
+        <li>Unit classes, special abilities, experience, heroic abilities, and afflictions.</li>
+        <li>Spell, ritual, item, summon, Pretender, Throne, and magic-site catalogues.</li>
+        <li>Game settings, movement, sieges, battle orders, and magic explained from the main manual.</li>
+        <li>Mod, event, and map-making references built from Illwinter's technical manuals.</li>
+        <li>A permanent design record for the diplomacy overhaul.</li>
       </ul>
     </div>
 
     <aside class="sidebar">
       <h2>Dominions sections</h2>
       <nav>
+        <a href="{{ '/dominions/nations/' | relative_url }}">Nations by age</a>
+        <a href="{{ '/dominions/nations/early-age/' | relative_url }}">Early Age</a>
+        <a href="{{ '/dominions/nations/middle-age/' | relative_url }}">Middle Age</a>
+        <a href="{{ '/dominions/nations/late-age/' | relative_url }}">Late Age</a>
+        <a href="{{ '/dominions/guides/first-game-and-hosting/' | relative_url }}">Starting a game</a>
         <a href="{{ '/dominions/guides/middle-age-research-builds/' | relative_url }}">Research builds</a>
-        <a href="{{ '/dominions/guides/early-age-nation-notes/' | relative_url }}">Early Age notes</a>
         <a href="{{ '/guides/' | relative_url }}">All guides</a>
-        <a href="{{ '/projects/' | relative_url }}">All projects</a>
       </nav>
     </aside>
   </div>

@@ -17,5 +17,4 @@ GitHub Pages builds the site with Jekyll. Legacy root-level pages remain as redi
 
 ## Current milestone
 
-The active implementation milestone is **Hub Foundation v2**. Its scope and recovery references are recorded in [`docs/website-hub-plan.md`](docs/website-hub-plan.md).
-
+**Hub Foundation v2** is complete. The active milestone is the **Content Pass**, beginning with Dominions 6 reference pages based on Illwinter's official manuals. Scope and recovery references are recorded in [`docs/website-hub-plan.md`](docs/website-hub-plan.md).

@@ -1,3 +1,15 @@
+- date: 2 August 2026
+  title: Dominions nations by age
+  description: All 102 nations from the official manual now have a place across the Early, Middle, and Late Ages.
+  url: /dominions/nations/
+  type: Reference
+
+- date: 2 August 2026
+  title: Starting a Dominions 6 game
+  description: Manual-based steps for creating a world, choosing settings, joining the official lobby, and ending a turn.
+  url: /dominions/guides/first-game-and-hosting/
+  type: Guide
+
 - date: 23 July 2026
   title: TheHoboKingdom hub foundation
   description: Unified navigation, project directory, guide index, and reliable folder-based routes.
@@ -11,7 +23,7 @@
   type: Project
 
 - date: 23 July 2026
-  title: Dominions research guide preserved
-  description: The existing Middle Age research notes have been moved into the new guide structure.
+  title: Dominions research guide updated
+  description: The Middle Age research notes now have a permanent place in the guide structure.
   url: /dominions/guides/middle-age-research-builds/
   type: Guide
