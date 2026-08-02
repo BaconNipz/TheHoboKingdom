@@ -1,6 +1,6 @@
 ---
 title: Middle Age research builds
-description: Starter Dominions 6 Middle Age research paths and common early breakpoints.
+description: A practical Dominions 6 framework for research breakpoints, mage turns, battlefield packages, pivots, and late-game planning.
 nav_section: guides
 ---
 
@@ -13,13 +13,14 @@ nav_section: guides
       <span aria-hidden="true">/</span>
       <span>Middle Age research builds</span>
     </div>
-    <p class="eyebrow">Strategy outline</p>
-    <h1>Middle Age research builds</h1>
-    <p class="lead">Starter research lines that reach common breakpoints quickly. Exact priorities still depend on the nation, map, neighbours, and independent strength.</p>
+    <p class="eyebrow">Research and magic strategy</p>
+    <h1>Research builds that survive contact with the game.</h1>
+    <p class="lead">A useful build is a queue of battlefield answers, economic tools, and ritual goals. The school levels matter, but the mages, gems, timing, and reason for each stop matter more.</p>
     <div class="meta-row">
-      <span class="status status--active">Reference notes</span>
-      <span class="meta-chip">Dominions 6</span>
+      <span class="status status--active">Expanded guide</span>
       <span class="meta-chip">Middle Age</span>
+      <span class="meta-chip">Unmodded core</span>
+      <span class="meta-chip">Mod adaptation</span>
       <span class="meta-chip">Updated 2 August 2026</span>
     </div>
   </div>
@@ -28,64 +29,290 @@ nav_section: guides
 <section class="section shell">
   <div class="content-grid">
     <article class="content">
-      <div class="notice">
-        <p><strong>Scope:</strong> these are broad starting points rather than nation-specific prescriptions. The right route still depends on the nation's paths, opponents, map, and active mods.</p>
+      <div class="notice" id="scope">
+        <p><strong>Scope:</strong> this is a planning framework for Middle Age nations, not a universal turn-by-turn script. Spell names, schools, levels, and base path requirements cited below were checked against Illwinter's official Dominions 6 manual, revision 2.</p>
+        <p><strong>Ruleset boundary:</strong> the core routes assume the unmodded game. Dominions Enhanced, Divinitus, and other mods can alter schools, spells, items, nations, and Pretenders; the adaptation process is covered separately.</p>
       </div>
 
-      <h2 id="quick-lines">Quick research lines</h2>
+      <h2 id="what-build-means">What a research build actually is</h2>
+      <p>Research should resolve a problem. A nation might need to keep its line troops alive, break armour, stop a rush, turn Astral mages into a communion, open a forging economy, or prepare one decisive global enchantment. Finishing a school for its own sake is rarely the point.</p>
+      <p>The useful unit of planning is the <strong>breakpoint</strong>: the first level that produces a package the nation can cast and employ immediately. Every proposed breakpoint has four gates.</p>
+
       <div class="link-list">
         <div class="link-card">
           <span>
-            <strong>Generalist</strong>
-            <small>Construction 2 → Alteration 3 → Evocation 4 → Construction 4</small>
+            <strong>Research gate</strong>
+            <small>The required school and level must be finished.</small>
           </span>
-          <span>Safe baseline</span>
+          <span>01</span>
         </div>
         <div class="link-card">
           <span>
-            <strong>Bless pressure</strong>
-            <small>Alteration 3 → Enchantment 3 → Conjuration 3</small>
+            <strong>Caster gate</strong>
+            <small>A legal caster must exist after paths, communions, boosters, and battlefield power spells are counted.</small>
           </span>
-          <span>Early buffs</span>
+          <span>02</span>
         </div>
         <div class="link-card">
           <span>
-            <strong>Mage core</strong>
-            <small>Construction 4 → Evocation 5 → Alteration 4</small>
+            <strong>Resource gate</strong>
+            <small>The gems, items, slaves, laboratory access, and spare mage turns must be affordable.</small>
           </span>
-          <span>Scaling</span>
+          <span>03</span>
+        </div>
+        <div class="link-card">
+          <span>
+            <strong>Timing gate</strong>
+            <small>The package must arrive before the battle or campaign window it is supposed to change.</small>
+          </span>
+          <span>04</span>
         </div>
       </div>
 
-      <h2 id="breakpoints">Common breakpoints</h2>
+      <h2 id="portfolio">Build a research portfolio</h2>
+      <p>A complete plan normally serves several jobs, but it should still have one lead target at a time. Spreading research across too many schools delays every answer and produces a collection of nearly finished ideas.</p>
       <ul>
-        <li><strong>Construction 2:</strong> basic equipment and early utility items.</li>
-        <li><strong>Alteration 3:</strong> defensive buffs such as Body Ethereal, Luck, and Protection where paths allow them.</li>
-        <li><strong>Evocation 4–5:</strong> the first meaningful area-damage options for several common paths.</li>
-        <li><strong>Construction 4:</strong> stronger equipment and several important research or path-boosting options.</li>
+        <li><strong>Survival:</strong> protection, resistance, morale, mobility, or control needed to survive the next war.</li>
+        <li><strong>Battlefield conversion:</strong> a repeatable package that turns available mages and troops into won battles.</li>
+        <li><strong>Infrastructure:</strong> forging, site searching, summons, laboratories, and other tools that increase future capacity.</li>
+        <li><strong>Path access:</strong> communions, battlefield path boosts, boosters, summons, or a Pretender that opens otherwise unreachable magic.</li>
+        <li><strong>Endgame:</strong> one realistic global, ritual, army enchantment, or strategic movement tool that can alter the campaign.</li>
+      </ul>
+      <div class="notice">
+        <p><strong>Practical rule:</strong> keep one primary research target and one declared branch condition. A branch exists for a reason—an early war, armour-heavy enemy, massed undead, a critical site, or a newly available path—not because another school looks interesting.</p>
+      </div>
+
+      <h2 id="mage-turns">Count mage turns, not only research points</h2>
+      <p>The manual calculates a mage's research ability as <strong>5 + twice the mage's total magic levels, modified by research bonuses or penalties</strong>, with a minimum of 1. The research speed shown in the laboratory is the combined output of commanders currently ordered to research.</p>
+      <p>That total is not permanent. A mage usually performs one major job in a month: research, search, forge, cast a ritual, move, fight, build a laboratory, Blood Hunt, or carry out another special order. Every reassignment therefore has a research cost.</p>
+      <ol>
+        <li>Read the current monthly total on the Research screen.</li>
+        <li>Check the points remaining to the next usable breakpoint.</li>
+        <li>Divide the remaining cost by realistic monthly output, not the best total the nation has ever displayed.</li>
+        <li>Subtract researchers that must search, forge, move, or join the next battle.</li>
+        <li>Compare the resulting completion month with the expected war or ritual window.</li>
+      </ol>
+      <p>A nominal six-month target can easily become an eight-month target when several key mages leave the laboratory. That delay is part of the build, not an accounting error.</p>
+
+      <h2 id="build-sheet">The build sheet</h2>
+      <p>Before committing to a line, record the following in one place:</p>
+      <ol>
+        <li><strong>Ruleset:</strong> game version, enabled mods, and load order.</li>
+        <li><strong>Nation and mage pool:</strong> reliable paths, random paths, capital-only mages, recruitment limits, and research output.</li>
+        <li><strong>Immediate problem:</strong> what the next breakpoint must defeat or enable.</li>
+        <li><strong>Research route:</strong> each stop and the package gained there.</li>
+        <li><strong>Delivery:</strong> named caster type, path boosts, script, gems, supporting troops, and expected fatigue.</li>
+        <li><strong>Timing:</strong> points remaining, realistic monthly output, and expected completion month.</li>
+        <li><strong>Branch condition:</strong> the event that changes the route.</li>
+        <li><strong>End state:</strong> the global, ritual economy, army enchantment, battlefield package, or mobility tool the nation is building toward.</li>
+      </ol>
+
+      <h2 id="build-families">Six useful build families</h2>
+      <p>These are starting structures. Only the stops that match the nation's real mage paths should be kept.</p>
+
+      <details class="dossier" open>
+        <summary>Generalist stabilisation — the safe first-war line</summary>
+        <div class="dossier-body">
+          <p><strong>Typical route:</strong> Construction 2 → Alteration 3 → Enchantment 3 → Evocation 4 or 5 → Construction 4.</p>
+          <p><strong>Best fit:</strong> mixed-path nations that have useful troops but no single magical engine ready on turn one.</p>
+          <ul>
+            <li><strong>Construction 2:</strong> opens early utility items and, for Earth mages, Temper Armors.</li>
+            <li><strong>Alteration 3:</strong> can supply Body Ethereal, Barkskin, and Group Blur where Astral, Nature, or Glamour paths are present.</li>
+            <li><strong>Enchantment 3:</strong> adds options such as Gift of Giant Strength and other path-specific support.</li>
+            <li><strong>Evocation 4–5:</strong> becomes worthwhile only when the roster has a repeatable damage spell and enough field mages to cast it.</li>
+            <li><strong>Construction 4:</strong> deepens the item pool and gives strong Earth casters access to Soldiers of Steel.</li>
+          </ul>
+          <p><strong>Branch early when:</strong> the first war demands communions, elementals, mass resistance, or a specific armour answer. The line is safe because it is broad, not because every nation should complete every stop.</p>
+        </div>
+      </details>
+
+      <details class="dossier">
+        <summary>Heavy-line enhancement — make armour and bodies matter</summary>
+        <div class="dossier-body">
+          <p><strong>Typical route:</strong> Enchantment 1 → Construction 2 → Alteration 4 or 5 → Construction 4 → Enchantment 5 or Construction 6.</p>
+          <p><strong>Best fit:</strong> nations already paying for durable infantry, giants, or disciplined formations and able to field Earth or Nature casters.</p>
+          <ul>
+            <li><strong>Enchantment 1:</strong> Strength of Giants gives an Earth caster an immediate single-target strength tool.</li>
+            <li><strong>Construction 2:</strong> Temper Armors supports small groups without waiting for a high-level army enchantment.</li>
+            <li><strong>Alteration 4–5:</strong> Stoneskin, Group Stoneskin, and similar path-specific protection can improve the part of the line that matters most.</li>
+            <li><strong>Construction 4:</strong> Soldiers of Steel protects a larger group when an Earth 3 caster is available.</li>
+            <li><strong>Enchantment 5 or Construction 6:</strong> Giant Strength Warriors or Legions of Steel can turn the package from local support into formation-wide enhancement.</li>
+          </ul>
+          <p><strong>Failure test:</strong> more protection does not solve fatigue, armour-negating damage, battlefield control, or an enemy that refuses the fight. If one of those is the real problem, the route needs a different branch.</p>
+        </div>
+      </details>
+
+      <details class="dossier">
+        <summary>Communion scaling — turn many modest mages into a battle engine</summary>
+        <div class="dossier-body">
+          <p><strong>Typical route:</strong> Thaumaturgy 1 → Conjuration 3 → Alteration 3 → Conjuration 4 → Evocation 5 → the school containing the required high-level effect.</p>
+          <p><strong>Best fit:</strong> Astral nations with numerous recruitable mages and a clear plan for masters, slaves, fatigue, and spell selection.</p>
+          <ul>
+            <li><strong>Thaumaturgy 1:</strong> Communion Master and Communion Slave establish the basic structure.</li>
+            <li><strong>Conjuration 3:</strong> Power of the Spheres and Summon Earthpower can raise battlefield paths where the caster qualifies.</li>
+            <li><strong>Alteration 3:</strong> Body Ethereal and other low-level defensive tools keep early packages useful.</li>
+            <li><strong>Conjuration 4:</strong> Light of the Northern Star raises Astral magic across the battlefield.</li>
+            <li><strong>Evocation 5:</strong> Stellar Cascades and Gifts from Heaven are examples of strong but very different packages; caster paths decide which one is real.</li>
+          </ul>
+          <p><strong>Audit before battle:</strong> count masters, slaves, spell fatigue, encumbrance, gems, and the five scripted rounds. A communion is not complete merely because Thaumaturgy 1 has been researched.</p>
+        </div>
+      </details>
+
+      <details class="dossier">
+        <summary>Glamour and stealth pressure — win selected fights</summary>
+        <div class="dossier-body">
+          <p><strong>Typical route:</strong> Alteration 2 → Alteration 3 → Thaumaturgy 3 → Thaumaturgy 5, with a separate Air or Nature branch where the nation supports it.</p>
+          <p><strong>Best fit:</strong> Glamour nations whose strength lies in concealment, defence, mobility, and choosing where the important battle happens.</p>
+          <ul>
+            <li><strong>Alteration 2:</strong> Mirror Image and Blur provide early Glamour protection.</li>
+            <li><strong>Alteration 3:</strong> Group Blur begins supporting more than one key unit.</li>
+            <li><strong>Thaumaturgy 3:</strong> Luck adds another form of protection for important targets.</li>
+            <li><strong>Thaumaturgy 5:</strong> Group Luck expands that effect when a Glamour 2 caster is available.</li>
+          </ul>
+          <p><strong>Do not confuse stealth with a research plan:</strong> hidden movement creates the opportunity; the researched package still needs to win the battle that follows.</p>
+        </div>
+      </details>
+
+      <details class="dossier">
+        <summary>Bless-pressure support — reinforce an existing sacred plan</summary>
+        <div class="dossier-body">
+          <p><strong>Typical route:</strong> Alteration 3 → Enchantment 3 → Conjuration 3 or 5, followed by the school that fixes the sacred force's actual counter.</p>
+          <p><strong>Best fit:</strong> nations whose sacred troops already expand or fight efficiently and need magic to preserve that advantage.</p>
+          <ul>
+            <li><strong>Alteration 3:</strong> Body Ethereal, Barkskin, or Group Blur may provide the first useful layer, depending on national paths.</li>
+            <li><strong>Enchantment 3:</strong> offers more path-specific strengthening and resistance options.</li>
+            <li><strong>Conjuration 3:</strong> battlefield path boosts can let modest mages reach the supporting spell package.</li>
+            <li><strong>Conjuration 5:</strong> full-sized elementals can add a separate tactical threat instead of placing every job on the sacred unit.</li>
+          </ul>
+          <p><strong>Stop condition:</strong> when sacred recruitment, gold, or attrition no longer supports the original pressure plan, research should begin serving the wider army instead of trying to rescue a shrinking elite.</p>
+        </div>
+      </details>
+
+      <details class="dossier">
+        <summary>Forge and ritual economy — convert research into future capacity</summary>
+        <div class="dossier-body">
+          <p><strong>Typical route:</strong> Construction 4 → Construction 6 → one declared global or ritual school → level 9 only after the caster and gem plan is credible.</p>
+          <p><strong>Best fit:</strong> nations with broad paths, steady gems, spare mage turns, and enough security to wait for compounding returns.</p>
+          <ul>
+            <li><strong>Construction 4:</strong> creates a practical midgame item pool rather than chasing rare endgame tools immediately.</li>
+            <li><strong>Construction 6:</strong> opens deeper equipment, Legions of Steel, and Forge of the Ancients for an Earth 5 caster.</li>
+            <li><strong>Global branch:</strong> the next school should be chosen for a specific reachable target, not from a list of desirable rituals.</li>
+            <li><strong>Legendary research:</strong> level 9 spells are researched one at a time in Dominions 6, so the first choice must match a real caster, treasury, and strategic purpose.</li>
+          </ul>
+          <p><strong>Return test:</strong> every forged item or ritual consumes a mage turn as well as gems. The investment is worthwhile only when it produces more value than the research, searching, or battlefield work displaced.</p>
+        </div>
+      </details>
+
+      <h2 id="arcoscephale">Worked example: MA Arcoscephale</h2>
+      <p>Unmodded Middle Age Arcoscephale has repeatable Mystics with Astral 1, two additional random magic levels, and a research bonus. Capital-only Astrologers provide Astral 3 plus one random level. The official manual lists national access to Astral, Fire, Earth, Water, and some Nature.</p>
+      <p>This makes Arcoscephale a strong example of a research nation whose plan should be built around <strong>mage roles and path rolls</strong>, not around the assumption that every Mystic can cast every researched spell.</p>
+
+      <h3>Opening spine</h3>
+      <p><strong>Thaumaturgy 1 → Conjuration 3 → Alteration 3 → Conjuration 4</strong></p>
+      <ul>
+        <li><strong>Thaumaturgy 1:</strong> establishes communion access immediately.</li>
+        <li><strong>Conjuration 3:</strong> gives Astral Mystics Power of the Spheres and Earth Mystics Summon Earthpower.</li>
+        <li><strong>Alteration 3:</strong> provides Body Ethereal and several path-specific defensive or control options.</li>
+        <li><strong>Conjuration 4:</strong> unlocks Light of the Northern Star for an Astral 3 caster, normally an Astrologer or another suitably boosted mage.</li>
+      </ul>
+      <p>This is a platform, not the finished build. The first war determines the next branch.</p>
+
+      <h3>First-war branches</h3>
+      <div class="link-list">
+        <div class="link-card">
+          <span>
+            <strong>Armour and formation support</strong>
+            <small>Construction 2 → Construction 4 for Temper Armors, equipment, and Soldiers of Steel where Earth casters qualify.</small>
+          </span>
+          <span>Earth</span>
+        </div>
+        <div class="link-card">
+          <span>
+            <strong>Battlefield damage and fatigue pressure</strong>
+            <small>Evocation 5 for Stellar Cascades and Gifts from Heaven, assigned to the correct Astral or Earth-Astral casters.</small>
+          </span>
+          <span>Evoc</span>
+        </div>
+        <div class="link-card">
+          <span>
+            <strong>Defence and control</strong>
+            <small>Alteration 4–5 for path-dependent tools such as Quickness, Destruction, or Group Stoneskin.</small>
+          </span>
+          <span>Alt</span>
+        </div>
+        <div class="link-card">
+          <span>
+            <strong>Astral precision</strong>
+            <small>Thaumaturgy 4–5 for Paralyze and Soul Slay when enemy commanders or elite targets justify resistance checks.</small>
+          </span>
+          <span>Thau</span>
+        </div>
+      </div>
+
+      <h3>Mage roles</h3>
+      <ul>
+        <li><strong>Research bench:</strong> the largest share of Mystics remains in laboratories until a field package has a named job.</li>
+        <li><strong>Field core:</strong> path rolls are sorted into communion masters, slaves, Earth support, elemental casters, and specialist counters.</li>
+        <li><strong>Capital specialists:</strong> Astrologers provide dependable high Astral access and should not be risked without a package that needs them.</li>
+        <li><strong>Operations pool:</strong> a smaller group handles searching, forging, rituals, and movement without silently consuming the entire research engine.</li>
       </ul>
 
-      <h2 id="archetypes">By broad archetype</h2>
-      <h3>Elf and stealth nations</h3>
-      <p><strong>Alteration 3 → Enchantment 3 → Conjuration 3 → Evocation 4</strong></p>
-      <p>The early focus is defensive magic, utility, and fights chosen on favourable terms before adding wider battlefield pressure.</p>
+      <h3>Late-game destinations</h3>
+      <p>Arcoscephale can research many spectacular effects, but researching them does not create the caster. Each destination needs its own access plan.</p>
+      <ul>
+        <li><strong>Astral control:</strong> Will of the Fates is Alteration 7 and requires Astral 5; Master Enslave is Thaumaturgy 9 and requires Astral 8.</li>
+        <li><strong>Astral economy:</strong> Arcane Nexus is Enchantment 9 and requires Astral 8; Wish is Alteration 9 and requires Astral 9.</li>
+        <li><strong>Earth forging:</strong> Forge of the Ancients is Construction 6 and requires Earth 5.</li>
+        <li><strong>Nature economy:</strong> Gift of Health and Gift of Nature's Bounty require Nature 6 and 7. Native unmodded Arcoscephale does not reach those levels without substantial outside access.</li>
+        <li><strong>Death summons:</strong> Tartarian Gate is Conjuration 9 and requires Death 7. Death is not listed as native unmodded MA Arcoscephale access in the official manual.</li>
+      </ul>
+      <div class="notice">
+        <p><strong>Endgame discipline:</strong> Arcane Nexus, Wish, Master Enslave, Forge of the Ancients, Tartarian Gate, Gift of Health, and Gift of Nature's Bounty are not one common package. A viable plan selects the targets that match the Pretender, national mages, boosters, summons, empowerment budget, and actual gem income.</p>
+      </div>
 
-      <h3>Heavy infantry lines</h3>
-      <p><strong>Alteration 3 → Evocation 4 → Construction 4</strong></p>
-      <p>Durable troops benefit from early defensive and strength support, followed by area damage and more dependable equipment.</p>
+      <h2 id="mods">Adapting the build to Dominions Enhanced or Divinitus</h2>
+      <p>Mods can change the answer at every gate. A Pretender may supply new paths, a national mage may gain a different role, or a familiar spell may move school or level. Modded routes should therefore be rebuilt from the active game rather than treated as a footnote to an unmodded plan.</p>
+      <ol>
+        <li>Record the Dominions version, mod versions, and load order.</li>
+        <li>Recheck national mages, random paths, recruitment limits, and research bonuses.</li>
+        <li>Recheck every named spell's school, level, path requirement, fatigue, and gem cost.</li>
+        <li>Rebuild the Pretender in that exact ruleset instead of reusing historical path and scale numbers.</li>
+        <li>Recalculate monthly research after site searching, teaching, forging, and battlefield assignments.</li>
+        <li>Label every mod-only breakpoint so it cannot be mistaken for an unmodded option.</li>
+      </ol>
 
-      <h3>Communion nations</h3>
-      <p><strong>Construction 4 → Alteration 4 → Evocation 5</strong></p>
-      <p>The goal is to establish the support needed for reliable communions before scaling into stronger battlefield magic.</p>
+      <h2 id="audit">Monthly research audit</h2>
+      <ul>
+        <li>What exact problem does the active target solve?</li>
+        <li>Which recruited mage casts the first useful spell at that level?</li>
+        <li>Are the script, path boosts, gems, and supporting troops ready?</li>
+        <li>How many research points remain after field and ritual assignments?</li>
+        <li>Will the breakpoint arrive before the battle it is meant to influence?</li>
+        <li>Has a new enemy, site, hero, path roll, or captured mage created a better branch?</li>
+        <li>Is the late-game target still castable and affordable, or has it become wishful research?</li>
+      </ul>
 
+      <h2 id="sources">Sources and limits</h2>
+      <ul>
+        <li><a href="https://www.illwinter.com/dom6/dom6manual.pdf">Dominions 6 manual, revision 2</a> — research, communions, magic gems, spells, rituals, items, and the MA Arcoscephale nation entry.</li>
+        <li><a href="https://www.illwinter.com/dom6/docs.html">Illwinter Dominions 6 documentation</a> — official manuals and introductory material.</li>
+      </ul>
+      <p>The mechanics and spell requirements come from the official manual. The routes, stop conditions, and audit method are strategic recommendations rather than official strategy.</p>
+      <p><strong>Revision 2 — 2 August 2026:</strong> replaced the short starter list with breakpoint planning, six build families, mage-turn accounting, a worked MA Arcoscephale example, late-game access checks, and a mod-adaptation process.</p>
     </article>
 
     <aside class="sidebar">
       <h2>On this page</h2>
       <nav>
-        <a href="#quick-lines">Quick research lines</a>
-        <a href="#breakpoints">Common breakpoints</a>
-        <a href="#archetypes">By archetype</a>
+        <a href="#what-build-means">What a build means</a>
+        <a href="#portfolio">Research portfolio</a>
+        <a href="#mage-turns">Mage-turn accounting</a>
+        <a href="#build-sheet">Build sheet</a>
+        <a href="#build-families">Six build families</a>
+        <a href="#arcoscephale">MA Arcoscephale</a>
+        <a href="#mods">Mod adaptation</a>
+        <a href="#audit">Monthly audit</a>
+        <a href="#sources">Sources</a>
         <a href="{{ '/dominions/' | relative_url }}">Dominions hub</a>
       </nav>
     </aside>
