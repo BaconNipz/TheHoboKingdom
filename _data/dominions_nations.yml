@@ -1,0 +1,413 @@
+early:
+  - name: "Arcoscephale, Golden Era"
+    slug: "arcoscephale"
+    summary: "A loose league of bronze-age city-states whose armies combine myrmidons, chariots, engineers, flying Icarids, and sacred Pegasus Riders with gifted philosophers and mystics."
+    manual_page: 243
+  - name: "Mekone, Brazen Giants"
+    slug: "mekone"
+    summary: "Exalted Gigantes rule an uneasy population of human helots, fielding a small core of mighty warriors and Cyclope smiths beside large numbers of slave soldiers."
+    manual_page: 245
+  - name: "Pangaea, Age of Revelry"
+    slug: "pangaea"
+    summary: "A woodland realm of satyrs, centaurs, minotaurs, and Maenads led from sacred groves by powerful nature mages known as Panii."
+    manual_page: 246
+  - name: "Ermor, New Faith"
+    slug: "ermor"
+    summary: "A rising human empire of disciplined legionnaires and lizard auxiliaries where the New Faith is replacing older cults and strengthening an already powerful priesthood."
+    manual_page: 248
+  - name: "Sauromatia, Amazon Queens"
+    slug: "sauromatia"
+    summary: "Nomadic warrior tribes led by Amazon queens fight with cavalry, serpent and lizard riders, and hydras, supported by death, nature, and blood magic."
+    manual_page: 250
+  - name: "Fomoria, The Cursed Ones"
+    slug: "fomoria"
+    summary: "Cursed Fomorian giants rule alongside Fir Bolg and Nemedian descendants, bringing strong storm and death magic to armies that can cross the sea."
+    manual_page: 252
+  - name: "Tir na n'Og, Land of the Ever Young"
+    slug: "tir-na-nog"
+    summary: "The mist-shrouded home of the Tuatha and Sidhe, where Fir Bolg infantry supports elusive sacred warriors and masters of glamour, nature, and water magic."
+    manual_page: 254
+  - name: "Marverni, Time of Druids"
+    slug: "marverni"
+    summary: "A union of tribal chiefdoms guided by Druids, with tattooed warriors, noble cavalry, sacred boars, and broad earth, astral, nature, and water magic."
+    manual_page: 256
+  - name: "Ulm, Enigma of Steel"
+    slug: "ulm"
+    summary: "Cold-hardened forest barbarians follow warrior-smiths in search of the Enigma of Steel, favouring strong stealthy infantry and exceptionally efficient forging."
+    manual_page: 258
+  - name: "Pyrène, Kingdom of the Bekrydes"
+    slug: "pyrene"
+    summary: "Cave-dwelling Bekrydes share their mountain kingdom with ancient giants, cyclopes, and storm-witches, combining human troops with boulder-throwing giants and earth-air magic."
+    manual_page: 259
+  - name: "Agartha, Pale Ones"
+    slug: "agartha"
+    summary: "One-eyed Pale Ones inhabit the deep earth and underwater caverns, serving ancient Oracles and fielding amphibious troops and enormous sacred Ancient Ones."
+    manual_page: 261
+  - name: "Abysia, Children of Flame"
+    slug: "abysia"
+    summary: "Magma-born humanoids march in very heavy armour with salamanders, radiating heat and practising powerful fire and blood magic in a scorched volcanic realm."
+    manual_page: 263
+  - name: "Hinnom, Sons of the Fallen"
+    slug: "hinnom"
+    summary: "Descendants of fallen angels rule a hierarchy of Rephaite, Avvite, Horite, and Enkidu giants, backed by chariots and unusually broad elemental, astral, and blood magic."
+    manual_page: 265
+  - name: "Ubar, Kingdom of the Unseen"
+    slug: "ubar"
+    summary: "Jinnun and human servants inhabit the hidden desert city of Iram, fielding camel riders, Ghuls, invisible Jinn, and sacred Ifrit warriors under a concealing dominion."
+    manual_page: 267
+  - name: "Ur, The First City"
+    slug: "ur"
+    summary: "Civilised and nomadic Enkidu tribes meet around the First City, with terrain-dependent recruits, strong shamans, and sacred Mushussu dragon-kin."
+    manual_page: 269
+  - name: "Kailasa, Rise of the Ape Kings"
+    slug: "kailasa"
+    summary: "Rare semi-divine Yakshas guide newly civilised apes from sacred Mount Kailasa, relying on numerous light troops and strong astral, nature, and glamour magic."
+    manual_page: 271
+  - name: "Lanka, Land of Demons"
+    slug: "lanka"
+    summary: "Rakshasa demon-ogres have enslaved the apes of Kailasa, combining powerful sacred demons, light monkey troops, reanimated servants, and blood-death magic."
+    manual_page: 272
+  - name: "T'ien Ch'i, Spring and Autumn"
+    slug: "tien-chi"
+    summary: "Before the Celestial Empire, rival nobles wage war across a realm steeped in the magic of the Way, supported by reclusive masters and summoned celestial beings."
+    manual_page: 274
+  - name: "Yomi, Oni Kings"
+    slug: "yomi"
+    summary: "Oni kings emerge from a volcanic entrance to the Netherworld and command demons, Bakemono, and human servants in a harsh land shaped by chaos."
+    manual_page: 276
+  - name: "Caelum, Eagle Kings"
+    slug: "caelum"
+    summary: "Three clans of winged humanoids serve the last Eagle Kings, using skilled archers, cold-forged ice equipment, mammoths, and powerful air magic."
+    manual_page: 277
+  - name: "Mictlan, Reign of Blood"
+    slug: "mictlan"
+    summary: "An isolated tribal empire sustains its dominion through blood sacrifice, sending slave levies and sacred Jaguar and Eagle Warriors into battle under mage-priests."
+    manual_page: 279
+  - name: "Xibalba, Vigil of the Sun"
+    slug: "xibalba"
+    summary: "Swarms of stealthy bat people guard the old paths of the sun beneath Mictlan, relying on flight, numbers, blood hunting, and dark magic."
+    manual_page: 280
+  - name: "C'tis, Lizard Kings"
+    slug: "ctis"
+    summary: "A sacral kingdom of cold-blooded lizardfolk rules a warm river valley with chariots, slave warriors, sacred serpents, and accomplished death and nature mages."
+    manual_page: 282
+  - name: "Machaka, Lion Kings"
+    slug: "machaka"
+    summary: "Totemic clans serve semi-divine Colossi of the Lion Clan, fielding human infantry, poison archers, spider riders, war lions, and elephants."
+    manual_page: 284
+  - name: "Berytos, The Phoenix Empire"
+    slug: "berytos"
+    summary: "A reborn seafaring empire descended from Telkhine-taught colonists is ruled by Colossi sorcerer-queens and prospers through coastal trade, sailing, and wide magical access."
+    manual_page: 286
+  - name: "Vanheim, Age of Vanir"
+    slug: "vanheim"
+    summary: "Glamour-shrouded Vanir sail from misty northern halls with enchanted cavalry, blood priests, and dwarven smiths skilled in air and earth magic."
+    manual_page: 288
+  - name: "Helheim, Dusk and Death"
+    slug: "helheim"
+    summary: "Ancient Vanir who guide the dead rule a shadowed land, where flying Valkyries and elusive cavalry serve masters of death, glamour, and air."
+    manual_page: 289
+  - name: "Rus, Sons of Heaven"
+    slug: "rus"
+    summary: "Humans and mighty Chudes share a cold northern realm, mustering hunters, berserkers, and sacred bear skinshifters beneath mages of air, nature, and fire."
+    manual_page: 291
+  - name: "Niefelheim, Sons of Winter"
+    slug: "niefelheim"
+    summary: "Frost giants descended from primordial Rimtursar lead Jotun infantry and skinshifters from a land of eternal winter, backed by water, blood, and death magic."
+    manual_page: 293
+  - name: "Muspelheim, Sons of Fire"
+    slug: "muspelheim"
+    summary: "Fire giants dwell in an ashen valley among cold-loving Jotuns, joining immense infantry with strong fire, air, death, glamour, and blood magic."
+    manual_page: 294
+  - name: "Pelagia, Pearl Kings"
+    slug: "pelagia"
+    summary: "Ancient Pearl Kings unite aquatic Triton clans with amphibious mermen, building the first deep kingdom around water, astral, and nature magic."
+    manual_page: 296
+  - name: "Oceania, Coming of the Capricorns"
+    slug: "oceania"
+    summary: "Shapechanging half-men and guardians of the kelp forests cross freely between sea and shore, spreading coastal turmoil through nature, water, and glamour magic."
+    manual_page: 298
+  - name: "Therodos, Telkhine Spectre"
+    slug: "therodos"
+    summary: "Ghosts of a drowned kingdom serve Daktyloi smiths and surviving islanders, while its dominion empties living lands and calls more spectral soldiers."
+    manual_page: 299
+  - name: "Atlantis, Emergence of the Deep Ones"
+    slug: "atlantis"
+    summary: "Long-lived amphibious Deep Ones rise from the ocean trenches under Basalt Kings, fighting with heavy basalt weapons and strong earth, water, and fire magic."
+    manual_page: 300
+  - name: "R'lyeh, Time of Aboleths"
+    slug: "rlyeh"
+    summary: "Ancient Aboleth Mind Lords rule the deepest seas by enslaving mermen and Deep Ones, pairing mental domination with powerful astral and water magic."
+    manual_page: 301
+
+middle:
+  - name: "Arcoscephale, The Old Kingdom"
+    slug: "arcoscephale"
+    summary: "An ageing human kingdom preserves archaic armies of hoplites, cavalry, and elephants while returning Astrologers and Mystics rebuild its once-famous magical strength."
+    manual_page: 303
+  - name: "Phlegra, Deformed Giants"
+    slug: "phlegra"
+    summary: "Descendants of Mekone's Gigantes dominate a much larger slave population, relying on deformed giants, human taskmasters, and formidable fire-earth magic."
+    manual_page: 305
+  - name: "Pangaea, Age of Bronze"
+    slug: "pangaea"
+    summary: "Satyrs, centaurs, and minotaurs remain bound to the forests, but bronze weapons and armour now reinforce their sacred warriors and nature mages."
+    manual_page: 306
+  - name: "Asphodel, Carrion Woods"
+    slug: "asphodel"
+    summary: "A corrupted branch of Pangaea turns the forest toward death, raising carrion creatures and undead half-men as its dominion consumes the living population."
+    manual_page: 308
+  - name: "Ermor, Ashen Empire"
+    slug: "ermor"
+    summary: "The old empire has collapsed into an undead catastrophe whose death mages, spectral legions, and lethal dominion replace ordinary recruitment and economy."
+    manual_page: 310
+  - name: "Sceleria, The Reformed Empire"
+    slug: "sceleria"
+    summary: "A human successor to Ermor combines disciplined legionnaires with Thaumaturgs and priests who reanimate large numbers of undead servants."
+    manual_page: 311
+  - name: "Pythium, Emerald Empire"
+    slug: "pythium"
+    summary: "A surviving imperial state fields legionnaires and sacred troops beneath Theurgs whose astral communions preserve the magical traditions that escaped Ermor's fall."
+    manual_page: 313
+  - name: "Man, Tower of Avalon"
+    slug: "man"
+    summary: "A feudal human kingdom built over conquered Tuatha lands, known for longbowmen, knights, Wardens, and the air and nature magic of Avalon."
+    manual_page: 315
+  - name: "Eriu, Last of the Tuatha"
+    slug: "eriu"
+    summary: "The remaining Tuatha and Sidhe live among Fir Bolg and humans after losing their blessed isle, fighting through stealth, glamour, and mobile sacred warriors."
+    manual_page: 317
+  - name: "Agartha, Golem Cult"
+    slug: "agartha"
+    summary: "Humans now dominate the cavern realm while the dwindling Pale Ones and their Oracles support a cult of statues, constructs, and powerful earth magic."
+    manual_page: 319
+  - name: "Ulm, Forges of Ulm"
+    slug: "ulm"
+    summary: "An iron-clad human kingdom turns the Enigma of Steel into massed heavy infantry, crossbows, master smiths, and exceptionally productive fortresses."
+    manual_page: 321
+  - name: "Marignon, Fiery Justice"
+    slug: "marignon"
+    summary: "A militant feudal theocracy sends inquisitors, crossbowmen, knights, and flagellants against heresy under strong fire and astral mages."
+    manual_page: 323
+  - name: "Pyrène, Time of the Akelarre"
+    slug: "pyrene"
+    summary: "Pyrène has become a mountain feudal kingdom where human nobles coexist uneasily with Sorginak witches, Jentilak giants, and the secret gatherings of the Akelarre."
+    manual_page: 325
+  - name: "Abysia, Blood and Fire"
+    slug: "abysia"
+    summary: "The magma-born people retain their heavy infantry and fire immunity while Warlocks and blood priests give the volcanic kingdom an increasingly sinister magical arm."
+    manual_page: 327
+  - name: "Ashdod, Reign of the Anakim"
+    slug: "ashdod"
+    summary: "Degenerated descendants of the Nephilim still tower over other peoples, ruling human subjects with mighty Anakite warriors and broad fire, earth, astral, and blood magic."
+    manual_page: 329
+  - name: "Na'Ba, Queens of the Desert"
+    slug: "naba"
+    summary: "Jiniri queens descended from Ubar rule a desert realm of human soldiers and Jinn, drawing on strong air, fire, and glamour magic."
+    manual_page: 331
+  - name: "Uruk, City States"
+    slug: "uruk"
+    summary: "The Enkidu realm has grown into rival city-states whose urban armies, rural levies, priestesses, and shamans retain strong ties to plains, swamps, and ancient spirits."
+    manual_page: 333
+  - name: "Ind, Magnificent Kingdom of Exalted Virtue"
+    slug: "ind"
+    summary: "A fabulously wealthy sacred kingdom led by the Prester King commands many unusual subject peoples, diverse armies, and an exceptionally influential priesthood."
+    manual_page: 335
+  - name: "Bandar Log, Land of the Apes"
+    slug: "bandar-log"
+    summary: "Civilised apes now rule themselves, combining numerous monkey troops, Bandar warriors, sacred White Ones, elephants, and accomplished astral and nature mages."
+    manual_page: 336
+  - name: "T'ien Ch'i, Imperial Bureaucracy"
+    slug: "tien-chi"
+    summary: "An ancient Celestial Empire supports balanced infantry, cavalry, and archers through an efficient bureaucracy and mages drawn from every elemental path."
+    manual_page: 338
+  - name: "Shinuyama, Land of the Bakemono"
+    slug: "shinuyama"
+    summary: "Bakemono who overthrew their Oni masters have founded a mountain kingdom of goblin armies, skilled smiths, assassins, and powerful sorcerers."
+    manual_page: 340
+  - name: "Caelum, Reign of the Seraphim"
+    slug: "caelum"
+    summary: "Winged clans are united beneath the Seraphim, fielding fast archers, ice-armoured troops, and mammoths under masters of air and water magic."
+    manual_page: 342
+  - name: "Nazca, Kingdom of the Sun"
+    slug: "nazca"
+    summary: "A winged mountain necrocracy venerates its dead Sun Kings, using living and mummified servants alongside strong air, death, and solar magic."
+    manual_page: 344
+  - name: "Mictlan, Reign of the Lawgiver"
+    slug: "mictlan"
+    summary: "The old tribal empire has been reshaped by the Lawgiver, retaining light armies and sacred Jaguar and Eagle Warriors while turning away from its former blood cult."
+    manual_page: 346
+  - name: "Xibalba, Flooded Caves"
+    slug: "xibalba"
+    summary: "Bat people and amphibious Muuch share a realm of flooded caverns, combining flying and aquatic troops with water, death, earth, and blood magic."
+    manual_page: 348
+  - name: "C'tis, Miasma"
+    slug: "ctis"
+    summary: "The lizard kingdom's warm swamps are protected by a supernatural miasma, while Sauromancers lead poison-resistant troops through death and nature magic."
+    manual_page: 350
+  - name: "Machaka, Reign of Sorcerors"
+    slug: "machaka"
+    summary: "A sacral human kingdom ruled by a replaceable priest-king relies on hoplites, archers, spider riders, and feared sorcerers of fire, earth, death, and nature."
+    manual_page: 352
+  - name: "Phaeacia, Isle of the Dark Ships"
+    slug: "phaeacia"
+    summary: "Colossi queens rule a wealthy island whose magical Dark Ships cross the oceans, carrying heavy troops and mages with unusually broad elemental access."
+    manual_page: 354
+  - name: "Vanheim, Arrival of Man"
+    slug: "vanheim"
+    summary: "Humans now form most of Vanheim's population, but the dwindling Vanir still rule through glamour, sailing, enchanted cavalry, and powerful air magic."
+    manual_page: 356
+  - name: "Vanarus, Land of the Chuds"
+    slug: "vanarus"
+    summary: "Vanir influence has reshaped the cold lands of humans and Chudes into a mixed realm of infantry, mounted archers, sacred warriors, and northern sorcery."
+    manual_page: 357
+  - name: "Jotunheim, Iron Woods"
+    slug: "jotunheim"
+    summary: "Jotun giants descended from primordial frost beings rule cold forests with giant infantry, goblin servants, skinshifters, and water, death, nature, and blood magic."
+    manual_page: 359
+  - name: "Nidavangr, Bear, Wolf and Crow"
+    slug: "nidavangr"
+    summary: "Fierce human settlers occupy frozen mountains and moors, fighting as berserkers and skinshifters under smiths, seers, and the old powers of bear, wolf, and crow."
+    manual_page: 361
+  - name: "Ys, Morgen Queens"
+    slug: "ys"
+    summary: "Morgen queens rule the splendid coastal city of Ys, joining Tuatha heritage, amphibious nobles, sacred knights, and strong water and glamour magic."
+    manual_page: 363
+  - name: "Pelagia, Triton Kings"
+    slug: "pelagia"
+    summary: "Triton kings and amphibious mermen defend a mature underwater realm with varied marine infantry and dependable water, astral, and nature magic."
+    manual_page: 365
+  - name: "Oceania, Mermidons"
+    slug: "oceania"
+    summary: "Underwater half-men have lost much of their old domain, but Mermidon warriors and adaptable nature-water mages still defend the remaining kelp forests."
+    manual_page: 367
+  - name: "Atlantis, Kings of the Deep"
+    slug: "atlantis"
+    summary: "After the fall of the Basalt City, amphibious Atlantians rebuild under new kings with heavy infantry and strong water, earth, and death magic."
+    manual_page: 369
+  - name: "R'lyeh, Fallen Star"
+    slug: "rlyeh"
+    summary: "Alien Starspawn from a shattered world rule beneath the sea, enslaving Atlantians and mermen through mind power and overwhelming astral magic."
+    manual_page: 371
+
+late:
+  - name: "Arcoscephale, Sibylline Guidance"
+    slug: "arcoscephale"
+    summary: "A diminished but enduring human kingdom follows the prophecies of Sibyls, fielding archaic infantry, elephants, cavalry, and mages with wide magical access."
+    manual_page: 373
+  - name: "Phlegra, Sleeping Giants"
+    slug: "phlegra"
+    summary: "Human slaves rule themselves while monstrous giants remain imprisoned below, but younger Cyclopes already serve as soldiers and smiths as the old terror begins to return."
+    manual_page: 375
+  - name: "Pangaea, New Era"
+    slug: "pangaea"
+    summary: "The woodland realm has adapted to a changing world, combining minotaurs, centaurs, satyrs, sacred dryads, and heavy centaur cavalry under nature mages."
+    manual_page: 377
+  - name: "Pythium, Serpent Cult"
+    slug: "pythium"
+    summary: "The faded Emerald Empire has embraced a serpent cult, pairing heavy legionnaires, serpent cavalry, gladiators, and sacred hydras with varied but mostly modest magic."
+    manual_page: 378
+  - name: "Lemuria, Soul Gates"
+    slug: "lemuria"
+    summary: "The dead of old Ermor pour through opened Soul Gates, forming an immortal priesthood and spectral legions sustained by a population-killing dominion."
+    manual_page: 380
+  - name: "Man, Towers of Chelms"
+    slug: "man"
+    summary: "A mature feudal kingdom defends its towers with longbowmen, crossbow infantry, knights, and Wardens while learned mages preserve air, earth, and astral traditions."
+    manual_page: 381
+  - name: "Ulm, Black Forest"
+    slug: "ulm"
+    summary: "After civil war and a great malediction, Ulm is ruled from the Black Forest by secret orders, blood mages, and vampires supported by infantry, knights, and ghoul guardians."
+    manual_page: 383
+  - name: "Agartha, Ktonian Dead"
+    slug: "agartha"
+    summary: "The Pale Ones are gone, leaving human cave-dwellers to command their dead Oracles, animated statues, heavy infantry, and powerful earth-death magic."
+    manual_page: 385
+  - name: "Marignon, Conquerors of the Sea"
+    slug: "marignon"
+    summary: "The old theocracy has become a seaborne imperial power whose sailors, crossbows, flagellants, inquisitors, and blood priests carry fiery faith across the oceans."
+    manual_page: 387
+  - name: "Abysia, Blood of Humans"
+    slug: "abysia"
+    summary: "Humanbred descendants now dominate a fading Abysia, retaining fire resistance, disciplined infantry, axe throwers, and the old kingdom's fire and blood magic."
+    manual_page: 389
+  - name: "Ragha, Dual Kingdom"
+    slug: "ragha"
+    summary: "Abysian-descended Turans and winged Airyan refugees share a seasonal monarchy, blending fire and ice, gryphon cavalry, flying troops, and both nations' magical traditions."
+    manual_page: 391
+  - name: "Caelum, Return of the Raptors"
+    slug: "caelum"
+    summary: "The Raptor Clan has returned to prominence among Caelum's winged peoples, bringing earth and death magic to fast archers, ice troops, and mammoths."
+    manual_page: 393
+  - name: "Gath, Last of the Giants"
+    slug: "gath"
+    summary: "The last Gittite giants rule alongside several human tribes, fielding mighty sacred warriors and mages of fire, earth, astral, blood, nature, and death."
+    manual_page: 395
+  - name: "Patala, Reign of the Nagas"
+    slug: "patala"
+    summary: "Naga kings now rule the ape lands, joining sacred amphibious serpent warriors with monkey infantry, missile troops, and strong water, earth, nature, and astral magic."
+    manual_page: 397
+  - name: "T'ien Ch'i, Barbarian Kings"
+    slug: "tien-chi"
+    summary: "Khans have seized a crumbling Celestial Empire, adding cavalry and mounted warfare to its heavy infantry, archers, celestial summons, and broad magical tradition."
+    manual_page: 399
+  - name: "Jomon, Human Daimyos"
+    slug: "jomon"
+    summary: "Human rebels who overthrew Bakemono rule through rival Daimyos, fielding samurai infantry, archers, cavalry, ninja assassins, and many national summons."
+    manual_page: 401
+  - name: "Mictlan, Blood and Rain"
+    slug: "mictlan"
+    summary: "Atlantians have joined Mictlan's rain cult, adding sacred amphibious warriors and water magic to its light troops, blood sacrifices, and Jaguar and Eagle Warriors."
+    manual_page: 403
+  - name: "Xibalba, Return of the Zotz"
+    slug: "xibalba"
+    summary: "The bat people have reclaimed their caverns, mustering swarms of stealthy fliers and a few amphibious Muuch under water, death, earth, and blood mages."
+    manual_page: 405
+  - name: "C'tis, Desert Tombs"
+    slug: "ctis"
+    summary: "The old swamps have become desert and the lizard kingdom now marches with reanimated dead, undead priests, and powerful death and fire magic."
+    manual_page: 407
+  - name: "Midgård, Age of Men"
+    slug: "midgard"
+    summary: "Humans have inherited Vanheim while a few Vanir remain, combining heavy infantry, sailors, skinshifters, berserkers, and masters of air, astral, and blood magic."
+    manual_page: 409
+  - name: "Bogarus, Age of Heroes"
+    slug: "bogarus"
+    summary: "A cold human principality descended from Vanarus fields cavalry, mounted archers, and infantry while its learned mages command an unusually wide range of magic."
+    manual_page: 410
+  - name: "Utgård, Well of Urd"
+    slug: "utgard"
+    summary: "Humans now share the old giant realm with remaining Jotuns, combining giant and human infantry with water, astral, death, glamour, and blood magic."
+    manual_page: 412
+  - name: "Vaettiheim, Wolf Kin Jarldom"
+    slug: "vaettiheim"
+    summary: "Small, stealthy Vaettir have founded their own cold jarldom, riding wolves and serving alongside a few giants under death, glamour, nature, and blood mages."
+    manual_page: 414
+  - name: "Feminie, Sage-Queens"
+    slug: "feminie"
+    summary: "A hidden Amazon queendom freed from Ind fields sacred human infantry and knights beneath sage-queens whose dominion conceals the realm's borders."
+    manual_page: 416
+  - name: "Piconye, Legacy of the Prester King"
+    slug: "piconye"
+    summary: "Small horned people once subject to Ind now defend their own kingdom with Bird Knights, sacred crossbowmen, strong priests, and astral-earth magic."
+    manual_page: 418
+  - name: "Andramania, Dog Republic"
+    slug: "andramania"
+    summary: "Civilised Cynocephalian dog-men have built a disciplined republic whose conscript infantry and crossbowmen fight under mages of fire, astral, nature, and earth."
+    manual_page: 420
+  - name: "Pyrène, Cambion Kings"
+    slug: "pyrene"
+    summary: "Cambion dynasties rule a feudal mountain kingdom of cave-descended humans, crossbowmen, knights, and sacred demon cavalry supported by blood and glamour magic."
+    manual_page: 422
+  - name: "Erytheia, Kingdom of Two Worlds"
+    slug: "erytheia"
+    summary: "A marriage between Pelagian and Arcoscephalian colonies created a realm spanning land and sea, with amphibious mermen, Tritons, humans, and broad elemental magic."
+    manual_page: 424
+  - name: "Atlantis, Frozen Sea"
+    slug: "atlantis"
+    summary: "Exiled Atlantians have settled an icy coast, becoming ocean-sailing amphibians armed with magical ice polearms and supported by water and death magic."
+    manual_page: 426
+  - name: "R'lyeh, Dreamlands"
+    slug: "rlyeh"
+    summary: "Alien Starspawn and Illithids rule an underwater slave empire of Atlantians, hybrids, and summoned Void beings, spreading insanity through astral and dream magic."
+    manual_page: 428

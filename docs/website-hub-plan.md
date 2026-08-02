@@ -2,12 +2,12 @@
 
 ## Durable save point
 
-- Baseline commit: `d2d24a6c47cde6152b2f23801768131100c8c034`
+- Corrected baseline commit: `909b2372bc5ebf4ef88d941b142044dfe15a61f9`
 - Recovery branch: `archive/pre-hub-v2-2026-07-23`
-- Foundation branch: `agent/hub-v2-foundation`
+- Foundation merge: `027e4b8e6cc3123ef72c133b5de754e0f912b75a`
 - Save-point date: 23 July 2026
 
-The recovery branch preserves the site exactly as it existed before the hub overhaul. It should remain unchanged until the new foundation has been accepted.
+The recovery branch records the site exactly as it existed before the hub overhaul. Its history was rewritten on 28 July 2026 to correct two malformed author emails; the website files did not change.
 
 ## Intended navigation
 
@@ -49,7 +49,7 @@ Every guide should include its scope, supported version or mod context, update d
 
 ### Content pass
 
-1. Verify and expand Dominions guides.
+1. Expand Dominions reference pages from Illwinter's official manuals. The three-age catalogue and starting-game guide were added on 2 August 2026.
 2. Publish the complete StalkerNet release history.
 3. Record the Minecraft Forge modpack and installation process.
 4. Add safe public D&D campaign and character material.
@@ -70,4 +70,3 @@ Every guide should include its scope, supported version or mod context, update d
 - Keep public player material separate from unrevealed GM notes.
 - Mark modded Dominions advice separately from the unmodded game.
 - Keep a confirmed rollback point for StalkerNet and other versioned projects.
-

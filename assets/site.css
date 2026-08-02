@@ -730,6 +730,92 @@ h3 {
   border-top: 1px solid var(--line-soft);
 }
 
+.age-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.age-card {
+  display: flex;
+  min-height: 310px;
+  flex-direction: column;
+  padding: 1.4rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(155deg, var(--surface-raised), var(--surface));
+  text-decoration: none !important;
+}
+
+.age-card:hover {
+  border-color: rgba(214, 167, 86, 0.55);
+  transform: translateY(-2px);
+  transition: transform 160ms ease, border-color 160ms ease;
+}
+
+.age-card h3 {
+  margin: 2.5rem 0 0.75rem;
+  color: var(--text);
+  font: 600 clamp(1.5rem, 3vw, 2rem)/1.15 Georgia, "Times New Roman", serif;
+}
+
+.age-card p {
+  flex: 1;
+  color: var(--muted);
+}
+
+.age-card strong {
+  color: var(--gold-bright);
+}
+
+.age-number {
+  color: var(--gold);
+  font: 700 0.75rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.nation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.nation-card {
+  display: flex;
+  min-height: 260px;
+  flex-direction: column;
+  padding: 1.3rem;
+  scroll-margin-top: 100px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+}
+
+.content .nation-card h2 {
+  margin: 0 0 0.75rem;
+  font: 600 1.45rem/1.2 Georgia, "Times New Roman", serif;
+  letter-spacing: -0.015em;
+}
+
+.nation-card p {
+  flex: 1;
+  margin-bottom: 1.2rem;
+}
+
+.content .nation-source {
+  width: fit-content;
+  color: var(--quiet);
+  font-size: 0.78rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.content .nation-source:hover {
+  color: var(--gold-bright);
+  text-decoration: underline;
+}
+
 .site-footer {
   border-top: 1px solid var(--line);
   background: var(--bg-deep);
@@ -820,6 +906,10 @@ h3 {
   .feature-grid {
     grid-template-columns: 1fr;
   }
+
+  .age-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 650px) {
@@ -833,6 +923,10 @@ h3 {
 
   .project-card {
     min-height: 300px;
+  }
+
+  .nation-grid {
+    grid-template-columns: 1fr;
   }
 
   .section-heading {

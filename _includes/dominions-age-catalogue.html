@@ -1,0 +1,54 @@
+{% assign nations = site.data.dominions_nations[page.age_key] %}
+<section class="page-hero">
+  <div class="shell">
+    <div class="breadcrumbs">
+      <a href="{{ '/projects/' | relative_url }}">Projects</a>
+      <span aria-hidden="true">/</span>
+      <a href="{{ '/dominions/' | relative_url }}">Dominions 6</a>
+      <span aria-hidden="true">/</span>
+      <a href="{{ '/dominions/nations/' | relative_url }}">Nations</a>
+      <span aria-hidden="true">/</span>
+      <span>{{ page.age_label }}</span>
+    </div>
+    <p class="eyebrow">Nation catalogue</p>
+    <h1>{{ page.age_label }}</h1>
+    <p class="lead">{{ page.age_intro }}</p>
+    <div class="meta-row">
+      <span class="status status--stable">Official manual</span>
+      <span class="meta-chip">{{ nations.size }} nations</span>
+      <span class="meta-chip">Manual revision 2</span>
+      <span class="meta-chip">Updated 2 August 2026</span>
+    </div>
+  </div>
+</section>
+
+<section class="section shell">
+  <div class="content-grid">
+    <article class="content">
+      <div class="notice">
+        <p><strong>About the summaries:</strong> nation names and page references follow Illwinter's official <a href="https://www.illwinter.com/dom6/dom6manual.pdf">Dominions 6 manual</a>. Each description is a short paraphrase of the corresponding nation introduction.</p>
+      </div>
+
+      <div class="nation-grid" id="nations">
+        {% for nation in nations %}
+          <article class="nation-card" id="{{ nation.slug }}">
+            <h2>{{ nation.name }}</h2>
+            <p>{{ nation.summary }}</p>
+            <a class="nation-source" href="https://www.illwinter.com/dom6/dom6manual.pdf#page={{ nation.manual_page }}">Official manual, page {{ nation.manual_page }}</a>
+          </article>
+        {% endfor %}
+      </div>
+    </article>
+
+    <aside class="sidebar">
+      <h2>Dominions ages</h2>
+      <nav>
+        <a href="{{ '/dominions/nations/early-age/' | relative_url }}">Early Age</a>
+        <a href="{{ '/dominions/nations/middle-age/' | relative_url }}">Middle Age</a>
+        <a href="{{ '/dominions/nations/late-age/' | relative_url }}">Late Age</a>
+        <a href="{{ '/dominions/nations/' | relative_url }}">All ages</a>
+        <a href="{{ '/dominions/' | relative_url }}">Dominions hub</a>
+      </nav>
+    </aside>
+  </div>
+</section>
