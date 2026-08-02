@@ -10,6 +10,12 @@
   url: /dominions/guides/first-game-and-hosting/
   type: Guide
 
+- date: 2 August 2026
+  title: Middle Age research builds expanded
+  description: Breakpoint planning, six build families, mage-turn accounting, MA Arcoscephale, and mod adaptation.
+  url: /dominions/guides/middle-age-research-builds/
+  type: Guide
+
 - date: 23 July 2026
   title: TheHoboKingdom hub foundation
   description: Unified navigation, project directory, guide index, and reliable folder-based routes.
@@ -21,9 +27,3 @@
   description: The stable v4.3.6 baseline and current feature set now have a permanent home.
   url: /stalker/stalkernet/
   type: Project
-
-- date: 23 July 2026
-  title: Dominions research guide updated
-  description: The Middle Age research notes now have a permanent place in the guide structure.
-  url: /dominions/guides/middle-age-research-builds/
-  type: Guide
