@@ -1,0 +1,3081 @@
+---
+title: "Foundation Book V: Magic"
+description: "Research planning, paths, gems, rituals, forging, communions, blood magic, globals, and magical logistics."
+nav_section: guides
+extra_css: /assets/dominions-library.css
+extra_js: /assets/dominions-library.js
+og_image: /assets/images/dominions-6-library-edition-24.png
+---
+
+<section class="page-hero library-page-hero">
+  <div class="shell">
+    <div class="breadcrumbs">
+      <a href="/dominions/">Dominions 6</a><span aria-hidden="true">/</span>
+      <a href="/dominions/library/">Knowledge Library</a><span aria-hidden="true">/</span>
+      <span>Foundation Book V</span>
+    </div>
+    <p class="eyebrow">Progress Edition 24</p>
+    <h1>Foundation Book V: Magic</h1>
+    <p class="lead">Research planning, paths, gems, rituals, forging, communions, blood magic, globals, and magical logistics.</p>
+    <div class="meta-row">
+      <span class="status status--stable">Published reference</span>
+      <span class="meta-chip">Dominions 6.36</span>
+      <span class="meta-chip">15,306 words</span>
+      <span class="meta-chip">198 sections</span>
+    </div>
+  </div>
+</section>
+
+<section class="section shell library-section">
+  <details class="library-mobile-toc">
+    <summary>Table of contents</summary>
+    <nav><a href="#b5-what-magic-asks-of-a-nation">What magic asks of a nation</a>
+<a href="#b5-edition-note">Edition note</a>
+<a href="#b5-current-version-corrections-that-matter">Current-version corrections that matter</a>
+<a href="#b5-ways-into-the-book">Ways into the book</a>
+<a href="#b5-the-complete-chain">The complete chain</a>
+<a href="#b5-six-magical-resources">Six magical resources</a>
+<a href="#b5-stock-flow-and-capacity">Stock, flow, and capacity</a>
+<a href="#b5-the-three-horizons">The three horizons</a>
+<a href="#b5-the-nine-paths">The nine paths</a>
+<a href="#b5-the-seven-schools">The seven schools</a>
+<a href="#b5-the-three-access-gates">The three access gates</a>
+<a href="#b5-primary-and-secondary-paths">Primary and secondary paths</a>
+<a href="#b5-excess-skill">Excess skill</a>
+<a href="#b5-acquiring-and-increasing-paths">Acquiring and increasing paths</a>
+<a href="#b5-empowerment-costs">Empowerment costs</a>
+<a href="#b5-indirect-magic">Indirect magic</a>
+<a href="#b5-the-research-formula">The research formula</a>
+<a href="#b5-research-resolves-early">Research resolves early</a>
+<a href="#b5-research-is-a-queue-of-responses">Research is a queue of responses</a>
+<a href="#b5-breakpoints-not-school-completion">Breakpoints, not school completion</a>
+<a href="#b5-research-portfolios">Research portfolios</a>
+<a href="#b5-research-efficiency">Research efficiency</a>
+<a href="#b5-mage-turn-accounting">Mage-turn accounting</a>
+<a href="#b5-legendary-research">Legendary research</a>
+<a href="#b5-research-audit">Research audit</a>
+<a href="#b5-gem-production">Gem production</a>
+<a href="#b5-blood-slaves">Blood slaves</a>
+<a href="#b5-pooling-and-distribution">Pooling and distribution</a>
+<a href="#b5-combat-gem-rules">Combat gem rules</a>
+<a href="#b5-a-battle-gem-budget">A battle-gem budget</a>
+<a href="#b5-gems-as-fatigue-control">Gems as fatigue control</a>
+<a href="#b5-alchemy">Alchemy</a>
+<a href="#b5-gem-valuation">Gem valuation</a>
+<a href="#b5-reserve-doctrine">Reserve doctrine</a>
+<a href="#b5-spell-classes-by-battlefield-job">Spell classes by battlefield job</a>
+<a href="#b5-the-battle-resolution-boundary">The battle-resolution boundary</a>
+<a href="#b5-scripting-and-spell-ai">Scripting and spell AI</a>
+<a href="#b5-battlefield-package-worksheet">Battlefield package worksheet</a>
+<a href="#b5-how-to-read-a-path">How to read a path</a>
+<a href="#b5-fire">Fire</a>
+<a href="#b5-air">Air</a>
+<a href="#b5-water">Water</a>
+<a href="#b5-earth">Earth</a>
+<a href="#b5-astral">Astral</a>
+<a href="#b5-death">Death</a>
+<a href="#b5-nature">Nature</a>
+<a href="#b5-glamour">Glamour</a>
+<a href="#b5-blood">Blood</a>
+<a href="#b5-cross-path-architecture">Cross-path architecture</a>
+<a href="#b5-what-a-battlefield-communion-does">What a battlefield communion does</a>
+<a href="#b5-the-level-bonus">The level bonus</a>
+<a href="#b5-participants-in-one-spell">Participants in one spell</a>
+<a href="#b5-base-fatigue-distribution">Base fatigue distribution</a>
+<a href="#b5-worked-comparison">Worked comparison</a>
+<a href="#b5-master-count-and-slave-load">Master count and slave load</a>
+<a href="#b5-slaves-cannot-act">Slaves cannot act</a>
+<a href="#b5-shared-personal-buffs">Shared personal buffs</a>
+<a href="#b5-collapse">Collapse</a>
+<a href="#b5-automatic-participation">Automatic participation</a>
+<a href="#b5-the-three-battlefield-types">The three battlefield types</a>
+<a href="#b5-designing-a-safe-communion">Designing a safe communion</a>
+<a href="#b5-common-communion-failures">Common communion failures</a>
+<a href="#b5-grand-communions-are-different">Grand Communions are different</a>
+<a href="#b5-communion-audit">Communion audit</a>
+<a href="#b5-ritual-fundamentals">Ritual fundamentals</a>
+<a href="#b5-hosting-position">Hosting position</a>
+<a href="#b5-ritual-order-is-random">Ritual order is random</a>
+<a href="#b5-range-and-legality">Range and legality</a>
+<a href="#b5-local-enchantments">Local enchantments</a>
+<a href="#b5-anonymous-and-limited-rituals">Anonymous and limited rituals</a>
+<a href="#b5-ritual-categories">Ritual categories</a>
+<a href="#b5-site-search-rituals">Site-search rituals</a>
+<a href="#b5-summoning">Summoning</a>
+<a href="#b5-remote-attacks">Remote attacks</a>
+<a href="#b5-magic-movement">Magic movement</a>
+<a href="#b5-repeat-ritual-discipline">Repeat-ritual discipline</a>
+<a href="#b5-what-a-dome-protects">What a dome protects</a>
+<a href="#b5-major-manual-examples">Major manual examples</a>
+<a href="#b5-layering-domes">Layering domes</a>
+<a href="#b5-dome-strategy">Dome strategy</a>
+<a href="#b5-remote-defence-audit">Remote-defence audit</a>
+<a href="#b5-global-slots">Global slots</a>
+<a href="#b5-casting-cases">Casting cases</a>
+<a href="#b5-overcasting">Overcasting</a>
+<a href="#b5-dispel">Dispel</a>
+<a href="#b5-caster-dependency">Caster dependency</a>
+<a href="#b5-protection-against-globals">Protection against globals</a>
+<a href="#b5-global-categories">Global categories</a>
+<a href="#b5-selected-strategic-examples">Selected strategic examples</a>
+<a href="#b5-payback">Payback</a>
+<a href="#b5-global-diplomacy">Global diplomacy</a>
+<a href="#b5-global-war-audit">Global-war audit</a>
+<a href="#b5-forging-requirements">Forging requirements</a>
+<a href="#b5-construction-tiers">Construction tiers</a>
+<a href="#b5-base-item-cost-by-path-requirement">Base item cost by path requirement</a>
+<a href="#b5-item-value">Item value</a>
+<a href="#b5-slots-and-package-conflicts">Slots and package conflicts</a>
+<a href="#b5-national-items">National items</a>
+<a href="#b5-forge-bonuses">Forge bonuses</a>
+<a href="#b5-forge-of-the-ancients">Forge of the Ancients</a>
+<a href="#b5-artifacts">Artifacts</a>
+<a href="#b5-yearning">Yearning</a>
+<a href="#b5-booster-reference">Booster reference</a>
+<a href="#b5-booster-ladders">Booster ladders</a>
+<a href="#b5-forge-queue">Forge queue</a>
+<a href="#b5-national-access-is-a-distribution">National access is a distribution</a>
+<a href="#b5-the-access-graph">The access graph</a>
+<a href="#b5-probability-of-random-access">Probability of random access</a>
+<a href="#b5-access-quality">Access quality</a>
+<a href="#b5-empowerment-as-a-bridge">Empowerment as a bridge</a>
+<a href="#b5-pretender-as-access">Pretender as access</a>
+<a href="#b5-trading-and-diplomacy">Trading and diplomacy</a>
+<a href="#b5-hidden-costs-of-path-escalation">Hidden costs of path escalation</a>
+<a href="#b5-the-level-nine-decision">The level-nine decision</a>
+<a href="#b5-wish">Wish</a>
+<a href="#b5-nexus-gate">Nexus Gate</a>
+<a href="#b5-tartarian-gate">Tartarian Gate</a>
+<a href="#b5-arcane-nexus">Arcane Nexus</a>
+<a href="#b5-utterdark">Utterdark</a>
+<a href="#b5-gift-of-natures-bounty">Gift of Nature’s Bounty</a>
+<a href="#b5-astral-corruption">Astral Corruption</a>
+<a href="#b5-cataclysm-and-slot-disruption">Cataclysm and slot disruption</a>
+<a href="#b5-late-game-transition">Late-game transition</a>
+<a href="#b5-counter-the-chain">Counter the chain</a>
+<a href="#b5-counter-layers">Counter layers</a>
+<a href="#b5-resistance-is-not-a-complete-counter">Resistance is not a complete counter</a>
+<a href="#b5-attack-timing">Attack timing</a>
+<a href="#b5-targeting-the-organisation">Targeting the organisation</a>
+<a href="#b5-gem-denial">Gem denial</a>
+<a href="#b5-counter-counter-planning">Counter-counter planning</a>
+<a href="#b5-keep-the-engine-and-object-layers-separate">Keep the engine and object layers separate</a>
+<a href="#b5-resolving-modded-magic">Resolving modded magic</a>
+<a href="#b5-test-standard">Test standard</a>
+<a href="#b5-test-1-research-arithmetic">Test 1: Research arithmetic</a>
+<a href="#b5-test-2-research-hosting-timing">Test 2: Research hosting timing</a>
+<a href="#b5-test-3-combat-gem-spending">Test 3: Combat gem spending</a>
+<a href="#b5-test-4-spell-fatigue-rounding">Test 4: Spell-fatigue rounding</a>
+<a href="#b5-test-5-penetration">Test 5: Penetration</a>
+<a href="#b5-test-6-communion-thresholds">Test 6: Communion thresholds</a>
+<a href="#b5-test-7-communion-fatigue">Test 7: Communion fatigue</a>
+<a href="#b5-test-8-communion-self-buffs">Test 8: Communion self-buffs</a>
+<a href="#b5-test-9-communion-collapse">Test 9: Communion collapse</a>
+<a href="#b5-test-10-automatic-communion-items">Test 10: Automatic communion items</a>
+<a href="#b5-test-11-ritual-order">Test 11: Ritual order</a>
+<a href="#b5-test-12-dome-interaction">Test 12: Dome interaction</a>
+<a href="#b5-test-13-global-contest">Test 13: Global contest</a>
+<a href="#b5-test-14-forge-cost-stacking">Test 14: Forge-cost stacking</a>
+<a href="#b5-test-15-booster-access">Test 15: Booster access</a>
+<a href="#b5-test-16-artifact-race-and-yearning">Test 16: Artifact race and yearning</a>
+<a href="#b5-test-17-legendary-research">Test 17: Legendary research</a>
+<a href="#b5-test-18-wish">Test 18: Wish</a>
+<a href="#b5-test-19-indoor-magic">Test 19: Indoor magic</a>
+<a href="#b5-test-20-combined-mod-regression">Test 20: Combined-mod regression</a>
+<a href="#b5-first-magic-audit">First magic audit</a>
+<a href="#b5-research-turn-checklist">Research-turn checklist</a>
+<a href="#b5-battle-magic-checklist">Battle-magic checklist</a>
+<a href="#b5-ritual-checklist">Ritual checklist</a>
+<a href="#b5-forging-checklist">Forging checklist</a>
+<a href="#b5-global-checklist">Global checklist</a>
+<a href="#b5-post-battle-magic-audit">Post-battle magic audit</a>
+<a href="#b5-essay-i-research-as-a-response-tree">Essay I: Research as a Response Tree</a>
+<a href="#b5-essay-ii-gems-as-stored-time">Essay II: Gems as Stored Time</a>
+<a href="#b5-essay-iii-from-mage-to-army">Essay III: From Mage to Army</a>
+<a href="#b5-essay-iv-communions-without-myths">Essay IV: Communions Without Myths</a>
+<a href="#b5-essay-v-rituals-and-geopolitics">Essay V: Rituals and Geopolitics</a>
+<a href="#b5-essay-vi-globals-as-political-economy">Essay VI: Globals as Political Economy</a>
+<a href="#b5-essay-vii-the-level-nine-decision">Essay VII: The Level-Nine Decision</a>
+<a href="#b5-principal-sources">Principal sources</a>
+<a href="#b5-open-questions">Open questions</a></nav>
+  </details>
+  <div class="library-reader-grid">
+    <article class="content library-prose">
+{% raw %}
+<h1 id="b5-foundation-book-v-magic">Foundation Book V: Magic<a class="heading-link" href="#b5-foundation-book-v-magic" aria-label="Link to Foundation Book V: Magic">#</a></h1><h2 id="b5-what-magic-asks-of-a-nation">What magic asks of a nation<a class="heading-link" href="#b5-what-magic-asks-of-a-nation" aria-label="Link to What magic asks of a nation">#</a></h2><p>Magic is the system by which Dominions turns knowledge into force. Research changes what a nation can attempt. Paths determine who can attempt it. Gems, blood slaves, laboratories, turns, and mage actions determine whether the attempt is affordable. Formation, timing, fatigue, targets, resistance, and counters determine whether it works.</p>
+<blockquote>
+<p><strong>Foundation rule:</strong> Magic is not a list of powerful spells. It is a conversion chain from mage-turns and magical income into effects delivered at the right place and time.</p>
+</blockquote>
+<p>Book V follows that chain from research and path access through gems, battlefield packages, communions, rituals, globals, forging, and late-game magic. It is meant to answer both the beginner&#39;s question—&quot;What can this mage actually do?&quot;—and the harder one: &quot;Can the nation deliver that effect repeatedly, in time, and against resistance?&quot;</p>
+<h2 id="b5-edition-note">Edition note<a class="heading-link" href="#b5-edition-note" aria-label="Link to Edition note">#</a></h2><p>Book I defines the common baseline and evidence labels. Book IV owns the arithmetic of battlefield resolution. Book V uses those results to deal with magical planning, while Book IX catalogues exact spell, item, site, and mage changes in the active mods.</p>
+<h2 id="b5-current-version-corrections-that-matter">Current-version corrections that matter<a class="heading-link" href="#b5-current-version-corrections-that-matter" aria-label="Link to Current-version corrections that matter">#</a></h2><p>The printed manual remains the structural baseline, but current play must include later official changes:</p>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Current rule or correction</th>
+<th>Practical consequence</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>6.25</td>
+<td>Battlefield-wide spells cannot normally be cast indoors; holy spells are excepted</td>
+<td>Fort interiors and many assassination fields need separate scripts</td>
+</tr>
+<tr>
+<td>6.29</td>
+<td>Several spell, item, ritual, and nation-specific errors were corrected</td>
+<td>Old object data must not be treated as current merely because the engine formula is unchanged</td>
+</tr>
+<tr>
+<td>6.30</td>
+<td>Communion masters using conservative gem use no longer attempt inappropriate higher-level spells</td>
+<td>Old reports of this spell-AI failure are historical</td>
+</tr>
+<tr>
+<td>6.32</td>
+<td>Spell AI became less likely to cast invisibility late in battle; several remote and single-target choices were improved</td>
+<td>Script fallbacks and unscripted casting should be assessed on the current version</td>
+</tr>
+<tr>
+<td>6.34</td>
+<td>Domes can protect against Astral Disruption; ritual messages and several spell-AI choices were corrected</td>
+<td>Strategic magic defence and report interpretation changed</td>
+</tr>
+<tr>
+<td>6.35</td>
+<td>Innate spellcasters resume their scripts after recovering from unconsciousness</td>
+<td>Current innate-caster scripts are more reliable than older replays imply</td>
+</tr>
+</tbody></table>
+<p>Patch notes contain many object-specific balance changes. A current spell dossier needs current game data as well as the manual’s rule text. This foundation preserves the rules needed to make sense of those objects.</p>
+<h2 id="b5-ways-into-the-book">Ways into the book<a class="heading-link" href="#b5-ways-into-the-book" aria-label="Link to Ways into the book">#</a></h2><p>The shortest route runs through the conversion chain, paths and schools, research, gems, battlefield jobs, rituals, forging, and the first magic audit. Communions, domes, global contests, booster ladders, counter construction, and legendary spells can be added as the national game develops. The controlled tests are kept for questions that genuinely depend on hidden AI choices, rounding, or version-sensitive interactions.</p>
+<h1 id="b5-part-i-magic-as-a-conversion-system">Part I: Magic as a Conversion System<a class="heading-link" href="#b5-part-i-magic-as-a-conversion-system" aria-label="Link to Part I: Magic as a Conversion System">#</a></h1><h2 id="b5-the-complete-chain">The complete chain<a class="heading-link" href="#b5-the-complete-chain" aria-label="Link to The complete chain">#</a></h2><p>A magical effect normally depends on every link below:</p>
+<pre><code class="language-text">mage recruitment
+-&gt; laboratory access
+-&gt; mage-turns assigned to research
+-&gt; required school level
+-&gt; required path access
+-&gt; gems, slaves, or items
+-&gt; a legal order or battle script
+-&gt; survival, range, target, and timing
+-&gt; penetration, damage, or control
+-&gt; strategic exploitation
+</code></pre>
+<p>A broken link invalidates the rest. Researching a decisive spell without a caster is stored knowledge without delivery. Forging a booster without the path needed to wear it is dead capital. Sending the correct mage without gems can reduce a battle plan to ordinary AI casting. Winning the resistance check after the line has routed is too late.</p>
+<h2 id="b5-six-magical-resources">Six magical resources<a class="heading-link" href="#b5-six-magical-resources" aria-label="Link to Six magical resources">#</a></h2><p>Magic is paid for with more than gems:</p>
+<table>
+<thead>
+<tr>
+<th>Resource</th>
+<th>What it purchases</th>
+<th>Common failure</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Research points</td>
+<td>Access to schools and spells</td>
+<td>Researching attractive levels with no operational deadline</td>
+</tr>
+<tr>
+<td>Mage-turns</td>
+<td>Research, rituals, forging, site searching, movement, and combat</td>
+<td>Counting one mage as if all roles can be performed simultaneously</td>
+</tr>
+<tr>
+<td>Paths</td>
+<td>Eligibility, efficiency, range of effects, and forging access</td>
+<td>Confusing national theoretical access with repeatable field access</td>
+</tr>
+<tr>
+<td>Gems or slaves</td>
+<td>Rituals, items, combat boosts, fatigue relief, and some summons</td>
+<td>Treating the treasury as income rather than a finite stock</td>
+</tr>
+<tr>
+<td>Laboratories</td>
+<td>Research, rituals, forging, pooling, and logistics</td>
+<td>Losing the network that turns sites and mages into national power</td>
+</tr>
+<tr>
+<td>Time and position</td>
+<td>Delivery before the strategic window closes</td>
+<td>Finishing research after the war has already been decided</td>
+</tr>
+</tbody></table>
+<p>The strongest magical economy is not always the one with the most gems. It is the one that can turn its available paths, researchers, laboratories, and stocks into the required effects with the fewest broken dependencies.</p>
+<h2 id="b5-stock-flow-and-capacity">Stock, flow, and capacity<a class="heading-link" href="#b5-stock-flow-and-capacity" aria-label="Link to Stock, flow, and capacity">#</a></h2><p>The library’s economic model applies directly:</p>
+<ul>
+<li><strong>Stock:</strong> current gems, slaves, forged items, accumulated research, and prepared casters.</li>
+<li><strong>Flow:</strong> monthly gem income, blood-hunting output, research points, and repeatable summon production.</li>
+<li><strong>Capacity:</strong> laboratories, mage recruitment, path distribution, forge access, communion bodies, and ritual range.</li>
+<li><strong>Position:</strong> where mages, labs, gems, armies, and legal targets are located.</li>
+</ul>
+<p>Research is cumulative stock generated by a flow of mage-turns. A booster is stored path access. A global is a large stock expenditure converted into an ongoing flow or worldwide rule. A battle gem converts stock into immediate tempo.</p>
+<h2 id="b5-the-three-horizons">The three horizons<a class="heading-link" href="#b5-the-three-horizons" aria-label="Link to The three horizons">#</a></h2><p>Every research or forging decision belongs to a horizon:</p>
+<table>
+<thead>
+<tr>
+<th>Horizon</th>
+<th>Typical question</th>
+<th>Planning standard</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Immediate</td>
+<td>What can prevent defeat this turn or next?</td>
+<td>Legal casters, carried gems, exact scripts, and battlefield timing</td>
+</tr>
+<tr>
+<td>Campaign</td>
+<td>What wins the next war or siege cycle?</td>
+<td>Research breakpoint, item queue, summon mass, and lab movement</td>
+</tr>
+<tr>
+<td>Strategic</td>
+<td>What changes the nation’s path access or world position?</td>
+<td>Boosters, globals, remote movement, legendary spells, and unique artifacts</td>
+</tr>
+</tbody></table>
+<p>The common error is buying strategic possibility while losing the immediate war. The opposite error is repeatedly spending gems on emergency combat without building the research and access that end the emergency.</p>
+<h1 id="b5-part-ii-paths-schools-and-access">Part II: Paths, Schools, and Access<a class="heading-link" href="#b5-part-ii-paths-schools-and-access" aria-label="Link to Part II: Paths, Schools, and Access">#</a></h1><h2 id="b5-the-nine-paths">The nine paths<a class="heading-link" href="#b5-the-nine-paths" aria-label="Link to The nine paths">#</a></h2><p>Dominions has nine ordinary paths of magical power:</p>
+<table>
+<thead>
+<tr>
+<th>Family</th>
+<th>Path</th>
+<th>Broad tendencies</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Elemental</td>
+<td>Fire</td>
+<td>Heat, burning, direct damage, offensive enhancement, destructive globals</td>
+</tr>
+<tr>
+<td>Elemental</td>
+<td>Air</td>
+<td>Lightning, storms, flight, precision, mobility, battlefield reach</td>
+</tr>
+<tr>
+<td>Elemental</td>
+<td>Water</td>
+<td>Cold, quickness, underwater power, frost, fluid defence</td>
+</tr>
+<tr>
+<td>Elemental</td>
+<td>Earth</td>
+<td>Protection, strength, fatigue control, constructs, forging</td>
+</tr>
+<tr>
+<td>Sorcery</td>
+<td>Astral</td>
+<td>Resistance contests, communions, teleportation, information, global control</td>
+</tr>
+<tr>
+<td>Sorcery</td>
+<td>Death</td>
+<td>Undead, decay, fear, souls, attrition, powerful summons</td>
+</tr>
+<tr>
+<td>Sorcery</td>
+<td>Nature</td>
+<td>Life, poison, regeneration, animals, plants, supply, growth</td>
+</tr>
+<tr>
+<td>Sorcery</td>
+<td>Glamour</td>
+<td>Illusion, false damage, concealment, bewilderment, perception</td>
+</tr>
+<tr>
+<td>Neither</td>
+<td>Blood</td>
+<td>Blood slaves, sacrifice, demons, Sabbaths, corruption, high action cost</td>
+</tr>
+</tbody></table>
+<p>This table describes tendencies, not hard borders. Schools are thematic rather than perfectly rigorous, national spells break general expectations, and multi-path requirements deliberately combine toolsets.</p>
+<p>Holy is separate. Divine spells depend on Holy skill rather than ordinary paths and research. Common divine magic is available from the beginning. Some Banishment and Smite replacements are determined by the Pretender’s paths, as detailed in Book III.</p>
+<span class="anchor-alias" id="b5-research-schools" aria-hidden="true"></span><h2 id="b5-the-seven-schools">The seven schools<a class="heading-link" href="#b5-the-seven-schools" aria-label="Link to The seven schools">#</a></h2><table>
+<thead>
+<tr>
+<th>School</th>
+<th>Central study</th>
+<th>Frequent output</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Conjuration</td>
+<td>Bringing beings or powers into the world</td>
+<td>Summons, elemental or otherworldly forces, some searches</td>
+</tr>
+<tr>
+<td>Alteration</td>
+<td>Changing physical properties and conditions</td>
+<td>Protection, strength, resistance, weather, transformation</td>
+</tr>
+<tr>
+<td>Evocation</td>
+<td>Projecting magical force</td>
+<td>Direct battle damage, area attacks, battlefield destruction</td>
+</tr>
+<tr>
+<td>Construction</td>
+<td>Making items and artificial beings</td>
+<td>Equipment, boosters, matrices, constructs, artifacts</td>
+</tr>
+<tr>
+<td>Enchantment</td>
+<td>Imbuing units, objects, land, or the world</td>
+<td>Persistent buffs, domes, globals, battlefield enchantments</td>
+</tr>
+<tr>
+<td>Thaumaturgy</td>
+<td>Manipulating minds, souls, information, and space</td>
+<td>Resistance-based control, remote vision, movement, sorcery</td>
+</tr>
+<tr>
+<td>Blood Magic</td>
+<td>Unlocking spells that use Blood magic</td>
+<td>Demons, Sabbaths, sacrifice, blood rituals, world corruption</td>
+</tr>
+</tbody></table>
+<p>The Blood school is not the Blood path. The school is a research category; the path is a caster statistic. A spell can sit in Blood Magic and have multi-path requirements.</p>
+<h2 id="b5-the-three-access-gates">The three access gates<a class="heading-link" href="#b5-the-three-access-gates" aria-label="Link to The three access gates">#</a></h2><p>A mage can cast a spell only when:</p>
+<ol>
+<li>the nation has researched the spell’s school to the required level;</li>
+<li>the mage meets every listed path requirement;</li>
+<li>any required gems or blood slaves are available in the correct place.</li>
+</ol>
+<p>Battle spells require carried resources before battle. Rituals draw automatically from the national treasury but require a friendly laboratory. Research level alone never grants a path to a mage.</p>
+<h2 id="b5-primary-and-secondary-paths">Primary and secondary paths<a class="heading-link" href="#b5-primary-and-secondary-paths" aria-label="Link to Primary and secondary paths">#</a></h2><p>Multi-path spells require every listed path. The first listed path is the <strong>primary path</strong>:</p>
+<ul>
+<li>only excess skill in the primary path improves the ordinary spell-fatigue divisor;</li>
+<li>resistance penetration uses excess skill in the spell path identified by the rule;</li>
+<li>dual-path spells and rituals consume gems of the primary path unless the spell specifies otherwise;</li>
+<li>forging a multi-path item charges each required gem type.</li>
+</ul>
+<p>This makes ordering consequential. Two requirements with the same numbers are not necessarily interchangeable if the primary path differs.</p>
+<h2 id="b5-excess-skill">Excess skill<a class="heading-link" href="#b5-excess-skill" aria-label="Link to Excess skill">#</a></h2><p>Having more skill than the minimum can:</p>
+<ul>
+<li>reduce the listed fatigue cost;</li>
+<li>contribute to resistance penetration;</li>
+<li>increase the maximum gems usable in a ritual;</li>
+<li>enable stronger overcasting of a global;</li>
+<li>meet a higher item or spell threshold;</li>
+<li>improve path-derived indirect bonuses.</li>
+</ul>
+<p>Higher skill gives more than access to extra icons. It increases endurance and sometimes contest strength. That value still needs to be weighed against the booster, communion, empowerment, or rare mage needed to reach it.</p>
+<h2 id="b5-acquiring-and-increasing-paths">Acquiring and increasing paths<a class="heading-link" href="#b5-acquiring-and-increasing-paths" aria-label="Link to Acquiring and increasing paths">#</a></h2><p>The principal methods are:</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th align="right">New path from zero?</th>
+<th>Duration</th>
+<th>Main use</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Native or random path</td>
+<td align="right">Yes</td>
+<td>Permanent</td>
+<td>National base access</td>
+</tr>
+<tr>
+<td>Empowerment</td>
+<td align="right">Yes</td>
+<td>Permanent</td>
+<td>Opening a missing path or climbing without another route</td>
+</tr>
+<tr>
+<td>Path booster item</td>
+<td align="right">No</td>
+<td>While worn</td>
+<td>Efficient repeatable threshold access</td>
+</tr>
+<tr>
+<td>Battlefield path-boost spell</td>
+<td align="right">No</td>
+<td>Battle</td>
+<td>Combat thresholds and fatigue reduction</td>
+</tr>
+<tr>
+<td>One combat gem</td>
+<td align="right">No</td>
+<td>One spell</td>
+<td>Temporary +1 and/or fatigue management</td>
+</tr>
+<tr>
+<td>Communion/Sabbath/Chorus</td>
+<td align="right">No</td>
+<td>Battle</td>
+<td>Shared battlefield escalation</td>
+</tr>
+<tr>
+<td>Grand Communion</td>
+<td align="right">No</td>
+<td>One strategic casting</td>
+<td>Add same-path strength to a global or dispel</td>
+</tr>
+<tr>
+<td>Transformation or special effect</td>
+<td align="right">Sometimes</td>
+<td>Object-specific</td>
+<td>Must be verified separately</td>
+</tr>
+</tbody></table>
+<p>Only Empowerment is the general method that grants the first level of an absent path. A booster or Power of the Spheres requires at least level 1 already. A gem can raise a known path by one for one spell but cannot create it or raise it by more than one.</p>
+<h2 id="b5-empowerment-costs">Empowerment costs<a class="heading-link" href="#b5-empowerment-costs" aria-label="Link to Empowerment costs">#</a></h2><p>Official costs are:</p>
+<pre><code class="language-text">first level in an absent path = 50 gems of that path
+later increase = 15 x target level
+</code></pre>
+<p>Examples:</p>
+<table>
+<thead>
+<tr>
+<th>Change</th>
+<th align="right">Cost</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>F0 -&gt; F1</td>
+<td align="right">50 Fire gems</td>
+</tr>
+<tr>
+<td>F1 -&gt; F2</td>
+<td align="right">30 Fire gems</td>
+</tr>
+<tr>
+<td>F2 -&gt; F3</td>
+<td align="right">45 Fire gems</td>
+</tr>
+<tr>
+<td>F3 -&gt; F4</td>
+<td align="right">60 Fire gems</td>
+</tr>
+</tbody></table>
+<p>Empowerment is expensive because it buys permanent access on one commander. It is justified when the new level unlocks a repeatable ladder: a booster, critical ritual, national summon, global, or item that creates further access. Empowering for a one-off effect should be compared with alchemy, a communion, recruiting a rarer mage, trading for an item, or choosing a different solution.</p>
+<span class="anchor-alias" id="b5-hidden-and-indirect-access" aria-hidden="true"></span><h2 id="b5-indirect-magic">Indirect magic<a class="heading-link" href="#b5-indirect-magic" aria-label="Link to Indirect magic">#</a></h2><p>Path knowledge grants side benefits:</p>
+<table>
+<thead>
+<tr>
+<th>Path</th>
+<th>Level 1 and scaling benefits</th>
+<th>Level 3</th>
+<th>Level 4</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Fire</td>
+<td>+10 Leadership and +10 Magic Leadership per level; shorter life</td>
+<td>+5 Fire Resistance</td>
+<td>another +5 Fire Resistance</td>
+</tr>
+<tr>
+<td>Air</td>
+<td>+10 Magic Leadership per level</td>
+<td>+5 Shock Resistance</td>
+<td>another +5 Shock Resistance</td>
+</tr>
+<tr>
+<td>Water</td>
+<td>+10 Magic Leadership per level</td>
+<td>+5 Cold Resistance</td>
+<td>another +5 Cold Resistance</td>
+</tr>
+<tr>
+<td>Earth</td>
+<td>+10 Magic Leadership per level</td>
+<td>+3 natural Protection</td>
+<td>+1 Affliction Resistance</td>
+</tr>
+<tr>
+<td>Astral</td>
+<td>+20 Magic Leadership per level</td>
+<td>—</td>
+<td>+1 Magic Resistance</td>
+</tr>
+<tr>
+<td>Death</td>
+<td>+50 Undead Leadership per level</td>
+<td>rarely dies from old age</td>
+<td>+10 Morale</td>
+</tr>
+<tr>
+<td>Nature</td>
+<td>+10 Magic Leadership and +10 supplies per level; longer life</td>
+<td>+5 Poison Resistance</td>
+<td>another +5 Poison Resistance</td>
+</tr>
+<tr>
+<td>Glamour</td>
+<td>+10 Magic Leadership per level</td>
+<td>false-damage regeneration 1 per combat round</td>
+<td>True Sight</td>
+</tr>
+<tr>
+<td>Blood</td>
+<td>+10 Undead and +10 Magic Leadership per level</td>
+<td>+5 Hit Points</td>
+<td>another +5 Hit Points</td>
+</tr>
+</tbody></table>
+<p>Level-one benefits scale with the path level. Threshold benefits are cumulative. These effects can change command capacity, longevity, supplies, resistance, and survivability even when the mage never casts a spell from that path.</p>
+<h1 id="b5-part-iii-research-as-strategic-planning">Part III: Research as Strategic Planning<a class="heading-link" href="#b5-part-iii-research-as-strategic-planning" aria-label="Link to Part III: Research as Strategic Planning">#</a></h1><h2 id="b5-the-research-formula">The research formula<a class="heading-link" href="#b5-the-research-formula" aria-label="Link to The research formula">#</a></h2><p>An ordinary magical researcher produces:</p>
+<pre><code class="language-text">Research = 5 + (2 x total magic levels) +/- research bonuses or penalties
+minimum = 1
+</code></pre>
+<p>Magic and Drain scales modify magical research. Dementia halves research ability. The displayed value should be treated as authoritative for the current object after all abilities, scales, afflictions, items, and mod edits.</p>
+<p>Some special researchers do not follow the ordinary path requirement:</p>
+<ul>
+<li>philosophers can research without magical paths, gain from Sloth, and ignore Magic and Drain;</li>
+<li>Divine Insights supplies limited research, but no more such researchers in one laboratory contribute than the dominion candles in that province;</li>
+<li>nation- and object-specific abilities can add or alter research.</li>
+</ul>
+<h2 id="b5-research-resolves-early">Research resolves early<a class="heading-link" href="#b5-research-resolves-early" aria-label="Link to Research resolves early">#</a></h2><p>Research is hosting step 2. A researcher contributes for the month even if killed later during hosting. This does not make exposed researchers safe; it means the current month’s points can survive a later raid while the future research flow does not.</p>
+<h2 id="b5-research-is-a-queue-of-responses">Research is a queue of responses<a class="heading-link" href="#b5-research-is-a-queue-of-responses" aria-label="Link to Research is a queue of responses">#</a></h2><p>A weak plan says:</p>
+<blockquote>
+<p>“Research Evocation because the nation has Fire mages.”</p>
+</blockquote>
+<p>A useful plan says:</p>
+<blockquote>
+<p>“Reach the precise area-damage spell before the first war, with enough F2 casters and carried gems to cast it after the line has engaged, while retaining an Alteration branch if the opponent fields fire resistance.”</p>
+</blockquote>
+<p>Every breakpoint should record:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Deadline</td>
+<td>On which turn or war must the spell exist?</td>
+</tr>
+<tr>
+<td>Caster</td>
+<td>How many mages can cast it without rare randoms?</td>
+</tr>
+<tr>
+<td>Resource</td>
+<td>What does one battle, ritual cycle, or item batch cost?</td>
+</tr>
+<tr>
+<td>Delivery</td>
+<td>What range, timing, formation, lab, or ritual range is needed?</td>
+</tr>
+<tr>
+<td>Counter</td>
+<td>What common defence defeats it?</td>
+</tr>
+<tr>
+<td>Branch</td>
+<td>What is researched if scouting disproves the original threat?</td>
+</tr>
+<tr>
+<td>Afterlife</td>
+<td>Does the school level remain useful after the first purpose?</td>
+</tr>
+</tbody></table>
+<h2 id="b5-breakpoints-not-school-completion">Breakpoints, not school completion<a class="heading-link" href="#b5-breakpoints-not-school-completion" aria-label="Link to Breakpoints, not school completion">#</a></h2><p>Research should be measured by useful breakpoints rather than equal bars. A school level can unlock:</p>
+<ul>
+<li>a defensive self-buff that makes thugs viable;</li>
+<li>an army-wide resistance answer;</li>
+<li>an efficient battlefield damage spell;</li>
+<li>a site-search ritual;</li>
+<li>a national summon;</li>
+<li>a path booster;</li>
+<li>a dome;</li>
+<li>a remote attack;</li>
+<li>a global;</li>
+<li>an artifact tier.</li>
+</ul>
+<p>The next level is valuable only through the spells or items the nation can actually use. High school level does not imply high path requirement; low-path utility can appear late and high-path effects can appear earlier.</p>
+<span class="anchor-alias" id="b5-research-breakpoints" aria-hidden="true"></span><h2 id="b5-research-portfolios">Research portfolios<a class="heading-link" href="#b5-research-portfolios" aria-label="Link to Research portfolios">#</a></h2><p>A robust research plan contains four functions:</p>
+<ol>
+<li><strong>Immediate survival:</strong> expansion, early war, resistance, protection, or fatigue tools.</li>
+<li><strong>Efficient repetition:</strong> spells many recruitable mages can cast.</li>
+<li><strong>Access development:</strong> boosters, summons, or rituals that widen the path graph.</li>
+<li><strong>Strategic leverage:</strong> movement, remote warfare, globals, artifacts, and legendary effects.</li>
+</ol>
+<p>Overconcentration creates brittle excellence. Excessive breadth creates many half-finished answers. The correct portfolio is shaped by national mage distribution and the next opponent, not by a universal school order.</p>
+<span class="anchor-alias" id="b5-research-discounts" aria-hidden="true"></span><h2 id="b5-research-efficiency">Research efficiency<a class="heading-link" href="#b5-research-efficiency" aria-label="Link to Research efficiency">#</a></h2><p>Useful measures include:</p>
+<pre><code class="language-text">RP per gold = monthly research / recruitment gold
+RP per upkeep = monthly research / monthly upkeep
+breakpoint time = remaining RP / current monthly RP
+field opportunity cost = RP lost when researchers leave laboratories
+</code></pre>
+<p>These ratios answer different questions. Cheap research may have poor commander-point efficiency. A high-RP capital mage may be needed for battlefield duty. A sacred researcher may have low upkeep. A foreign or summoned mage may open a path worth far more than its raw RP.</p>
+<span class="anchor-alias" id="b5-mage-turn-opportunity-cost" aria-hidden="true"></span><h2 id="b5-mage-turn-accounting">Mage-turn accounting<a class="heading-link" href="#b5-mage-turn-accounting" aria-label="Link to Mage-turn accounting">#</a></h2><p>One mage can normally perform only one monthly strategic job:</p>
+<ul>
+<li>research;</li>
+<li>forge;</li>
+<li>cast a ritual;</li>
+<li>empower;</li>
+<li>search manually;</li>
+<li>move;</li>
+<li>preach or perform another order;</li>
+<li>accompany an army.</li>
+</ul>
+<p>The full cost of a ritual is:</p>
+<pre><code class="language-text">gem or slave cost
++ one mage-turn
++ foregone alternative output
++ position and exposure
+</code></pre>
+<p>A “free” summon paid only in gems still consumes a caster’s month. A cheap item can be expensive if the only qualified mage is the nation’s research engine or unique global caster.</p>
+<h2 id="b5-legendary-research">Legendary research<a class="heading-link" href="#b5-legendary-research" aria-label="Link to Legendary research">#</a></h2><p>Level 9 of every school except Construction consists of legendary spells. Reaching level 9 does not automatically grant the entire level:</p>
+<ul>
+<li>one legendary spell is selected and researched at a time;</li>
+<li>the level can be researched repeatedly to learn additional legendary spells;</li>
+<li>the default limited-legendary setting restricts how quickly this catalogue is acquired;</li>
+<li>Construction 9 instead unlocks unique artifacts.</li>
+</ul>
+<p>The decision is spell-specific. “Reach Thaumaturgy 9” is incomplete; the plan must name the first legendary spell, the caster and gems that make it real, and the reason its effect is worth delaying every other branch.</p>
+<h2 id="b5-research-audit">Research audit<a class="heading-link" href="#b5-research-audit" aria-label="Link to Research audit">#</a></h2><p>At the start of a major plan:</p>
+<ol>
+<li>list the next two wars and likely counters;</li>
+<li>identify exact spell breakpoints;</li>
+<li>count common, uncommon, and unique casters;</li>
+<li>reserve the gems required for one decisive battle;</li>
+<li>identify the item or summon ladder that changes access;</li>
+<li>estimate turns to the breakpoint after fielding losses;</li>
+<li>name the branch if the opponent changes plan;</li>
+<li>avoid counting a Pretender or unique mage in two distant places.</li>
+</ol>
+<h1 id="b5-part-iv-gems-slaves-and-magical-logistics">Part IV: Gems, Slaves, and Magical Logistics<a class="heading-link" href="#b5-part-iv-gems-slaves-and-magical-logistics" aria-label="Link to Part IV: Gems, Slaves, and Magical Logistics">#</a></h1><h2 id="b5-gem-production">Gem production<a class="heading-link" href="#b5-gem-production" aria-label="Link to Gem production">#</a></h2><p>Magic sites send gems to the national treasury when their province is connected through friendly territory to a province with a laboratory. Ownership alone is not enough. Raiding, isolation, or laboratory loss can interrupt collection without destroying the site.</p>
+<p>The treasury records both current stock and monthly income. These must not be confused:</p>
+<ul>
+<li><strong>income</strong> supports a sustainable rate;</li>
+<li><strong>stock</strong> allows bursts, emergency defence, globals, artifacts, and path development;</li>
+<li><strong>committed stock</strong> is already promised to a forge queue, ritual, or field army even if still visible in the total.</li>
+</ul>
+<h2 id="b5-blood-slaves">Blood slaves<a class="heading-link" href="#b5-blood-slaves" aria-label="Link to Blood slaves">#</a></h2><p>Blood has no ordinary gem. Blood slaves are acquired principally through Blood Hunting and are physical units/resources that must be moved and pooled. Their economy includes:</p>
+<ul>
+<li>gold and commander points for hunters;</li>
+<li>unrest and population damage;</li>
+<li>patrol or tax consequences;</li>
+<li>laboratory and transport logistics;</li>
+<li>the opportunity cost of hunter mage-turns;</li>
+<li>battlefield and ritual consumption.</li>
+</ul>
+<p>The correct comparison is not “slaves are free.” It is the total provincial and organisational cost per useful blood effect. Book II gives the hunting and unrest foundation; this book treats the magical expenditure.</p>
+<h2 id="b5-pooling-and-distribution">Pooling and distribution<a class="heading-link" href="#b5-pooling-and-distribution" aria-label="Link to Pooling and distribution">#</a></h2><p>The pool command gathers gems carried by commanders in a laboratory province into the national treasury. Direct transfer equips field mages. A reliable monthly process is:</p>
+<ol>
+<li>pool slaves and unused gems at laboratories;</li>
+<li>reserve strategic stocks;</li>
+<li>issue ritual and forge orders;</li>
+<li>assign exact battle loads;</li>
+<li>leave an explicit contingency reserve;</li>
+<li>check that moving armies carry neither too few nor treasury-sized excesses.</li>
+</ol>
+<p>Carried gems are exposed to battle loss and may be unavailable to rituals. Treasury gems cannot help a mage in battle unless transferred before combat.</p>
+<span class="anchor-alias" id="b5-battlefield-gem-spending" aria-hidden="true"></span><h2 id="b5-combat-gem-rules">Combat gem rules<a class="heading-link" href="#b5-combat-gem-rules" aria-label="Link to Combat gem rules">#</a></h2><p>A mage may use gems in combat to:</p>
+<ul>
+<li>raise a known path by one for one spell;</li>
+<li>reduce a spell’s fatigue;</li>
+<li>satisfy a spell’s gem requirement.</li>
+</ul>
+<p>Limits:</p>
+<ul>
+<li>a mage cannot spend more gems in one combat turn than the current skill in that path;</li>
+<li>gems cannot grant the first level of an absent path;</li>
+<li>gem use cannot increase the path by more than one;</li>
+<li>the computer controls optional fatigue spending;</li>
+<li>conservative gem use makes the mage spend sparingly and on scripted spells only.</li>
+</ul>
+<p>“How many gems does the spell cost?” is only the beginning. The full question is:</p>
+<pre><code class="language-text">required spell gems
++ any path-boost gem
++ optional fatigue gems selected by the AI
+&lt;= gems legally spendable this combat turn
+</code></pre>
+<p>Because current skill is part of the spending limit, a battlefield boost or communion may change what can be spent. Exact spell-AI decisions remain object- and situation-sensitive.</p>
+<h2 id="b5-a-battle-gem-budget">A battle-gem budget<a class="heading-link" href="#b5-a-battle-gem-budget" aria-label="Link to A battle-gem budget">#</a></h2><p>For each mage, record:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Scripted minimum</td>
+<td>Resources required to execute the intended five orders</td>
+</tr>
+<tr>
+<td>Likely AI spend</td>
+<td>Additional gems that may be used to control fatigue</td>
+</tr>
+<tr>
+<td>Emergency reserve</td>
+<td>Gems retained for later rounds or a second battle</td>
+</tr>
+<tr>
+<td>Capture exposure</td>
+<td>Maximum acceptable value if the army is destroyed</td>
+</tr>
+<tr>
+<td>Conservative setting</td>
+<td>Whether unscripted or optional spending is restricted</td>
+</tr>
+</tbody></table>
+<p>Underloading produces failed scripts. Overloading converts a rout into a treasury loss. The right load depends on the value of the battle, expected duration, retreat route, and likelihood of a second engagement before resupply.</p>
+<h2 id="b5-gems-as-fatigue-control">Gems as fatigue control<a class="heading-link" href="#b5-gems-as-fatigue-control" aria-label="Link to Gems as fatigue control">#</a></h2><p>Many combat gems are spent not to meet the printed requirement but to keep the caster conscious. This can be decisive because fatigue changes:</p>
+<ul>
+<li>whether later scripted spells are attempted;</li>
+<li>the risk of unconsciousness;</li>
+<li>communion-slave survival;</li>
+<li>vulnerability to critical and armour-defeating hits;</li>
+<li>the number of useful casts before collapse.</li>
+</ul>
+<p>The effect should be valued in additional useful actions, not only fatigue removed. A gem that permits the decisive fourth cast may be more valuable than one that merely makes an already won battle cleaner.</p>
+<h2 id="b5-alchemy">Alchemy<a class="heading-link" href="#b5-alchemy" aria-label="Link to Alchemy">#</a></h2><p>Any magically skilled commander in a friendly laboratory can use the Alchemy order:</p>
+<pre><code class="language-text">2 non-Astral gems -&gt; 1 Astral pearl
+2 Astral pearls -&gt; 1 gem of another type
+</code></pre>
+<p>Converting one non-Astral type to another through pearls is effectively 4:1. This is a severe exchange rate. It is rational when the receiving gem crosses a binding threshold: a decisive ritual, booster, dome, global, or emergency defence.</p>
+<p>The ordinary conversion should not be confused with alchemical spells that convert gems into gold. The Modding Manual’s Alchemy Bonus ability applies to the latter category, not automatically to the treasury’s pearl conversion.</p>
+<h2 id="b5-gem-valuation">Gem valuation<a class="heading-link" href="#b5-gem-valuation" aria-label="Link to Gem valuation">#</a></h2><p>The value of a gem depends on access and timing:</p>
+<pre><code class="language-text">strategic gem value
+= effect unlocked
+x probability of timely delivery
+x scarcity of substitutes
+- opportunity cost
+</code></pre>
+<p>A Nature gem may be common nationally but priceless at the exact army that needs a resistance spell. Astral pearls are flexible but are also consumed by communions, teleportation, dispels, and powerful late rituals. A surplus path can fund a repeatable summon; an apparent shortage may be caused by idle forge queues rather than low income.</p>
+<span class="anchor-alias" id="b5-gem-reserves" aria-hidden="true"></span><h2 id="b5-reserve-doctrine">Reserve doctrine<a class="heading-link" href="#b5-reserve-doctrine" aria-label="Link to Reserve doctrine">#</a></h2><p>Useful reserve categories are:</p>
+<ul>
+<li><strong>battle reserve:</strong> one or more decisive engagements;</li>
+<li><strong>counter reserve:</strong> domes, dispels, emergency movement, or resistance;</li>
+<li><strong>access reserve:</strong> empowerment or a booster chain;</li>
+<li><strong>strategic reserve:</strong> a named global, artifact, or legendary ritual;</li>
+<li><strong>trade reserve:</strong> gems whose diplomatic value exceeds immediate conversion.</li>
+</ul>
+<p>An unlabelled treasury is easily spent twice in planning.</p>
+<span class="anchor-alias" id="b5-part-vi-battlefield-magic-by-function" aria-hidden="true"></span><h1 id="b5-part-v-the-anatomy-of-battle-magic">Part V: The Anatomy of Battle Magic<a class="heading-link" href="#b5-part-v-the-anatomy-of-battle-magic" aria-label="Link to Part V: The Anatomy of Battle Magic">#</a></h1><span class="anchor-alias" id="b5-battlefield-enchantment-packages" aria-hidden="true"></span><h2 id="b5-spell-classes-by-battlefield-job">Spell classes by battlefield job<a class="heading-link" href="#b5-spell-classes-by-battlefield-job" aria-label="Link to Spell classes by battlefield job">#</a></h2><p>A battle-magic package normally combines several jobs:</p>
+<table>
+<thead>
+<tr>
+<th>Job</th>
+<th>Desired effect</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Preparation</td>
+<td>Path boosts, personal defence, reinvigoration, or communion formation</td>
+</tr>
+<tr>
+<td>Protection</td>
+<td>Resistances, armour, Luck, regeneration, mist, concealment, or anti-magic</td>
+</tr>
+<tr>
+<td>Control</td>
+<td>Immobilisation, confusion, sleep, fear, fatigue, displacement, or terrain conditions</td>
+</tr>
+<tr>
+<td>Attrition</td>
+<td>Repeated efficient damage or summons</td>
+</tr>
+<tr>
+<td>Breakthrough</td>
+<td>Large area, armour-negating, high-penetration, or battlefield-wide effect</td>
+</tr>
+<tr>
+<td>Sustain</td>
+<td>Fatigue relief, healing, replacement bodies, or continuous enchantment</td>
+</tr>
+<tr>
+<td>Counter</td>
+<td>Removal or neutralisation of the enemy’s named mechanism</td>
+</tr>
+<tr>
+<td>Preservation</td>
+<td>Escape, protection of commanders, or reduced gem exposure</td>
+</tr>
+</tbody></table>
+<p>No spell is “good” independently of delivery. A superb damage effect at the wrong range or damage type is a poor answer. A minor resistance buff applied before the relevant area attack can decide the battle.</p>
+<h2 id="b5-the-battle-resolution-boundary">The battle-resolution boundary<a class="heading-link" href="#b5-the-battle-resolution-boundary" aria-label="Link to The battle-resolution boundary">#</a></h2><p>Book IV is the authoritative home for preparation, interruption, spell accuracy, Magic Resistance contests, casting fatigue, damage families, and the lifetime of battlefield enchantments. Reprinting those formulas here created two places that could drift after a patch.</p>
+<p>For magical planning, the essential questions are:</p>
+<ol>
+<li>Can the caster complete preparation before contact or interruption?</li>
+<li>Will the spell reach the intended target at an acceptable risk to friendly troops?</li>
+<li>Which defensive layer does it test: Protection, resistance, Magic Resistance, fatigue, morale, or position?</li>
+<li>Can the caster afford the fatigue and repeat the effect?</li>
+<li>Does the plan still work indoors or under a different battlefield condition?</li>
+<li>Is the caster&#39;s survival part of maintaining the effect?</li>
+</ol>
+<p>The exact arithmetic and current patch corrections are in Book IV, Part XIV. This chapter uses their result to build the package.</p>
+<h2 id="b5-scripting-and-spell-ai">Scripting and spell AI<a class="heading-link" href="#b5-scripting-and-spell-ai" aria-label="Link to Scripting and spell AI">#</a></h2><p>A five-order script is a preferred sequence, not complete control. A scripted spell may fail because:</p>
+<ul>
+<li>research or a path was misread;</li>
+<li>the required resource is absent;</li>
+<li>range or target is illegal;</li>
+<li>fatigue is too high;</li>
+<li>the caster was interrupted, stunned, or unconscious;</li>
+<li>the battlefield condition is wrong;</li>
+<li>a target no longer exists;</li>
+<li>the spell AI chooses a fallback after the script.</li>
+</ul>
+<p>Robust scripts name their failure branches. If the critical buff is skipped, can the army still survive? If an enemy resistance appears, what does the mage cast after order five? If communion slaves drop below a threshold, which masters become illegal or exhausted?</p>
+<h2 id="b5-battlefield-package-worksheet">Battlefield package worksheet<a class="heading-link" href="#b5-battlefield-package-worksheet" aria-label="Link to Battlefield package worksheet">#</a></h2><table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Threat</td>
+<td>What exact damage, control, or defence must be answered?</td>
+</tr>
+<tr>
+<td>Preparation</td>
+<td>Which boosts and communion orders occur first?</td>
+</tr>
+<tr>
+<td>Screen</td>
+<td>What buys the required casting time?</td>
+</tr>
+<tr>
+<td>Main effect</td>
+<td>Which repeated spell performs most work?</td>
+</tr>
+<tr>
+<td>Breakthrough</td>
+<td>Which spell changes the battle state?</td>
+</tr>
+<tr>
+<td>Sustain</td>
+<td>How are fatigue and losses controlled?</td>
+</tr>
+<tr>
+<td>Counter-counter</td>
+<td>What happens against resistance, antimagic, flyers, or assassins?</td>
+</tr>
+<tr>
+<td>Gem budget</td>
+<td>What is the cost per expected battle and per war?</td>
+</tr>
+<tr>
+<td>Retreat</td>
+<td>Which casters and gems survive a failed plan?</td>
+</tr>
+</tbody></table>
+<span class="anchor-alias" id="b5-magic-duel" aria-hidden="true"></span><h1 id="b5-part-vi-the-nine-paths-in-practice">Part VI: The Nine Paths in Practice<a class="heading-link" href="#b5-part-vi-the-nine-paths-in-practice" aria-label="Link to Part VI: The Nine Paths in Practice">#</a></h1><h2 id="b5-how-to-read-a-path">How to read a path<a class="heading-link" href="#b5-how-to-read-a-path" aria-label="Link to How to read a path">#</a></h2><p>Each path should be evaluated through six questions:</p>
+<ol>
+<li>What protection does it create?</li>
+<li>What defence does it attack?</li>
+<li>How does it control movement, fatigue, or cohesion?</li>
+<li>What does it summon or forge?</li>
+<li>How does it project power on the map?</li>
+<li>Which other path covers its principal failure?</li>
+</ol>
+<p>The summaries below are functional maps, not spell lists. National spells and the active mods can substantially alter them.</p>
+<h2 id="b5-fire">Fire<a class="heading-link" href="#b5-fire" aria-label="Link to Fire">#</a></h2><p>Fire commonly converts research and gems into immediate destructive tempo:</p>
+<ul>
+<li>direct and area fire damage;</li>
+<li>burning and Heat;</li>
+<li>offensive weapon or strength enhancement;</li>
+<li>Fire Resistance;</li>
+<li>battlefield-wide destructive conditions;</li>
+<li>gem-to-gold alchemy;</li>
+<li>late world effects tied to fire and heat.</li>
+</ul>
+<p>Fire’s strengths are efficient damage against dense, insufficiently resistant armies and the ability to turn an ordinary line into a more lethal one. Its weaknesses are resistance, friendly fire, fatigue, limited control, and the possibility that high damage is wasted on dispersed or expendable targets.</p>
+<p>Fire packages need:</p>
+<ul>
+<li>a reason targets will remain clustered;</li>
+<li>screening or range;</li>
+<li>a non-fire answer;</li>
+<li>protection from their own area effects;</li>
+<li>a gem budget for high-impact casts.</li>
+</ul>
+<h2 id="b5-air">Air<a class="heading-link" href="#b5-air" aria-label="Link to Air">#</a></h2><p>Air commonly supplies:</p>
+<ul>
+<li>armour-negating shock damage;</li>
+<li>precision and ranged support;</li>
+<li>storms and anti-flight conditions;</li>
+<li>flight and strategic mobility;</li>
+<li>concealment, mist, or displacement;</li>
+<li>strong remote reach.</li>
+</ul>
+<p>Shock damage attacks a different defensive layer from ordinary physical damage. Storms can define the whole battlefield, but may also obstruct friendly flyers, missile plans, or spell requirements. Air mages are often high-value because the path combines battlefield damage with movement and information.</p>
+<p>Air planning must distinguish:</p>
+<ul>
+<li>storm-compatible and storm-dependent effects;</li>
+<li>friendly flying requirements;</li>
+<li>shock-resistant targets;</li>
+<li>whether strategic movement resolves into a magic battle or later ordinary battle;</li>
+<li>whether a remote effect is blocked by a dome.</li>
+</ul>
+<h2 id="b5-water">Water<a class="heading-link" href="#b5-water" aria-label="Link to Water">#</a></h2><p>Water commonly provides:</p>
+<ul>
+<li>Cold Resistance and cold damage;</li>
+<li>quickness and action-tempo changes;</li>
+<li>defence and fluid physical alteration;</li>
+<li>water-elemental and aquatic tools;</li>
+<li>underwater access;</li>
+<li>frost-based battlefield control.</li>
+</ul>
+<p>Quickness multiplies both output and fatigue exposure. Cold effects are strongest when resistance and friendly exposure are managed. Water’s ability to operate underwater can be strategically decisive because many ordinary armies and rituals have restrictions there.</p>
+<p>Water packages should audit:</p>
+<ul>
+<li>fatigue after additional actions;</li>
+<li>friendly cold resistance;</li>
+<li>underwater legality;</li>
+<li>the difference between temporary battle acceleration and monthly map movement;</li>
+<li>whether the target’s high Protection matters to the chosen cold effect.</li>
+</ul>
+<h2 id="b5-earth">Earth<a class="heading-link" href="#b5-earth" aria-label="Link to Earth">#</a></h2><p>Earth commonly supplies:</p>
+<ul>
+<li>Protection and natural armour;</li>
+<li>strength and physical enhancement;</li>
+<li>reinvigoration and fatigue control;</li>
+<li>armour damage or earth control;</li>
+<li>constructs and siege power;</li>
+<li>many foundational forging tools.</li>
+</ul>
+<p>Earth often wins indirectly by making an army’s existing bodies harder, stronger, and more sustainable. It is also central to path escalation because Construction and Earth forging frequently create the infrastructure for other schools.</p>
+<p>Earth packages fail when:</p>
+<ul>
+<li>armour-negating or resistance-based effects bypass the added Protection;</li>
+<li>heavy armour raises casting encumbrance;</li>
+<li>slow preparation loses to early contact;</li>
+<li>transformed or buffed units still lack delivery;</li>
+<li>a forging plan consumes the only field-capable Earth mages.</li>
+</ul>
+<h2 id="b5-astral">Astral<a class="heading-link" href="#b5-astral" aria-label="Link to Astral">#</a></h2><p>Astral commonly provides:</p>
+<ul>
+<li>communions;</li>
+<li>Magic Resistance contests and penetration;</li>
+<li>antimagic and resistance support;</li>
+<li>teleportation and remote projection;</li>
+<li>information and detection;</li>
+<li>global control, dispels, and late strategic effects.</li>
+</ul>
+<p>Astral’s central advantage is leverage: many modest mages can combine, and high Astral can contest units or globals through exact arithmetic. Its central danger is that the same infrastructure can be fragile. Communion slaves can collapse; high-value casters can be exposed; Astral duels or hostile soul effects can punish path-heavy mages.</p>
+<p>Astral planning requires:</p>
+<ul>
+<li>MR and penetration estimates;</li>
+<li>slave and master path ratios;</li>
+<li>pearl supply;</li>
+<li>protection of communion infrastructure;</li>
+<li>a clear distinction between battlefield communions and Grand Communion orders.</li>
+</ul>
+<h2 id="b5-death">Death<a class="heading-link" href="#b5-death" aria-label="Link to Death">#</a></h2><p>Death commonly supplies:</p>
+<ul>
+<li>undead creation and command;</li>
+<li>skeleton-based battlefield attrition;</li>
+<li>fear, decay, disease, and fatigue;</li>
+<li>soul and death effects;</li>
+<li>powerful summons and transformed commanders;</li>
+<li>late rituals involving the dead and Titans.</li>
+</ul>
+<p>Death can convert gems into bodies without ordinary upkeep assumptions, but those bodies may be Mindless, vulnerable to Banishment, or dependent on Undead Leadership. Reanimation and battlefield summoning can absorb time while decisive casters work.</p>
+<p>Death packages should audit:</p>
+<ul>
+<li>priestly counters;</li>
+<li>Undead Leadership;</li>
+<li>battlefield turn limits;</li>
+<li>friendly morale and disease exposure;</li>
+<li>whether summoned bodies are an objective or only a screen;</li>
+<li>the risk profile of late summons whose minds or forms are uncertain.</li>
+</ul>
+<h2 id="b5-nature">Nature<a class="heading-link" href="#b5-nature" aria-label="Link to Nature">#</a></h2><p>Nature commonly supplies:</p>
+<ul>
+<li>regeneration, healing, and life enhancement;</li>
+<li>poison resistance and poison offence;</li>
+<li>entanglement and movement control;</li>
+<li>animals, plants, and living summons;</li>
+<li>supplies and longevity;</li>
+<li>growth- and dominion-linked world effects.</li>
+</ul>
+<p>Nature often creates persistence rather than immediate lethality. Regeneration is strongest on sufficiently large and protected bodies; it is not a substitute for surviving the initial hit. Poison plans require protection for friendly units and enough battle duration for delayed damage to matter.</p>
+<p>Nature packages should distinguish:</p>
+<ul>
+<li>healing from affliction removal;</li>
+<li>regeneration from one-time healing;</li>
+<li>supply generation from battlefield value;</li>
+<li>poison damage from immediate rout pressure;</li>
+<li>living summons from mindless or undead logistics.</li>
+</ul>
+<h2 id="b5-glamour">Glamour<a class="heading-link" href="#b5-glamour" aria-label="Link to Glamour">#</a></h2><p>Glamour commonly supplies:</p>
+<ul>
+<li>illusions and false damage;</li>
+<li>concealment and misdirection;</li>
+<li>confusion, bewilderment, and perception attacks;</li>
+<li>defence through appearance rather than armour;</li>
+<li>remote or strategic deception;</li>
+<li>True Sight at high indirect path skill.</li>
+</ul>
+<p>False damage can disable or rout without ordinary wounds, but it interacts differently with false-damage regeneration and True Sight. Glamour defence can be powerful until the opponent brings the correct perception or wide-area answer.</p>
+<p>Glamour packages need:</p>
+<ul>
+<li>an answer to True Sight;</li>
+<li>a plan for Mindless or otherwise inappropriate targets;</li>
+<li>real damage or control when illusion is insufficient;</li>
+<li>awareness that late-battle spell AI and current patches affect invisibility choices;</li>
+<li>protection against area effects that do not care which apparent body is real.</li>
+</ul>
+<h2 id="b5-blood">Blood<a class="heading-link" href="#b5-blood" aria-label="Link to Blood">#</a></h2><p>Blood commonly supplies:</p>
+<ul>
+<li>demons and blood summons;</li>
+<li>Sabbaths;</li>
+<li>sacrifice and dominion interaction;</li>
+<li>severe single-target or battlefield effects;</li>
+<li>horror and corruption mechanics;</li>
+<li>world enchantments that punish ordinary magic.</li>
+</ul>
+<p>Blood converts provincial population, unrest tolerance, patrols, hunters, laboratories, and transport into a magical economy. Its scale can be enormous, but its logistics are unusually visible and disruptive.</p>
+<p>Blood packages should audit:</p>
+<ul>
+<li>slaves at the caster rather than only in the treasury;</li>
+<li>hunter, patrol, and laboratory capacity;</li>
+<li>Sabbath fatigue modifiers;</li>
+<li>living-only or underwater restrictions;</li>
+<li>enemy raids on hunting provinces;</li>
+<li>whether blood investment is delaying conventional research and defence.</li>
+</ul>
+<h2 id="b5-cross-path-architecture">Cross-path architecture<a class="heading-link" href="#b5-cross-path-architecture" aria-label="Link to Cross-path architecture">#</a></h2><p>Paths become more useful when paired by function:</p>
+<table>
+<thead>
+<tr>
+<th>Need</th>
+<th>First layer</th>
+<th>Complementary layer</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Armoured mass</td>
+<td>Fire, Air, Death, or resistance-based attack</td>
+<td>Earth or Nature screen</td>
+</tr>
+<tr>
+<td>High MR elites</td>
+<td>Physical or elemental pressure</td>
+<td>Astral penetration only where efficient</td>
+</tr>
+<tr>
+<td>Dense low-resistance army</td>
+<td>Area elemental damage</td>
+<td>Control that holds density</td>
+</tr>
+<tr>
+<td>Fast rush</td>
+<td>Early protection and control</td>
+<td>Later breakthrough damage</td>
+</tr>
+<tr>
+<td>Long attrition</td>
+<td>Death or summons</td>
+<td>Nature/Earth sustain and fatigue control</td>
+</tr>
+<tr>
+<td>Remote threat</td>
+<td>Air/Astral/Glamour movement or attack</td>
+<td>Domes, scouts, and local response</td>
+</tr>
+<tr>
+<td>Global war</td>
+<td>Astral dispel and high ritual strength</td>
+<td>Gem income, caster security, diplomacy</td>
+</tr>
+</tbody></table>
+<p>The purpose of a secondary path is not variety. It is to cover the principal failure of the first mechanism.</p>
+<h1 id="b5-part-vii-communions-sabbaths-choruses-and-grand-communions">Part VII: Communions, Sabbaths, Choruses, and Grand Communions<a class="heading-link" href="#b5-part-vii-communions-sabbaths-choruses-and-grand-communions" aria-label="Link to Part VII: Communions, Sabbaths, Choruses, and Grand Communions">#</a></h1><h2 id="b5-what-a-battlefield-communion-does">What a battlefield communion does<a class="heading-link" href="#b5-what-a-battlefield-communion-does" aria-label="Link to What a battlefield communion does">#</a></h2><p>A communion combines mages during battle to:</p>
+<ul>
+<li>raise every master’s already-known paths;</li>
+<li>distribute each master’s spell fatigue among that master and all friendly slaves;</li>
+<li>pass certain personal buffs from masters to slaves;</li>
+<li>concentrate the actions of many mages into stronger casting.</li>
+</ul>
+<p>A valid communion requires at least one master effect and one slave effect. Astral uses Communion Master and Communion Slave. Blood uses Sabbath Master and Sabbath Slave. MA Man’s Spellsingers can use Chorus Master and Chorus Slave.</p>
+<p>These are separate communion types. One Astral Communion, one Sabbath, and one Chorus may coexist, each with its own masters, slaves, and bonuses. An Astral master does not gain the slaves of a simultaneous Sabbath.</p>
+<h2 id="b5-the-level-bonus">The level bonus<a class="heading-link" href="#b5-the-level-bonus" aria-label="Link to The level bonus">#</a></h2><p>A master gains <code>n</code> levels in every path the master already knows when the communion has at least <code>2^n</code> slaves:</p>
+<table>
+<thead>
+<tr>
+<th align="right">Active slaves</th>
+<th align="right">Master bonus</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1</td>
+<td align="right">+0</td>
+</tr>
+<tr>
+<td align="right">2-3</td>
+<td align="right">+1</td>
+</tr>
+<tr>
+<td align="right">4-7</td>
+<td align="right">+2</td>
+</tr>
+<tr>
+<td align="right">8-15</td>
+<td align="right">+3</td>
+</tr>
+<tr>
+<td align="right">16-31</td>
+<td align="right">+4</td>
+</tr>
+<tr>
+<td align="right">32-63</td>
+<td align="right">+5</td>
+</tr>
+<tr>
+<td align="right">64-127</td>
+<td align="right">+6</td>
+</tr>
+</tbody></table>
+<p>The first slave makes the communion valid but grants no level. Bonus levels do not create an absent path. If slave casualties reduce the total below a threshold, every master’s bonus drops immediately.</p>
+<p>The threshold structure makes “spare” slaves strategically useful. Four slaves produce +2, but the loss or unconsciousness of one reduces the group to three and +1. Five or six retain +2 after some attrition.</p>
+<h2 id="b5-participants-in-one-spell">Participants in one spell<a class="heading-link" href="#b5-participants-in-one-spell" aria-label="Link to Participants in one spell">#</a></h2><p>For a single master’s spell, participants are:</p>
+<ul>
+<li>the master casting that spell;</li>
+<li>all friendly slaves in that communion.</li>
+</ul>
+<p>Other masters are not participants in that cast. They gain the path bonus, but they do not share another master’s fatigue as participants.</p>
+<p>If there are four slaves and three masters, a spell cast by one master has five participants, not eight. Each master’s separate spell creates its own fatigue event over that master plus the same slave pool.</p>
+<h2 id="b5-base-fatigue-distribution">Base fatigue distribution<a class="heading-link" href="#b5-base-fatigue-distribution" aria-label="Link to Base fatigue distribution">#</a></h2><p>For one master’s spell:</p>
+<pre><code class="language-text">base fatigue per participant
+= spell fatigue after path calculations
+/ number of participants
+</code></pre>
+<p>The slave’s share is then modified by the slave’s skill relative to the casting master in the relevant path:</p>
+<table>
+<thead>
+<tr>
+<th>Slave path relative to master</th>
+<th align="right">Slave fatigue modifier</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>higher than master</td>
+<td align="right">x 0.5</td>
+</tr>
+<tr>
+<td>equal to master</td>
+<td align="right">x 1</td>
+</tr>
+<tr>
+<td>lower, but at least half the master</td>
+<td align="right">x 2</td>
+</tr>
+<tr>
+<td>lower than half the master</td>
+<td align="right">x 4</td>
+</tr>
+</tbody></table>
+<p>Skill gained from the communion and all other sources is included when calculating spell fatigue. Exact rounding at each step is assigned to controlled testing.</p>
+<h2 id="b5-worked-comparison">Worked comparison<a class="heading-link" href="#b5-worked-comparison" aria-label="Link to Worked comparison">#</a></h2><p>Suppose one master and four slaves participate, so the divisor is five.</p>
+<p>If the resolved spell fatigue before distribution is 100:</p>
+<pre><code class="language-text">base participant share = 100 / 5 = 20
+</code></pre>
+<p>The caster receives the master share according to the communion rules. Each slave then receives:</p>
+<table>
+<thead>
+<tr>
+<th>Relative skill</th>
+<th align="right">Fatigue per slave before type-specific modifiers</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Slave higher</td>
+<td align="right">10</td>
+</tr>
+<tr>
+<td>Equal</td>
+<td align="right">20</td>
+</tr>
+<tr>
+<td>Lower but at least half</td>
+<td align="right">40</td>
+</tr>
+<tr>
+<td>Lower than half</td>
+<td align="right">80</td>
+</tr>
+</tbody></table>
+<p>Four weak slaves do not automatically make high-path casting safe. The path bonus can raise the master far above the slaves, turning the x4 bracket into the dominant risk.</p>
+<h2 id="b5-master-count-and-slave-load">Master count and slave load<a class="heading-link" href="#b5-master-count-and-slave-load" aria-label="Link to Master count and slave load">#</a></h2><p>Adding masters increases output but not the number of participants in each cast. If two masters cast 100-fatigue spells into the same four equal-path slaves:</p>
+<ul>
+<li>each event has five participants;</li>
+<li>each slave receives a share from the first cast;</li>
+<li>each slave receives another share from the second cast;</li>
+<li>total slave load approximately doubles.</li>
+</ul>
+<p>The correct design ratio depends on:</p>
+<ul>
+<li>master casting frequency;</li>
+<li>spell fatigue after boosted skill;</li>
+<li>slave path relation;</li>
+<li>slave encumbrance and reinvigoration;</li>
+<li>buffs transmitted to slaves;</li>
+<li>expected battle length;</li>
+<li>whether slaves leave at unconsciousness;</li>
+<li>how many threshold casualties can be tolerated.</li>
+</ul>
+<p>“Four slaves per master” is not an engine rule.</p>
+<h2 id="b5-slaves-cannot-act">Slaves cannot act<a class="heading-link" href="#b5-slaves-cannot-act" aria-label="Link to Slaves cannot act">#</a></h2><p>While in the communion, slaves perform no independent actions. Their mage-turn in the battle is converted into:</p>
+<ul>
+<li>master path access;</li>
+<li>fatigue capacity;</li>
+<li>receipt of qualifying self-buffs;</li>
+<li>risk.</li>
+</ul>
+<p>A slave’s opportunity cost includes the spells that mage could otherwise have cast. High-path slaves may be safer fatigue sinks, but they can be too valuable to immobilise.</p>
+<h2 id="b5-shared-personal-buffs">Shared personal buffs<a class="heading-link" href="#b5-shared-personal-buffs" aria-label="Link to Shared personal buffs">#</a></h2><p>Slaves benefit from self-buffs cast by communion masters when those spells are single-target, range 0 personal effects. This can create powerful shared protection, resistance, regeneration, reinvigoration, or other effects.</p>
+<p>The important details are:</p>
+<ul>
+<li>the buff is produced by the particular master’s cast;</li>
+<li>legal qualifying effects must be checked from current spell data;</li>
+<li>timing matters—slaves may already have received fatigue before the protection arrives;</li>
+<li>some buffs can be harmful to particular slave bodies;</li>
+<li>a master’s personal path access and script determine what is transmitted.</li>
+</ul>
+<p>Communion buffing is an army-design problem, not an arithmetic trick. Slave chassis, resistances, and encumbrance must suit the intended shared effects.</p>
+<h2 id="b5-collapse">Collapse<a class="heading-link" href="#b5-collapse" aria-label="Link to Collapse">#</a></h2><p>The communion ends when no masters or no slaves remain.</p>
+<p>If all masters die or flee, every slave suffers:</p>
+<ul>
+<li>approximately one combat round of stun;</li>
+<li><code>3d50</code> fatigue damage.</li>
+</ul>
+<p>This backlash can disable or kill an already exhausted slave block. Keeping the masters alive is part of keeping the slaves alive. Redundant masters can prevent sudden collapse, but every additional active master can also increase fatigue throughput.</p>
+<h2 id="b5-automatic-participation">Automatic participation<a class="heading-link" href="#b5-automatic-participation" aria-label="Link to Automatic participation">#</a></h2><p>Items such as matrices, Slave’s Hearts, and Master’s Athames can make bearers join automatically. The bearer:</p>
+<ul>
+<li>must be a mage, meaning at least one non-Holy magic path;</li>
+<li>need not have Astral or Blood;</li>
+<li>must still be analysed for item slot, cost, timing, and survivability.</li>
+</ul>
+<p>Automatic participation can bring foreign paths into a communion without spending the first scripted round joining. It also creates fragile item dependencies and may expose expensive gear to battlefield loss.</p>
+<h2 id="b5-the-three-battlefield-types">The three battlefield types<a class="heading-link" href="#b5-the-three-battlefield-types" aria-label="Link to The three battlefield types">#</a></h2><table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Special rule</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Communion</td>
+<td>Spells take 25% longer to cast</td>
+</tr>
+<tr>
+<td>Sabbath</td>
+<td>Master suffers half fatigue; slaves suffer 20% extra fatigue</td>
+</tr>
+<tr>
+<td>Chorus</td>
+<td>Spells take 25% longer; a slave leaves on losing consciousness</td>
+</tr>
+</tbody></table>
+<p>The Sabbath improves master endurance by transferring a harsher burden to slaves. Chorus slaves avoid later damage once unconscious, but every departure can reduce the master’s path bonus immediately.</p>
+<h2 id="b5-designing-a-safe-communion">Designing a safe communion<a class="heading-link" href="#b5-designing-a-safe-communion" aria-label="Link to Designing a safe communion">#</a></h2><p>Proceed in this order:</p>
+<ol>
+<li>name the highest-path spell each master must cast;</li>
+<li>calculate master path after the intended slave threshold;</li>
+<li>estimate spell fatigue at that path;</li>
+<li>count participants for each cast;</li>
+<li>place each slave in the relative-path multiplier bracket;</li>
+<li>add type-specific Sabbath or casting-time effects;</li>
+<li>estimate simultaneous master throughput;</li>
+<li>include transmitted buffs and reinvigoration;</li>
+<li>provide threshold redundancy;</li>
+<li>protect masters from assassination, flyers, missiles, and early area damage;</li>
+<li>write a useful plan for masters after the scripted sequence;</li>
+<li>decide what a controlled collapse looks like.</li>
+</ol>
+<h2 id="b5-common-communion-failures">Common communion failures<a class="heading-link" href="#b5-common-communion-failures" aria-label="Link to Common communion failures">#</a></h2><h3 id="b5-the-threshold-cliff">The threshold cliff<a class="heading-link" href="#b5-the-threshold-cliff" aria-label="Link to The threshold cliff">#</a></h3><p>Exactly four slaves produce +2. One casualty produces only +1, invalidating later spells or sharply raising fatigue.</p>
+<h3 id="b5-weak-slave-multiplication">Weak-slave multiplication<a class="heading-link" href="#b5-weak-slave-multiplication" aria-label="Link to Weak-slave multiplication">#</a></h3><p>Masters rise several path levels while slaves remain far below half the master. Every cast sends four times the base share to each weak slave.</p>
+<h3 id="b5-too-many-masters">Too many masters<a class="heading-link" href="#b5-too-many-masters" aria-label="Link to Too many masters">#</a></h3><p>The slave pool receives overlapping fatigue from many masters. The communion appears efficient because every master has high paths, then the shared battery collapses at once.</p>
+<h3 id="b5-harmful-self-buffs">Harmful self-buffs<a class="heading-link" href="#b5-harmful-self-buffs" aria-label="Link to Harmful self-buffs">#</a></h3><p>A master distributes an effect incompatible with slave physiology, resistance, or role.</p>
+<h3 id="b5-preparation-without-contact-timing">Preparation without contact timing<a class="heading-link" href="#b5-preparation-without-contact-timing" aria-label="Link to Preparation without contact timing">#</a></h3><p>The army needs several rounds to join, boost, and buff, but the enemy reaches the mages before the package activates.</p>
+<h3 id="b5-no-post-script-policy">No post-script policy<a class="heading-link" href="#b5-no-post-script-policy" aria-label="Link to No post-script policy">#</a></h3><p>Masters complete five orders and begin casting high-fatigue or inappropriate spells into the same slave pool.</p>
+<h3 id="b5-master-annihilation">Master annihilation<a class="heading-link" href="#b5-master-annihilation" aria-label="Link to Master annihilation">#</a></h3><p>All masters are placed together and die to one flanking or area effect, causing backlash.</p>
+<h2 id="b5-grand-communions-are-different">Grand Communions are different<a class="heading-link" href="#b5-grand-communions-are-different" aria-label="Link to Grand Communions are different">#</a></h2><p>Grand Communion is a strategic monthly order used by certain nations. When one eligible mage casts or dispels a global, other eligible mages in the same context can use Grand Communion to add their relevant path skill to the power of the attempt.</p>
+<p>It does not:</p>
+<ul>
+<li>create a battlefield communion;</li>
+<li>distribute battlefield fatigue;</li>
+<li>grant every path;</li>
+<li>make participating mages available for research or other orders that month.</li>
+</ul>
+<p>For a Dispel, joining Astral skill adds directly to the attempt described by the manual’s example. Grand Communions let a nation convert several mage-turns into ritual contest strength.</p>
+<h2 id="b5-communion-audit">Communion audit<a class="heading-link" href="#b5-communion-audit" aria-label="Link to Communion audit">#</a></h2><p>Before a battle:</p>
+<ul>
+<li>identify communion type;</li>
+<li>count slaves at every threshold;</li>
+<li>record each master’s boosted paths;</li>
+<li>calculate every critical spell’s participants and slave brackets;</li>
+<li>check shared self-buffs;</li>
+<li>set gem policy;</li>
+<li>separate or protect masters;</li>
+<li>decide how slaves recover;</li>
+<li>plan for one slave loss, one master loss, and early contact;</li>
+<li>test the exact package in the current ruleset.</li>
+</ul>
+<span class="anchor-alias" id="b5-scrying" aria-hidden="true"></span><h1 id="b5-part-viii-rituals-and-strategic-magic">Part VIII: Rituals and Strategic Magic<a class="heading-link" href="#b5-part-viii-rituals-and-strategic-magic" aria-label="Link to Part VIII: Rituals and Strategic Magic">#</a></h1><h2 id="b5-ritual-fundamentals">Ritual fundamentals<a class="heading-link" href="#b5-ritual-fundamentals" aria-label="Link to Ritual fundamentals">#</a></h2><p>Rituals are map spells that take one entire monthly order. They normally require:</p>
+<ul>
+<li>a friendly laboratory;</li>
+<li>the researched school level;</li>
+<li>a caster with all required paths;</li>
+<li>sufficient gems or slaves in the national treasury;</li>
+<li>a legal target and range.</li>
+</ul>
+<p>The treasury supplies ritual gems automatically. A field commander carrying gems elsewhere does not increase the national pool.</p>
+<h2 id="b5-hosting-position">Hosting position<a class="heading-link" href="#b5-hosting-position" aria-label="Link to Hosting position">#</a></h2><p>Important magic timing from the official hosting sequence:</p>
+<table>
+<thead>
+<tr>
+<th align="right">Step</th>
+<th>Resolution</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">2</td>
+<td>Research</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td>Empowerment</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td>Forging</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td>Magic rituals, in random caster order</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td>Remote army attacks</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td>Magic battles, including relevant teleports and movement</td>
+</tr>
+<tr>
+<td align="right">14</td>
+<td>Site-search ritual results</td>
+</tr>
+<tr>
+<td align="right">28</td>
+<td>Global enchantments take effect on the world</td>
+</tr>
+<tr>
+<td align="right">31</td>
+<td>Item and monster special effects</td>
+</tr>
+<tr>
+<td align="right">62</td>
+<td>Artifacts may become yearning</td>
+</tr>
+</tbody></table>
+<p>This timing has strategic consequences:</p>
+<ul>
+<li>current research can unlock knowledge before later events, but orders were submitted with the pre-host state;</li>
+<li>forging and empowerment complete before ordinary rituals;</li>
+<li>remote attacks and magic movement can precede ordinary movement battles;</li>
+<li>a global is cast at the ritual step but its world effect begins at step 28;</li>
+<li>a new global does not retroactively change movement battles or storming that already resolved in the same host;</li>
+<li>yearning occurs near the end of the turn.</li>
+</ul>
+<h2 id="b5-ritual-order-is-random">Ritual order is random<a class="heading-link" href="#b5-ritual-order-is-random" aria-label="Link to Ritual order is random">#</a></h2><p>Rituals at step 10 resolve in random caster order across relevant mages. Plans that require ritual A to precede ritual B in the same month are unsafe unless the engine or objects provide a specific guarantee.</p>
+<p>This affects:</p>
+<ul>
+<li>opening and using gateways;</li>
+<li>competing globals;</li>
+<li>sequential remote attacks;</li>
+<li>global-slot contests;</li>
+<li>casting a protection before a hostile action;</li>
+<li>using a summon as a same-turn caster.</li>
+</ul>
+<h2 id="b5-range-and-legality">Range and legality<a class="heading-link" href="#b5-range-and-legality" aria-label="Link to Range and legality">#</a></h2><p>Ritual range is measured in provinces where shown. No listed range normally means a local ritual. Markers include:</p>
+<ul>
+<li><strong>NUW:</strong> cannot be cast underwater;</li>
+<li><strong>UW:</strong> can be cast only underwater.</li>
+</ul>
+<p>Ritual-range abilities and sites can change reach. Range should be measured from the actual casting laboratory after movement orders, not from the capital or army being supported.</p>
+<h2 id="b5-local-enchantments">Local enchantments<a class="heading-link" href="#b5-local-enchantments" aria-label="Link to Local enchantments">#</a></h2><p>Local enchantments affect a province and may persist. Many are linked to their caster:</p>
+<ul>
+<li>caster death ends the effect;</li>
+<li>most also end when the province is conquered;</li>
+<li>limited-duration enchantments can often be extended with extra gems;</li>
+<li>most gain one month per extra gem, while some gain three.</li>
+</ul>
+<p>The shortcut <code>Shift+M</code> repeats a ritual monthly while the caster remains eligible and resources exist. Repetition is operationally convenient but can drain a treasury silently if the strategic need changes.</p>
+<h2 id="b5-anonymous-and-limited-rituals">Anonymous and limited rituals<a class="heading-link" href="#b5-anonymous-and-limited-rituals" aria-label="Link to Anonymous and limited rituals">#</a></h2><p>Some rituals are:</p>
+<ul>
+<li><strong>Anonymous:</strong> caster or origin information is concealed by the effect’s reporting rules;</li>
+<li><strong>Limited:</strong> only one instance can affect the target province.</li>
+</ul>
+<p>Anonymous is not synonymous with undetectable. Scouting, diplomatic inference, target selection, and repeated patterns can still reveal responsibility.</p>
+<h2 id="b5-ritual-categories">Ritual categories<a class="heading-link" href="#b5-ritual-categories" aria-label="Link to Ritual categories">#</a></h2><table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Strategic use</th>
+<th>Main counter</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Site search</td>
+<td>Convert map ownership into gem income or special access</td>
+<td>Raiding, lab isolation, opportunity cost</td>
+</tr>
+<tr>
+<td>Summon</td>
+<td>Convert gems and a mage-turn into units or commanders</td>
+<td>Banishment, resistance, upkeep or leadership limits</td>
+</tr>
+<tr>
+<td>Remote attack</td>
+<td>Damage or invade a distant province</td>
+<td>Domes, defence, decoys, retaliation</td>
+</tr>
+<tr>
+<td>Magic movement</td>
+<td>Relocate forces outside ordinary movement</td>
+<td>Domes, traps, interception, wrong timing</td>
+</tr>
+<tr>
+<td>Information</td>
+<td>Reveal provinces, armies, sites, or magic</td>
+<td>Concealment, misinformation, opportunity cost</td>
+</tr>
+<tr>
+<td>Local enchantment</td>
+<td>Protect or transform one province</td>
+<td>Dispel, conquest, caster assassination</td>
+</tr>
+<tr>
+<td>Economy</td>
+<td>Produce gems, gold, units, scales, or other flow</td>
+<td>Caster loss, global contest, raids</td>
+</tr>
+<tr>
+<td>Global</td>
+<td>Change rules across the world</td>
+<td>Dispel, replacement, assassination, dominion pressure</td>
+</tr>
+</tbody></table>
+<h2 id="b5-site-search-rituals">Site-search rituals<a class="heading-link" href="#b5-site-search-rituals" aria-label="Link to Site-search rituals">#</a></h2><p>Remote searches can:</p>
+<ul>
+<li>cover territory faster than manual movement;</li>
+<li>search dangerous provinces without exposing a mage;</li>
+<li>use otherwise idle path access;</li>
+<li>convert gems into future income.</li>
+</ul>
+<p>They are investments, not automatic profit. The expected return depends on site frequency, province type, previous searches, ritual cost, and time remaining. A search that pays back in ten turns can be poor during an existential war and excellent during stable expansion.</p>
+<h2 id="b5-summoning">Summoning<a class="heading-link" href="#b5-summoning" aria-label="Link to Summoning">#</a></h2><p>A summon should be valued by role:</p>
+<table>
+<thead>
+<tr>
+<th>Summon output</th>
+<th>Main value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Combat bodies</td>
+<td>Frontage, attrition, special attack, resistance, or siege</td>
+</tr>
+<tr>
+<td>Commander</td>
+<td>New path, leadership, forging, ritual, or thug chassis</td>
+</tr>
+<tr>
+<td>Sacred unit</td>
+<td>Bless interaction and Holy Point independence where applicable</td>
+</tr>
+<tr>
+<td>Undead or demon</td>
+<td>Different upkeep and leadership system, specific counters</td>
+</tr>
+<tr>
+<td>Elemental or temporary force</td>
+<td>Immediate battlefield conversion</td>
+</tr>
+</tbody></table>
+<p>The cost includes the summoner’s month. A mediocre combat unit can be a great summon if it opens a path, commands a new troop family, or relieves a commander-point bottleneck.</p>
+<h2 id="b5-remote-attacks">Remote attacks<a class="heading-link" href="#b5-remote-attacks" aria-label="Link to Remote attacks">#</a></h2><p>Remote attacks resolve before ordinary movement battles. Their purposes include:</p>
+<ul>
+<li>stripping Province Defence;</li>
+<li>killing commanders or laboratories;</li>
+<li>testing a dome;</li>
+<li>exhausting defenders;</li>
+<li>cutting retreat routes;</li>
+<li>creating a magic battle before the main invasion;</li>
+<li>forcing the enemy to distribute defence.</li>
+</ul>
+<p>A remote attack should be coordinated with the ordinary campaign. Damage without exploitation may only warn the target. Repeated attacks can also disclose path access and spending.</p>
+<h2 id="b5-magic-movement">Magic movement<a class="heading-link" href="#b5-magic-movement" aria-label="Link to Magic movement">#</a></h2><p>Teleportation and related movement create unusual timing. A movement ritual may produce a magic battle at step 12, before ordinary army movement. The arriving force must be self-contained:</p>
+<ul>
+<li>correct leadership;</li>
+<li>gems and slaves;</li>
+<li>a legal survival or retreat plan;</li>
+<li>enough force if the target is stronger than intelligence suggested;</li>
+<li>awareness of domes and redirection.</li>
+</ul>
+<p>Strategic mobility is valuable because it compresses distance, but it can also separate mages from laboratories, armies, and friendly retreat provinces.</p>
+<h2 id="b5-repeat-ritual-discipline">Repeat-ritual discipline<a class="heading-link" href="#b5-repeat-ritual-discipline" aria-label="Link to Repeat-ritual discipline">#</a></h2><p>For every repeated ritual, record:</p>
+<ul>
+<li>monthly cost;</li>
+<li>assigned caster;</li>
+<li>cancellation condition;</li>
+<li>minimum reserve;</li>
+<li>target rotation;</li>
+<li>lab and range requirement;</li>
+<li>whether a new patch or mod changes the object.</li>
+</ul>
+<p>Automation should preserve judgment, not replace it.</p>
+<span class="anchor-alias" id="b5-part-ix-domes-remote-attacks-and-magic-movement" aria-hidden="true"></span><h1 id="b5-part-ix-domes-and-remote-magic-defence">Part IX: Domes and Remote-Magic Defence<a class="heading-link" href="#b5-part-ix-domes-and-remote-magic-defence" aria-label="Link to Part IX: Domes and Remote-Magic Defence">#</a></h1><h2 id="b5-what-a-dome-protects">What a dome protects<a class="heading-link" href="#b5-what-a-dome-protects" aria-label="Link to What a dome protects">#</a></h2><p>Domes are local enchantments that interact with hostile ritual effects targeting the province. Their exact chance and consequence are object-specific. Some block, some redirect, and some retaliate.</p>
+<p>They do not replace:</p>
+<ul>
+<li>scouts and intelligence;</li>
+<li>conventional defenders;</li>
+<li>protection against assassination;</li>
+<li>laboratory redundancy;</li>
+<li>dispersal of unique casters;</li>
+<li>diplomatic deterrence.</li>
+</ul>
+<h2 id="b5-major-manual-examples">Major manual examples<a class="heading-link" href="#b5-major-manual-examples" aria-label="Link to Major manual examples">#</a></h2><table>
+<thead>
+<tr>
+<th>Dome</th>
+<th>Listed behaviour in the manual</th>
+<th>Friendly-magic consequence</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Dome of Solid Air</td>
+<td>80% protection; destroyed when it fails</td>
+<td>Blocks friendly targeted magic as well</td>
+</tr>
+<tr>
+<td>Frost Dome</td>
+<td>30% protection and a cold trap</td>
+<td>Blocks friendly targeted magic as well</td>
+</tr>
+<tr>
+<td>Forest Dome</td>
+<td>30%; absorbed fire destroys it</td>
+<td>Blocks friendly targeted magic as well</td>
+</tr>
+<tr>
+<td>Dome of Misdirection</td>
+<td>70%; redirects a ritual to a neighbouring province</td>
+<td>Can redirect friendly targeted magic</td>
+</tr>
+<tr>
+<td>Seven Seals</td>
+<td>Perfect hostile protection until seven blocks crack it; caster-linked</td>
+<td>Friendly Astral magic can pass</td>
+</tr>
+<tr>
+<td>Dome of Arcane Warding</td>
+<td>50% protection</td>
+<td>Check current object text for exact scope</td>
+</tr>
+</tbody></table>
+<p>Strikeback or trap domes may retaliate without blocking. Against global enchantments, strikeback does not hit the global caster. As of 6.34, domes may also protect against Astral Disruption according to the official update.</p>
+<span class="anchor-alias" id="b5-layered-domes" aria-hidden="true"></span><h2 id="b5-layering-domes">Layering domes<a class="heading-link" href="#b5-layering-domes" aria-label="Link to Layering domes">#</a></h2><p>When several domes exist, exact ordering and interaction must be tested for the current version and object set. Strategic evaluation should include:</p>
+<ul>
+<li>probability of at least one block;</li>
+<li>whether a failure destroys a dome;</li>
+<li>whether redirection can hit a friendly or valuable neighbour;</li>
+<li>whether friendly rituals are impeded;</li>
+<li>caster dependency;</li>
+<li>recurring gem and mage-turn cost;</li>
+<li>what the hostile caster learns from the result.</li>
+</ul>
+<p>Do not multiply listed percentages without confirming resolution order and independence.</p>
+<h2 id="b5-dome-strategy">Dome strategy<a class="heading-link" href="#b5-dome-strategy" aria-label="Link to Dome strategy">#</a></h2><p>A dome is best when it protects concentrated value:</p>
+<ul>
+<li>a capital research core;</li>
+<li>an artifact or global caster;</li>
+<li>a gateway;</li>
+<li>a throne;</li>
+<li>a major laboratory and gem stock;</li>
+<li>a predictable army staging province.</li>
+</ul>
+<p>Concentration also makes the target predictable. A strong defence can invite repeated cheap probes, assassinations, ordinary invasion, or attacks on the dome caster.</p>
+<h2 id="b5-remote-defence-audit">Remote-defence audit<a class="heading-link" href="#b5-remote-defence-audit" aria-label="Link to Remote-defence audit">#</a></h2><ul>
+<li>Which provinces are worth enemy gems?</li>
+<li>Which hostile paths and ranges are known?</li>
+<li>Is the dome compatible with friendly rituals?</li>
+<li>Can the caster survive old age, raids, and assassinations?</li>
+<li>Is there a second laboratory or alternate staging point?</li>
+<li>What happens after one block, one failure, or redirection?</li>
+<li>Can the enemy simply attack the logistics outside the dome?</li>
+</ul>
+<h1 id="b5-part-x-global-enchantments-and-dispel-wars">Part X: Global Enchantments and Dispel Wars<a class="heading-link" href="#b5-part-x-global-enchantments-and-dispel-wars" aria-label="Link to Part X: Global Enchantments and Dispel Wars">#</a></h1><h2 id="b5-global-slots">Global slots<a class="heading-link" href="#b5-global-slots" aria-label="Link to Global slots">#</a></h2><p>Global enchantments are worldwide rituals. Game setup permits 3, 5, 7, or 9 global slots; five is the common default. The slot limit makes globals a shared political resource. Casting one changes not only the world but also what every other nation can maintain.</p>
+<h2 id="b5-casting-cases">Casting cases<a class="heading-link" href="#b5-casting-cases" aria-label="Link to Casting cases">#</a></h2><p>When a global is cast:</p>
+<ol>
+<li>if the same named global already exists, the new casting attempts to replace it through the dispel contest;</li>
+<li>if an empty slot exists and that name is absent, the new global occupies a slot;</li>
+<li>if all slots are full and the name is different, the new global contests a randomly selected existing global, including possibly one cast by the same nation.</li>
+</ol>
+<p>Global casting order among mages is random. A plan that assumes an open slot at the beginning of hosting may fail after other nations cast first.</p>
+<span class="anchor-alias" id="b5-fatigue-and-overcasting" aria-hidden="true"></span><h2 id="b5-overcasting">Overcasting<a class="heading-link" href="#b5-overcasting" aria-label="Link to Overcasting">#</a></h2><p>The caster can add gems above the printed minimum. Ritual spending is capped by:</p>
+<pre><code class="language-text">maximum ritual gems = caster path level x 100
+</code></pre>
+<p>The dispel strength of a global includes:</p>
+<pre><code class="language-text">+1 per extra gem above minimum
++5 per caster path level above the spell requirement
++DRN
+</code></pre>
+<p>The challenger must beat the incumbent’s result. The ordinary lesson is that one extra caster path level is worth five overcast gems in the contest, before considering other abilities or Grand Communion support.</p>
+<h2 id="b5-dispel">Dispel<a class="heading-link" href="#b5-dispel" aria-label="Link to Dispel">#</a></h2><p>The common Dispel ritual directly challenges a selected global. The same comparison framework applies:</p>
+<ul>
+<li>extra gems add one each;</li>
+<li>excess relevant path adds five each;</li>
+<li>both sides receive a DRN;</li>
+<li>the higher result wins;</li>
+<li>the challenger must overcome the existing enchantment.</li>
+</ul>
+<p>Because the roll is open-ended, no finite ordinary advantage is absolute. Large margins produce reliability, not certainty.</p>
+<h2 id="b5-caster-dependency">Caster dependency<a class="heading-link" href="#b5-caster-dependency" aria-label="Link to Caster dependency">#</a></h2><p>Most globals end if the caster dies. Immortality does not preserve the enchantment through death while the body reforms. Some globals are also tied to an origin province and end if that province is conquered.</p>
+<p>Counterplay includes:</p>
+<ul>
+<li>Dispel;</li>
+<li>same-name replacement;</li>
+<li>slot-pressure casting;</li>
+<li>assassination;</li>
+<li>remote attacks;</li>
+<li>old-age pressure;</li>
+<li>conquest of the origin;</li>
+<li>forcing the caster to take another risk;</li>
+<li>pushing out hostile dominion when the effect is dominion-limited.</li>
+</ul>
+<p>A huge overcast protects against magical contest, not against a knife.</p>
+<h2 id="b5-protection-against-globals">Protection against globals<a class="heading-link" href="#b5-protection-against-globals" aria-label="Link to Protection against globals">#</a></h2><p>Domes can protect units against many global effects in the same general way as local rituals. Strikeback domes do not retaliate against global casters. For globals restricted to or strengthened by dominion, removing hostile dominion from a province can function as protection.</p>
+<p>The exact protected unit, province, and event scope is global-specific and should be read from current spell text.</p>
+<h2 id="b5-global-categories">Global categories<a class="heading-link" href="#b5-global-categories" aria-label="Link to Global categories">#</a></h2><table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Strategic effect</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Gem engine</td>
+<td>Creates monthly magical income</td>
+</tr>
+<tr>
+<td>Economic engine</td>
+<td>Changes gold, resources, supplies, or population</td>
+</tr>
+<tr>
+<td>Battlefield rule</td>
+<td>Adds storms, darkness, scales, or other conditions</td>
+</tr>
+<tr>
+<td>Summoning or attack engine</td>
+<td>Produces units or recurring hostile actions</td>
+</tr>
+<tr>
+<td>Research or forging engine</td>
+<td>Changes item cost, skill, or knowledge economy</td>
+</tr>
+<tr>
+<td>Punishment global</td>
+<td>Taxes rituals, forging, empowerment, or ordinary activity</td>
+</tr>
+<tr>
+<td>Dominion global</td>
+<td>Scales with or operates inside religious territory</td>
+</tr>
+<tr>
+<td>Information or control global</td>
+<td>Changes vision, detection, travel, or global slots</td>
+</tr>
+</tbody></table>
+<p>The printed benefit is only the first-order effect. A world storm, darkness, or ritual tax changes every rival’s research choices and diplomacy.</p>
+<h2 id="b5-selected-strategic-examples">Selected strategic examples<a class="heading-link" href="#b5-selected-strategic-examples" aria-label="Link to Selected strategic examples">#</a></h2><p>The following revision-2 manual values are a reference set; current object data must be checked before a live-game order:</p>
+<table>
+<thead>
+<tr>
+<th>Global</th>
+<th>Requirement and base cost</th>
+<th>Principal function</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Eternal Pyre</td>
+<td>Enchantment 6, F6, 80 Fire</td>
+<td>+20 Fire gems per month; heat and darkness interaction at origin</td>
+</tr>
+<tr>
+<td>Mother Oak</td>
+<td>Alteration 5, N5, 50 Nature</td>
+<td>+10 Nature gems per month</td>
+</tr>
+<tr>
+<td>Well of Misery</td>
+<td>Conjuration 8, D6, 80 Death</td>
+<td>+21 Death gems per month and world growth interaction</td>
+</tr>
+<tr>
+<td>Stellar Focus</td>
+<td>Enchantment 7, S5, 60 Astral</td>
+<td>+10 Astral pearls per month; world Drain and origin Magic effects</td>
+</tr>
+<tr>
+<td>Gale Gate</td>
+<td>Thaumaturgy 8, A5, 60 Air</td>
+<td>+20 Air gems per month, stronger Air Elementals, hurricanes</td>
+</tr>
+<tr>
+<td>Gates of Horn and Ivory</td>
+<td>Thaumaturgy 7, G5, 60 Glamour</td>
+<td>+15 Glamour gems per month and increased Glamour ritual range</td>
+</tr>
+<tr>
+<td>Forge of the Ancients</td>
+<td>Construction 6, E5, 80 Earth</td>
+<td>Item cost reduction and Master Smith bonus</td>
+</tr>
+<tr>
+<td>Perpetual Storm</td>
+<td>Evocation 6, A5, 70 Air</td>
+<td>Storms in battles, land-income and movement/range pressure</td>
+</tr>
+<tr>
+<td>Burden of Time</td>
+<td>Thaumaturgy 7, D7, 70 Death</td>
+<td>Population, unrest, Death scales, and accelerated aging pressure</td>
+</tr>
+<tr>
+<td>Eternal Twilight</td>
+<td>Alteration 8, G8, 90 Glamour</td>
+<td>Worldwide Magic/Twilight and economic pressure outside friendly dominion</td>
+</tr>
+</tbody></table>
+<p>Examples with more extreme late-game effects appear in Part XIII. These values are object data, not engine formulas; patches and active mods can change them.</p>
+<h2 id="b5-payback">Payback<a class="heading-link" href="#b5-payback" aria-label="Link to Payback">#</a></h2><p>For a pure gem global:</p>
+<pre><code class="language-text">nominal payback time
+= total gems spent / monthly gems produced
+</code></pre>
+<p>This is incomplete. A proper valuation adds:</p>
+<ul>
+<li>probability of being dispelled or losing the caster;</li>
+<li>value of the global slot;</li>
+<li>diplomacy and coalition response;</li>
+<li>same-path gem scarcity;</li>
+<li>caster and research opportunity cost;</li>
+<li>time remaining in the game;</li>
+<li>benefit from non-income side effects.</li>
+</ul>
+<p>An 80-gem global producing 20 per month has a nominal four-month payback before overcast. It can still be poor if it provokes immediate war or exposes the only F6 caster.</p>
+<h2 id="b5-global-diplomacy">Global diplomacy<a class="heading-link" href="#b5-global-diplomacy" aria-label="Link to Global diplomacy">#</a></h2><p>Globals change incentives:</p>
+<ul>
+<li>a private gem engine is visible wealth;</li>
+<li>a world penalty creates a coalition even if its caster is hard to identify politically;</li>
+<li>a slot-filling global can block several nations’ plans;</li>
+<li>a defensive overcast can signal a long-term commitment;</li>
+<li>an origin province becomes a public strategic target.</li>
+</ul>
+<p>Before casting, assess:</p>
+<ol>
+<li>who gains;</li>
+<li>who loses;</li>
+<li>who can dispel;</li>
+<li>who can reach the caster or origin;</li>
+<li>who benefits from helping either side;</li>
+<li>what explanation or bargain is available.</li>
+</ol>
+<h2 id="b5-global-war-audit">Global-war audit<a class="heading-link" href="#b5-global-war-audit" aria-label="Link to Global-war audit">#</a></h2><ul>
+<li>Confirm the current spell object.</li>
+<li>Name the caster and backup.</li>
+<li>Calculate minimum, overcast, excess-path bonus, and maximum spend.</li>
+<li>Decide whether a Grand Communion applies.</li>
+<li>Verify slot state but assume other casts can precede it.</li>
+<li>Protect the caster and any origin province.</li>
+<li>Reserve a response to replacement or Dispel.</li>
+<li>Model diplomatic reaction.</li>
+<li>Set a minimum number of productive months.</li>
+<li>Do not place every strategic asset in the same protected province.</li>
+</ul>
+<h1 id="b5-part-xi-forging-items-and-artifacts">Part XI: Forging, Items, and Artifacts<a class="heading-link" href="#b5-part-xi-forging-items-and-artifacts" aria-label="Link to Part XI: Forging, Items, and Artifacts">#</a></h1><h2 id="b5-forging-requirements">Forging requirements<a class="heading-link" href="#b5-forging-requirements" aria-label="Link to Forging requirements">#</a></h2><p>Forge Item requires:</p>
+<ul>
+<li>a mage in a friendly laboratory;</li>
+<li>the relevant Construction level;</li>
+<li>all item path requirements;</li>
+<li>the required gems;</li>
+<li>an appropriate item slot on the eventual bearer.</li>
+</ul>
+<p>Forging resolves at hosting step 5. <code>Shift+O</code> repeats the selected item each month while requirements remain satisfied.</p>
+<span class="anchor-alias" id="b5-construction-as-an-access-school" aria-hidden="true"></span><h2 id="b5-construction-tiers">Construction tiers<a class="heading-link" href="#b5-construction-tiers" aria-label="Link to Construction tiers">#</a></h2><table>
+<thead>
+<tr>
+<th align="right">Construction level</th>
+<th>Item tier</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1</td>
+<td>Magical trinkets</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td>Lesser magical items</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td>Greater magical items</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td>Very powerful magical items</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td>Unique magical artifacts</td>
+</tr>
+</tbody></table>
+<p>Construction also contains spells and constructs. Its strategic value cannot be reduced to equipment alone.</p>
+<h2 id="b5-base-item-cost-by-path-requirement">Base item cost by path requirement<a class="heading-link" href="#b5-base-item-cost-by-path-requirement" aria-label="Link to Base item cost by path requirement">#</a></h2><p>For each required path:</p>
+<table>
+<thead>
+<tr>
+<th align="right">Required level</th>
+<th align="right">Base gems of that path</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1</td>
+<td align="right">5</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">10</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">15</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">20</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">30</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">40</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">55</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">70</td>
+</tr>
+</tbody></table>
+<p>Multi-path items charge each path component. Current object data, national discounts, Forge Bonus, Forge of the Ancients, yearning, and mod commands can alter effective cost.</p>
+<h2 id="b5-item-value">Item value<a class="heading-link" href="#b5-item-value" aria-label="Link to Item value">#</a></h2><p>An item can provide:</p>
+<ul>
+<li>a path threshold;</li>
+<li>reinvigoration or resistance;</li>
+<li>protection, defence, attacks, or mobility;</li>
+<li>automatic communion membership;</li>
+<li>ritual range or special orders;</li>
+<li>leadership;</li>
+<li>monthly gem generation;</li>
+<li>survival or transformation;</li>
+<li>a chassis-specific thug or supercombatant package.</li>
+</ul>
+<p>The correct unit of analysis is the package:</p>
+<pre><code class="language-text">item gems
++ forge mage-turn
++ Construction research
++ bearer opportunity cost
++ risk of loss
+</code></pre>
+<p>A cheap item can be strategically expensive on the wrong bearer. A costly booster can be excellent if it unlocks a global or a new repeatable booster ladder.</p>
+<h2 id="b5-slots-and-package-conflicts">Slots and package conflicts<a class="heading-link" href="#b5-slots-and-package-conflicts" aria-label="Link to Slots and package conflicts">#</a></h2><p>Commanders have limited equipment slots. A booster competes with:</p>
+<ul>
+<li>protection;</li>
+<li>reinvigoration;</li>
+<li>a weapon or shield;</li>
+<li>penetration gear;</li>
+<li>mobility;</li>
+<li>anti-assassination equipment;</li>
+<li>another booster.</li>
+</ul>
+<p>Path-access plans must be built on the actual chassis. “Wear three boosters” fails if they occupy the same miscellaneous, head, body, or hand slot.</p>
+<p>Mounted units and unusual chassis can have different slot or item restrictions. Strength requirements and two-handed weapons can also invalidate theoretical loadouts.</p>
+<h2 id="b5-national-items">National items<a class="heading-link" href="#b5-national-items" aria-label="Link to National items">#</a></h2><p>Some items are:</p>
+<ul>
+<li><strong>restricted:</strong> only qualifying nations see and forge them, displayed with a dark blue forge background;</li>
+<li><strong>discounted:</strong> available at reduced cost for particular nations, displayed in grey.</li>
+</ul>
+<p>National items may alter a nation’s access curve earlier than generic tables imply. They belong in every later nation dossier.</p>
+<h2 id="b5-forge-bonuses">Forge bonuses<a class="heading-link" href="#b5-forge-bonuses" aria-label="Link to Forge bonuses">#</a></h2><p>Forge Bonus and Master Smith are not identical:</p>
+<ul>
+<li><strong>Master Smith</strong> raises paths for forging only;</li>
+<li><strong>Forge Bonus</strong> reduces cost according to the ability or source;</li>
+<li><strong>Forge of the Ancients</strong> gives a world-effect discount and Master Smith bonus to the caster’s nation;</li>
+<li>national discounts and object-specific commands can also apply.</li>
+</ul>
+<p>Exact stacking order and rounding among fixed and percentage effects are assigned to controlled tests. The displayed forge cost is the operational authority.</p>
+<h2 id="b5-forge-of-the-ancients">Forge of the Ancients<a class="heading-link" href="#b5-forge-of-the-ancients" aria-label="Link to Forge of the Ancients">#</a></h2><p>The revision-2 manual lists:</p>
+<pre><code class="language-text">Construction 6
+Earth 5
+80 Earth gems
+-20% item gem cost
+Master Smith +1
+</code></pre>
+<p>This global changes both price and eligibility. Its strategic value is highest when:</p>
+<ul>
+<li>many item batches are planned;</li>
+<li>the +1 creates new forge thresholds;</li>
+<li>Construction research is already deep;</li>
+<li>the caster and global can be protected;</li>
+<li>the new efficiency will be realised before Dispel or war.</li>
+</ul>
+<span class="anchor-alias" id="b5-artifact-races" aria-hidden="true"></span><h2 id="b5-artifacts">Artifacts<a class="heading-link" href="#b5-artifacts" aria-label="Link to Artifacts">#</a></h2><p>Construction 9 items are unique artifacts: only one copy of each can exist in the world. The default limited-unique-artifact rule limits each player to one unique artifact forged per turn.</p>
+<p>Artifacts create:</p>
+<ul>
+<li>race conditions;</li>
+<li>intelligence from failed availability;</li>
+<li>concentration of power and loss risk;</li>
+<li>global strategic targets;</li>
+<li>an incentive to reach Construction 9 before others.</li>
+</ul>
+<p>An artifact is more than an improved item. Its uniqueness changes timing and diplomacy.</p>
+<h2 id="b5-yearning">Yearning<a class="heading-link" href="#b5-yearning" aria-label="Link to Yearning">#</a></h2><p>An artifact can become yearning, allowing it to be forged at half usual cost. Yearning can begin once at least one of these has occurred:</p>
+<ul>
+<li>any nation researches Construction 9;</li>
+<li>Forge of the Ancients is active;</li>
+<li>the Throne of Creation is claimed;</li>
+<li>the Throne of the Artificer is claimed.</li>
+</ul>
+<p>Each condition increases the monthly yearning rate by 50 percentage points according to the manual. The check occurs at hosting step 62.</p>
+<p>Yearning creates an information problem. Waiting can halve price but lose the artifact race. Forging immediately secures the object but pays full cost.</p>
+<h2 id="b5-booster-reference">Booster reference<a class="heading-link" href="#b5-booster-reference" aria-label="Link to Booster reference">#</a></h2><p>The following manual items form the core generic access map. Values are path requirements, not effective gem prices after bonuses.</p>
+<h3 id="b5-construction-5">Construction 5<a class="heading-link" href="#b5-construction-5" aria-label="Link to Construction 5">#</a></h3><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Forge requirement</th>
+<th>Boost</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Skull Staff</td>
+<td>D2</td>
+<td>+1 Death</td>
+</tr>
+<tr>
+<td>Thistle Mace</td>
+<td>N2</td>
+<td>+1 Nature</td>
+</tr>
+<tr>
+<td>Flame Helmet</td>
+<td>F4</td>
+<td>+1 Fire</td>
+</tr>
+<tr>
+<td>Winged Helmet</td>
+<td>A4</td>
+<td>+1 Air</td>
+</tr>
+<tr>
+<td>Gossamer Veil</td>
+<td>G3</td>
+<td>+1 Glamour</td>
+</tr>
+<tr>
+<td>Robe of the Sea</td>
+<td>W3</td>
+<td>+1 Water</td>
+</tr>
+<tr>
+<td>Armour of Souls</td>
+<td>B5</td>
+<td>+1 Blood</td>
+</tr>
+<tr>
+<td>Earth Boots</td>
+<td>E2</td>
+<td>+1 Earth</td>
+</tr>
+<tr>
+<td>Coin of Meteoritic Iron</td>
+<td>S2E2</td>
+<td>+1 Astral</td>
+</tr>
+<tr>
+<td>Horn of Storms</td>
+<td>A5</td>
+<td>+1 Air</td>
+</tr>
+<tr>
+<td>Brazen Vessel</td>
+<td>B5</td>
+<td>+1 Blood</td>
+</tr>
+<tr>
+<td>Blood Stone</td>
+<td>B3E2</td>
+<td>+1 Earth</td>
+</tr>
+<tr>
+<td>Armour of Twisting Thorns</td>
+<td>B3N2</td>
+<td>+1 Nature and +1 Blood</td>
+</tr>
+</tbody></table>
+<h3 id="b5-construction-7">Construction 7<a class="heading-link" href="#b5-construction-7" aria-label="Link to Construction 7">#</a></h3><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Forge requirement</th>
+<th>Boost</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Staff of Elemental Mastery</td>
+<td>F4W4 or A4E4 variant</td>
+<td>+1 Fire, Air, Water, and Earth</td>
+</tr>
+<tr>
+<td>Treelord’s Staff</td>
+<td>N5</td>
+<td>+2 Nature</td>
+</tr>
+<tr>
+<td>Blood Thorn</td>
+<td>B3</td>
+<td>+1 Blood</td>
+</tr>
+<tr>
+<td>Starshine Skullcap</td>
+<td>S2</td>
+<td>+1 Astral</td>
+</tr>
+<tr>
+<td>Skullface</td>
+<td>D5</td>
+<td>+1 Death</td>
+</tr>
+<tr>
+<td>Robe of the Magi</td>
+<td>A5B5</td>
+<td>+1 all nine ordinary paths</td>
+</tr>
+<tr>
+<td>Skull of Fire</td>
+<td>F1D1</td>
+<td>+1 Fire</td>
+</tr>
+<tr>
+<td>Water Bracelet</td>
+<td>W1</td>
+<td>+1 Water</td>
+</tr>
+<tr>
+<td>Ring of Wizardry</td>
+<td>S7</td>
+<td>+1 all nine ordinary paths</td>
+</tr>
+<tr>
+<td>Ring of Sorcery</td>
+<td>S6</td>
+<td>+1 Astral, Death, Nature, and Glamour</td>
+</tr>
+<tr>
+<td>Moonvine Bracelet</td>
+<td>N3S1</td>
+<td>+1 Nature</td>
+</tr>
+<tr>
+<td>Mirage Crystal</td>
+<td>G3E2</td>
+<td>+1 Glamour</td>
+</tr>
+</tbody></table>
+<p>The table is a threshold map, not a recommendation to forge every item. It must be combined with slots, national paths, rare randoms, and active-mod data.</p>
+<h2 id="b5-booster-ladders">Booster ladders<a class="heading-link" href="#b5-booster-ladders" aria-label="Link to Booster ladders">#</a></h2><p>A ladder begins with actual access and applies legal steps in order:</p>
+<pre><code class="language-text">native path
+-&gt; low-tier booster
+-&gt; higher forge threshold
+-&gt; multi-path booster
+-&gt; summon or empowerment
+-&gt; global or legendary threshold
+</code></pre>
+<p>Example structure:</p>
+<pre><code class="language-text">E2 mage
+-&gt; forge Earth Boots
+-&gt; operate as E3 while worn
+-&gt; cast or forge an E3 threshold
+</code></pre>
+<p>This does not create Earth on an E0 mage. It also does not allow one physical item to be worn simultaneously by two casters.</p>
+<h2 id="b5-forge-queue">Forge queue<a class="heading-link" href="#b5-forge-queue" aria-label="Link to Forge queue">#</a></h2><p>For each planned item:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Record</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Purpose</td>
+<td>Exact spell, ritual, battle, or chassis unlocked</td>
+</tr>
+<tr>
+<td>Qualified forger</td>
+<td>Common, rare, unique, or Pretender</td>
+</tr>
+<tr>
+<td>Research</td>
+<td>Construction deadline</td>
+</tr>
+<tr>
+<td>Cost</td>
+<td>Displayed current cost after bonuses</td>
+</tr>
+<tr>
+<td>Slot</td>
+<td>Conflict with other equipment</td>
+</tr>
+<tr>
+<td>Bearer</td>
+<td>Where and when the item is needed</td>
+</tr>
+<tr>
+<td>Reuse</td>
+<td>Whether it returns to a laboratory or remains deployed</td>
+</tr>
+<tr>
+<td>Loss risk</td>
+<td>Capture, death, assassination, or artifact uniqueness</td>
+</tr>
+</tbody></table>
+<h1 id="b5-part-xii-path-access-and-bootstrapping">Part XII: Path Access and Bootstrapping<a class="heading-link" href="#b5-part-xii-path-access-and-bootstrapping" aria-label="Link to Part XII: Path Access and Bootstrapping">#</a></h1><span class="anchor-alias" id="b5-national-and-restricted-magic" aria-hidden="true"></span><h2 id="b5-national-access-is-a-distribution">National access is a distribution<a class="heading-link" href="#b5-national-access-is-a-distribution" aria-label="Link to National access is a distribution">#</a></h2><p>“The nation has Astral 3” can mean:</p>
+<ul>
+<li>every fort recruits S3;</li>
+<li>a capital-only mage has S3;</li>
+<li>a 10% random reaches S3;</li>
+<li>the Pretender alone has S3;</li>
+<li>a summon can eventually reach S3;</li>
+<li>one empowered commander reaches S3;</li>
+<li>a communion temporarily produces S3.</li>
+</ul>
+<p>These are strategically different. Every nation dossier should separate:</p>
+<ul>
+<li>common repeatable paths;</li>
+<li>capital or terrain restrictions;</li>
+<li>random probability;</li>
+<li>foreign recruitment;</li>
+<li>summons;</li>
+<li>Pretender access;</li>
+<li>item-dependent access;</li>
+<li>communion-only combat access;</li>
+<li>empowerment.</li>
+</ul>
+<h2 id="b5-the-access-graph">The access graph<a class="heading-link" href="#b5-the-access-graph" aria-label="Link to The access graph">#</a></h2><p>Represent each threshold as a node:</p>
+<pre><code class="language-text">recruitable mage
+-&gt; booster forger
+-&gt; boosted ritual caster
+-&gt; summoned new-path commander
+-&gt; cross-path item
+-&gt; global or legendary caster
+</code></pre>
+<p>Every arrow needs:</p>
+<ul>
+<li>research;</li>
+<li>path;</li>
+<li>gems;</li>
+<li>a mage-turn;</li>
+<li>a slot or laboratory;</li>
+<li>correct load order under mods.</li>
+</ul>
+<p>If any arrow depends on a rare random, calculate recruitment probability and delay rather than calling the ladder “reliable.”</p>
+<h2 id="b5-probability-of-random-access">Probability of random access<a class="heading-link" href="#b5-probability-of-random-access" aria-label="Link to Probability of random access">#</a></h2><p>For an independent probability <code>p</code> per recruitment, the chance of at least one success after <code>n</code> recruits is:</p>
+<pre><code class="language-text">P(at least one) = 1 - (1 - p)^n
+</code></pre>
+<p>Examples:</p>
+<table>
+<thead>
+<tr>
+<th align="right">Random chance</th>
+<th align="right">Recruits</th>
+<th align="right">Chance of at least one</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">10%</td>
+<td align="right">5</td>
+<td align="right">41%</td>
+</tr>
+<tr>
+<td align="right">10%</td>
+<td align="right">10</td>
+<td align="right">65%</td>
+</tr>
+<tr>
+<td align="right">10%</td>
+<td align="right">20</td>
+<td align="right">88%</td>
+</tr>
+<tr>
+<td align="right">20%</td>
+<td align="right">5</td>
+<td align="right">67%</td>
+</tr>
+<tr>
+<td align="right">20%</td>
+<td align="right">10</td>
+<td align="right">89%</td>
+</tr>
+</tbody></table>
+<p>This assumes independent rolls and the stated probability. Multi-pick random systems and linked randoms require their actual object definition.</p>
+<h2 id="b5-access-quality">Access quality<a class="heading-link" href="#b5-access-quality" aria-label="Link to Access quality">#</a></h2><p>Evaluate a path threshold on:</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Reliability</td>
+<td>How often can the caster be obtained?</td>
+</tr>
+<tr>
+<td>Scale</td>
+<td>How many can be fielded?</td>
+</tr>
+<tr>
+<td>Location</td>
+<td>Capital, fort, terrain, summon site, or Pretender?</td>
+</tr>
+<tr>
+<td>Timing</td>
+<td>When do research and gems make it operational?</td>
+</tr>
+<tr>
+<td>Sustainability</td>
+<td>Can the effect be repeated each month or battle?</td>
+</tr>
+<tr>
+<td>Replaceability</td>
+<td>What happens if the caster dies?</td>
+</tr>
+<tr>
+<td>Competing role</td>
+<td>Is the caster also the only forger, researcher, or global anchor?</td>
+</tr>
+</tbody></table>
+<span class="anchor-alias" id="b5-empowerment" aria-hidden="true"></span><h2 id="b5-empowerment-as-a-bridge">Empowerment as a bridge<a class="heading-link" href="#b5-empowerment-as-a-bridge" aria-label="Link to Empowerment as a bridge">#</a></h2><p>Empowerment is most efficient when it creates an access loop. Examples:</p>
+<ul>
+<li>path 0 -&gt; 1 permits a booster to function;</li>
+<li>a new cross-path combination forges a unique enabler;</li>
+<li>a permanent ritual caster summons replaceable mages;</li>
+<li>a global generates more of the gem type used;</li>
+<li>a new path makes an existing rare random unnecessary.</li>
+</ul>
+<p>The fifty-gem first level is poor if it ends at level 1 with no useful threshold.</p>
+<h2 id="b5-pretender-as-access">Pretender as access<a class="heading-link" href="#b5-pretender-as-access" aria-label="Link to Pretender as access">#</a></h2><p>A Pretender can:</p>
+<ul>
+<li>forge initial boosters;</li>
+<li>cast a national or global ritual;</li>
+<li>provide a missing cross-path;</li>
+<li>summon new-path commanders;</li>
+<li>establish a communion or item ladder.</li>
+</ul>
+<p>This access is delayed by dormancy or imprisonment and endangered by death, Call God delay, and positional commitments. A Pretender path that exists only on the design screen is not operational until the chassis can reach a laboratory and spend the required turns.</p>
+<h2 id="b5-trading-and-diplomacy">Trading and diplomacy<a class="heading-link" href="#b5-trading-and-diplomacy" aria-label="Link to Trading and diplomacy">#</a></h2><p>Items and gems can move path access between nations:</p>
+<ul>
+<li>trade for a booster;</li>
+<li>hire another player to forge;</li>
+<li>exchange surplus gems for a binding shortage;</li>
+<li>coordinate a global or Dispel;</li>
+<li>use allied movement and laboratories where game rules permit.</li>
+</ul>
+<p>Trade can be cheaper than empowerment, but it creates dependency and reveals strategic intent. A request for a Starshine Skullcap or Ring of Sorcery tells informed rivals which threshold may be approaching.</p>
+<h2 id="b5-hidden-costs-of-path-escalation">Hidden costs of path escalation<a class="heading-link" href="#b5-hidden-costs-of-path-escalation" aria-label="Link to Hidden costs of path escalation">#</a></h2><ul>
+<li>rare mages stop researching;</li>
+<li>boosters occupy survival slots;</li>
+<li>a ladder concentrates unique items;</li>
+<li>the caster becomes an assassination target;</li>
+<li>alchemy destroys four gems for one off-path gem;</li>
+<li>the required global occupies a contested slot;</li>
+<li>the access arrives too late for the named war.</li>
+</ul>
+<p>The correct endpoint is the cheapest <strong>timely and repeatable</strong> access, not the highest theoretical path.</p>
+<span class="anchor-alias" id="b5-part-xii-legendary-and-level-nine-magic" aria-hidden="true"></span><h1 id="b5-part-xiii-legendary-and-late-game-magic">Part XIII: Legendary and Late-Game Magic<a class="heading-link" href="#b5-part-xiii-legendary-and-late-game-magic" aria-label="Link to Part XIII: Legendary and Late-Game Magic">#</a></h1><h2 id="b5-the-level-nine-decision">The level-nine decision<a class="heading-link" href="#b5-the-level-nine-decision" aria-label="Link to The level-nine decision">#</a></h2><p>Legendary research is a strategic commitment:</p>
+<ul>
+<li>level 9 has a large research cost;</li>
+<li>one spell is selected at a time;</li>
+<li>required paths are often rare;</li>
+<li>gem costs can consume several months of income;</li>
+<li>the spell can change global diplomacy;</li>
+<li>the caster becomes a critical asset.</li>
+</ul>
+<p>The selection should answer:</p>
+<ol>
+<li>What changes immediately after the spell is learned?</li>
+<li>Is the caster already operational?</li>
+<li>Are the gems reserved?</li>
+<li>What is the counter?</li>
+<li>Is a second legendary spell worth repeating the level?</li>
+<li>Would another school’s lower breakpoint win sooner?</li>
+</ol>
+<h2 id="b5-wish">Wish<a class="heading-link" href="#b5-wish" aria-label="Link to Wish">#</a></h2><p>The revision-2 manual lists Wish as:</p>
+<pre><code class="language-text">Alteration 9
+Astral 9
+100 Astral pearls
+</code></pre>
+<p>Wish can produce extraordinary outcomes and can also harm the caster or nation. The manual suggests that wishing for gems or an artifact is safer than many ambitious requests.</p>
+<p>Folklore is not enough to establish the accepted commands, aliases, random results, restricted units, or mod interactions. The library treats a complete Wish catalogue as <strong>test pending</strong>. The controlled suite records exact strings, messages, treasury changes, units, items, afflictions, horror marks, and repeat variation for each ruleset.</p>
+<h2 id="b5-nexus-gate">Nexus Gate<a class="heading-link" href="#b5-nexus-gate" aria-label="Link to Nexus Gate">#</a></h2><p>The manual lists Nexus Gate as:</p>
+<pre><code class="language-text">Thaumaturgy 9
+Astral 5, Earth 3
+40 Astral pearls
+</code></pre>
+<p>It establishes a permanent gate to the Nexus. The network is shared and creates opportunities for rapid movement as well as exposure to other users and void-related danger. It cannot be evaluated as “forty pearls for movement” alone; it changes map topology.</p>
+<p>Questions before opening it:</p>
+<ul>
+<li>who else can use the network;</li>
+<li>which laboratories and armies become connected;</li>
+<li>whether entry provinces can be held;</li>
+<li>what happens if an enemy learns or controls a node;</li>
+<li>which commanders can survive the destination.</li>
+</ul>
+<h2 id="b5-tartarian-gate">Tartarian Gate<a class="heading-link" href="#b5-tartarian-gate" aria-label="Link to Tartarian Gate">#</a></h2><p>The manual lists Tartarian Gate as:</p>
+<pre><code class="language-text">Conjuration 9
+Death 7
+7 Death gems
+</code></pre>
+<p>It releases a dead Titan or Monstrum from Tartarus. The body can be extraordinarily powerful, but the mind may be destroyed or otherwise impaired. The ritual’s low printed gem cost is balanced by uncertainty, caster requirements, research, leadership, equipment, and remediation.</p>
+<p>Tartarians should be classified after arrival:</p>
+<ul>
+<li>fully capable commander;</li>
+<li>impaired commander requiring healing or transformation;</li>
+<li>combat body;</li>
+<li>unusable or dangerous result.</li>
+</ul>
+<p>The expected value depends on the nation’s ability to repair minds, equip chassis, command units, and absorb failures.</p>
+<h2 id="b5-arcane-nexus">Arcane Nexus<a class="heading-link" href="#b5-arcane-nexus" aria-label="Link to Arcane Nexus">#</a></h2><p>The revision-2 manual lists Arcane Nexus as:</p>
+<pre><code class="language-text">Enchantment 9
+Astral 8
+150 Astral pearls
+</code></pre>
+<p>It gathers Astral pearls equal to one quarter of non-Astral, non-Blood gems spent on rituals, forging, and empowerment, along with its ambient collection described by the spell. It does not simply take a percentage of all magic income.</p>
+<p>Arcane Nexus changes the world’s incentives:</p>
+<ul>
+<li>rivals may delay forging and rituals;</li>
+<li>gem spending indirectly funds the caster;</li>
+<li>the caster becomes a coalition target;</li>
+<li>Dispel strength and overcast become geopolitical questions;</li>
+<li>Blood activity is comparatively less taxed by the stated collection rule.</li>
+</ul>
+<h2 id="b5-utterdark">Utterdark<a class="heading-link" href="#b5-utterdark" aria-label="Link to Utterdark">#</a></h2><p>The revision-2 manual lists Utterdark as:</p>
+<pre><code class="language-text">Alteration 9
+Death 9
+100 Death gems
+</code></pre>
+<p>Its world darkness and severe income/resource reduction restructure military and economic play; caves and deep seas receive stated exemptions. Its value is relative. A nation prepared for darkness, nonliving armies, summons, or reduced conventional income may gain while ordinary gold-and-resource nations collapse.</p>
+<p>The diplomatic effect is immediate: even nations not at war with the caster have reason to remove it.</p>
+<h2 id="b5-gift-of-natures-bounty">Gift of Nature’s Bounty<a class="heading-link" href="#b5-gift-of-natures-bounty" aria-label="Link to Gift of Nature’s Bounty">#</a></h2><p>The manual’s legendary Nature global improves income inside friendly dominion in proportion to candles and adds Growth. Its effect links:</p>
+<ul>
+<li>dominion strength;</li>
+<li>population economy;</li>
+<li>temple and preaching infrastructure;</li>
+<li>global protection;</li>
+<li>the ability to hold productive territory.</li>
+</ul>
+<p>It does more than produce income. It turns religious map control into a fiscal multiplier.</p>
+<h2 id="b5-astral-corruption">Astral Corruption<a class="heading-link" href="#b5-astral-corruption" aria-label="Link to Astral Corruption">#</a></h2><p>The legendary Blood/Astral global punishes non-Blood rituals, forging, and empowerment with horror-related danger scaling with expenditure. It changes the comparative price of every magical action and can make ordinary path development lethal.</p>
+<p>The caster should expect:</p>
+<ul>
+<li>coalition pressure;</li>
+<li>reduced rival forging and ritual tempo;</li>
+<li>greater relative value of Blood magic;</li>
+<li>attacks on the global caster;</li>
+<li>opponents shifting to armies, priests, or already forged assets.</li>
+</ul>
+<h2 id="b5-cataclysm-and-slot-disruption">Cataclysm and slot disruption<a class="heading-link" href="#b5-cataclysm-and-slot-disruption" aria-label="Link to Cataclysm and slot disruption">#</a></h2><p>Some late rituals affect multiple globals, local enchantments, world magic, horror marks, or even the global-slot environment. Such effects should be treated as regime changes, not isolated spell casts.</p>
+<p>Before using one:</p>
+<ul>
+<li>record which friendly enchantments will also be lost;</li>
+<li>estimate who benefits from a cleared global board;</li>
+<li>identify the order in which replacement globals can be cast later;</li>
+<li>protect against the new horror or magic environment;</li>
+<li>recognise that apparent neutrality can still favour one roster.</li>
+</ul>
+<h2 id="b5-late-game-transition">Late-game transition<a class="heading-link" href="#b5-late-game-transition" aria-label="Link to Late-game transition">#</a></h2><p>A nation is not in the late game merely because it has researched level 9. A functional late-game magical state includes:</p>
+<ul>
+<li>several protected high-path casters;</li>
+<li>a deep treasury with named reserves;</li>
+<li>repeatable battlefield packages;</li>
+<li>remote response and movement;</li>
+<li>global defence;</li>
+<li>forged and summoned access;</li>
+<li>laboratories and retreat routes;</li>
+<li>intelligence about rival legendary choices.</li>
+</ul>
+<p>Research without delivery is a catalogue. Delivery without preservation is a spectacle.</p>
+<h1 id="b5-part-xiv-countering-magic">Part XIV: Countering Magic<a class="heading-link" href="#b5-part-xiv-countering-magic" aria-label="Link to Part XIV: Countering Magic">#</a></h1><h2 id="b5-counter-the-chain">Counter the chain<a class="heading-link" href="#b5-counter-the-chain" aria-label="Link to Counter the chain">#</a></h2><p>Every magical plan has dependencies. It can be attacked at:</p>
+<pre><code class="language-text">research
+-&gt; caster
+-&gt; path boost
+-&gt; gems
+-&gt; lab
+-&gt; range
+-&gt; preparation
+-&gt; target
+-&gt; effect
+-&gt; persistence
+</code></pre>
+<p>The cheapest counter is often not the one printed opposite the damage type.</p>
+<h2 id="b5-counter-layers">Counter layers<a class="heading-link" href="#b5-counter-layers" aria-label="Link to Counter layers">#</a></h2><table>
+<thead>
+<tr>
+<th>Enemy mechanism</th>
+<th>Possible counter layers</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Fire area damage</td>
+<td>Fire Resistance, dispersion, faster contact, caster interruption, dome if remote</td>
+</tr>
+<tr>
+<td>MR-based control</td>
+<td>Higher MR, path skill, antimagic, fewer valuable targets, physical pressure</td>
+</tr>
+<tr>
+<td>Communion</td>
+<td>Kill or scatter masters, exhaust slaves, force threshold loss, early contact, extended battle</td>
+</tr>
+<tr>
+<td>Skeleton spam</td>
+<td>Priests, fatigue pressure, kill summoners, long-battle clock, commander targeting</td>
+</tr>
+<tr>
+<td>Heavy buffs</td>
+<td>Attack before activation, bypass Protection, remove caster-linked enchantment</td>
+</tr>
+<tr>
+<td>Remote attack</td>
+<td>Dome, decoy province, distributed labs, conventional defence, retaliation</td>
+</tr>
+<tr>
+<td>Global</td>
+<td>Dispel, replacement, assassination, origin conquest, dominion removal, diplomacy</td>
+</tr>
+<tr>
+<td>Artifact chassis</td>
+<td>Disarm through killing bearer, fatigue, MR attack, battlefield control, assassination</td>
+</tr>
+<tr>
+<td>Gem-heavy script</td>
+<td>Cheap probes, sequential battles, retreat denial, treasury pressure</td>
+</tr>
+</tbody></table>
+<h2 id="b5-resistance-is-not-a-complete-counter">Resistance is not a complete counter<a class="heading-link" href="#b5-resistance-is-not-a-complete-counter" aria-label="Link to Resistance is not a complete counter">#</a></h2><p>Resistance reduces one damage family. It does not necessarily answer:</p>
+<ul>
+<li>physical secondary effects;</li>
+<li>fatigue;</li>
+<li>control;</li>
+<li>armour-negating non-elemental damage;</li>
+<li>summons;</li>
+<li>morale pressure;</li>
+<li>battlefield conditions;</li>
+<li>a complementary second path.</li>
+</ul>
+<p>A good counter preserves function after the opponent changes one spell.</p>
+<h2 id="b5-attack-timing">Attack timing<a class="heading-link" href="#b5-attack-timing" aria-label="Link to Attack timing">#</a></h2><p>Many magical packages are weakest:</p>
+<ul>
+<li>before research completes;</li>
+<li>while boosters are being forged;</li>
+<li>during the first preparation rounds;</li>
+<li>after gems are spent in a probe;</li>
+<li>when casters move away from laboratories;</li>
+<li>after a communion loses one threshold slave;</li>
+<li>when a global caster becomes publicly identifiable.</li>
+</ul>
+<p>Tempo can be a stronger antimagic tool than Magic Resistance.</p>
+<h2 id="b5-targeting-the-organisation">Targeting the organisation<a class="heading-link" href="#b5-targeting-the-organisation" aria-label="Link to Targeting the organisation">#</a></h2><p>Magic concentrates value in commanders. Countermeasures include:</p>
+<ul>
+<li>flyers or rear attacks;</li>
+<li>assassins;</li>
+<li>precision missiles;</li>
+<li>remote strikes;</li>
+<li>fast flanks;</li>
+<li>fear or morale pressure on ordinary mage chassis;</li>
+<li>cutting friendly retreat provinces;</li>
+<li>raiding laboratories and gem connections.</li>
+</ul>
+<p>This must be balanced against decoys, bodyguards, traps, and expendable casters.</p>
+<h2 id="b5-gem-denial">Gem denial<a class="heading-link" href="#b5-gem-denial" aria-label="Link to Gem denial">#</a></h2><p>Force the enemy to spend resources inefficiently:</p>
+<ul>
+<li>attack twice before resupply;</li>
+<li>threaten multiple fronts;</li>
+<li>use cheap forces that look valuable enough to trigger scripted gems;</li>
+<li>retreat from the expected main battle where legal;</li>
+<li>raid gem-producing sites and laboratories;</li>
+<li>occupy the route that connects sites to labs.</li>
+</ul>
+<p>Exact spell-AI gem thresholds are not fully public, so sacrificial-probe doctrine must be tested rather than treated as automatic.</p>
+<h2 id="b5-counter-counter-planning">Counter-counter planning<a class="heading-link" href="#b5-counter-counter-planning" aria-label="Link to Counter-counter planning">#</a></h2><p>Every package should answer:</p>
+<blockquote>
+<p>If the opponent knows the plan, what is the cheapest adjustment that defeats it?</p>
+</blockquote>
+<p>Then add one response:</p>
+<ul>
+<li>alternative damage;</li>
+<li>different formation;</li>
+<li>a faster script;</li>
+<li>a lower-gem mode;</li>
+<li>extra slave redundancy;</li>
+<li>a second route;</li>
+<li>conventional troops that exploit the magical counter.</li>
+</ul>
+<p>The aim is not an uncounterable spell. It is a package whose counters create exploitable costs.</p>
+<h1 id="b5-part-xv-active-mod-ruleset">Part XV: Active Mod Ruleset<a class="heading-link" href="#b5-part-xv-active-mod-ruleset" aria-label="Link to Part XV: Active Mod Ruleset">#</a></h1><h2 id="b5-keep-the-engine-and-object-layers-separate">Keep the engine and object layers separate<a class="heading-link" href="#b5-keep-the-engine-and-object-layers-separate" aria-label="Link to Keep the engine and object layers separate">#</a></h2><p>Book IX owns the exact spell, item, site, mage, and command inventories for DE 2.16 followed by Divinitus 1.15.3 DE. Those files can change schools, paths, costs, range, area, effects, boosters, research, forging, ritual mastery, and gem income on thousands of individual objects. An unmodded spell table cannot safely be copied into the combined game.</p>
+<p>The object edits do not automatically replace the engine&#39;s general research process, communion participant rules, ritual timing, laboratory requirements, global-slot process, or ordinary alchemy. Those rules remain the starting point until an exact command, patch correction, or controlled test changes them.</p>
+<h2 id="b5-resolving-modded-magic">Resolving modded magic<a class="heading-link" href="#b5-resolving-modded-magic" aria-label="Link to Resolving modded magic">#</a></h2><p>For every important spell or item:</p>
+<ol>
+<li>identify the unmodded object;</li>
+<li>apply every DE selection or copy in source order;</li>
+<li>apply Divinitus afterward;</li>
+<li>resolve linked units, effects, weapons, sites, and shapes;</li>
+<li>record final school, paths, cost, range, area, effect, and restrictions;</li>
+<li>verify in game;</li>
+<li>test AI, communion, and edge behaviour if strategically important.</li>
+</ol>
+<p>The published explanation can remain readable, but its source record must retain the full provenance.</p>
+<h1 id="b5-part-xvi-controlled-test-programme">Part XVI: Controlled-Test Programme<a class="heading-link" href="#b5-part-xvi-controlled-test-programme" aria-label="Link to Part XVI: Controlled-Test Programme">#</a></h1><h2 id="b5-test-standard">Test standard<a class="heading-link" href="#b5-test-standard" aria-label="Link to Test standard">#</a></h2><p>Every test records:</p>
+<ul>
+<li>game version;</li>
+<li>ruleset and load order;</li>
+<li>map and province;</li>
+<li>research and global settings;</li>
+<li>exact commander and object IDs where available;</li>
+<li>paths, items, gems, fatigue, and scripts;</li>
+<li>screenshots or turn files;</li>
+<li>number of repetitions;</li>
+<li>observed distribution;</li>
+<li>conclusion and remaining uncertainty.</li>
+</ul>
+<p>One replay can demonstrate possibility. It rarely establishes probability or exact rounding.</p>
+<h2 id="b5-test-1-research-arithmetic">Test 1: Research arithmetic<a class="heading-link" href="#b5-test-1-research-arithmetic" aria-label="Link to Test 1: Research arithmetic">#</a></h2><p>Create researchers with known total paths, bonuses, Magic/Drain, Dementia, philosopher status, and Divine Insights. Verify displayed and contributed RP, minimum 1, halving order, and dominion-candle caps.</p>
+<h2 id="b5-test-2-research-hosting-timing">Test 2: Research hosting timing<a class="heading-link" href="#b5-test-2-research-hosting-timing" aria-label="Link to Test 2: Research hosting timing">#</a></h2><p>Have researchers contribute and then die at later hosting steps. Confirm current-month contribution and future loss. Test laboratory loss and site-income connectivity separately.</p>
+<h2 id="b5-test-3-combat-gem-spending">Test 3: Combat gem spending<a class="heading-link" href="#b5-test-3-combat-gem-spending" aria-label="Link to Test 3: Combat gem spending">#</a></h2><p>For paths 1-4, script spells requiring zero, one, and several gems. Vary fatigue, conservative use, communion bonus, and carried stock. Record maximum gems spent per combat turn and AI fatigue spending.</p>
+<h2 id="b5-test-4-spell-fatigue-rounding">Test 4: Spell-fatigue rounding<a class="heading-link" href="#b5-test-4-spell-fatigue-rounding" aria-label="Link to Test 4: Spell-fatigue rounding">#</a></h2><p>Use listed fatigue values not divisible by the excess-skill divisor. Vary base and armour Encumbrance. Record fatigue after each cast and locate every rounding step.</p>
+<h2 id="b5-test-5-penetration">Test 5: Penetration<a class="heading-link" href="#b5-test-5-penetration" aria-label="Link to Test 5: Penetration">#</a></h2><p>Use fixed caster path, excess skill, target MR, and target same-path skill. Run enough trials for baseline, easy, and hard resistance. Confirm tie direction and half-skill rounding.</p>
+<h2 id="b5-test-6-communion-thresholds">Test 6: Communion thresholds<a class="heading-link" href="#b5-test-6-communion-thresholds" aria-label="Link to Test 6: Communion thresholds">#</a></h2><p>Run 1, 2, 3, 4, 7, 8, and 9 slaves. Remove one slave during battle and record immediate master path changes and spell legality.</p>
+<h2 id="b5-test-7-communion-fatigue">Test 7: Communion fatigue<a class="heading-link" href="#b5-test-7-communion-fatigue" aria-label="Link to Test 7: Communion fatigue">#</a></h2><p>Vary:</p>
+<ul>
+<li>equal-path slaves;</li>
+<li>higher-path slaves;</li>
+<li>lower but half-path slaves;</li>
+<li>below-half slaves;</li>
+<li>one or several masters;</li>
+<li>odd fatigue totals;</li>
+<li>reinvigoration;</li>
+<li>Communion, Sabbath, and Chorus.</li>
+</ul>
+<p>Record master and every slave after each spell.</p>
+<h2 id="b5-test-8-communion-self-buffs">Test 8: Communion self-buffs<a class="heading-link" href="#b5-test-8-communion-self-buffs" aria-label="Link to Test 8: Communion self-buffs">#</a></h2><p>Cast range-0 single-target buffs before and after joining. Use several masters and incompatible slave types. Record exactly which effects pass, timing, stacking, and harmful interactions.</p>
+<h2 id="b5-test-9-communion-collapse">Test 9: Communion collapse<a class="heading-link" href="#b5-test-9-communion-collapse" aria-label="Link to Test 9: Communion collapse">#</a></h2><p>Kill or rout all masters at different slave-fatigue levels. Measure stun and <code>3d50</code> fatigue distribution. Separately eliminate all slaves and compare.</p>
+<h2 id="b5-test-10-automatic-communion-items">Test 10: Automatic communion items<a class="heading-link" href="#b5-test-10-automatic-communion-items" aria-label="Link to Test 10: Automatic communion items">#</a></h2><p>Test matrices, hearts, and athames on:</p>
+<ul>
+<li>non-Astral mages;</li>
+<li>non-Blood mages;</li>
+<li>priests with and without another path;</li>
+<li>innate casters;</li>
+<li>multi-form commanders.</li>
+</ul>
+<p>Verify joining time, type, and slot behaviour.</p>
+<h2 id="b5-test-11-ritual-order">Test 11: Ritual order<a class="heading-link" href="#b5-test-11-ritual-order" aria-label="Link to Test 11: Ritual order">#</a></h2><p>Construct same-turn rituals whose results reveal order. Repeat across nations and casters. Test dependencies involving summons, gateways, domes, and competing globals.</p>
+<h2 id="b5-test-12-dome-interaction">Test 12: Dome interaction<a class="heading-link" href="#b5-test-12-dome-interaction" aria-label="Link to Test 12: Dome interaction">#</a></h2><p>For each dome:</p>
+<ul>
+<li>friendly and hostile remote spells;</li>
+<li>anonymous and limited rituals;</li>
+<li>global unit effects;</li>
+<li>Astral Disruption;</li>
+<li>multiple layered domes;</li>
+<li>redirection at map edges;</li>
+<li>caster death and province capture.</li>
+</ul>
+<h2 id="b5-test-13-global-contest">Test 13: Global contest<a class="heading-link" href="#b5-test-13-global-contest" aria-label="Link to Test 13: Global contest">#</a></h2><p>Vary extra gems, excess path, same-name replacement, full slots, and Grand Communion. Confirm challenger tie behaviour, random incumbent selection, and self-replacement risk.</p>
+<h2 id="b5-test-14-forge-cost-stacking">Test 14: Forge-cost stacking<a class="heading-link" href="#b5-test-14-forge-cost-stacking" aria-label="Link to Test 14: Forge-cost stacking">#</a></h2><p>Combine national discounts, fixed and percentage Forge Bonus, Master Smith, Forge of the Ancients, yearning, and multi-path items. Record eligibility and displayed cost at each step.</p>
+<h2 id="b5-test-15-booster-access">Test 15: Booster access<a class="heading-link" href="#b5-test-15-booster-access" aria-label="Link to Test 15: Booster access">#</a></h2><p>Verify that boosters fail at path 0 and activate at path 1. Test multi-path and all-path boosters, forms, item loss, and battlefield boost interactions.</p>
+<h2 id="b5-test-16-artifact-race-and-yearning">Test 16: Artifact race and yearning<a class="heading-link" href="#b5-test-16-artifact-race-and-yearning" aria-label="Link to Test 16: Artifact race and yearning">#</a></h2><p>Trigger each yearning condition alone and in combination. Record monthly checks, half-cost display, simultaneous forging, unique-item failure, and limited-unique-artifact settings.</p>
+<h2 id="b5-test-17-legendary-research">Test 17: Legendary research<a class="heading-link" href="#b5-test-17-legendary-research" aria-label="Link to Test 17: Legendary research">#</a></h2><p>Under limited and unlimited settings, record:</p>
+<ul>
+<li>first level-9 completion;</li>
+<li>spell-selection interface;</li>
+<li>repeated level-9 cost;</li>
+<li>simultaneous schools;</li>
+<li>Construction 9 differences.</li>
+</ul>
+<h2 id="b5-test-18-wish">Test 18: Wish<a class="heading-link" href="#b5-test-18-wish" aria-label="Link to Test 18: Wish">#</a></h2><p>For every ruleset:</p>
+<ol>
+<li>prepare an S9 caster and turn backup;</li>
+<li>enter exact candidate strings;</li>
+<li>record message, treasury, units, items, afflictions, horror marks, and caster status;</li>
+<li>test aliases separately;</li>
+<li>repeat random outcomes;</li>
+<li>inspect mod restrictions such as <code>NO_WISH</code>.</li>
+</ol>
+<p>Priority requests include gems, gold, slaves, artifact/artefact, weapon, power, strength, experience, dominion, population, exact unit names, commander or hero, and dangerous wishes.</p>
+<h2 id="b5-test-19-indoor-magic">Test 19: Indoor magic<a class="heading-link" href="#b5-test-19-indoor-magic" aria-label="Link to Test 19: Indoor magic">#</a></h2><p>Repeat battlefield-wide, ordinary area, personal, holy, and innate spells in open fields, caves, fort interiors, and assassination arenas. Confirm current 6.36 legality and AI fallback.</p>
+<h2 id="b5-test-20-combined-mod-regression">Test 20: Combined-mod regression<a class="heading-link" href="#b5-test-20-combined-mod-regression" aria-label="Link to Test 20: Combined-mod regression">#</a></h2><p>Build fixed battle and ritual fixtures for:</p>
+<ul>
+<li>school and requirement changes;</li>
+<li>damage, area, range, and fatigue;</li>
+<li>boosters and forge costs;</li>
+<li>communions and <code>#masterrit</code>;</li>
+<li>sites and gem income;</li>
+<li>Divinitus overwrites after DE.</li>
+</ul>
+<p>Re-run whenever either file changes.</p>
+<h1 id="b5-part-xvii-operational-checklists">Part XVII: Operational Checklists<a class="heading-link" href="#b5-part-xvii-operational-checklists" aria-label="Link to Part XVII: Operational Checklists">#</a></h1><h2 id="b5-first-magic-audit">First magic audit<a class="heading-link" href="#b5-first-magic-audit" aria-label="Link to First magic audit">#</a></h2><p>For a new nation:</p>
+<ol>
+<li>list every recruitable mage and path distribution;</li>
+<li>separate common, capital-only, terrain, foreign, sacred, and random access;</li>
+<li>record research per gold, commander point, and upkeep;</li>
+<li>identify the first battlefield protection, damage, and control breakpoints;</li>
+<li>list generic and national boosters;</li>
+<li>identify summon-based path expansion;</li>
+<li>map gem income and unsearched paths;</li>
+<li>name the first war’s battle package;</li>
+<li>set battle and strategic reserves;</li>
+<li>identify the Pretender’s unique magical jobs.</li>
+</ol>
+<h2 id="b5-research-turn-checklist">Research-turn checklist<a class="heading-link" href="#b5-research-turn-checklist" aria-label="Link to Research-turn checklist">#</a></h2><ul>
+<li>Did scouting change the next threat?</li>
+<li>What exact breakpoint is being bought?</li>
+<li>Which common mage casts it?</li>
+<li>Are the necessary gems already available?</li>
+<li>Is a critical forger or ritualist still counted as a researcher?</li>
+<li>Does one additional school level produce a usable spell?</li>
+<li>Is the plan overdependent on one rare random?</li>
+<li>What is the branch if war begins early?</li>
+</ul>
+<h2 id="b5-battle-magic-checklist">Battle-magic checklist<a class="heading-link" href="#b5-battle-magic-checklist" aria-label="Link to Battle-magic checklist">#</a></h2><ul>
+<li>legal research and path;</li>
+<li>carried gems or slaves;</li>
+<li>current skill and per-turn spend limit;</li>
+<li>fatigue after excess skill and Encumbrance;</li>
+<li>range and likely target;</li>
+<li>battlefield indoor or underwater status;</li>
+<li>resistance and friendly exposure;</li>
+<li>preparation and interruption risk;</li>
+<li>communion threshold and slave load;</li>
+<li>orders after script completion;</li>
+<li>retreat and gem preservation.</li>
+</ul>
+<h2 id="b5-ritual-checklist">Ritual checklist<a class="heading-link" href="#b5-ritual-checklist" aria-label="Link to Ritual checklist">#</a></h2><ul>
+<li>laboratory;</li>
+<li>treasury stock after other commitments;</li>
+<li>caster path and maximum ritual spend;</li>
+<li>range and UW/NUW legality;</li>
+<li>hosting order;</li>
+<li>dome risk;</li>
+<li>anonymous or limited status;</li>
+<li>repeat-order cancellation condition;</li>
+<li>caster and origin protection;</li>
+<li>exploitation after success.</li>
+</ul>
+<h2 id="b5-forging-checklist">Forging checklist<a class="heading-link" href="#b5-forging-checklist" aria-label="Link to Forging checklist">#</a></h2><ul>
+<li>current Construction;</li>
+<li>current object and mod overwrite;</li>
+<li>actual qualified forger;</li>
+<li>displayed cost;</li>
+<li>national, global, bonus, and yearning modifiers;</li>
+<li>item slot;</li>
+<li>bearer and delivery location;</li>
+<li>forge mage-turn;</li>
+<li>alternative booster or trade;</li>
+<li>loss risk.</li>
+</ul>
+<h2 id="b5-global-checklist">Global checklist<a class="heading-link" href="#b5-global-checklist" aria-label="Link to Global checklist">#</a></h2><ul>
+<li>empty-slot uncertainty;</li>
+<li>minimum and overcast;</li>
+<li>excess-path bonus;</li>
+<li>Grand Communion;</li>
+<li>caster and origin;</li>
+<li>Dispel opposition;</li>
+<li>same-name contest;</li>
+<li>diplomatic coalition;</li>
+<li>payback time;</li>
+<li>world effect begins at step 28.</li>
+</ul>
+<h2 id="b5-post-battle-magic-audit">Post-battle magic audit<a class="heading-link" href="#b5-post-battle-magic-audit" aria-label="Link to Post-battle magic audit">#</a></h2><p>After every important replay:</p>
+<ul>
+<li>Which scripted spell first failed or changed target?</li>
+<li>Did contact occur before the package activated?</li>
+<li>How many gems were consumed and why?</li>
+<li>Which casters were interrupted?</li>
+<li>What was master and slave fatigue after each major cast?</li>
+<li>Did resistance, Protection, dispersion, or summons decide conversion?</li>
+<li>Did the army exploit the effect?</li>
+<li>Which caster, item, or gem stock was permanently lost?</li>
+<li>What single change most improves the next battle?</li>
+</ul>
+<h1 id="b5-part-xviii-essays">Part XVIII: Essays<a class="heading-link" href="#b5-part-xviii-essays" aria-label="Link to Part XVIII: Essays">#</a></h1><h2 id="b5-essay-i-research-as-a-response-tree">Essay I: Research as a Response Tree<a class="heading-link" href="#b5-essay-i-research-as-a-response-tree" aria-label="Link to Essay I: Research as a Response Tree">#</a></h2><p>Research is often imagined as a ladder: climb one school, take the strongest spell at each level, then begin another. That image is convenient and strategically misleading. A ladder has only one direction. A real research plan is a response tree whose branches depend on enemy armies, geography, Pretender timing, gems, and the distribution of national mages.</p>
+<p>The root is the nation’s repeatable access. If most forts can recruit E2 mages, an Earth spell cast by E2 is not one option among many; it is a scalable transformation of the roster. If S3 appears only on a rare random, the same research level may provide a spectacular but unreliable trick. Research points do not distinguish between them. Strategy must.</p>
+<p>The branches are deadlines. A spell that finishes two turns after an invasion is not an answer to that invasion. A defensive level reached one turn early may preserve laboratories and researchers, increasing every later branch. This is why research value cannot be reduced to spell efficiency. Timing changes the quantity of future research that exists.</p>
+<p>Scouting prunes the tree. Fire Resistance becomes urgent against mass fire damage and largely idle against an enemy who changes to poison or fatigue. A wide portfolio protects against uncertainty, but each unfinished branch delays every completed answer. The best plan is neither a straight rush nor equal investment. It maintains one main branch and one affordable pivot.</p>
+<p>Access development creates new branches. A Construction level can forge a booster; the booster permits a summon; the summon carries a new path; that path unlocks a ritual. The original research may produce far more than its first item. A high-level spell with no caster is the opposite: knowledge with no route into the world.</p>
+<p>An expert research screen should be read as a decision map. Every allocated point says which future is being prepared for and which is being delayed. The useful question is not “Which school is best?” It is “Which branch leaves the nation with a timely answer and the strongest next choice?”</p>
+<h2 id="b5-essay-ii-gems-as-stored-time">Essay II: Gems as Stored Time<a class="heading-link" href="#b5-essay-ii-gems-as-stored-time" aria-label="Link to Essay II: Gems as Stored Time">#</a></h2><p>A gem is condensed magical power, but strategically it is also stored time. It represents a site found, territory held, a connection maintained to a laboratory, and several turns during which the resource was not spent elsewhere.</p>
+<p>This explains why equal gem costs are not equal. Five gems from a path producing twenty each month are a small slice of current flow. Five gems in an absent or scarce path may represent alchemy at four to one, diplomatic trade, or the entire stock accumulated since expansion. The spell interface displays cost; it does not display replacement time.</p>
+<p>Combat converts stored time into immediate tempo. A path-boosting gem can bring a spell forward by one threshold. Fatigue spending can buy an additional useful cast before unconsciousness. A battlefield enchantment can make one battle occur under conditions that would otherwise require an entirely different army. The gem is efficient when the time purchased now is worth more than the time stored for later.</p>
+<p>Forging converts gems into persistent access. A booster may be moved between mages, reused across wars, and become the first rung of a larger ladder. A summon converts them into a body or commander. A global converts a large stock into continuing flow or a new worldwide rule. These forms have different exposure: items can be captured, summons can die, and globals depend on casters and contested slots.</p>
+<p>The gem treasury is also a calendar. A reserve for Dispel protects future turns. A forge queue promises gems to a coming threshold. Battle loads prepay the chance to survive an invasion. If every gem remains in one unlabelled total, future plans are silently sold to the first attractive order.</p>
+<p>The mature question is not whether to spend or save. It is which future action the stock is preserving, and whether the current crisis is more valuable than that future. Hoarding without a named endpoint is wasted time. Spending without an opportunity-cost ledger is borrowed defeat.</p>
+<h2 id="b5-essay-iii-from-mage-to-army">Essay III: From Mage to Army<a class="heading-link" href="#b5-essay-iii-from-mage-to-army" aria-label="Link to Essay III: From Mage to Army">#</a></h2><p>A nation does not possess battlefield magic merely because its mage can cast a spell. The effect becomes military power only when it is delivered through an army structure.</p>
+<p>The first requirement is time. Buffs, communion formation, and battlefield enchantments occupy preparation rounds. The line must hold without routing or pushing the fight outside spell range. Formation is part of the magical plan. A cheap screen may be the piece that makes an expensive spell work.</p>
+<p>The second requirement is scale. One powerful caster can influence a battle, but repeatable mages define doctrine. If every fort supplies the required path, losses can be replaced and several armies can carry the package. If the Pretender or one rare random is essential, the effect is a strategic reserve, not standard army equipment.</p>
+<p>The third requirement is conversion. Protection must answer the actual damage family. Evocations need legal targets and acceptable friendly exposure. Resistance spells must activate before the hostile effect. Summoned bodies must appear where their frontage and morale matter. A spell cast successfully but converted into irrelevant damage has consumed time and perhaps gems without becoming force.</p>
+<p>The fourth requirement is exploitation. Immobilising an enemy matters if missiles, flankers, or heavy infantry can use the delay. Darkness matters if the friendly roster functions better inside it. A storm matters if it disables more hostile systems than friendly ones. Magic is strongest when it changes the exchange in favour of bodies already prepared to exploit it.</p>
+<p>The final requirement is preservation. Mages, boosters, slaves, and gems are campaign assets. A victorious army that loses its magical core may not fight again. The full magical package includes retreat routes, commander protection, spare laboratories, and a resupply plan.</p>
+<p>Turning a mage into part of an army is an organisational job. The spell is only one component. Screen, formation, script, gem load, counter, and post-battle survival complete the weapon.</p>
+<h2 id="b5-essay-iv-communions-without-myths">Essay IV: Communions Without Myths<a class="heading-link" href="#b5-essay-iv-communions-without-myths" aria-label="Link to Essay IV: Communions Without Myths">#</a></h2><p>Communions attract rules of thumb because their exact arithmetic feels cumbersome. “Use four slaves,” “one master per four,” or “communions share buffs” are memorable. None is a sufficient design rule.</p>
+<p>Four slaves do create +2 paths, but they also stand on a cliff. One loss reduces every master to +1. Whether they survive depends on the spell’s fatigue, the master’s boosted path, each slave’s relative path, the number of masters casting, the communion type, and shared buffs. The visible slave count is only the beginning of the calculation.</p>
+<p>The participant definition corrects another common assumption. Other masters do not help divide one master’s spell. One casting master and all slaves participate. Adding masters increases the number of fatigue events sent into the same pool, so an impressive casting roster can make the communion less stable.</p>
+<p>The path comparison is equally important. Communion bonuses lift the master. If weak slaves remain below half that boosted skill, their fatigue share is multiplied by four. A spell that looks cheap after the master’s excess-skill reduction can still crush every slave when repeated by several masters.</p>
+<p>Shared self-buffs are the creative centre of communion design. A master can transmit qualifying personal protection, resistance, regeneration, or other effects to the slave block. This can turn fragile researchers into a durable magical battery. It can also distribute an incompatible effect and kill them faster. The chassis matters as much as the paths.</p>
+<p>The communion is best understood as a power grid. Slaves provide capacity, masters draw and transform it, thresholds govern voltage, and every spell creates load. Redundancy, compatible components, controlled demand, and protected control nodes make a grid reliable. A copied ratio does not.</p>
+<h2 id="b5-essay-v-rituals-and-geopolitics">Essay V: Rituals and Geopolitics<a class="heading-link" href="#b5-essay-v-rituals-and-geopolitics" aria-label="Link to Essay V: Rituals and Geopolitics">#</a></h2><p>Battle spells act inside one encounter. Rituals act on a map shared with other players and intentions. A remote attack, dome, teleport, or global is both a mechanical action and a political signal.</p>
+<p>Range compresses geography. A nation with remote search and attack can turn distant laboratories into forward influence. Magic movement can ignore ordinary fronts. Domes create protected capitals and staging provinces. None abolishes position: every effect still begins from a caster, laboratory, origin, range, or gateway that can be scouted and attacked.</p>
+<p>Hosting order makes this influence simultaneous. Rituals resolve in random caster order. Remote attacks and magic battles precede ordinary movement. Globals take world effect after several military phases. The strategic map visible when orders are submitted is not the map on which every effect resolves.</p>
+<p>An anonymous ritual conceals information but does not remove inference. Nations observe who has the path, range, motive, and gem economy. A repeated attack can unite several targets against the suspected caster. A global publicly changes every nation’s incentives even if its direct benefit is private.</p>
+<p>Protection also redistributes violence. A dome over the capital encourages enemies to raid gem sites, assassinate the dome caster, probe the percentage, redirect magic, or invade conventionally. Successful defence changes the cheapest hostile route; it does not end hostility.</p>
+<p>Ritual planning must include the diplomatic aftermath. The effect, its likely attribution, the victims’ alternatives, and the means of exploiting it all belong in the order. Strategic magic is geopolitics carried out through the hosting sequence.</p>
+<h2 id="b5-essay-vi-globals-as-political-economy">Essay VI: Globals as Political Economy<a class="heading-link" href="#b5-essay-vi-globals-as-political-economy" aria-label="Link to Essay VI: Globals as Political Economy">#</a></h2><p>A global enchantment is often evaluated by payback: cost divided by monthly income. This is necessary for gem engines and radically incomplete.</p>
+<p>The global occupies a scarce public slot. It announces a caster with high path access and a treasury capable of overcasting. It may reveal an origin province. It changes which rivals gain from cooperation, Dispel, assassination, or slot pressure. Its true cost includes the coalition it creates.</p>
+<p>World penalties demonstrate the point most clearly. Darkness, storms, aging, ritual corruption, or income collapse do not harm every roster equally. The caster has presumably prepared summons, resistances, dominion, or alternative income. Other nations assess not the absolute harm but the caster’s relative gain. A spell that reduces everyone by half can be overwhelmingly aggressive if one nation loses only a quarter.</p>
+<p>Gem globals also alter politics. Private income increases future Dispel and forging capacity. A rival may reasonably spend more than the global’s nominal value to stop it compounding. The caster&#39;s payback calculation must include the chance that the global survives, not only its monthly output.</p>
+<p>Overcasting buys resistance to one form of attack. It does not prevent assassination, old age, origin conquest, or a random full-slot replacement attempt. Every additional gem increases magical security while concentrating more value behind the same mortal dependency.</p>
+<p>The strongest global plan is a state programme: caster security, reserve gems, dome and mundane defence, diplomatic preparation, origin protection, and a schedule for exploiting the new world. The enchantment is the public institution; the protected network behind it is the state that keeps it alive.</p>
+<h2 id="b5-essay-vii-the-level-nine-decision">Essay VII: The Level-Nine Decision<a class="heading-link" href="#b5-essay-vii-the-level-nine-decision" aria-label="Link to Essay VII: The Level-Nine Decision">#</a></h2><p>Level-nine research is seductive because it promises the largest effects in the game. The cost is not only the research points shown on the bar. It is every lower branch delayed while the nation climbs, every mage-turn required to create the caster, and every gem reserved instead of winning earlier battles.</p>
+<p>Legendary selection makes the trade sharper. Most schools do not grant a complete catalogue at level 9; one spell is selected at a time. The first choice needs a named caster, treasury, target, counter, and operational date.</p>
+<p>Some legendary spells transform the map. Nexus Gate changes connectivity. Others transform magical economy: Arcane Nexus taxes world expenditure, and Astral Corruption punishes ordinary magical action. Utterdark or similar world effects change the value of entire rosters. Wish can cross conventional boundaries but carries uncertainty that must be tested rather than romanticised.</p>
+<p>The best legendary spell is relative to preparation. Tartarian Gate is stronger for a nation that can repair, equip, and lead its results. A dominion-scaled economic global is stronger for a nation already winning religious territory. A punishment global is stronger when the caster’s own economy is exempt or prepared.</p>
+<p>Counterpressure begins before the cast. Rivals can observe research direction, boosters, rare path mages, pearl hoarding, and Construction races. A path to level 9 may invite attack precisely because its future is frightening. Reaching the threshold requires surviving the signal.</p>
+<p>The level-nine decision should be worked backwards from the world it creates. Describe the position one turn after success, four turns after success, and after the obvious coalition response. If those positions are not favourable, the legendary spell is not yet a plan. It is only a possibility.</p>
+<h1 id="b5-sources-and-open-questions">Sources and Open Questions<a class="heading-link" href="#b5-sources-and-open-questions" aria-label="Link to Sources and Open Questions">#</a></h1><h2 id="b5-principal-sources">Principal sources<a class="heading-link" href="#b5-principal-sources" aria-label="Link to Principal sources">#</a></h2><ul>
+<li>Illwinter, <em>Dominions 6 Manual</em>, revision 2, especially Magic, paths and schools, battle magic, rituals, global enchantments, communions, gems, research, legendary spells, items, Divine Magic, alchemy, and the spell and item appendices.</li>
+<li>Illwinter, <em>Dominions 6 Modding Manual</em>, version 6.34.</li>
+<li><a href="https://www.illwinter.com/dom6/docs.html" target="_blank" rel="noreferrer">Illwinter Dominions 6 documentation</a>.</li>
+<li><a href="https://www.illwinter.com/dom6/changes.html" target="_blank" rel="noreferrer">Illwinter Dominions 6 changes</a>.</li>
+<li><a href="https://steamcommunity.com/games/2511500/announcements/detail/516348030198220655" target="_blank" rel="noreferrer">Official Dominions 6.30 announcement</a>.</li>
+<li>Supplied <code>DomEnhanced2_16.dm</code>.</li>
+<li>Supplied <code>Divinitus_1.15.3_DE.dm</code>.</li>
+</ul>
+<p>Community references are used to discover disputed questions and test candidates, not to override current official rules without reproducible evidence.</p>
+<h2 id="b5-open-questions">Open questions<a class="heading-link" href="#b5-open-questions" aria-label="Link to Open questions">#</a></h2><p>Current-game tests or resolved object data are still needed for:</p>
+<ul>
+<li>exact optional combat-gem AI thresholds and all target-selection weights;</li>
+<li>every rounding step in spell fatigue, penetration, communions, forging, and ritual contests;</li>
+<li>complete ordering and independence of layered domes;</li>
+<li>every current object value altered after the revision-2 manual;</li>
+<li>exact Wish vocabulary, aliases, random distributions, and restrictions;</li>
+<li>all effective DE and Divinitus spell, item, site, mage, and summon records;</li>
+<li>mod-specific communion, Grand Communion, and forge interactions;</li>
+<li>simultaneous artifact and global edge cases.</li>
+</ul>
+<p>Book IX now owns the exact mod command scope; this list is limited to behaviours that still need engine evidence.</p>
+
+{% endraw %}
+    </article>
+    <aside class="sidebar library-toc">
+      <h2>In this book</h2>
+      <nav><a href="#b5-what-magic-asks-of-a-nation">What magic asks of a nation</a>
+<a href="#b5-edition-note">Edition note</a>
+<a href="#b5-current-version-corrections-that-matter">Current-version corrections that matter</a>
+<a href="#b5-ways-into-the-book">Ways into the book</a>
+<a href="#b5-the-complete-chain">The complete chain</a>
+<a href="#b5-six-magical-resources">Six magical resources</a>
+<a href="#b5-stock-flow-and-capacity">Stock, flow, and capacity</a>
+<a href="#b5-the-three-horizons">The three horizons</a>
+<a href="#b5-the-nine-paths">The nine paths</a>
+<a href="#b5-the-seven-schools">The seven schools</a>
+<a href="#b5-the-three-access-gates">The three access gates</a>
+<a href="#b5-primary-and-secondary-paths">Primary and secondary paths</a>
+<a href="#b5-excess-skill">Excess skill</a>
+<a href="#b5-acquiring-and-increasing-paths">Acquiring and increasing paths</a>
+<a href="#b5-empowerment-costs">Empowerment costs</a>
+<a href="#b5-indirect-magic">Indirect magic</a>
+<a href="#b5-the-research-formula">The research formula</a>
+<a href="#b5-research-resolves-early">Research resolves early</a>
+<a href="#b5-research-is-a-queue-of-responses">Research is a queue of responses</a>
+<a href="#b5-breakpoints-not-school-completion">Breakpoints, not school completion</a>
+<a href="#b5-research-portfolios">Research portfolios</a>
+<a href="#b5-research-efficiency">Research efficiency</a>
+<a href="#b5-mage-turn-accounting">Mage-turn accounting</a>
+<a href="#b5-legendary-research">Legendary research</a>
+<a href="#b5-research-audit">Research audit</a>
+<a href="#b5-gem-production">Gem production</a>
+<a href="#b5-blood-slaves">Blood slaves</a>
+<a href="#b5-pooling-and-distribution">Pooling and distribution</a>
+<a href="#b5-combat-gem-rules">Combat gem rules</a>
+<a href="#b5-a-battle-gem-budget">A battle-gem budget</a>
+<a href="#b5-gems-as-fatigue-control">Gems as fatigue control</a>
+<a href="#b5-alchemy">Alchemy</a>
+<a href="#b5-gem-valuation">Gem valuation</a>
+<a href="#b5-reserve-doctrine">Reserve doctrine</a>
+<a href="#b5-spell-classes-by-battlefield-job">Spell classes by battlefield job</a>
+<a href="#b5-the-battle-resolution-boundary">The battle-resolution boundary</a>
+<a href="#b5-scripting-and-spell-ai">Scripting and spell AI</a>
+<a href="#b5-battlefield-package-worksheet">Battlefield package worksheet</a>
+<a href="#b5-how-to-read-a-path">How to read a path</a>
+<a href="#b5-fire">Fire</a>
+<a href="#b5-air">Air</a>
+<a href="#b5-water">Water</a>
+<a href="#b5-earth">Earth</a>
+<a href="#b5-astral">Astral</a>
+<a href="#b5-death">Death</a>
+<a href="#b5-nature">Nature</a>
+<a href="#b5-glamour">Glamour</a>
+<a href="#b5-blood">Blood</a>
+<a href="#b5-cross-path-architecture">Cross-path architecture</a>
+<a href="#b5-what-a-battlefield-communion-does">What a battlefield communion does</a>
+<a href="#b5-the-level-bonus">The level bonus</a>
+<a href="#b5-participants-in-one-spell">Participants in one spell</a>
+<a href="#b5-base-fatigue-distribution">Base fatigue distribution</a>
+<a href="#b5-worked-comparison">Worked comparison</a>
+<a href="#b5-master-count-and-slave-load">Master count and slave load</a>
+<a href="#b5-slaves-cannot-act">Slaves cannot act</a>
+<a href="#b5-shared-personal-buffs">Shared personal buffs</a>
+<a href="#b5-collapse">Collapse</a>
+<a href="#b5-automatic-participation">Automatic participation</a>
+<a href="#b5-the-three-battlefield-types">The three battlefield types</a>
+<a href="#b5-designing-a-safe-communion">Designing a safe communion</a>
+<a href="#b5-common-communion-failures">Common communion failures</a>
+<a href="#b5-grand-communions-are-different">Grand Communions are different</a>
+<a href="#b5-communion-audit">Communion audit</a>
+<a href="#b5-ritual-fundamentals">Ritual fundamentals</a>
+<a href="#b5-hosting-position">Hosting position</a>
+<a href="#b5-ritual-order-is-random">Ritual order is random</a>
+<a href="#b5-range-and-legality">Range and legality</a>
+<a href="#b5-local-enchantments">Local enchantments</a>
+<a href="#b5-anonymous-and-limited-rituals">Anonymous and limited rituals</a>
+<a href="#b5-ritual-categories">Ritual categories</a>
+<a href="#b5-site-search-rituals">Site-search rituals</a>
+<a href="#b5-summoning">Summoning</a>
+<a href="#b5-remote-attacks">Remote attacks</a>
+<a href="#b5-magic-movement">Magic movement</a>
+<a href="#b5-repeat-ritual-discipline">Repeat-ritual discipline</a>
+<a href="#b5-what-a-dome-protects">What a dome protects</a>
+<a href="#b5-major-manual-examples">Major manual examples</a>
+<a href="#b5-layering-domes">Layering domes</a>
+<a href="#b5-dome-strategy">Dome strategy</a>
+<a href="#b5-remote-defence-audit">Remote-defence audit</a>
+<a href="#b5-global-slots">Global slots</a>
+<a href="#b5-casting-cases">Casting cases</a>
+<a href="#b5-overcasting">Overcasting</a>
+<a href="#b5-dispel">Dispel</a>
+<a href="#b5-caster-dependency">Caster dependency</a>
+<a href="#b5-protection-against-globals">Protection against globals</a>
+<a href="#b5-global-categories">Global categories</a>
+<a href="#b5-selected-strategic-examples">Selected strategic examples</a>
+<a href="#b5-payback">Payback</a>
+<a href="#b5-global-diplomacy">Global diplomacy</a>
+<a href="#b5-global-war-audit">Global-war audit</a>
+<a href="#b5-forging-requirements">Forging requirements</a>
+<a href="#b5-construction-tiers">Construction tiers</a>
+<a href="#b5-base-item-cost-by-path-requirement">Base item cost by path requirement</a>
+<a href="#b5-item-value">Item value</a>
+<a href="#b5-slots-and-package-conflicts">Slots and package conflicts</a>
+<a href="#b5-national-items">National items</a>
+<a href="#b5-forge-bonuses">Forge bonuses</a>
+<a href="#b5-forge-of-the-ancients">Forge of the Ancients</a>
+<a href="#b5-artifacts">Artifacts</a>
+<a href="#b5-yearning">Yearning</a>
+<a href="#b5-booster-reference">Booster reference</a>
+<a href="#b5-booster-ladders">Booster ladders</a>
+<a href="#b5-forge-queue">Forge queue</a>
+<a href="#b5-national-access-is-a-distribution">National access is a distribution</a>
+<a href="#b5-the-access-graph">The access graph</a>
+<a href="#b5-probability-of-random-access">Probability of random access</a>
+<a href="#b5-access-quality">Access quality</a>
+<a href="#b5-empowerment-as-a-bridge">Empowerment as a bridge</a>
+<a href="#b5-pretender-as-access">Pretender as access</a>
+<a href="#b5-trading-and-diplomacy">Trading and diplomacy</a>
+<a href="#b5-hidden-costs-of-path-escalation">Hidden costs of path escalation</a>
+<a href="#b5-the-level-nine-decision">The level-nine decision</a>
+<a href="#b5-wish">Wish</a>
+<a href="#b5-nexus-gate">Nexus Gate</a>
+<a href="#b5-tartarian-gate">Tartarian Gate</a>
+<a href="#b5-arcane-nexus">Arcane Nexus</a>
+<a href="#b5-utterdark">Utterdark</a>
+<a href="#b5-gift-of-natures-bounty">Gift of Nature’s Bounty</a>
+<a href="#b5-astral-corruption">Astral Corruption</a>
+<a href="#b5-cataclysm-and-slot-disruption">Cataclysm and slot disruption</a>
+<a href="#b5-late-game-transition">Late-game transition</a>
+<a href="#b5-counter-the-chain">Counter the chain</a>
+<a href="#b5-counter-layers">Counter layers</a>
+<a href="#b5-resistance-is-not-a-complete-counter">Resistance is not a complete counter</a>
+<a href="#b5-attack-timing">Attack timing</a>
+<a href="#b5-targeting-the-organisation">Targeting the organisation</a>
+<a href="#b5-gem-denial">Gem denial</a>
+<a href="#b5-counter-counter-planning">Counter-counter planning</a>
+<a href="#b5-keep-the-engine-and-object-layers-separate">Keep the engine and object layers separate</a>
+<a href="#b5-resolving-modded-magic">Resolving modded magic</a>
+<a href="#b5-test-standard">Test standard</a>
+<a href="#b5-test-1-research-arithmetic">Test 1: Research arithmetic</a>
+<a href="#b5-test-2-research-hosting-timing">Test 2: Research hosting timing</a>
+<a href="#b5-test-3-combat-gem-spending">Test 3: Combat gem spending</a>
+<a href="#b5-test-4-spell-fatigue-rounding">Test 4: Spell-fatigue rounding</a>
+<a href="#b5-test-5-penetration">Test 5: Penetration</a>
+<a href="#b5-test-6-communion-thresholds">Test 6: Communion thresholds</a>
+<a href="#b5-test-7-communion-fatigue">Test 7: Communion fatigue</a>
+<a href="#b5-test-8-communion-self-buffs">Test 8: Communion self-buffs</a>
+<a href="#b5-test-9-communion-collapse">Test 9: Communion collapse</a>
+<a href="#b5-test-10-automatic-communion-items">Test 10: Automatic communion items</a>
+<a href="#b5-test-11-ritual-order">Test 11: Ritual order</a>
+<a href="#b5-test-12-dome-interaction">Test 12: Dome interaction</a>
+<a href="#b5-test-13-global-contest">Test 13: Global contest</a>
+<a href="#b5-test-14-forge-cost-stacking">Test 14: Forge-cost stacking</a>
+<a href="#b5-test-15-booster-access">Test 15: Booster access</a>
+<a href="#b5-test-16-artifact-race-and-yearning">Test 16: Artifact race and yearning</a>
+<a href="#b5-test-17-legendary-research">Test 17: Legendary research</a>
+<a href="#b5-test-18-wish">Test 18: Wish</a>
+<a href="#b5-test-19-indoor-magic">Test 19: Indoor magic</a>
+<a href="#b5-test-20-combined-mod-regression">Test 20: Combined-mod regression</a>
+<a href="#b5-first-magic-audit">First magic audit</a>
+<a href="#b5-research-turn-checklist">Research-turn checklist</a>
+<a href="#b5-battle-magic-checklist">Battle-magic checklist</a>
+<a href="#b5-ritual-checklist">Ritual checklist</a>
+<a href="#b5-forging-checklist">Forging checklist</a>
+<a href="#b5-global-checklist">Global checklist</a>
+<a href="#b5-post-battle-magic-audit">Post-battle magic audit</a>
+<a href="#b5-essay-i-research-as-a-response-tree">Essay I: Research as a Response Tree</a>
+<a href="#b5-essay-ii-gems-as-stored-time">Essay II: Gems as Stored Time</a>
+<a href="#b5-essay-iii-from-mage-to-army">Essay III: From Mage to Army</a>
+<a href="#b5-essay-iv-communions-without-myths">Essay IV: Communions Without Myths</a>
+<a href="#b5-essay-v-rituals-and-geopolitics">Essay V: Rituals and Geopolitics</a>
+<a href="#b5-essay-vi-globals-as-political-economy">Essay VI: Globals as Political Economy</a>
+<a href="#b5-essay-vii-the-level-nine-decision">Essay VII: The Level-Nine Decision</a>
+<a href="#b5-principal-sources">Principal sources</a>
+<a href="#b5-open-questions">Open questions</a></nav>
+      <nav class="library-side-links">
+        <a href="/dominions/library/">Complete library</a>
+        <a href="/dominions/library/glossary/">Glossary</a>
+        <a href="/dominions/library/research/">Research register</a>
+        <a href="/downloads/dominions-6-knowledge-library-edition-24.pdf">Edition 24 PDF</a>
+      </nav>
+    </aside>
+  </div>
+  <nav class="library-pagination" aria-label="Adjacent books">
+    <a href="/dominions/library/books/book-iv/"><small>Previous</small>Foundation Book IV</a>
+    <a class="library-next" href="/dominions/library/books/book-vi/"><small>Next</small>Foundation Book VI</a>
+  </nav>
+</section>

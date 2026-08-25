@@ -1,0 +1,1304 @@
+{
+  "schema_version": "1.0.0",
+  "edition": "Progress Edition 24",
+  "game_baseline": "Dominions 6.36",
+  "evidence_key": {
+    "OM": "official-manual",
+    "MM": "official-mod-manual",
+    "OP": "official-patch",
+    "UI": "current-ui-check",
+    "CT": "community-tested",
+    "D": "derived",
+    "TP": "test-pending"
+  },
+  "records": [
+    {
+      "id": "ability-001",
+      "name": "Animal",
+      "category": "Class",
+      "core_function": "Normal-led creature; half ordinary supply use; reduced armless siege value except monkeys",
+      "principal_caveat_or_counter": "Animal-specific control and awe; siege contribution",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-10-animal",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-002",
+      "name": "Magic Being",
+      "category": "Class",
+      "core_function": "Requires magic leadership",
+      "principal_caveat_or_counter": "Leader loss; magic-being targeting; undead-plus-magic uses undead leadership",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-11-magic-being",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-003",
+      "name": "Mindless",
+      "category": "Class",
+      "core_function": "Morale 50 under control; many mind effects fail",
+      "principal_caveat_or_counter": "Cannot mix with non-mindless; dissolves without suitable leader",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-12-mindless",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-004",
+      "name": "Undead",
+      "category": "Class",
+      "core_function": "Requires undead leadership; disease immune; banishable",
+      "principal_caveat_or_counter": "Ordinary healing restrictions; anti-undead effects; harmful living mix",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-13-undead",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-005",
+      "name": "Demon",
+      "category": "Class",
+      "core_function": "Requires undead leadership; disease immune; banishable",
+      "principal_caveat_or_counter": "Demon-specific effects; do not infer undead or elemental traits",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-14-demon",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-006",
+      "name": "Inanimate or Lifeless",
+      "category": "Class",
+      "core_function": "Nonliving body with disease, life-drain, and ordinary-healing immunities",
+      "principal_caveat_or_counter": "Needs Reconstruction or specialised repair; class wording is object-specific",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-15-inanimate-and-lifeless",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-007",
+      "name": "Spiritform",
+      "category": "Class",
+      "core_function": "Spirit body; transformation, disease, and ordinary-healing immunity",
+      "principal_caveat_or_counter": "Not identical to Ethereal; specialised spirit effects remain",
+      "evidence": [
+        "official-manual",
+        "official-patch"
+      ],
+      "primary_section_id": "b11-16-spiritform",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-008",
+      "name": "Plant",
+      "category": "Class",
+      "core_function": "Plant-type target category",
+      "principal_caveat_or_counter": "Does not imply Mindless, Inanimate, or resistances",
+      "evidence": [
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-17-1-plant",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-009",
+      "name": "Stone Being",
+      "category": "Class",
+      "core_function": "Stone-specific target category",
+      "principal_caveat_or_counter": "Do not infer Inanimate unless separately present",
+      "evidence": [
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-17-2-stone-being",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-010",
+      "name": "Illusion",
+      "category": "Class",
+      "core_function": "Illusory creature category",
+      "principal_caveat_or_counter": "Distinct from Glamour, Invisibility, and Ethereal",
+      "evidence": [
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-17-3-illusion",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-011",
+      "name": "Horror",
+      "category": "Class",
+      "core_function": "Lesser, Greater, or Doom Horror category",
+      "principal_caveat_or_counter": "Horror Mark does not grant this class",
+      "evidence": [
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-17-4-horror",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-012",
+      "name": "Sacred",
+      "category": "Religion",
+      "core_function": "Eligible for blessing and Holy recruitment rules",
+      "principal_caveat_or_counter": "Must be blessed; Incarnate effects require proper god state",
+      "evidence": [
+        "official-manual"
+      ],
+      "primary_section_id": "b11-17-5-sacred-holy-divine-being-pretender-and-prophet",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-013",
+      "name": "Cold Blooded",
+      "category": "Body",
+      "core_function": "Suffers additional fatigue in cold",
+      "principal_caveat_or_counter": "Cold scales and chill pressure; verify exact current modifier",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-18-cold-blood-blindness-sex-and-other-body-tags",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-014",
+      "name": "Aquatic",
+      "category": "Movement",
+      "core_function": "Operates underwater",
+      "principal_caveat_or_counter": "Usually land-incompatible without another form or effect",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-19-water-status-is-a-permission-system",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-015",
+      "name": "Amphibian",
+      "category": "Movement",
+      "core_function": "Operates on land and underwater",
+      "principal_caveat_or_counter": "Underwater weapons, mounts, and spells still matter",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-19-water-status-is-a-permission-system",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-016",
+      "name": "Poor Amphibian",
+      "category": "Movement",
+      "core_function": "Cross-environment permission with penalties",
+      "principal_caveat_or_counter": "Penalties can make nominal access tactically poor",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-19-water-status-is-a-permission-system",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-017",
+      "name": "Flying",
+      "category": "Movement",
+      "core_function": "Strategic and battlefield flight",
+      "principal_caveat_or_counter": "Storms, retreat routes, squad compatibility, anti-flyer screens",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-20-flying-floating-and-storms",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-018",
+      "name": "Floating",
+      "category": "Movement",
+      "core_function": "Passes relevant ground or terrain constraints",
+      "principal_caveat_or_counter": "Not full flight; mount interaction is separate",
+      "evidence": [
+        "official-mod-manual",
+        "official-patch"
+      ],
+      "primary_section_id": "b11-20-flying-floating-and-storms",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-019",
+      "name": "Storm Immunity",
+      "category": "Movement",
+      "core_function": "Retains relevant function during storms",
+      "principal_caveat_or_counter": "Does not grant flight by itself",
+      "evidence": [
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-20-flying-floating-and-storms",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-020",
+      "name": "Terrain Survival",
+      "category": "Movement",
+      "core_function": "Reduces matching terrain movement burden",
+      "principal_caveat_or_counter": "One incompatible army member can constrain route",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-21-terrain-survival-and-snow-movement",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-021",
+      "name": "Sailing",
+      "category": "Movement",
+      "core_function": "Carries eligible force across water",
+      "principal_caveat_or_counter": "Capacity, passenger size, route, and no underwater stay",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-22-sailing",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-022",
+      "name": "Teleport",
+      "category": "Movement",
+      "core_function": "Unusual strategic movement",
+      "principal_caveat_or_counter": "Unteleportable, legality, timing, and retreat; 6.35 siege exception is narrow",
+      "evidence": [
+        "official-mod-manual",
+        "official-patch"
+      ],
+      "primary_section_id": "b11-23-teleportation-blink-and-immobility",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-023",
+      "name": "Immobile",
+      "category": "Movement",
+      "core_function": "Cannot use ordinary strategic movement",
+      "principal_caveat_or_counter": "Requires summons, remote influence, or special movement",
+      "evidence": [
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-23-teleportation-blink-and-immobility",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-024",
+      "name": "Magic Leadership",
+      "category": "Command",
+      "core_function": "Commands Magic Beings",
+      "principal_caveat_or_counter": "Capacity and leader survival; does not replace undead precedence",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-24-three-leadership-pools",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-025",
+      "name": "Undead Leadership",
+      "category": "Command",
+      "core_function": "Commands undead and demons",
+      "principal_caveat_or_counter": "Capacity and leader survival; anti-leader attacks",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-24-three-leadership-pools",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-026",
+      "name": "Standard",
+      "category": "Command",
+      "core_function": "Raises squad morale",
+      "principal_caveat_or_counter": "Only best Standard in squad applies",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-25-standard-and-inspirational",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-027",
+      "name": "Inspirational",
+      "category": "Command",
+      "core_function": "Modifies morale of commanded troops",
+      "principal_caveat_or_counter": "Can be negative; commander-bound rather than squad item",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-25-standard-and-inspirational",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-028",
+      "name": "Taskmaster",
+      "category": "Command",
+      "core_function": "Improves slave command and morale",
+      "principal_caveat_or_counter": "Valuable only with matching followers",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-26-taskmaster-beast-master-and-special-followers",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-029",
+      "name": "Beast Master",
+      "category": "Command",
+      "core_function": "Improves animal command",
+      "principal_caveat_or_counter": "Animal-specific; ordinary roster gains little",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-26-taskmaster-beast-master-and-special-followers",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-030",
+      "name": "Formation Fighter",
+      "category": "Command",
+      "core_function": "Permits denser fighting formation",
+      "principal_caveat_or_counter": "Needs formation-wide support; crowding and area effects remain",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-27-formation-fighter-tight-reins-and-undisciplined-units",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-031",
+      "name": "Undisciplined",
+      "category": "Command",
+      "core_function": "Restricts ordinary squad orders",
+      "principal_caveat_or_counter": "Reduces script control; separate from low morale",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-27-formation-fighter-tight-reins-and-undisciplined-units",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-032",
+      "name": "Bodyguard",
+      "category": "Command",
+      "core_function": "Chance for guards to join assassination defence",
+      "principal_caveat_or_counter": "Not certainty; current exploit fixed in 6.35",
+      "evidence": [
+        "official-manual",
+        "official-patch"
+      ],
+      "primary_section_id": "b11-28-bodyguards-and-warning",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-033",
+      "name": "Stealthy",
+      "category": "Covert",
+      "core_function": "Permits sneaking and contributes concealment",
+      "principal_caveat_or_counter": "Patrol contest, composition, terrain, and size",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-29-stealth-is-a-contest-not-invisibility",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-034",
+      "name": "Spy",
+      "category": "Covert",
+      "core_function": "Enables intelligence and covert unrest work",
+      "principal_caveat_or_counter": "Patrols and order-specific exposure",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-30-spy-assassin-and-infiltration-families",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-035",
+      "name": "Assassin",
+      "category": "Covert",
+      "core_function": "Attempts assassination",
+      "principal_caveat_or_counter": "Bodyguards, Warning, target restrictions, failure battle",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-30-spy-assassin-and-infiltration-families",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-036",
+      "name": "Seduction family",
+      "category": "Covert",
+      "core_function": "Attempts special recruitment, corruption, or assassination outcomes",
+      "principal_caveat_or_counter": "Sex, target, patience, location, checks, and failure differ by ability",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-30-spy-assassin-and-infiltration-families",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-037",
+      "name": "Glamour",
+      "category": "Concealment",
+      "core_function": "Mirror images in battle; hidden in friendly provinces",
+      "principal_caveat_or_counter": "Images can be stripped; specialised sight; not Illusion",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-31-glamour-invisibility-unseen-and-illusion",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-038",
+      "name": "Invisibility or Unseen",
+      "category": "Concealment",
+      "core_function": "Makes detection or targeting difficult",
+      "principal_caveat_or_counter": "Exact perception counter is ability-specific",
+      "evidence": [
+        "official-mod-manual",
+        "current-ui-check"
+      ],
+      "primary_section_id": "b11-31-glamour-invisibility-unseen-and-illusion",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-039",
+      "name": "Darkvision",
+      "category": "Perception",
+      "core_function": "Reduces darkness penalties",
+      "principal_caveat_or_counter": "Percentage or value matters; does not answer every concealment",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-32-darkvision-spirit-sight-true-sight-and-blindness",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-040",
+      "name": "Spirit Sight",
+      "category": "Perception",
+      "core_function": "Detects relevant spiritual or ethereal targets",
+      "principal_caveat_or_counter": "Not a universal True Sight substitute",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-32-darkvision-spirit-sight-true-sight-and-blindness",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-041",
+      "name": "True Sight",
+      "category": "Perception",
+      "core_function": "Counters specified deception",
+      "principal_caveat_or_counter": "Check exact effect; darkness may remain separate",
+      "evidence": [
+        "official-mod-manual",
+        "current-ui-check"
+      ],
+      "primary_section_id": "b11-32-darkvision-spirit-sight-true-sight-and-blindness",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-042",
+      "name": "Elemental Resistance",
+      "category": "Defence",
+      "core_function": "Reduces matching fire, cold, shock, poison, or acid pressure",
+      "principal_caveat_or_counter": "Secondary effects and other damage types can bypass the plan",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-33-resistances-are-typed-defences",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-043",
+      "name": "Physical Resistance",
+      "category": "Defence",
+      "core_function": "Reduces matching pierce, slash, or blunt damage",
+      "principal_caveat_or_counter": "Wrong weapon type bypasses; exact layer in Book IV",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-33-resistances-are-typed-defences",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-044",
+      "name": "Air Shield",
+      "category": "Defence",
+      "core_function": "Reduces chance of relevant missiles hitting",
+      "principal_caveat_or_counter": "Spells and nonmissile delivery; exact percentage",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-33-resistances-are-typed-defences",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-045",
+      "name": "Ethereal",
+      "category": "Defence",
+      "core_function": "75 percent of nonmagical strikes miss; passes fort walls",
+      "principal_caveat_or_counter": "Magical attacks; other layers still apply",
+      "evidence": [
+        "official-manual"
+      ],
+      "primary_section_id": "b11-34-ethereal-twist-fate-luck-and-glamour",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-046",
+      "name": "Twist Fate",
+      "category": "Defence",
+      "core_function": "Negates a qualifying damaging event, then ends",
+      "principal_caveat_or_counter": "Multiple attacks or prior expendable hit",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-34-ethereal-twist-fate-luck-and-glamour",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-047",
+      "name": "Luck",
+      "category": "Defence",
+      "core_function": "Chance-based survival layer",
+      "principal_caveat_or_counter": "High attack volume; verify interaction order",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-34-ethereal-twist-fate-luck-and-glamour",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-048",
+      "name": "Regeneration",
+      "category": "Recovery",
+      "core_function": "Heals exact percentage of maximum HP per round and reduces affliction risk",
+      "principal_caveat_or_counter": "Burst damage, disablement, inanimate immunity, soul effects",
+      "evidence": [
+        "official-manual",
+        "official-patch"
+      ],
+      "primary_section_id": "b11-35-regeneration-families",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-049",
+      "name": "Reconstruction",
+      "category": "Recovery",
+      "core_function": "Regeneration for inanimate bodies",
+      "principal_caveat_or_counter": "Verify percentage and body eligibility",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-35-regeneration-families",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-050",
+      "name": "Undead Regeneration",
+      "category": "Recovery",
+      "core_function": "Regeneration family for eligible undead",
+      "principal_caveat_or_counter": "Not every undead has it; burst and control remain",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-35-regeneration-families",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-051",
+      "name": "Reinvigoration",
+      "category": "Recovery",
+      "core_function": "Removes fatigue over time",
+      "principal_caveat_or_counter": "Cannot restore actions already lost; short fights may not use it",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-36-reinvigoration",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-052",
+      "name": "Recuperation",
+      "category": "Recovery",
+      "core_function": "Attempts to heal eligible battle afflictions over months",
+      "principal_caveat_or_counter": "Excludes old age; class and affliction difficulty restrictions",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-37-recuperation-and-healers",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-053",
+      "name": "Healer",
+      "category": "Recovery",
+      "core_function": "Attempts to heal eligible units",
+      "principal_caveat_or_counter": "Body and affliction eligibility; healer value and difficulty",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-37-recuperation-and-healers",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-054",
+      "name": "Immortality",
+      "category": "Persistence",
+      "core_function": "Returns after death under defined conditions",
+      "principal_caveat_or_counter": "Delay, dominion, soul destruction, position, and lost battle",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-38-immortality-reformation-and-extra-lives",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-055",
+      "name": "Awe",
+      "category": "Aura",
+      "core_function": "Forces attacker morale check against 10 plus Awe",
+      "principal_caveat_or_counter": "Morale, immunity, missiles, spells, rapid removal",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-39-awe-sun-awe-fear-and-dread",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-056",
+      "name": "Sun Awe",
+      "category": "Aura",
+      "core_function": "Awe family dependent on light",
+      "principal_caveat_or_counter": "Disabled underground or in darkness",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-39-awe-sun-awe-fear-and-dread",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-057",
+      "name": "Fear",
+      "category": "Aura",
+      "core_function": "Applies local morale pressure",
+      "principal_caveat_or_counter": "Leadership, morale, mindless, range, source removal; exact current procedure in Book IV",
+      "evidence": [
+        "official-manual",
+        "official-patch"
+      ],
+      "primary_section_id": "b11-39-awe-sun-awe-fear-and-dread",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-058",
+      "name": "Heat or Chill Aura",
+      "category": "Aura",
+      "core_function": "Applies local fatigue and elemental pressure",
+      "principal_caveat_or_counter": "Matching resistance, scales, spacing, range",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-40-heat-chill-poison-disease-sleep-and-nightmare-auras",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-059",
+      "name": "Poison Cloud",
+      "category": "Aura",
+      "core_function": "Accumulates poison in an area",
+      "principal_caveat_or_counter": "Poison resistance, spacing, ranged removal",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-40-heat-chill-poison-disease-sleep-and-nightmare-auras",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-060",
+      "name": "Disease or Plague Aura",
+      "category": "Aura",
+      "core_function": "Applies persistent disease pressure",
+      "principal_caveat_or_counter": "Disease Resistance, separation, cure capacity",
+      "evidence": [
+        "official-manual",
+        "official-patch"
+      ],
+      "primary_section_id": "b11-40-heat-chill-poison-disease-sleep-and-nightmare-auras",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-061",
+      "name": "Sleep Aura",
+      "category": "Aura",
+      "core_function": "Causes nearby units to become unconscious",
+      "principal_caveat_or_counter": "Resistance or immunity, range, rapid removal",
+      "evidence": [
+        "official-mod-manual",
+        "current-ui-check"
+      ],
+      "primary_section_id": "b11-40-heat-chill-poison-disease-sleep-and-nightmare-auras",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-062",
+      "name": "Fire Shield",
+      "category": "Reactive",
+      "core_function": "Damages qualifying attackers in contact",
+      "principal_caveat_or_counter": "Fire resistance, range, long weapons, disposable attacks",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-41-fire-shields-acid-spikes-slime-and-entanglement",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-063",
+      "name": "Damage Reversal",
+      "category": "Reactive",
+      "core_function": "Returns a consequence to attacker",
+      "principal_caveat_or_counter": "Exact trigger and resistance; nonqualifying attacks",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-42-damage-reversal-blood-vengeance-curses-and-horror-marks",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-064",
+      "name": "Blood Vengeance",
+      "category": "Reactive",
+      "core_function": "Punishes damage through a resistance interaction",
+      "principal_caveat_or_counter": "Magic Resistance, attack selection, ranged or disposable delivery",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-42-damage-reversal-blood-vengeance-curses-and-horror-marks",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-065",
+      "name": "Petrification",
+      "category": "Reactive",
+      "core_function": "Hard-stop effect against qualifying attackers",
+      "principal_caveat_or_counter": "Magic Resistance, immunity, noncontact delivery",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-43-petrification-and-other-hard-stops",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-066",
+      "name": "Ambidextrous",
+      "category": "Combat",
+      "core_function": "Reduces multiweapon attack penalty by value",
+      "principal_caveat_or_counter": "Does not remove extra weapon encumbrance",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-44-ambidextrous-clumsy-berserker-and-multiweapon-bodies",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-067",
+      "name": "Berserker",
+      "category": "Combat",
+      "core_function": "Wounded morale check can enter no-rout combat state with bonuses",
+      "principal_caveat_or_counter": "Loss of control; unconsciousness ends current state",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-44-ambidextrous-clumsy-berserker-and-multiweapon-bodies",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-068",
+      "name": "Trample",
+      "category": "Combat",
+      "core_function": "Displaces smaller units and deals size-based armour-piercing damage",
+      "principal_caveat_or_counter": "Large targets, fatigue, formation, space, ranged disablement",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-45-trample",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-069",
+      "name": "Swallow or Digest",
+      "category": "Combat",
+      "core_function": "Removes and damages eligible target inside swallower",
+      "principal_caveat_or_counter": "Size restriction; kill or disable swallower; blocks many life-saving effects",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-46-swallow-digest-and-incorporate",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-070",
+      "name": "Life Drain",
+      "category": "Combat",
+      "core_function": "Converts suitable damage into recovery",
+      "principal_caveat_or_counter": "Lifeless targets; range; resistance; rapid killing",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-47-life-drain-raise-on-kill-and-kill-dependent-effects",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-071",
+      "name": "Seasonal Power",
+      "category": "Conditional",
+      "core_function": "Changes attributes in a matching season",
+      "principal_caveat_or_counter": "Predictable weak months; year-turn or form changes",
+      "evidence": [
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-48-seasonal-powers",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-072",
+      "name": "Scale Power",
+      "category": "Conditional",
+      "core_function": "Changes attributes in matching scales or environment",
+      "principal_caveat_or_counter": "Change scales, light, storm, or battlefield location",
+      "evidence": [
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-49-scale-and-environmental-powers",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-073",
+      "name": "Need Not Eat",
+      "category": "Economy",
+      "core_function": "Consumes no ordinary supplies",
+      "principal_caveat_or_counter": "Does not imply disease, undead, or inanimate status",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-50-supply-siege-patrol-pillage-and-resource-effects",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-074",
+      "name": "Supply Bonus",
+      "category": "Economy",
+      "core_function": "Produces supplies",
+      "principal_caveat_or_counter": "Value realised only where supply is binding",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-50-supply-siege-patrol-pillage-and-resource-effects",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-075",
+      "name": "Siege or Patrol Bonus",
+      "category": "Economy",
+      "core_function": "Improves matching province action",
+      "principal_caveat_or_counter": "No value while action is unused; exact formula elsewhere",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-50-supply-siege-patrol-pillage-and-resource-effects",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-076",
+      "name": "Research Bonus",
+      "category": "Magic support",
+      "core_function": "Adds research output",
+      "principal_caveat_or_counter": "Commander-turn opportunity cost",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-51-research-forge-search-and-ritual-support",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-077",
+      "name": "Forge Bonus",
+      "category": "Magic support",
+      "core_function": "Reduces eligible forge cost",
+      "principal_caveat_or_counter": "Item and path eligibility and rounding; only while forging",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-51-research-forge-search-and-ritual-support",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-078",
+      "name": "Innate Spellcaster",
+      "category": "Magic support",
+      "core_function": "Uses innate casting rules",
+      "principal_caveat_or_counter": "Current 6.35 script fix; fatigue and unconsciousness still matter",
+      "evidence": [
+        "official-manual",
+        "official-patch"
+      ],
+      "primary_section_id": "b11-51-research-forge-search-and-ritual-support",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-079",
+      "name": "Summoner or Retinue",
+      "category": "Summoning",
+      "core_function": "Creates or restores followers on a trigger or schedule",
+      "principal_caveat_or_counter": "Leadership, cap, persistence, and created class",
+      "evidence": [
+        "official-mod-manual",
+        "current-ui-check"
+      ],
+      "primary_section_id": "b11-52-summoner-retinue-dominion-summoner-and-battle-summoner",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-080",
+      "name": "Experience",
+      "category": "Development",
+      "core_function": "Adds star packages at 15, 50, 100, 200, and 400 XP",
+      "principal_caveat_or_counter": "Role-specific value; official and community cumulative HP discrepancy",
+      "evidence": [
+        "official-manual",
+        "community-tested"
+      ],
+      "primary_section_id": "b11-54-experience-thresholds",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": null
+    },
+    {
+      "id": "ability-081",
+      "name": "Heroic Ability",
+      "category": "Development",
+      "core_function": "Hall-of-Fame commander gains a growing special trait",
+      "principal_caveat_or_counter": "Exact formula and rarity are community-derived and version-sensitive",
+      "evidence": [
+        "official-manual",
+        "community-tested"
+      ],
+      "primary_section_id": "b11-57-what-is-officially-established",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": null
+    },
+    {
+      "id": "ability-082",
+      "name": "Affliction",
+      "category": "Condition",
+      "core_function": "Lasting injury with body-part and difficulty rules",
+      "principal_caveat_or_counter": "Correct healer and body eligibility; role can be lost",
+      "evidence": [
+        "official-manual"
+      ],
+      "primary_section_id": "b11-61-afflictions",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-083",
+      "name": "Disease",
+      "category": "Condition",
+      "core_function": "Continuing deterioration and affliction risk",
+      "principal_caveat_or_counter": "Disease Resistance, immunity, Disease Healer; distinct from old age",
+      "evidence": [
+        "official-manual",
+        "official-patch"
+      ],
+      "primary_section_id": "b11-62-disease-and-old-age",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-084",
+      "name": "Curse",
+      "category": "Condition",
+      "core_function": "Persistent increased misfortune and affliction exposure",
+      "principal_caveat_or_counter": "Not ordinarily removable; avoid contamination",
+      "evidence": [
+        "official-manual"
+      ],
+      "primary_section_id": "b11-63-curse-and-horror-mark",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-085",
+      "name": "Horror Mark",
+      "category": "Condition",
+      "core_function": "Hidden stacked severity and monthly horror-attack chance",
+      "principal_caveat_or_counter": "Not ordinary affliction; conceal, protect, or accept long risk",
+      "evidence": [
+        "official-manual"
+      ],
+      "primary_section_id": "b11-63-curse-and-horror-mark",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-086",
+      "name": "Insanity",
+      "category": "Condition",
+      "core_function": "Chance of unwanted monthly behaviour",
+      "principal_caveat_or_counter": "Redundancy and noncritical assignments",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-64-insanity-tainted-yearning-and-homesickness",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-087",
+      "name": "Old Age",
+      "category": "Condition",
+      "core_function": "Age-driven deterioration beyond body-adjusted maximum age",
+      "principal_caveat_or_counter": "Recuperation does not heal age afflictions",
+      "evidence": [
+        "official-manual"
+      ],
+      "primary_section_id": "b11-62-disease-and-old-age",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-088",
+      "name": "Poison",
+      "category": "Condition",
+      "core_function": "Delayed accumulating damage; also reduces Precision since 6.30",
+      "principal_caveat_or_counter": "Poison resistance, recovery, battle duration",
+      "evidence": [
+        "official-manual",
+        "official-patch"
+      ],
+      "primary_section_id": "b11-65-poison-burning-bleeding-frozen-and-corrosion",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-089",
+      "name": "Burning, Bleeding, or Frozen",
+      "category": "Condition",
+      "core_function": "Persistent battle impairment or damage",
+      "principal_caveat_or_counter": "Relevant immunity or resistance; Spiritform protected in 6.30",
+      "evidence": [
+        "official-patch",
+        "current-ui-check"
+      ],
+      "primary_section_id": "b11-65-poison-burning-bleeding-frozen-and-corrosion",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-090",
+      "name": "Stun, Paralysis, or Sleep",
+      "category": "Condition",
+      "core_function": "Denies actions",
+      "principal_caveat_or_counter": "Resistance, immunity, recovery time, source removal",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-66-stun-paralysis-sleep-entanglement-and-confusion",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-091",
+      "name": "Entanglement",
+      "category": "Condition",
+      "core_function": "Prevents movement or action until escape",
+      "principal_caveat_or_counter": "Strength or ability-specific escape; ranged support",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-66-stun-paralysis-sleep-entanglement-and-confusion",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-092",
+      "name": "Charm or Enslave",
+      "category": "Condition",
+      "core_function": "Changes control or ownership",
+      "principal_caveat_or_counter": "Magic Resistance, immunity, range, killing target or caster",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-67-charm-enslave-transformation-and-control-loss",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    },
+    {
+      "id": "ability-093",
+      "name": "Transformation",
+      "category": "Condition",
+      "core_function": "Replaces body or form",
+      "principal_caveat_or_counter": "Polyimmune, targeting immunity, form-specific loss",
+      "evidence": [
+        "official-manual",
+        "official-mod-manual"
+      ],
+      "primary_section_id": "b11-67-charm-enslave-transformation-and-control-loss",
+      "game_baseline": "Dominions 6.36",
+      "verified_on": "2026-08-25"
+    }
+  ]
+}
