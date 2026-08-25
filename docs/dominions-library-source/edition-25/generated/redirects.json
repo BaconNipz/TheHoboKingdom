@@ -1,0 +1,858 @@
+{
+  "schema_version": "1.0.0",
+  "edition": "Progress Edition 25",
+  "redirects": [
+    {
+      "from": "b1-aging-disease-and-insanity",
+      "to": "b1-phase-vi-attrition-and-end-state"
+    },
+    {
+      "from": "b1-assassinations-resolve-before-conventional-movement",
+      "to": "b1-horrors-and-assassinations-can-remove-movement-leaders"
+    },
+    {
+      "from": "b1-building-construction",
+      "to": "b1-buildings-finish-after-the-month-s-active-systems"
+    },
+    {
+      "from": "b1-eras-and-national-identity",
+      "to": "b1-foundation-book-i-rulesets-language-and-the-anatomy-of-a-turn"
+    },
+    {
+      "from": "b1-evidence-standard",
+      "to": "b1-evidence-and-confidence"
+    },
+    {
+      "from": "b1-immortals-return-after-victory",
+      "to": "b1-victory-before-immortal-return"
+    },
+    {
+      "from": "b1-movement-and-conquest",
+      "to": "b1-phase-iii-movement-and-conquest"
+    },
+    {
+      "from": "b1-plane",
+      "to": "b1-spatial-terms"
+    },
+    {
+      "from": "b1-randomness-and-the-dominions-random-number",
+      "to": "b1-randomness"
+    },
+    {
+      "from": "b1-remote-attacks-and-magic-battles",
+      "to": "b1-remote-attacks-strike-before-ordinary-movement"
+    },
+    {
+      "from": "b1-rulesets-must-never-be-silently-merged",
+      "to": "b1-ruleset-labels"
+    },
+    {
+      "from": "b1-size-point",
+      "to": "b1-spatial-terms"
+    },
+    {
+      "from": "b1-sneaking-discovery-can-cause-a-late-battle",
+      "to": "b1-stealth-failure-can-produce-a-late-battle"
+    },
+    {
+      "from": "b1-starvation-is-late",
+      "to": "b1-starvation-follows-battle"
+    },
+    {
+      "from": "b10-a-turn-staled",
+      "to": "b10-78-a-turn-staled"
+    },
+    {
+      "from": "b10-cannot-find-or-join-the-game",
+      "to": "b10-67-cannot-find-or-join-the-game"
+    },
+    {
+      "from": "b10-current-operational-additions-worth-learning",
+      "to": "b10-26-current-operational-additions-worth-learning"
+    },
+    {
+      "from": "b10-dispute-handling",
+      "to": "b10-85-dispute-handling"
+    },
+    {
+      "from": "b10-first-campaign",
+      "to": "b10-part-viii-a-guided-first-campaign"
+    },
+    {
+      "from": "b10-first-contact",
+      "to": "b10-62-first-contact"
+    },
+    {
+      "from": "b10-game-setup",
+      "to": "b10-part-ii-creating-the-world"
+    },
+    {
+      "from": "b10-host-setup-sheet",
+      "to": "b10-15-host-setup-sheet"
+    },
+    {
+      "from": "b10-hosting",
+      "to": "b10-part-iii-starting-joining-and-hosting"
+    },
+    {
+      "from": "b10-hosting-runbook",
+      "to": "b10-83-hosting-runbook"
+    },
+    {
+      "from": "b10-interface",
+      "to": "b10-part-iv-the-main-interface"
+    },
+    {
+      "from": "b10-official-lobby-workflow",
+      "to": "b10-17-official-lobby-workflow"
+    },
+    {
+      "from": "b10-orders",
+      "to": "b10-part-vii-strategic-order-reference"
+    },
+    {
+      "from": "b10-ordinary-movement",
+      "to": "b10-42-ordinary-movement"
+    },
+    {
+      "from": "b10-siege-orders",
+      "to": "b10-46-siege-orders"
+    },
+    {
+      "from": "b10-the-end-of-turn-audit",
+      "to": "b10-33-the-end-of-turn-audit"
+    },
+    {
+      "from": "b10-troubleshooting",
+      "to": "b10-part-ix-troubleshooting-by-symptom"
+    },
+    {
+      "from": "b10-turn-submission",
+      "to": "b10-18-turn-submission-and-revision"
+    },
+    {
+      "from": "b10-turn-submission-and-revision",
+      "to": "b10-18-turn-submission-and-revision"
+    },
+    {
+      "from": "b11-ability-register",
+      "to": "b11-part-xii-master-ability-and-condition-register"
+    },
+    {
+      "from": "b11-conditions",
+      "to": "b11-part-xi-conditions-and-lasting-state"
+    },
+    {
+      "from": "b11-counter-matrix",
+      "to": "b11-71-counter-construction-matrix"
+    },
+    {
+      "from": "b11-experience",
+      "to": "b11-part-ix-experience-and-veteran-units"
+    },
+    {
+      "from": "b11-heroic-abilities",
+      "to": "b11-part-x-hall-of-fame-and-heroic-abilities"
+    },
+    {
+      "from": "b11-unit-classes",
+      "to": "b11-part-ii-unit-classes-and-status-tags"
+    },
+    {
+      "from": "b11-unit-reading",
+      "to": "b11-3-begin-with-the-body-not-the-icon"
+    },
+    {
+      "from": "b12-items",
+      "to": "b12-part-iii-magic-items-artifacts-and-barding"
+    },
+    {
+      "from": "b12-maintenance",
+      "to": "b12-part-x-verification-and-maintenance"
+    },
+    {
+      "from": "b12-mercenaries-independents",
+      "to": "b12-part-vii-mercenaries-and-independent-recruitment"
+    },
+    {
+      "from": "b12-object-register",
+      "to": "b12-what-the-first-register-contains"
+    },
+    {
+      "from": "b12-pretenders",
+      "to": "b12-part-v-pretender-forms"
+    },
+    {
+      "from": "b12-special-dominions",
+      "to": "b12-part-viii-special-dominion-systems"
+    },
+    {
+      "from": "b12-spells",
+      "to": "b12-part-ii-spells"
+    },
+    {
+      "from": "b12-summons",
+      "to": "b12-part-iv-summons"
+    },
+    {
+      "from": "b12-thrones-sites",
+      "to": "b12-part-vi-thrones-and-magic-sites"
+    },
+    {
+      "from": "b12-website",
+      "to": "b12-part-ix-website-and-research-use"
+    },
+    {
+      "from": "b13-classification-model",
+      "to": "b13-part-iii-the-classification-and-evidence-model"
+    },
+    {
+      "from": "b13-command-chronology",
+      "to": "b13-part-v-modding-and-command-chronology"
+    },
+    {
+      "from": "b13-domain-map",
+      "to": "b13-13-domain-tags-are-many-to-many"
+    },
+    {
+      "from": "b13-editorial-review",
+      "to": "b13-14-classification-confidence-is-not-source-confidence"
+    },
+    {
+      "from": "b13-maintenance",
+      "to": "b13-33-updating-the-official-feed-safely"
+    },
+    {
+      "from": "b13-official-patch-ledger",
+      "to": "b13-foundation-book-xiii-version-history-and-the-official-patch-ledger"
+    },
+    {
+      "from": "b13-performance-and-stability",
+      "to": "b13-22-hosting-networking-security-and-integrity"
+    },
+    {
+      "from": "b13-player-facing-changes",
+      "to": "b13-part-iv-player-facing-changes-that-commonly-make-guides-stale"
+    },
+    {
+      "from": "b13-presentation-and-data-maintenance",
+      "to": "b13-21-interface-and-operating-changes"
+    },
+    {
+      "from": "b13-release-timeline",
+      "to": "b13-part-ii-the-complete-official-release-spine"
+    },
+    {
+      "from": "b13-stale-guide-repair",
+      "to": "b13-part-vi-repairing-stale-guides-and-maintaining-the-library"
+    },
+    {
+      "from": "b13-website",
+      "to": "b13-34-website-uses"
+    },
+    {
+      "from": "b14-command-lexicon",
+      "to": "b14-foundation-book-xiv-the-command-and-terminology-lexicon"
+    },
+    {
+      "from": "b14-complete-locator",
+      "to": "b14-part-x-complete-search-locators"
+    },
+    {
+      "from": "b14-context",
+      "to": "b14-part-ii-context-is-part-of-syntax"
+    },
+    {
+      "from": "b14-domains",
+      "to": "b14-part-iv-command-domains"
+    },
+    {
+      "from": "b14-essays",
+      "to": "b14-part-viii-expert-essays"
+    },
+    {
+      "from": "b14-evidence",
+      "to": "b14-part-iii-the-evidence-ladder-and-version-drift"
+    },
+    {
+      "from": "b14-maintenance",
+      "to": "b14-part-ix-maintenance-and-review-protocols"
+    },
+    {
+      "from": "b14-patch-reconciliation",
+      "to": "b14-part-vi-patch-to-manual-reconciliation"
+    },
+    {
+      "from": "b14-safe-lookup",
+      "to": "b14-part-v-a-safe-lookup-workflow"
+    },
+    {
+      "from": "b14-sources",
+      "to": "b14-part-xi-source-and-publication-register"
+    },
+    {
+      "from": "b14-syntax",
+      "to": "b14-part-i-reading-the-modding-language"
+    },
+    {
+      "from": "b14-website",
+      "to": "b14-part-vii-search-and-website-architecture"
+    },
+    {
+      "from": "b2-blood-hunting",
+      "to": "b2-part-xi-blood-economy"
+    },
+    {
+      "from": "b2-commander-points-and-holy-points",
+      "to": "b2-commander-points"
+    },
+    {
+      "from": "b2-dominion-scales-and-the-economy",
+      "to": "b2-scale-interaction"
+    },
+    {
+      "from": "b2-fort-supply-range",
+      "to": "b2-fort-supply-distance"
+    },
+    {
+      "from": "b2-mercenaries",
+      "to": "b2-dominions-as-a-game-of-conversion"
+    },
+    {
+      "from": "b2-part-v-supplies-logistics-and-starvation",
+      "to": "b2-part-vi-supplies-armies-and-logistics"
+    },
+    {
+      "from": "b2-part-vi-infrastructure-and-administration",
+      "to": "b2-part-vii-infrastructure"
+    },
+    {
+      "from": "b2-part-vii-population-unrest-pillage-patrol-and-blood-hunting",
+      "to": "b2-part-v-unrest-and-coercive-economy"
+    },
+    {
+      "from": "b2-part-xv-mathematical-reference",
+      "to": "b2-part-xv-expert-diagnostics"
+    },
+    {
+      "from": "b2-recruitment-restrictions",
+      "to": "b2-ownership-and-national-recruitment"
+    },
+    {
+      "from": "b2-starvation",
+      "to": "b2-starvation-selection-and-effects"
+    },
+    {
+      "from": "b2-unrest-effects",
+      "to": "b2-what-unrest-does"
+    },
+    {
+      "from": "b3-heat-and-cold",
+      "to": "b3-temperature"
+    },
+    {
+      "from": "b3-incarnate-effects",
+      "to": "b3-ordinary-innate-and-incarnate"
+    },
+    {
+      "from": "b3-part-ii-chassis-paths-and-design-capabilities",
+      "to": "b3-part-i-pretender-design-as-a-national-system"
+    },
+    {
+      "from": "b3-part-iv-dominion-and-religious-territory",
+      "to": "b3-part-iv-dominion"
+    },
+    {
+      "from": "b3-part-vii-pretender-death-recall-and-divine-continuity",
+      "to": "b3-part-viii-death-of-a-god"
+    },
+    {
+      "from": "b3-pretender-design-audit",
+      "to": "b3-expert-design-audit"
+    },
+    {
+      "from": "b3-sacred-capacity",
+      "to": "b3-mass-sacreds-versus-elite-sacreds"
+    },
+    {
+      "from": "b3-special-dominions",
+      "to": "b3-part-ix-special-dominions"
+    },
+    {
+      "from": "b4-armour-and-protection",
+      "to": "b4-damage-and-protection"
+    },
+    {
+      "from": "b4-army-rout",
+      "to": "b4-army-level-rout"
+    },
+    {
+      "from": "b4-battle-groups",
+      "to": "b4-part-i-what-a-battle-decides"
+    },
+    {
+      "from": "b4-battlefield-enchantments",
+      "to": "b4-battle-enchantments"
+    },
+    {
+      "from": "b4-berserk",
+      "to": "b4-part-xi-morale-fear-rout-and-retreat"
+    },
+    {
+      "from": "b4-clouds-and-persistent-area-effects",
+      "to": "b4-clouds-and-auras"
+    },
+    {
+      "from": "b4-critical-hits",
+      "to": "b4-part-x-fatigue-recovery-and-collapse"
+    },
+    {
+      "from": "b4-damage-reversal",
+      "to": "b4-part-xii-resistances-and-special-damage"
+    },
+    {
+      "from": "b4-disease",
+      "to": "b4-part-xiii-afflictions-regeneration-and-lasting-loss"
+    },
+    {
+      "from": "b4-encumbrance",
+      "to": "b4-part-x-fatigue-recovery-and-collapse"
+    },
+    {
+      "from": "b4-fire-and-cold",
+      "to": "b4-part-xii-resistances-and-special-damage"
+    },
+    {
+      "from": "b4-formation-fighter",
+      "to": "b4-formation-types"
+    },
+    {
+      "from": "b4-friendly-fire",
+      "to": "b4-part-viii-missiles-and-ranged-delivery"
+    },
+    {
+      "from": "b4-healing",
+      "to": "b4-healing-categories"
+    },
+    {
+      "from": "b4-immortality-and-return",
+      "to": "b4-part-xiii-afflictions-regeneration-and-lasting-loss"
+    },
+    {
+      "from": "b4-leadership",
+      "to": "b4-special-leadership"
+    },
+    {
+      "from": "b4-magic-resistance-contests",
+      "to": "b4-magic-resistance"
+    },
+    {
+      "from": "b4-mindless-troops",
+      "to": "b4-part-xi-morale-fear-rout-and-retreat"
+    },
+    {
+      "from": "b4-missile-deviation",
+      "to": "b4-deviation"
+    },
+    {
+      "from": "b4-obstacles",
+      "to": "b4-obstacles-and-battlefield-terrain"
+    },
+    {
+      "from": "b4-part-iii-commanders-squads-leadership-and-army-organisation",
+      "to": "b4-part-iii-command-squads-and-army-construction"
+    },
+    {
+      "from": "b4-part-iv-size-mounts-trampling-and-battlefield-movement",
+      "to": "b4-part-ix-mounts-trampling-and-size"
+    },
+    {
+      "from": "b4-part-ix-protection-damage-and-survival",
+      "to": "b4-damage-and-protection"
+    },
+    {
+      "from": "b4-part-v-formations-placement-and-contact",
+      "to": "b4-part-iv-formation-density-and-placement"
+    },
+    {
+      "from": "b4-part-vi-orders-scripts-and-the-spellcasting-ai",
+      "to": "b4-part-v-orders-and-scripting"
+    },
+    {
+      "from": "b4-part-viii-missile-combat",
+      "to": "b4-part-viii-missiles-and-ranged-delivery"
+    },
+    {
+      "from": "b4-part-xii-resistances-special-damage-and-status-effects",
+      "to": "b4-part-xii-resistances-and-special-damage"
+    },
+    {
+      "from": "b4-part-xiii-afflictions-regeneration-and-healing",
+      "to": "b4-part-xiii-afflictions-regeneration-and-lasting-loss"
+    },
+    {
+      "from": "b4-part-xiv-battlefield-magic",
+      "to": "b4-part-xiv-battle-magic-within-the-army"
+    },
+    {
+      "from": "b4-part-xv-counter-construction-and-battle-analysis",
+      "to": "b4-part-xvi-counter-construction"
+    },
+    {
+      "from": "b4-part-xvi-siege-storming-retreat-and-pursuit",
+      "to": "b4-part-xv-sieges-storming-and-battle-context"
+    },
+    {
+      "from": "b4-penetration",
+      "to": "b4-magic-resistance"
+    },
+    {
+      "from": "b4-regeneration",
+      "to": "b4-part-xiii-afflictions-regeneration-and-lasting-loss"
+    },
+    {
+      "from": "b4-spell-targeting",
+      "to": "b4-part-xiv-battle-magic-within-the-army"
+    },
+    {
+      "from": "b4-squads",
+      "to": "b4-squad-orders"
+    },
+    {
+      "from": "b4-square-capacity",
+      "to": "b4-the-square"
+    },
+    {
+      "from": "b4-targeting-orders",
+      "to": "b4-squad-orders"
+    },
+    {
+      "from": "b4-taskmasters",
+      "to": "b4-standards-inspiration-and-taskmasters"
+    },
+    {
+      "from": "b4-trample",
+      "to": "b4-trampling"
+    },
+    {
+      "from": "b4-weapon-profiles",
+      "to": "b4-part-ii-reading-a-unit"
+    },
+    {
+      "from": "b5-artifact-races",
+      "to": "b5-artifacts"
+    },
+    {
+      "from": "b5-battlefield-enchantment-packages",
+      "to": "b5-spell-classes-by-battlefield-job"
+    },
+    {
+      "from": "b5-battlefield-gem-spending",
+      "to": "b5-combat-gem-rules"
+    },
+    {
+      "from": "b5-construction-as-an-access-school",
+      "to": "b5-construction-tiers"
+    },
+    {
+      "from": "b5-empowerment",
+      "to": "b5-empowerment-as-a-bridge"
+    },
+    {
+      "from": "b5-fatigue-and-overcasting",
+      "to": "b5-overcasting"
+    },
+    {
+      "from": "b5-gem-reserves",
+      "to": "b5-reserve-doctrine"
+    },
+    {
+      "from": "b5-hidden-and-indirect-access",
+      "to": "b5-indirect-magic"
+    },
+    {
+      "from": "b5-layered-domes",
+      "to": "b5-layering-domes"
+    },
+    {
+      "from": "b5-mage-turn-opportunity-cost",
+      "to": "b5-mage-turn-accounting"
+    },
+    {
+      "from": "b5-magic-duel",
+      "to": "b5-part-vi-the-nine-paths-in-practice"
+    },
+    {
+      "from": "b5-national-and-restricted-magic",
+      "to": "b5-national-access-is-a-distribution"
+    },
+    {
+      "from": "b5-part-ix-domes-remote-attacks-and-magic-movement",
+      "to": "b5-part-ix-domes-and-remote-magic-defence"
+    },
+    {
+      "from": "b5-part-vi-battlefield-magic-by-function",
+      "to": "b5-part-v-the-anatomy-of-battle-magic"
+    },
+    {
+      "from": "b5-part-xii-legendary-and-level-nine-magic",
+      "to": "b5-part-xiii-legendary-and-late-game-magic"
+    },
+    {
+      "from": "b5-research-breakpoints",
+      "to": "b5-research-portfolios"
+    },
+    {
+      "from": "b5-research-discounts",
+      "to": "b5-research-efficiency"
+    },
+    {
+      "from": "b5-research-schools",
+      "to": "b5-the-seven-schools"
+    },
+    {
+      "from": "b5-scrying",
+      "to": "b5-part-viii-rituals-and-strategic-magic"
+    },
+    {
+      "from": "b6-assassination-defence",
+      "to": "b6-assassin-rules"
+    },
+    {
+      "from": "b6-binding-diplomacy",
+      "to": "b6-formal-and-social-naps"
+    },
+    {
+      "from": "b6-border-design",
+      "to": "b6-border-shapes"
+    },
+    {
+      "from": "b6-coalition-formation",
+      "to": "b6-coalition-politics"
+    },
+    {
+      "from": "b6-counter-portfolios",
+      "to": "b6-counter-construction"
+    },
+    {
+      "from": "b6-dominion-as-campaign-pressure",
+      "to": "b6-part-xi-diplomacy-treaties-and-reputation"
+    },
+    {
+      "from": "b6-expansion-party-roles",
+      "to": "b6-expansion-party-archetypes"
+    },
+    {
+      "from": "b6-from-expansion-to-the-first-war",
+      "to": "b6-part-viii-war-planning-timing-and-decision"
+    },
+    {
+      "from": "b6-independent-province-classes",
+      "to": "b6-part-ii-expansion"
+    },
+    {
+      "from": "b6-information-denial",
+      "to": "b6-information-denial-and-deception"
+    },
+    {
+      "from": "b6-initiative",
+      "to": "b6-tempo-and-initiative"
+    },
+    {
+      "from": "b6-movement-and-interception",
+      "to": "b6-friendly-hostile-and-intercepting-movement"
+    },
+    {
+      "from": "b6-non-aggression-pacts",
+      "to": "b6-formal-and-social-naps"
+    },
+    {
+      "from": "b6-part-ii-expansion-and-first-contact",
+      "to": "b6-part-ii-expansion"
+    },
+    {
+      "from": "b6-part-vi-logistics-supply-and-operational-reach",
+      "to": "b6-part-vi-movement-logistics-and-force-projection"
+    },
+    {
+      "from": "b6-part-x-timing-attacks-power-spikes-and-deterrence",
+      "to": "b6-part-viii-war-planning-timing-and-decision"
+    },
+    {
+      "from": "b6-part-xiii-army-preservation-and-force-regeneration",
+      "to": "b6-part-xiii-recovery-elastic-defence-and-defeat-management"
+    },
+    {
+      "from": "b6-part-xiv-recovery-replacement-and-war-continuation",
+      "to": "b6-part-xiii-recovery-elastic-defence-and-defeat-management"
+    },
+    {
+      "from": "b6-part-xv-victory-conversion",
+      "to": "b6-part-xii-thrones-cataclysm-and-endgame-conversion"
+    },
+    {
+      "from": "b6-part-xvi-campaign-decision-framework",
+      "to": "b6-part-viii-war-planning-timing-and-decision"
+    },
+    {
+      "from": "b6-patrol-and-stealth",
+      "to": "b6-patrol-and-concealment"
+    },
+    {
+      "from": "b6-pillage-as-a-campaign-tool",
+      "to": "b6-part-vii-raiding-and-counter-raiding"
+    },
+    {
+      "from": "b6-raid-order",
+      "to": "b6-what-a-raid-is"
+    },
+    {
+      "from": "b6-siege-as-an-operational-clock",
+      "to": "b6-the-siege-clock"
+    },
+    {
+      "from": "b6-tempo",
+      "to": "b6-tempo-and-initiative"
+    },
+    {
+      "from": "b6-thug-roles",
+      "to": "b6-part-ix-thugs-supercombatants-assassins-and-remote-force"
+    },
+    {
+      "from": "b7-evidence-architecture",
+      "to": "b7-part-i-the-nation-dossier-method"
+    },
+    {
+      "from": "b7-path-probability-and-thresholds",
+      "to": "b7-magic-access-as-a-probability-portfolio"
+    },
+    {
+      "from": "b8-automatic-allocation",
+      "to": "b8-automatic-allocation-is-convenient-but-fragile"
+    },
+    {
+      "from": "b8-codes-and-variables",
+      "to": "b8-event-variables"
+    },
+    {
+      "from": "b8-copied-objects-are-not-self-contained",
+      "to": "b8-part-i-the-object-and-parser-model"
+    },
+    {
+      "from": "b8-cross-mod-reference-limits",
+      "to": "b8-combined-mods-behave-differently"
+    },
+    {
+      "from": "b8-current-consolidated-object-limits",
+      "to": "b8-part-i-the-object-and-parser-model"
+    },
+    {
+      "from": "b8-event-execution-and-order",
+      "to": "b8-event-effects-and-transactional-thinking"
+    },
+    {
+      "from": "b8-gates-and-multiple-planes",
+      "to": "b8-gates"
+    },
+    {
+      "from": "b8-load-order",
+      "to": "b8-essay-i-load-order-is-part-of-game-design"
+    },
+    {
+      "from": "b8-network-and-lobby-test",
+      "to": "b8-load-test"
+    },
+    {
+      "from": "b8-object-lifecycle",
+      "to": "b8-part-i-the-object-and-parser-model"
+    },
+    {
+      "from": "b8-part-ii-identifiers-allocation-and-collision-safety",
+      "to": "b8-part-i-the-object-and-parser-model"
+    },
+    {
+      "from": "b8-part-iii-weapons-armour-and-combat-components",
+      "to": "b8-part-iii-weapons-armour-and-combat-effects"
+    },
+    {
+      "from": "b8-part-iv-monsters-mounts-shapes-commanders-and-sites",
+      "to": "b8-part-iv-monsters-mounts-shapes-and-commanders"
+    },
+    {
+      "from": "b8-part-x-ai-scaffolding-without-false-claims",
+      "to": "b8-part-x-ai-modding"
+    },
+    {
+      "from": "b8-performance-controls",
+      "to": "b8-event-performance"
+    },
+    {
+      "from": "b8-save-compatibility",
+      "to": "b8-part-xi-compatibility-engineering"
+    },
+    {
+      "from": "b8-selection-copying-and-inheritance",
+      "to": "b8-copy-first-and-clear-first-are-different-designs"
+    },
+    {
+      "from": "b8-shape-regression",
+      "to": "b8-shape-relationships-form-graphs"
+    },
+    {
+      "from": "b8-the-user-data-directory",
+      "to": "b8-locating-the-user-data-directory"
+    },
+    {
+      "from": "b8-variable-discipline",
+      "to": "b8-event-variables"
+    },
+    {
+      "from": "b9-12-underwater-and-cross-terrain-systems",
+      "to": "b9-10-3-underwater-play"
+    },
+    {
+      "from": "b9-14-divinitus-event-architecture",
+      "to": "b9-15-the-divinitus-event-engine"
+    },
+    {
+      "from": "b9-15-capital-institutions-temple-networks-and-priesthoods",
+      "to": "b9-16-1-capital-institutions"
+    },
+    {
+      "from": "b9-19-4-automatic-id-collision-risk",
+      "to": "b9-19-4-automatic-allocation"
+    },
+    {
+      "from": "b9-24-website-and-inspector-schema",
+      "to": "b9-23-website-architecture"
+    },
+    {
+      "from": "b9-7-de-global-rules",
+      "to": "b9-7-the-six-global-de-rules"
+    },
+    {
+      "from": "b9-8-de-blessing-revision",
+      "to": "b9-8-complete-de-blessing-revision"
+    },
+    {
+      "from": "b9-essay-iv-versioned-knowledge-is-part-of-the-ruleset",
+      "to": "b9-essay-iv-versioned-knowledge-is-the-real-encyclopaedia"
+    },
+    {
+      "from": "field-commander-points",
+      "to": "field-the-four-recruitment-gates"
+    },
+    {
+      "from": "field-holy-points",
+      "to": "field-the-four-recruitment-gates"
+    },
+    {
+      "from": "field-recruitment-gates",
+      "to": "field-the-four-recruitment-gates"
+    },
+    {
+      "from": "guide-readers-guide-and-concordance",
+      "to": "guide-reader-s-guide-and-concordance"
+    }
+  ]
+}

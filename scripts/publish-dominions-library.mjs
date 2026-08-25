@@ -3,7 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const sourceRoot = path.join(repositoryRoot, "docs", "dominions-library-source", "edition-24", "generated");
+const sourceRoot = path.join(repositoryRoot, "docs", "dominions-library-source", "edition-25", "generated");
 const libraryRoot = path.join(repositoryRoot, "dominions", "library");
 const bookRoot = path.join(libraryRoot, "books");
 const dataRoot = path.join(libraryRoot, "data");
@@ -14,6 +14,10 @@ const readingPaths = readJson("reading-paths.json");
 const research = readJson("research-register.json");
 const glossary = readJson("glossary.json");
 const linkMap = readJson("link-map.json");
+const editionLabel = manifest.edition;
+const editionNumber = editionLabel.match(/\d+$/)?.[0] ?? "25";
+const pdfDownload = `/downloads/dominions-6-knowledge-library-edition-${editionNumber}/`;
+const ogImage = `/assets/images/dominions-6-library-edition-${editionNumber}.png`;
 
 const escapeHtml = (value = "") => String(value)
   .replaceAll("&", "&amp;")
@@ -33,7 +37,7 @@ description: ${JSON.stringify(description)}
 nav_section: guides
 extra_css: /assets/dominions-library.css
 extra_js: /assets/dominions-library.js
-og_image: /assets/images/dominions-6-library-edition-24.png
+og_image: ${ogImage}
 ${extra}---
 `;
 
@@ -70,6 +74,7 @@ fs.mkdirSync(dataRoot, { recursive: true });
 
 const documents = manifest.documents.map((entry) => readJson(`documents/${entry.id}.json`));
 const totalWords = documents.reduce((sum, document) => sum + document.wordCount, 0);
+const totalSections = documents.reduce((sum, document) => sum + document.sectionCount, 0);
 
 for (const [index, document] of documents.entries()) {
   const directory = path.join(bookRoot, document.slug);
@@ -90,7 +95,7 @@ for (const [index, document] of documents.entries()) {
       <a href="/dominions/library/">Knowledge Library</a><span aria-hidden="true">/</span>
       <span>${escapeHtml(document.shortTitle)}</span>
     </div>
-    <p class="eyebrow">Progress Edition 24</p>
+    <p class="eyebrow">${editionLabel}</p>
     <h1>${escapeHtml(document.title)}</h1>
     <p class="lead">${escapeHtml(description)}</p>
     <div class="meta-row">
@@ -120,7 +125,7 @@ ${renderedHtml}
         <a href="/dominions/library/">Complete library</a>
         <a href="/dominions/library/glossary/">Glossary</a>
         <a href="/dominions/library/research/">Research register</a>
-        <a href="/downloads/dominions-6-knowledge-library-edition-24.pdf">Edition 24 PDF</a>
+        <a href="${pdfDownload}">Edition ${editionNumber} PDF</a>
       </nav>
     </aside>
   </div>
@@ -157,27 +162,27 @@ const landing = `${frontMatter("Dominions 6 Knowledge Library", "A versioned, se
 <section class="page-hero library-page-hero library-landing-hero">
   <div class="shell">
     <div class="breadcrumbs"><a href="/dominions/">Dominions 6</a><span aria-hidden="true">/</span><span>Knowledge Library</span></div>
-    <p class="eyebrow">Progress Edition 24 · Dominions 6.36</p>
+    <p class="eyebrow">${editionLabel} · Dominions 6.36</p>
     <h1>The Dominions 6 Knowledge Library</h1>
     <p class="lead">A working reference for learning the game, checking an exact rule, planning a campaign, or tracing the evidence behind a difficult claim.</p>
     <div class="meta-row">
       <span class="status status--stable">Current edition</span>
       <span class="meta-chip">16 books and guides</span>
-      <span class="meta-chip">2,466 indexed sections</span>
+      <span class="meta-chip">${formatNumber(totalSections)} indexed sections</span>
       <span class="meta-chip">${formatNumber(totalWords)} words</span>
     </div>
   </div>
 </section>
 
 <section class="section shell library-section">
-  <div class="library-search-panel" data-library-search data-index-url="/dominions/library/data/search-index.json">
+  <div class="library-search-panel" data-library-search data-index-url="/dominions/library/data/search-index.json.gz">
     <div>
       <p class="eyebrow">Search the full collection</p>
       <h2>Start with the question.</h2>
       <p>Results lead directly to the permanent section that owns the explanation. Search by rule, mechanic, command, object, or common term.</p>
     </div>
     <div class="library-search-controls">
-      <label><span>Search all 2,466 sections</span><input type="search" data-search-query placeholder="Try fatigue, blood hunting, siege, #newmonster…" autocomplete="off"></label>
+      <label><span>Search all ${formatNumber(totalSections)} sections</span><input type="search" data-search-query placeholder="Try fatigue, blood hunting, siege, #newmonster…" autocomplete="off"></label>
       <label><span>Subject</span><select data-search-topic><option value="all">All subjects</option></select></label>
     </div>
     <p class="library-search-status" data-search-status aria-live="polite">Enter a term or choose a subject.</p>
@@ -197,7 +202,7 @@ const landing = `${frontMatter("Dominions 6 Knowledge Library", "A versioned, se
   <div class="library-tool-grid">
     <article class="library-tool-card"><h3>Glossary</h3><p>106 rules, interface terms, abbreviations, and pieces of community language, each linked to its full explanation.</p><a class="button button--quiet" href="/dominions/library/glossary/">Open the glossary</a></article>
     <article class="library-tool-card"><h3>Research register</h3><p>57 verification questions with priorities, status, importance, and the most reliable route to an answer.</p><a class="button button--quiet" href="/dominions/library/research/">Open the register</a></article>
-    <article class="library-tool-card"><h3>Edition 24 PDF</h3><p>The complete 789-page library for offline reading, archiving, printing, or sharing outside the website.</p><a class="button button--quiet" href="/downloads/dominions-6-knowledge-library-edition-24.pdf">Download the PDF</a></article>
+    <article class="library-tool-card"><h3>Edition ${editionNumber} PDF</h3><p>The complete 789-page library for offline reading, archiving, printing, or sharing outside the website.</p><a class="button button--quiet" href="${pdfDownload}">Download the PDF</a></article>
   </div>
 
   <div class="library-heading" id="complete-shelf">
@@ -240,8 +245,8 @@ const glossaryPage = `${frontMatter("Dominions 6 Glossary", "A searchable glossa
 fs.mkdirSync(path.join(libraryRoot, "glossary"), { recursive: true });
 fs.writeFileSync(path.join(libraryRoot, "glossary", "index.html"), glossaryPage);
 
-for (const file of ["manifest.json", "search-index.json", "reading-paths.json", "research-register.json", "glossary.json", "subject-index.json", "ability-register.json", "coverage-register.json", "link-map.json"]) {
+for (const file of fs.readdirSync(sourceRoot).filter((entry) => entry.endsWith(".json") || entry.endsWith(".json.gz"))) {
   fs.copyFileSync(path.join(sourceRoot, file), path.join(dataRoot, file));
 }
 
-console.log(JSON.stringify({ books: documents.length, sections: 2466, research: research.items.length, glossary: glossary.entries.length, libraryRoot }));
+console.log(JSON.stringify({ edition: editionLabel, books: documents.length, sections: totalSections, research: research.items.length, glossary: glossary.entries.length, libraryRoot }));

@@ -1,0 +1,276 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thehobokingdom.com/schemas/dominions-official-patch-ledger.schema.json",
+  "title": "Dominions 6 Official Patch Ledger",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "edition",
+    "generated_on",
+    "ruleset",
+    "scope",
+    "source",
+    "summary",
+    "releases",
+    "records"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "edition": {
+      "type": "string"
+    },
+    "generated_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "ruleset": {
+      "type": "object"
+    },
+    "scope": {
+      "type": "object"
+    },
+    "evidence_key": {
+      "type": "object"
+    },
+    "classification_key": {
+      "type": "object"
+    },
+    "source": {
+      "type": "object"
+    },
+    "summary": {
+      "type": "object"
+    },
+    "releases": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/release"
+      }
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/record"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "release": {
+      "type": "object",
+      "required": [
+        "version",
+        "published_on",
+        "source_url",
+        "source_content_sha256",
+        "change_records",
+        "record_ids",
+        "release_hash"
+      ],
+      "properties": {
+        "version": {
+          "type": "string",
+          "pattern": "^6\\.\\d{2}$"
+        },
+        "published_on": {
+          "type": "string",
+          "format": "date"
+        },
+        "title": {
+          "type": "string"
+        },
+        "source_id": {
+          "type": "string"
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "source_gid": {
+          "type": "string"
+        },
+        "source_content_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "change_records": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "record_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "section_counts": {
+          "type": "object"
+        },
+        "classification_counts": {
+          "type": "object"
+        },
+        "leading_domains": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "release_hash": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "record": {
+      "type": "object",
+      "required": [
+        "id",
+        "version",
+        "published_on",
+        "official_section",
+        "source_sequence",
+        "classification",
+        "classification_confidence",
+        "domains",
+        "materiality",
+        "impact_summary",
+        "canonical_section_ids",
+        "evidence_status",
+        "review_status",
+        "source_id",
+        "source_locator",
+        "source_text_sha256",
+        "record_hash"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^patch-6-\\d{2}-\\d{3}$"
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^6\\.\\d{2}$"
+        },
+        "published_on": {
+          "type": "string",
+          "format": "date"
+        },
+        "official_section": {
+          "type": "string"
+        },
+        "source_bullet_index": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "source_sequence": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "classification": {
+          "enum": [
+            "artificial_intelligence",
+            "balance_change",
+            "bug_fix",
+            "content_addition",
+            "data_correction",
+            "interface_qol",
+            "map_making_change",
+            "mod_command_addition",
+            "modding_change",
+            "network_hosting",
+            "performance_stability",
+            "presentation",
+            "rules_change",
+            "security_integrity"
+          ]
+        },
+        "classification_confidence": {
+          "enum": [
+            "high",
+            "medium",
+            "editorial-review"
+          ]
+        },
+        "domains": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "materiality": {
+          "enum": [
+            "major",
+            "notable",
+            "maintenance"
+          ]
+        },
+        "direction": {
+          "type": "string"
+        },
+        "player_facing": {
+          "type": "boolean"
+        },
+        "commands": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "named_terms": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "object_mentions": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "impact_summary": {
+          "type": "string"
+        },
+        "canonical_section_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "evidence_status": {
+          "const": "official-source-with-derived-classification"
+        },
+        "review_status": {
+          "enum": [
+            "mapped",
+            "mapped-review-recommended"
+          ]
+        },
+        "source_id": {
+          "type": "string"
+        },
+        "source_locator": {
+          "type": "string"
+        },
+        "source_text_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "source_word_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "record_hash": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
