@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "article": {
+    "id": "replace-me",
+    "title": "Replace Me",
+    "description": null,
+    "slug": "replace-me",
+    "status": "draft",
+    "rulesets": [
+      {
+        "game": "Dominions 6",
+        "game_version": "6.36",
+        "mods": [],
+        "map": null,
+        "age": "mixed",
+        "notes": null
+      }
+    ],
+    "sources": [],
+    "claims": [],
+    "sections": [],
+    "created_on": "2026-08-25",
+    "last_edited": "2026-08-25",
+    "last_verified": null,
+    "supersedes_article_id": null
+  }
+}

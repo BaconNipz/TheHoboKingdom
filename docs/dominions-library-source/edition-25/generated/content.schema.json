@@ -1,0 +1,475 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thehobokingdom.com/schemas/dominions-library-content.schema.json",
+  "title": "TheHoboKingdom Dominions 6 Library Content",
+  "description": "Versioned articles, sections, claims, formulas, sources, and navigation for the Dominions 6 Knowledge Library.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "article"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "article": {
+      "$ref": "#/$defs/article"
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "ruleset_scope": {
+      "type": "object",
+      "required": [
+        "game",
+        "game_version",
+        "mods"
+      ],
+      "properties": {
+        "game": {
+          "const": "Dominions 6"
+        },
+        "game_version": {
+          "type": "string"
+        },
+        "mods": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "name",
+              "version",
+              "load_order"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "version": {
+                "type": "string"
+              },
+              "load_order": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "sha256": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "map": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "age": {
+          "enum": [
+            "EA",
+            "MA",
+            "LA",
+            "mixed",
+            null
+          ]
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "kind"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "official-manual",
+            "official-patch",
+            "game-data",
+            "mod-source",
+            "published-reproduction",
+            "community-reference",
+            "derived-work"
+          ]
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^https?://"
+        },
+        "version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "accessed_on": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "locator": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "claim": {
+      "type": "object",
+      "required": [
+        "id",
+        "text",
+        "evidence_status",
+        "ruleset_ids",
+        "source_ids"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "evidence_status": {
+          "enum": [
+            "official",
+            "source-confirmed",
+            "reproduced",
+            "community-tested",
+            "derived",
+            "strategic-doctrine",
+            "test-pending"
+          ]
+        },
+        "ruleset_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "derivation": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "confidence_note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "verified_on": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "supersedes_claim_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "research_question_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "content_block": {
+      "type": "object",
+      "required": [
+        "id",
+        "type"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "enum": [
+            "prose",
+            "callout",
+            "formula",
+            "table",
+            "list",
+            "worked-example",
+            "checklist",
+            "quotation",
+            "source-note",
+            "research-question"
+          ]
+        },
+        "markdown": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "claim_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "caption": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "formula": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "expression": {
+              "type": "string"
+            },
+            "variables": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "rounding": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "units": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "data": {
+          "anyOf": [
+            {
+              "type": "array"
+            },
+            {
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "section": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "slug",
+        "order",
+        "audience",
+        "topic_tags",
+        "blocks"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "short_title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "slug": {
+          "type": "string"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "beginner",
+              "intermediate",
+              "expert",
+              "modder",
+              "all"
+            ]
+          }
+        },
+        "topic_tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "ruleset_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "related_section_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "blocks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/content_block"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "article": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "slug",
+        "status",
+        "rulesets",
+        "sources",
+        "claims",
+        "sections",
+        "created_on",
+        "last_edited"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "slug": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "draft",
+            "review",
+            "published",
+            "deprecated"
+          ]
+        },
+        "rulesets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ruleset_scope"
+          }
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/source"
+          }
+        },
+        "claims": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/claim"
+          }
+        },
+        "sections": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/section"
+          }
+        },
+        "created_on": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "last_edited": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "last_verified": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "supersedes_article_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

@@ -14,13 +14,25 @@ if (searchPanel) {
   let loadingPromise = null;
   let debounceTimer = null;
 
+  const readIndex = async (response, url) => {
+    if (!url.endsWith(".gz")) return response.json();
+    const bytes = await response.arrayBuffer();
+    try {
+      const stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream("gzip"));
+      return JSON.parse(await new Response(stream).text());
+    } catch {
+      return JSON.parse(new TextDecoder().decode(bytes));
+    }
+  };
+
   const loadIndex = async () => {
     if (searchIndex) return searchIndex;
     if (!loadingPromise) {
-      loadingPromise = fetch(searchPanel.dataset.indexUrl)
+      const indexUrl = searchPanel.dataset.indexUrl;
+      loadingPromise = fetch(indexUrl)
         .then((response) => {
           if (!response.ok) throw new Error("Library search index could not be loaded.");
-          return response.json();
+          return readIndex(response, indexUrl);
         })
         .then((entries) => {
           searchIndex = entries;
