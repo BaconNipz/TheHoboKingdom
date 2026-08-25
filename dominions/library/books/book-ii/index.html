@@ -1,0 +1,2861 @@
+---
+title: "Foundation Book II: Economy, Provinces, and the Machinery of State"
+description: "Income, resources, recruitment, unrest, supply, forts, administration, and the machinery that keeps a nation functioning."
+nav_section: guides
+extra_css: /assets/dominions-library.css
+extra_js: /assets/dominions-library.js
+og_image: /assets/images/dominions-6-library-edition-24.png
+---
+
+<section class="page-hero library-page-hero">
+  <div class="shell">
+    <div class="breadcrumbs">
+      <a href="/dominions/">Dominions 6</a><span aria-hidden="true">/</span>
+      <a href="/dominions/library/">Knowledge Library</a><span aria-hidden="true">/</span>
+      <span>Foundation Book II</span>
+    </div>
+    <p class="eyebrow">Progress Edition 24</p>
+    <h1>Foundation Book II: Economy, Provinces, and the Machinery of State</h1>
+    <p class="lead">Income, resources, recruitment, unrest, supply, forts, administration, and the machinery that keeps a nation functioning.</p>
+    <div class="meta-row">
+      <span class="status status--stable">Published reference</span>
+      <span class="meta-chip">Dominions 6.36</span>
+      <span class="meta-chip">14,406 words</span>
+      <span class="meta-chip">179 sections</span>
+    </div>
+  </div>
+</section>
+
+<section class="section shell library-section">
+  <details class="library-mobile-toc">
+    <summary>Table of contents</summary>
+    <nav><a href="#b2-why-the-economy-needs-its-own-book">Why the economy needs its own book</a>
+<a href="#b2-edition-note">Edition note</a>
+<a href="#b2-a-sensible-way-through">A sensible way through</a>
+<a href="#b2-dominions-as-a-game-of-conversion">Dominions as a game of conversion</a>
+<a href="#b2-the-binding-constraint">The binding constraint</a>
+<a href="#b2-opportunity-cost">Opportunity cost</a>
+<a href="#b2-economic-tempo">Economic tempo</a>
+<a href="#b2-a-province-is-a-bundle-of-systems">A province is a bundle of systems</a>
+<a href="#b2-corpses-as-provincial-stock">Corpses as provincial stock</a>
+<a href="#b2-terrain">Terrain</a>
+<a href="#b2-population">Population</a>
+<a href="#b2-tax-trace-and-the-administrative-map">Tax trace and the administrative map</a>
+<a href="#b2-income-formula">Income formula</a>
+<a href="#b2-income-timing">Income timing</a>
+<a href="#b2-treasury-discipline">Treasury discipline</a>
+<a href="#b2-upkeep">Upkeep</a>
+<a href="#b2-resources-are-local-industrial-capacity">Resources are local industrial capacity</a>
+<a href="#b2-fort-resource-draw">Fort resource draw</a>
+<a href="#b2-recruitment-points">Recruitment Points</a>
+<a href="#b2-commander-points">Commander Points</a>
+<a href="#b2-holy-points">Holy Points</a>
+<a href="#b2-queue-mechanics-and-diagnosis">Queue mechanics and diagnosis</a>
+<a href="#b2-what-unrest-does">What unrest does</a>
+<a href="#b2-income-and-resource-damage">Income and resource damage</a>
+<a href="#b2-recruitment-shutdown">Recruitment shutdown</a>
+<a href="#b2-the-unrest-cap">The unrest cap</a>
+<a href="#b2-patrolling">Patrolling</a>
+<a href="#b2-pillaging-and-raiding">Pillaging and raiding</a>
+<a href="#b2-supply-is-a-location-check">Supply is a location check</a>
+<a href="#b2-population-based-supply">Population-based supply</a>
+<a href="#b2-fort-based-supply">Fort-based supply</a>
+<a href="#b2-supply-usage">Supply usage</a>
+<a href="#b2-starvation-selection-and-effects">Starvation selection and effects</a>
+<a href="#b2-siege-supply">Siege supply</a>
+<a href="#b2-forts-temples-and-laboratories">Forts, temples, and laboratories</a>
+<a href="#b2-construction-timing">Construction timing</a>
+<a href="#b2-construction-and-demolition">Construction and demolition</a>
+<a href="#b2-standard-fort-progression">Standard fort progression</a>
+<a href="#b2-fort-valuation">Fort valuation</a>
+<a href="#b2-laboratories">Laboratories</a>
+<a href="#b2-temples">Temples</a>
+<a href="#b2-province-exterior-and-fort-interior">Province exterior and fort interior</a>
+<a href="#b2-reducing-walls">Reducing walls</a>
+<a href="#b2-storm-timing">Storm timing</a>
+<a href="#b2-fort-defenders">Fort defenders</a>
+<a href="#b2-cost-curve">Cost curve</a>
+<a href="#b2-what-pd-provides">What PD provides</a>
+<a href="#b2-population-support-and-permanence">Population support and permanence</a>
+<a href="#b2-roles-of-pd">Roles of PD</a>
+<a href="#b2-why-pd-is-not-an-army">Why PD is not an army</a>
+<a href="#b2-site-frequency-and-terrain">Site frequency and terrain</a>
+<a href="#b2-search-difficulty">Search difficulty</a>
+<a href="#b2-site-benefits-and-harms">Site benefits and harms</a>
+<a href="#b2-gem-income-and-mage-turn-economy">Gem income and mage-turn economy</a>
+<a href="#b2-blood-slaves-are-produced-not-passively-collected">Blood slaves are produced, not passively collected</a>
+<a href="#b2-official-hunting-checks">Official hunting checks</a>
+<a href="#b2-dominion-and-retaliation">Dominion and retaliation</a>
+<a href="#b2-the-blood-province-cycle">The blood-province cycle</a>
+<a href="#b2-measuring-the-blood-economy">Measuring the blood economy</a>
+<a href="#b2-the-state-economy-chain">The state-economy chain</a>
+<a href="#b2-worked-timing-cases">Worked timing cases</a>
+<a href="#b2-expansion-income-versus-expansion-burden">Expansion income versus expansion burden</a>
+<a href="#b2-infrastructure-tempo">Infrastructure tempo</a>
+<a href="#b2-mage-turn-accounting">Mage-turn accounting</a>
+<a href="#b2-static-and-mobile-gold">Static and mobile gold</a>
+<a href="#b2-denial-and-recovery">Denial and recovery</a>
+<a href="#b2-first-turn-provincial-reading">First-turn provincial reading</a>
+<a href="#b2-recruitment-checklist">Recruitment checklist</a>
+<a href="#b2-army-logistics-checklist">Army logistics checklist</a>
+<a href="#b2-building-checklist">Building checklist</a>
+<a href="#b2-end-of-host-checklist">End-of-host checklist</a>
+<a href="#b2-warning-indicators">Warning indicators</a>
+<a href="#b2-ratios-worth-recording">Ratios worth recording</a>
+<a href="#b2-decision-ledger">Decision ledger</a>
+<a href="#b2-read-the-global-layer-once">Read the global layer once</a>
+<a href="#b2-local-changes-still-decide-the-real-economy">Local changes still decide the real economy</a>
+<a href="#b2-known-documentary-conflicts">Known documentary conflicts</a>
+<a href="#b2-controlled-test-programme">Controlled-test programme</a>
+<a href="#b2-test-record-format">Test record format</a>
+<a href="#b2-essay-i-the-economics-of-forts-and-mages">Essay I: The Economics of Forts and Mages</a>
+<a href="#b2-essay-ii-population-is-strategic-capital">Essay II: Population Is Strategic Capital</a>
+<a href="#b2-essay-iii-the-hidden-price-of-static-defence">Essay III: The Hidden Price of Static Defence</a>
+<a href="#b2-essay-iv-logistics-after-victory">Essay IV: Logistics After Victory</a>
+<a href="#b2-essay-v-unrest-as-administrative-warfare">Essay V: Unrest as Administrative Warfare</a>
+<a href="#b2-essay-vi-conversion-not-accumulation">Essay VI: Conversion, Not Accumulation</a>
+<a href="#b2-essay-vii-the-month-hidden-inside-a-single-point">Essay VII: The Month Hidden Inside a Single Point</a>
+<a href="#b2-primary-official-sources">Primary official sources</a>
+<a href="#b2-community-sources-used-as-leads">Community sources used as leads</a>
+<a href="#b2-mod-sources">Mod sources</a>
+<a href="#b2-open-questions">Open questions</a></nav>
+  </details>
+  <div class="library-reader-grid">
+    <article class="content library-prose">
+{% raw %}
+<h1 id="b2-foundation-book-ii-economy-provinces-and-the-machinery-of-state">Foundation Book II: Economy, Provinces, and the Machinery of State<a class="heading-link" href="#b2-foundation-book-ii-economy-provinces-and-the-machinery-of-state" aria-label="Link to Foundation Book II: Economy, Provinces, and the Machinery of State">#</a></h1><h2 id="b2-why-the-economy-needs-its-own-book">Why the economy needs its own book<a class="heading-link" href="#b2-why-the-economy-needs-its-own-book" aria-label="Link to Why the economy needs its own book">#</a></h2><p>Dominions 6 presents its economy as a row of numbers: gold, gems, resources, Recruitment Points, supplies, population, unrest, and upkeep. Those numbers do not all work in the same way. Some are national, some belong to one province, some vanish unused, and others can be saved indefinitely. A few are not spendable resources at all; they limit how quickly something else can be turned into useful power.</p>
+<p>This is why the richest nation can still fail to raise an army. It is also why a poor province can decide a war by preserving tax trace, feeding a siege, or shortening a reinforcement route. Book II follows those connections from the province screen to the wider war effort. Ordinary play comes first, followed by the formulas, edge cases, and source disputes needed for closer work.</p>
+<blockquote>
+<p><strong>Foundation rule:</strong> Economic value is not the number printed beside a province. It is the useful power that can be converted from that province, through the available infrastructure, before an opponent can interrupt the conversion.</p>
+</blockquote>
+<h2 id="b2-edition-note">Edition note<a class="heading-link" href="#b2-edition-note" aria-label="Link to Edition note">#</a></h2><p>Book I defines the common Dominions 6.36 baseline and evidence labels. Book II relies mainly on the revision-2 manual and Modding Manual 6.34. Where those official documents disagree, both readings remain visible. Book IX owns the exact DE and Divinitus definitions; only their economic consequences are repeated here.</p>
+<p>The Edition 23 revision returns to R-008 and R-010 through R-013 without opening another economy volume. It separates every known rounding stage, turns the community unrest wording into explicit candidate thresholds, records what the annual upkeep observations do and do not prove, bounds the two printed fort-supply systems, and incorporates the official 6.35 Supply Usage refresh correction. No uncertain engine rule has been promoted merely because one interpretation is convenient.</p>
+<h2 id="b2-a-sensible-way-through">A sensible way through<a class="heading-link" href="#b2-a-sensible-way-through" aria-label="Link to A sensible way through">#</a></h2><p>For a first campaign, begin with the economic model, province anatomy, recruitment gates, supply, and infrastructure. The formula sections, PD curves, siege economics, Blood opportunity costs, and diagnostic ratios are there for closer planning. Source conflicts and controlled tests can be left until a disputed number actually matters.</p>
+<h1 id="b2-part-i-the-economic-model">Part I: The Economic Model<a class="heading-link" href="#b2-part-i-the-economic-model" aria-label="Link to Part I: The Economic Model">#</a></h1><span class="anchor-alias" id="b2-mercenaries" aria-hidden="true"></span><h2 id="b2-dominions-as-a-game-of-conversion">Dominions as a game of conversion<a class="heading-link" href="#b2-dominions-as-a-game-of-conversion" aria-label="Link to Dominions as a game of conversion">#</a></h2><p>Territory is not victory by itself. Territory provides inputs which can be converted into military and magical effects:</p>
+<pre><code class="language-text">population and scales
+  -&gt; gold, supplies, and recruitment capacity
+
+terrain and forts
+  -&gt; resources, infrastructure, and strategic position
+
+gold and local capacity
+  -&gt; troops, commanders, buildings, and province defence
+
+labs, mage-turns, and research
+  -&gt; spells, items, rituals, summons, and battlefield packages
+
+sites and blood hunting
+  -&gt; gems and blood slaves
+
+armies, magic, information, and diplomacy
+  -&gt; territory, forts, thrones, and denial
+
+thrones and survival
+  -&gt; victory
+</code></pre>
+<p>Every arrow takes time. Every conversion can be interrupted. Much of expert play consists of identifying which arrow is currently limiting the nation.</p>
+<h3 id="b2-stock-flow-capacity-and-position">Stock, flow, capacity, and position<a class="heading-link" href="#b2-stock-flow-capacity-and-position" aria-label="Link to Stock, flow, capacity, and position">#</a></h3><p>Four categories keep economic discussions clear.</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Meaning</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Stock</strong></td>
+<td>A resource saved for future use</td>
+<td>Treasury gold, gems, blood slaves, forged items</td>
+</tr>
+<tr>
+<td><strong>Flow</strong></td>
+<td>A recurring gain or loss</td>
+<td>Monthly income, gem income, upkeep, population growth</td>
+</tr>
+<tr>
+<td><strong>Capacity</strong></td>
+<td>A local or national limit on conversion</td>
+<td>Resources, Recruitment Points, Commander Points, Holy Points, mage-turns</td>
+</tr>
+<tr>
+<td><strong>Position</strong></td>
+<td>Map state that makes conversion possible or safe</td>
+<td>Fort network, tax trace, laboratory access, supply reach, defensible borders</td>
+</tr>
+</tbody></table>
+<p>Economic mistakes often begin by treating one category as another. Resources do not accumulate, so they are not a stock. A large treasury does not create recruitment capacity. A fort has a price, but it also changes strategic position and several local limits. A mage is a unit and a recurring choice about how to spend a mage-turn.</p>
+<h3 id="b2-national-and-local-resources">National and local resources<a class="heading-link" href="#b2-national-and-local-resources" aria-label="Link to National and local resources">#</a></h3><table>
+<thead>
+<tr>
+<th>Resource or limit</th>
+<th>Scope</th>
+<th>Accumulates?</th>
+<th>Portable?</th>
+<th>Principal uses</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Gold</td>
+<td>National treasury</td>
+<td>Yes</td>
+<td>Effectively national</td>
+<td>Recruitment, buildings, PD, mercenaries, some rituals and events</td>
+</tr>
+<tr>
+<td>Magic gems</td>
+<td>National pool and commanders</td>
+<td>Yes</td>
+<td>Transferable through labs, commanders, and messages</td>
+<td>Rituals, forging, combat magic, empowerment</td>
+</tr>
+<tr>
+<td>Blood slaves</td>
+<td>National pool and commanders</td>
+<td>Yes</td>
+<td>Transferable, but with distinct handling</td>
+<td>Blood rituals, forging, battle magic, sacrifice</td>
+</tr>
+<tr>
+<td>Resources</td>
+<td>Province</td>
+<td>No</td>
+<td>No</td>
+<td>Equipping recruits</td>
+</tr>
+<tr>
+<td>Recruitment Points</td>
+<td>Province</td>
+<td>No</td>
+<td>No</td>
+<td>Ordinary troop throughput</td>
+</tr>
+<tr>
+<td>Commander Points</td>
+<td>Province</td>
+<td>No</td>
+<td>No</td>
+<td>Commander throughput</td>
+</tr>
+<tr>
+<td>Holy Points</td>
+<td>Nation/local sacred queue interaction</td>
+<td>Refreshes</td>
+<td>No direct transfer</td>
+<td>Sacred recruitment</td>
+</tr>
+<tr>
+<td>Supplies</td>
+<td>Province and army situation</td>
+<td>No strategic stock, except siege storage and temporary pillage food</td>
+<td>Army uses local supply</td>
+<td>Sustaining units</td>
+</tr>
+<tr>
+<td>Population</td>
+<td>Province</td>
+<td>Changes over time</td>
+<td>No</td>
+<td>Income, Recruitment Points, supplies, PD support, Blood Hunting</td>
+</tr>
+<tr>
+<td>Mage-turns</td>
+<td>Commander-time</td>
+<td>No</td>
+<td>Commander can move</td>
+<td>Research, site search, forging, rituals, Blood Hunting, combat</td>
+</tr>
+</tbody></table>
+<p>The table explains why “What can the nation afford?” is incomplete. The more useful question is:</p>
+<blockquote>
+<p>What can be paid for, recruited at the correct location, led, supplied, scripted, and delivered before the relevant deadline?</p>
+</blockquote>
+<h2 id="b2-the-binding-constraint">The binding constraint<a class="heading-link" href="#b2-the-binding-constraint" aria-label="Link to The binding constraint">#</a></h2><p>Production is governed by the tightest active limit.</p>
+<p>Suppose a fort has:</p>
+<ul>
+<li>1,000 gold available nationally;</li>
+<li>120 local resources;</li>
+<li>80 local Recruitment Points;</li>
+<li>one available Commander Point;</li>
+<li>three Holy Points.</li>
+</ul>
+<p>A 10-gold, 5-resource, 10-RP troop is not limited by gold or resources. It is limited to eight by Recruitment Points. A 100-gold commander that costs two Commander Points cannot be recruited there even though the treasury is sufficient. A sacred costing one Holy Point can be limited to three even when every local pool remains.</p>
+<p>The bottleneck can change when the recruit mix changes. Adding an expensive armoured unit may convert an RP-limited queue into a resource-limited one. Adding a cheap commander may consume the Commander Point needed for the mage who makes the fort strategically valuable.</p>
+<h3 id="b2-bottleneck-audit">Bottleneck audit<a class="heading-link" href="#b2-bottleneck-audit" aria-label="Link to Bottleneck audit">#</a></h3><p>For every major recruitment centre:</p>
+<ol>
+<li>Identify the desired troop and commander package.</li>
+<li>Calculate gold, resources, Recruitment Points, Commander Points, and Holy Points separately.</li>
+<li>Find the first exhausted pool.</li>
+<li>Ask whether a different mix uses otherwise stranded capacity.</li>
+<li>Compare the value of expanding capacity against building another centre.</li>
+</ol>
+<p>This is more accurate than optimising a single “gold efficiency” statistic.</p>
+<h2 id="b2-opportunity-cost">Opportunity cost<a class="heading-link" href="#b2-opportunity-cost" aria-label="Link to Opportunity cost">#</a></h2><p>The true cost of an action includes the best alternative foregone.</p>
+<p>Examples:</p>
+<ul>
+<li>A 600-gold laboratory is also troops not recruited this month.</li>
+<li>A searching mage is research not produced.</li>
+<li>A Blood Hunter is research, forging, or ritual work not performed.</li>
+<li>Province Defence is permanent local defence, but the same gold could have become a mobile army.</li>
+<li>A fort under construction ties up a commander and delays military spending before its benefits begin.</li>
+<li>A mage carrying gems into battle makes those gems unavailable for a ritual and risks losing them.</li>
+</ul>
+<p>Opportunity cost changes with time. A laboratory that delays the first expansion party may be disastrous; the same laboratory may be essential once the province&#39;s recruitable mage or site income becomes relevant.</p>
+<h2 id="b2-economic-tempo">Economic tempo<a class="heading-link" href="#b2-economic-tempo" aria-label="Link to Economic tempo">#</a></h2><p>An investment is measured by more than eventual return.</p>
+<pre><code class="language-text">payback time =
+  investment cost / recurring net gain
+</code></pre>
+<p>This simple ratio is useful but incomplete. Dominions adds:</p>
+<ul>
+<li>construction delay;</li>
+<li>commander-turn cost;</li>
+<li>risk of capture;</li>
+<li>military value during payback;</li>
+<li>capacity unlocked;</li>
+<li>strategic location;</li>
+<li>the possibility that the game ends before repayment.</li>
+</ul>
+<p>A fort may never repay its gold through Administration income alone yet still be a strong investment because it recruits mages, concentrates resources, projects supply, protects a laboratory, delays an invasion, and creates a tax-trace anchor.</p>
+<h1 id="b2-part-ii-provinces-terrain-and-population">Part II: Provinces, Terrain, and Population<a class="heading-link" href="#b2-part-ii-provinces-terrain-and-population" aria-label="Link to Part II: Provinces, Terrain, and Population">#</a></h1><h2 id="b2-a-province-is-a-bundle-of-systems">A province is a bundle of systems<a class="heading-link" href="#b2-a-province-is-a-bundle-of-systems" aria-label="Link to A province is a bundle of systems">#</a></h2><p>A province can contain:</p>
+<ul>
+<li>one or more terrain types;</li>
+<li>population;</li>
+<li>potential and available resources;</li>
+<li>income;</li>
+<li>supplies;</li>
+<li>dominion and scales;</li>
+<li>unrest;</li>
+<li>corpses;</li>
+<li>Province Defence;</li>
+<li>a fort, temple, and laboratory;</li>
+<li>discovered and undiscovered sites;</li>
+<li>recruitable independent or national units;</li>
+<li>commanders and armies;</li>
+<li>partial ownership between the exterior and a besieged fort.</li>
+</ul>
+<p>The printed income number is only one part of the province&#39;s value.</p>
+<h3 id="b2-provincial-roles">Provincial roles<a class="heading-link" href="#b2-provincial-roles" aria-label="Link to Provincial roles">#</a></h3><table>
+<thead>
+<tr>
+<th>Role</th>
+<th>What makes it valuable</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Income province</strong></td>
+<td>High population, favourable scales, low unrest, tax trace, Administration</td>
+</tr>
+<tr>
+<td><strong>Production province</strong></td>
+<td>High potential resources, strong fort draw, suitable national roster</td>
+</tr>
+<tr>
+<td><strong>Mage centre</strong></td>
+<td>Valuable commander roster, lab, Commander Points, safety</td>
+</tr>
+<tr>
+<td><strong>Logistics node</strong></td>
+<td>Fort supply reach, roads or movement position, defensible route</td>
+</tr>
+<tr>
+<td><strong>Site province</strong></td>
+<td>Gem income, recruit access, discounts, ritual or entry functions</td>
+</tr>
+<tr>
+<td><strong>Blood province</strong></td>
+<td>Sufficient population, patrol capacity, acceptable economic sacrifice</td>
+</tr>
+<tr>
+<td><strong>Buffer province</strong></td>
+<td>Raid tax, warning time, retreat geometry, denial</td>
+</tr>
+<tr>
+<td><strong>Throne province</strong></td>
+<td>Ascension value, special throne effects, strategic obligation</td>
+</tr>
+</tbody></table>
+<p>One province may fill several roles. Its correct investment level depends on the most important role, not on a universal province template.</p>
+<h2 id="b2-corpses-as-provincial-stock">Corpses as provincial stock<a class="heading-link" href="#b2-corpses-as-provincial-stock" aria-label="Link to Corpses as provincial stock">#</a></h2><p>Unburied corpses are a local provincial stock. They are not gold, population, supplies, or units waiting to be recruited, but several Death effects and reanimation orders can convert them into value. The revision-2 manual names Raven Feast and the raising of undead as ordinary examples.</p>
+<p>The stock is deliberately concealed from most observers. Its number is visible when a Death mage or undead priest is present in the province. A nation&#39;s ordinary priests can also see it when those priests possess national reanimation. Ermor&#39;s Ashen Empire dominion supplies a broader special exception by sensing unburied corpses in covered provinces.</p>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Current verified answer</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>What does the number represent?</td>
+<td>Unburied corpses currently available in the province.</td>
+</tr>
+<tr>
+<td>Who normally sees it?</td>
+<td>A Death mage or undead priest in the province.</td>
+</tr>
+<tr>
+<td>Which ordinary priests can see it?</td>
+<td>Priests of a nation whose normal priests can reanimate undead.</td>
+</tr>
+<tr>
+<td>What consumes it directly?</td>
+<td>Reanimating Soulless reduces the available corpse count; corpse-dependent spells and abilities may have their own rules.</td>
+</tr>
+<tr>
+<td>What does not require this stock?</td>
+<td>Ordinary Longdead reanimation has no corpse limit under the manual&#39;s basic distinction.</td>
+</tr>
+<tr>
+<td>Is every battlefield death guaranteed to add one usable corpse?</td>
+<td>No general one-for-one rule is stated. Corpse eligibility has changed through patches, so the casualty total is not a safe substitute for the visible stock.</td>
+</tr>
+<tr>
+<td>Is a universal decay rate documented?</td>
+<td>No general monthly decay formula is stated in the current official foundation sources used here.</td>
+</tr>
+</tbody></table>
+<p>The last two limits matter. Version 6.08 specifically changed humanoid apes and dogs so that they leave corpses when killed. That official correction shows that corpse production depends on unit eligibility rather than on a universal &quot;one dead body equals one corpse&quot; rule. Until an exact current production table is available, battle losses should be treated as a clue, not as an exact corpse forecast.</p>
+<h3 id="b2-corpse-dependent-conversions">Corpse-dependent conversions<a class="heading-link" href="#b2-corpse-dependent-conversions" aria-label="Link to Corpse-dependent conversions">#</a></h3><p>The manual separates three common reanimation economies:</p>
+<ul>
+<li><strong>Ghouls</strong> convert living population into undead, reducing the population left behind.</li>
+<li><strong>Soulless</strong> convert unburied corpses and reduce the local corpse stock.</li>
+<li><strong>Longdead</strong> can be reanimated without a stated population or corpse ceiling.</li>
+</ul>
+<p>Asphodel uses a different branch. Human inhabitants or dead human corpses permit a chance of Manikins and Mandragoras; when those are unavailable, animal-based carrion creatures remain possible. This is a national conversion rule, not a universal reanimation formula.</p>
+<p>Operationally, a corpse-dependent plan needs four checks:</p>
+<ol>
+<li>a legal commander, spell, or ability;</li>
+<li>visibility or another reliable reason to believe the local stock exists;</li>
+<li>the correct province at the relevant order or ritual step;</li>
+<li>a comparison between consuming the stock now and reserving it for a stronger conversion later.</li>
+</ol>
+<p><a href="/dominions/library/books/book-x/#b10-52-reanimate-manikin-contact-allies-and-capture-slaves">Book X&#39;s special-order reference</a> owns the order-entry procedure. Exact spells and summoned objects remain in the Book XII data layer. Book II owns the economic reading: corpses are hidden, local, exhaustible in some uses, and valuable only through a legal converter.</p>
+<h2 id="b2-terrain">Terrain<a class="heading-link" href="#b2-terrain" aria-label="Link to Terrain">#</a></h2><p>The manual characterises terrain by broad tendencies:</p>
+<table>
+<thead>
+<tr>
+<th>Terrain</th>
+<th>Population tendency</th>
+<th>Resource tendency</th>
+<th>Site tendency</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Plains</td>
+<td>Neutral</td>
+<td>Neutral</td>
+<td>Neutral</td>
+</tr>
+<tr>
+<td>Mountain Ranges</td>
+<td>Neutral</td>
+<td>Excellent</td>
+<td>Many</td>
+</tr>
+<tr>
+<td>Forest</td>
+<td>Low</td>
+<td>High</td>
+<td>Many</td>
+</tr>
+<tr>
+<td>Highlands</td>
+<td>Low</td>
+<td>High</td>
+<td>Neutral</td>
+</tr>
+<tr>
+<td>Swamp</td>
+<td>Very low</td>
+<td>Neutral</td>
+<td>Many</td>
+</tr>
+<tr>
+<td>Waste</td>
+<td>Extremely low</td>
+<td>Neutral</td>
+<td>Abundant</td>
+</tr>
+<tr>
+<td>Farm</td>
+<td>Very high</td>
+<td>Low</td>
+<td>Few</td>
+</tr>
+<tr>
+<td>River</td>
+<td>High</td>
+<td>Neutral</td>
+<td>Neutral</td>
+</tr>
+<tr>
+<td>Sea</td>
+<td>Low</td>
+<td>Neutral</td>
+<td>Neutral</td>
+</tr>
+<tr>
+<td>Deep Sea</td>
+<td>Very low</td>
+<td>High</td>
+<td>Many</td>
+</tr>
+<tr>
+<td>Kelp Forest</td>
+<td>High</td>
+<td>Neutral</td>
+<td>Neutral</td>
+</tr>
+<tr>
+<td>Gorge</td>
+<td>Low</td>
+<td>High</td>
+<td>Abundant</td>
+</tr>
+<tr>
+<td>Cave</td>
+<td>Low</td>
+<td>Neutral</td>
+<td>Neutral</td>
+</tr>
+<tr>
+<td>Drip Cave</td>
+<td>Neutral</td>
+<td>Excellent</td>
+<td>Neutral</td>
+</tr>
+<tr>
+<td>Crystal Cave</td>
+<td>Very low</td>
+<td>High</td>
+<td>Abundant</td>
+</tr>
+<tr>
+<td>Forest Cave</td>
+<td>High</td>
+<td>Neutral</td>
+<td>Many</td>
+</tr>
+</tbody></table>
+<p>Multiple terrain types can coexist and their effects add. Terrain also affects movement, survival skills, combat environments, national recruitment, building costs, site pools, and the boundary between land and underwater systems.</p>
+<h3 id="b2-strategic-reading-of-terrain">Strategic reading of terrain<a class="heading-link" href="#b2-strategic-reading-of-terrain" aria-label="Link to Strategic reading of terrain">#</a></h3><p>Farms often deserve protection because their population supports income, supply, and recruitment capacity. Highlands, forests, mountains, and special caves often make stronger production or search targets. Wastes and unusual terrain may be economically poor in gold yet rich in site opportunity.</p>
+<p>This creates a recurring division:</p>
+<ul>
+<li>population-rich terrain funds the state;</li>
+<li>resource-rich terrain equips the army;</li>
+<li>site-rich terrain may fund magic;</li>
+<li>movement terrain determines whether any of that value can be defended.</li>
+</ul>
+<h2 id="b2-population">Population<a class="heading-link" href="#b2-population" aria-label="Link to Population">#</a></h2><p>Population supplies four fundamental systems:</p>
+<ol>
+<li>base income;</li>
+<li>Recruitment Points;</li>
+<li>provincial supplies;</li>
+<li>support for Province Defence.</li>
+</ol>
+<p>It is also consumed or damaged by:</p>
+<ul>
+<li>Death scales and extreme temperatures;</li>
+<li>pillaging;</li>
+<li>some forms of patrolling;</li>
+<li>Blood Hunting and related events;</li>
+<li>hostile dominions and special national effects;</li>
+<li>sites, spells, and random events.</li>
+</ul>
+<p>Population is slow capital. A temporary gold gain purchased with permanent population loss can weaken income, recruitment, supply, and PD support for the remainder of the game.</p>
+<h3 id="b2-growth-and-decline">Growth and decline<a class="heading-link" href="#b2-growth-and-decline" aria-label="Link to Growth and decline">#</a></h3><p>The current unmodded 6.36 baseline gives ordinary Growth as:</p>
+<ul>
+<li>population growth of 0.2% per month per step;</li>
+<li>10% additional supplies per step;</li>
+<li>2% additional income per step.</li>
+</ul>
+<p>Death reverses those values.</p>
+<p>The revision-2 main-manual scale table prints 1% income per step, but the newer official Modding Manual 6.34 defines the unmodded <code>#deathincome</code> default as 2. No version 6.35 announcement alters that default. The newer explicit default governs this edition; the old one-percent value remains useful only for identifying stale guides. Dominions Enhanced 2.16 also sets the income change to 2%, while changing population movement to 0.25% per scale step.</p>
+<h3 id="b2-compounding">Compounding<a class="heading-link" href="#b2-compounding" aria-label="Link to Compounding">#</a></h3><p>Population growth compounds:</p>
+<pre><code class="language-text">future population =
+  current population x (1 + monthly rate)^months
+</code></pre>
+<p>The formula illustrates scale, but practical forecasting must account for integer rounding, changing candles and scales, events, patrolling, pillage, and hostile effects.</p>
+<p>Growth affects the present month and the province&#39;s longer future. Its value rises with:</p>
+<ul>
+<li>early control of populous provinces;</li>
+<li>a long expected game;</li>
+<li>stable dominion;</li>
+<li>protection from raiding and pillage;</li>
+<li>units and forts that can use the resulting recruitment and supply.</li>
+</ul>
+<p>Death or destructive economy can still be strategically rational for nations whose population contributes little, whose dominion deliberately kills population, or whose power spike is intended to end the game before the long-term loss dominates.</p>
+<h2 id="b2-tax-trace-and-the-administrative-map">Tax trace and the administrative map<a class="heading-link" href="#b2-tax-trace-and-the-administrative-map" aria-label="Link to Tax trace and the administrative map">#</a></h2><p><strong>Official rule:</strong> a province produces no income for the turn if it cannot trace an unbroken chain of friendly provinces to a friendly fort. Disciples can trace through allied provinces.</p>
+<p>Tax trace creates an economic network:</p>
+<ul>
+<li>forts are collection anchors;</li>
+<li>friendly province chains are conduits;</li>
+<li>raiding can disconnect rather than merely steal;</li>
+<li>a single captured bridge province can suppress the income of a whole pocket;</li>
+<li>recovering the chain before step 38 can restore collection that month.</li>
+</ul>
+<p>The system makes map topology economically meaningful. A low-income corridor can protect the income of several rich provinces.</p>
+<h3 id="b2-tax-cut-warfare">Tax-cut warfare<a class="heading-link" href="#b2-tax-cut-warfare" aria-label="Link to Tax-cut warfare">#</a></h3><p>A raid should be evaluated by total denied value:</p>
+<pre><code class="language-text">raid value =
+  direct province denial
+  + disconnected income
+  + queue disruption
+  + commander attention
+  + movement distortion
+  + information gained
+  - raider losses
+  - opportunity cost
+</code></pre>
+<p>The direct income printed on the raided province may be the smallest term.</p>
+<h1 id="b2-part-iii-gold-income-and-upkeep">Part III: Gold, Income, and Upkeep<a class="heading-link" href="#b2-part-iii-gold-income-and-upkeep" aria-label="Link to Part III: Gold, Income, and Upkeep">#</a></h1><h2 id="b2-income-formula">Income formula<a class="heading-link" href="#b2-income-formula" aria-label="Link to Income formula">#</a></h2><p>The official main-manual formula is:</p>
+<pre><code class="language-text">base income = population / 100
+
+modified income =
+  (population / 100)
+  x dominion-scale modifiers
+  x (1 + fort Administration / 200)
+
+final income =
+  modified income / (1 + unrest x 0.02)
+</code></pre>
+<p>The province display reports the already modified number.</p>
+<h3 id="b2-administration">Administration<a class="heading-link" href="#b2-administration" aria-label="Link to Administration">#</a></h3><p>Administration increases provincial income by half its rating:</p>
+<table>
+<thead>
+<tr>
+<th align="right">Administration</th>
+<th align="right">Local income bonus</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">15</td>
+<td align="right">+7.5%</td>
+</tr>
+<tr>
+<td align="right">30</td>
+<td align="right">+15%</td>
+</tr>
+<tr>
+<td align="right">45</td>
+<td align="right">+22.5%</td>
+</tr>
+<tr>
+<td align="right">60</td>
+<td align="right">+30%</td>
+</tr>
+<tr>
+<td align="right">70</td>
+<td align="right">+35%</td>
+</tr>
+</tbody></table>
+<p>The bonus applies to the province containing the fort, not to neighbouring income.</p>
+<span class="anchor-alias" id="b2-dominion-scales-and-the-economy" aria-hidden="true"></span><h3 id="b2-scale-interaction">Scale interaction<a class="heading-link" href="#b2-scale-interaction" aria-label="Link to Scale interaction">#</a></h3><p>The manual gives:</p>
+<ul>
+<li>Order/Turmoil: 3% income per step;</li>
+<li>Productivity/Sloth: 3% income per step;</li>
+<li>each temperature step away from preference: -5%;</li>
+<li>Growth/Death: 2% per step under the current official Modding Manual default.</li>
+</ul>
+<p>The main manual also contains an example saying Order 2 increases income by 4%, conflicting with its own repeated 3%-per-step tables. The tables are the stronger internal evidence; the example is treated as a likely textual error.</p>
+<h3 id="b2-rounding-formula-display-and-treasury">Rounding: formula, display, and treasury<a class="heading-link" href="#b2-rounding-formula-display-and-treasury" aria-label="Link to Rounding: formula, display, and treasury">#</a></h3><p>The income formula identifies the factors but not every integer conversion. Three different numbers must be kept apart:</p>
+<ol>
+<li>the unrounded result of a written formula;</li>
+<li>the whole number displayed for the province;</li>
+<li>the amount actually credited to the treasury after all current modifiers and collection rules.</li>
+</ol>
+<p>The revision-2 manual does not state whether the engine floors after population, after each scale, after Administration, only at the end, or through some combination of those stages. Community documentation describes the population-derived base as rounded down, but it does not provide a versioned boundary test for the whole chain. R-008 remains open.</p>
+<p>For ordinary play, the province display is authoritative. For a forecast near a one-gold boundary, record the displayed value before and after changing exactly one input. Do not reverse-engineer a hidden intermediate from the final integer and then present it as an official rule.</p>
+<p>The word <em>rounding</em> conceals several different questions. They should not be allowed to borrow evidence from one another:</p>
+<table>
+<thead>
+<tr>
+<th>Subsystem</th>
+<th>What is established</th>
+<th>What remains open</th>
+<th>Safe operational value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Provincial income</td>
+<td>Official factor chain and unrest divisor</td>
+<td>Intermediate floors, final conversion, and treasury treatment</td>
+<td>Province display and the Income Overview</td>
+</tr>
+<tr>
+<td>Resources</td>
+<td>One worked donor contribution of 13.8 is reduced to 13</td>
+<td>The printed aggregate does not reconcile; fort draw, scale, and unrest stages are not fully ordered</td>
+<td>Current province resource pool</td>
+</tr>
+<tr>
+<td>Recruitment Points</td>
+<td>Official population bands, fort bonus, and Order/Turmoil modifier</td>
+<td>Band, modifier, and final integer order</td>
+<td>Current spendable RP shown by the recruitment screen</td>
+</tr>
+<tr>
+<td>Commander Points</td>
+<td>Ordinary pool and multi-month accumulation</td>
+<td>Reduction and rounding under unrest</td>
+<td>Current commander queue progress</td>
+</tr>
+<tr>
+<td>Upkeep</td>
+<td>Official monthly divisors and observed annual whole-number entries</td>
+<td>Monthly fractional aggregation and desertion boundary</td>
+<td>Income Overview, checked after roster or equipment changes</td>
+</tr>
+<tr>
+<td>Fort supply</td>
+<td>Range and highest-fort rule</td>
+<td>Competing official multipliers and final integer conversion</td>
+<td>Displayed province supply</td>
+</tr>
+</tbody></table>
+<p>A floor observed in a resource example does not prove that income is floored at the same stage. A whole annual upkeep entry does not prove that the treasury discards monthly fractions. Whenever a result can decide a deadline, a calculator should keep three fields: the written decimal, the displayed integer, and the evidence status of the conversion between them.</p>
+<h3 id="b2-unrest-is-hyperbolic-not-linear">Unrest is hyperbolic, not linear<a class="heading-link" href="#b2-unrest-is-hyperbolic-not-linear" aria-label="Link to Unrest is hyperbolic, not linear">#</a></h3><p>Income is divided by <code>1 + 0.02U</code>, where <code>U</code> is unrest. This has two important consequences:</p>
+<ol>
+<li>The first unrest points do substantial damage.</li>
+<li>Each later unrest point removes a smaller fraction of the already reduced income.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th align="right">Unrest</th>
+<th align="right">Multiplier</th>
+<th align="right">Income lost</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">10</td>
+<td align="right">0.833</td>
+<td align="right">16.7%</td>
+</tr>
+<tr>
+<td align="right">25</td>
+<td align="right">0.667</td>
+<td align="right">33.3%</td>
+</tr>
+<tr>
+<td align="right">50</td>
+<td align="right">0.500</td>
+<td align="right">50.0%</td>
+</tr>
+<tr>
+<td align="right">75</td>
+<td align="right">0.400</td>
+<td align="right">60.0%</td>
+</tr>
+<tr>
+<td align="right">100</td>
+<td align="right">0.333</td>
+<td align="right">66.7%</td>
+</tr>
+<tr>
+<td align="right">200</td>
+<td align="right">0.200</td>
+<td align="right">80.0%</td>
+</tr>
+</tbody></table>
+<p>Unrest 100 is more severe than the income multiplier suggests because it also stops recruitment.</p>
+<h2 id="b2-income-timing">Income timing<a class="heading-link" href="#b2-income-timing" aria-label="Link to Income timing">#</a></h2><p>Income is hosting step 38.</p>
+<p>Before income:</p>
+<ul>
+<li>ordinary battles and storming have resolved;</li>
+<li>random events and several late battles have resolved;</li>
+<li>buildings complete at step 35;</li>
+<li>pillage resolves at step 37.</li>
+</ul>
+<p>After income:</p>
+<ul>
+<li>ordinary unrest alterations resolve at step 39;</li>
+<li>starvation resolves at step 40;</li>
+<li>upkeep resolves at step 41.</li>
+</ul>
+<p>This timing means:</p>
+<ul>
+<li>a province captured through ordinary movement can pay its new owner that month if collection conditions are met;</li>
+<li>pillage can damage the same month&#39;s income;</li>
+<li>patrol and Order reductions at step 39 usually improve the next month&#39;s income, not the current collection;</li>
+<li>upkeep can use the income collected moments earlier.</li>
+</ul>
+<h2 id="b2-treasury-discipline">Treasury discipline<a class="heading-link" href="#b2-treasury-discipline" aria-label="Link to Treasury discipline">#</a></h2><p>The treasury must cover several different horizons:</p>
+<table>
+<thead>
+<tr>
+<th>Horizon</th>
+<th>Typical commitments</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Immediate order phase</td>
+<td>Recruitment, buildings, PD, mercenary bids, gold-cost rituals or events</td>
+</tr>
+<tr>
+<td>Hosting income step</td>
+<td>Expected provincial income after conquest, trace, pillage, and unrest</td>
+</tr>
+<tr>
+<td>Hosting upkeep step</td>
+<td>Recurring unit and commander costs</td>
+</tr>
+<tr>
+<td>Contingency reserve</td>
+<td>Emergency recruitment, fort repair decisions, diplomacy, unexpected events</td>
+</tr>
+</tbody></table>
+<p>Planning to exactly zero before uncertain income is a risk decision. The danger is highest when:</p>
+<ul>
+<li>tax traces are exposed;</li>
+<li>capitals or rich forts may be besieged;</li>
+<li>unrest is rising;</li>
+<li>pillage or raiding is expected;</li>
+<li>mercenary contracts or events can change expenditure;</li>
+<li>a large sacred or cavalry force obscures the apparent upkeep calculation.</li>
+</ul>
+<h2 id="b2-upkeep">Upkeep<a class="heading-link" href="#b2-upkeep" aria-label="Link to Upkeep">#</a></h2><p>The manual states:</p>
+<pre><code class="language-text">ordinary upkeep = gold cost / 15 per month
+sacred or slave upkeep = gold cost / 30 per month
+</code></pre>
+<p>Most summoned units are exempt. Some exceptions carry additional upkeep.</p>
+<h3 id="b2-annual-display">Annual display<a class="heading-link" href="#b2-annual-display" aria-label="Link to Annual display">#</a></h3><p>The detailed unit interface commonly displays annual upkeep:</p>
+<pre><code class="language-text">annual upkeep = monthly upkeep x 12
+</code></pre>
+<p>A 30-gold ordinary unit costs 2 gold per month and displays 24 per year.</p>
+<h3 id="b2-sacred-slaves">Sacred slaves<a class="heading-link" href="#b2-sacred-slaves" aria-label="Link to Sacred slaves">#</a></h3><p>The manual says Sacred units and Slaves each pay half upkeep. A current-game discussion published on 21 December 2025, under the 6.33 release, identifies their interaction explicitly: the two reductions stack, producing a divisor of 60. The R&#39;lyeh Slave Priest is the clean example because the current structured row carries both the Sacred and Slave tags.</p>
+<pre><code class="language-text">sacred slave upkeep = gold cost / 60 per month
+</code></pre>
+<p>The official announcements for 6.34 through 6.36 contain no general upkeep change. The stacking rule is published here as <strong>Community-tested under 6.33; current through 6.36 by patch review</strong>. It is not wording taken from the revision-2 manual.</p>
+<h3 id="b2-mounted-upkeep-is-component-based">Mounted upkeep is component-based<a class="heading-link" href="#b2-mounted-upkeep-is-component-based" aria-label="Link to Mounted upkeep is component-based">#</a></h3><p>A mounted card can hide more than one upkeep basis. Rider and mount are separate objects, and each component keeps its own base cost and its own Sacred or Slave status. The visible recruitment price is consequently not always enough to reconstruct upkeep.</p>
+<p>The 6.33 observation gives a direct check:</p>
+<table>
+<thead>
+<tr>
+<th>Mounted card</th>
+<th align="right">Rider basis</th>
+<th align="right">Mount basis</th>
+<th align="right">Observed annual split</th>
+<th align="right">Total annual upkeep</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Logrian Cavalry</td>
+<td align="right">10 ordinary</td>
+<td align="right">20 ordinary</td>
+<td align="right">8 + 16</td>
+<td align="right">24</td>
+</tr>
+</tbody></table>
+<p>The pinned 6.35 object snapshot supplies further examples of the underlying component structure:</p>
+<table>
+<thead>
+<tr>
+<th>Mounted card</th>
+<th>Rider object</th>
+<th>Mount object</th>
+<th>Consequence</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mouflon Cataphract</td>
+<td>base-cost adjustment 15, Slave</td>
+<td>base-cost adjustment 25, not Slave</td>
+<td>the Slave reduction applies to the rider, not automatically to the mount</td>
+</tr>
+<tr>
+<td>Sacred Serpent Cataphract</td>
+<td>base-cost adjustment 15, Sacred</td>
+<td>base-cost adjustment 30, Sacred</td>
+<td>both components receive their own Sacred reduction</td>
+</tr>
+<tr>
+<td>Logrian Cavalry</td>
+<td>base-cost adjustment 10, ordinary</td>
+<td>base-cost adjustment 20, ordinary</td>
+<td>the component total reproduces the observed 24 gold per year</td>
+</tr>
+</tbody></table>
+<p>These examples do not establish a universal shortcut from the displayed recruitment price. They establish the opposite: inspect both component cards when cavalry upkeep matters. Patch 6.31 also fixed mounts that could desert separately when the treasury was empty, further confirming that mount state participates in economic resolution even though that bug does not define the upkeep formula.</p>
+<h3 id="b2-added-upkeep-and-shape-changes">Added upkeep and shape changes<a class="heading-link" href="#b2-added-upkeep-and-shape-changes" aria-label="Link to Added upkeep and shape changes">#</a></h3><p>The Modding Manual defines <code>#addupkeep</code> as increasing the gold basis used for upkeep. It belongs to the object that carries it. Mounted objects need to be checked component by component; one combined modifier should not be applied to the whole recruitment card.</p>
+<p>Shapechanged upkeep remains unresolved. The manuals define many shape relations and advise fixed gold costs for shapechanging Pretenders, but they do not say which form supplies the monthly upkeep basis for every temporary, voluntary, seasonal, death, or world shape. A current transformation matrix must compare the Income Overview before and after each shape class. Until then, a transformed commander&#39;s visible annual entry is the operational value. R-010 remains in progress.</p>
+<h3 id="b2-reading-the-annual-line">Reading the annual line<a class="heading-link" href="#b2-reading-the-annual-line" aria-label="Link to Reading the annual line">#</a></h3><p>The December 2025 observation also records ordinary annual values of 6 for a 7-gold unit and 13 for a 16-gold unit. Those are consistent with multiplying monthly upkeep by twelve and displaying a whole number. The sample does not distinguish every possible rounding rule, and the national treasury may retain fractional liabilities that the annual line hides. Annual display rounding must not be reused as proof of monthly treasury rounding.</p>
+<p>The same observation gives enough cases to exclude one tempting shortcut:</p>
+<table>
+<thead>
+<tr>
+<th align="right">Ordinary gold basis</th>
+<th align="right">Exact monthly formula</th>
+<th align="right">Exact annual equivalent</th>
+<th align="right">Observed annual line</th>
+<th>What the observation proves</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">7</td>
+<td align="right">7/15</td>
+<td align="right">5.6</td>
+<td align="right">6</td>
+<td>The annual line is not simply floored at the end</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">10/15</td>
+<td align="right">8.0</td>
+<td align="right">8</td>
+<td>Exact integers survive unchanged</td>
+</tr>
+<tr>
+<td align="right">16</td>
+<td align="right">16/15</td>
+<td align="right">12.8</td>
+<td align="right">13</td>
+<td>The annual line is not simply floored at the end</td>
+</tr>
+</tbody></table>
+<p>These cases are compatible with ordinary nearest-integer rounding and with a ceiling rule; they do not distinguish between them. Nor do they reveal whether twelve fractional monthly charges are accumulated precisely, rounded as a group, or represented through another internal unit. The annual line is a readable estimate of burden, while the treasury change remains the decisive measurement for a zero-margin budget.</p>
+<h3 id="b2-upkeep-as-force-structure">Upkeep as force structure<a class="heading-link" href="#b2-upkeep-as-force-structure" aria-label="Link to Upkeep as force structure">#</a></h3><p>Upkeep does more than tax army size. It decides which forces can remain permanently mobilised.</p>
+<ul>
+<li>Gold-recruited elite armies preserve battlefield quality but continually consume income.</li>
+<li>Summoned forces shift the burden toward gems and mage-turns.</li>
+<li>Sacred troops can be capital- or Holy-limited but cheaper to maintain.</li>
+<li>Militia-like troops may be cheap to recruit yet expensive relative to their battlefield effect.</li>
+<li>Commanders, scouts, priests, and logistical specialists add recurring cost without always appearing in a front-line count.</li>
+</ul>
+<p>The relevant comparison is lifecycle cost:</p>
+<pre><code class="language-text">lifecycle gold cost =
+  recruitment cost
+  + expected months of upkeep
+  + replacement and support cost
+</code></pre>
+<p>A unit that survives for thirty months can cost far more through upkeep than through recruitment.</p>
+<h1 id="b2-part-iv-resources-and-recruitment">Part IV: Resources and Recruitment<a class="heading-link" href="#b2-part-iv-resources-and-recruitment" aria-label="Link to Part IV: Resources and Recruitment">#</a></h1><h2 id="b2-resources-are-local-industrial-capacity">Resources are local industrial capacity<a class="heading-link" href="#b2-resources-are-local-industrial-capacity" aria-label="Link to Resources are local industrial capacity">#</a></h2><p>Resources represent the materials and labour needed to equip recruits. They:</p>
+<ul>
+<li>belong to a province;</li>
+<li>refresh each month;</li>
+<li>do not stockpile;</li>
+<li>cannot be moved through the treasury;</li>
+<li>are spent only by local recruitment.</li>
+</ul>
+<p>Unused resources are lost opportunity, not saved wealth.</p>
+<h3 id="b2-potential-and-available-resources">Potential and available resources<a class="heading-link" href="#b2-potential-and-available-resources" aria-label="Link to Potential and available resources">#</a></h3><p>An unfortified province uses half its potential resources locally. A fort:</p>
+<ol>
+<li>raises the host province to its full local potential;</li>
+<li>draws its Administration percentage from eligible neighbouring provinces&#39; potential resources.</li>
+</ol>
+<p>Unrest then reduces availability:</p>
+<pre><code class="language-text">final resources =
+  resources / (1 + unrest x 0.01)
+</code></pre>
+<p>At unrest 100, half remain, but recruitment is prohibited entirely.</p>
+<h2 id="b2-fort-resource-draw">Fort resource draw<a class="heading-link" href="#b2-fort-resource-draw" aria-label="Link to Fort resource draw">#</a></h2><p>The manual&#39;s restrictions are exact:</p>
+<ul>
+<li>land cannot draw from sea, nor sea from land;</li>
+<li>a neighbouring province with a fort does not contribute;</li>
+<li>an enemy province does not contribute;</li>
+<li>eligible shared neighbours can contribute to more than one fort.</li>
+</ul>
+<p>The manual&#39;s worked example demonstrates that draw uses the neighbour&#39;s <strong>potential</strong> resources, not the half-sized pool visible in an unfortified neighbour.</p>
+<h3 id="b2-production-geometry">Production geometry<a class="heading-link" href="#b2-production-geometry" aria-label="Link to Production geometry">#</a></h3><p>A production fort should be evaluated by:</p>
+<pre><code class="language-text">fort resource value =
+  full local potential
+  + Administration% of each eligible adjacent potential
+  - expected disruption
+</code></pre>
+<p>Expected disruption includes:</p>
+<ul>
+<li>future adjacent forts removing donors;</li>
+<li>hostile raids changing ownership;</li>
+<li>unrest;</li>
+<li>land/sea boundaries;</li>
+<li>a roster unable to use the extra resources;</li>
+<li>supply or gold limits that prevent full production.</li>
+</ul>
+<h3 id="b2-fort-spacing">Fort spacing<a class="heading-link" href="#b2-fort-spacing" aria-label="Link to Fort spacing">#</a></h3><p>Dense fort networks increase recruitment sites, Commander Points, laboratories, siege resistance, and tax anchors. They can also remove resource draw between adjacent fortified provinces.</p>
+<p>This is not a simple argument for wide spacing. The correct spacing balances:</p>
+<ul>
+<li>mage production;</li>
+<li>troop production;</li>
+<li>resource donors;</li>
+<li>travel time;</li>
+<li>defensibility;</li>
+<li>supply projection;</li>
+<li>capital and Throne protection;</li>
+<li>the expected duration of the game.</li>
+</ul>
+<h2 id="b2-recruitment-points">Recruitment Points<a class="heading-link" href="#b2-recruitment-points" aria-label="Link to Recruitment Points">#</a></h2><p>Recruitment Points model the province&#39;s ability to organise ordinary troop production.</p>
+<p>Start at 20, then add population-band contributions:</p>
+<pre><code class="language-text">RP(population) =
+  20
+  + min(pop, 5,000) / 100
+  + min(max(pop - 5,000, 0), 5,000) / 200
+  + min(max(pop - 10,000, 0), 10,000) / 300
+  + min(max(pop - 20,000, 0), 20,000) / 400
+  + max(pop - 40,000, 0) / 500
+</code></pre>
+<p>The fort&#39;s recruitment bonus is applied afterward. Order or Turmoil changes the result by 10% per step.</p>
+<h3 id="b2-population-examples-before-fort-and-scales">Population examples before fort and scales<a class="heading-link" href="#b2-population-examples-before-fort-and-scales" aria-label="Link to Population examples before fort and scales">#</a></h3><table>
+<thead>
+<tr>
+<th align="right">Population</th>
+<th>Calculation</th>
+<th align="right">Recruitment Points before rounding</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">0</td>
+<td>20</td>
+<td align="right">20</td>
+</tr>
+<tr>
+<td align="right">1,000</td>
+<td>20 + 1,000/100</td>
+<td align="right">30</td>
+</tr>
+<tr>
+<td align="right">5,000</td>
+<td>20 + 5,000/100</td>
+<td align="right">70</td>
+</tr>
+<tr>
+<td align="right">6,000</td>
+<td>20 + 50 + 1,000/200</td>
+<td align="right">75</td>
+</tr>
+<tr>
+<td align="right">10,000</td>
+<td>20 + 50 + 5,000/200</td>
+<td align="right">95</td>
+</tr>
+<tr>
+<td align="right">20,000</td>
+<td>20 + 50 + 25 + 10,000/300</td>
+<td align="right">128.33</td>
+</tr>
+<tr>
+<td align="right">40,000</td>
+<td>prior + 20,000/400</td>
+<td align="right">178.33</td>
+</tr>
+<tr>
+<td align="right">50,000</td>
+<td>prior + 10,000/500</td>
+<td align="right">198.33</td>
+</tr>
+</tbody></table>
+<p>The declining contribution per additional inhabitant means population has diminishing marginal effect on RP even while remaining valuable for income and supplies.</p>
+<h3 id="b2-official-versus-historical-conflict">Official-versus-historical conflict<a class="heading-link" href="#b2-official-versus-historical-conflict" aria-label="Link to Official-versus-historical conflict">#</a></h3><p>Older community pages preserve a different formula with a lower base and different population bands. Foundation Book II uses the revision-2 main manual formula. Historical formulas must not be used as proof of current Dominions 6 behaviour.</p>
+<h3 id="b2-rounding">Rounding<a class="heading-link" href="#b2-rounding" aria-label="Link to Rounding">#</a></h3><p>The manual gives formulas and examples but does not fully document every rounding stage:</p>
+<ul>
+<li>population band;</li>
+<li>scale modifier;</li>
+<li>fort bonus;</li>
+<li>final displayed and spendable total.</li>
+</ul>
+<p>Until reproduced, calculations should be treated as capacity estimates near fractional boundaries. The interface remains the final operational value.</p>
+<span class="anchor-alias" id="b2-commander-points-and-holy-points" aria-hidden="true"></span><h2 id="b2-commander-points">Commander Points<a class="heading-link" href="#b2-commander-points" aria-label="Link to Commander Points">#</a></h2><p>Commander Points limit local commander production. The current ordinary pool is:</p>
+<pre><code class="language-text">Commander Point pool = 1 base point + current fort bonus
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Recruitment location</th>
+<th align="right">Base</th>
+<th align="right">Fort bonus</th>
+<th align="right">Ordinary total</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>No fort</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td>Palisades</td>
+<td align="right">1</td>
+<td align="right">+0</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td>Fortress</td>
+<td align="right">1</td>
+<td align="right">+1</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>Castle</td>
+<td align="right">1</td>
+<td align="right">+1</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>Citadel</td>
+<td align="right">1</td>
+<td align="right">+2</td>
+<td align="right">3</td>
+</tr>
+<tr>
+<td>Grand Citadel</td>
+<td align="right">1</td>
+<td align="right">+2</td>
+<td align="right">3</td>
+</tr>
+</tbody></table>
+<p>The fort bonuses are official revision-2 values. The one-point unfortified base and multi-turn accumulation are stated by the current community commander reference, last updated under 6.35; no 6.36 announcement changes the system. This closes R-009 at <strong>Official plus Community-tested</strong> evidence.</p>
+<p>The distinction between the pool and the cost is essential. The Modding Manual defines a simple commander as normally costing one point, permits explicit Recruitment Point costs, and defines <code>#slowrec</code> as doubling the Commander Points needed for that commander. A two-point commander in a one-point province is not illegal. The queue invests capacity over multiple months until the cost is met.</p>
+<pre><code class="language-text">months to complete, before disruption = ceiling(commander cost / local CP per month)
+</code></pre>
+<table>
+<thead>
+<tr>
+<th align="right">Commander cost</th>
+<th align="right">1 CP location</th>
+<th align="right">2 CP location</th>
+<th align="right">3 CP location</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1</td>
+<td align="right">1 month</td>
+<td align="right">1 month</td>
+<td align="right">1 month</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">2 months</td>
+<td align="right">1 month</td>
+<td align="right">1 month, with 1 point unused for that order</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">3 months</td>
+<td align="right">2 months</td>
+<td align="right">1 month</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">4 months</td>
+<td align="right">2 months</td>
+<td align="right">2 months</td>
+</tr>
+</tbody></table>
+<p>The table describes an uninterrupted single order. Queue state, a change of recruit, unrest, ownership, or loss of eligibility can alter the actual completion date.</p>
+<h3 id="b2-what-does-not-multiply-commander-points">What does not multiply Commander Points<a class="heading-link" href="#b2-what-does-not-multiply-commander-points" aria-label="Link to What does not multiply Commander Points">#</a></h3><ul>
+<li>Fort statistics replace the previous stage; their bonuses do not stack across upgrades.</li>
+<li>AI difficulty bonuses apply to income, resources, ordinary Recruitment Points, and magic, but the manual explicitly excludes commander recruitment rate and Holy Points.</li>
+<li><code>#slowrec</code> changes the commander&#39;s cost, not the province&#39;s pool.</li>
+<li>A recruitable commander supplied by a site changes roster access; the site commands do not by themselves add Commander Points.</li>
+<li>Unrest is a separate local reduction question retained under R-011.</li>
+</ul>
+<p>Commander Points are often the real reason to build a fort. A nation may have enough gold to recruit more mages but no place capable of producing them.</p>
+<h3 id="b2-commander-turn-accounting">Commander-turn accounting<a class="heading-link" href="#b2-commander-turn-accounting" aria-label="Link to Commander-turn accounting">#</a></h3><p>Gold measures purchase price; Commander Points measure time on the production line. A 400-gold, four-point mage and four 100-gold, one-point commanders may consume the same gold, but they do not create the same schedule. Any comparison should record both:</p>
+<pre><code class="language-text">gold per completed commander
+commander-months per completed commander
+</code></pre>
+<p>A higher fort is most valuable when it changes a roster&#39;s calendar: two-point mages every month instead of every second month, or four-point mages every second month instead of every fourth. That throughput can outweigh the fort&#39;s direct Administration income.</p>
+<h2 id="b2-holy-points">Holy Points<a class="heading-link" href="#b2-holy-points" aria-label="Link to Holy Points">#</a></h2><p>Sacred recruitment consumes Holy Points in addition to ordinary costs. The manual ties the ordinary sacred recruitment limit to maximum dominion. Temples, national rules, Pretender design, sites, and mod commands can alter the system.</p>
+<p>Holy Points create several strategic distinctions:</p>
+<ul>
+<li>a sacred may be affordable but unavailable;</li>
+<li>sacred queues can accumulate behind the cap;</li>
+<li>buying ordinary troops can use local resources and RP left stranded by the Holy limit;</li>
+<li>higher maximum dominion can be both religious resilience and production capacity;</li>
+<li>capital-only sacreds concentrate risk at the capital even when other forts have spare resources.</li>
+</ul>
+<h2 id="b2-queue-mechanics-and-diagnosis">Queue mechanics and diagnosis<a class="heading-link" href="#b2-queue-mechanics-and-diagnosis" aria-label="Link to Queue mechanics and diagnosis">#</a></h2><p>Recruitment orders can fail or wait for different reasons:</p>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Likely gate</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Unit cannot be added</td>
+<td>Insufficient treasury, ineligible location, unrest 100+, or limit reached</td>
+</tr>
+<tr>
+<td>Unit remains queued</td>
+<td>Resource, RP, Holy Point, or limited-recruit shortage</td>
+</tr>
+<tr>
+<td>Commander does not appear</td>
+<td>Commander Point shortage, eligibility, gold, or recruitment disruption</td>
+</tr>
+<tr>
+<td>Resources remain while queue stalls</td>
+<td>RP, Holy, commander, or unit-specific cap</td>
+</tr>
+<tr>
+<td>RP remains while queue stalls</td>
+<td>Resources, Holy, or local eligibility</td>
+</tr>
+<tr>
+<td>Province captured yet recruits fought</td>
+<td>Recruitment resolved at step 3 before movement battle</td>
+</tr>
+<tr>
+<td>Recruits trapped inside fort</td>
+<td>Recruitment completed before siege control changed</td>
+</tr>
+</tbody></table>
+<p>The queue should be read as a production plan constrained by several ledgers, not as a single purchase list.</p>
+<span class="anchor-alias" id="b2-part-vii-population-unrest-pillage-patrol-and-blood-hunting" aria-hidden="true"></span><h1 id="b2-part-v-unrest-and-coercive-economy">Part V: Unrest and Coercive Economy<a class="heading-link" href="#b2-part-v-unrest-and-coercive-economy" aria-label="Link to Part V: Unrest and Coercive Economy">#</a></h1><span class="anchor-alias" id="b2-unrest-effects" aria-hidden="true"></span><h2 id="b2-what-unrest-does">What unrest does<a class="heading-link" href="#b2-what-unrest-does" aria-label="Link to What unrest does">#</a></h2><p>Officially, unrest:</p>
+<ul>
+<li>reduces income;</li>
+<li>reduces resources;</li>
+<li>prevents recruitment at 100 or greater;</li>
+<li>reduces Blood Hunting success;</li>
+<li>obstructs patrol detection;</li>
+<li>is capped at the lesser of 500 or population divided by 10.</li>
+</ul>
+<p>It can rise through:</p>
+<ul>
+<li>random events;</li>
+<li>spies and agitators;</li>
+<li>Blood Hunting;</li>
+<li>sites;</li>
+<li>targeted spells;</li>
+<li>globals;</li>
+<li>pillaging;</li>
+<li>hostile dominion and special effects.</li>
+</ul>
+<p>It can fall through:</p>
+<ul>
+<li>patrolling;</li>
+<li>Province Defence;</li>
+<li>Order;</li>
+<li>sites;</li>
+<li>events;</li>
+<li>other national, unit, or magical effects.</li>
+</ul>
+<h2 id="b2-income-and-resource-damage">Income and resource damage<a class="heading-link" href="#b2-income-and-resource-damage" aria-label="Link to Income and resource damage">#</a></h2><pre><code class="language-text">income multiplier = 1 / (1 + 0.02 x unrest)
+resource multiplier = 1 / (1 + 0.01 x unrest)
+</code></pre>
+<p>Income is twice as sensitive in the denominator. At unrest 50, the province retains half its income but about two-thirds of its resources.</p>
+<h2 id="b2-recruitment-shutdown">Recruitment shutdown<a class="heading-link" href="#b2-recruitment-shutdown" aria-label="Link to Recruitment shutdown">#</a></h2><p>At unrest 100, no ordinary units or commanders can be recruited. This creates a production-denial objective:</p>
+<ul>
+<li>unrest attacks can neutralise a fort without breaching its walls;</li>
+<li>Blood Hunting can disable its own patrol and recruitment base;</li>
+<li>a province may still show resources while being unable to recruit;</li>
+<li>reducing unrest at step 39 is too late to restore step-3 recruitment that month.</li>
+</ul>
+<h2 id="b2-the-unrest-cap">The unrest cap<a class="heading-link" href="#b2-the-unrest-cap" aria-label="Link to The unrest cap">#</a></h2><pre><code class="language-text">maximum unrest = min(500, population / 10)
+</code></pre>
+<p>A province with zero population cannot retain unrest. Population loss can reduce the numerical cap while destroying nearly every ordinary economic reason to own the province.</p>
+<h2 id="b2-patrolling">Patrolling<a class="heading-link" href="#b2-patrolling" aria-label="Link to Patrolling">#</a></h2><p>The main manual gives individual patrol strength as:</p>
+<pre><code class="language-text">individual patrol strength =
+  (Precision + Map Move) / 20
+</code></pre>
+<p>Flying units use 30 in place of Map Move. Commanders are doubled. Undisciplined and Mindless units are halved.</p>
+<p>The total search strength is reduced by half the province&#39;s unrest, capped at 100, and gains Province Defence patrol strength beginning at PD 15.</p>
+<p>The same patrol force must often satisfy several tasks:</p>
+<ul>
+<li>lower unrest;</li>
+<li>protect Blood Hunters;</li>
+<li>discover scouts, spies, and raiders;</li>
+<li>remain strong enough to survive a discovery battle;</li>
+<li>avoid destroying too much population.</li>
+</ul>
+<p>High nominal patrol strength is not the same as a safe patrol. A stealth force that is discovered may still defeat the patrol.</p>
+<h3 id="b2-community-sub-formulas">Community sub-formulas<a class="heading-link" href="#b2-community-sub-formulas" aria-label="Link to Community sub-formulas">#</a></h3><p>Current community documentation describes a multi-stage unrest reduction process involving:</p>
+<ol>
+<li>a baseline affected by friendly candles and PD;</li>
+<li>an Order/Turmoil-dependent proportional reduction;</li>
+<li>patrolling.</li>
+</ol>
+<p>It also reports that unrest reduces Recruitment Points and Commander Points by one percent per point, with the Commander Point reduction rounded down. The current page states the result but does not publish a 6.36 boundary table, save, or test setup. The precise breakpoints remain queued under R-011.</p>
+<p>That wording admits two materially different readings for a small integer pool: round down the <strong>amount lost</strong>, or round down the <strong>capacity remaining</strong>. For a one-point Commander Point pool, the first reading preserves the point until the recruitment shutdown; the second can remove it as soon as unrest rises above zero. The page does not state which intermediate is rounded and does not provide the small-pool observations needed to decide between them.</p>
+<p>If the intended community rule is &quot;round down the amount lost,&quot; its test predictions are:</p>
+<table>
+<thead>
+<tr>
+<th align="right">Ordinary pool</th>
+<th align="right">First predicted loss</th>
+<th align="right">Second predicted loss</th>
+<th align="right">Capacity before unrest 100</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1</td>
+<td align="right">Unrest 100</td>
+<td align="right">-</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">Unrest 50</td>
+<td align="right">Unrest 100</td>
+<td align="right">1 from unrest 50-99</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">Unrest 34</td>
+<td align="right">Unrest 67</td>
+<td align="right">1 from unrest 67-99</td>
+</tr>
+</tbody></table>
+<p>This is a <strong>candidate boundary table</strong>, not a promoted game rule. Its value is diagnostic: a single version-labelled observation at one of those thresholds can support or reject the interpretation far more efficiently than an anecdote from a high-unrest province.</p>
+<p>This distinction matters most for the tiny Commander Point pool. A one-point rounding decision can change a mage from a one-month recruit into a multi-month project. Until the breakpoints are reproduced, use three tiers of certainty:</p>
+<table>
+<thead>
+<tr>
+<th>Claim</th>
+<th>Publication state</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Unrest 100 or more prohibits ordinary unit and commander recruitment</td>
+<td>Official</td>
+</tr>
+<tr>
+<td>Unrest reduces ordinary Recruitment Points before shutdown</td>
+<td>Current community reference</td>
+</tr>
+<tr>
+<td>Unrest also reduces Commander Points</td>
+<td>Current community reference</td>
+</tr>
+<tr>
+<td>Exact first-loss threshold for a 1-, 2-, or 3-point pool</td>
+<td>Test pending</td>
+</tr>
+</tbody></table>
+<p>The recruitment screen is authoritative for orders. A written forecast near an unrest boundary should preserve a spare month rather than assuming the most favourable rounding.</p>
+<h2 id="b2-pillaging-and-raiding">Pillaging and raiding<a class="heading-link" href="#b2-pillaging-and-raiding" aria-label="Link to Pillaging and raiding">#</a></h2><p>Pillage:</p>
+<ul>
+<li>raises unrest;</li>
+<li>kills population;</li>
+<li>reduces supplies;</li>
+<li>gives gold and temporary food to the pillaging army;</li>
+<li>becomes stronger with larger, faster, and larger-sized forces;</li>
+<li>particularly favours barbarians and units with Fear.</li>
+</ul>
+<p>The temporary supplies last one month.</p>
+<p>A Raid combines movement with reduced-strength pillage. It requires a commander with Pillager and an army with Map Move 20 or more. Only Pillager units contribute, at half pillage strength, and the force must win any resulting battle before pillaging succeeds.</p>
+<h3 id="b2-strategic-uses">Strategic uses<a class="heading-link" href="#b2-strategic-uses" aria-label="Link to Strategic uses">#</a></h3><p>Pillage and raid actions can:</p>
+<ul>
+<li>suppress income before step 38;</li>
+<li>raise a fort province toward recruitment shutdown;</li>
+<li>damage future population and supplies;</li>
+<li>feed an army for the current month;</li>
+<li>force patrols and defensive movement;</li>
+<li>create tax-trace breaks.</li>
+</ul>
+<p>They can also destroy value that the attacker expects to conquer. The action is most coherent when denial matters more than future ownership.</p>
+<span class="anchor-alias" id="b2-part-v-supplies-logistics-and-starvation" aria-hidden="true"></span><h1 id="b2-part-vi-supplies-armies-and-logistics">Part VI: Supplies, Armies, and Logistics<a class="heading-link" href="#b2-part-vi-supplies-armies-and-logistics" aria-label="Link to Part VI: Supplies, Armies, and Logistics">#</a></h1><h2 id="b2-supply-is-a-location-check">Supply is a location check<a class="heading-link" href="#b2-supply-is-a-location-check" aria-label="Link to Supply is a location check">#</a></h2><p>Supply is not a national stock. An army consumes the supply available in its current situation.</p>
+<p>The decisive logistical questions are:</p>
+<ul>
+<li>Where will the army be when starvation resolves?</li>
+<li>Which fort projects the highest supply there?</li>
+<li>What scales and population will remain after conquest, battle, and pillage?</li>
+<li>Is the army outside a fort, inside a fort, or trapped in a siege?</li>
+<li>Which units consume supply despite appearing small or inexpensive?</li>
+</ul>
+<h2 id="b2-population-based-supply">Population-based supply<a class="heading-link" href="#b2-population-based-supply" aria-label="Link to Population-based supply">#</a></h2><pre><code class="language-text">base population supply =
+  first 15,000 / 30
+  + population above 15,000 / 60
+</code></pre>
+<p>Growth or Death modifies the result first. Temperature deviation modifies it second.</p>
+<table>
+<thead>
+<tr>
+<th align="right">Population</th>
+<th align="right">Base supply before scales</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">3,000</td>
+<td align="right">100</td>
+</tr>
+<tr>
+<td align="right">7,500</td>
+<td align="right">250</td>
+</tr>
+<tr>
+<td align="right">15,000</td>
+<td align="right">500</td>
+</tr>
+<tr>
+<td align="right">21,000</td>
+<td align="right">600</td>
+</tr>
+<tr>
+<td align="right">30,000</td>
+<td align="right">750</td>
+</tr>
+</tbody></table>
+<p>The lower marginal supply above 15,000 mirrors the declining RP value of very large populations.</p>
+<h2 id="b2-fort-based-supply">Fort-based supply<a class="heading-link" href="#b2-fort-based-supply" aria-label="Link to Fort-based supply">#</a></h2><p>The manual&#39;s stated formula is:</p>
+<pre><code class="language-text">fort supply =
+  (Administration x 6) / (Distance + 1)
+</code></pre>
+<p>The maximum distance is four. Only the largest nearby fort contribution applies.</p>
+<h3 id="b2-official-internal-conflict">Official internal conflict<a class="heading-link" href="#b2-official-internal-conflict" aria-label="Link to Official internal conflict">#</a></h3><p>The same manual also prints a distance multiplier table of 400%, 200%, 133%, 100%, and 80% at distance zero through four. Those percentages correspond to <code>Administration x 4 / (Distance + 1)</code>, not the printed multiplier of six. Its worked example gives only 30 supply from an Administration-30 Castle at distance three, agreeing with the table but disagreeing with the formula, which produces 45.</p>
+<table>
+<thead>
+<tr>
+<th align="right">Distance</th>
+<th align="right">Printed <code>Admin x 6</code> formula for Admin 30</th>
+<th align="right">Printed percentage table for Admin 30</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">0</td>
+<td align="right">180</td>
+<td align="right">120</td>
+</tr>
+<tr>
+<td align="right">1</td>
+<td align="right">90</td>
+<td align="right">60</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">60</td>
+<td align="right">about 40</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">45</td>
+<td align="right">30</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">36</td>
+<td align="right">24</td>
+</tr>
+</tbody></table>
+<p>A second official sentence says an Administration-50 fort contributes 150 to an adjacent province. That agrees with the multiplier-of-six formula at distance one and disagrees with the percentage table. The manual contains two internally coherent calculations, each supported by at least one example.</p>
+<p>The current community population reference uses the multiplier-of-six formula and gives a Palisades example at distance two. It is useful corroboration but not a published controlled reproduction across all five distances. R-012 remains open.</p>
+<p>These three representations cannot all be correct under the same definition of distance. The safe publication policy is:</p>
+<ul>
+<li>preserve the formula as the stated rule;</li>
+<li>describe the example conflict;</li>
+<li>use the in-game displayed supply for operational orders;</li>
+<li>reproduce every distance from zero through four in 6.36.</li>
+</ul>
+<p>For forecasts, the two printed systems can be carried as a documentary interval:</p>
+<pre><code class="language-text">lower printed candidate = Administration x 4 / (Distance + 1)
+upper printed candidate = Administration x 6 / (Distance + 1)
+</code></pre>
+<p>This interval is not a claim that the executable must lie between the two. It is a compact way to expose how much of a supply plan depends on the unresolved multiplier. The disagreement is a constant one-third of the larger candidate, so an army that fits only under <code>x6</code> is not safely supplied by the documents alone. The range, the four-province limit, and the rule that only the single highest nearby fort contribution applies are not part of the conflict.</p>
+<h2 id="b2-supply-usage">Supply usage<a class="heading-link" href="#b2-supply-usage" aria-label="Link to Supply usage">#</a></h2><p>The main manual describes usage by physical size:</p>
+<table>
+<thead>
+<tr>
+<th>Unit</th>
+<th align="right">Ordinary supply use</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Size 0</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>Size 1-2</td>
+<td align="right">0.5</td>
+</tr>
+<tr>
+<td>Size 3</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td>Size 4</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>Size 5</td>
+<td align="right">3</td>
+</tr>
+<tr>
+<td>Size 6</td>
+<td align="right">4</td>
+</tr>
+</tbody></table>
+<p>Animals use half the ordinary amount. Rider and mount both consume supply. Nature magic indirectly contributes 10 supply per path level.</p>
+<p>Special abilities, forms, national rules, and modded effects can change ordinary expectations.</p>
+<span class="anchor-alias" id="b2-starvation" aria-hidden="true"></span><h2 id="b2-starvation-selection-and-effects">Starvation selection and effects<a class="heading-link" href="#b2-starvation-selection-and-effects" aria-label="Link to Starvation selection and effects">#</a></h2><p>When usage exceeds supply, the engine selects troops whose combined usage is approximately the deficit.</p>
+<p>First selection:</p>
+<ul>
+<li>the unit becomes Starving;</li>
+<li>morale falls by 4;</li>
+<li>disease chance is 5%.</li>
+</ul>
+<p>Selection while already Starving:</p>
+<ul>
+<li>disease chance rises to 50%.</li>
+</ul>
+<p>Appropriate survival skill:</p>
+<ul>
+<li>50% chance to be completely unaffected;</li>
+<li>a separate 50% chance to avoid disease.</li>
+</ul>
+<p>When supply becomes sufficient, Starving ends. Disease does not.</p>
+<h3 id="b2-timing">Timing<a class="heading-link" href="#b2-timing" aria-label="Link to Timing">#</a></h3><p>Starvation resolves at step 40, after all ordinary battles and immediately before upkeep. A newly overextended army normally fights this month&#39;s battle without the new Starving condition, then carries the penalty into the next order phase.</p>
+<p>This makes starvation a delayed logistical debt. It is easy to ignore after a victory and expensive when the next battle arrives.</p>
+<h3 id="b2-commander-uncertainty">Commander uncertainty<a class="heading-link" href="#b2-commander-uncertainty" aria-label="Link to Commander uncertainty">#</a></h3><p>Commanders are commonly described as being fed before troops. That is a priority claim, not the same thing as categorical immunity. The main manual does not grant all commanders a general exemption, and no current controlled sample has exhausted the troop pool and shown the commander-selection boundary. Generic commander immunity remains test pending.</p>
+<p>The wording <em>fed first</em> is safest read as a ranking within the eligible selection pool. It cannot support <em>never starves</em>: once the deficit exceeds the consumption of lower-priority eligible units, the selection process must either reach commanders, leave part of the deficit unmatched, or apply another undocumented exception. No source in the current evidence set demonstrates which branch occurs. Animals being described as fed last is the same kind of priority claim, not proof that every animal starves before any ordinary troop.</p>
+<h3 id="b2-need-not-eat-is-the-decisive-explicit-tag">Need Not Eat is the decisive explicit tag<a class="heading-link" href="#b2-need-not-eat-is-the-decisive-explicit-tag" aria-label="Link to Need Not Eat is the decisive explicit tag">#</a></h3><p>The official Modding Manual gives a firmer rule for individual objects: <code>#neednoteat</code> means the monster consumes no supplies and cannot starve. It also explains how to create a creature that still consumes supplies but cannot starve, proving that consumption and starvation eligibility are distinct properties.</p>
+<p>The pinned 6.35 object snapshot reinforces that distinction:</p>
+<ul>
+<li>985 rows carry Need Not Eat;</li>
+<li>47 rows combine Need Not Eat with Appetite;</li>
+<li>several Undead and Demon rows do not carry the Need Not Eat field explicitly.</li>
+</ul>
+<p>Object counts include helpers and non-recruitable forms, so they are not army demographics. Their value is structural: class labels such as Undead, Demon, Inanimate, or commander cannot safely substitute for the actual food and starvation fields.</p>
+<p>Official update 6.18 adds the transformation boundary: changing into a non-eating entity removes the Starving condition. The correction does not document the reverse direction, temporary battle shapes, or a universal commander-priority rule. R-013 remains in progress.</p>
+<p>Official update 6.35 repaired Supply Usage failing to refresh when magic items were changed. The supply formula did not change, but the correction affects how evidence should be gathered. Screenshots or observations from earlier versions may show a stale usage total after equipment changes. Under the 6.36 baseline, recheck the current Supply Usage after equipping or removing any item that affects size, appetite, supply production, a mount, or a form. The corrected display is the intended operational total, although it still does not prove selection priority.</p>
+<h3 id="b2-logistics-audit-for-unusual-units">Logistics audit for unusual units<a class="heading-link" href="#b2-logistics-audit-for-unusual-units" aria-label="Link to Logistics audit for unusual units">#</a></h3><p>For any expensive commander, mount, transformed unit, or summoned army, inspect in this order:</p>
+<ol>
+<li>current Supply Usage;</li>
+<li>Need Not Eat or Appetite on every component;</li>
+<li>rider and mount separately;</li>
+<li>current Starving and Disease conditions;</li>
+<li>survival skill in the destination terrain;</li>
+<li>whether a shape change occurred before starvation resolution;</li>
+<li>the displayed fort and population supply in the destination.</li>
+</ol>
+<p>This avoids the two most common category errors: assuming that a unit which consumes supply must be able to starve, and assuming that a unit which cannot starve contributes no supply burden.</p>
+<h2 id="b2-siege-supply">Siege supply<a class="heading-link" href="#b2-siege-supply" aria-label="Link to Siege supply">#</a></h2><p>A besieged fort uses Supply Storage divided by the number of consecutive siege turns:</p>
+<pre><code class="language-text">available interior supply =
+  storage / siege turn number
+</code></pre>
+<p>Example for 300 storage:</p>
+<table>
+<thead>
+<tr>
+<th align="right">Siege turn</th>
+<th align="right">Interior supply</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1</td>
+<td align="right">300</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">150</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">100</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">75</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">60</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">30</td>
+</tr>
+</tbody></table>
+<p>This is different from Administration-based supply projection. Storage sustains defenders inside the fort; Administration helps the surrounding province network.</p>
+<h3 id="b2-siege-logistics-as-a-clock">Siege logistics as a clock<a class="heading-link" href="#b2-siege-logistics-as-a-clock" aria-label="Link to Siege logistics as a clock">#</a></h3><p>Even an unbreached wall can become untenable through:</p>
+<ul>
+<li>falling interior supplies;</li>
+<li>cumulative starvation;</li>
+<li>disease;</li>
+<li>upkeep and lost exterior income;</li>
+<li>inability to recruit or move normally;</li>
+<li>the approach of a storm force.</li>
+</ul>
+<p>The fort&#39;s wall clock and supply clock should be tracked separately.</p>
+<span class="anchor-alias" id="b2-part-vi-infrastructure-and-administration" aria-hidden="true"></span><h1 id="b2-part-vii-infrastructure">Part VII: Infrastructure<a class="heading-link" href="#b2-part-vii-infrastructure" aria-label="Link to Part VII: Infrastructure">#</a></h1><h2 id="b2-forts-temples-and-laboratories">Forts, temples, and laboratories<a class="heading-link" href="#b2-forts-temples-and-laboratories" aria-label="Link to Forts, temples, and laboratories">#</a></h2><p>Each building converts a province in a different dimension.</p>
+<table>
+<thead>
+<tr>
+<th>Building</th>
+<th>Converts the province into</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Fort</td>
+<td>A protected recruitment, resource, tax, and logistics node</td>
+</tr>
+<tr>
+<td>Temple</td>
+<td>A dominion-production and preaching node</td>
+</tr>
+<tr>
+<td>Laboratory</td>
+<td>A research, ritual, forging, gem, item, and site-access node</td>
+</tr>
+</tbody></table>
+<p>The standard temple and laboratory each cost 600 gold. Fort stages have separate costs and times. Nations and terrain can alter all of these.</p>
+<h2 id="b2-construction-timing">Construction timing<a class="heading-link" href="#b2-construction-timing" aria-label="Link to Construction timing">#</a></h2><p>Buildings complete at hosting step 35.</p>
+<p>This is later than:</p>
+<ul>
+<li>research at step 2;</li>
+<li>recruitment at step 3;</li>
+<li>forging at step 5;</li>
+<li>preaching and Throne claims at steps 6-8;</li>
+<li>rituals at step 10;</li>
+<li>site searching at step 14;</li>
+<li>ordinary battles and storming at steps 26-27.</li>
+</ul>
+<p>This gives the following results:</p>
+<ul>
+<li>a new lab cannot support research, forging, or ritual casting that month;</li>
+<li>a new temple cannot improve that month&#39;s ordinary preaching;</li>
+<li>a new fort cannot expand this month&#39;s recruitment or protect against battles already fought;</li>
+<li>infrastructure is operational from the following order phase.</li>
+</ul>
+<h2 id="b2-construction-and-demolition">Construction and demolition<a class="heading-link" href="#b2-construction-and-demolition" aria-label="Link to Construction and demolition">#</a></h2><p>Officially:</p>
+<ul>
+<li>any commander can construct a fort;</li>
+<li>a sacred commander is required for a temple;</li>
+<li>a mage is required for a laboratory;</li>
+<li>any commander can demolish a fort or laboratory;</li>
+<li>demolition takes one month;</li>
+<li>temples cannot be demolished by order;</li>
+<li>enemy temples are destroyed automatically upon conquest;</li>
+<li>a fort cannot be demolished while under siege.</li>
+</ul>
+<p>The construction order itself consumes the commander&#39;s month. The economic cost includes both gold and commander-time.</p>
+<h2 id="b2-standard-fort-progression">Standard fort progression<a class="heading-link" href="#b2-standard-fort-progression" aria-label="Link to Standard fort progression">#</a></h2><table>
+<thead>
+<tr>
+<th>Fort</th>
+<th align="right">Stage cost</th>
+<th align="right">Stage time</th>
+<th align="right">Admin</th>
+<th align="right">Commander Points</th>
+<th align="right">Recruitment bonus</th>
+<th align="right">Storage</th>
+<th align="right">Wall</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Palisades</td>
+<td align="right">1,000</td>
+<td align="right">5</td>
+<td align="right">15</td>
+<td align="right">+0</td>
+<td align="right">+50%</td>
+<td align="right">150</td>
+<td align="right">200</td>
+</tr>
+<tr>
+<td>Fortress</td>
+<td align="right">600</td>
+<td align="right">3</td>
+<td align="right">30</td>
+<td align="right">+1</td>
+<td align="right">+75%</td>
+<td align="right">750</td>
+<td align="right">500</td>
+</tr>
+<tr>
+<td>Castle</td>
+<td align="right">600</td>
+<td align="right">3</td>
+<td align="right">45</td>
+<td align="right">+1</td>
+<td align="right">+100%</td>
+<td align="right">2,500</td>
+<td align="right">1,000</td>
+</tr>
+<tr>
+<td>Citadel</td>
+<td align="right">600</td>
+<td align="right">3</td>
+<td align="right">60</td>
+<td align="right">+2</td>
+<td align="right">+125%</td>
+<td align="right">7,500</td>
+<td align="right">1,500</td>
+</tr>
+<tr>
+<td>Grand Citadel</td>
+<td align="right">1,000</td>
+<td align="right">5</td>
+<td align="right">70</td>
+<td align="right">+2</td>
+<td align="right">+150%</td>
+<td align="right">10,000</td>
+<td align="right">2,000</td>
+</tr>
+</tbody></table>
+<p>Statistics replace the previous stage rather than adding to it.</p>
+<p>The standard maximum is:</p>
+<ul>
+<li>Early Age: Fortress;</li>
+<li>Middle Age: Castle;</li>
+<li>Late Age: Citadel.</li>
+</ul>
+<p>Primitive and advanced national access can differ. Masons can construct one level above the ordinary national limit. A Grand Citadel requires Citadel access and a Mason.</p>
+<h2 id="b2-fort-valuation">Fort valuation<a class="heading-link" href="#b2-fort-valuation" aria-label="Link to Fort valuation">#</a></h2><p>A fort can create:</p>
+<ol>
+<li>full local resource use;</li>
+<li>adjacent resource draw;</li>
+<li>local income through Administration;</li>
+<li>Recruitment Point bonus;</li>
+<li>Commander Point bonus;</li>
+<li>regional supply;</li>
+<li>siege storage;</li>
+<li>wall integrity and protected interior;</li>
+<li>national recruitment access;</li>
+<li>a tax-trace anchor;</li>
+<li>a secure laboratory or temple location;</li>
+<li>a movement and reinforcement node.</li>
+</ol>
+<p>No single payback formula captures all twelve.</p>
+<h3 id="b2-fort-question-set">Fort question set<a class="heading-link" href="#b2-fort-question-set" aria-label="Link to Fort question set">#</a></h3><p>Before construction:</p>
+<ul>
+<li>Which units and commanders become recruitable?</li>
+<li>Which local pool will bind after the fort is complete?</li>
+<li>How many adjacent potential resources are eligible?</li>
+<li>Does another planned fort remove a major donor?</li>
+<li>What tax region will this fort anchor?</li>
+<li>What routes and provinces fall within supply range?</li>
+<li>How many turns until the first new mage or army leaves?</li>
+<li>Can the province be held during construction?</li>
+<li>Is the builder&#39;s command-turn scarce?</li>
+<li>What military force is delayed by the gold payment?</li>
+</ul>
+<h2 id="b2-laboratories">Laboratories<a class="heading-link" href="#b2-laboratories" aria-label="Link to Laboratories">#</a></h2><p>Official functions:</p>
+<ul>
+<li>permit Research;</li>
+<li>permit ritual casting;</li>
+<li>permit access to the national pool of gems, slaves, and items;</li>
+<li>serve as gem collection points;</li>
+<li>enable site functions that require a lab.</li>
+</ul>
+<p>Laboratories are strategic concentration points. Losing one can strand mages away from the national pool even when the nation still owns gems elsewhere.</p>
+<h3 id="b2-laboratory-risk">Laboratory risk<a class="heading-link" href="#b2-laboratory-risk" aria-label="Link to Laboratory risk">#</a></h3><p>A lab attracts:</p>
+<ul>
+<li>researchers;</li>
+<li>gems and slaves;</li>
+<li>forged items;</li>
+<li>ritual casters;</li>
+<li>valuable site recruits.</li>
+</ul>
+<p>The 600-gold structure can protect assets worth far more than its price. Defence should be based on the value concentrated there, not only the cost of replacing the laboratory.</p>
+<h2 id="b2-temples">Temples<a class="heading-link" href="#b2-temples" aria-label="Link to Temples">#</a></h2><p>Official functions:</p>
+<ul>
+<li>ordinary dominion spread for most nations;</li>
+<li>preaching bonus;</li>
+<li>Blood Sacrifice access where the nation allows it;</li>
+<li>religious and national mechanics tied to temple count or location.</li>
+</ul>
+<p>Only one temple can exist in a province. Capture destroys an enemy temple automatically.</p>
+<p>Temples belong fully to the dominion volume, but their economic effect begins here:</p>
+<ul>
+<li>they cost gold and sacred commander-time;</li>
+<li>maximum dominion and Holy Points can affect sacred throughput;</li>
+<li>temple loss can weaken recruitment, candles, preaching, and special national systems;</li>
+<li>temples in exposed provinces can be destroyed without a separate demolition delay.</li>
+</ul>
+<h1 id="b2-part-viii-siege-and-fort-control">Part VIII: Siege and Fort Control<a class="heading-link" href="#b2-part-viii-siege-and-fort-control" aria-label="Link to Part VIII: Siege and Fort Control">#</a></h1><h2 id="b2-province-exterior-and-fort-interior">Province exterior and fort interior<a class="heading-link" href="#b2-province-exterior-and-fort-interior" aria-label="Link to Province exterior and fort interior">#</a></h2><p>A besieged province can have divided control:</p>
+<ul>
+<li>the besieger controls the exterior;</li>
+<li>the defender retains the fort interior;</li>
+<li>armies, laboratories, temples, and recruitment must be interpreted by location and ownership rules rather than a single flag.</li>
+</ul>
+<p>This partial ownership affects:</p>
+<ul>
+<li>income and recruitment;</li>
+<li>movement and retreat;</li>
+<li>assassination and stealth;</li>
+<li>supply;</li>
+<li>siege contribution;</li>
+<li>the eventual reclaim-province step.</li>
+</ul>
+<h2 id="b2-reducing-walls">Reducing walls<a class="heading-link" href="#b2-reducing-walls" aria-label="Link to Reducing walls">#</a></h2><p>Official formulas:</p>
+<pre><code class="language-text">reduction strength = Strength squared
+repair strength = Strength squared / 2
+</code></pre>
+<p>Flying doubles both contributions.</p>
+<p>Repair penalties:</p>
+<ul>
+<li>Mindless: one-eighth of calculated value;</li>
+<li>Animal: half;</li>
+<li>Undisciplined: half.</li>
+</ul>
+<p>Only forces whose commanders remain on Maintain Siege contribute.</p>
+<h3 id="b2-squaring-rewards-strength">Squaring rewards strength<a class="heading-link" href="#b2-squaring-rewards-strength" aria-label="Link to Squaring rewards strength">#</a></h3><p>Strength-squared means one stronger unit can contribute more than several weaker units with the same total linear Strength.</p>
+<table>
+<thead>
+<tr>
+<th align="right">Strength</th>
+<th align="right">Reduction contribution</th>
+<th align="right">Base repair contribution</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">5</td>
+<td align="right">25</td>
+<td align="right">12.5</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">100</td>
+<td align="right">50</td>
+</tr>
+<tr>
+<td align="right">15</td>
+<td align="right">225</td>
+<td align="right">112.5</td>
+</tr>
+<tr>
+<td align="right">20</td>
+<td align="right">400</td>
+<td align="right">200</td>
+</tr>
+<tr>
+<td align="right">30</td>
+<td align="right">900</td>
+<td align="right">450</td>
+</tr>
+</tbody></table>
+<p>Flying doubles the result. Special siege abilities and modded values can further alter practical contribution.</p>
+<h3 id="b2-wall-resolution">Wall resolution<a class="heading-link" href="#b2-wall-resolution" aria-label="Link to Wall resolution">#</a></h3><p>Each turn:</p>
+<ul>
+<li>total reduction is compared with total repair;</li>
+<li>the difference damages or repairs wall integrity;</li>
+<li>repair cannot exceed original wall integrity;</li>
+<li>an unbesieged damaged fort fully restores.</li>
+</ul>
+<p>The defender receives exact wall information. The attacker normally receives a descriptive estimate, creating an information problem around the storm date.</p>
+<h2 id="b2-storm-timing">Storm timing<a class="heading-link" href="#b2-storm-timing" aria-label="Link to Storm timing">#</a></h2><p>A fort can be stormed only after wall integrity reaches zero and the next order phase presents the Storm Castle order.</p>
+<p>Storming resolves at step 27, after movement battles at step 26. This has several immediate consequences:</p>
+<ol>
+<li>a relieving army may arrive;</li>
+<li>the besiegers fight it first;</li>
+<li>surviving storm commanders and assigned troops attack the fort;</li>
+<li>a storm commander killed before the gate battle contributes no troops to the storm.</li>
+</ol>
+<p>Maintain Siege and Storm Castle are commander orders. A commander performing another action does not supply siege strength merely because it remains in the province.</p>
+<h2 id="b2-fort-defenders">Fort defenders<a class="heading-link" href="#b2-fort-defenders" aria-label="Link to Fort defenders">#</a></h2><p>Forts supply Castle Guards and Wall Defenders:</p>
+<ul>
+<li>their number depends on fort level;</li>
+<li>they replenish for each fight like PD;</li>
+<li>they add repair strength;</li>
+<li>Wall Defenders have unlimited ammunition, extra range, and wall protection;</li>
+<li>they are fort defence, not the same system as Province Defence.</li>
+</ul>
+<p>The shared word “defence” is a recurring source of confusion:</p>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Province Defence</td>
+<td>Gold-purchased local force attached to province control</td>
+</tr>
+<tr>
+<td>Wall integrity or fort Defence</td>
+<td>Damage required before storming</td>
+</tr>
+<tr>
+<td>Castle Guards and Wall Defenders</td>
+<td>Fort-generated troops in a storm battle</td>
+</tr>
+<tr>
+<td>Unit Defence skill</td>
+<td>Tactical chance to avoid melee attacks</td>
+</tr>
+</tbody></table>
+<h1 id="b2-part-ix-province-defence">Part IX: Province Defence<a class="heading-link" href="#b2-part-ix-province-defence" aria-label="Link to Part IX: Province Defence">#</a></h1><h2 id="b2-cost-curve">Cost curve<a class="heading-link" href="#b2-cost-curve" aria-label="Link to Cost curve">#</a></h2><p>The first point is free. Every later point costs its new level.</p>
+<pre><code class="language-text">total cost to PD n =
+  2 + 3 + ... + n
+  = n(n + 1)/2 - 1
+</code></pre>
+<table>
+<thead>
+<tr>
+<th align="right">PD</th>
+<th align="right">Total cost</th>
+<th align="right">Additional cost from prior listed row</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">14</td>
+<td align="right">14</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">20</td>
+<td align="right">6</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">54</td>
+<td align="right">34</td>
+</tr>
+<tr>
+<td align="right">15</td>
+<td align="right">119</td>
+<td align="right">65</td>
+</tr>
+<tr>
+<td align="right">20</td>
+<td align="right">209</td>
+<td align="right">90</td>
+</tr>
+<tr>
+<td align="right">25</td>
+<td align="right">324</td>
+<td align="right">115</td>
+</tr>
+<tr>
+<td align="right">30</td>
+<td align="right">464</td>
+<td align="right">140</td>
+</tr>
+<tr>
+<td align="right">40</td>
+<td align="right">819</td>
+<td align="right">355</td>
+</tr>
+<tr>
+<td align="right">50</td>
+<td align="right">1,274</td>
+<td align="right">455</td>
+</tr>
+<tr>
+<td align="right">100</td>
+<td align="right">5,049</td>
+<td align="right">3,775</td>
+</tr>
+</tbody></table>
+<p>The convex curve means “another ten PD” is not a consistent investment. Going from 1 to 10 costs 54; going from 40 to 50 costs 455.</p>
+<h2 id="b2-what-pd-provides">What PD provides<a class="heading-link" href="#b2-what-pd-provides" aria-label="Link to What PD provides">#</a></h2><p>Officially:</p>
+<ul>
+<li>level 1 provides a commander and troops;</li>
+<li>further levels add troops;</li>
+<li>level 20 adds new commander and troop types;</li>
+<li>additional benefits occur at 10, 15, and 20;</li>
+<li>every full 10 points reduces unrest by 1 per turn;</li>
+<li>stealth detection begins at 15;</li>
+<li>patrol strength is <code>PD - 14</code> from that point;</li>
+<li>maximum PD is 100;</li>
+<li>no upkeep is charged;</li>
+<li>the force fully returns after battle if the province is retained.</li>
+</ul>
+<p>The actual roster is national. One nation&#39;s PD may deter a raider that walks through another nation&#39;s equal investment.</p>
+<h2 id="b2-population-support-and-permanence">Population support and permanence<a class="heading-link" href="#b2-population-support-and-permanence" aria-label="Link to Population support and permanence">#</a></h2><p>Each PD point requires 10 population. Unsupported PD is reduced at hosting step 61.</p>
+<p>PD cannot be voluntarily lowered. It is reduced by:</p>
+<ul>
+<li>insufficient population;</li>
+<li>capture, which wipes it;</li>
+<li>disciple-game relinquishment, which removes 25%;</li>
+<li>special exceptions for some populationless nations.</li>
+</ul>
+<p>Because the spending is irreversible while control is retained, excessive PD can trap gold in the wrong place after a border moves.</p>
+<h2 id="b2-roles-of-pd">Roles of PD<a class="heading-link" href="#b2-roles-of-pd" aria-label="Link to Roles of PD">#</a></h2><h3 id="b2-raid-tax">Raid tax<a class="heading-link" href="#b2-raid-tax" aria-label="Link to Raid tax">#</a></h3><p>Low or moderate PD forces an attacker to bring a credible commander and force rather than a single opportunist.</p>
+<h3 id="b2-alarm-and-information">Alarm and information<a class="heading-link" href="#b2-alarm-and-information" aria-label="Link to Alarm and information">#</a></h3><p>A battle report reveals attacker composition, script, and direction. Even a losing PD force can improve the next decision.</p>
+<h3 id="b2-unrest-control">Unrest control<a class="heading-link" href="#b2-unrest-control" aria-label="Link to Unrest control">#</a></h3><p>Every ten points creates recurring unrest reduction, though buying PD solely for this purpose must be compared with a mobile patrol.</p>
+<h3 id="b2-stealth-detection">Stealth detection<a class="heading-link" href="#b2-stealth-detection" aria-label="Link to Stealth detection">#</a></h3><p>From 15 onward PD contributes patrol strength. Detection is not capture; the revealed stealth force may still win.</p>
+<h3 id="b2-battle-support">Battle support<a class="heading-link" href="#b2-battle-support" aria-label="Link to Battle support">#</a></h3><p>PD can combine with a local army, fort defenders, terrain, and battle magic. Its expendability can buy time for mages whose spells decide the fight.</p>
+<h2 id="b2-why-pd-is-not-an-army">Why PD is not an army<a class="heading-link" href="#b2-why-pd-is-not-an-army" aria-label="Link to Why PD is not an army">#</a></h2><p>PD:</p>
+<ul>
+<li>cannot move;</li>
+<li>cannot choose a different strategic target;</li>
+<li>cannot retreat into a future offensive;</li>
+<li>may have poor leadership, morale, equipment, or formation;</li>
+<li>scales in gold cost faster than it scales in quality;</li>
+<li>disappears on capture.</li>
+</ul>
+<p>High PD can still be correct at a throne, capital approach, blood centre, or mage concentration. The decision must price the attack it is intended to defeat.</p>
+<h3 id="b2-community-thresholds">Community thresholds<a class="heading-link" href="#b2-community-thresholds" aria-label="Link to Community thresholds">#</a></h3><p>Some guides recommend values such as 6 or 11 to prevent particular event outcomes or deter generic raiders. Such numbers are rules of thumb, not universal mechanics. Event pools, nation, mods, map settings, and attacker design can change the result.</p>
+<h1 id="b2-part-x-sites-gems-and-magical-capital">Part X: Sites, Gems, and Magical Capital<a class="heading-link" href="#b2-part-x-sites-gems-and-magical-capital" aria-label="Link to Part X: Sites, Gems, and Magical Capital">#</a></h1><h2 id="b2-site-frequency-and-terrain">Site frequency and terrain<a class="heading-link" href="#b2-site-frequency-and-terrain" aria-label="Link to Site frequency and terrain">#</a></h2><p>The main manual states that sites are more common in terrain such as:</p>
+<ul>
+<li>forests;</li>
+<li>wastes;</li>
+<li>deep seas;</li>
+<li>mountains and unusual cave terrain.</li>
+</ul>
+<p>They are less common in plains and farmlands.</p>
+<p>This is a probability, not a guarantee. Search planning should combine:</p>
+<ul>
+<li>terrain;</li>
+<li>path availability;</li>
+<li>prior searches;</li>
+<li>national site frequency;</li>
+<li>opportunity cost of the mage-turn;</li>
+<li>value of remote search spells;</li>
+<li>safety of the searching mage.</li>
+</ul>
+<h2 id="b2-search-difficulty">Search difficulty<a class="heading-link" href="#b2-search-difficulty" aria-label="Link to Search difficulty">#</a></h2><p>Hidden sites have difficulty 1 through 4. A mage manually searching a path finds sites in that path up to the mage&#39;s level. Path 4 is the highest ordinary requirement.</p>
+<p>Examples:</p>
+<ul>
+<li>N1 finds difficulty-1 Nature sites.</li>
+<li>N3 finds difficulty 1-3 Nature sites.</li>
+<li>N4 finds every Nature site detectable by ordinary path search.</li>
+<li>An N3 mage says nothing about Fire, Death, or Glamour sites.</li>
+</ul>
+<p>Remote path-search rituals reveal all sites of their path. Acashic Knowledge reveals all paths.</p>
+<h2 id="b2-site-benefits-and-harms">Site benefits and harms<a class="heading-link" href="#b2-site-benefits-and-harms" aria-label="Link to Site benefits and harms">#</a></h2><p>Sites may provide:</p>
+<ul>
+<li>monthly gems;</li>
+<li>gold;</li>
+<li>resources or supplies;</li>
+<li>units and commanders;</li>
+<li>laboratories, temples, forts, or discounts;</li>
+<li>rituals or enter-site orders;</li>
+<li>path bonuses;</li>
+<li>scale or dominion effects;</li>
+<li>unrest, disease, population loss, or other harms.</li>
+</ul>
+<p>A harmful undiscovered site can still operate. Discovery explains a problem; it does not necessarily create it.</p>
+<span class="anchor-alias" id="b2-recruitment-restrictions" aria-hidden="true"></span><h3 id="b2-ownership-and-national-recruitment">Ownership and national recruitment<a class="heading-link" href="#b2-ownership-and-national-recruitment" aria-label="Link to Ownership and national recruitment">#</a></h3><p>A captured site that recruits another nation&#39;s national unit does not normally grant that recruit to the conqueror. The conqueror can still collect the site&#39;s gem income where applicable.</p>
+<p>Some sites require a laboratory before recruitment or another function becomes available.</p>
+<h2 id="b2-gem-income-and-mage-turn-economy">Gem income and mage-turn economy<a class="heading-link" href="#b2-gem-income-and-mage-turn-economy" aria-label="Link to Gem income and mage-turn economy">#</a></h2><p>Gems accumulate nationally and can be converted into:</p>
+<ul>
+<li>rituals;</li>
+<li>summons;</li>
+<li>forged items;</li>
+<li>empowerment;</li>
+<li>battle magic;</li>
+<li>global enchantments;</li>
+<li>trades and diplomacy.</li>
+</ul>
+<p>The site-search decision has an expected-value structure:</p>
+<pre><code class="language-text">expected search value =
+  probability of discovery
+  x expected monthly and strategic value
+  x expected remaining turns
+  - mage-turn cost
+  - travel and risk
+</code></pre>
+<p>The formula is not intended to assign fake precision. It identifies the relevant terms. A single rare site can dominate the average, and information about a searched path has future value even when nothing is found.</p>
+<h3 id="b2-search-records">Search records<a class="heading-link" href="#b2-search-records" aria-label="Link to Search records">#</a></h3><p>Every serious game benefits from recording:</p>
+<ul>
+<li>province;</li>
+<li>terrain;</li>
+<li>path searched;</li>
+<li>manual or remote method;</li>
+<li>path level;</li>
+<li>discovered sites;</li>
+<li>remaining unsearched paths;</li>
+<li>laboratory requirement;</li>
+<li>hostile or passive effects.</li>
+</ul>
+<p>Without a record, mages repeat searches or leave valuable paths untouched.</p>
+<span class="anchor-alias" id="b2-blood-hunting" aria-hidden="true"></span><h1 id="b2-part-xi-blood-economy">Part XI: Blood Economy<a class="heading-link" href="#b2-part-xi-blood-economy" aria-label="Link to Part XI: Blood Economy">#</a></h1><h2 id="b2-blood-slaves-are-produced-not-passively-collected">Blood slaves are produced, not passively collected<a class="heading-link" href="#b2-blood-slaves-are-produced-not-passively-collected" aria-label="Link to Blood slaves are produced, not passively collected">#</a></h2><p>Blood magic substitutes an active extraction system for ordinary gem-site income. Blood Hunting consumes a commander order and damages the province through unrest and possible population loss or attacks.</p>
+<p>The economic chain is:</p>
+<pre><code class="language-text">blood mage-turns
+  + suitable population
+  + patrol strength
+  + dominion security
+  -&gt; blood slaves
+  -&gt; forging, rituals, summons, battle magic, and sacrifice
+</code></pre>
+<h2 id="b2-official-hunting-checks">Official hunting checks<a class="heading-link" href="#b2-official-hunting-checks" aria-label="Link to Official hunting checks">#</a></h2><p>The main manual gives:</p>
+<pre><code class="language-text">Blood check success =
+  10% + 30% x Blood level
+
+population check success =
+  population / 75 percent
+
+unrest failure chance =
+  unrest / 4 percent
+</code></pre>
+<p>All three must succeed.</p>
+<p>If they do:</p>
+<pre><code class="language-text">slaves = d6 + Blood level
+unrest gained = d(slaves x 3 + 4)
+</code></pre>
+<p>If any fails:</p>
+<pre><code class="language-text">slaves = 0
+unrest gained = d6 - 1
+</code></pre>
+<p>At 7,500 population, the population check reaches a nominal 100%. At Blood 3, the Blood check reaches a nominal 100%. Existing unrest can still cause failure.</p>
+<p>Site frequency changes average yield by 0.5 slaves for every five percentage points away from 50%.</p>
+<h2 id="b2-dominion-and-retaliation">Dominion and retaliation<a class="heading-link" href="#b2-dominion-and-retaliation" aria-label="Link to Dominion and retaliation">#</a></h2><p>Commoners may attack Blood Hunters. Strong friendly dominion makes the sacrifice appear religiously legitimate; the manual states that dominion 10 leaves almost no resistance.</p>
+<p>The risk extends beyond lost slaves:</p>
+<ul>
+<li>the hunter can be injured or killed;</li>
+<li>bodyguards consume gold, supply, and patrol capacity;</li>
+<li>a hidden enemy can exploit the concentration;</li>
+<li>hostile dominion can make a previously safe centre unstable.</li>
+</ul>
+<h2 id="b2-the-blood-province-cycle">The blood-province cycle<a class="heading-link" href="#b2-the-blood-province-cycle" aria-label="Link to The blood-province cycle">#</a></h2><p>A functioning centre balances:</p>
+<ol>
+<li>hunters create slaves and unrest;</li>
+<li>patrols remove unrest and detect hostile infiltrators;</li>
+<li>population and income absorb the damage;</li>
+<li>labs provide pool access and ritual logistics;</li>
+<li>forts or armies protect the investment;</li>
+<li>replacement hunters and patrollers sustain throughput.</li>
+</ol>
+<p>If patrol strength is insufficient, unrest reduces success, income, resources, and eventually recruitment. Adding more hunters can then reduce total output.</p>
+<h3 id="b2-rule-of-thumb-versus-rule">Rule of thumb versus rule<a class="heading-link" href="#b2-rule-of-thumb-versus-rule" aria-label="Link to Rule of thumb versus rule">#</a></h3><p>Community guides often estimate that roughly 25 patrol strength supports each Blood-3-equivalent hunter under ordinary conditions. This is a planning heuristic, not an official fixed ratio. Patrol efficiency, population loss, unrest, dominion, site frequency, hunter abilities, and national mechanics change the result.</p>
+<h2 id="b2-measuring-the-blood-economy">Measuring the blood economy<a class="heading-link" href="#b2-measuring-the-blood-economy" aria-label="Link to Measuring the blood economy">#</a></h2><p>Useful records:</p>
+<table>
+<thead>
+<tr>
+<th>Measure</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Slaves per hunter-turn</td>
+<td>Compares extraction efficiency</td>
+</tr>
+<tr>
+<td>Unrest before and after hosting</td>
+<td>Reveals patrol shortfall</td>
+</tr>
+<tr>
+<td>Population trend</td>
+<td>Detects hidden long-term collapse</td>
+</tr>
+<tr>
+<td>Lost research per month</td>
+<td>Prices mage-turn diversion</td>
+</tr>
+<tr>
+<td>Patrol gold and upkeep</td>
+<td>Prices support force</td>
+</tr>
+<tr>
+<td>Hunter and lab losses</td>
+<td>Prices security failures</td>
+</tr>
+<tr>
+<td>Slaves converted to effects</td>
+<td>Distinguishes stockpiling from power</td>
+</tr>
+</tbody></table>
+<p>The goal is not the largest slave count. It is the most decisive magical output produced without collapsing the rest of the state.</p>
+<h1 id="b2-part-xii-economic-timing-through-hosting">Part XII: Economic Timing Through Hosting<a class="heading-link" href="#b2-part-xii-economic-timing-through-hosting" aria-label="Link to Part XII: Economic Timing Through Hosting">#</a></h1><h2 id="b2-the-state-economy-chain">The state-economy chain<a class="heading-link" href="#b2-the-state-economy-chain" aria-label="Link to The state-economy chain">#</a></h2><p>The most important monthly sequence is:</p>
+<table>
+<thead>
+<tr>
+<th align="right">Step</th>
+<th>Event</th>
+<th>Economic reading</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">3</td>
+<td>Recruitment</td>
+<td>Existing infrastructure and local capacity create units first.</td>
+</tr>
+<tr>
+<td align="right">18</td>
+<td>Blood Hunting</td>
+<td>Slaves and hunting unrest are generated early.</td>
+</tr>
+<tr>
+<td align="right">24-27</td>
+<td>Movement, battles, storming</td>
+<td>Control and siege state change.</td>
+</tr>
+<tr>
+<td align="right">29-33</td>
+<td>Events and later battles</td>
+<td>Income provinces can still be altered.</td>
+</tr>
+<tr>
+<td align="right">35</td>
+<td>Construction</td>
+<td>New buildings become part of the end-state, too late for earlier production.</td>
+</tr>
+<tr>
+<td align="right">37</td>
+<td>Pillage</td>
+<td>Immediate population, unrest, and supply damage occurs.</td>
+</tr>
+<tr>
+<td align="right">38</td>
+<td>Income</td>
+<td>Collection uses the post-conquest, post-pillage state and tax trace.</td>
+</tr>
+<tr>
+<td align="right">39</td>
+<td>Unrest changes</td>
+<td>Patrolling, Order, and related adjustments primarily prepare next month.</td>
+</tr>
+<tr>
+<td align="right">40</td>
+<td>Starvation</td>
+<td>Armies acquire logistical penalties after battle.</td>
+</tr>
+<tr>
+<td align="right">41</td>
+<td>Upkeep</td>
+<td>Recurring military costs are charged after income.</td>
+</tr>
+<tr>
+<td align="right">42-44</td>
+<td>Dominion and site effects</td>
+<td>Longer-term provincial state changes arrive.</td>
+</tr>
+<tr>
+<td align="right">53-54</td>
+<td>Reclaim and conscription</td>
+<td>Late ownership correction and automatic PD prepare the next turn.</td>
+</tr>
+<tr>
+<td align="right">61</td>
+<td>Unsupported PD reduction</td>
+<td>Population-depleted provinces lose excess PD at the end.</td>
+</tr>
+</tbody></table>
+<h2 id="b2-worked-timing-cases">Worked timing cases<a class="heading-link" href="#b2-worked-timing-cases" aria-label="Link to Worked timing cases">#</a></h2><h3 id="b2-emergency-recruitment-under-attack">Emergency recruitment under attack<a class="heading-link" href="#b2-emergency-recruitment-under-attack" aria-label="Link to Emergency recruitment under attack">#</a></h3><ul>
+<li>Units are queued during the order phase.</li>
+<li>Recruitment resolves at step 3.</li>
+<li>An enemy army arrives and fights at step 26.</li>
+<li>The new units defend.</li>
+<li>They had no opportunity to receive a new strategic order.</li>
+</ul>
+<h3 id="b2-new-laboratory-under-invasion">New laboratory under invasion<a class="heading-link" href="#b2-new-laboratory-under-invasion" aria-label="Link to New laboratory under invasion">#</a></h3><ul>
+<li>A mage is ordered to build a lab.</li>
+<li>Research, forging, rituals, and battles all occur before step 35.</li>
+<li>The lab completes only if the builder and province still satisfy the construction result.</li>
+<li>Its practical magical use begins next order phase.</li>
+</ul>
+<h3 id="b2-pillage-before-collection">Pillage before collection<a class="heading-link" href="#b2-pillage-before-collection" aria-label="Link to Pillage before collection">#</a></h3><ul>
+<li>A province changes hands at step 26.</li>
+<li>The winner pillages at step 37 if the relevant order succeeds.</li>
+<li>Pillage damage occurs before income at step 38.</li>
+<li>The new owner may collect less than the pre-battle province panel suggested.</li>
+</ul>
+<h3 id="b2-patrol-after-income">Patrol after income<a class="heading-link" href="#b2-patrol-after-income" aria-label="Link to Patrol after income">#</a></h3><ul>
+<li>A Blood Hunt at step 18 raises unrest.</li>
+<li>Income is collected at step 38.</li>
+<li>Patrol and ordinary unrest alterations occur at step 39.</li>
+<li>The province may pay reduced income this month even if the patrol restores order moments later.</li>
+</ul>
+<h3 id="b2-siege-relief-before-storm">Siege relief before storm<a class="heading-link" href="#b2-siege-relief-before-storm" aria-label="Link to Siege relief before storm">#</a></h3><ul>
+<li>The wall was already at zero when orders were written.</li>
+<li>A relief army moves and battles at step 26.</li>
+<li>Surviving storm commanders attack at step 27.</li>
+<li>Defeating or killing them in the relief battle prevents or weakens the storm.</li>
+</ul>
+<h1 id="b2-part-xiii-strategic-frameworks">Part XIII: Strategic Frameworks<a class="heading-link" href="#b2-part-xiii-strategic-frameworks" aria-label="Link to Part XIII: Strategic Frameworks">#</a></h1><h2 id="b2-expansion-income-versus-expansion-burden">Expansion income versus expansion burden<a class="heading-link" href="#b2-expansion-income-versus-expansion-burden" aria-label="Link to Expansion income versus expansion burden">#</a></h2><p>A conquered province can provide:</p>
+<ul>
+<li>income;</li>
+<li>resources;</li>
+<li>Recruitment Points;</li>
+<li>supplies;</li>
+<li>independents;</li>
+<li>sites;</li>
+<li>tax trace;</li>
+<li>movement position.</li>
+</ul>
+<p>It also creates:</p>
+<ul>
+<li>a border to defend;</li>
+<li>unrest to manage;</li>
+<li>commander travel;</li>
+<li>potential tax isolation;</li>
+<li>a target for raids;</li>
+<li>a possible need for PD, patrol, lab, temple, or fort.</li>
+</ul>
+<p>The correct expansion measure is not provinces per turn alone. It is useful, connected, defensible economic mass acquired per loss and per commander-turn.</p>
+<h2 id="b2-infrastructure-tempo">Infrastructure tempo<a class="heading-link" href="#b2-infrastructure-tempo" aria-label="Link to Infrastructure tempo">#</a></h2><p>Infrastructure has a delay chain:</p>
+<pre><code class="language-text">decide and pay
+  -&gt; construction months
+  -&gt; completion at step 35
+  -&gt; next order phase
+  -&gt; first enabled recruitment or magical order
+  -&gt; travel to the war
+</code></pre>
+<p>A fort whose first mage reaches the front in twelve months belongs to a different strategic horizon than emergency troops recruited now.</p>
+<h3 id="b2-fort-now-test">Fort-now test<a class="heading-link" href="#b2-fort-now-test" aria-label="Link to Fort-now test">#</a></h3><p>Build when most of the following are true:</p>
+<ul>
+<li>the commander or troop roster is valuable;</li>
+<li>capacity will be used continuously;</li>
+<li>the location anchors tax or supply;</li>
+<li>the province can be defended through construction;</li>
+<li>the expected game horizon allows military conversion;</li>
+<li>no nearer timing attack requires the gold;</li>
+<li>resource geometry is favourable;</li>
+<li>the nation needs another mage or commander stream.</li>
+</ul>
+<p>Delay when:</p>
+<ul>
+<li>the war is decided before completion;</li>
+<li>the site cannot be held;</li>
+<li>the desired roster remains gold-limited elsewhere;</li>
+<li>adjacent forts remove most resource gain;</li>
+<li>the builder or gold has a more urgent conversion.</li>
+</ul>
+<h2 id="b2-mage-turn-accounting">Mage-turn accounting<a class="heading-link" href="#b2-mage-turn-accounting" aria-label="Link to Mage-turn accounting">#</a></h2><p>A mage can usually do one major strategic job per month:</p>
+<ul>
+<li>research;</li>
+<li>search;</li>
+<li>forge;</li>
+<li>cast a ritual;</li>
+<li>Blood Hunt;</li>
+<li>build a lab;</li>
+<li>move;</li>
+<li>participate in battle;</li>
+<li>perform a special order.</li>
+</ul>
+<p>The cost of a ritual is not limited to gems. It also includes:</p>
+<pre><code class="language-text">ritual cost =
+  gems
+  + caster-turn
+  + laboratory and position requirements
+  + risk
+  + research or other work displaced
+</code></pre>
+<p>This accounting becomes decisive for small mage corps and Blood nations.</p>
+<h2 id="b2-static-and-mobile-gold">Static and mobile gold<a class="heading-link" href="#b2-static-and-mobile-gold" aria-label="Link to Static and mobile gold">#</a></h2><p>Gold can become:</p>
+<ul>
+<li><strong>static power:</strong> PD, forts, temples, labs;</li>
+<li><strong>mobile power:</strong> troops, commanders, mercenaries;</li>
+<li><strong>productive power:</strong> mages, researchers, infrastructure;</li>
+<li><strong>religious power:</strong> temples, priests, sacred throughput;</li>
+<li><strong>insurance:</strong> treasury reserve.</li>
+</ul>
+<p>An efficient state carries a deliberate mix. Too much static power loses the field. Too much mobile power can lack replacement, research, and safe logistics. Too much productive power can die before repayment.</p>
+<h2 id="b2-denial-and-recovery">Denial and recovery<a class="heading-link" href="#b2-denial-and-recovery" aria-label="Link to Denial and recovery">#</a></h2><p>Economic warfare targets conversion rather than ownership alone.</p>
+<p>High-value actions include:</p>
+<ul>
+<li>cutting a tax trace;</li>
+<li>besieging a mage fort;</li>
+<li>raising unrest to 100;</li>
+<li>killing the patrols of a blood centre;</li>
+<li>taking a lab with stored items or positioned casters;</li>
+<li>forcing an army into poor supply;</li>
+<li>damaging population that supports PD and RP;</li>
+<li>building an adjacent fort that changes resource geometry;</li>
+<li>repeatedly raiding the same reconstruction corridor.</li>
+</ul>
+<p>Recovery priorities:</p>
+<ol>
+<li>restore tax trace and province control;</li>
+<li>prevent recruitment shutdown;</li>
+<li>preserve or rebuild irreplaceable mage production;</li>
+<li>feed armies and halt disease;</li>
+<li>reconnect labs and gem access;</li>
+<li>replace mobile defence before rebuilding luxury infrastructure.</li>
+</ol>
+<h1 id="b2-part-xiv-new-player-operational-guide">Part XIV: New-Player Operational Guide<a class="heading-link" href="#b2-part-xiv-new-player-operational-guide" aria-label="Link to Part XIV: New-Player Operational Guide">#</a></h1><h2 id="b2-first-turn-provincial-reading">First-turn provincial reading<a class="heading-link" href="#b2-first-turn-provincial-reading" aria-label="Link to First-turn provincial reading">#</a></h2><p>For each owned province:</p>
+<ol>
+<li>Read population, income, resources, supplies, unrest, terrain, and PD.</li>
+<li>Identify whether income has a valid fort trace.</li>
+<li>Check the recruit roster before buying infrastructure.</li>
+<li>Note site searches already completed.</li>
+<li>Compare the province&#39;s best role with its exposed position.</li>
+</ol>
+<h2 id="b2-recruitment-checklist">Recruitment checklist<a class="heading-link" href="#b2-recruitment-checklist" aria-label="Link to Recruitment checklist">#</a></h2><ul>
+<li>Is the unit recruitable here?</li>
+<li>Is gold available now?</li>
+<li>Are resources sufficient?</li>
+<li>Are Recruitment Points sufficient?</li>
+<li>Is a commander using the local Commander Point?</li>
+<li>Is the unit sacred or limited?</li>
+<li>Will unrest reach or remain at 100?</li>
+<li>Is the army&#39;s future supply sufficient?</li>
+<li>Is there leadership for the recruited troop type?</li>
+<li>Does the queue create a usable army package?</li>
+</ul>
+<h2 id="b2-army-logistics-checklist">Army logistics checklist<a class="heading-link" href="#b2-army-logistics-checklist" aria-label="Link to Army logistics checklist">#</a></h2><ul>
+<li>Current Supply Usage.</li>
+<li>Destination population and scales.</li>
+<li>Highest nearby fort contribution.</li>
+<li>Expected pillage or ownership change.</li>
+<li>Survival skills.</li>
+<li>Mounted and large-unit consumption.</li>
+<li>Existing Starving or disease conditions.</li>
+<li>Siege interior versus exterior.</li>
+<li>Retreat province supply.</li>
+</ul>
+<h2 id="b2-building-checklist">Building checklist<a class="heading-link" href="#b2-building-checklist" aria-label="Link to Building checklist">#</a></h2><ul>
+<li>Correct constructor type.</li>
+<li>Gold after recruitment and reserve.</li>
+<li>Completion date.</li>
+<li>Step-35 timing.</li>
+<li>Province security.</li>
+<li>Roster or magical function unlocked.</li>
+<li>Tax, supply, and resource geometry.</li>
+<li>Commander-turn cost.</li>
+</ul>
+<h2 id="b2-end-of-host-checklist">End-of-host checklist<a class="heading-link" href="#b2-end-of-host-checklist" aria-label="Link to End-of-host checklist">#</a></h2><ul>
+<li>Income and upkeep totals.</li>
+<li>Queued recruits.</li>
+<li>New unrest.</li>
+<li>Tax-trace breaks.</li>
+<li>Starving and diseased units.</li>
+<li>Fort wall and siege duration.</li>
+<li>New sites and lab requirements.</li>
+<li>Population losses.</li>
+<li>PD reductions.</li>
+<li>Empty or overloaded recruitment centres.</li>
+</ul>
+<span class="anchor-alias" id="b2-part-xv-mathematical-reference" aria-hidden="true"></span><h1 id="b2-part-xv-expert-diagnostics">Part XV: Expert Diagnostics<a class="heading-link" href="#b2-part-xv-expert-diagnostics" aria-label="Link to Part XV: Expert Diagnostics">#</a></h1><h2 id="b2-warning-indicators">Warning indicators<a class="heading-link" href="#b2-warning-indicators" aria-label="Link to Warning indicators">#</a></h2><table>
+<thead>
+<tr>
+<th>Indicator</th>
+<th>Likely problem</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Large treasury, weak army</td>
+<td>Local capacity, commander throughput, logistics, or delayed conversion</td>
+</tr>
+<tr>
+<td>Resources unused every month</td>
+<td>RP, gold, Holy limit, or unsuitable roster</td>
+</tr>
+<tr>
+<td>RP unused every month</td>
+<td>Resources, sacred cap, or recruit-mix problem</td>
+</tr>
+<tr>
+<td>Mages available but research stagnant</td>
+<td>Movement, searching, forging, hunting, combat, or lab denial</td>
+</tr>
+<tr>
+<td>Income drops without province loss</td>
+<td>Tax trace, unrest, scales, dominion, event, or Administration change</td>
+</tr>
+<tr>
+<td>Blood output falls as hunters increase</td>
+<td>Unrest and patrol saturation</td>
+</tr>
+<tr>
+<td>Armies win then decay</td>
+<td>Supply debt and disease</td>
+</tr>
+<tr>
+<td>Fort never produces enough</td>
+<td>Wrong roster, resource geometry, gold shortage, Commander Points, exposure</td>
+</tr>
+<tr>
+<td>High PD still loses</td>
+<td>National roster, magic, morale, raider design, or convex overinvestment</td>
+</tr>
+<tr>
+<td>Siege stalls unexpectedly</td>
+<td>Commanders left Maintain Siege, defender repair, strength composition, relief activity</td>
+</tr>
+</tbody></table>
+<h2 id="b2-ratios-worth-recording">Ratios worth recording<a class="heading-link" href="#b2-ratios-worth-recording" aria-label="Link to Ratios worth recording">#</a></h2><p>No ratio is universal, but consistent tracking reveals a nation&#39;s own failure modes.</p>
+<ul>
+<li>upkeep as a percentage of gross income;</li>
+<li>unspent resources and RP at major forts;</li>
+<li>commander slots used per turn;</li>
+<li>research per mage-turn;</li>
+<li>gems converted per month;</li>
+<li>slave yield per hunter-turn;</li>
+<li>unrest change per blood centre;</li>
+<li>turns from fort payment to first useful output;</li>
+<li>gold lost to disconnected tax regions;</li>
+<li>mobile army value versus static PD spending;</li>
+<li>siege reduction per supplied unit.</li>
+</ul>
+<h2 id="b2-decision-ledger">Decision ledger<a class="heading-link" href="#b2-decision-ledger" aria-label="Link to Decision ledger">#</a></h2><p>For major investments, record:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Example question</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Goal</td>
+<td>What military or magical capability is being created?</td>
+</tr>
+<tr>
+<td>Cost</td>
+<td>Gold, gems, mage-turns, commander-turns, upkeep</td>
+</tr>
+<tr>
+<td>Bottleneck</td>
+<td>Which local or national pool limits output?</td>
+</tr>
+<tr>
+<td>Completion</td>
+<td>When does the first useful effect occur?</td>
+</tr>
+<tr>
+<td>Risk</td>
+<td>What raid, siege, assassination, or diplomacy can interrupt it?</td>
+</tr>
+<tr>
+<td>Alternative</td>
+<td>What is the best use of the same resources?</td>
+</tr>
+<tr>
+<td>Exit</td>
+<td>Can the investment be repurposed if the front changes?</td>
+</tr>
+</tbody></table>
+<p>This turns economic planning into falsifiable reasoning rather than habit.</p>
+<h1 id="b2-part-xvi-modded-economy">Part XVI: Modded Economy<a class="heading-link" href="#b2-part-xvi-modded-economy" aria-label="Link to Part XVI: Modded Economy">#</a></h1><h2 id="b2-read-the-global-layer-once">Read the global layer once<a class="heading-link" href="#b2-read-the-global-layer-once" aria-label="Link to Read the global layer once">#</a></h2><p>Book IX, Section 7 is the authoritative table for DE&#39;s six global commands. It records the exact source values, their vanilla defaults, and the result under the frozen load order. The Turn and Economy Quick Reference repeats only the final values because they are needed during play.</p>
+<p>The economic consequence is straightforward. DE changes the income weight of Order/Turmoil, Productivity/Sloth, and Growth/Death; changes monthly population movement under Growth and Death; and strengthens the event-frequency effect of Fortune and Misfortune. Divinitus does not later redefine those globals.</p>
+<h2 id="b2-local-changes-still-decide-the-real-economy">Local changes still decide the real economy<a class="heading-link" href="#b2-local-changes-still-decide-the-real-economy" aria-label="Link to Local changes still decide the real economy">#</a></h2><p>The global layer is only the starting point. The two mods also alter unit costs and upkeep, recruitment limits, sites, event income, supplies, forts, temples, research output, gem flow, and national mechanics. Those changes belong to the final object or nation, not to a universal economy formula.</p>
+<p>Accordingly, a modded economic claim needs a ruleset label and an object boundary. &quot;Growth is worth more under DE&quot; is a global statement. &quot;This fort produces more useful mages&quot; requires the final national roster, costs, site access, and any Divinitus event layer. Book IX and the machine-readable catalogue provide that source record; nation dossiers provide the strategic application.</p>
+<h1 id="b2-part-xvii-contradictions-and-controlled-tests">Part XVII: Contradictions and Controlled Tests<a class="heading-link" href="#b2-part-xvii-contradictions-and-controlled-tests" aria-label="Link to Part XVII: Contradictions and Controlled Tests">#</a></h1><h2 id="b2-known-documentary-conflicts">Known documentary conflicts<a class="heading-link" href="#b2-known-documentary-conflicts" aria-label="Link to Known documentary conflicts">#</a></h2><h3 id="b2-growth-and-death-income">Growth and Death income<a class="heading-link" href="#b2-growth-and-death-income" aria-label="Link to Growth and Death income">#</a></h3><ul>
+<li>Main manual revision 2: 1% income per step.</li>
+<li>Modding Manual 6.34: default <code>#deathincome 2</code>.</li>
+<li>Official announcements through 6.36: no later change to the general default.</li>
+</ul>
+<p><strong>Publication state:</strong> resolved for unmodded 6.36 at 2% per step. The newer explicit official default supersedes the older table entry. DE 2.16 independently pins the same income value.</p>
+<h3 id="b2-order-and-turmoil-resources">Order and Turmoil resources<a class="heading-link" href="#b2-order-and-turmoil-resources" aria-label="Link to Order and Turmoil resources">#</a></h3><ul>
+<li>Main manual revision 2: 2% resources per step.</li>
+<li>Official announcements through 6.36: no general change to this scale effect.</li>
+<li>Unsourced or historical three-percent tables do not override the official value.</li>
+</ul>
+<p><strong>Publication state:</strong> resolved for the unmodded 6.36 publication baseline at 2% per step. Integer rounding remains part of the separate R-008 question.</p>
+<span class="anchor-alias" id="b2-fort-supply-range" aria-hidden="true"></span><h3 id="b2-fort-supply-distance">Fort supply distance<a class="heading-link" href="#b2-fort-supply-distance" aria-label="Link to Fort supply distance">#</a></h3><ul>
+<li>Main-manual formula: <code>(Administration x 6)/(Distance + 1)</code>.</li>
+<li>Printed multiplier table: 400%, 200%, 133%, 100%, 80%, equivalent to a multiplier of four.</li>
+<li>Worked example: Administration 30, described as three provinces away, adds 30 and agrees with the table.</li>
+<li>Adjacent example: Administration 50 adds 150 and agrees with the multiplier-of-six formula.</li>
+</ul>
+<p><strong>Publication state:</strong> internally inconsistent. The current community reference follows the multiplier-of-six formula, but a versioned reproduction at distances zero through four is still required.</p>
+<h3 id="b2-recruitment-points-2">Recruitment Points<a class="heading-link" href="#b2-recruitment-points-2" aria-label="Link to Recruitment Points">#</a></h3><ul>
+<li>Revision-2 main manual: base 20 and five listed bands.</li>
+<li>Older community reference: different base and bands.</li>
+</ul>
+<p><strong>Publication state:</strong> revision-2 formula wins; verify rounding only.</p>
+<h3 id="b2-pd-15-patrol-strength-wording">PD 15 patrol strength wording<a class="heading-link" href="#b2-pd-15-patrol-strength-wording" aria-label="Link to PD 15 patrol strength wording">#</a></h3><p>The manual says detection starts at 15 and that each point “above 15” adds one patrol strength, then gives PD 25 as patrol strength 11. The example corresponds to <code>PD - 14</code>, counting level 15 as one.</p>
+<p><strong>Publication state:</strong> use the numerical example and formula <code>PD - 14</code>; note wording discrepancy.</p>
+<h2 id="b2-controlled-test-programme">Controlled-test programme<a class="heading-link" href="#b2-controlled-test-programme" aria-label="Link to Controlled-test programme">#</a></h2><h3 id="b2-test-e1-scale-income-matrix">Test E1: scale-income matrix<a class="heading-link" href="#b2-test-e1-scale-income-matrix" aria-label="Link to Test E1: scale-income matrix">#</a></h3><p>Create identical provinces under every Order/Turmoil, Productivity/Sloth, temperature, and Growth/Death value. Record:</p>
+<ul>
+<li>population;</li>
+<li>fort Administration;</li>
+<li>unrest;</li>
+<li>displayed income;</li>
+<li>treasury change;</li>
+<li>rounding.</li>
+</ul>
+<p>Run unmodded and the frozen combined mod set.</p>
+<h3 id="b2-test-e2-resource-matrix">Test E2: resource matrix<a class="heading-link" href="#b2-test-e2-resource-matrix" aria-label="Link to Test E2: resource matrix">#</a></h3><p>Use a fixed terrain and resource value. Vary:</p>
+<ul>
+<li>Order/Turmoil;</li>
+<li>Productivity/Sloth;</li>
+<li>unrest;</li>
+<li>fort stage;</li>
+<li>adjacent fort;</li>
+<li>shared resource donor;</li>
+<li>enemy ownership;</li>
+<li>land/sea boundary.</li>
+</ul>
+<p>Record potential, displayed, spendable, and queue behaviour.</p>
+<h3 id="b2-test-e3-recruitment-point-boundaries">Test E3: Recruitment Point boundaries<a class="heading-link" href="#b2-test-e3-recruitment-point-boundaries" aria-label="Link to Test E3: Recruitment Point boundaries">#</a></h3><p>Test population immediately below, at, and above:</p>
+<ul>
+<li>5,000;</li>
+<li>10,000;</li>
+<li>20,000;</li>
+<li>40,000.</li>
+</ul>
+<p>Apply every fort bonus and Order/Turmoil step. Determine each rounding stage.</p>
+<h3 id="b2-test-e4-commander-and-holy-points">Test E4: Commander and Holy Points<a class="heading-link" href="#b2-test-e4-commander-and-holy-points" aria-label="Link to Test E4: Commander and Holy Points">#</a></h3><p>The ordinary base and fort ladder are now closed. The remaining test should isolate exceptional interaction. Record unfortified and each standard fort stage, then vary:</p>
+<ul>
+<li>one-, two-, three-, and four-point commanders;</li>
+<li><code>#slowrec</code> and an explicit <code>#rpcost</code> test object;</li>
+<li>site recruitment without changing the fort;</li>
+<li>unrest immediately around every visible Commander Point loss;</li>
+<li>sacred queues;</li>
+<li>temple and maximum-dominion changes.</li>
+</ul>
+<p>The baseline prediction is one point plus the current fort bonus. AI difficulty must not alter Commander Points or Holy Points.</p>
+<h3 id="b2-test-e5-upkeep">Test E5: upkeep<a class="heading-link" href="#b2-test-e5-upkeep" aria-label="Link to Test E5: upkeep">#</a></h3><p>Use units with:</p>
+<ul>
+<li>ordinary gold recruitment;</li>
+<li>Sacred;</li>
+<li>Slave;</li>
+<li>Sacred and Slave;</li>
+<li>rider and mount;</li>
+<li>summons;</li>
+<li><code>#addupkeep</code>.</li>
+</ul>
+<p>Compare the detailed annual display, monthly treasury charge, and base object costs. The 6.33 published observation already predicts divisor 60 for Sacred Slaves and separate rider/mount bases. Concentrate the new test on:</p>
+<ul>
+<li>monthly fractional aggregation;</li>
+<li>a Slave rider with an ordinary mount;</li>
+<li>a Sacred rider with an ordinary mount;</li>
+<li>a pair where both components are Sacred;</li>
+<li>voluntary, battle-only, seasonal, and death transformations;</li>
+<li>whether <code>#addupkeep</code> follows the active or persistent form.</li>
+</ul>
+<h3 id="b2-test-e6-supply-distance">Test E6: supply distance<a class="heading-link" href="#b2-test-e6-supply-distance" aria-label="Link to Test E6: supply distance">#</a></h3><p>Place an Administration-known fort at each distance zero through four from a fixed province. Remove population supply where possible. Record displayed and consumed supply. Repeat with two forts in range.</p>
+<h3 id="b2-test-e7-starvation">Test E7: starvation<a class="heading-link" href="#b2-test-e7-starvation" aria-label="Link to Test E7: starvation">#</a></h3><p>Test:</p>
+<ul>
+<li>troops and commanders;</li>
+<li>survival skills;</li>
+<li>animals;</li>
+<li>mounts;</li>
+<li>Need Not Eat with zero usage;</li>
+<li>Need Not Eat combined with Appetite or negative supply production;</li>
+<li>transformation into a non-eating form and back;</li>
+<li>existing Starving;</li>
+<li>siege interior;</li>
+<li>restoration of supply.</li>
+</ul>
+<p>Record selection priority, Supply Usage, Starving, morale, disease, and recovery. Separate “fed first” from “cannot be selected.”</p>
+<h3 id="b2-test-e8-unrest-resolution">Test E8: unrest resolution<a class="heading-link" href="#b2-test-e8-unrest-resolution" aria-label="Link to Test E8: unrest resolution">#</a></h3><p>Vary:</p>
+<ul>
+<li>candles;</li>
+<li>Order/Turmoil;</li>
+<li>PD;</li>
+<li>patrol strength;</li>
+<li>population;</li>
+<li>Blood Hunters.</li>
+</ul>
+<p>Record income, resources, RP, Commander Points, recruitment eligibility, and end-turn unrest.</p>
+<p>For Commander Points, test every unrest integer around the first and second visible loss from ordinary pools of one, two, and three. The purpose is to distinguish rounding of the reduction from rounding of the remaining capacity.</p>
+<h3 id="b2-test-e9-construction-timing">Test E9: construction timing<a class="heading-link" href="#b2-test-e9-construction-timing" aria-label="Link to Test E9: construction timing">#</a></h3><p>Complete a lab, temple, and fort during threatened turns. Verify:</p>
+<ul>
+<li>research;</li>
+<li>ritual and forging access;</li>
+<li>preaching;</li>
+<li>recruitment;</li>
+<li>fort protection;</li>
+<li>tax trace and Administration income;</li>
+<li>demolition edge cases.</li>
+</ul>
+<h3 id="b2-test-e10-siege-contribution">Test E10: siege contribution<a class="heading-link" href="#b2-test-e10-siege-contribution" aria-label="Link to Test E10: siege contribution">#</a></h3><p>Vary Strength, Flying, Mindless, Animal, Undisciplined, siege abilities, and commander orders. Record exact wall changes from both sides.</p>
+<h2 id="b2-test-record-format">Test record format<a class="heading-link" href="#b2-test-record-format" aria-label="Link to Test record format">#</a></h2><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Required entry</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Test ID</td>
+<td>Stable identifier such as E6-03</td>
+</tr>
+<tr>
+<td>Game version</td>
+<td>Exact patch</td>
+</tr>
+<tr>
+<td>Ruleset</td>
+<td>Unmodded or exact mod list and order</td>
+</tr>
+<tr>
+<td>Map and province</td>
+<td>Reproducible setup</td>
+</tr>
+<tr>
+<td>Starting state</td>
+<td>Population, scales, unrest, buildings, units</td>
+</tr>
+<tr>
+<td>Orders</td>
+<td>Every relevant order</td>
+</tr>
+<tr>
+<td>Prediction</td>
+<td>Formula and expected result</td>
+</tr>
+<tr>
+<td>Observation</td>
+<td>Interface, message, treasury, battle, or wall result</td>
+</tr>
+<tr>
+<td>Repetitions</td>
+<td>Count and variation</td>
+</tr>
+<tr>
+<td>Conclusion</td>
+<td>Supported, contradicted, or unresolved</td>
+</tr>
+<tr>
+<td>Artifacts</td>
+<td>Save, turn file, screenshot, source diff</td>
+</tr>
+</tbody></table>
+<h1 id="b2-part-xviii-essays">Part XVIII: Essays<a class="heading-link" href="#b2-part-xviii-essays" aria-label="Link to Part XVIII: Essays">#</a></h1><h2 id="b2-essay-i-the-economics-of-forts-and-mages">Essay I: The Economics of Forts and Mages<a class="heading-link" href="#b2-essay-i-the-economics-of-forts-and-mages" aria-label="Link to Essay I: The Economics of Forts and Mages">#</a></h2><p>A fort is often evaluated as if it were a bank: pay gold now, receive additional income later, and ask how many turns are needed to break even. That calculation is useful only as a lower bound. A Dominions fort is simultaneously an industrial concentrator, recruitment licence, tax office, supply depot, laboratory shelter, siege obstacle, and movement node.</p>
+<p>Its most valuable output is frequently a commander slot. A nation whose power depends on mages does not become stronger merely because the treasury grows. Gold must pass through a fort&#39;s Commander Points and national roster before it becomes research or battlefield magic. If the existing forts already consume every commander slot, the marginal value of another fort can exceed its Administration income by an order of magnitude.</p>
+<p>The opposite error is to treat every possible mage fort as mandatory. A fort begun during an immediate war may not produce its first useful mage until after the decisive campaign. Construction takes months, resolves late in hosting, and then begins a sequence of recruitment and travel. The gold and builder are absent from the present front throughout that delay.</p>
+<p>The correct question is not whether forts are economically efficient in the abstract. It is whether this fort converts current resources into the capability needed at the time and place it will matter. A safe high-resource province with valuable mages, strong tax geometry, and central supply position may justify investment without a short cash payback. An exposed province with redundant recruits and poor donors may not justify even a superficially attractive income bonus.</p>
+<p>Fort networks also shape one another. Adjacent fortified provinces stop donating resources to each other, while a shared unfortified donor can feed both. Dense forts provide more mage streams and protection but may reduce the resource concentration required for elite troops. The best geometry is national: mage-heavy nations often favour more production centres than resource-hungry troop nations can fully equip.</p>
+<p>A fort is a promise about future conversion. Its value depends on whether the nation can keep that promise.</p>
+<h2 id="b2-essay-ii-population-is-strategic-capital">Essay II: Population Is Strategic Capital<a class="heading-link" href="#b2-essay-ii-population-is-strategic-capital" aria-label="Link to Essay II: Population Is Strategic Capital">#</a></h2><p>Population looks passive. It sits in a province and produces a little gold each month, but it also supports income, Recruitment Points, supplies, and PD. Damaging it can strike the treasury, troop throughput, army logistics, and static defence at the same time.</p>
+<p>This makes population loss qualitatively different from an ordinary expense. Gold spent can be earned again from an intact economy. Population destroyed by pillage, patrolling, Death, Blood Hunting, or hostile effects reduces the machinery that would have produced future gold and capacity.</p>
+<p>The value is nevertheless not uniform. The first population bands contribute more Recruitment Points and supplies per inhabitant than later bands. A small province can lose its ability to support meaningful PD quickly, while a huge farm province may retain considerable capacity after the same absolute loss. Terrain, dominion stability, game length, and national mechanics all change the horizon.</p>
+<p>Blood magic demonstrates the tension most clearly. A Blood nation converts population and mage-turns into slaves, then converts slaves into effects that may dwarf the foregone income. Refusing all population damage would misunderstand the nation&#39;s power. Ignoring the damage would eventually shut down recruitment and tax collection. Mastery lies in choosing which provinces become extraction zones, supporting them with patrols, and spending the slaves quickly enough that the sacrifice becomes strategic advantage.</p>
+<p>Population is capital with a location and a lifespan. It is most valuable when connected, protected, and given enough time to grow. It is expendable only when the return arrives before the loss matters.</p>
+<h2 id="b2-essay-iii-the-hidden-price-of-static-defence">Essay III: The Hidden Price of Static Defence<a class="heading-link" href="#b2-essay-iii-the-hidden-price-of-static-defence" aria-label="Link to Essay III: The Hidden Price of Static Defence">#</a></h2><p>Province Defence is attractive because it has no upkeep, restores after successful battles, and requires no commander management. Those strengths conceal a convex cost curve and absolute immobility.</p>
+<p>The first points are cheap. They tax careless raids, generate reports, and can combine with a real army. Later points become dramatically more expensive while remaining tied to one province. The gold that raises PD from 40 to 50 could fund several commanders, a laboratory, or a significant mobile force. Once purchased, PD cannot voluntarily be recovered or moved.</p>
+<p>This does not make high PD irrational. A capital approach, Throne, blood centre, or mage fort can have enough concentrated value that static defence is exactly correct. National PD rosters also vary wildly. Battlefield magic can make disposable bodies valuable, and the need to force an attacker into a full army can protect an entire region.</p>
+<p>The mistake is to value PD by the number alone. Its return is the attack it prevents, delays, reveals, or defeats. If no plausible enemy force is affected, the investment is decorative. If the attacker must reveal a major army, consume gems, or delay a campaign, even losing PD may have succeeded.</p>
+<p>Static defence buys local certainty. Mobile armies buy choices. A healthy state knows which one the province requires.</p>
+<h2 id="b2-essay-iv-logistics-after-victory">Essay IV: Logistics After Victory<a class="heading-link" href="#b2-essay-iv-logistics-after-victory" aria-label="Link to Essay IV: Logistics After Victory">#</a></h2><p>The most dangerous logistical moment often comes after a successful battle. The army has moved into hostile terrain, the province may be pillaged or depopulated, the fort may still belong to the enemy, and the new supply state is easy to overlook because the battle report is positive.</p>
+<p>Starvation resolves after battle. That timing allows an army to win first and acquire its -4 morale penalty afterward. The next turn begins with a force that looks victorious but may already carry Starving, disease risk, damaged units, and an uncertain retreat path. If the next battle follows immediately, the logistical debt becomes tactical collapse.</p>
+<p>Fort supply projection and siege storage are separate. A nearby high-Administration fort can sustain provinces outside its walls, but a besieged garrison consumes a declining fraction of interior storage. A large relieving army may also worsen local supply even while saving the fort.</p>
+<p>Operational planning needs to extend one turn beyond contact. Before an attack, calculate the destination&#39;s supply under the state expected after conquest, not the state currently shown. Include temperature, Growth or Death, population damage, mounts, animals, large units, and the possibility that the enemy fort remains.</p>
+<p>Winning the battle secures a position. Supplying the survivors converts it into a campaign.</p>
+<h2 id="b2-essay-v-unrest-as-administrative-warfare">Essay V: Unrest as Administrative Warfare<a class="heading-link" href="#b2-essay-v-unrest-as-administrative-warfare" aria-label="Link to Essay V: Unrest as Administrative Warfare">#</a></h2><p>Unrest is often treated as a local nuisance to be patrolled away. Its actual effect is to attack the conversion machinery of a province.</p>
+<p>The income formula loses one-third of output by unrest 25 and half by unrest 50. Resources decline more slowly, but at unrest 100 recruitment stops completely. Blood Hunting becomes less reliable, patrolling becomes harder, and community evidence suggests local recruitment capacities may also fall continuously.</p>
+<p>Because unrest alteration normally occurs after income, restoration has a one-month lag. A province can be pacified at step 39 only after paying reduced income at step 38. Reaching recruitment shutdown is worse: step-39 recovery cannot retroactively restore recruitment that already failed at step 3.</p>
+<p>This makes unrest a weapon against fortified production. Walls do not prevent spies, sites, spells, hunting mistakes, or some globals from degrading the province. A high-value fort at 100 unrest can retain its physical infrastructure while losing the reason it was built.</p>
+<p>Administratively resilient nations do more than patrol after the damage. They keep baseline unrest low, maintain spare patrol capacity, protect Blood centres, identify hostile infiltrators, and avoid placing every economic function in the same vulnerable province.</p>
+<h2 id="b2-essay-vi-conversion-not-accumulation">Essay VI: Conversion, Not Accumulation<a class="heading-link" href="#b2-essay-vi-conversion-not-accumulation" aria-label="Link to Essay VI: Conversion, Not Accumulation">#</a></h2><p>A full treasury and gem stockpile create options, but they do not fight. A large research total creates spell access, but access does not script a mage or supply the gems. A broad empire creates potential income, but disconnected provinces may collect nothing. Dominions rewards stockpiling only when a later conversion justifies the delay.</p>
+<p>Every stored resource should have a plausible route:</p>
+<ul>
+<li>gold to commander and troop production;</li>
+<li>gems to a research breakpoint, item, ritual, or battlefield package;</li>
+<li>blood slaves to a defined Blood power;</li>
+<li>population and safe time to infrastructure;</li>
+<li>information to a movement, diplomacy, or scripting decision.</li>
+</ul>
+<p>Premature conversion is also dangerous. Troops create upkeep, gems carried into battle can be lost, and a fort begun too early can remove the army needed to defend it. The central skill is timing: retain flexibility until the strategic question is clear, then convert fast enough to decide it.</p>
+<p>The pinnacle of economic play is not owning the largest numbers. It is reaching the decisive battlefield, ritual, or Throne state with the right power one turn before the opponent.</p>
+<h2 id="b2-essay-vii-the-month-hidden-inside-a-single-point">Essay VII: The Month Hidden Inside a Single Point<a class="heading-link" href="#b2-essay-vii-the-month-hidden-inside-a-single-point" aria-label="Link to Essay VII: The Month Hidden Inside a Single Point">#</a></h2><p>Dominions displays most of its economy as integers, which makes one point look trivial. At a production boundary, one point can be an entire month.</p>
+<p>Commander Points are the clearest case. A two-point mage in a two-point fort appears every month. Reduce the usable pool to one and the same mage appears every second month. Nothing on the mage card has changed: not price, paths, Research Points, or battlefield value. Yet a twelve-month plan has fallen from twelve mages to six. The missing point is not one unit of capacity; it is half the production stream.</p>
+<p>Recruitment Points can behave similarly when a queue sits just above the local total. One missing point may delay a complete army package, strand unused resources, and postpone expansion or a relief force. A single point of supply can decide whether another unit enters the starvation selection pool. A single point of income can determine whether the treasury pays every component of a mounted army without desertion risk.</p>
+<p>This is why exact rounding matters, but also why false precision is dangerous. A spreadsheet can calculate decimals the engine never exposes and place the apparent total on the favourable side of a boundary. If the internal rounding stage is unknown, more decimal places do not create more knowledge.</p>
+<p>The practical response is to plan in layers. Use the official formula for direction, the current interface for the operative integer, and a reserve when one point controls a deadline. Record the boundary if it repeats often enough to matter. A reliable player does not need every hidden rounding rule memorised; a reliable player knows when an unverified rounding rule is carrying the entire plan.</p>
+<h1 id="b2-part-xix-sources-and-open-questions">Part XIX: Sources and Open Questions<a class="heading-link" href="#b2-part-xix-sources-and-open-questions" aria-label="Link to Part XIX: Sources and Open Questions">#</a></h1><h2 id="b2-primary-official-sources">Primary official sources<a class="heading-link" href="#b2-primary-official-sources" aria-label="Link to Primary official sources">#</a></h2><ul>
+<li><a href="https://www.illwinter.com/dom6/docs.html" target="_blank" rel="noreferrer">Dominions 6 documentation</a></li>
+<li><a href="https://www.illwinter.com/dom6/dom6manual.pdf" target="_blank" rel="noreferrer">Dominions 6 Manual</a>, revision 2</li>
+<li><a href="https://www.illwinter.com/dom6/dom6modman.pdf" target="_blank" rel="noreferrer">Dominions 6 Modding Manual</a>, version 6.34</li>
+<li><a href="https://www.illwinter.com/dom6/changes.html" target="_blank" rel="noreferrer">Dominions 6 official changes</a></li>
+<li><a href="https://www.illwinter.com/" target="_blank" rel="noreferrer">Illwinter home and current release record</a></li>
+</ul>
+<p>Principal manual sections:</p>
+<ul>
+<li>Province attributes and economy, pages 21-29.</li>
+<li>Strategic orders, especially Blood Hunting, sieges, construction, demolition, pillage, and raids, pages 50-54.</li>
+<li>Turn resolution, pages 55-57.</li>
+<li>Sieges and storming, pages 71-72.</li>
+<li>Dominion scales and extreme scales in the Dominion chapter.</li>
+</ul>
+<h2 id="b2-community-sources-used-as-leads">Community sources used as leads<a class="heading-link" href="#b2-community-sources-used-as-leads" aria-label="Link to Community sources used as leads">#</a></h2><ul>
+<li><a href="https://illwiki.com/dom5/dom6/commander" target="_blank" rel="noreferrer">Current Commander Point reference</a></li>
+<li><a href="https://illwiki.com/dom5/dom6/unrest" target="_blank" rel="noreferrer">Illwiki unrest reference</a></li>
+<li><a href="https://illwiki.com/dom5/dom6/starving" target="_blank" rel="noreferrer">Illwiki starvation reference</a></li>
+<li><a href="https://illwiki.com/dom5/dom6/supplies" target="_blank" rel="noreferrer">Illwiki supplies reference</a></li>
+<li><a href="https://illwiki.com/dom5/dom6/population" target="_blank" rel="noreferrer">Current population and fort-supply reference</a></li>
+<li><a href="https://illwiki.com/dom5/game-mechanics/province-defence" target="_blank" rel="noreferrer">Illwiki Province Defence reference</a></li>
+<li><a href="https://illwiki.com/dom5/fort" target="_blank" rel="noreferrer">Illwiki fort reference</a></li>
+<li><a href="https://illwiki.com/dom5/blood-hunting" target="_blank" rel="noreferrer">Illwiki Blood Hunting reference</a></li>
+<li><a href="https://illwiki.com/dom5/dom6/generic-blood-magic-guide" target="_blank" rel="noreferrer">Illwiki generic Blood guide</a></li>
+<li><a href="https://steamcommunity.com/app/2511500/discussions/0/691996377956257521/" target="_blank" rel="noreferrer">December 2025 in-game upkeep observations</a></li>
+</ul>
+<p>Community pages are not treated as final authority. Several retain historical Dominions 5 material or conflict with current official text. They are used to locate edge cases and testable claims. The upkeep discussion has firmer limits than a general guide because it records the observation date, annual values shown in game, a mounted component example, and the manual rule being checked. Its claims remain Community-tested evidence, below an official rule or an archived controlled save.</p>
+<h2 id="b2-mod-sources">Mod sources<a class="heading-link" href="#b2-mod-sources" aria-label="Link to Mod sources">#</a></h2><p>The economic discussion uses the supplied DE 2.16 and Divinitus 1.15.3 DE files. Their hashes, order, and exact global commands are recorded in Book IX.</p>
+<h2 id="b2-open-questions">Open questions<a class="heading-link" href="#b2-open-questions" aria-label="Link to Open questions">#</a></h2><ul>
+<li>fort-supply distance arithmetic;</li>
+<li>exact rounding in income, resources, RP, and fort draw;</li>
+<li>shapechanged upkeep and monthly fractional aggregation;</li>
+<li>full unrest effects on RP and Commander Points;</li>
+<li>generic commander feeding priority and starvation eligibility;</li>
+<li>national and object-specific effects from DE and Divinitus.</li>
+</ul>
+<p>For the unmodded 6.36 publication baseline, Growth/Death income and Order/Turmoil resources use 2% per step. The ordinary Commander Point pool is one plus the current fort bonus. At the stated Community-tested tier, Sacred and Slave reductions stack and mounted upkeep uses separate component bases. No 6.36 announcement changes those rules. Until the remaining questions are reproduced under the current game, close calculations should state their exact uncertainties instead of hiding them inside a rounded recommendation.</p>
+
+{% endraw %}
+    </article>
+    <aside class="sidebar library-toc">
+      <h2>In this book</h2>
+      <nav><a href="#b2-why-the-economy-needs-its-own-book">Why the economy needs its own book</a>
+<a href="#b2-edition-note">Edition note</a>
+<a href="#b2-a-sensible-way-through">A sensible way through</a>
+<a href="#b2-dominions-as-a-game-of-conversion">Dominions as a game of conversion</a>
+<a href="#b2-the-binding-constraint">The binding constraint</a>
+<a href="#b2-opportunity-cost">Opportunity cost</a>
+<a href="#b2-economic-tempo">Economic tempo</a>
+<a href="#b2-a-province-is-a-bundle-of-systems">A province is a bundle of systems</a>
+<a href="#b2-corpses-as-provincial-stock">Corpses as provincial stock</a>
+<a href="#b2-terrain">Terrain</a>
+<a href="#b2-population">Population</a>
+<a href="#b2-tax-trace-and-the-administrative-map">Tax trace and the administrative map</a>
+<a href="#b2-income-formula">Income formula</a>
+<a href="#b2-income-timing">Income timing</a>
+<a href="#b2-treasury-discipline">Treasury discipline</a>
+<a href="#b2-upkeep">Upkeep</a>
+<a href="#b2-resources-are-local-industrial-capacity">Resources are local industrial capacity</a>
+<a href="#b2-fort-resource-draw">Fort resource draw</a>
+<a href="#b2-recruitment-points">Recruitment Points</a>
+<a href="#b2-commander-points">Commander Points</a>
+<a href="#b2-holy-points">Holy Points</a>
+<a href="#b2-queue-mechanics-and-diagnosis">Queue mechanics and diagnosis</a>
+<a href="#b2-what-unrest-does">What unrest does</a>
+<a href="#b2-income-and-resource-damage">Income and resource damage</a>
+<a href="#b2-recruitment-shutdown">Recruitment shutdown</a>
+<a href="#b2-the-unrest-cap">The unrest cap</a>
+<a href="#b2-patrolling">Patrolling</a>
+<a href="#b2-pillaging-and-raiding">Pillaging and raiding</a>
+<a href="#b2-supply-is-a-location-check">Supply is a location check</a>
+<a href="#b2-population-based-supply">Population-based supply</a>
+<a href="#b2-fort-based-supply">Fort-based supply</a>
+<a href="#b2-supply-usage">Supply usage</a>
+<a href="#b2-starvation-selection-and-effects">Starvation selection and effects</a>
+<a href="#b2-siege-supply">Siege supply</a>
+<a href="#b2-forts-temples-and-laboratories">Forts, temples, and laboratories</a>
+<a href="#b2-construction-timing">Construction timing</a>
+<a href="#b2-construction-and-demolition">Construction and demolition</a>
+<a href="#b2-standard-fort-progression">Standard fort progression</a>
+<a href="#b2-fort-valuation">Fort valuation</a>
+<a href="#b2-laboratories">Laboratories</a>
+<a href="#b2-temples">Temples</a>
+<a href="#b2-province-exterior-and-fort-interior">Province exterior and fort interior</a>
+<a href="#b2-reducing-walls">Reducing walls</a>
+<a href="#b2-storm-timing">Storm timing</a>
+<a href="#b2-fort-defenders">Fort defenders</a>
+<a href="#b2-cost-curve">Cost curve</a>
+<a href="#b2-what-pd-provides">What PD provides</a>
+<a href="#b2-population-support-and-permanence">Population support and permanence</a>
+<a href="#b2-roles-of-pd">Roles of PD</a>
+<a href="#b2-why-pd-is-not-an-army">Why PD is not an army</a>
+<a href="#b2-site-frequency-and-terrain">Site frequency and terrain</a>
+<a href="#b2-search-difficulty">Search difficulty</a>
+<a href="#b2-site-benefits-and-harms">Site benefits and harms</a>
+<a href="#b2-gem-income-and-mage-turn-economy">Gem income and mage-turn economy</a>
+<a href="#b2-blood-slaves-are-produced-not-passively-collected">Blood slaves are produced, not passively collected</a>
+<a href="#b2-official-hunting-checks">Official hunting checks</a>
+<a href="#b2-dominion-and-retaliation">Dominion and retaliation</a>
+<a href="#b2-the-blood-province-cycle">The blood-province cycle</a>
+<a href="#b2-measuring-the-blood-economy">Measuring the blood economy</a>
+<a href="#b2-the-state-economy-chain">The state-economy chain</a>
+<a href="#b2-worked-timing-cases">Worked timing cases</a>
+<a href="#b2-expansion-income-versus-expansion-burden">Expansion income versus expansion burden</a>
+<a href="#b2-infrastructure-tempo">Infrastructure tempo</a>
+<a href="#b2-mage-turn-accounting">Mage-turn accounting</a>
+<a href="#b2-static-and-mobile-gold">Static and mobile gold</a>
+<a href="#b2-denial-and-recovery">Denial and recovery</a>
+<a href="#b2-first-turn-provincial-reading">First-turn provincial reading</a>
+<a href="#b2-recruitment-checklist">Recruitment checklist</a>
+<a href="#b2-army-logistics-checklist">Army logistics checklist</a>
+<a href="#b2-building-checklist">Building checklist</a>
+<a href="#b2-end-of-host-checklist">End-of-host checklist</a>
+<a href="#b2-warning-indicators">Warning indicators</a>
+<a href="#b2-ratios-worth-recording">Ratios worth recording</a>
+<a href="#b2-decision-ledger">Decision ledger</a>
+<a href="#b2-read-the-global-layer-once">Read the global layer once</a>
+<a href="#b2-local-changes-still-decide-the-real-economy">Local changes still decide the real economy</a>
+<a href="#b2-known-documentary-conflicts">Known documentary conflicts</a>
+<a href="#b2-controlled-test-programme">Controlled-test programme</a>
+<a href="#b2-test-record-format">Test record format</a>
+<a href="#b2-essay-i-the-economics-of-forts-and-mages">Essay I: The Economics of Forts and Mages</a>
+<a href="#b2-essay-ii-population-is-strategic-capital">Essay II: Population Is Strategic Capital</a>
+<a href="#b2-essay-iii-the-hidden-price-of-static-defence">Essay III: The Hidden Price of Static Defence</a>
+<a href="#b2-essay-iv-logistics-after-victory">Essay IV: Logistics After Victory</a>
+<a href="#b2-essay-v-unrest-as-administrative-warfare">Essay V: Unrest as Administrative Warfare</a>
+<a href="#b2-essay-vi-conversion-not-accumulation">Essay VI: Conversion, Not Accumulation</a>
+<a href="#b2-essay-vii-the-month-hidden-inside-a-single-point">Essay VII: The Month Hidden Inside a Single Point</a>
+<a href="#b2-primary-official-sources">Primary official sources</a>
+<a href="#b2-community-sources-used-as-leads">Community sources used as leads</a>
+<a href="#b2-mod-sources">Mod sources</a>
+<a href="#b2-open-questions">Open questions</a></nav>
+      <nav class="library-side-links">
+        <a href="/dominions/library/">Complete library</a>
+        <a href="/dominions/library/glossary/">Glossary</a>
+        <a href="/dominions/library/research/">Research register</a>
+        <a href="/downloads/dominions-6-knowledge-library-edition-24.pdf">Edition 24 PDF</a>
+      </nav>
+    </aside>
+  </div>
+  <nav class="library-pagination" aria-label="Adjacent books">
+    <a href="/dominions/library/books/field-reference/"><small>Previous</small>Turn and Economy Quick Reference</a>
+    <a class="library-next" href="/dominions/library/books/book-iii/"><small>Next</small>Foundation Book III</a>
+  </nav>
+</section>

@@ -1,0 +1,1853 @@
+---
+title: "Foundation Book I: Rulesets, Language, and the Anatomy of a Turn"
+description: "Rulesets, terminology, hosting order, and the exact anatomy of a Dominions turn."
+nav_section: guides
+extra_css: /assets/dominions-library.css
+extra_js: /assets/dominions-library.js
+og_image: /assets/images/dominions-6-library-edition-24.png
+---
+
+<section class="page-hero library-page-hero">
+  <div class="shell">
+    <div class="breadcrumbs">
+      <a href="/dominions/">Dominions 6</a><span aria-hidden="true">/</span>
+      <a href="/dominions/library/">Knowledge Library</a><span aria-hidden="true">/</span>
+      <span>Foundation Book I</span>
+    </div>
+    <p class="eyebrow">Progress Edition 24</p>
+    <h1>Foundation Book I: Rulesets, Language, and the Anatomy of a Turn</h1>
+    <p class="lead">Rulesets, terminology, hosting order, and the exact anatomy of a Dominions turn.</p>
+    <div class="meta-row">
+      <span class="status status--stable">Published reference</span>
+      <span class="meta-chip">Dominions 6.36</span>
+      <span class="meta-chip">11,000 words</span>
+      <span class="meta-chip">150 sections</span>
+    </div>
+  </div>
+</section>
+
+<section class="section shell library-section">
+  <details class="library-mobile-toc">
+    <summary>Table of contents</summary>
+    <nav><a href="#b1-why-this-volume-comes-first">Why this volume comes first</a>
+<a href="#b1-how-to-read-the-library">How to read the library</a>
+<a href="#b1-the-baseline-used-by-this-edition">The baseline used by this edition</a>
+<a href="#b1-evidence-and-confidence">Evidence and confidence</a>
+<a href="#b1-citation-standard">Citation standard</a>
+<a href="#b1-core-notation">Core notation</a>
+<a href="#b1-essential-glossary">Essential glossary</a>
+<a href="#b1-the-central-idea-orders-are-simultaneous-resolution-is-sequential">The central idea: orders are simultaneous, resolution is sequential</a>
+<a href="#b1-a-six-phase-model-of-hosting">A six-phase model of hosting</a>
+<a href="#b1-the-complete-63-step-hosting-sequence">The complete 63-step hosting sequence</a>
+<a href="#b1-phase-i-commitments-and-production">Phase I: commitments and production</a>
+<a href="#b1-phase-ii-magic-and-special-threats">Phase II: magic and special threats</a>
+<a href="#b1-phase-iii-movement-and-conquest">Phase III: movement and conquest</a>
+<a href="#b1-phase-iv-world-effects-and-hidden-conflict">Phase IV: world effects and hidden conflict</a>
+<a href="#b1-phase-v-state-economy-and-dominion">Phase V: state, economy, and dominion</a>
+<a href="#b1-phase-vi-attrition-and-end-state">Phase VI: attrition and end-state</a>
+<a href="#b1-timing-chains-every-player-should-know">Timing chains every player should know</a>
+<a href="#b1-a-new-player-s-turn-checklist">A new player's turn checklist</a>
+<a href="#b1-expert-operational-checklist">Expert operational checklist</a>
+<a href="#b1-troubleshooting-why-did-the-order-fail">Troubleshooting: why did the order fail?</a>
+<a href="#b1-ruleset-and-mod-implications">Ruleset and mod implications</a>
+<a href="#b1-controlled-tests-required-by-book-i">Controlled tests required by Book I</a>
+<a href="#b1-source-record">Source record</a></nav>
+  </details>
+  <div class="library-reader-grid">
+    <article class="content library-prose">
+{% raw %}
+<span class="anchor-alias" id="b1-eras-and-national-identity" aria-hidden="true"></span><h1 id="b1-foundation-book-i-rulesets-language-and-the-anatomy-of-a-turn">Foundation Book I: Rulesets, Language, and the Anatomy of a Turn<a class="heading-link" href="#b1-foundation-book-i-rulesets-language-and-the-anatomy-of-a-turn" aria-label="Link to Foundation Book I: Rulesets, Language, and the Anatomy of a Turn">#</a></h1><h2 id="b1-why-this-volume-comes-first">Why this volume comes first<a class="heading-link" href="#b1-why-this-volume-comes-first" aria-label="Link to Why this volume comes first">#</a></h2><p>Most rules in Dominions 6 are manageable on their own. The difficulty comes from having hundreds of them interact during the same turn. A player may understand recruitment, movement, rituals, battles, dominion, and upkeep separately, then still misread a result because they resolved in an unexpected order.</p>
+<p>Book I sets out the language and turn order used throughout the library. It works at three levels:</p>
+<ul>
+<li><strong>New-player level:</strong> enough explanation to understand what an order does, when it happens, and why an apparent failure occurred.</li>
+<li><strong>Experienced-player level:</strong> exact timing relationships, failure points, and strategic consequences.</li>
+<li><strong>Research level:</strong> a versioned record of sources, interpretations, and unresolved edge cases.</li>
+</ul>
+<p>Nation-specific builds are left for later books. The examples use ordinary commanders, troops, provinces, rituals, and forts so the same conclusions can be used in any age.</p>
+<blockquote>
+<p><strong>Foundation rule:</strong> A strategy should never depend on an unexplained timing assumption. When a plan works only because one action resolves before another, that timing needs to be stated here.</p>
+</blockquote>
+<h2 id="b1-how-to-read-the-library">How to read the library<a class="heading-link" href="#b1-how-to-read-the-library" aria-label="Link to How to read the library">#</a></h2><p>There is no need to read the whole library before playing. The boxed rules, plain-language summaries, and checklists are enough to support a first campaign. The full chapters become useful when a turn behaves strangely, a multiplayer plan depends on exact timing, or a rule needs to be checked for publication. Source notes and unresolved tests sit alongside the rules so that doubtful points remain visible instead of becoming folklore.</p>
+<h3 id="b1-where-each-subject-lives">Where each subject lives<a class="heading-link" href="#b1-where-each-subject-lives" aria-label="Link to Where each subject lives">#</a></h3><p>Each rule has one main home. Later books may give a short reminder when the subject crosses into another system, but the full explanation should not be repeated.</p>
+<table>
+<thead>
+<tr>
+<th>Subject</th>
+<th>Authoritative home</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>terminology, evidence labels, ruleset versions, and hosting order</td>
+<td>Book I</td>
+</tr>
+<tr>
+<td>order-writing formulas needed at a glance</td>
+<td>Turn and Economy Quick Reference</td>
+</tr>
+<tr>
+<td>provinces, income, recruitment, infrastructure, supply, PD, and siege economy</td>
+<td>Book II</td>
+</tr>
+<tr>
+<td>Pretenders, dominion, scales, blessings, and religious systems</td>
+<td>Book III</td>
+</tr>
+<tr>
+<td>formations, combat arithmetic, morale, fatigue, and battle resolution</td>
+<td>Book IV</td>
+</tr>
+<tr>
+<td>research, paths, gems, communions, rituals, items, and magical strategy</td>
+<td>Book V</td>
+</tr>
+<tr>
+<td>expansion, intelligence, logistics, war, diplomacy, and victory conversion</td>
+<td>Book VI</td>
+</tr>
+<tr>
+<td>nation-dossier method and faction-specific application</td>
+<td>Book VII onward</td>
+</tr>
+<tr>
+<td>mod construction, events, AI scaffolding, maps, testing, and compatibility method</td>
+<td>Book VIII</td>
+</tr>
+<tr>
+<td>exact Dominions Enhanced and Divinitus definitions and combined-load-order findings</td>
+<td>Book IX</td>
+</tr>
+</tbody></table>
+<p>The quick reference is the one deliberate exception. It repeats a small number of formulas and timing facts from Books I and II because its purpose is to remain open while orders are written. It should never become the source of a new rule.</p>
+<h2 id="b1-the-baseline-used-by-this-edition">The baseline used by this edition<a class="heading-link" href="#b1-the-baseline-used-by-this-edition" aria-label="Link to The baseline used by this edition">#</a></h2><h3 id="b1-public-unmodded-baseline">Public unmodded baseline<a class="heading-link" href="#b1-public-unmodded-baseline" aria-label="Link to Public unmodded baseline">#</a></h3><p>The current public game release recorded by Illwinter on 25 August 2026 is <strong>Dominions 6.36</strong>, released on 17 August 2026 UTC. The principal rules source remains the <strong>Dominions 6 Manual, revision 2</strong>. The official documentation page presents that manual as the main reference for the rules and tables of the game.</p>
+<p>The preserved manual is 449 PDF pages and has this fingerprint:</p>
+<p><code>65f430fd97c9f27285d63b797b43bc7fe3844241fdf40230b1d25a901ab9f33f</code></p>
+<p>The preserved <strong>Dominions 6 Modding Manual, version 6.34</strong>, is 65 PDF pages and has this fingerprint:</p>
+<p><code>5ac40698e05703f5628db123548c4e6a57fe0ed9bbcb65fb8f72fc589ab309ab</code></p>
+<p>The official <strong>Event Modding Manual, version 6.29</strong>, remains relevant for event timing, requirements, event chains, and mod-added monthly effects.</p>
+<h3 id="b1-frozen-modded-baseline">Frozen modded baseline<a class="heading-link" href="#b1-frozen-modded-baseline" aria-label="Link to Frozen modded baseline">#</a></h3><p>The working modded library uses:</p>
+<ol>
+<li><code>DomEnhanced2_16.dm</code> - Dominions Enhanced 2.16.</li>
+<li><code>Divinitus_1.15.3_DE.dm</code> - Divinitus 1.15.3 DE edition.</li>
+</ol>
+<p>Dominions Enhanced is loaded first and Divinitus second.</p>
+<p>Neither supplied file declares <code>#domversion</code>, so neither states a minimum compatible game version. Their source can be analysed exactly. Complete compatibility with Dominions 6.36 still needs to be tested and cannot be assumed.</p>
+<span class="anchor-alias" id="b1-rulesets-must-never-be-silently-merged" aria-hidden="true"></span><h3 id="b1-ruleset-labels">Ruleset labels<a class="heading-link" href="#b1-ruleset-labels" aria-label="Link to Ruleset labels">#</a></h3><p>Every future article must display one of the following labels.</p>
+<table>
+<thead>
+<tr>
+<th>Label</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Unmodded 6.36</strong></td>
+<td>The public base game as of 25 August 2026</td>
+</tr>
+<tr>
+<td><strong>DE 2.16</strong></td>
+<td>Dominions Enhanced 2.16 without Divinitus</td>
+</tr>
+<tr>
+<td><strong>Divinitus 1.15.3 DE</strong></td>
+<td>The supplied Divinitus DE file considered by itself</td>
+</tr>
+<tr>
+<td><strong>DE 2.16 + Divinitus 1.15.3 DE</strong></td>
+<td>The exact two-file ruleset in the recorded load order</td>
+</tr>
+<tr>
+<td><strong>Historical</strong></td>
+<td>Material retained from an older game or mod version</td>
+</tr>
+<tr>
+<td><strong>Experimental</strong></td>
+<td>A proposed mechanic, test mod, or result not yet part of a published ruleset</td>
+</tr>
+</tbody></table>
+<p>The label applies to the whole article unless a subsection explicitly overrides it.</p>
+<span class="anchor-alias" id="b1-evidence-standard" aria-hidden="true"></span><h2 id="b1-evidence-and-confidence">Evidence and confidence<a class="heading-link" href="#b1-evidence-and-confidence" aria-label="Link to Evidence and confidence">#</a></h2><h3 id="b1-the-five-evidence-labels">The five evidence labels<a class="heading-link" href="#b1-the-five-evidence-labels" aria-label="Link to The five evidence labels">#</a></h3><table>
+<thead>
+<tr>
+<th>Label</th>
+<th>Meaning</th>
+<th>Suitable public wording</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Official</strong></td>
+<td>Directly stated by Illwinter or visible in current in-game data</td>
+<td>State as a rule and cite the source</td>
+</tr>
+<tr>
+<td><strong>Source-confirmed</strong></td>
+<td>Directly encoded in the exact relevant mod source</td>
+<td>State as a rule for that mod version</td>
+</tr>
+<tr>
+<td><strong>Reproduced</strong></td>
+<td>Repeated in a documented controlled test</td>
+<td>State with the tested setup and result</td>
+</tr>
+<tr>
+<td><strong>Community-tested</strong></td>
+<td>Supported by a detailed outside investigation but not yet reproduced here</td>
+<td>Attribute and preserve the test conditions</td>
+</tr>
+<tr>
+<td><strong>Unverified</strong></td>
+<td>Plausible, incomplete, contradictory, historical, or unsupported</td>
+<td>Present only as an open question or hypothesis</td>
+</tr>
+</tbody></table>
+<h3 id="b1-evidence-priority">Evidence priority<a class="heading-link" href="#b1-evidence-priority" aria-label="Link to Evidence priority">#</a></h3><p>The evidence ledger uses the following general hierarchy:</p>
+<ol>
+<li>Current in-game result or exported current game data.</li>
+<li>Current Illwinter manual or official change note.</li>
+<li>Exact mod source for the named version and load order.</li>
+<li>Reproducible controlled test.</li>
+<li>Maintainer explanation.</li>
+<li>Detailed community test or tournament account.</li>
+<li>General guide, video, forum advice, or historical conversation.</li>
+</ol>
+<p>The manual does not contain every rule. It is authoritative where it is explicit, while implementation details, targeting decisions, hidden limits, and unusual interactions may still need testing. If an official statement disagrees with repeatable current-game behaviour, both sides of the discrepancy must be recorded.</p>
+<h3 id="b1-fact-consequence-recommendation">Fact, consequence, recommendation<a class="heading-link" href="#b1-fact-consequence-recommendation" aria-label="Link to Fact, consequence, recommendation">#</a></h3><p>Three different kinds of statement must not be blended together.</p>
+<ul>
+<li><strong>Fact:</strong> the hosting sequence resolves recruitment at step 3.</li>
+<li><strong>Consequence:</strong> recruited units exist before movement battles at step 26.</li>
+<li><strong>Recommendation:</strong> recruiting emergency defenders may save a province that is attacked during the same hosting cycle.</li>
+</ul>
+<p>The first statement is an official rule. The second is a direct timing consequence. The third is strategic advice whose value depends on gold, recruitment capacity, the attacking force, and whether the province can recruit an effective defence.</p>
+<h2 id="b1-citation-standard">Citation standard<a class="heading-link" href="#b1-citation-standard" aria-label="Link to Citation standard">#</a></h2><p>Every finished chapter should include:</p>
+<ul>
+<li>ruleset and version;</li>
+<li>last verified date;</li>
+<li>primary source;</li>
+<li>manual page or relevant source location;</li>
+<li>evidence label;</li>
+<li>mod-file hash where applicable;</li>
+<li>test record for reproduced claims;</li>
+<li>unresolved questions.</li>
+</ul>
+<p>The public TheHoboKingdom edition can keep citations compact. The private research edition retains full fingerprints, links, source extracts, and test conditions.</p>
+<h2 id="b1-core-notation">Core notation<a class="heading-link" href="#b1-core-notation" aria-label="Link to Core notation">#</a></h2><h3 id="b1-magic-paths">Magic paths<a class="heading-link" href="#b1-magic-paths" aria-label="Link to Magic paths">#</a></h3><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Path</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>F</strong></td>
+<td>Fire</td>
+</tr>
+<tr>
+<td><strong>A</strong></td>
+<td>Air</td>
+</tr>
+<tr>
+<td><strong>W</strong></td>
+<td>Water</td>
+</tr>
+<tr>
+<td><strong>E</strong></td>
+<td>Earth</td>
+</tr>
+<tr>
+<td><strong>S</strong></td>
+<td>Astral</td>
+</tr>
+<tr>
+<td><strong>D</strong></td>
+<td>Death</td>
+</tr>
+<tr>
+<td><strong>N</strong></td>
+<td>Nature</td>
+</tr>
+<tr>
+<td><strong>G</strong></td>
+<td>Glamour</td>
+</tr>
+<tr>
+<td><strong>B</strong></td>
+<td>Blood</td>
+</tr>
+<tr>
+<td><strong>H</strong></td>
+<td>Holy or priest level</td>
+</tr>
+</tbody></table>
+<p>Path level follows the symbol. <code>S3</code> means Astral 3. <code>F2A1</code> means Fire 2 and Air 1. A requirement written as <code>S5E3</code> requires both Astral 5 and Earth 3 unless stated otherwise.</p>
+<p>The letter <code>G</code> is reserved for Glamour. Gems are written in words or with their path, such as <code>15 fire gems</code> or <code>15F gems</code>, when the context cannot be mistaken for a path level.</p>
+<h3 id="b1-research-schools">Research schools<a class="heading-link" href="#b1-research-schools" aria-label="Link to Research schools">#</a></h3><table>
+<thead>
+<tr>
+<th>Short form</th>
+<th>School</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Conj</strong></td>
+<td>Conjuration</td>
+</tr>
+<tr>
+<td><strong>Alt</strong></td>
+<td>Alteration</td>
+</tr>
+<tr>
+<td><strong>Evo</strong></td>
+<td>Evocation</td>
+</tr>
+<tr>
+<td><strong>Const</strong></td>
+<td>Construction</td>
+</tr>
+<tr>
+<td><strong>Ench</strong></td>
+<td>Enchantment</td>
+</tr>
+<tr>
+<td><strong>Thaum</strong></td>
+<td>Thaumaturgy</td>
+</tr>
+<tr>
+<td><strong>Blood</strong></td>
+<td>Blood Magic</td>
+</tr>
+<tr>
+<td><strong>Divine</strong></td>
+<td>Divine spell list rather than an ordinary research school</td>
+</tr>
+</tbody></table>
+<p><code>Alt 5</code> means Alteration level 5. <code>Thaum 9, S5E3</code> means a Thaumaturgy 9 spell requiring Astral 5 and Earth 3.</p>
+<h3 id="b1-common-statistics">Common statistics<a class="heading-link" href="#b1-common-statistics" aria-label="Link to Common statistics">#</a></h3><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>HP</strong></td>
+<td>Hit points</td>
+</tr>
+<tr>
+<td><strong>STR</strong></td>
+<td>Strength</td>
+</tr>
+<tr>
+<td><strong>ATT</strong></td>
+<td>Attack skill</td>
+</tr>
+<tr>
+<td><strong>DEF</strong></td>
+<td>Defence skill</td>
+</tr>
+<tr>
+<td><strong>PROT</strong></td>
+<td>Protection</td>
+</tr>
+<tr>
+<td><strong>MR</strong></td>
+<td>Magic Resistance</td>
+</tr>
+<tr>
+<td><strong>MOR</strong></td>
+<td>Morale</td>
+</tr>
+<tr>
+<td><strong>PREC</strong></td>
+<td>Precision</td>
+</tr>
+<tr>
+<td><strong>ENC</strong></td>
+<td>Encumbrance</td>
+</tr>
+<tr>
+<td><strong>AP</strong></td>
+<td>Armour-piercing</td>
+</tr>
+<tr>
+<td><strong>AN</strong></td>
+<td>Armour-negating</td>
+</tr>
+<tr>
+<td><strong>AoE</strong></td>
+<td>Area of effect</td>
+</tr>
+<tr>
+<td><strong>PD</strong></td>
+<td>Province Defence</td>
+</tr>
+<tr>
+<td><strong>RP</strong></td>
+<td>Research points or recruitment points; the full term must be written when ambiguous</td>
+</tr>
+</tbody></table>
+<span class="anchor-alias" id="b1-randomness-and-the-dominions-random-number" aria-hidden="true"></span><h3 id="b1-randomness">Randomness<a class="heading-link" href="#b1-randomness" aria-label="Link to Randomness">#</a></h3><p><code>DRN</code> means the Dominions Random Number roll. Dominions commonly uses an open-ended roll built from two six-sided dice, with more rolls after high results. The later mathematics material deals with the full probability system. Here, <code>attribute + DRN</code> means the visible attribute does not decide the final result by itself.</p>
+<p>Chance statements must distinguish:</p>
+<ul>
+<li>a fixed percentage;</li>
+<li>a percentage per path or priest level;</li>
+<li>a percentage per dominion candle;</li>
+<li>a chance checked once per unit;</li>
+<li>a chance checked once per province;</li>
+<li>a chance checked once per turn;</li>
+<li>an open-ended opposed roll.</li>
+</ul>
+<h3 id="b1-time">Time<a class="heading-link" href="#b1-time" aria-label="Link to Time">#</a></h3><p>Dominions commonly uses <strong>turn</strong>, <strong>month</strong>, and <strong>hosting</strong> for closely related ideas.</p>
+<ul>
+<li>A <strong>turn</strong> is the set of orders submitted by all players and the resulting game state.</li>
+<li>A <strong>month</strong> is the in-world time represented by one turn.</li>
+<li><strong>Hosting</strong> is the process that resolves all submitted orders.</li>
+<li>A <strong>battle round</strong> is a tactical interval inside a battle and must not be confused with a strategic turn.</li>
+</ul>
+<span class="anchor-alias" id="b1-plane" aria-hidden="true"></span><span class="anchor-alias" id="b1-size-point" aria-hidden="true"></span><h3 id="b1-spatial-terms">Spatial terms<a class="heading-link" href="#b1-spatial-terms" aria-label="Link to Spatial terms">#</a></h3><ul>
+<li><strong>Province:</strong> a territory on the strategic map.</li>
+<li><strong>Location:</strong> a distinct place within a province, such as the open province or the interior of a fortress.</li>
+<li><strong>Adjacent:</strong> connected by a valid province border or other relevant link.</li>
+<li><strong>Plane:</strong> a separate strategic layer such as the main world, cave plane, or Nexus/Void plane.</li>
+<li><strong>Square:</strong> a tactical grid space on a battlefield.</li>
+<li><strong>Size point:</strong> part of the capacity used by units occupying a battlefield square.</li>
+</ul>
+<h2 id="b1-essential-glossary">Essential glossary<a class="heading-link" href="#b1-essential-glossary" aria-label="Link to Essential glossary">#</a></h2><h3 id="b1-army">Army<a class="heading-link" href="#b1-army" aria-label="Link to Army">#</a></h3><p>A group of commanders and their assigned troops. The word is convenient but not always a single rules object: different commanders in the same province may have different orders and may fail, move, or fight separately.</p>
+<h3 id="b1-battle-magic">Battle magic<a class="heading-link" href="#b1-battle-magic" aria-label="Link to Battle magic">#</a></h3><p>Spells cast during tactical combat. Battle magic is governed by scripting, fatigue, range, targeting, battlefield conditions, and the spellcasting AI.</p>
+<h3 id="b1-bless">Bless<a class="heading-link" href="#b1-bless" aria-label="Link to Bless">#</a></h3><p>The set of effects granted to blessed sacred units and commanders. Some bless effects are always available when the unit is blessed; Incarnate effects generally depend on the Pretender being active.</p>
+<h3 id="b1-capital-only">Capital-only<a class="heading-link" href="#b1-capital-only" aria-label="Link to Capital-only">#</a></h3><p>A recruitment or availability restriction tied to the nation&#39;s original capital. Conquering another nation&#39;s capital does not normally convert its capital-only roster into the conqueror&#39;s roster.</p>
+<h3 id="b1-commander">Commander<a class="heading-link" href="#b1-commander" aria-label="Link to Commander">#</a></h3><p>A unit capable of receiving strategic orders and leading troops. Leadership type and capacity determine which troops can be assigned and what morale effects may apply.</p>
+<h3 id="b1-communion">Communion<a class="heading-link" href="#b1-communion" aria-label="Link to Communion">#</a></h3><p>A magical network in which masters receive path bonuses and slaves absorb distributed spell fatigue and certain master-cast personal buffs. The exact mechanics belong in the magic volume.</p>
+<h3 id="b1-dominion">Dominion<a class="heading-link" href="#b1-dominion" aria-label="Link to Dominion">#</a></h3><p>The religious influence of a Pretender, shown as candles in provinces. Dominion is both territorial pressure and a carrier for scales, bless conditions, Pretender hit-point modification, special national effects, and elimination.</p>
+<h3 id="b1-event">Event<a class="heading-link" href="#b1-event" aria-label="Link to Event">#</a></h3><p>A hosting-time occurrence selected from event rules. Events may depend on scales, dominion, population, terrain, commanders, sites, orders, globals, variables, and many other conditions. Modded events can form chains and can imitate systems that the ordinary interface does not expose.</p>
+<h3 id="b1-fort">Fort<a class="heading-link" href="#b1-fort" aria-label="Link to Fort">#</a></h3><p>A fortified location within a province. A besieging force may control the province while the defender retains the fort, creating partial ownership.</p>
+<h3 id="b1-gem">Gem<a class="heading-link" href="#b1-gem" aria-label="Link to Gem">#</a></h3><p>A magical resource associated with Fire, Air, Water, Earth, Astral, Death, Nature, or Glamour. Blood slaves fill a similar strategic role for Blood magic but are units/resources with distinct rules.</p>
+<h3 id="b1-global-enchantment">Global enchantment<a class="heading-link" href="#b1-global-enchantment" aria-label="Link to Global enchantment">#</a></h3><p>A ritual whose ongoing effect applies broadly to the world or to a large strategic system. Casting occurs during the ritual step, while the continuing world effect is processed later in the hosting sequence.</p>
+<h3 id="b1-host">Host<a class="heading-link" href="#b1-host" aria-label="Link to Host">#</a></h3><p>As a verb, to resolve submitted turns. As a noun, the computer or service processing a multiplayer game.</p>
+<h3 id="b1-laboratory">Laboratory<a class="heading-link" href="#b1-laboratory" aria-label="Link to Laboratory">#</a></h3><p>The infrastructure required for research, most forging, and most ritual casting. A new laboratory is completed late in the turn, after that month&#39;s research and ritual steps have already passed.</p>
+<h3 id="b1-magic-phase">Magic phase<a class="heading-link" href="#b1-magic-phase" aria-label="Link to Magic phase">#</a></h3><p>Community shorthand for the early part of hosting in which rituals, magical movement, remote attacks, and resulting battles occur before ordinary movement. It is useful shorthand, but the official sequence divides it into several distinct steps.</p>
+<h3 id="b1-magic-resistance">Magic Resistance<a class="heading-link" href="#b1-magic-resistance" aria-label="Link to Magic Resistance">#</a></h3><p>A defence statistic used by many spells and supernatural effects. An MR check is not automatically a simple percentage; it may involve opposed DRN rolls, penetration bonuses, and path-based modifiers.</p>
+<h3 id="b1-mage">Mage<a class="heading-link" href="#b1-mage" aria-label="Link to Mage">#</a></h3><p>A commander with one or more magic paths or another ability that permits research, ritual casting, forging, or battle magic. Not every researcher is a conventional mage, and not every mage can perform every magical order.</p>
+<h3 id="b1-mod">Mod<a class="heading-link" href="#b1-mod" aria-label="Link to Mod">#</a></h3><p>A <code>.dm</code>-based modification loaded by the game. A mod can add or alter many data objects but cannot necessarily rewrite executable-level systems.</p>
+<h3 id="b1-movement-phase">Movement phase<a class="heading-link" href="#b1-movement-phase" aria-label="Link to Movement phase">#</a></h3><p>Community shorthand for the part of hosting in which conventional map movement resolves. The official sequence distinguishes friendly movement, other movement, movement battles, and castle storming.</p>
+<h3 id="b1-path">Path<a class="heading-link" href="#b1-path" aria-label="Link to Path">#</a></h3><p>A level of magical skill in Fire, Air, Water, Earth, Astral, Death, Nature, Glamour, Blood, or Holy magic. Paths determine spell access, research value, item access, and many special interactions.</p>
+<h3 id="b1-pretender">Pretender<a class="heading-link" href="#b1-pretender" aria-label="Link to Pretender">#</a></h3><p>The god designed for a nation or team. The Pretender supplies dominion, scales, bless design, magic access, and a physical chassis that may be awake, dormant, or imprisoned.</p>
+<h3 id="b1-province-defence">Province Defence<a class="heading-link" href="#b1-province-defence" aria-label="Link to Province Defence">#</a></h3><p>Locally purchased defence that appears automatically when a province is attacked. It is not a standing army that can move. Its composition and commander structure depend on the nation and investment.</p>
+<h3 id="b1-recruitment-point">Recruitment point<a class="heading-link" href="#b1-recruitment-point" aria-label="Link to Recruitment point">#</a></h3><p>A local capacity used when recruiting units. It is distinct from gold and resources, and it can prevent recruitment even when the other costs are affordable.</p>
+<h3 id="b1-research-point">Research point<a class="heading-link" href="#b1-research-point" aria-label="Link to Research point">#</a></h3><p>A contribution toward a school of magical research. Research is processed very early during hosting, before assassinations and most forms of death.</p>
+<h3 id="b1-ritual">Ritual<a class="heading-link" href="#b1-ritual" aria-label="Link to Ritual">#</a></h3><p>A strategic spell ordered outside battle. Rituals can summon units, alter provinces, move commanders, attack remotely, create globals, search, scry, or cause other world-map effects.</p>
+<h3 id="b1-rout">Rout<a class="heading-link" href="#b1-rout" aria-label="Link to Rout">#</a></h3><p>The state in which a unit or squad attempts to flee battle. Dominions battles are normally decided by morale collapse rather than the literal death of every unit.</p>
+<h3 id="b1-sacred">Sacred<a class="heading-link" href="#b1-sacred" aria-label="Link to Sacred">#</a></h3><p>A unit capable of receiving a blessing and often subject to recruitment or upkeep advantages. Sacred does not mean permanently blessed; a blessing still needs to be active.</p>
+<h3 id="b1-scale">Scale<a class="heading-link" href="#b1-scale" aria-label="Link to Scale">#</a></h3><p>One side of the dominion-scale pairs: Order/Turmoil, Production/Sloth, Heat/Cold, Growth/Death, Fortune/Misfortune, and Magic/Drain. Scales affect the world through dominion and can also interact with units, events, sites, and spells.</p>
+<h3 id="b1-site">Site<a class="heading-link" href="#b1-site" aria-label="Link to Site">#</a></h3><p>A magical or special feature located in a province. Sites may provide gems, gold, recruitment, unrest, disease, discounts, ritual access, or other effects. Some are hidden until found.</p>
+<h3 id="b1-squad">Squad<a class="heading-link" href="#b1-squad" aria-label="Link to Squad">#</a></h3><p>A tactical group assigned to a commander. Morale, formation, scripting, and leadership penalties are often evaluated at squad level rather than across the entire army.</p>
+<h3 id="b1-throne-of-ascension">Throne of Ascension<a class="heading-link" href="#b1-throne-of-ascension" aria-label="Link to Throne of Ascension">#</a></h3><p>A special site that can be claimed by an appropriate priest. Claimed Thrones provide Ascension Points and may grant other effects. The game can end when the configured Ascension requirement is met.</p>
+<h3 id="b1-unrest">Unrest<a class="heading-link" href="#b1-unrest" aria-label="Link to Unrest">#</a></h3><p>A province condition that reduces effective administration and income and interacts with events, recruitment, patrolling, pillaging, and Blood Hunting.</p>
+<h3 id="b1-upkeep">Upkeep<a class="heading-link" href="#b1-upkeep" aria-label="Link to Upkeep">#</a></h3><p>The recurring gold cost of maintaining units and commanders. Upkeep is paid after income is collected in the official hosting sequence.</p>
+<h2 id="b1-the-central-idea-orders-are-simultaneous-resolution-is-sequential">The central idea: orders are simultaneous, resolution is sequential<a class="heading-link" href="#b1-the-central-idea-orders-are-simultaneous-resolution-is-sequential" aria-label="Link to The central idea: orders are simultaneous, resolution is sequential">#</a></h2><p>Players submit orders without watching the other nations&#39; orders resolve. Hosting then processes every nation&#39;s orders through a fixed sequence.</p>
+<p>This creates three different kinds of time:</p>
+<ol>
+<li><strong>Planning time:</strong> all players choose orders from the same pre-host game state.</li>
+<li><strong>Resolution time:</strong> the engine processes different kinds of orders in a fixed sequence.</li>
+<li><strong>Battle time:</strong> tactical battles resolve internally after their triggering strategic step.</li>
+</ol>
+<p>Players submit their decisions simultaneously, but the engine resolves them in sequence.</p>
+<p>This distinction explains many apparently contradictory outcomes:</p>
+<ul>
+<li>a mage contributes research before being assassinated;</li>
+<li>units are recruited before an attacking army arrives;</li>
+<li>a remote attack can strike an army before ordinary movement;</li>
+<li>a new laboratory finishes too late to support research or rituals that month;</li>
+<li>starvation is applied after battles;</li>
+<li>income is collected before upkeep;</li>
+<li>general dominion spread happens after most battles;</li>
+<li>an immortal can be due to return after the victory check has already ended the game.</li>
+</ul>
+<h2 id="b1-a-six-phase-model-of-hosting">A six-phase model of hosting<a class="heading-link" href="#b1-a-six-phase-model-of-hosting" aria-label="Link to A six-phase model of hosting">#</a></h2><p>The official manual lists 63 separate steps. For practical reading, those steps can be grouped into six phases. These phase names are editorial tools; the numbered order remains the authority.</p>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th align="right">Steps</th>
+<th>Main contents</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>I. Commitments and production</strong></td>
+<td align="right">1-9</td>
+<td>Messages, research, recruitment, empowerment, forging, preaching, Thrones, quick orders</td>
+</tr>
+<tr>
+<td><strong>II. Magic and special threats</strong></td>
+<td align="right">10-23</td>
+<td>Rituals, remote attacks, magic battles, searching, awakening, Blood Hunting, Horrors, assassinations</td>
+</tr>
+<tr>
+<td><strong>III. Movement and conquest</strong></td>
+<td align="right">24-27</td>
+<td>Friendly movement, other movement, field battles, castle storming</td>
+</tr>
+<tr>
+<td><strong>IV. World effects and hidden conflict</strong></td>
+<td align="right">28-33</td>
+<td>Global effects, random events, item/monster effects, event battles, sneak discovery</td>
+</tr>
+<tr>
+<td><strong>V. State, economy, and dominion</strong></td>
+<td align="right">34-45</td>
+<td>Besiegers, construction, special orders, pillage, income, unrest, starvation, upkeep, dominion, sites</td>
+</tr>
+<tr>
+<td><strong>VI. Attrition and end-state</strong></td>
+<td align="right">46-63</td>
+<td>Aging, disease, insanity, mercenaries, heroes, elimination, victory, immortality, aftermath</td>
+</tr>
+</tbody></table>
+<p>The six-phase model is useful for memory. It must not replace the full sequence when exact timing matters.</p>
+<h2 id="b1-the-complete-63-step-hosting-sequence">The complete 63-step hosting sequence<a class="heading-link" href="#b1-the-complete-63-step-hosting-sequence" aria-label="Link to The complete 63-step hosting sequence">#</a></h2><p><strong>Evidence:</strong> Official.<br><strong>Primary source:</strong> Dominions 6 Manual, revision 2, pages 55-57.<br><strong>Verified:</strong> 25 August 2026.</p>
+<p>The following table paraphrases the official sequence and adds timing consequences. The step names and order follow the manual; the explanations are written for this library.</p>
+<table>
+<thead>
+<tr>
+<th align="right">Step</th>
+<th>Resolution</th>
+<th>What happens</th>
+<th>Why the timing matters</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1</td>
+<td>Send messages</td>
+<td>Diplomatic messages and attached gold, gems, or items are dispatched.</td>
+<td>Transfers occur before events that could kill a courier, capture a province, or remove a commander. The manual states that the early timing makes sent resources reliable.</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td>Research</td>
+<td>Assigned researchers contribute research points.</td>
+<td>A researcher killed later in the same hosting cycle still contributes for that month.</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td>Recruitment</td>
+<td>Paid troops and commanders are created.</td>
+<td>New defenders exist before movement battles. They cannot receive new orders during the hosting cycle in which they appear.</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td>Empowerment</td>
+<td>Ordered permanent path increases are applied.</td>
+<td>The path exists before forging and ritual steps, although the empowering commander cannot also perform a second ordinary order that month.</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td>Forge items</td>
+<td>Completed items enter the nation&#39;s magic-item inventory.</td>
+<td>Forging occurs before rituals, but an item in the treasury is not the same as an item already equipped by a caster.</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td>Preach</td>
+<td>Priests resolve ordinary preaching and adjust dominion.</td>
+<td>Preaching can alter dominion before movement battles, unlike general dominion spread at step 42.</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td>Heretic preaching</td>
+<td>Heretics, insane commanders, and shattered-soul commanders apply their religious influence.</td>
+<td>These changes also occur before movement and most battles.</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td>Claim Thrones</td>
+<td>Eligible priests claim Thrones of Ascension.</td>
+<td>A claim is processed before rituals and battles that might remove the claimant later in the month.</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td>Quick special orders</td>
+<td>Fast special orders such as entering a site to scry or cultivating pearls resolve.</td>
+<td>These orders precede the main ritual step; their precise value depends on the named order.</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td>Magic rituals</td>
+<td>Ritual casters perform their rituals in random caster order.</td>
+<td>Competing or interacting rituals cannot be assumed to follow nation number, player order, or script order.</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td>Remote attacks</td>
+<td>Rituals that strike hostile armies in remote provinces are applied.</td>
+<td>An army can be damaged before it performs ordinary movement.</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td>Magic battles</td>
+<td>Battles created by magic resolve, including hostile teleportation and certain movement rituals.</td>
+<td>Magical movement can fight before conventional armies move. Retreats from the group of magic battles are placed after all such battles finish.</td>
+</tr>
+<tr>
+<td align="right">13</td>
+<td>Lost in other planes</td>
+<td>Units become lost in other planes and relevant other-plane battles resolve.</td>
+<td>Planar displacement is settled before site searching, ordinary movement, and field battles.</td>
+</tr>
+<tr>
+<td align="right">14</td>
+<td>Site searches</td>
+<td>Magical site-search orders resolve.</td>
+<td>A commander can search a province before conventional movement changes the province later in hosting.</td>
+</tr>
+<tr>
+<td align="right">15</td>
+<td>Prophets</td>
+<td>New prophets are declared.</td>
+<td>The prophet exists before Call God, awakening, Blood Hunting, assassinations, and ordinary battles, but after ritual and magic-battle steps.</td>
+</tr>
+<tr>
+<td align="right">16</td>
+<td>Call God</td>
+<td>Priests assigned to Call God contribute to returning a banished Pretender.</td>
+<td>The recall attempt occurs before ordinary battles can kill those priests that month.</td>
+</tr>
+<tr>
+<td align="right">17</td>
+<td>Awakening</td>
+<td>Dormant or imprisoned Pretenders that are due to awaken enter play.</td>
+<td>A newly awakened Pretender exists before ordinary movement battles but received no normal order from the prior map state.</td>
+</tr>
+<tr>
+<td align="right">18</td>
+<td>Blood hunting</td>
+<td>Blood Hunt orders resolve and slaves are collected according to the Blood Hunting rules.</td>
+<td>Blood hunters are exposed to the results before assassinations and conventional movement.</td>
+</tr>
+<tr>
+<td align="right">19</td>
+<td>Horrors</td>
+<td>Units due to be visited by Horrors are attacked or affected.</td>
+<td>Horror attacks can remove a commander before assassination and movement steps.</td>
+</tr>
+<tr>
+<td align="right">20</td>
+<td>Assassinations</td>
+<td>Assassination, seduction, corruption, and similar attempts resolve immediately.</td>
+<td>Killing a commander here can prevent that commander&#39;s army from moving later. The research contribution at step 2 has already been secured.</td>
+</tr>
+<tr>
+<td align="right">21</td>
+<td>Relinquish province</td>
+<td>A province may be transferred to a qualifying non-stealthed ally already present.</td>
+<td>Transfer happens before movement, so an ally arriving later in the turn does not satisfy the presence requirement for this order.</td>
+</tr>
+<tr>
+<td align="right">22</td>
+<td>Claim mounts</td>
+<td>Riders without mounts attempt to obtain suitable mounts.</td>
+<td>Mount status is updated before ordinary movement and battles.</td>
+</tr>
+<tr>
+<td align="right">23</td>
+<td>Lone mounts</td>
+<td>Riderless intelligent mounts or mountless riders may return home or disperse.</td>
+<td>Mount cleanup occurs before movement, preventing stale mount states from persisting into field battles.</td>
+</tr>
+<tr>
+<td align="right">24</td>
+<td>Friendly movement</td>
+<td>Movement ending in a friendly province resolves.</td>
+<td>Reinforcement of an already friendly destination receives priority over hostile arrivals unless an earlier effect intervenes.</td>
+</tr>
+<tr>
+<td align="right">25</td>
+<td>Other movement</td>
+<td>Remaining conventional movement resolves, including Break Siege.</td>
+<td>Hostile movement and movements that change control are processed after friendly movement.</td>
+</tr>
+<tr>
+<td align="right">26</td>
+<td>Resolve battles</td>
+<td>Field battles caused by conventional movement are fought.</td>
+<td>Province control established here can affect storming, pillage, income, ownership, and later events.</td>
+</tr>
+<tr>
+<td align="right">27</td>
+<td>Castle storming</td>
+<td>Storm Castle battles resolve.</td>
+<td>Storming occurs after movement battles. Retreats from the movement and storming groups are placed only after the relevant battles finish.</td>
+</tr>
+<tr>
+<td align="right">28</td>
+<td>Global enchantments</td>
+<td>Ongoing global enchantment effects are applied to the world.</td>
+<td>A global is cast at step 10, but its continuing world effect begins here, after movement and castle-storming battles for the month.</td>
+</tr>
+<tr>
+<td align="right">29</td>
+<td>Random events</td>
+<td>Ordinary Fortune, Misfortune, and other eligible random events occur.</td>
+<td>These events see the world state produced by magic, movement, battles, storming, and global effects.</td>
+</tr>
+<tr>
+<td align="right">30</td>
+<td>Resolve battles</td>
+<td>Battles created by random events are fought.</td>
+<td>Event-created attackers do not fight during the earlier movement battle step.</td>
+</tr>
+<tr>
+<td align="right">31</td>
+<td>Magic item and monster effects</td>
+<td>Special monthly effects generated by items or monsters occur.</td>
+<td>Items were forged at step 5, while special monthly effects are delayed until this stage. Item-assisted rituals still belong to step 10.</td>
+</tr>
+<tr>
+<td align="right">32</td>
+<td>Resolve battles</td>
+<td>Battles created by the preceding special effects are fought.</td>
+<td>These battles form a separate retreat group after random-event battles.</td>
+</tr>
+<tr>
+<td align="right">33</td>
+<td>Sneak discovery</td>
+<td>Detected stealthy units fight for survival.</td>
+<td>A stealth force can avoid the ordinary movement battle and still be discovered and attacked later.</td>
+</tr>
+<tr>
+<td align="right">34</td>
+<td>Change besieger</td>
+<td>When allied forces share a siege, the game determines which ally is the active besieger, favouring the larger force.</td>
+<td>Siege ownership and control are settled after field, storming, event, and sneak-discovery battles.</td>
+</tr>
+<tr>
+<td align="right">35</td>
+<td>Building construction</td>
+<td>Forts, temples, and laboratories finish construction or demolition; fort melting also occurs.</td>
+<td>New infrastructure is too late for this month&#39;s recruitment, research, forging, rituals, preaching, or movement. It becomes useful from the next order phase onward.</td>
+</tr>
+<tr>
+<td align="right">36</td>
+<td>Special orders</td>
+<td>Orders such as Reanimate and Summon Allies resolve.</td>
+<td>The manual explicitly notes that allies created here are too late for this month&#39;s battles.</td>
+</tr>
+<tr>
+<td align="right">37</td>
+<td>Pillage</td>
+<td>Pillaging increases unrest and kills population.</td>
+<td>Pillage occurs immediately before income, so the damage can reduce or remove income from a province captured earlier that month.</td>
+</tr>
+<tr>
+<td align="right">38</td>
+<td>Income</td>
+<td>Nations collect provincial income.</td>
+<td>New ownership and pillage have already been resolved. Income arrives before upkeep is charged.</td>
+</tr>
+<tr>
+<td align="right">39</td>
+<td>Unrest alterations</td>
+<td>Unrest changes from dominion, scales, patrolling, and related systems are applied.</td>
+<td>Income was already collected using the earlier state; the new unrest primarily affects the following month.</td>
+</tr>
+<tr>
+<td align="right">40</td>
+<td>Starvation</td>
+<td>Units without sufficient supplies suffer starvation effects.</td>
+<td>Battles are already over. An army newly without supply fights this month&#39;s battles before the new starvation penalties are applied.</td>
+</tr>
+<tr>
+<td align="right">41</td>
+<td>Upkeep and desertion</td>
+<td>Unit upkeep is charged and desertion occurs.</td>
+<td>Income is collected first, so the treasury has this month&#39;s income available when upkeep is assessed.</td>
+</tr>
+<tr>
+<td align="right">42</td>
+<td>Dominion spread</td>
+<td>General dominion spread from temples and other sources resolves.</td>
+<td>Most battles have already occurred. New candles from ordinary spread do not retroactively alter those battles.</td>
+</tr>
+<tr>
+<td align="right">43</td>
+<td>Dominion effects</td>
+<td>Population loss, insanity pressure, temperature movement, and other special dominion effects are applied.</td>
+<td>Dominion first spreads, then its special world effects are calculated from the resulting state.</td>
+</tr>
+<tr>
+<td align="right">44</td>
+<td>Site effects</td>
+<td>Sites generate disease, unrest, or other monthly effects.</td>
+<td>Site effects happen after income, upkeep, and dominion effects but before healing and disease resolution.</td>
+</tr>
+<tr>
+<td align="right">45</td>
+<td>Overpopulation</td>
+<td>If global unit or commander limits are approached, the game removes some common entities.</td>
+<td>This is an emergency engine-maintenance step rather than ordinary strategic attrition.</td>
+</tr>
+<tr>
+<td align="right">46</td>
+<td>Aging</td>
+<td>In midwinter, units age and may acquire age-related afflictions such as disease.</td>
+<td>Aging is seasonal and occurs before the healing/disease step.</td>
+</tr>
+<tr>
+<td align="right">47</td>
+<td>Resolve battles</td>
+<td>Remaining battles generated by previous effects are fought.</td>
+<td>Late world effects can create battles after normal movement, event, and sneak battles.</td>
+</tr>
+<tr>
+<td align="right">48</td>
+<td>Heal and disease</td>
+<td>Units heal lost hit points; diseased units instead suffer disease damage and may gain afflictions.</td>
+<td>A surviving unit may recover after all ordinary battles, while disease can turn survival into a later death.</td>
+</tr>
+<tr>
+<td align="right">49</td>
+<td>Insanity</td>
+<td>Eligible units may become insane.</td>
+<td>Insanity for the next order phase is determined after battles and healing.</td>
+</tr>
+<tr>
+<td align="right">50</td>
+<td>Mercenaries</td>
+<td>Mercenary bids, purchases, and continued contracts are resolved.</td>
+<td>Mercenary availability is decided after income, upkeep, disease, and insanity.</td>
+</tr>
+<tr>
+<td align="right">51</td>
+<td>New random heroes</td>
+<td>Eligible national heroes may appear at the capital.</td>
+<td>A new hero arrives after all battles and cannot act during the month of arrival.</td>
+</tr>
+<tr>
+<td align="right">52</td>
+<td>Kill lone units</td>
+<td>Non-commanders stranded in enemy territory without a commander are removed.</td>
+<td>Troops left behind by commander death or separation cannot persist indefinitely as an uncontrolled hostile stack.</td>
+</tr>
+<tr>
+<td align="right">53</td>
+<td>Reclaim provinces</td>
+<td>A fort can restore province ownership to its owner or allied team under the stated conditions.</td>
+<td>Partial ownership can be corrected late in hosting if the fort is not under siege.</td>
+</tr>
+<tr>
+<td align="right">54</td>
+<td>Conscription</td>
+<td>Province Defence is raised to at least one where applicable, and dominion or commander effects that add PD resolve.</td>
+<td>Automatic PD appears after battles and therefore protects future turns, not the battle that caused the ownership change.</td>
+</tr>
+<tr>
+<td align="right">55</td>
+<td>Scouting</td>
+<td>Fresh scouting reports are generated.</td>
+<td>Reports show the end-of-hosting state rather than the exact state seen during earlier movement or battles.</td>
+</tr>
+<tr>
+<td align="right">56</td>
+<td>Elimination</td>
+<td>Nations meeting elimination conditions are removed.</td>
+<td>Elimination is checked after dominion spread and effects, but before the victory check and before immortals reform.</td>
+</tr>
+<tr>
+<td align="right">57</td>
+<td>Victory</td>
+<td>Configured victory conditions are checked and the game may end.</td>
+<td>Later administrative steps cannot rescue a position once victory has been declared.</td>
+</tr>
+<tr>
+<td align="right">58</td>
+<td>Update stats</td>
+<td>Hall of Fame and scoregraph information is updated.</td>
+<td>Public statistics reflect the completed turn after victory evaluation.</td>
+</tr>
+<tr>
+<td align="right">59</td>
+<td>Heroic abilities</td>
+<td>Eligible units gain or improve heroic abilities.</td>
+<td>A unit&#39;s new heroic benefit is normally available from the following turn.</td>
+</tr>
+<tr>
+<td align="right">60</td>
+<td>Reform Immortals</td>
+<td>Immortals due to return reform their bodies.</td>
+<td>The victory check has already occurred. An imminent immortal return cannot prevent a game that ended at step 57.</td>
+</tr>
+<tr>
+<td align="right">61</td>
+<td>Reduce PD</td>
+<td>Province Defence is reduced where population cannot support it; the manual gives a requirement of at least 10 population per PD point.</td>
+<td>Unsustainable PD can disappear after the victory and scouting checks, altering the next turn&#39;s defence.</td>
+</tr>
+<tr>
+<td align="right">62</td>
+<td>Yearning artifacts</td>
+<td>Artifacts that newly become yearning change state.</td>
+<td>Artifact yearning is an end-of-turn transition rather than an effect applied during forging or battle.</td>
+</tr>
+<tr>
+<td align="right">63</td>
+<td>Aftermath</td>
+<td>The engine validates orders and items, applies necessary shape changes, and performs final cleanup.</td>
+<td>The next player turn opens only after these consistency checks and state transitions finish.</td>
+</tr>
+</tbody></table>
+<h2 id="b1-phase-i-commitments-and-production">Phase I: commitments and production<a class="heading-link" href="#b1-phase-i-commitments-and-production" aria-label="Link to Phase I: commitments and production">#</a></h2><h3 id="b1-messages-resolve-before-danger">Messages resolve before danger<a class="heading-link" href="#b1-messages-resolve-before-danger" aria-label="Link to Messages resolve before danger">#</a></h3><p>Messages and attached resources are dispatched at step 1. The rule has an important diplomatic consequence: a trade agreed during the order phase is not interrupted because the sending capital is captured or the supposed courier dies later in hosting.</p>
+<p>This makes the act of sending reliable. It does not make the agreement honest. A player can still send less than promised, send the wrong item, or accept payment while making hostile orders.</p>
+<p><strong>New-player rule:</strong> Resource transfers are processed before almost anything can interfere.</p>
+<p><strong>Expert consequence:</strong> A nation expecting to be eliminated can still transfer resources before the elimination check. Multiplayer rules may need to address kingmaking or last-turn treasury transfers explicitly.</p>
+<h3 id="b1-research-is-secured-early">Research is secured early<a class="heading-link" href="#b1-research-is-secured-early" aria-label="Link to Research is secured early">#</a></h3><p>Research occurs at step 2. The official manual explicitly states that a researcher killed or assassinated later in the turn still contributes that month&#39;s research.</p>
+<p>This timing separates <strong>research production</strong> from <strong>researcher survival</strong>:</p>
+<ul>
+<li>the current month&#39;s points are earned;</li>
+<li>the researcher may still be lost before the next order phase;</li>
+<li>research enabled at step 2 may make new spells available for later battles in the same hosting cycle, subject to casting orders already submitted and the game&#39;s handling of scripted availability.</li>
+</ul>
+<p>The last point requires care. A script submitted before hosting cannot safely be assumed to select a spell that was unavailable when orders were written. Research can complete early, but practical same-turn spell use depends on scripting and spell-selection behaviour. That interaction belongs in the magic test suite.</p>
+<h3 id="b1-recruitment-occurs-before-invasion">Recruitment occurs before invasion<a class="heading-link" href="#b1-recruitment-occurs-before-invasion" aria-label="Link to Recruitment occurs before invasion">#</a></h3><p>Recruitment resolves at step 3. Units paid for in the preceding order phase exist before magic attacks, assassinations, ordinary movement, field battles, and storming.</p>
+<p>Practical consequences:</p>
+<ul>
+<li>emergency recruits can defend a province attacked that month;</li>
+<li>newly recruited commanders can be present as battlefield commanders;</li>
+<li>new units cannot receive a new strategic order until the following player turn;</li>
+<li>a province captured later does not cancel recruitment already completed;</li>
+<li>a recruitment queue still depends on the gold, resources, recruitment points, and local eligibility checked by the game.</li>
+</ul>
+<p>Recruitment timing is one reason a projected attack cannot rely solely on last turn&#39;s scouting report. A fort or capital can add another month of defenders before the attack lands.</p>
+<h3 id="b1-empowerment-and-forging-are-separate-commitments">Empowerment and forging are separate commitments<a class="heading-link" href="#b1-empowerment-and-forging-are-separate-commitments" aria-label="Link to Empowerment and forging are separate commitments">#</a></h3><p>Empowerment resolves at step 4 and forging at step 5. The sequence does not normally let one commander empower and forge in the same month because both require the commander&#39;s order. It does establish that permanent path changes exist before later systems inspect the commander.</p>
+<p>A newly forged item enters the national item inventory. It is not automatically equipped by a commander whose orders were already submitted. If a battle or ritual needs a booster, the commander must have it equipped before hosting. Forging it during that hosting is too late.</p>
+<h3 id="b1-preaching-is-not-ordinary-dominion-spread">Preaching is not ordinary dominion spread<a class="heading-link" href="#b1-preaching-is-not-ordinary-dominion-spread" aria-label="Link to Preaching is not ordinary dominion spread">#</a></h3><p>Ordinary preaching resolves at step 6 and heretic preaching at step 7. General dominion spread waits until step 42.</p>
+<p>This is strategically significant:</p>
+<ul>
+<li>successful preaching can change dominion before battles;</li>
+<li>general temple spread cannot change earlier battle conditions that month;</li>
+<li>heretic and insanity-related religious effects are also early;</li>
+<li>blood sacrifice is a different special order and should not be silently treated as ordinary preaching.</li>
+</ul>
+<p>Dominion-dependent hit points, morale, scales, sacred effects, and special national mechanics make this distinction worth testing in controlled battles.</p>
+<h3 id="b1-throne-claims-are-early">Throne claims are early<a class="heading-link" href="#b1-throne-claims-are-early" aria-label="Link to Throne claims are early">#</a></h3><p>Thrones are claimed at step 8, long before the victory check at step 57. A priest who successfully performs the order can establish the claim even if later killed.</p>
+<p>The claim does not cause an immediate mid-sequence victory. The remaining hosting steps still resolve before victory is checked.</p>
+<p>This creates a dangerous endgame pattern:</p>
+<ol>
+<li>a Throne is claimed at step 8;</li>
+<li>the claimant may lose battles or territory later;</li>
+<li>the game evaluates the configured victory condition at step 57.</li>
+</ol>
+<p>Book III resolves the ownership branch at an Official plus Community-tested tier. Killing the claimant after step 8 does not undo the claim. Conquering an unfortified Throne, or storming and conquering the fort that contains one, makes it unclaimed before step 57 and removes its points from the winning total. Merely besieging a fortified Throne does not conquer the fort or unclaim the Throne. Book III retains the evidence and complete state matrix; this chapter owns only the shared turn order.</p>
+<h2 id="b1-phase-ii-magic-and-special-threats">Phase II: magic and special threats<a class="heading-link" href="#b1-phase-ii-magic-and-special-threats" aria-label="Link to Phase II: magic and special threats">#</a></h2><h3 id="b1-rituals-have-random-caster-order">Rituals have random caster order<a class="heading-link" href="#b1-rituals-have-random-caster-order" aria-label="Link to Rituals have random caster order">#</a></h3><p>All ritual casters resolve at step 10 in random order. This is one of the most important expert-level timing rules.</p>
+<p>When two rituals interact, no plan should depend on one particular mage resolving first unless the game provides a separate explicit priority. Examples include:</p>
+<ul>
+<li>two commanders attempting to affect the same unique target;</li>
+<li>competing globals;</li>
+<li>rituals that move, kill, transform, or empower a target;</li>
+<li>rituals that alter a province before another ritual checks it;</li>
+<li>ritual combinations that depend on gem availability or a surviving caster.</li>
+</ul>
+<p>Random caster order means that a multi-ritual plan should be robust in every plausible order or should be tested to determine whether the particular rituals belong to separate substeps.</p>
+<blockquote>
+<p><strong>Expert rule:</strong> &quot;Both happen during the magic phase&quot; does not mean &quot;they happen simultaneously.&quot; It often means &quot;the engine resolves them one at a time in an order the player cannot choose.&quot;</p>
+</blockquote>
+<h3 id="b1-casting-a-global-and-receiving-its-world-effect-are-different-steps">Casting a global and receiving its world effect are different steps<a class="heading-link" href="#b1-casting-a-global-and-receiving-its-world-effect-are-different-steps" aria-label="Link to Casting a global and receiving its world effect are different steps">#</a></h3><p>A global enchantment is cast during rituals at step 10. The global&#39;s continuing world effect is applied at step 28.</p>
+<p>This division creates a clear dependency:</p>
+<ul>
+<li>the global can be established before ordinary movement;</li>
+<li>its normal world-processing stage occurs after movement battles and castle storming;</li>
+<li>the spell&#39;s immediate casting effect, if any, must be distinguished from its later monthly effect;</li>
+<li>losing a province or caster after step 10 may or may not end a province-centred global before step 28, depending on that global&#39;s rules.</li>
+</ul>
+<p>Every global guide should record:</p>
+<ol>
+<li>casting requirements;</li>
+<li>immediate casting result;</li>
+<li>ongoing effect step;</li>
+<li>dispel rules;</li>
+<li>termination condition;</li>
+<li>whether it is centred on a province, caster, site, or global slot.</li>
+</ol>
+<span class="anchor-alias" id="b1-remote-attacks-and-magic-battles" aria-hidden="true"></span><h3 id="b1-remote-attacks-strike-before-ordinary-movement">Remote attacks strike before ordinary movement<a class="heading-link" href="#b1-remote-attacks-strike-before-ordinary-movement" aria-label="Link to Remote attacks strike before ordinary movement">#</a></h3><p>Remote army attacks resolve at step 11. A conventional army ordered to leave the targeted province has not yet performed ordinary movement.</p>
+<p>This creates several practical uses:</p>
+<ul>
+<li>damage a stack before it marches;</li>
+<li>kill or disable a commander and strand troops;</li>
+<li>force attrition before a later conventional attack;</li>
+<li>attack a force whose destination is uncertain while it is still at its starting location.</li>
+</ul>
+<p>There is one important qualification. A commander may leave or arrive through magical movement at step 10, and magic battles occur at step 12. In this context, &quot;before movement&quot; needs to mean &quot;before conventional movement.&quot;</p>
+<h3 id="b1-magic-battles-are-their-own-battle-group">Magic battles are their own battle group<a class="heading-link" href="#b1-magic-battles-are-their-own-battle-group" aria-label="Link to Magic battles are their own battle group">#</a></h3><p>Battles created by magic resolve at step 12. This includes examples such as hostile teleportation and units moved by certain rituals.</p>
+<p>Retreats are placed after all battles in the group have resolved. That detail matters when multiple magic battles use adjacent provinces or when a retreat destination is itself affected by another magic battle.</p>
+<p>&quot;A battle&quot; is too broad to be a safe unit of analysis. The useful sequence is:</p>
+<ul>
+<li>the step that created the battle;</li>
+<li>the battle group to which it belongs;</li>
+<li>the point at which retreats from that group are placed.</li>
+</ul>
+<h3 id="b1-site-searching-precedes-conventional-conquest">Site searching precedes conventional conquest<a class="heading-link" href="#b1-site-searching-precedes-conventional-conquest" aria-label="Link to Site searching precedes conventional conquest">#</a></h3><p>Site searches resolve at step 14. A mage searching a province can complete the order before an enemy conventional army arrives.</p>
+<p>The newly found site then exists for later steps, but each site benefit has its own timing:</p>
+<ul>
+<li>gem income is not necessarily granted immediately upon discovery;</li>
+<li>a site effect may be processed at step 44;</li>
+<li>recruitment unlocked by the site cannot be ordered retroactively;</li>
+<li>a conqueror may take control of the newly discovered site later in the same turn.</li>
+</ul>
+<p>The distinction between <strong>discovering a site</strong> and <strong>receiving every benefit of that site</strong> should be preserved.</p>
+<h3 id="b1-prophets-recalled-gods-and-awakening">Prophets, recalled gods, and awakening<a class="heading-link" href="#b1-prophets-recalled-gods-and-awakening" aria-label="Link to Prophets, recalled gods, and awakening">#</a></h3><p>Prophets are declared at step 15. Call God resolves at step 16. Dormant and imprisoned Pretenders awaken at step 17.</p>
+<p>All three occur before ordinary movement and field battles, but after magic battles.</p>
+<p>This ordering produces several boundaries:</p>
+<ul>
+<li>a new prophet can defend against a later conventional attack;</li>
+<li>a prophet is not available for an earlier magic battle;</li>
+<li>an awakening Pretender can exist for later defence but generally has no fresh order that month;</li>
+<li>priests calling a god make their contribution before conventional attackers arrive;</li>
+<li>the returned god&#39;s exact availability and location must be checked under the Call God rules.</li>
+</ul>
+<h3 id="b1-blood-hunting-is-early-enough-to-be-dangerous">Blood Hunting is early enough to be dangerous<a class="heading-link" href="#b1-blood-hunting-is-early-enough-to-be-dangerous" aria-label="Link to Blood Hunting is early enough to be dangerous">#</a></h3><p>Blood Hunting occurs at step 18, before assassinations and movement. The hunt can generate slaves and unrest before later state-processing steps.</p>
+<p>The full economic consequences require the Blood Hunting chapter, but the timing model already establishes that:</p>
+<ul>
+<li>hunters remain in their starting province while hunting;</li>
+<li>a hunter can be assassinated after contributing to the hunt;</li>
+<li>unrest alterations from the broader turn are processed later;</li>
+<li>newly collected slaves exist before later upkeep and income steps, although their immediate availability for already-submitted rituals should not be assumed without testing.</li>
+</ul>
+<span class="anchor-alias" id="b1-assassinations-resolve-before-conventional-movement" aria-hidden="true"></span><h3 id="b1-horrors-and-assassinations-can-remove-movement-leaders">Horrors and assassinations can remove movement leaders<a class="heading-link" href="#b1-horrors-and-assassinations-can-remove-movement-leaders" aria-label="Link to Horrors and assassinations can remove movement leaders">#</a></h3><p>Horror visits occur at step 19 and assassinations at step 20. Both can kill a commander before conventional movement.</p>
+<p>An army&#39;s movement order belongs to a commander. If that commander dies before step 24 or 25, assigned troops may remain behind, become uncommanded, or eventually be removed if stranded in hostile territory.</p>
+<p>A resilient army-movement plan considers:</p>
+<ul>
+<li>redundant commanders;</li>
+<li>bodyguards;</li>
+<li>stealth and assassination threats;</li>
+<li>Horror Marks;</li>
+<li>whether critical troops can be reassigned before hosting;</li>
+<li>whether the loss of a single leader invalidates an entire movement chain.</li>
+</ul>
+<h3 id="b1-relinquishing-requires-an-ally-already-present">Relinquishing requires an ally already present<a class="heading-link" href="#b1-relinquishing-requires-an-ally-already-present" aria-label="Link to Relinquishing requires an ally already present">#</a></h3><p>Relinquish Province resolves at step 21. The official description requires the receiving non-stealthed allied commander to already be in the province.</p>
+<p>An ally moving into the province at step 24 is too late. A stealthy allied commander does not satisfy the stated condition.</p>
+<p>This is a good example of why a plain-language order description is not enough. The order&#39;s position in hosting determines which board state it can see.</p>
+<span class="anchor-alias" id="b1-movement-and-conquest" aria-hidden="true"></span><h2 id="b1-phase-iii-movement-and-conquest">Phase III: movement and conquest<a class="heading-link" href="#b1-phase-iii-movement-and-conquest" aria-label="Link to Phase III: movement and conquest">#</a></h2><h3 id="b1-friendly-movement-receives-its-own-step">Friendly movement receives its own step<a class="heading-link" href="#b1-friendly-movement-receives-its-own-step" aria-label="Link to Friendly movement receives its own step">#</a></h3><p>Movement ending in a friendly province resolves at step 24. Other conventional movement resolves at step 25.</p>
+<p>The manual explains the practical purpose: a force trying to enter a friendly province before an enemy arrives normally succeeds unless an earlier event prevents it.</p>
+<p>This is not a universal guarantee that every reinforcement arrives safely. Earlier dangers include:</p>
+<ul>
+<li>remote attacks;</li>
+<li>magic battles;</li>
+<li>planar loss;</li>
+<li>Horrors;</li>
+<li>assassination;</li>
+<li>failed movement requirements;</li>
+<li>commander death;</li>
+<li>terrain or movement limitations.</li>
+</ul>
+<p>It does mean that an ordinary hostile arrival does not normally prevent valid friendly reinforcement from reaching the province first.</p>
+<h3 id="b1-other-movement-contains-several-different-intentions">&quot;Other movement&quot; contains several different intentions<a class="heading-link" href="#b1-other-movement-contains-several-different-intentions" aria-label="Link to &quot;Other movement&quot; contains several different intentions">#</a></h3><p>Step 25 covers the remaining conventional movements, including Break Siege. It can include:</p>
+<ul>
+<li>invasion of hostile territory;</li>
+<li>movement into independent provinces;</li>
+<li>armies crossing toward a province that changes ownership;</li>
+<li>breaking out of a siege;</li>
+<li>opposing movements that produce a meeting or province battle.</li>
+</ul>
+<p>Movement validity depends on the movement rules: map-move allowance, terrain costs, roads, rivers, survival abilities, flying, sailing, planes, army composition, and the slowest or otherwise limiting elements of the force.</p>
+<p>Book I records when movement resolves. The movement and logistics material handles the detailed calculation of whether a move is valid.</p>
+<h3 id="b1-field-battles-occur-after-both-movement-steps">Field battles occur after both movement steps<a class="heading-link" href="#b1-field-battles-occur-after-both-movement-steps" aria-label="Link to Field battles occur after both movement steps">#</a></h3><p>Battles created by conventional movement resolve at step 26. The defender seen in battle may include:</p>
+<ul>
+<li>the pre-existing garrison;</li>
+<li>recruited units from step 3;</li>
+<li>friendly reinforcements from step 24;</li>
+<li>Province Defence;</li>
+<li>commanders or units that did not move;</li>
+<li>magical arrivals from earlier steps, if they survived;</li>
+<li>units altered by early effects.</li>
+</ul>
+<p>It may exclude:</p>
+<ul>
+<li>conventional reinforcements whose movement failed;</li>
+<li>commanders killed by Horrors or assassinations;</li>
+<li>allies summoned later at step 36;</li>
+<li>infrastructure completed later at step 35;</li>
+<li>dominion changes that wait for step 42.</li>
+</ul>
+<h3 id="b1-castle-storming-is-later-than-field-battle">Castle storming is later than field battle<a class="heading-link" href="#b1-castle-storming-is-later-than-field-battle" aria-label="Link to Castle storming is later than field battle">#</a></h3><p>Castle storming resolves at step 27. A storming force must survive the month&#39;s preceding events and battles before entering the assault.</p>
+<p>This ordering matters when:</p>
+<ul>
+<li>a relief army arrives;</li>
+<li>the besiegers fight a field battle;</li>
+<li>an army attempts to break siege;</li>
+<li>assassinations remove storm leaders;</li>
+<li>remote attacks weaken the besiegers;</li>
+<li>multiple allied forces are involved.</li>
+</ul>
+<p>Storming is a separate battle step, resolved later than movement battles and governed by its own deployment, wall, gate, and defender rules.</p>
+<h3 id="b1-retreats-belong-to-battle-groups">Retreats belong to battle groups<a class="heading-link" href="#b1-retreats-belong-to-battle-groups" aria-label="Link to Retreats belong to battle groups">#</a></h3><p>The manual repeatedly notes that retreats to adjacent provinces occur after all battles in a relevant group have resolved.</p>
+<p>This prevents an oversimplified model in which a routed army immediately appears in a neighbouring province while other same-step battles are still being processed.</p>
+<p>For expert analysis, a retreat question should record:</p>
+<ul>
+<li>which step caused the battle;</li>
+<li>which other battles shared the step;</li>
+<li>candidate retreat provinces at the time retreats are placed;</li>
+<li>control and hostile forces in those provinces;</li>
+<li>whether the unit was inside or outside a fort;</li>
+<li>whether the route crossed planes or special connections.</li>
+</ul>
+<h2 id="b1-phase-iv-world-effects-and-hidden-conflict">Phase IV: world effects and hidden conflict<a class="heading-link" href="#b1-phase-iv-world-effects-and-hidden-conflict" aria-label="Link to Phase IV: world effects and hidden conflict">#</a></h2><h3 id="b1-global-effects-are-late-relative-to-conquest">Global effects are late relative to conquest<a class="heading-link" href="#b1-global-effects-are-late-relative-to-conquest" aria-label="Link to Global effects are late relative to conquest">#</a></h3><p>Ongoing global enchantment effects resolve at step 28, after conventional movement and castle storming.</p>
+<p>This means a global cast at step 10 may be visible and active as an enchantment before its normal monthly world effect is processed. If the effect depends on a province, site, caster, or global state that can be lost during movement, the exact spell wording and tests become important.</p>
+<p>No global should be described merely as &quot;going off in the magic phase.&quot; Its casting and its world tick may be separated by most of the month&#39;s major battles.</p>
+<h3 id="b1-random-events-see-a-heavily-updated-world">Random events see a heavily updated world<a class="heading-link" href="#b1-random-events-see-a-heavily-updated-world" aria-label="Link to Random events see a heavily updated world">#</a></h3><p>Random events occur at step 29. By then, the game has already processed:</p>
+<ul>
+<li>research and recruitment;</li>
+<li>preaching and Throne claims;</li>
+<li>rituals and magical attacks;</li>
+<li>assassinations;</li>
+<li>conventional movement;</li>
+<li>field battles and storming;</li>
+<li>global world effects.</li>
+</ul>
+<p>Events can react to a state that did not exist when orders were submitted.</p>
+<p>The Event Modding Manual confirms that events can test a wide range of conditions, including:</p>
+<ul>
+<li>era and turn;</li>
+<li>season and month;</li>
+<li>nation;</li>
+<li>treasury and gems;</li>
+<li>research;</li>
+<li>population;</li>
+<li>unrest and PD;</li>
+<li>buildings;</li>
+<li>terrain and plane;</li>
+<li>sites and Thrones;</li>
+<li>dominion and scales;</li>
+<li>particular monsters, Pretenders, priests, mages, and orders;</li>
+<li>global enchantments;</li>
+<li>event codes and variables.</li>
+</ul>
+<p>This is why event systems can simulate diplomacy, doctrine, religious activity, or evolving stories without directly rewriting the strategic AI.</p>
+<h3 id="b1-event-battles-resolve-separately">Event battles resolve separately<a class="heading-link" href="#b1-event-battles-resolve-separately" aria-label="Link to Event battles resolve separately">#</a></h3><p>Battles created by random events occur at step 30. A nation can win its movement battle and then face a later event battle in the same province.</p>
+<p>Reports should be read in timing order. Two battles in one province during the same month may be caused by different systems and may see different surviving forces.</p>
+<h3 id="b1-item-and-monster-effects-have-a-separate-monthly-tick">Item and monster effects have a separate monthly tick<a class="heading-link" href="#b1-item-and-monster-effects-have-a-separate-monthly-tick" aria-label="Link to Item and monster effects have a separate monthly tick">#</a></h3><p>Monthly effects from magic items and monsters resolve at step 31, followed by any battles they cause at step 32.</p>
+<p>The manual distinguishes:</p>
+<ul>
+<li>item forging at step 5;</li>
+<li>item-assisted ritual casting at step 10;</li>
+<li>special monthly item or monster effects at step 31.</li>
+</ul>
+<p>This prevents a common category error in which every effect attached to an item is assumed to occur when the item is forged or when rituals resolve.</p>
+<span class="anchor-alias" id="b1-sneaking-discovery-can-cause-a-late-battle" aria-hidden="true"></span><h3 id="b1-stealth-failure-can-produce-a-late-battle">Stealth failure can produce a late battle<a class="heading-link" href="#b1-stealth-failure-can-produce-a-late-battle" aria-label="Link to Stealth failure can produce a late battle">#</a></h3><p>Sneak discovery occurs at step 33. A stealthy force may avoid conventional combat because it remained undiscovered, then be exposed and forced to fight later.</p>
+<p>Stealth changes what triggers combat. It does not make a force immune to hostile troops.</p>
+<p>Expert stealth analysis should distinguish:</p>
+<ul>
+<li>successful sneaking movement;</li>
+<li>patrol detection;</li>
+<li>event-based detection;</li>
+<li>Glamour visibility;</li>
+<li>assassination or spy actions;</li>
+<li>late sneak-discovery battles;</li>
+<li>retreat and survival after discovery.</li>
+</ul>
+<h2 id="b1-phase-v-state-economy-and-dominion">Phase V: state, economy, and dominion<a class="heading-link" href="#b1-phase-v-state-economy-and-dominion" aria-label="Link to Phase V: state, economy, and dominion">#</a></h2><h3 id="b1-allied-siege-leadership-is-determined-after-combat">Allied siege leadership is determined after combat<a class="heading-link" href="#b1-allied-siege-leadership-is-determined-after-combat" aria-label="Link to Allied siege leadership is determined after combat">#</a></h3><p>At step 34, the game selects the active besieger when allied armies share a siege. Larger armies take precedence according to the manual.</p>
+<p>This decision occurs after the major battle groups. Losses suffered earlier in the month can change which ally counts as the besieger.</p>
+<span class="anchor-alias" id="b1-building-construction" aria-hidden="true"></span><h3 id="b1-buildings-finish-after-the-month-s-active-systems">Buildings finish after the month&#39;s active systems<a class="heading-link" href="#b1-buildings-finish-after-the-month-s-active-systems" aria-label="Link to Buildings finish after the month's active systems">#</a></h3><p>Construction and demolition occur at step 35.</p>
+<p>A building ordered this month is too late to support:</p>
+<ul>
+<li>step 2 research;</li>
+<li>step 3 recruitment;</li>
+<li>step 5 forging;</li>
+<li>step 6 preaching requirements where a temple matters;</li>
+<li>step 10 ritual casting;</li>
+<li>step 14 site-search orders;</li>
+<li>earlier battles.</li>
+</ul>
+<p>The completed structure is principally an investment in the following turn.</p>
+<p>This is the first major principle of infrastructure timing:</p>
+<blockquote>
+<p><strong>A building consumes resources in the present to unlock actions in the future.</strong></p>
+</blockquote>
+<p>The economy volume will extend this into fort construction time, administration, recruitment access, laboratory networks, temple spread, and opportunity cost.</p>
+<h3 id="b1-special-order-summons-arrive-after-battle">Special-order summons arrive after battle<a class="heading-link" href="#b1-special-order-summons-arrive-after-battle" aria-label="Link to Special-order summons arrive after battle">#</a></h3><p>Special orders such as Reanimate and Summon Allies occur at step 36. The manual explicitly states that allies summoned here do not participate in this month&#39;s battles.</p>
+<p>This differs from:</p>
+<ul>
+<li>recruitment at step 3;</li>
+<li>ritual summons at step 10;</li>
+<li>event-created units at their event step;</li>
+<li>units arriving through movement.</li>
+</ul>
+<p>When a unit appears is as important as how it is created.</p>
+<h3 id="b1-pillage-damages-the-same-month-s-income">Pillage damages the same month&#39;s income<a class="heading-link" href="#b1-pillage-damages-the-same-month-s-income" aria-label="Link to Pillage damages the same month's income">#</a></h3><p>Pillage occurs at step 37, immediately before income at step 38. The official manual explicitly warns that pillaging a newly conquered province can reduce or remove the income collected from it.</p>
+<p>This creates a direct trade:</p>
+<ul>
+<li>immediate pillage effects;</li>
+<li>increased unrest;</li>
+<li>population loss;</li>
+<li>reduced current income;</li>
+<li>reduced future economic value;</li>
+<li>possible strategic denial if the province cannot be held.</li>
+</ul>
+<p>Pillage should never be evaluated only by its immediate gold or damage result.</p>
+<h3 id="b1-income-precedes-upkeep">Income precedes upkeep<a class="heading-link" href="#b1-income-precedes-upkeep" aria-label="Link to Income precedes upkeep">#</a></h3><p>Income is collected at step 38. Upkeep is paid at step 41.</p>
+<p>This means the month&#39;s provincial income is available before the game assesses unit maintenance. A treasury that appears unable to cover upkeep at the end of the order phase may survive if sufficient income is collected.</p>
+<p>Income may already have been altered by:</p>
+<ul>
+<li>conquest;</li>
+<li>pillage;</li>
+<li>ownership;</li>
+<li>unrest existing before step 39;</li>
+<li>population;</li>
+<li>scales and dominion already present;</li>
+<li>sites and other modifiers;</li>
+<li>events or earlier effects.</li>
+</ul>
+<h3 id="b1-unrest-changes-after-income">Unrest changes after income<a class="heading-link" href="#b1-unrest-changes-after-income" aria-label="Link to Unrest changes after income">#</a></h3><p>The broad unrest-alteration step is 39, after income. Patrolling, dominion, scales, and related changes are reflected here.</p>
+<p>This suggests a timing distinction between:</p>
+<ul>
+<li>unrest already present when income is collected;</li>
+<li>unrest created directly by pillage at step 37;</li>
+<li>general unrest alterations processed at step 39.</li>
+</ul>
+<p>Each unrest source should be tested against income on its own. One slogan cannot safely describe all of them.</p>
+<span class="anchor-alias" id="b1-starvation-is-late" aria-hidden="true"></span><h3 id="b1-starvation-follows-battle">Starvation follows battle<a class="heading-link" href="#b1-starvation-follows-battle" aria-label="Link to Starvation follows battle">#</a></h3><p>Starvation is processed at step 40. The manual states that an army newly without supplies fights its battles before starvation effects are applied.</p>
+<p>This does not make supply unimportant. Existing starvation penalties and afflictions may already be present. The rule means that the first new month of shortage does not retroactively weaken battles that occurred earlier in that hosting cycle.</p>
+<p>For campaign planning, supply is a delayed threat that compounds over time:</p>
+<ol>
+<li>the army enters or remains in a low-supply situation;</li>
+<li>it fights before the new starvation tick;</li>
+<li>starvation is applied afterward;</li>
+<li>the weakened army enters the next order phase with penalties, disease risk, or afflictions.</li>
+</ol>
+<h3 id="b1-upkeep-and-desertion-follow-income">Upkeep and desertion follow income<a class="heading-link" href="#b1-upkeep-and-desertion-follow-income" aria-label="Link to Upkeep and desertion follow income">#</a></h3><p>At step 41, upkeep is charged and desertion occurs.</p>
+<p>This timing means conquest and income may fund the army before payment is due. It also means pillage, income loss, or treasury transfers can contribute to a shortfall.</p>
+<p>The exact desertion priority and behaviour require a dedicated economy test. A reliable guide should not claim which units desert first without current evidence.</p>
+<h3 id="b1-dominion-spread-then-dominion-effects">Dominion spread, then dominion effects<a class="heading-link" href="#b1-dominion-spread-then-dominion-effects" aria-label="Link to Dominion spread, then dominion effects">#</a></h3><p>General dominion spread occurs at step 42. Dominion effects follow at step 43.</p>
+<p>This produces a clear two-stage model:</p>
+<ol>
+<li>candles spread or contest one another;</li>
+<li>special effects of the resulting dominion state are applied.</li>
+</ol>
+<p>Possible effects include:</p>
+<ul>
+<li>population loss;</li>
+<li>insanity;</li>
+<li>temperature movement;</li>
+<li>national or Pretender-specific dominion effects;</li>
+<li>event eligibility;</li>
+<li>other mechanics tied to friendly or hostile candles.</li>
+</ul>
+<p>Most conventional battles are already over. Preaching at steps 6 and 7 is the major earlier religious exception.</p>
+<h3 id="b1-sites-apply-their-monthly-effects">Sites apply their monthly effects<a class="heading-link" href="#b1-sites-apply-their-monthly-effects" aria-label="Link to Sites apply their monthly effects">#</a></h3><p>Magic-site effects occur at step 44. Disease, unrest, and other site-driven changes are applied after dominion effects.</p>
+<p>Site-search discovery occurred at step 14. A newly found site may apply an effect later in the same month, although the timing still needs to be checked for the specific site and effect.</p>
+<span class="anchor-alias" id="b1-aging-disease-and-insanity" aria-hidden="true"></span><h2 id="b1-phase-vi-attrition-and-end-state">Phase VI: attrition and end-state<a class="heading-link" href="#b1-phase-vi-attrition-and-end-state" aria-label="Link to Phase VI: attrition and end-state">#</a></h2><h3 id="b1-aging-is-seasonal">Aging is seasonal<a class="heading-link" href="#b1-aging-is-seasonal" aria-label="Link to Aging is seasonal">#</a></h3><p>Aging occurs at step 46 and only during midwinter. Units gain a year and may receive age-related afflictions.</p>
+<p>The seasonal condition matters when planning:</p>
+<ul>
+<li>old mages;</li>
+<li>rejuvenation or age modification;</li>
+<li>disease management;</li>
+<li>transformation;</li>
+<li>long campaigns;</li>
+<li>effects that trigger at a particular month.</li>
+</ul>
+<p>The Event Modding Manual identifies month 10 as midwinter in its month numbering, but a full calendar reference should be verified in the dedicated time-and-seasons appendix.</p>
+<h3 id="b1-healing-and-disease-share-a-late-step">Healing and disease share a late step<a class="heading-link" href="#b1-healing-and-disease-share-a-late-step" aria-label="Link to Healing and disease share a late step">#</a></h3><p>At step 48, ordinary units regain lost hit points while diseased units instead suffer disease damage and may gain more afflictions.</p>
+<p>This occurs after ordinary battles, global effects, events, item effects, site effects, aging, and any late battles.</p>
+<p>Surviving the battle report does not always mean surviving until the next player turn.</p>
+<h3 id="b1-insanity-is-determined-after-healing">Insanity is determined after healing<a class="heading-link" href="#b1-insanity-is-determined-after-healing" aria-label="Link to Insanity is determined after healing">#</a></h3><p>Insanity changes occur at step 49. An affected unit enters the next order phase with the resulting behaviour or lost control.</p>
+<p>Insanity also appears in earlier steps, including heretic preaching at step 7. It is not confined to one moment in the turn. The step 49 check establishes or changes the condition that will affect later orders.</p>
+<h3 id="b1-mercenaries-and-heroes-arrive-too-late-to-act">Mercenaries and heroes arrive too late to act<a class="heading-link" href="#b1-mercenaries-and-heroes-arrive-too-late-to-act" aria-label="Link to Mercenaries and heroes arrive too late to act">#</a></h3><p>Mercenary resolution occurs at step 50 and new random heroes at step 51.</p>
+<p>Neither can receive an order or join an earlier battle during the month of arrival. They become assets for the following order phase.</p>
+<h3 id="b1-lone-troops-are-cleaned-up">Lone troops are cleaned up<a class="heading-link" href="#b1-lone-troops-are-cleaned-up" aria-label="Link to Lone troops are cleaned up">#</a></h3><p>At step 52, non-commanders left alone in enemy territory are removed.</p>
+<p>This can be the delayed consequence of:</p>
+<ul>
+<li>assassination;</li>
+<li>commander death in an earlier battle;</li>
+<li>failed or split movement;</li>
+<li>a commander retreating separately;</li>
+<li>ownership changes;</li>
+<li>units being created without a valid leader.</li>
+</ul>
+<p>The lesson goes beyond the cleanup rule. Commander redundancy protects logistics as well as morale.</p>
+<h3 id="b1-end-of-turn-ownership-can-still-change">End-of-turn ownership can still change<a class="heading-link" href="#b1-end-of-turn-ownership-can-still-change" aria-label="Link to End-of-turn ownership can still change">#</a></h3><p>At step 53, a fort can reclaim province ownership under the conditions stated in the manual, including the absence of an active siege.</p>
+<p>This reflects the distinction between:</p>
+<ul>
+<li>ownership of the open province;</li>
+<li>ownership of the fortress;</li>
+<li>partial ownership;</li>
+<li>full ownership.</li>
+</ul>
+<p>Any guide to events, income, recruitment, or province transfer that says only &quot;owner&quot; must specify which kind of ownership the rule requires.</p>
+<h3 id="b1-conscription-is-for-the-next-attack">Conscription is for the next attack<a class="heading-link" href="#b1-conscription-is-for-the-next-attack" aria-label="Link to Conscription is for the next attack">#</a></h3><p>At step 54, Province Defence can be raised to a minimum and PD-adding dominion or commander effects occur.</p>
+<p>This is after every ordinary battle. The new defence cannot save the province from the attack that caused its creation or transfer.</p>
+<h3 id="b1-scouting-reports-are-end-state-reports">Scouting reports are end-state reports<a class="heading-link" href="#b1-scouting-reports-are-end-state-reports" aria-label="Link to Scouting reports are end-state reports">#</a></h3><p>Scouting updates at step 55. A report is a view of the state after most monthly transformations, not a recording of every force that passed through the province.</p>
+<p>This explains why scouting can omit:</p>
+<ul>
+<li>an army that moved onward;</li>
+<li>units killed in an earlier battle;</li>
+<li>a stealth force not discovered;</li>
+<li>a temporary magical arrival;</li>
+<li>infrastructure or ownership that changed again later.</li>
+</ul>
+<p>Intelligence should be dated and treated as a snapshot.</p>
+<h3 id="b1-elimination-precedes-victory">Elimination precedes victory<a class="heading-link" href="#b1-elimination-precedes-victory" aria-label="Link to Elimination precedes victory">#</a></h3><p>Elimination is checked at step 56 and victory at step 57.</p>
+<p>Dominion spread and effects have already resolved, so a dominion collapse can matter immediately. Immortal return is still three steps away at step 60.</p>
+<p>The sequence prevents a player from assuming that a future recovery effect will be processed before the game decides whether the nation or game has ended.</p>
+<h3 id="b1-heroic-abilities-and-immortality-are-post-victory">Heroic abilities and immortality are post-victory<a class="heading-link" href="#b1-heroic-abilities-and-immortality-are-post-victory" aria-label="Link to Heroic abilities and immortality are post-victory">#</a></h3><p>Statistics update at step 58, heroic abilities at step 59, and immortal reformation at step 60.</p>
+<p>These are transitions into the next turn unless the game has already ended.</p>
+<h3 id="b1-province-defence-can-be-reduced-after-reports">Province Defence can be reduced after reports<a class="heading-link" href="#b1-province-defence-can-be-reduced-after-reports" aria-label="Link to Province Defence can be reduced after reports">#</a></h3><p>At step 61, PD is reduced if population cannot support it. The manual states that at least 10 population is required for each PD point.</p>
+<p>Because scouting updates at step 55, an edge case exists: the displayed or reported value may need to be checked against the final post-reduction state. The user interface behaviour should be verified in a controlled test.</p>
+<h3 id="b1-aftermath-closes-the-turn">Aftermath closes the turn<a class="heading-link" href="#b1-aftermath-closes-the-turn" aria-label="Link to Aftermath closes the turn">#</a></h3><p>Artifact yearning occurs at step 62. Final validation, item checks, and shape changes occur at step 63.</p>
+<p>Aftermath is a reminder that not every visible state transition has a named strategic order. Shape-changing units, invalid item states, and other cleanup may be corrected only at the end.</p>
+<h2 id="b1-timing-chains-every-player-should-know">Timing chains every player should know<a class="heading-link" href="#b1-timing-chains-every-player-should-know" aria-label="Link to Timing chains every player should know">#</a></h2><h3 id="b1-researcher-assassination">Researcher assassination<a class="heading-link" href="#b1-researcher-assassination" aria-label="Link to Researcher assassination">#</a></h3><table>
+<thead>
+<tr>
+<th align="right">Order</th>
+<th>Event</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">2</td>
+<td>The mage contributes research</td>
+</tr>
+<tr>
+<td align="right">20</td>
+<td>The assassination attempt occurs</td>
+</tr>
+<tr>
+<td align="right">48</td>
+<td>If wounded and surviving, healing or disease is processed</td>
+</tr>
+<tr>
+<td align="right">Next turn</td>
+<td>The nation keeps the research but may have lost the mage</td>
+</tr>
+</tbody></table>
+<p><strong>Conclusion:</strong> Assassination disrupts future research, not the research already produced that month.</p>
+<h3 id="b1-emergency-recruitment-against-invasion">Emergency recruitment against invasion<a class="heading-link" href="#b1-emergency-recruitment-against-invasion" aria-label="Link to Emergency recruitment against invasion">#</a></h3><table>
+<thead>
+<tr>
+<th align="right">Order</th>
+<th>Event</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">3</td>
+<td>Recruits are created</td>
+</tr>
+<tr>
+<td align="right">24</td>
+<td>Friendly reinforcements may arrive</td>
+</tr>
+<tr>
+<td align="right">25</td>
+<td>The hostile army moves</td>
+</tr>
+<tr>
+<td align="right">26</td>
+<td>The field battle includes eligible new defenders</td>
+</tr>
+</tbody></table>
+<p><strong>Conclusion:</strong> Recruitment and friendly reinforcement can both increase a defence beyond what the attacker saw in the preceding scout report.</p>
+<h3 id="b1-commander-assassination-strands-an-army">Commander assassination strands an army<a class="heading-link" href="#b1-commander-assassination-strands-an-army" aria-label="Link to Commander assassination strands an army">#</a></h3><table>
+<thead>
+<tr>
+<th align="right">Order</th>
+<th>Event</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">20</td>
+<td>The movement commander is assassinated</td>
+</tr>
+<tr>
+<td align="right">24-25</td>
+<td>The dead commander cannot complete conventional movement</td>
+</tr>
+<tr>
+<td align="right">52</td>
+<td>Troops left alone in hostile territory may be removed</td>
+</tr>
+</tbody></table>
+<p><strong>Conclusion:</strong> A cheap assassination can have a strategic effect much larger than the commander&#39;s personal value.</p>
+<h3 id="b1-remote-attack-before-a-march">Remote attack before a march<a class="heading-link" href="#b1-remote-attack-before-a-march" aria-label="Link to Remote attack before a march">#</a></h3><table>
+<thead>
+<tr>
+<th align="right">Order</th>
+<th>Event</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">10</td>
+<td>The attacking ritual is cast</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td>Its remote strike hits the army</td>
+</tr>
+<tr>
+<td align="right">25</td>
+<td>The surviving conventional army attempts movement</td>
+</tr>
+<tr>
+<td align="right">26</td>
+<td>It fights any resulting field battle</td>
+</tr>
+</tbody></table>
+<p><strong>Conclusion:</strong> Remote attacks can soften, disorganise, or decapitate an army before its conventional operation.</p>
+<h3 id="b1-teleportation-and-conventional-invasion">Teleportation and conventional invasion<a class="heading-link" href="#b1-teleportation-and-conventional-invasion" aria-label="Link to Teleportation and conventional invasion">#</a></h3><table>
+<thead>
+<tr>
+<th align="right">Order</th>
+<th>Event</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">10</td>
+<td>Magical movement ritual resolves</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td>Any resulting magic battle is fought</td>
+</tr>
+<tr>
+<td align="right">24-25</td>
+<td>Conventional armies move</td>
+</tr>
+<tr>
+<td align="right">26</td>
+<td>Conventional movement battles occur</td>
+</tr>
+</tbody></table>
+<p><strong>Conclusion:</strong> A teleporting force cannot be treated as arriving at the same moment as a marching army. The magical force may fight alone first.</p>
+<h3 id="b1-constructing-a-laboratory">Constructing a laboratory<a class="heading-link" href="#b1-constructing-a-laboratory" aria-label="Link to Constructing a laboratory">#</a></h3><table>
+<thead>
+<tr>
+<th align="right">Order</th>
+<th>Event</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">2</td>
+<td>Research occurs without the unfinished laboratory</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td>Forging occurs without it</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td>Rituals occur without it</td>
+</tr>
+<tr>
+<td align="right">35</td>
+<td>The laboratory finishes</td>
+</tr>
+<tr>
+<td align="right">Next turn</td>
+<td>Eligible commanders can use the laboratory</td>
+</tr>
+</tbody></table>
+<p><strong>Conclusion:</strong> A laboratory order is an investment in next month&#39;s magic, not a way to enable this month&#39;s rituals.</p>
+<h3 id="b1-pillage-after-conquest">Pillage after conquest<a class="heading-link" href="#b1-pillage-after-conquest" aria-label="Link to Pillage after conquest">#</a></h3><table>
+<thead>
+<tr>
+<th align="right">Order</th>
+<th>Event</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">25</td>
+<td>Invaders move</td>
+</tr>
+<tr>
+<td align="right">26</td>
+<td>They win the province</td>
+</tr>
+<tr>
+<td align="right">37</td>
+<td>A valid Pillage order is processed</td>
+</tr>
+<tr>
+<td align="right">38</td>
+<td>Income is collected from the damaged province</td>
+</tr>
+</tbody></table>
+<p><strong>Conclusion:</strong> Pillaging a newly conquered province can sacrifice immediate and future economic value.</p>
+<h3 id="b1-starvation-after-combat">Starvation after combat<a class="heading-link" href="#b1-starvation-after-combat" aria-label="Link to Starvation after combat">#</a></h3><table>
+<thead>
+<tr>
+<th align="right">Order</th>
+<th>Event</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">26-33</td>
+<td>Ordinary, event, special-effect, and sneak battles occur</td>
+</tr>
+<tr>
+<td align="right">40</td>
+<td>New starvation effects are applied</td>
+</tr>
+<tr>
+<td align="right">48</td>
+<td>Healing or disease is processed</td>
+</tr>
+<tr>
+<td align="right">Next turn</td>
+<td>The army begins in its worsened condition</td>
+</tr>
+</tbody></table>
+<p><strong>Conclusion:</strong> An army can fight at its pre-starvation state and still emerge strategically crippled afterward.</p>
+<h3 id="b1-dominion-before-and-after-battle">Dominion before and after battle<a class="heading-link" href="#b1-dominion-before-and-after-battle" aria-label="Link to Dominion before and after battle">#</a></h3><table>
+<thead>
+<tr>
+<th align="right">Order</th>
+<th>Event</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">6-7</td>
+<td>Preaching and heretic preaching adjust dominion</td>
+</tr>
+<tr>
+<td align="right">26-33</td>
+<td>Most battles occur</td>
+</tr>
+<tr>
+<td align="right">42</td>
+<td>General dominion spread occurs</td>
+</tr>
+<tr>
+<td align="right">43</td>
+<td>Dominion effects apply</td>
+</tr>
+</tbody></table>
+<p><strong>Conclusion:</strong> Active preaching can matter before battle. Passive monthly spread generally affects the state after battle.</p>
+<span class="anchor-alias" id="b1-immortals-return-after-victory" aria-hidden="true"></span><h3 id="b1-victory-before-immortal-return">Victory before immortal return<a class="heading-link" href="#b1-victory-before-immortal-return" aria-label="Link to Victory before immortal return">#</a></h3><table>
+<thead>
+<tr>
+<th align="right">Order</th>
+<th>Event</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">56</td>
+<td>Elimination is checked</td>
+</tr>
+<tr>
+<td align="right">57</td>
+<td>Victory is checked</td>
+</tr>
+<tr>
+<td align="right">60</td>
+<td>Due immortals reform</td>
+</tr>
+</tbody></table>
+<p><strong>Conclusion:</strong> A return scheduled for the end of the month cannot undo a game-ending state already recognised at step 57.</p>
+<h2 id="b1-a-new-player-s-turn-checklist">A new player&#39;s turn checklist<a class="heading-link" href="#b1-a-new-player-s-turn-checklist" aria-label="Link to A new player's turn checklist">#</a></h2><h3 id="b1-before-finalising-orders">Before finalising orders<a class="heading-link" href="#b1-before-finalising-orders" aria-label="Link to Before finalising orders">#</a></h3><ul>
+<li>Check the treasury after recruitment, construction, forging, and expected transfers.</li>
+<li>Confirm that every army has a commander with the correct normal, magic, or undead leadership.</li>
+<li>Confirm that the slowest movement restriction has not invalidated an army&#39;s route.</li>
+<li>Check whether rivers, roads, mountains, forests, swamps, caves, sailing, or planes alter movement.</li>
+<li>Give bodyguards to commanders exposed to assassination.</li>
+<li>Verify that critical mages have the required paths, gems, laboratory, and target.</li>
+<li>Equip boosters before hosting; forging them this turn is too late for the same caster to use them.</li>
+<li>Check whether a ritual target is the starting province or expected destination of an enemy.</li>
+<li>Inspect every fort for recruitment, siege, storm, and repair intentions.</li>
+<li>Confirm that researchers are actually assigned to Research.</li>
+<li>Review starving, diseased, old, insane, or heavily Horror Marked commanders.</li>
+<li>Check dominion and retreat routes around important battles.</li>
+<li>Confirm that a Throne claimant has the required priest level and correct order.</li>
+<li>Recheck diplomacy messages, gold, gems, and items before sending.</li>
+<li>Save or archive the turn file when a test or major operation needs later reconstruction.</li>
+</ul>
+<h3 id="b1-after-hosting">After hosting<a class="heading-link" href="#b1-after-hosting" aria-label="Link to After hosting">#</a></h3><ul>
+<li>Read messages before changing orders.</li>
+<li>Separate magic battles, movement battles, event battles, and assassination battles.</li>
+<li>Compare recruitment reports with surviving units.</li>
+<li>Check whether movement failed or whether the commander died before movement.</li>
+<li>Inspect new sites, buildings, heroes, mercenaries, globals, and dominion changes.</li>
+<li>Review income, upkeep, unrest, and supply summaries.</li>
+<li>Inspect wounded survivors for disease and new afflictions.</li>
+<li>Check whether stealthy units remained hidden or fought discovery battles.</li>
+<li>Review scouting reports as end-state snapshots.</li>
+<li>Record any result that contradicts the expected hosting sequence.</li>
+</ul>
+<h2 id="b1-expert-operational-checklist">Expert operational checklist<a class="heading-link" href="#b1-expert-operational-checklist" aria-label="Link to Expert operational checklist">#</a></h2><p>For a complex operation, write the dependency chain before submitting orders.</p>
+<h3 id="b1-target">Target<a class="heading-link" href="#b1-target" aria-label="Link to Target">#</a></h3><ul>
+<li>What province, fort, army, commander, site, or global must change?</li>
+<li>Which exact end-state counts as success?</li>
+</ul>
+<h3 id="b1-earliest-interference">Earliest interference<a class="heading-link" href="#b1-earliest-interference" aria-label="Link to Earliest interference">#</a></h3><ul>
+<li>Can a message transfer remove required gems or items?</li>
+<li>Can a remote ritual kill or move the target?</li>
+<li>Can a Horror, assassination, or seduction remove a critical commander?</li>
+</ul>
+<h3 id="b1-magic-phase-dependencies">Magic-phase dependencies<a class="heading-link" href="#b1-magic-phase-dependencies" aria-label="Link to Magic-phase dependencies">#</a></h3><ul>
+<li>Which rituals interact?</li>
+<li>Does random ritual order matter?</li>
+<li>Will magical movement fight alone before conventional movement?</li>
+<li>Are retreats from several magic battles competing for the same provinces?</li>
+</ul>
+<h3 id="b1-movement-dependencies">Movement dependencies<a class="heading-link" href="#b1-movement-dependencies" aria-label="Link to Movement dependencies">#</a></h3><ul>
+<li>Is the destination friendly at step 24 or hostile at step 25?</li>
+<li>Could ownership change between planning and movement?</li>
+<li>Is Break Siege involved?</li>
+<li>Is there a valid retreat province after all battles in the group?</li>
+</ul>
+<h3 id="b1-post-battle-dependencies">Post-battle dependencies<a class="heading-link" href="#b1-post-battle-dependencies" aria-label="Link to Post-battle dependencies">#</a></h3><ul>
+<li>Does a global tick at step 28?</li>
+<li>Can a random event or item effect create another battle?</li>
+<li>Will a stealth force face discovery at step 33?</li>
+<li>Does construction finish too late for the intended action?</li>
+</ul>
+<h3 id="b1-economic-dependencies">Economic dependencies<a class="heading-link" href="#b1-economic-dependencies" aria-label="Link to Economic dependencies">#</a></h3><ul>
+<li>Does Pillage reduce the income expected to pay upkeep?</li>
+<li>Is the army supplied before the starvation tick?</li>
+<li>Does income arrive before the planned upkeep obligation?</li>
+<li>Could population loss reduce PD at step 61?</li>
+</ul>
+<h3 id="b1-end-state-dependencies">End-state dependencies<a class="heading-link" href="#b1-end-state-dependencies" aria-label="Link to End-state dependencies">#</a></h3><ul>
+<li>Can dominion spread eliminate a nation?</li>
+<li>Is victory checked before an expected immortal return?</li>
+<li>Does a hero, mercenary, or summoned ally arrive too late to matter?</li>
+</ul>
+<h2 id="b1-troubleshooting-why-did-the-order-fail">Troubleshooting: why did the order fail?<a class="heading-link" href="#b1-troubleshooting-why-did-the-order-fail" aria-label="Link to Troubleshooting: why did the order fail?">#</a></h2><h3 id="b1-my-army-did-not-move">&quot;My army did not move&quot;<a class="heading-link" href="#b1-my-army-did-not-move" aria-label="Link to &quot;My army did not move&quot;">#</a></h3><p>Check, in order:</p>
+<ol>
+<li>Was the commander killed by a Horror, assassination, magic battle, or remote effect before movement?</li>
+<li>Did the commander become lost in another plane?</li>
+<li>Was the route valid for every unit in the army?</li>
+<li>Did terrain, a river, road status, sailing, flying, or survival ability change the cost?</li>
+<li>Did the destination change from friendly to hostile or otherwise alter the movement category?</li>
+<li>Was the commander performing a different order?</li>
+<li>Was the army inside a fort, besieging, breaking siege, patrolling, or sneaking?</li>
+<li>Did part of the army move while incompatible units remained?</li>
+<li>Was the apparent failure actually movement followed by defeat and retreat?</li>
+</ol>
+<h3 id="b1-my-ritual-did-not-happen">&quot;My ritual did not happen&quot;<a class="heading-link" href="#b1-my-ritual-did-not-happen" aria-label="Link to &quot;My ritual did not happen&quot;">#</a></h3><p>Check:</p>
+<ol>
+<li>Did the caster have the required laboratory?</li>
+<li>Were the path requirements met after all equipped items and effects?</li>
+<li>Were sufficient gems or slaves available to that caster?</li>
+<li>Was the target legal and correctly selected?</li>
+<li>Did the caster receive the ritual order rather than a battle script or different strategic order?</li>
+<li>Was the ritual blocked, resisted, intercepted, or converted into a battle?</li>
+<li>Did another randomly ordered ritual change the target first?</li>
+<li>Was the expected result an ongoing global effect that waits until step 28?</li>
+<li>Was the spell from a different ruleset or mod version?</li>
+</ol>
+<h3 id="b1-my-new-building-did-nothing">&quot;My new building did nothing&quot;<a class="heading-link" href="#b1-my-new-building-did-nothing" aria-label="Link to &quot;My new building did nothing&quot;">#</a></h3><p>Construction finishes at step 35. It cannot enable research at step 2, recruitment at step 3, forging at step 5, or rituals at step 10 during that same hosting cycle.</p>
+<h3 id="b1-my-summoned-allies-missed-the-battle">&quot;My summoned allies missed the battle&quot;<a class="heading-link" href="#b1-my-summoned-allies-missed-the-battle" aria-label="Link to &quot;My summoned allies missed the battle&quot;">#</a></h3><p>If they came from a special order such as Summon Allies or Reanimate, they arrived at step 36 after the battle steps. Ritual summons follow different timing and must be analysed under the ritual that created them.</p>
+<h3 id="b1-the-battle-used-different-dominion-than-expected">&quot;The battle used different dominion than expected&quot;<a class="heading-link" href="#b1-the-battle-used-different-dominion-than-expected" aria-label="Link to &quot;The battle used different dominion than expected&quot;">#</a></h3><p>Check:</p>
+<ul>
+<li>preaching at step 6;</li>
+<li>heretic preaching at step 7;</li>
+<li>special religious effects;</li>
+<li>the pre-host candle state;</li>
+<li>whether ordinary dominion spread at step 42 occurred only after the battle;</li>
+<li>whether the battle report or later map screen is being used as the reference state.</li>
+</ul>
+<h3 id="b1-the-province-produced-less-income-than-expected">&quot;The province produced less income than expected&quot;<a class="heading-link" href="#b1-the-province-produced-less-income-than-expected" aria-label="Link to &quot;The province produced less income than expected&quot;">#</a></h3><p>Check:</p>
+<ul>
+<li>ownership after movement and battle;</li>
+<li>pillage at step 37;</li>
+<li>population;</li>
+<li>unrest already present before the income step;</li>
+<li>dominion and scales;</li>
+<li>sites and events;</li>
+<li>partial ownership caused by a fort;</li>
+<li>whether the figure came from a pre-host projection or the final income report.</li>
+</ul>
+<h3 id="b1-the-unit-survived-battle-but-disappeared">&quot;The unit survived battle but disappeared&quot;<a class="heading-link" href="#b1-the-unit-survived-battle-but-disappeared" aria-label="Link to &quot;The unit survived battle but disappeared&quot;">#</a></h3><p>Possible causes include:</p>
+<ul>
+<li>a later event or special-effect battle;</li>
+<li>starvation;</li>
+<li>upkeep desertion;</li>
+<li>site or dominion damage;</li>
+<li>disease at step 48;</li>
+<li>lone-unit cleanup at step 52;</li>
+<li>elimination or victory;</li>
+<li>end-of-turn shape or item validation.</li>
+</ul>
+<h2 id="b1-ruleset-and-mod-implications">Ruleset and mod implications<a class="heading-link" href="#b1-ruleset-and-mod-implications" aria-label="Link to Ruleset and mod implications">#</a></h2><h3 id="b1-core-sequence-versus-mod-added-content">Core sequence versus mod-added content<a class="heading-link" href="#b1-core-sequence-versus-mod-added-content" aria-label="Link to Core sequence versus mod-added content">#</a></h3><p>Ordinary <code>.dm</code> mods can add or modify:</p>
+<ul>
+<li>units;</li>
+<li>weapons and armour;</li>
+<li>spells;</li>
+<li>items;</li>
+<li>sites;</li>
+<li>nations;</li>
+<li>blessings;</li>
+<li>population types;</li>
+<li>mercenaries;</li>
+<li>events;</li>
+<li>AI templates and preferences;</li>
+<li>many special attributes.</li>
+</ul>
+<p>The current modding manuals do not expose a command for rewriting the engine&#39;s entire 63-step hosting sequence.</p>
+<p>The practical model is:</p>
+<ul>
+<li>the engine retains its main sequence;</li>
+<li>mods insert new content into the steps appropriate to that content;</li>
+<li>a modded ritual still belongs to ritual processing;</li>
+<li>a modded event still belongs to event processing;</li>
+<li>a modded monthly monster or item effect belongs to the relevant special-effect stage;</li>
+<li>mod load order determines the final data definitions used when those steps run.</li>
+</ul>
+<p>This conclusion is <strong>Official limits plus inference</strong>, not proof that no executable-level modification could ever alter hosting.</p>
+<h3 id="b1-mod-load-order">Mod load order<a class="heading-link" href="#b1-mod-load-order" aria-label="Link to Mod load order">#</a></h3><p>The Modding Manual states that complete mods are loaded one at a time. Within a mod, command categories are parsed in an internal order including weapons, armour, units, names, blessings, sites, nations, spells, items, general commands, population types, mercenaries, and events.</p>
+<p>When two enabled mods alter the same object, later alterations can overwrite earlier values. The manual warns that overlapping modifications can produce unpredictable behaviour.</p>
+<p>For the frozen ruleset, Dominions Enhanced loads before Divinitus. Book IX owns the exact overlap and collision record, while the Grand Hierophant reconstruction is kept with the Arcoscephale dossier in Book VII. The timing lesson here is simply that load order belongs to the ruleset.</p>
+<h3 id="b1-event-chains-and-compatibility">Event chains and compatibility<a class="heading-link" href="#b1-event-chains-and-compatibility" aria-label="Link to Event chains and compatibility">#</a></h3><p>The Event Modding Manual warns that event-code collisions between mods can scramble event chains and create severe bugs. It recommends negative event codes in a reserved range and careful compatibility checking.</p>
+<p>Both active mods add large event libraries. Their size alone does not prove a collision, but it makes code and variable auditing a foundational requirement. The exact registries and current collision findings are recorded once in Book IX.</p>
+<h2 id="b1-controlled-tests-required-by-book-i">Controlled tests required by Book I<a class="heading-link" href="#b1-controlled-tests-required-by-book-i" aria-label="Link to Controlled tests required by Book I">#</a></h2><p>The official sequence is explicit, but several practical interactions still need current-game reproduction.</p>
+<h3 id="b1-test-protocol">Test protocol<a class="heading-link" href="#b1-test-protocol" aria-label="Link to Test protocol">#</a></h3><p>Every test should record:</p>
+<ul>
+<li>game version;</li>
+<li>operating ruleset;</li>
+<li>enabled mods and load order;</li>
+<li>map and game settings;</li>
+<li>turn number and season;</li>
+<li>relevant units, IDs, paths, items, sites, and province state;</li>
+<li>exact submitted orders;</li>
+<li>pre-host save;</li>
+<li>messages and battle reports;</li>
+<li>before-and-after screenshots or extracted state;</li>
+<li>number of repetitions;</li>
+<li>conclusion and confidence label.</li>
+</ul>
+<h3 id="b1-priority-timing-tests">Priority timing tests<a class="heading-link" href="#b1-priority-timing-tests" aria-label="Link to Priority timing tests">#</a></h3><table>
+<thead>
+<tr>
+<th align="right">#</th>
+<th>Test</th>
+<th>Controlled question</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1</td>
+<td>Research completion and same-turn scripting</td>
+<td>Can a newly completed research level make a pre-scripted spell available in a later battle that month, and how are invalid scripts handled?</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td>Preaching and battle dominion</td>
+<td>Does successful step-6 preaching change dominion-dependent battle statistics before a step-26 battle?</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td>Throne claim-loss regression</td>
+<td>Confirm that later claimant death preserves a completed claim, while unfortified conquest or a successful fort storm makes the Throne unclaimed before step 57.</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td>Forged item availability</td>
+<td>Can a step-5 forged item influence an already-submitted same-turn ritual or special effect without being equipped beforehand?</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td>Newly discovered site effects</td>
+<td>Does a site discovered at step 14 apply its monthly effect at step 44 in the same month?</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td>Assassinated movement commander</td>
+<td>What happens to movement and assigned troops when their only commander dies at step 20?</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td>Friendly movement priority</td>
+<td>Which forces appear in battle when friendly reinforcement and an enemy invasion enter the same province during an ownership change?</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td>Global casting versus first world tick</td>
+<td>Which parts of a global occur at casting step 10 and which wait for world-effect step 28?</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td>Pillage and same-turn income</td>
+<td>How much income is lost when a newly captured province is pillaged at step 37 before income at step 38?</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td>Unrest timing</td>
+<td>Which of pre-existing unrest, pillage unrest, patrol reduction, and dominion-driven unrest changes influence step-38 income?</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td>Starvation timing</td>
+<td>Does a newly undersupplied army fight at its prior state before receiving the post-host starvation effects?</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td>Upkeep desertion priority</td>
+<td>Which units desert first during a controlled treasury shortfall?</td>
+</tr>
+<tr>
+<td align="right">13</td>
+<td>Site, dominion, and disease ordering</td>
+<td>How do site disease, dominion effects, aging, regeneration, and existing disease combine in the end-of-turn health sequence?</td>
+</tr>
+<tr>
+<td align="right">14</td>
+<td>Scouting before PD reduction</td>
+<td>Do reports or interface values show PD before or after the step-61 population reduction?</td>
+</tr>
+<tr>
+<td align="right">15</td>
+<td>Victory before immortal return</td>
+<td>Can victory or elimination end the game on the same turn an immortal is due to reform at step 60?</td>
+</tr>
+<tr>
+<td align="right">16</td>
+<td>DE and Divinitus event-code audit</td>
+<td>Do the two supplied files collide in event codes, variables, rarity classes, or order requirements?</td>
+</tr>
+</tbody></table>
+<h2 id="b1-source-record">Source record<a class="heading-link" href="#b1-source-record" aria-label="Link to Source record">#</a></h2><h3 id="b1-primary-official-sources">Primary official sources<a class="heading-link" href="#b1-primary-official-sources" aria-label="Link to Primary official sources">#</a></h3><ul>
+<li><a href="https://www.illwinter.com/dom6/docs.html" target="_blank" rel="noreferrer">Illwinter Dominions 6 documentation</a>, accessed 25 August 2026.</li>
+<li><a href="https://www.illwinter.com/dom6/dom6manual.pdf" target="_blank" rel="noreferrer">Dominions 6 Manual, revision 2</a>, especially pages 13, 47-57, 73-87.</li>
+<li><a href="https://www.illwinter.com/" target="_blank" rel="noreferrer">Illwinter update record</a>, recording Dominions 6.36 on 17 August 2026 UTC.</li>
+<li><a href="https://steamcommunity.com/games/2511500/announcements/detail/693143486970465344" target="_blank" rel="noreferrer">Official Dominions 6.36 announcement</a>.</li>
+<li><a href="https://www.illwinter.com/dom6/changes.html" target="_blank" rel="noreferrer">Dominions 6 changes from Dominions 5</a>.</li>
+<li><a href="https://www.illwinter.com/dom6/dom6modman.pdf" target="_blank" rel="noreferrer">Dominions 6 Modding Manual, version 6.34</a>, especially pages 3-5 and 63-65.</li>
+<li><a href="https://www.illwinter.com/dom6/dom6eventman.pdf" target="_blank" rel="noreferrer">Dominions 6 Event Modding Manual, version 6.29</a>, especially pages 2-11.</li>
+</ul>
+<h3 id="b1-exact-mod-sources">Exact mod sources<a class="heading-link" href="#b1-exact-mod-sources" aria-label="Link to Exact mod sources">#</a></h3><ul>
+<li><code>DomEnhanced2_16.dm</code>, SHA-256 <code>72558697f8dae3a1fccf8fb57b3faccde56c7fe6c05dac6403cefe153faf6c1b</code>.</li>
+<li><code>Divinitus_1.15.3_DE.dm</code>, SHA-256 <code>cf7f21900a3812b66edddd831df779743eaf33080aef983f9bdea8ec47642809</code>.</li>
+</ul>
+<h3 id="b1-verification-note">Verification note<a class="heading-link" href="#b1-verification-note" aria-label="Link to Verification note">#</a></h3><p>The public base game is version 6.36, while the current official Modding Manual identifies itself as version 6.34 and the Event Modding Manual as version 6.29. This is not automatically a contradiction: auxiliary manuals are updated when their documented interfaces change. It does mean that later patch notes and current-game tests remain necessary whenever a rule could have changed after a manual&#39;s stated version.</p>
+
+{% endraw %}
+    </article>
+    <aside class="sidebar library-toc">
+      <h2>In this book</h2>
+      <nav><a href="#b1-why-this-volume-comes-first">Why this volume comes first</a>
+<a href="#b1-how-to-read-the-library">How to read the library</a>
+<a href="#b1-the-baseline-used-by-this-edition">The baseline used by this edition</a>
+<a href="#b1-evidence-and-confidence">Evidence and confidence</a>
+<a href="#b1-citation-standard">Citation standard</a>
+<a href="#b1-core-notation">Core notation</a>
+<a href="#b1-essential-glossary">Essential glossary</a>
+<a href="#b1-the-central-idea-orders-are-simultaneous-resolution-is-sequential">The central idea: orders are simultaneous, resolution is sequential</a>
+<a href="#b1-a-six-phase-model-of-hosting">A six-phase model of hosting</a>
+<a href="#b1-the-complete-63-step-hosting-sequence">The complete 63-step hosting sequence</a>
+<a href="#b1-phase-i-commitments-and-production">Phase I: commitments and production</a>
+<a href="#b1-phase-ii-magic-and-special-threats">Phase II: magic and special threats</a>
+<a href="#b1-phase-iii-movement-and-conquest">Phase III: movement and conquest</a>
+<a href="#b1-phase-iv-world-effects-and-hidden-conflict">Phase IV: world effects and hidden conflict</a>
+<a href="#b1-phase-v-state-economy-and-dominion">Phase V: state, economy, and dominion</a>
+<a href="#b1-phase-vi-attrition-and-end-state">Phase VI: attrition and end-state</a>
+<a href="#b1-timing-chains-every-player-should-know">Timing chains every player should know</a>
+<a href="#b1-a-new-player-s-turn-checklist">A new player's turn checklist</a>
+<a href="#b1-expert-operational-checklist">Expert operational checklist</a>
+<a href="#b1-troubleshooting-why-did-the-order-fail">Troubleshooting: why did the order fail?</a>
+<a href="#b1-ruleset-and-mod-implications">Ruleset and mod implications</a>
+<a href="#b1-controlled-tests-required-by-book-i">Controlled tests required by Book I</a>
+<a href="#b1-source-record">Source record</a></nav>
+      <nav class="library-side-links">
+        <a href="/dominions/library/">Complete library</a>
+        <a href="/dominions/library/glossary/">Glossary</a>
+        <a href="/dominions/library/research/">Research register</a>
+        <a href="/downloads/dominions-6-knowledge-library-edition-24.pdf">Edition 24 PDF</a>
+      </nav>
+    </aside>
+  </div>
+  <nav class="library-pagination" aria-label="Adjacent books">
+    <a href="/dominions/library/books/guide/"><small>Previous</small>Reader's Guide and Concordance</a>
+    <a class="library-next" href="/dominions/library/books/field-reference/"><small>Next</small>Turn and Economy Quick Reference</a>
+  </nav>
+</section>

@@ -7,7 +7,7 @@
 - Foundation merge: `027e4b8e6cc3123ef72c133b5de754e0f912b75a`
 - Save-point date: 23 July 2026
 
-The recovery branch records the site exactly as it existed before the hub overhaul. Its history was rewritten on 28 July 2026 to correct two malformed author emails; the website files did not change.
+The recovery branch preserves the site exactly as it existed before the hub overhaul. Its history was rewritten on 28 July 2026 to correct two malformed author emails; the preserved website files did not change.
 
 ## Intended navigation
 
@@ -49,7 +49,7 @@ Every guide should include its scope, supported version or mod context, update d
 
 ### Content pass
 
-1. Expand Dominions reference pages from Illwinter's official manuals. The three-age catalogue and starting-game guide were added on 2 August 2026.
+1. Maintain and expand the Dominions reference. The three-age catalogue and starting-game guide were added on 2 August 2026; Edition 24 of the complete Knowledge Library followed on 25 August 2026.
 2. Publish the complete StalkerNet release history.
 3. Record the Minecraft Forge modpack and installation process.
 4. Add safe public D&D campaign and character material.
@@ -57,7 +57,7 @@ Every guide should include its scope, supported version or mod context, update d
 
 ### Discovery pass
 
-- Add guide filters and client-side search.
+- Extend the library's client-side search into the wider guide index when the other project sections have enough material to justify it.
 - Add related-guide links.
 - Add release records and changelogs.
 - Add social-sharing imagery and project screenshots.

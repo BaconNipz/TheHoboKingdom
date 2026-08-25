@@ -1,0 +1,2396 @@
+{
+  "schema_version": "1.0.0",
+  "edition": "Progress Edition 24",
+  "entries": [
+    {
+      "letter": "A",
+      "term": "Abilities",
+      "destinations": [
+        {
+          "label": "Book XI - master ability and condition register",
+          "section_id": "b11-ability-register"
+        },
+        {
+          "label": "Book IV",
+          "section_id": "b4-foundation-book-iv-armies-and-battle"
+        }
+      ]
+    },
+    {
+      "letter": "A",
+      "term": "Accuracy and spell deviation",
+      "destinations": [
+        {
+          "label": "Book IV - battlefield spell accuracy",
+          "section_id": "b4-spell-accuracy"
+        }
+      ]
+    },
+    {
+      "letter": "A",
+      "term": "Administration",
+      "destinations": [
+        {
+          "label": "Book II - infrastructure and administration",
+          "section_id": "b2-part-vi-infrastructure-and-administration"
+        },
+        {
+          "label": "fort resource draw",
+          "section_id": "b2-fort-resource-draw"
+        }
+      ]
+    },
+    {
+      "letter": "A",
+      "term": "Afflictions",
+      "destinations": [
+        {
+          "label": "Book XI - conditions and lasting state",
+          "section_id": "b11-conditions"
+        },
+        {
+          "label": "Book IV",
+          "section_id": "b4-part-xiii-afflictions-regeneration-and-healing"
+        }
+      ]
+    },
+    {
+      "letter": "A",
+      "term": "Ages",
+      "destinations": [
+        {
+          "label": "Book I - eras and national identity",
+          "section_id": "b1-eras-and-national-identity"
+        }
+      ]
+    },
+    {
+      "letter": "A",
+      "term": "AI scaffolds",
+      "destinations": [
+        {
+          "label": "Book VIII - AI scaffolding without false claims",
+          "section_id": "b8-part-x-ai-scaffolding-without-false-claims"
+        }
+      ]
+    },
+    {
+      "letter": "A",
+      "term": "Alchemy",
+      "destinations": [
+        {
+          "label": "Book V - alchemy",
+          "section_id": "b5-alchemy"
+        }
+      ]
+    },
+    {
+      "letter": "A",
+      "term": "Alteration discounts",
+      "destinations": [
+        {
+          "label": "Book V - research and site discounts",
+          "section_id": "b5-research-discounts"
+        }
+      ]
+    },
+    {
+      "letter": "A",
+      "term": "Army composition",
+      "destinations": [
+        {
+          "label": "Book IV - army organisation",
+          "section_id": "b4-part-iii-commanders-squads-leadership-and-army-organisation"
+        }
+      ]
+    },
+    {
+      "letter": "A",
+      "term": "Army preservation",
+      "destinations": [
+        {
+          "label": "Book VI - army preservation and force regeneration",
+          "section_id": "b6-part-xiii-army-preservation-and-force-regeneration"
+        }
+      ]
+    },
+    {
+      "letter": "A",
+      "term": "Army rout",
+      "destinations": [
+        {
+          "label": "Book IV - army rout",
+          "section_id": "b4-army-rout"
+        }
+      ]
+    },
+    {
+      "letter": "A",
+      "term": "Armour",
+      "destinations": [
+        {
+          "label": "Book IV - armour and protection",
+          "section_id": "b4-armour-and-protection"
+        },
+        {
+          "label": "Book VIII",
+          "section_id": "b8-part-iii-weapons-armour-and-combat-components"
+        }
+      ]
+    },
+    {
+      "letter": "A",
+      "term": "Artifacts",
+      "destinations": [
+        {
+          "label": "Book XII - item and artifact records",
+          "section_id": "b12-items"
+        },
+        {
+          "label": "Book V - artifacts",
+          "section_id": "b5-artifacts"
+        },
+        {
+          "label": "artifact races",
+          "section_id": "b5-artifact-races"
+        }
+      ]
+    },
+    {
+      "letter": "A",
+      "term": "Assassination",
+      "destinations": [
+        {
+          "label": "Book VI - assassins and remote force",
+          "section_id": "b6-part-ix-thugs-supercombatants-assassins-and-remote-force"
+        },
+        {
+          "label": "Book I",
+          "section_id": "b1-assassinations-resolve-before-conventional-movement"
+        }
+      ]
+    },
+    {
+      "letter": "A",
+      "term": "Automatic IDs",
+      "destinations": [
+        {
+          "label": "Book VIII - automatic allocation",
+          "section_id": "b8-automatic-allocation"
+        },
+        {
+          "label": "Book IX - automatic Divinitus objects",
+          "section_id": "b9-19-4-automatic-id-collision-risk"
+        }
+      ]
+    },
+    {
+      "letter": "A",
+      "term": "Awakening",
+      "destinations": [
+        {
+          "label": "Book III - awakening, time, and the opening",
+          "section_id": "b3-part-iii-awakening-time-and-the-opening"
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "term": "Battle groups",
+      "destinations": [
+        {
+          "label": "Book IV - battle groups",
+          "section_id": "b4-battle-groups"
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "term": "Battlefield enchantments",
+      "destinations": [
+        {
+          "label": "Book IV - battlefield enchantments",
+          "section_id": "b4-battlefield-enchantments"
+        },
+        {
+          "label": "Book V",
+          "section_id": "b5-battlefield-enchantment-packages"
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "term": "Battlefield magic",
+      "destinations": [
+        {
+          "label": "Book IV - battlefield magic",
+          "section_id": "b4-part-xiv-battlefield-magic"
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "term": "Battle scripting",
+      "destinations": [
+        {
+          "label": "Book IV - orders, scripts, and spellcasting AI",
+          "section_id": "b4-part-vi-orders-scripts-and-the-spellcasting-ai"
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "term": "Berserk",
+      "destinations": [
+        {
+          "label": "Book XI - Ambidextrous, Clumsy, and Berserker",
+          "section_id": "b11-44-ambidextrous-clumsy-berserker-and-multiweapon-bodies"
+        },
+        {
+          "label": "Book IV",
+          "section_id": "b4-berserk"
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "term": "Bless design",
+      "destinations": [
+        {
+          "label": "Book III - blessings",
+          "section_id": "b3-part-vi-blessings"
+        },
+        {
+          "label": "Book IX",
+          "section_id": "b9-8-de-blessing-revision"
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "term": "Blood Hunting",
+      "destinations": [
+        {
+          "label": "Book II - Blood Hunting",
+          "section_id": "b2-blood-hunting"
+        },
+        {
+          "label": "the quick reference",
+          "section_id": "field-blood-hunting"
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "term": "Blood slaves",
+      "destinations": [
+        {
+          "label": "Book V - Blood slaves",
+          "section_id": "b5-blood-slaves"
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "term": "Bodyguards",
+      "destinations": [
+        {
+          "label": "Book XI - bodyguards and Warning",
+          "section_id": "b11-28-bodyguards-and-warning"
+        },
+        {
+          "label": "Book VI",
+          "section_id": "b6-assassination-defence"
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "term": "Boosters",
+      "destinations": [
+        {
+          "label": "Book V - booster reference",
+          "section_id": "b5-booster-reference"
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "term": "Borders",
+      "destinations": [
+        {
+          "label": "Book VI - borders",
+          "section_id": "b6-border-design"
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "term": "Breakpoints",
+      "destinations": [
+        {
+          "label": "Book V - research breakpoints",
+          "section_id": "b5-research-breakpoints"
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "term": "Call God",
+      "destinations": [
+        {
+          "label": "Book III - Call God",
+          "section_id": "b3-call-god"
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "term": "Capital-only recruitment",
+      "destinations": [
+        {
+          "label": "Book I - capital-only",
+          "section_id": "b1-capital-only"
+        },
+        {
+          "label": "Book II - recruitment restrictions",
+          "section_id": "b2-recruitment-restrictions"
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "term": "Cataclysm",
+      "destinations": [
+        {
+          "label": "Book VI - Cataclysm",
+          "section_id": "b6-cataclysm"
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "term": "Chassis",
+      "destinations": [
+        {
+          "label": "Book III - chassis roles",
+          "section_id": "b3-chassis-roles"
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "term": "Clouds",
+      "destinations": [
+        {
+          "label": "Book IV - clouds and persistent area effects",
+          "section_id": "b4-clouds-and-persistent-area-effects"
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "term": "Coalitions",
+      "destinations": [
+        {
+          "label": "Book VI - coalition formation",
+          "section_id": "b6-coalition-formation"
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "term": "Cold and heat",
+      "destinations": [
+        {
+          "label": "Book III - Heat and Cold",
+          "section_id": "b3-heat-and-cold"
+        },
+        {
+          "label": "Book IV",
+          "section_id": "b4-fire-and-cold"
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "term": "Combat gems",
+      "destinations": [
+        {
+          "label": "Book V - battlefield gem spending",
+          "section_id": "b5-battlefield-gem-spending"
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "term": "Commander Points",
+      "destinations": [
+        {
+          "label": "Book II - Commander Points and Holy Points",
+          "section_id": "b2-commander-points-and-holy-points"
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "term": "Command context",
+      "destinations": [
+        {
+          "label": "Book XIV - context is part of syntax",
+          "section_id": "b14-context"
+        },
+        {
+          "label": "Book VIII",
+          "section_id": "b8-part-i-the-object-and-parser-model"
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "term": "Command lexicon",
+      "destinations": [
+        {
+          "label": "Book XIV - official command and terminology locator",
+          "section_id": "b14-command-lexicon"
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "term": "Command patch history",
+      "destinations": [
+        {
+          "label": "Book XIII - command chronology",
+          "section_id": "b13-command-chronology"
+        },
+        {
+          "label": "Book XIV",
+          "section_id": "b14-patch-reconciliation"
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "term": "Communions",
+      "destinations": [
+        {
+          "label": "Book V - communions, Sabbaths, Choruses, and Grand Communions",
+          "section_id": "b5-part-vii-communions-sabbaths-choruses-and-grand-communions"
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "term": "Conditions",
+      "destinations": [
+        {
+          "label": "Book XI - conditions and lasting state",
+          "section_id": "b11-conditions"
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "term": "Compatibility patches",
+      "destinations": [
+        {
+          "label": "Book VIII - compatibility patch structure",
+          "section_id": "b8-compatibility-patch-structure"
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "term": "Construction",
+      "destinations": [
+        {
+          "label": "Book II - construction and timing",
+          "section_id": "b2-construction-timing"
+        },
+        {
+          "label": "Book V",
+          "section_id": "b5-construction-as-an-access-school"
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "term": "Contact timing",
+      "destinations": [
+        {
+          "label": "Book IV - formations, placement, and contact",
+          "section_id": "b4-part-v-formations-placement-and-contact"
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "term": "Corpses",
+      "destinations": [
+        {
+          "label": "Book II - corpses as provincial stock",
+          "section_id": "b2-corpses-as-provincial-stock"
+        },
+        {
+          "label": "Book X",
+          "section_id": "b10-52-reanimate-manikin-contact-allies-and-capture-slaves"
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "term": "Counter-raiding",
+      "destinations": [
+        {
+          "label": "Book VI - counter-raiding as a system",
+          "section_id": "b6-counter-raiding-as-a-system"
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "term": "Critical hits",
+      "destinations": [
+        {
+          "label": "Book IV - critical hits",
+          "section_id": "b4-critical-hits"
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "term": "Damage",
+      "destinations": [
+        {
+          "label": "Book IV - protection, damage, and survival",
+          "section_id": "b4-part-ix-protection-damage-and-survival"
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "term": "Damage reversal",
+      "destinations": [
+        {
+          "label": "Book IV - damage reversal",
+          "section_id": "b4-damage-reversal"
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "term": "Disease",
+      "destinations": [
+        {
+          "label": "Book XI - disease and old age",
+          "section_id": "b11-62-disease-and-old-age"
+        },
+        {
+          "label": "Book IV",
+          "section_id": "b4-disease"
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "term": "Dispel",
+      "destinations": [
+        {
+          "label": "Book V - Dispel",
+          "section_id": "b5-dispel"
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "term": "Divinitus",
+      "destinations": [
+        {
+          "label": "Book IX - Divinitus encyclopaedia",
+          "section_id": "b9-14-divinitus-event-architecture"
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "term": "Divine institutions",
+      "destinations": [
+        {
+          "label": "Book IX - capital institutions",
+          "section_id": "b9-15-capital-institutions-temple-networks-and-priesthoods"
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "term": "Dominion",
+      "destinations": [
+        {
+          "label": "Book III - dominion and religious territory",
+          "section_id": "b3-part-iv-dominion-and-religious-territory"
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "term": "Dominion kill",
+      "destinations": [
+        {
+          "label": "Book III - dominion elimination",
+          "section_id": "b3-dominion-elimination"
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "term": "Dominions Enhanced",
+      "destinations": [
+        {
+          "label": "Book IX - DE global rules",
+          "section_id": "b9-7-de-global-rules"
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "term": "Domes",
+      "destinations": [
+        {
+          "label": "Book V - domes, remote attacks, and magic movement",
+          "section_id": "b5-part-ix-domes-remote-attacks-and-magic-movement"
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "term": "DRN",
+      "destinations": [
+        {
+          "label": "Book IV - the open-ended random roll",
+          "section_id": "b4-the-open-ended-random-roll"
+        }
+      ]
+    },
+    {
+      "letter": "E",
+      "term": "Economy",
+      "destinations": [
+        {
+          "label": "Book II - the economic model",
+          "section_id": "b2-part-i-the-economic-model"
+        }
+      ]
+    },
+    {
+      "letter": "E",
+      "term": "Empowerment",
+      "destinations": [
+        {
+          "label": "Book V - empowerment",
+          "section_id": "b5-empowerment"
+        }
+      ]
+    },
+    {
+      "letter": "E",
+      "term": "Encumbrance",
+      "destinations": [
+        {
+          "label": "Book IV - encumbrance",
+          "section_id": "b4-encumbrance"
+        }
+      ]
+    },
+    {
+      "letter": "E",
+      "term": "Endgame conversion",
+      "destinations": [
+        {
+          "label": "Book VI - victory conversion",
+          "section_id": "b6-part-xv-victory-conversion"
+        }
+      ]
+    },
+    {
+      "letter": "E",
+      "term": "Event codes and variables",
+      "destinations": [
+        {
+          "label": "Book VIII - codes and variables",
+          "section_id": "b8-codes-and-variables"
+        },
+        {
+          "label": "Book IX",
+          "section_id": "b9-19-combined-load-order-and-collision-matrix"
+        }
+      ]
+    },
+    {
+      "letter": "E",
+      "term": "Event chains",
+      "destinations": [
+        {
+          "label": "Book VIII - event chains",
+          "section_id": "b8-event-chains"
+        }
+      ]
+    },
+    {
+      "letter": "E",
+      "term": "Event modding",
+      "destinations": [
+        {
+          "label": "Book VIII - event modding as a state machine",
+          "section_id": "b8-part-vii-event-modding-as-a-state-machine"
+        }
+      ]
+    },
+    {
+      "letter": "E",
+      "term": "Evidence labels",
+      "destinations": [
+        {
+          "label": "Book I - evidence standard",
+          "section_id": "b1-evidence-standard"
+        }
+      ]
+    },
+    {
+      "letter": "E",
+      "term": "Experience",
+      "destinations": [
+        {
+          "label": "Book XI - experience and veteran units",
+          "section_id": "b11-experience"
+        }
+      ]
+    },
+    {
+      "letter": "E",
+      "term": "Expansion",
+      "destinations": [
+        {
+          "label": "Book VI - expansion and first contact",
+          "section_id": "b6-part-ii-expansion-and-first-contact"
+        }
+      ]
+    },
+    {
+      "letter": "E",
+      "term": "Expansion testing",
+      "destinations": [
+        {
+          "label": "Book VI - expansion testing",
+          "section_id": "b6-expansion-testing"
+        }
+      ]
+    },
+    {
+      "letter": "F",
+      "term": "Fatigue",
+      "destinations": [
+        {
+          "label": "Book IV - fatigue, recovery, and collapse",
+          "section_id": "b4-part-x-fatigue-recovery-and-collapse"
+        }
+      ]
+    },
+    {
+      "letter": "F",
+      "term": "Fear",
+      "destinations": [
+        {
+          "label": "Book XI - Awe, Sun Awe, Fear, and Dread",
+          "section_id": "b11-39-awe-sun-awe-fear-and-dread"
+        },
+        {
+          "label": "Book IV",
+          "section_id": "b4-fear"
+        }
+      ]
+    },
+    {
+      "letter": "F",
+      "term": "Fire, cold, shock, and poison",
+      "destinations": [
+        {
+          "label": "Book IV - resistances and special damage",
+          "section_id": "b4-part-xii-resistances-special-damage-and-status-effects"
+        }
+      ]
+    },
+    {
+      "letter": "F",
+      "term": "First campaign",
+      "destinations": [
+        {
+          "label": "Book X - guided first campaign",
+          "section_id": "b10-first-campaign"
+        }
+      ]
+    },
+    {
+      "letter": "F",
+      "term": "First contact",
+      "destinations": [
+        {
+          "label": "Book VI - first contact",
+          "section_id": "b6-first-contact"
+        },
+        {
+          "label": "Book X",
+          "section_id": "b10-first-contact"
+        }
+      ]
+    },
+    {
+      "letter": "F",
+      "term": "First fort",
+      "destinations": [
+        {
+          "label": "Book II - fort-now test",
+          "section_id": "b2-fort-now-test"
+        }
+      ]
+    },
+    {
+      "letter": "F",
+      "term": "First war",
+      "destinations": [
+        {
+          "label": "Book VI - from expansion to the first war",
+          "section_id": "b6-from-expansion-to-the-first-war"
+        }
+      ]
+    },
+    {
+      "letter": "F",
+      "term": "Formation Fighter",
+      "destinations": [
+        {
+          "label": "Book IV - Formation Fighter",
+          "section_id": "b4-formation-fighter"
+        }
+      ]
+    },
+    {
+      "letter": "F",
+      "term": "Formations",
+      "destinations": [
+        {
+          "label": "Book IV - formations, placement, and contact",
+          "section_id": "b4-part-v-formations-placement-and-contact"
+        }
+      ]
+    },
+    {
+      "letter": "F",
+      "term": "Forts",
+      "destinations": [
+        {
+          "label": "Book II - infrastructure and administration",
+          "section_id": "b2-part-vi-infrastructure-and-administration"
+        }
+      ]
+    },
+    {
+      "letter": "F",
+      "term": "Friendly fire",
+      "destinations": [
+        {
+          "label": "Book IV - friendly fire",
+          "section_id": "b4-friendly-fire"
+        }
+      ]
+    },
+    {
+      "letter": "G",
+      "term": "Gates and planes",
+      "destinations": [
+        {
+          "label": "Book VIII - gates and multiple planes",
+          "section_id": "b8-gates-and-multiple-planes"
+        }
+      ]
+    },
+    {
+      "letter": "G",
+      "term": "Gem income",
+      "destinations": [
+        {
+          "label": "Book II - sites, gems, and magical capital",
+          "section_id": "b2-part-x-sites-gems-and-magical-capital"
+        }
+      ]
+    },
+    {
+      "letter": "G",
+      "term": "Gem logistics",
+      "destinations": [
+        {
+          "label": "Book V - gems, slaves, and magical logistics",
+          "section_id": "b5-part-iv-gems-slaves-and-magical-logistics"
+        }
+      ]
+    },
+    {
+      "letter": "G",
+      "term": "Gem reserves",
+      "destinations": [
+        {
+          "label": "Book V - gem reserves",
+          "section_id": "b5-gem-reserves"
+        }
+      ]
+    },
+    {
+      "letter": "G",
+      "term": "Global enchantments",
+      "destinations": [
+        {
+          "label": "Book V - global enchantments and Dispel wars",
+          "section_id": "b5-part-x-global-enchantments-and-dispel-wars"
+        }
+      ]
+    },
+    {
+      "letter": "G",
+      "term": "Global slots",
+      "destinations": [
+        {
+          "label": "Book V - global slots",
+          "section_id": "b5-global-slots"
+        }
+      ]
+    },
+    {
+      "letter": "G",
+      "term": "Glamour",
+      "destinations": [
+        {
+          "label": "Book V - Glamour",
+          "section_id": "b5-glamour"
+        }
+      ]
+    },
+    {
+      "letter": "G",
+      "term": "Grand Communions",
+      "destinations": [
+        {
+          "label": "Book V - Grand Communions",
+          "section_id": "b5-grand-communions-are-different"
+        }
+      ]
+    },
+    {
+      "letter": "G",
+      "term": "Grand Hierophant",
+      "destinations": [
+        {
+          "label": "Book VII - Divinitus and the Grand Hierophant",
+          "section_id": "b7-part-xi-divinitus-1-15-3-de-and-the-grand-hierophant"
+        }
+      ]
+    },
+    {
+      "letter": "H",
+      "term": "Harassment",
+      "destinations": [
+        {
+          "label": "Book IV - harassment",
+          "section_id": "b4-harassment"
+        }
+      ]
+    },
+    {
+      "letter": "H",
+      "term": "Healing",
+      "destinations": [
+        {
+          "label": "Book IV - afflictions, regeneration, and healing",
+          "section_id": "b4-part-xiii-afflictions-regeneration-and-healing"
+        }
+      ]
+    },
+    {
+      "letter": "H",
+      "term": "Heroic abilities",
+      "destinations": [
+        {
+          "label": "Book XI - Hall of Fame and heroic abilities",
+          "section_id": "b11-heroic-abilities"
+        }
+      ]
+    },
+    {
+      "letter": "H",
+      "term": "Horror marks",
+      "destinations": [
+        {
+          "label": "Book XI - curse and Horror Mark",
+          "section_id": "b11-63-curse-and-horror-mark"
+        }
+      ]
+    },
+    {
+      "letter": "H",
+      "term": "Hidden paths",
+      "destinations": [
+        {
+          "label": "Book V - hidden and indirect access",
+          "section_id": "b5-hidden-and-indirect-access"
+        }
+      ]
+    },
+    {
+      "letter": "H",
+      "term": "Holy Points",
+      "destinations": [
+        {
+          "label": "Book II - Commander Points and Holy Points",
+          "section_id": "b2-commander-points-and-holy-points"
+        }
+      ]
+    },
+    {
+      "letter": "H",
+      "term": "Hosting",
+      "destinations": [
+        {
+          "label": "Book I - complete engine sequence",
+          "section_id": "b1-the-complete-63-step-hosting-sequence"
+        },
+        {
+          "label": "Book X",
+          "section_id": "b10-hosting"
+        }
+      ]
+    },
+    {
+      "letter": "H",
+      "term": "Hosting failures",
+      "destinations": [
+        {
+          "label": "Book X - troubleshooting by symptom",
+          "section_id": "b10-troubleshooting"
+        },
+        {
+          "label": "Book I",
+          "section_id": "b1-troubleshooting-why-did-the-order-fail"
+        }
+      ]
+    },
+    {
+      "letter": "I",
+      "term": "Immortality",
+      "destinations": [
+        {
+          "label": "Book XI - immortality, reformation, and extra lives",
+          "section_id": "b11-38-immortality-reformation-and-extra-lives"
+        },
+        {
+          "label": "Book I",
+          "section_id": "b1-immortals-return-after-victory"
+        }
+      ]
+    },
+    {
+      "letter": "I",
+      "term": "Incarnate blessings",
+      "destinations": [
+        {
+          "label": "Book III - Incarnate effects",
+          "section_id": "b3-incarnate-effects"
+        }
+      ]
+    },
+    {
+      "letter": "I",
+      "term": "Income",
+      "destinations": [
+        {
+          "label": "Book II - gold, income, and upkeep",
+          "section_id": "b2-part-iii-gold-income-and-upkeep"
+        },
+        {
+          "label": "the quick reference",
+          "section_id": "field-base-and-final-income"
+        }
+      ]
+    },
+    {
+      "letter": "I",
+      "term": "Independents",
+      "destinations": [
+        {
+          "label": "Book XII - current coverage boundary and evaluation",
+          "section_id": "b12-mercenaries-independents"
+        },
+        {
+          "label": "Book VI - independent province classes",
+          "section_id": "b6-independent-province-classes"
+        }
+      ]
+    },
+    {
+      "letter": "I",
+      "term": "Information denial",
+      "destinations": [
+        {
+          "label": "Book VI - information denial",
+          "section_id": "b6-information-denial"
+        }
+      ]
+    },
+    {
+      "letter": "I",
+      "term": "Infrastructure",
+      "destinations": [
+        {
+          "label": "Book II - infrastructure and administration",
+          "section_id": "b2-part-vi-infrastructure-and-administration"
+        }
+      ]
+    },
+    {
+      "letter": "I",
+      "term": "Initiative",
+      "destinations": [
+        {
+          "label": "Book VI - initiative",
+          "section_id": "b6-initiative"
+        }
+      ]
+    },
+    {
+      "letter": "I",
+      "term": "Interface",
+      "destinations": [
+        {
+          "label": "Book X - main interface",
+          "section_id": "b10-interface"
+        }
+      ]
+    },
+    {
+      "letter": "I",
+      "term": "Inspector data",
+      "destinations": [
+        {
+          "label": "Book XII - object-reference method",
+          "section_id": "b12-part-i-the-object-reference-method"
+        },
+        {
+          "label": "maintenance",
+          "section_id": "b12-maintenance"
+        },
+        {
+          "label": "Book IX - website and inspector layer",
+          "section_id": "b9-24-website-and-inspector-schema"
+        }
+      ]
+    },
+    {
+      "letter": "I",
+      "term": "Item forging",
+      "destinations": [
+        {
+          "label": "Book XII - item records",
+          "section_id": "b12-items"
+        },
+        {
+          "label": "Book V - forging, items, and artifacts",
+          "section_id": "b5-part-xi-forging-items-and-artifacts"
+        }
+      ]
+    },
+    {
+      "letter": "L",
+      "term": "Laboratories",
+      "destinations": [
+        {
+          "label": "Book II - laboratories",
+          "section_id": "b2-laboratories"
+        },
+        {
+          "label": "Book I",
+          "section_id": "b1-building-construction"
+        }
+      ]
+    },
+    {
+      "letter": "L",
+      "term": "Leadership",
+      "destinations": [
+        {
+          "label": "Book XI - three leadership pools",
+          "section_id": "b11-24-three-leadership-pools"
+        },
+        {
+          "label": "Book IV",
+          "section_id": "b4-part-iii-commanders-squads-leadership-and-army-organisation"
+        }
+      ]
+    },
+    {
+      "letter": "L",
+      "term": "Legendary magic",
+      "destinations": [
+        {
+          "label": "Book V - legendary and level-nine magic",
+          "section_id": "b5-part-xii-legendary-and-level-nine-magic"
+        }
+      ]
+    },
+    {
+      "letter": "L",
+      "term": "Life drain",
+      "destinations": [
+        {
+          "label": "Book IV - life drain",
+          "section_id": "b4-life-drain"
+        }
+      ]
+    },
+    {
+      "letter": "L",
+      "term": "Load order",
+      "destinations": [
+        {
+          "label": "Book VIII - load order",
+          "section_id": "b8-load-order"
+        },
+        {
+          "label": "Book IX - combined load order",
+          "section_id": "b9-19-combined-load-order-and-collision-matrix"
+        }
+      ]
+    },
+    {
+      "letter": "L",
+      "term": "Lobby",
+      "destinations": [
+        {
+          "label": "Book X - official lobby workflow",
+          "section_id": "b10-official-lobby-workflow"
+        }
+      ]
+    },
+    {
+      "letter": "L",
+      "term": "Logistics",
+      "destinations": [
+        {
+          "label": "Book VI - logistics, supply, and operational reach",
+          "section_id": "b6-part-vi-logistics-supply-and-operational-reach"
+        }
+      ]
+    },
+    {
+      "letter": "M",
+      "term": "Mage-turns",
+      "destinations": [
+        {
+          "label": "Book V - mage-turn economy",
+          "section_id": "b5-mage-turn-opportunity-cost"
+        }
+      ]
+    },
+    {
+      "letter": "M",
+      "term": "Magic access",
+      "destinations": [
+        {
+          "label": "Book V - paths, schools, and access",
+          "section_id": "b5-part-ii-paths-schools-and-access"
+        }
+      ]
+    },
+    {
+      "letter": "M",
+      "term": "Magic Duel",
+      "destinations": [
+        {
+          "label": "Book V - Magic Duel",
+          "section_id": "b5-magic-duel"
+        }
+      ]
+    },
+    {
+      "letter": "M",
+      "term": "Magic phase",
+      "destinations": [
+        {
+          "label": "Book I - magic and special threats",
+          "section_id": "b1-phase-ii-magic-and-special-threats"
+        }
+      ]
+    },
+    {
+      "letter": "M",
+      "term": "Magic Being",
+      "destinations": [
+        {
+          "label": "Book XI - Magic Being",
+          "section_id": "b11-11-magic-being"
+        }
+      ]
+    },
+    {
+      "letter": "M",
+      "term": "Magic Resistance",
+      "destinations": [
+        {
+          "label": "Book IV - Magic Resistance contests",
+          "section_id": "b4-magic-resistance-contests"
+        }
+      ]
+    },
+    {
+      "letter": "M",
+      "term": "Maps",
+      "destinations": [
+        {
+          "label": "Book VIII - maps and scenario design",
+          "section_id": "b8-part-ix-maps-and-scenario-design"
+        },
+        {
+          "label": "Book VI",
+          "section_id": "b6-part-iv-map-structure-borders-and-infrastructure"
+        }
+      ]
+    },
+    {
+      "letter": "M",
+      "term": "Manual version drift",
+      "destinations": [
+        {
+          "label": "Book XIV - evidence ladder and version drift",
+          "section_id": "b14-evidence"
+        },
+        {
+          "label": "Book XIII",
+          "section_id": "b13-release-timeline"
+        }
+      ]
+    },
+    {
+      "letter": "M",
+      "term": "Melee",
+      "destinations": [
+        {
+          "label": "Book IV - melee resolution",
+          "section_id": "b4-part-vii-melee-resolution"
+        }
+      ]
+    },
+    {
+      "letter": "M",
+      "term": "Mercenaries",
+      "destinations": [
+        {
+          "label": "Book XII - mercenary company records",
+          "section_id": "b12-mercenaries-independents"
+        },
+        {
+          "label": "Book II - mercenaries",
+          "section_id": "b2-mercenaries"
+        }
+      ]
+    },
+    {
+      "letter": "M",
+      "term": "Mindless units",
+      "destinations": [
+        {
+          "label": "Book XI - Mindless",
+          "section_id": "b11-12-mindless"
+        },
+        {
+          "label": "Book IV",
+          "section_id": "b4-mindless-troops"
+        }
+      ]
+    },
+    {
+      "letter": "M",
+      "term": "Missile combat",
+      "destinations": [
+        {
+          "label": "Book IV - missile combat",
+          "section_id": "b4-part-viii-missile-combat"
+        }
+      ]
+    },
+    {
+      "letter": "M",
+      "term": "Message substitutions",
+      "destinations": [
+        {
+          "label": "Book XIV - double-hash substitutions",
+          "section_id": "b14-syntax"
+        }
+      ]
+    },
+    {
+      "letter": "M",
+      "term": "Mod object IDs",
+      "destinations": [
+        {
+          "label": "Book VIII - identifiers, allocation, and collision safety",
+          "section_id": "b8-part-ii-identifiers-allocation-and-collision-safety"
+        }
+      ]
+    },
+    {
+      "letter": "M",
+      "term": "Mod testing",
+      "destinations": [
+        {
+          "label": "Book VIII - testing, validation, and release engineering",
+          "section_id": "b8-part-xii-testing-validation-and-release-engineering"
+        }
+      ]
+    },
+    {
+      "letter": "M",
+      "term": "Morale",
+      "destinations": [
+        {
+          "label": "Book IV - morale, fear, rout, and retreat",
+          "section_id": "b4-part-xi-morale-fear-rout-and-retreat"
+        }
+      ]
+    },
+    {
+      "letter": "M",
+      "term": "Mounted units",
+      "destinations": [
+        {
+          "label": "Book IV - mounted units",
+          "section_id": "b4-part-iv-size-mounts-trampling-and-battlefield-movement"
+        }
+      ]
+    },
+    {
+      "letter": "M",
+      "term": "Movement",
+      "destinations": [
+        {
+          "label": "Book VI - movement and interception",
+          "section_id": "b6-movement-and-interception"
+        },
+        {
+          "label": "Book X",
+          "section_id": "b10-ordinary-movement"
+        },
+        {
+          "label": "Book I",
+          "section_id": "b1-movement-and-conquest"
+        }
+      ]
+    },
+    {
+      "letter": "M",
+      "term": "Mystics",
+      "destinations": [
+        {
+          "label": "Book VII - Mystic random structure",
+          "section_id": "b7-mystic-random-structure"
+        }
+      ]
+    },
+    {
+      "letter": "N",
+      "term": "NAPs",
+      "destinations": [
+        {
+          "label": "Book VI - NAP doctrine",
+          "section_id": "b6-non-aggression-pacts"
+        }
+      ]
+    },
+    {
+      "letter": "N",
+      "term": "Nation dossiers",
+      "destinations": [
+        {
+          "label": "Book VII - nation dossier method",
+          "section_id": "b7-part-i-the-nation-dossier-method"
+        }
+      ]
+    },
+    {
+      "letter": "N",
+      "term": "National spells",
+      "destinations": [
+        {
+          "label": "Book XII - spell restrictions",
+          "section_id": "b12-14-national-and-realm-restrictions"
+        },
+        {
+          "label": "Book V - national and restricted magic",
+          "section_id": "b5-national-and-restricted-magic"
+        }
+      ]
+    },
+    {
+      "letter": "N",
+      "term": "Nexus",
+      "destinations": [
+        {
+          "label": "Book V - global enchantments",
+          "section_id": "b5-part-x-global-enchantments-and-dispel-wars"
+        }
+      ]
+    },
+    {
+      "letter": "O",
+      "term": "Object copying",
+      "destinations": [
+        {
+          "label": "Book VIII - selection, copying, and inheritance",
+          "section_id": "b8-selection-copying-and-inheritance"
+        }
+      ]
+    },
+    {
+      "letter": "O",
+      "term": "Object limits",
+      "destinations": [
+        {
+          "label": "Book VIII - identifier limits",
+          "section_id": "b8-current-consolidated-object-limits"
+        }
+      ]
+    },
+    {
+      "letter": "O",
+      "term": "Obstacles",
+      "destinations": [
+        {
+          "label": "Book IV - obstacles",
+          "section_id": "b4-obstacles"
+        }
+      ]
+    },
+    {
+      "letter": "O",
+      "term": "Orders",
+      "destinations": [
+        {
+          "label": "Book IV - orders, scripts, and spellcasting AI",
+          "section_id": "b4-part-vi-orders-scripts-and-the-spellcasting-ai"
+        }
+      ]
+    },
+    {
+      "letter": "O",
+      "term": "Order of operations",
+      "destinations": [
+        {
+          "label": "Book I - hosting sequence",
+          "section_id": "b1-the-complete-63-step-hosting-sequence"
+        },
+        {
+          "label": "Book IV - melee resolution order",
+          "section_id": "b4-melee-resolution-order"
+        }
+      ]
+    },
+    {
+      "letter": "O",
+      "term": "Overcasting globals",
+      "destinations": [
+        {
+          "label": "Book V - overcasting",
+          "section_id": "b5-overcasting"
+        }
+      ]
+    },
+    {
+      "letter": "P",
+      "term": "Patch history",
+      "destinations": [
+        {
+          "label": "Book XIII - official release spine and patch ledger",
+          "section_id": "b13-official-patch-ledger"
+        },
+        {
+          "label": "Book XIV",
+          "section_id": "b14-patch-reconciliation"
+        }
+      ]
+    },
+    {
+      "letter": "P",
+      "term": "Paralysis",
+      "destinations": [
+        {
+          "label": "Book IV - paralysis",
+          "section_id": "b4-paralysis"
+        }
+      ]
+    },
+    {
+      "letter": "P",
+      "term": "Patrol",
+      "destinations": [
+        {
+          "label": "Book II - patrolling",
+          "section_id": "b2-patrolling"
+        },
+        {
+          "label": "Book VI",
+          "section_id": "b6-patrol-and-stealth"
+        }
+      ]
+    },
+    {
+      "letter": "P",
+      "term": "Penetration",
+      "destinations": [
+        {
+          "label": "Book IV - penetration",
+          "section_id": "b4-penetration"
+        }
+      ]
+    },
+    {
+      "letter": "P",
+      "term": "Pillage",
+      "destinations": [
+        {
+          "label": "Book II - pillaging and raiding",
+          "section_id": "b2-pillaging-and-raiding"
+        },
+        {
+          "label": "Book VI",
+          "section_id": "b6-pillage-as-a-campaign-tool"
+        }
+      ]
+    },
+    {
+      "letter": "P",
+      "term": "Planes",
+      "destinations": [
+        {
+          "label": "Book VIII - gates and multiple planes",
+          "section_id": "b8-gates-and-multiple-planes"
+        }
+      ]
+    },
+    {
+      "letter": "P",
+      "term": "Poison",
+      "destinations": [
+        {
+          "label": "Book IV - poison",
+          "section_id": "b4-poison"
+        }
+      ]
+    },
+    {
+      "letter": "P",
+      "term": "Population",
+      "destinations": [
+        {
+          "label": "Book II - population, unrest, pillage, patrol, and Blood Hunting",
+          "section_id": "b2-part-vii-population-unrest-pillage-patrol-and-blood-hunting"
+        }
+      ]
+    },
+    {
+      "letter": "P",
+      "term": "Power spikes",
+      "destinations": [
+        {
+          "label": "Book VI - timing attacks, power spikes, and deterrence",
+          "section_id": "b6-part-x-timing-attacks-power-spikes-and-deterrence"
+        }
+      ]
+    },
+    {
+      "letter": "P",
+      "term": "Precision",
+      "destinations": [
+        {
+          "label": "Book IV - missile deviation",
+          "section_id": "b4-missile-deviation"
+        },
+        {
+          "label": "spell accuracy",
+          "section_id": "b4-spell-accuracy"
+        }
+      ]
+    },
+    {
+      "letter": "P",
+      "term": "Preaching",
+      "destinations": [
+        {
+          "label": "Book III - preaching",
+          "section_id": "b3-preaching"
+        },
+        {
+          "label": "Book I",
+          "section_id": "b1-preaching-is-not-ordinary-dominion-spread"
+        }
+      ]
+    },
+    {
+      "letter": "P",
+      "term": "Pretender design",
+      "destinations": [
+        {
+          "label": "Book III - Pretender design as a national system",
+          "section_id": "b3-part-i-pretender-design-as-a-national-system"
+        },
+        {
+          "label": "Book XII",
+          "section_id": "b12-pretenders"
+        }
+      ]
+    },
+    {
+      "letter": "P",
+      "term": "Province Defence",
+      "destinations": [
+        {
+          "label": "Book II - Province Defence",
+          "section_id": "b2-part-ix-province-defence"
+        },
+        {
+          "label": "Book VI",
+          "section_id": "b6-province-defence-as-delay-and-information"
+        }
+      ]
+    },
+    {
+      "letter": "P",
+      "term": "Protection",
+      "destinations": [
+        {
+          "label": "Book IV - protection, damage, and survival",
+          "section_id": "b4-part-ix-protection-damage-and-survival"
+        }
+      ]
+    },
+    {
+      "letter": "R",
+      "term": "Raid orders",
+      "destinations": [
+        {
+          "label": "Book VI - raid mechanics",
+          "section_id": "b6-raid-order"
+        }
+      ]
+    },
+    {
+      "letter": "R",
+      "term": "Raiding",
+      "destinations": [
+        {
+          "label": "Book VI - raiding and counter-raiding",
+          "section_id": "b6-part-vii-raiding-and-counter-raiding"
+        }
+      ]
+    },
+    {
+      "letter": "R",
+      "term": "Random paths",
+      "destinations": [
+        {
+          "label": "Book VII - path probability and thresholds",
+          "section_id": "b7-path-probability-and-thresholds"
+        }
+      ]
+    },
+    {
+      "letter": "R",
+      "term": "Recruitment Points",
+      "destinations": [
+        {
+          "label": "Book II - Recruitment Points",
+          "section_id": "b2-recruitment-points"
+        },
+        {
+          "label": "the quick reference",
+          "section_id": "field-recruitment-points"
+        }
+      ]
+    },
+    {
+      "letter": "R",
+      "term": "Regeneration",
+      "destinations": [
+        {
+          "label": "Book XI - regeneration families",
+          "section_id": "b11-35-regeneration-families"
+        },
+        {
+          "label": "Book IV",
+          "section_id": "b4-regeneration"
+        }
+      ]
+    },
+    {
+      "letter": "R",
+      "term": "Remote attacks",
+      "destinations": [
+        {
+          "label": "Book V - domes, remote attacks, and magic movement",
+          "section_id": "b5-part-ix-domes-remote-attacks-and-magic-movement"
+        }
+      ]
+    },
+    {
+      "letter": "R",
+      "term": "Repel",
+      "destinations": [
+        {
+          "label": "Book IV - repel",
+          "section_id": "b4-repel"
+        }
+      ]
+    },
+    {
+      "letter": "R",
+      "term": "Research",
+      "destinations": [
+        {
+          "label": "Book V - research as strategic planning",
+          "section_id": "b5-part-iii-research-as-strategic-planning"
+        }
+      ]
+    },
+    {
+      "letter": "R",
+      "term": "Research response trees",
+      "destinations": [
+        {
+          "label": "Book VI - research as a strategic response tree",
+          "section_id": "b6-part-v-research-as-a-strategic-response-tree"
+        }
+      ]
+    },
+    {
+      "letter": "R",
+      "term": "Resistances",
+      "destinations": [
+        {
+          "label": "Book IV - resistances and special damage",
+          "section_id": "b4-part-xii-resistances-special-damage-and-status-effects"
+        }
+      ]
+    },
+    {
+      "letter": "R",
+      "term": "Retreat",
+      "destinations": [
+        {
+          "label": "Book IV - retreat destination",
+          "section_id": "b4-retreat-destination"
+        }
+      ]
+    },
+    {
+      "letter": "R",
+      "term": "Rituals",
+      "destinations": [
+        {
+          "label": "Book V - rituals and strategic magic",
+          "section_id": "b5-part-viii-rituals-and-strategic-magic"
+        }
+      ]
+    },
+    {
+      "letter": "R",
+      "term": "Rout",
+      "destinations": [
+        {
+          "label": "Book IV - morale, fear, rout, and retreat",
+          "section_id": "b4-part-xi-morale-fear-rout-and-retreat"
+        }
+      ]
+    },
+    {
+      "letter": "R",
+      "term": "Rulesets",
+      "destinations": [
+        {
+          "label": "Book I - rulesets must never be silently merged",
+          "section_id": "b1-rulesets-must-never-be-silently-merged"
+        }
+      ]
+    },
+    {
+      "letter": "S",
+      "term": "Sabbaths and Choruses",
+      "destinations": [
+        {
+          "label": "Book V - communions, Sabbaths, Choruses, and Grand Communions",
+          "section_id": "b5-part-vii-communions-sabbaths-choruses-and-grand-communions"
+        }
+      ]
+    },
+    {
+      "letter": "S",
+      "term": "Sacreds",
+      "destinations": [
+        {
+          "label": "Book III - sacred capacity",
+          "section_id": "b3-sacred-capacity"
+        }
+      ]
+    },
+    {
+      "letter": "S",
+      "term": "Scales",
+      "destinations": [
+        {
+          "label": "Book III - scales",
+          "section_id": "b3-part-v-scales"
+        }
+      ]
+    },
+    {
+      "letter": "S",
+      "term": "Scenario design",
+      "destinations": [
+        {
+          "label": "Book VIII - maps and scenario design",
+          "section_id": "b8-part-ix-maps-and-scenario-design"
+        }
+      ]
+    },
+    {
+      "letter": "S",
+      "term": "Schools",
+      "destinations": [
+        {
+          "label": "Book V - paths, schools, and access",
+          "section_id": "b5-part-ii-paths-schools-and-access"
+        }
+      ]
+    },
+    {
+      "letter": "S",
+      "term": "Scouting",
+      "destinations": [
+        {
+          "label": "Book VI - scouting, intelligence, and uncertainty",
+          "section_id": "b6-part-iii-scouting-intelligence-and-uncertainty"
+        }
+      ]
+    },
+    {
+      "letter": "S",
+      "term": "Scrying",
+      "destinations": [
+        {
+          "label": "Book V - scrying",
+          "section_id": "b5-scrying"
+        }
+      ]
+    },
+    {
+      "letter": "S",
+      "term": "Siege",
+      "destinations": [
+        {
+          "label": "Book II - siege and fort control",
+          "section_id": "b2-part-viii-siege-and-fort-control"
+        },
+        {
+          "label": "Book X",
+          "section_id": "b10-siege-orders"
+        },
+        {
+          "label": "the quick reference",
+          "section_id": "field-siege-calculation"
+        }
+      ]
+    },
+    {
+      "letter": "S",
+      "term": "Sites",
+      "destinations": [
+        {
+          "label": "Book XII - Throne and site records",
+          "section_id": "b12-thrones-sites"
+        },
+        {
+          "label": "Book II - sites, gems, and magical capital",
+          "section_id": "b2-part-x-sites-gems-and-magical-capital"
+        }
+      ]
+    },
+    {
+      "letter": "S",
+      "term": "Size",
+      "destinations": [
+        {
+          "label": "Book IV - size, mounts, trampling, and movement",
+          "section_id": "b4-part-iv-size-mounts-trampling-and-battlefield-movement"
+        }
+      ]
+    },
+    {
+      "letter": "S",
+      "term": "Special dominions",
+      "destinations": [
+        {
+          "label": "Book XII - official system register",
+          "section_id": "b12-special-dominions"
+        },
+        {
+          "label": "Book III - special dominions",
+          "section_id": "b3-special-dominions"
+        }
+      ]
+    },
+    {
+      "letter": "S",
+      "term": "Spell fatigue",
+      "destinations": [
+        {
+          "label": "Book IV - spell fatigue",
+          "section_id": "b4-spell-fatigue"
+        }
+      ]
+    },
+    {
+      "letter": "S",
+      "term": "Spellcasting AI",
+      "destinations": [
+        {
+          "label": "Book IV - orders, scripts, and spellcasting AI",
+          "section_id": "b4-part-vi-orders-scripts-and-the-spellcasting-ai"
+        }
+      ]
+    },
+    {
+      "letter": "S",
+      "term": "Squads",
+      "destinations": [
+        {
+          "label": "Book IV - commanders, squads, leadership, and army organisation",
+          "section_id": "b4-part-iii-commanders-squads-leadership-and-army-organisation"
+        }
+      ]
+    },
+    {
+      "letter": "S",
+      "term": "Starvation",
+      "destinations": [
+        {
+          "label": "Book II - supplies, logistics, and starvation",
+          "section_id": "b2-part-v-supplies-logistics-and-starvation"
+        }
+      ]
+    },
+    {
+      "letter": "S",
+      "term": "Stealth",
+      "destinations": [
+        {
+          "label": "Book VI - patrol and stealth",
+          "section_id": "b6-patrol-and-stealth"
+        }
+      ]
+    },
+    {
+      "letter": "S",
+      "term": "Submission",
+      "destinations": [
+        {
+          "label": "Book X - turn submission and revision",
+          "section_id": "b10-turn-submission"
+        }
+      ]
+    },
+    {
+      "letter": "S",
+      "term": "Storming",
+      "destinations": [
+        {
+          "label": "Book II - siege and fort control",
+          "section_id": "b2-part-viii-siege-and-fort-control"
+        },
+        {
+          "label": "Book IV",
+          "section_id": "b4-part-xvi-siege-storming-retreat-and-pursuit"
+        }
+      ]
+    },
+    {
+      "letter": "S",
+      "term": "Summons",
+      "destinations": [
+        {
+          "label": "Book XII - summon relations",
+          "section_id": "b12-summons"
+        },
+        {
+          "label": "Book V - summoning",
+          "section_id": "b5-summoning"
+        }
+      ]
+    },
+    {
+      "letter": "S",
+      "term": "Supply",
+      "destinations": [
+        {
+          "label": "Book II - supplies, logistics, and starvation",
+          "section_id": "b2-part-v-supplies-logistics-and-starvation"
+        }
+      ]
+    },
+    {
+      "letter": "T",
+      "term": "Targeting",
+      "destinations": [
+        {
+          "label": "Book IV - targeting orders",
+          "section_id": "b4-targeting-orders"
+        },
+        {
+          "label": "spell targeting",
+          "section_id": "b4-spell-targeting"
+        }
+      ]
+    },
+    {
+      "letter": "T",
+      "term": "Taskmasters",
+      "destinations": [
+        {
+          "label": "Book XI - Taskmaster and Beast Master",
+          "section_id": "b11-26-taskmaster-beast-master-and-special-followers"
+        },
+        {
+          "label": "Book IV",
+          "section_id": "b4-taskmasters"
+        }
+      ]
+    },
+    {
+      "letter": "T",
+      "term": "Template commands",
+      "destinations": [
+        {
+          "label": "Book XIV - templates describe a grammar",
+          "section_id": "b14-syntax"
+        },
+        {
+          "label": "template alias locator",
+          "section_id": "b14-complete-locator"
+        }
+      ]
+    },
+    {
+      "letter": "T",
+      "term": "Tempo",
+      "destinations": [
+        {
+          "label": "Book VI - tempo",
+          "section_id": "b6-tempo"
+        }
+      ]
+    },
+    {
+      "letter": "T",
+      "term": "Thrones",
+      "destinations": [
+        {
+          "label": "Book XII - exact Throne records",
+          "section_id": "b12-thrones-sites"
+        },
+        {
+          "label": "Book VI - Thrones, Cataclysm, and endgame conversion",
+          "section_id": "b6-part-xii-thrones-cataclysm-and-endgame-conversion"
+        }
+      ]
+    },
+    {
+      "letter": "T",
+      "term": "Throne rush",
+      "destinations": [
+        {
+          "label": "Book VI - throne-rush sequence",
+          "section_id": "b6-the-throne-rush-sequence"
+        }
+      ]
+    },
+    {
+      "letter": "T",
+      "term": "Timing attacks",
+      "destinations": [
+        {
+          "label": "Book VI - timing attacks, power spikes, and deterrence",
+          "section_id": "b6-part-x-timing-attacks-power-spikes-and-deterrence"
+        }
+      ]
+    },
+    {
+      "letter": "T",
+      "term": "Trample",
+      "destinations": [
+        {
+          "label": "Book XI - Trample ability",
+          "section_id": "b11-45-trample"
+        },
+        {
+          "label": "Book IV",
+          "section_id": "b4-trample"
+        }
+      ]
+    },
+    {
+      "letter": "T",
+      "term": "Turn resolution",
+      "destinations": [
+        {
+          "label": "Book I - complete hosting sequence",
+          "section_id": "b1-the-complete-63-step-hosting-sequence"
+        }
+      ]
+    },
+    {
+      "letter": "T",
+      "term": "Turn audit",
+      "destinations": [
+        {
+          "label": "Book X - end-of-turn audit",
+          "section_id": "b10-the-end-of-turn-audit"
+        }
+      ]
+    },
+    {
+      "letter": "U",
+      "term": "Unit classes",
+      "destinations": [
+        {
+          "label": "Book XI - unit classes and status tags",
+          "section_id": "b11-unit-classes"
+        }
+      ]
+    },
+    {
+      "letter": "U",
+      "term": "Underwater play",
+      "destinations": [
+        {
+          "label": "Book IX - underwater and cross-terrain systems",
+          "section_id": "b9-12-underwater-and-cross-terrain-systems"
+        }
+      ]
+    },
+    {
+      "letter": "U",
+      "term": "Unrest",
+      "destinations": [
+        {
+          "label": "Book II - population, unrest, pillage, patrol, and Blood Hunting",
+          "section_id": "b2-part-vii-population-unrest-pillage-patrol-and-blood-hunting"
+        }
+      ]
+    },
+    {
+      "letter": "U",
+      "term": "Upkeep",
+      "destinations": [
+        {
+          "label": "Book II - upkeep",
+          "section_id": "b2-upkeep"
+        },
+        {
+          "label": "Book I",
+          "section_id": "b1-income-precedes-upkeep"
+        }
+      ]
+    },
+    {
+      "letter": "V",
+      "term": "Versioning",
+      "destinations": [
+        {
+          "label": "Book XIII - official patch ledger",
+          "section_id": "b13-official-patch-ledger"
+        },
+        {
+          "label": "Book IX - versioned knowledge",
+          "section_id": "b9-essay-iv-versioned-knowledge-is-part-of-the-ruleset"
+        }
+      ]
+    },
+    {
+      "letter": "V",
+      "term": "Victory conditions",
+      "destinations": [
+        {
+          "label": "Book VI - Thrones and endgame conversion",
+          "section_id": "b6-part-xii-thrones-cataclysm-and-endgame-conversion"
+        }
+      ]
+    },
+    {
+      "letter": "W",
+      "term": "Wall integrity",
+      "destinations": [
+        {
+          "label": "Book II - siege and fort control",
+          "section_id": "b2-part-viii-siege-and-fort-control"
+        }
+      ]
+    },
+    {
+      "letter": "W",
+      "term": "Weapons",
+      "destinations": [
+        {
+          "label": "Book IV - weapon profiles",
+          "section_id": "b4-weapon-profiles"
+        },
+        {
+          "label": "Book VIII",
+          "section_id": "b8-part-iii-weapons-armour-and-combat-components"
+        }
+      ]
+    },
+    {
+      "letter": "W",
+      "term": "Wish",
+      "destinations": [
+        {
+          "label": "Book V - Wish",
+          "section_id": "b5-wish"
+        }
+      ]
+    },
+    {
+      "letter": "W",
+      "term": "World effects",
+      "destinations": [
+        {
+          "label": "Book I - world effects and hidden conflict",
+          "section_id": "b1-phase-iv-world-effects-and-hidden-conflict"
+        }
+      ]
+    },
+    {
+      "letter": "Z",
+      "term": "Zones of control",
+      "destinations": [
+        {
+          "label": "Book IV - zones of control",
+          "section_id": "b4-zones-of-control"
+        }
+      ]
+    }
+  ]
+}

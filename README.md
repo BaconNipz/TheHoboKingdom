@@ -8,6 +8,7 @@ TheHoboKingdom is a GitHub Pages hub for ongoing game projects, guides, modpacks
 - `/guides/` — published guide index
 - `/downloads/` — release and printable-file index
 - `/dominions/`, `/stalker/`, `/minecraft/`, `/dnd/`, `/tabletop/` — project hubs
+- `/dominions/library/` — searchable Dominions 6 Knowledge Library and its sixteen books
 - `_data/projects.yml` — project cards and statuses
 - `_data/updates.yml` — homepage updates
 - `_includes/` and `_layouts/` — shared Jekyll structure
@@ -17,4 +18,4 @@ GitHub Pages builds the site with Jekyll. Legacy root-level pages remain as redi
 
 ## Current milestone
 
-**Hub Foundation v2** is complete. The active milestone is the **Content Pass**, beginning with Dominions 6 reference pages based on Illwinter's official manuals. Scope and recovery references are recorded in [`docs/website-hub-plan.md`](docs/website-hub-plan.md).
+**Hub Foundation v2** is complete. The active **Content Pass** now includes the complete website edition of the Dominions 6 Knowledge Library alongside the official-manual nation and starting-game references. Scope and recovery references are recorded in [`docs/website-hub-plan.md`](docs/website-hub-plan.md).

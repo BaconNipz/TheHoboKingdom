@@ -1,0 +1,832 @@
+---
+title: "Turn and Economy Quick Reference"
+description: "A compact table-side reference for turn order, income, recruitment, upkeep, forts, and logistics."
+nav_section: guides
+extra_css: /assets/dominions-library.css
+extra_js: /assets/dominions-library.js
+og_image: /assets/images/dominions-6-library-edition-24.png
+---
+
+<section class="page-hero library-page-hero">
+  <div class="shell">
+    <div class="breadcrumbs">
+      <a href="/dominions/">Dominions 6</a><span aria-hidden="true">/</span>
+      <a href="/dominions/library/">Knowledge Library</a><span aria-hidden="true">/</span>
+      <span>Turn and Economy Quick Reference</span>
+    </div>
+    <p class="eyebrow">Progress Edition 24</p>
+    <h1>Turn and Economy Quick Reference</h1>
+    <p class="lead">A compact table-side reference for turn order, income, recruitment, upkeep, forts, and logistics.</p>
+    <div class="meta-row">
+      <span class="status status--stable">Published reference</span>
+      <span class="meta-chip">Dominions 6.36</span>
+      <span class="meta-chip">3,208 words</span>
+      <span class="meta-chip">30 sections</span>
+    </div>
+  </div>
+</section>
+
+<section class="section shell library-section">
+  <details class="library-mobile-toc">
+    <summary>Table of contents</summary>
+    <nav><a href="#field-scope-and-use">Scope and use</a>
+<a href="#field-the-hosting-spine">The hosting spine</a>
+<a href="#field-provincial-gold">Provincial gold</a>
+<a href="#field-provincial-resources">Provincial resources</a>
+<a href="#field-recruitment-capacity">Recruitment capacity</a>
+<a href="#field-upkeep">Upkeep</a>
+<a href="#field-supplies-and-starvation">Supplies and starvation</a>
+<a href="#field-fortification-table">Fortification table</a>
+<a href="#field-buildings">Buildings</a>
+<a href="#field-siege-calculation">Siege calculation</a>
+<a href="#field-province-defence">Province Defence</a>
+<a href="#field-magic-sites-and-gems">Magic sites and gems</a>
+<a href="#field-blood-hunting">Blood Hunting</a>
+<a href="#field-scale-effects-used-in-economic-calculations">Scale effects used in economic calculations</a>
+<a href="#field-active-mod-economy-deltas">Active mod economy deltas</a>
+<a href="#field-order-writing-audit">Order-writing audit</a>
+<a href="#field-source-note-and-unresolved-tests">Source note and unresolved tests</a></nav>
+  </details>
+  <div class="library-reader-grid">
+    <article class="content library-prose">
+{% raw %}
+<h1 id="field-turn-and-economy-quick-reference">Turn and Economy Quick Reference<a class="heading-link" href="#field-turn-and-economy-quick-reference" aria-label="Link to Turn and Economy Quick Reference">#</a></h1><h2 id="field-scope-and-use">Scope and use<a class="heading-link" href="#field-scope-and-use" aria-label="Link to Scope and use">#</a></h2><p>This is the library&#39;s field sheet: the small amount of deliberate repetition kept beside the turn screen. Foundation Book I owns hosting order and Foundation Book II owns the economic rules. The sheet simply keeps their most-used facts in one place while answering four immediate questions:</p>
+<ol>
+<li>What resolves first?</li>
+<li>What limits recruitment here?</li>
+<li>What will this province actually produce?</li>
+<li>What state change will matter this month rather than next month?</li>
+</ol>
+<p><strong>Ruleset:</strong> Unmodded Dominions 6.36 unless a modded note is explicitly shown.<br><strong>Primary source:</strong> Dominions 6 Manual, revision 2.<br><strong>Verification date:</strong> 25 August 2026.<br><strong>Evidence rule:</strong> A dagger symbol is not used; uncertainties are written out beside the affected rule.</p>
+<h2 id="field-the-hosting-spine">The hosting spine<a class="heading-link" href="#field-the-hosting-spine" aria-label="Link to The hosting spine">#</a></h2><p>The official hosting sequence contains 63 steps. The following spine preserves the steps that most often decide an order-writing problem.</p>
+<table>
+<thead>
+<tr>
+<th align="right">Step</th>
+<th>Resolution</th>
+<th>Immediate consequence</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1</td>
+<td>Messages and attached resources</td>
+<td>Transfers leave before almost every danger or ownership change.</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td>Research</td>
+<td>A researcher killed later still contributes this month.</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td>Recruitment</td>
+<td>New defenders exist before attacks and movement.</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td>Empowerment</td>
+<td>Permanent path increases are applied.</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td>Forging</td>
+<td>New items enter the national inventory but are not retroactively equipped.</td>
+</tr>
+<tr>
+<td align="right">6-8</td>
+<td>Preaching, heretics, Throne claims</td>
+<td>These religious actions precede battles and general dominion spread.</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td>Rituals</td>
+<td>Casters resolve in random order.</td>
+</tr>
+<tr>
+<td align="right">11-12</td>
+<td>Remote attacks and magic battles</td>
+<td>Magical attacks and movement can strike before conventional movement.</td>
+</tr>
+<tr>
+<td align="right">14</td>
+<td>Site searches</td>
+<td>Search orders finish before ordinary conquest.</td>
+</tr>
+<tr>
+<td align="right">15-18</td>
+<td>Prophets, Call God, awakening, Blood Hunting</td>
+<td>These resolve before assassinations and ordinary movement.</td>
+</tr>
+<tr>
+<td align="right">20</td>
+<td>Assassinations</td>
+<td>A killed commander may strand an army before movement.</td>
+</tr>
+<tr>
+<td align="right">24-25</td>
+<td>Friendly movement, then other movement</td>
+<td>Conventional movement is divided into two steps.</td>
+</tr>
+<tr>
+<td align="right">26-27</td>
+<td>Movement battles, then castle storming</td>
+<td>A relieving army can fight before a storm attempt.</td>
+</tr>
+<tr>
+<td align="right">28-33</td>
+<td>Globals, events, effect battles, sneak discovery</td>
+<td>Several late battle groups remain after movement.</td>
+</tr>
+<tr>
+<td align="right">35</td>
+<td>Building construction and demolition</td>
+<td>A new fort, temple, or lab is too late for this month&#39;s earlier actions.</td>
+</tr>
+<tr>
+<td align="right">36</td>
+<td>Special-order allies</td>
+<td>Reanimated or summoned allies created here are too late for this month&#39;s battles.</td>
+</tr>
+<tr>
+<td align="right">37</td>
+<td>Pillage</td>
+<td>Population and unrest damage precede income.</td>
+</tr>
+<tr>
+<td align="right">38</td>
+<td>Income</td>
+<td>Gold is collected after conquest and pillage, before upkeep.</td>
+</tr>
+<tr>
+<td align="right">39</td>
+<td>Unrest alterations</td>
+<td>Most ordinary unrest reduction is too late to improve this month&#39;s income.</td>
+</tr>
+<tr>
+<td align="right">40</td>
+<td>Starvation</td>
+<td>Armies fight before newly applied starvation.</td>
+</tr>
+<tr>
+<td align="right">41</td>
+<td>Upkeep and desertion</td>
+<td>This month&#39;s income is available before the charge.</td>
+</tr>
+<tr>
+<td align="right">42-44</td>
+<td>Dominion spread, dominion effects, site effects</td>
+<td>Ordinary dominion spread occurs after most battles and the economy.</td>
+</tr>
+<tr>
+<td align="right">48</td>
+<td>Healing and disease</td>
+<td>Battle survivors heal or suffer disease after the combat sequence.</td>
+</tr>
+<tr>
+<td align="right">54</td>
+<td>Conscription</td>
+<td>Automatic minimum PD is created for future turns.</td>
+</tr>
+<tr>
+<td align="right">56-57</td>
+<td>Elimination, then victory</td>
+<td>Both checks occur before immortals reform.</td>
+</tr>
+<tr>
+<td align="right">60-63</td>
+<td>Immortals, unsupported PD, artifacts, cleanup</td>
+<td>End-state maintenance prepares the next order phase.</td>
+</tr>
+</tbody></table>
+<h2 id="field-provincial-gold">Provincial gold<a class="heading-link" href="#field-provincial-gold" aria-label="Link to Provincial gold">#</a></h2><h3 id="field-base-and-final-income">Base and final income<a class="heading-link" href="#field-base-and-final-income" aria-label="Link to Base and final income">#</a></h3><pre><code class="language-text">Base income = population / 100
+
+Modified income =
+  (population / 100)
+  x dominion-scale modifiers
+  x (1 + fort Administration / 200)
+
+Final income =
+  modified income / (1 + unrest x 0.02)
+</code></pre>
+<p>The number displayed by the province interface is already modified. Exact intermediate rounding is an implementation detail and should not be reconstructed from the final number when a one-gold difference matters.</p>
+<h3 id="field-tax-trace">Tax trace<a class="heading-link" href="#field-tax-trace" aria-label="Link to Tax trace">#</a></h3><p>A province produces no income for the turn if it cannot trace an unbroken line of friendly provinces to a friendly fort. In disciple games, allied territory can carry the trace.</p>
+<p>This is a collection rule, not a resource rule. A cut tax line can remove gold income without removing the province&#39;s local resources, recruitment capacity, or supplies.</p>
+<h3 id="field-unrest-multipliers">Unrest multipliers<a class="heading-link" href="#field-unrest-multipliers" aria-label="Link to Unrest multipliers">#</a></h3><table>
+<thead>
+<tr>
+<th align="right">Unrest</th>
+<th align="right">Income retained</th>
+<th align="right">Resources retained</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">0</td>
+<td align="right">100%</td>
+<td align="right">100%</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">about 83%</td>
+<td align="right">about 91%</td>
+</tr>
+<tr>
+<td align="right">25</td>
+<td align="right">about 67%</td>
+<td align="right">80%</td>
+</tr>
+<tr>
+<td align="right">50</td>
+<td align="right">50%</td>
+<td align="right">about 67%</td>
+</tr>
+<tr>
+<td align="right">75</td>
+<td align="right">40%</td>
+<td align="right">about 57%</td>
+</tr>
+<tr>
+<td align="right">100</td>
+<td align="right">about 33%</td>
+<td align="right">50%</td>
+</tr>
+<tr>
+<td align="right">150</td>
+<td align="right">25%</td>
+<td align="right">40%</td>
+</tr>
+<tr>
+<td align="right">200</td>
+<td align="right">20%</td>
+<td align="right">about 33%</td>
+</tr>
+</tbody></table>
+<p>At unrest 100 or greater, ordinary unit and commander recruitment is prohibited.</p>
+<h2 id="field-provincial-resources">Provincial resources<a class="heading-link" href="#field-provincial-resources" aria-label="Link to Provincial resources">#</a></h2><p>An unfortified province makes only half of its potential resource value available for local recruitment. A fortified province uses its full local potential and may draw a percentage of the potential resources of eligible adjacent provinces.</p>
+<pre><code class="language-text">Final local resource pool =
+  calculated resources / (1 + unrest x 0.01)
+</code></pre>
+<p>Fort resource draw is governed by Administration:</p>
+<ul>
+<li>a fort draws its Administration percentage from each eligible adjacent province&#39;s potential resources;</li>
+<li>land forts do not draw from sea provinces, and sea forts do not draw from land;</li>
+<li>a fort does not draw from an adjacent province containing another fort;</li>
+<li>a fort does not draw from an enemy-held province;</li>
+<li>two forts may draw from the same third province when that third province is adjacent to both and contains no fort.</li>
+</ul>
+<p>Resources are local and do not accumulate. Unused resources vanish at hosting rather than moving to the treasury.</p>
+<h2 id="field-recruitment-capacity">Recruitment capacity<a class="heading-link" href="#field-recruitment-capacity" aria-label="Link to Recruitment capacity">#</a></h2><h3 id="field-recruitment-points">Recruitment Points<a class="heading-link" href="#field-recruitment-points" aria-label="Link to Recruitment Points">#</a></h3><p>Start with 20 Recruitment Points, then add the contribution from each population band reached.</p>
+<table>
+<thead>
+<tr>
+<th align="right">Population band</th>
+<th align="right">Contribution from that band</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">Base</td>
+<td align="right">20</td>
+</tr>
+<tr>
+<td align="right">First 5,000</td>
+<td align="right">population in band / 100</td>
+</tr>
+<tr>
+<td align="right">5,001-10,000</td>
+<td align="right">population in band / 200</td>
+</tr>
+<tr>
+<td align="right">10,001-20,000</td>
+<td align="right">population in band / 300</td>
+</tr>
+<tr>
+<td align="right">20,001-40,000</td>
+<td align="right">population in band / 400</td>
+</tr>
+<tr>
+<td align="right">Above 40,000</td>
+<td align="right">population in band / 500</td>
+</tr>
+</tbody></table>
+<p>Example for 6,000 population:</p>
+<pre><code class="language-text">20 + 5,000/100 + 1,000/200 = 75 Recruitment Points
+</code></pre>
+<p>The fort&#39;s recruitment bonus is applied afterward. Order or Turmoil changes Recruitment Points by 10% per scale step. Exact fractional rounding remains assigned to controlled testing.</p>
+<span class="anchor-alias" id="field-commander-points" aria-hidden="true"></span><span class="anchor-alias" id="field-holy-points" aria-hidden="true"></span><span class="anchor-alias" id="field-recruitment-gates" aria-hidden="true"></span><h3 id="field-the-four-recruitment-gates">The four recruitment gates<a class="heading-link" href="#field-the-four-recruitment-gates" aria-label="Link to The four recruitment gates">#</a></h3><table>
+<thead>
+<tr>
+<th>Gate</th>
+<th>What it limits</th>
+<th>Common misunderstanding</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Gold</td>
+<td>Units, commanders, buildings, PD, and upkeep</td>
+<td>A rich treasury does not create more local resources or points.</td>
+</tr>
+<tr>
+<td>Resources</td>
+<td>Equipment-heavy troops in that province</td>
+<td>Resources do not transfer or stockpile.</td>
+</tr>
+<tr>
+<td>Recruitment Points</td>
+<td>Ordinary troop throughput</td>
+<td>Cheap, lightly equipped units can still exhaust local organisation.</td>
+</tr>
+<tr>
+<td>Commander Points</td>
+<td>Commander throughput</td>
+<td>Extra gold and resources do not bypass the local commander rate.</td>
+</tr>
+</tbody></table>
+<p>Sacred recruitment adds a fifth gate: Holy Points. Limited recruits may add a sixth: a unit-specific cap.</p>
+<h3 id="field-commander-point-ladder">Commander Point ladder<a class="heading-link" href="#field-commander-point-ladder" aria-label="Link to Commander Point ladder">#</a></h3><pre><code class="language-text">ordinary Commander Points = 1 base + current fort bonus
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Location</th>
+<th align="right">Total CP</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Unfortified province or Palisades</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td>Fortress or Castle</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>Citadel or Grand Citadel</td>
+<td align="right">3</td>
+</tr>
+</tbody></table>
+<p>Multi-point commanders accumulate progress over more than one month when the local pool is too small. <code>#slowrec</code> changes the commander&#39;s cost rather than increasing or decreasing the province pool. AI difficulty bonuses do not modify Commander Points or Holy Points.</p>
+<h3 id="field-queue-behaviour">Queue behaviour<a class="heading-link" href="#field-queue-behaviour" aria-label="Link to Queue behaviour">#</a></h3><ul>
+<li>Gold must be available when the order is placed.</li>
+<li>A shortage of resources or Recruitment Points can leave units queued for a later month.</li>
+<li>Sacred units can remain queued behind the Holy Point limit.</li>
+<li>A province can hold at most 250 queued units.</li>
+<li>Commander recruitment uses Commander Points; some commanders cost more than one point.</li>
+<li>Recruitment occurs at hosting step 3. A unit appearing then can defend that month but cannot receive a new strategic order until the next order phase.</li>
+</ul>
+<h2 id="field-upkeep">Upkeep<a class="heading-link" href="#field-upkeep" aria-label="Link to Upkeep">#</a></h2><p>The manual&#39;s ordinary monthly rule is:</p>
+<pre><code class="language-text">ordinary gold-recruited unit upkeep = gold cost / 15
+sacred or slave upkeep = gold cost / 30
+</code></pre>
+<p>Most summoned units have no upkeep. Exceptions can be assigned additional upkeep. The in-game unit panel commonly presents annual upkeep, equal to twelve monthly charges.</p>
+<p>Versioned 6.33 observations establish that Sacred and Slave reductions stack, producing gold cost divided by 60, and that mounted upkeep uses separate rider and mount bases. Patch review through 6.36 finds no later general change. These rules are Community-tested rather than official manual wording. Shapechanged upkeep and fractional monthly aggregation remain unresolved.</p>
+<p>Observed annual entries for 7- and 16-gold ordinary units are 6 and 13. Those samples exclude simply flooring the final annual decimal, but do not establish how monthly fractions reach the treasury. Use the Income Overview when the margin is one gold.</p>
+<p>Upkeep resolves at step 41, after income at step 38. A nation can spend down to a narrow treasury during the order phase and rely on that month&#39;s income for upkeep. Any interruption to income can turn that small margin into desertion.</p>
+<h2 id="field-supplies-and-starvation">Supplies and starvation<a class="heading-link" href="#field-supplies-and-starvation" aria-label="Link to Supplies and starvation">#</a></h2><h3 id="field-population-supply">Population supply<a class="heading-link" href="#field-population-supply" aria-label="Link to Population supply">#</a></h3><table>
+<thead>
+<tr>
+<th align="right">Population band</th>
+<th align="right">Base supply</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">First 15,000</td>
+<td align="right">1 supply per 30 population</td>
+</tr>
+<tr>
+<td align="right">Above 15,000</td>
+<td align="right">1 supply per 60 population</td>
+</tr>
+</tbody></table>
+<p>Growth or Death modifies this value first. Heat or Cold modifies it second.</p>
+<h3 id="field-fort-supply-projection">Fort supply projection<a class="heading-link" href="#field-fort-supply-projection" aria-label="Link to Fort supply projection">#</a></h3><pre><code class="language-text">Supply from a fort =
+  (Administration x 6) / (distance + 1)
+</code></pre>
+<p>The maximum distance is four provinces. Where several forts are in range, only the highest fort contribution is used.</p>
+<p>The manual&#39;s printed multiplier table and one worked example instead follow <code>(Administration x 4)/(distance + 1)</code>. Another official adjacent-province example agrees with the multiplier of six. The current community reference follows six, but distance scaling remains scheduled for a versioned test.</p>
+<h3 id="field-supply-usage">Supply usage<a class="heading-link" href="#field-supply-usage" aria-label="Link to Supply usage">#</a></h3><ul>
+<li>Size 0 uses no supply.</li>
+<li>Size 1 and Size 2 use one-half supply.</li>
+<li>Larger units normally use Size minus 2.</li>
+<li>Animals use half the ordinary amount.</li>
+<li>A mounted unit consumes supply for both rider and mount.</li>
+<li>Nature magic indirectly contributes 10 supply per path level.</li>
+<li>Update 6.35 fixed stale Supply Usage after magic-item changes; recheck the displayed total after changing relevant equipment.</li>
+</ul>
+<h3 id="field-starvation">Starvation<a class="heading-link" href="#field-starvation" aria-label="Link to Starvation">#</a></h3><p>When usage exceeds available supplies, units whose combined usage is approximately the deficit are selected to starve.</p>
+<table>
+<thead>
+<tr>
+<th>State</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>First month selected</td>
+<td>Starving condition, -4 morale, 5% disease chance</td>
+</tr>
+<tr>
+<td>Selected while already starving</td>
+<td>50% disease chance</td>
+</tr>
+<tr>
+<td>Appropriate survival skill</td>
+<td>50% chance to avoid starvation; a further 50% chance to avoid disease</td>
+</tr>
+<tr>
+<td>Supply restored</td>
+<td>Starving ends; existing disease remains</td>
+</tr>
+</tbody></table>
+<p>Starvation resolves at step 40, after battles. It usually becomes a problem for the next battle, although disease or an existing Starving condition may already be causing harm.</p>
+<p>Need Not Eat is the explicit immunity tag. Official update 6.18 confirms that transformation into a non-eating form removes Starving. Supply consumption and starvation eligibility are distinct: some objects can consume supplies while remaining unable to starve. Commanders are commonly reported to receive feeding priority, but generic commander immunity is not established.</p>
+<h2 id="field-fortification-table">Fortification table<a class="heading-link" href="#field-fortification-table" aria-label="Link to Fortification table">#</a></h2><p>Each cost and time is for that upgrade stage. Statistics replace the previous fort&#39;s values; they do not stack.</p>
+<table>
+<thead>
+<tr>
+<th>Fort</th>
+<th align="right">Gold</th>
+<th align="right">Months</th>
+<th align="right">Admin</th>
+<th align="right">Commander Points</th>
+<th align="right">Recruitment bonus</th>
+<th align="right">Siege storage</th>
+<th align="right">Wall</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Palisades</td>
+<td align="right">1,000</td>
+<td align="right">5</td>
+<td align="right">15</td>
+<td align="right">+0</td>
+<td align="right">+50%</td>
+<td align="right">150</td>
+<td align="right">200</td>
+</tr>
+<tr>
+<td>Fortress</td>
+<td align="right">600</td>
+<td align="right">3</td>
+<td align="right">30</td>
+<td align="right">+1</td>
+<td align="right">+75%</td>
+<td align="right">750</td>
+<td align="right">500</td>
+</tr>
+<tr>
+<td>Castle</td>
+<td align="right">600</td>
+<td align="right">3</td>
+<td align="right">45</td>
+<td align="right">+1</td>
+<td align="right">+100%</td>
+<td align="right">2,500</td>
+<td align="right">1,000</td>
+</tr>
+<tr>
+<td>Citadel</td>
+<td align="right">600</td>
+<td align="right">3</td>
+<td align="right">60</td>
+<td align="right">+2</td>
+<td align="right">+125%</td>
+<td align="right">7,500</td>
+<td align="right">1,500</td>
+</tr>
+<tr>
+<td>Grand Citadel</td>
+<td align="right">1,000</td>
+<td align="right">5</td>
+<td align="right">70</td>
+<td align="right">+2</td>
+<td align="right">+150%</td>
+<td align="right">10,000</td>
+<td align="right">2,000</td>
+</tr>
+</tbody></table>
+<p>The standard maximum is Fortress in the Early Age, Castle in the Middle Age, and Citadel in the Late Age. Primitive or advanced national fort access and the Mason ability can alter this.</p>
+<h2 id="field-buildings">Buildings<a class="heading-link" href="#field-buildings" aria-label="Link to Buildings">#</a></h2><table>
+<thead>
+<tr>
+<th>Building</th>
+<th align="right">Standard cost</th>
+<th>Constructor</th>
+<th>Principal functions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Fort</td>
+<td align="right">Stage-specific</td>
+<td>Any commander</td>
+<td>Protection, resources, supply projection, income through Administration, recruitment bonuses</td>
+</tr>
+<tr>
+<td>Temple</td>
+<td align="right">600 gold</td>
+<td>Sacred commander</td>
+<td>Dominion spread, preaching bonus, Blood Sacrifice access where applicable</td>
+</tr>
+<tr>
+<td>Laboratory</td>
+<td align="right">600 gold</td>
+<td>Mage</td>
+<td>Research, rituals, national gem/item pool, site functions that require a lab</td>
+</tr>
+</tbody></table>
+<p>Nation and terrain exceptions can change these costs.</p>
+<p>Construction completes at hosting step 35. A lab finished this month cannot enable step-2 research, step-5 forging, or step-10 rituals during the same month. A temple finishes after preaching and Throne claims. A fort finishes after recruitment and all ordinary battles.</p>
+<p>Any commander can demolish a fort or laboratory in one month. Temples cannot be demolished by order; an enemy temple is automatically destroyed when its province is conquered. A fort cannot be demolished while under siege.</p>
+<h2 id="field-siege-calculation">Siege calculation<a class="heading-link" href="#field-siege-calculation" aria-label="Link to Siege calculation">#</a></h2><pre><code class="language-text">reduction strength = Strength squared
+repair strength = Strength squared / 2
+</code></pre>
+<p>Modifiers:</p>
+<ul>
+<li>Flying doubles reduction or repair contribution.</li>
+<li>Mindless defenders contribute one-eighth of calculated repair.</li>
+<li>Animals contribute half repair.</li>
+<li>Undisciplined units contribute half repair.</li>
+<li>Only commanders and units assigned to Maintain Siege contribute.</li>
+<li>Castle Guards and Wall Defenders add repair strength.</li>
+</ul>
+<p>The difference between total reduction and repair damages or restores the wall, never above its original integrity. A fort not under siege repairs fully. The defender sees exact wall integrity; an attacker normally receives only a descriptive estimate.</p>
+<p>A storm order becomes available after the wall has reached zero and the next order phase opens. Storming resolves after conventional movement battles, so a relief force can defeat or weaken the besiegers before the gate battle.</p>
+<h3 id="field-supply-inside-a-siege">Supply inside a siege<a class="heading-link" href="#field-supply-inside-a-siege" aria-label="Link to Supply inside a siege">#</a></h3><pre><code class="language-text">fort supply this siege month =
+  Supply Storage / consecutive siege turn
+</code></pre>
+<p>A fort with 300 storage supplies 300, 150, 100, 75, and 60 during the first five consecutive siege months. This storage concerns units inside the besieged fort. Administration&#39;s supply projection is a different system.</p>
+<h2 id="field-province-defence">Province Defence<a class="heading-link" href="#field-province-defence" aria-label="Link to Province Defence">#</a></h2><p>The first PD point is free. Buying each later point costs gold equal to the level being purchased.</p>
+<pre><code class="language-text">cumulative cost to PD n =
+  n(n + 1)/2 - 1
+</code></pre>
+<table>
+<thead>
+<tr>
+<th align="right">PD</th>
+<th align="right">Total gold</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1</td>
+<td align="right">0</td>
+<td>First commander and troops</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">20</td>
+<td>Cheap raid tax; roster quality still matters</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">54</td>
+<td>Official additional-benefit threshold</td>
+</tr>
+<tr>
+<td align="right">15</td>
+<td align="right">119</td>
+<td>Stealth detection begins</td>
+</tr>
+<tr>
+<td align="right">20</td>
+<td align="right">209</td>
+<td>Additional troop and commander types</td>
+</tr>
+<tr>
+<td align="right">25</td>
+<td align="right">324</td>
+<td>Patrol strength 11</td>
+</tr>
+<tr>
+<td align="right">30</td>
+<td align="right">464</td>
+<td>Expensive static commitment</td>
+</tr>
+<tr>
+<td align="right">40</td>
+<td align="right">819</td>
+<td>Usually a specialised defence decision</td>
+</tr>
+<tr>
+<td align="right">50</td>
+<td align="right">1,274</td>
+<td>Severe opportunity cost</td>
+</tr>
+<tr>
+<td align="right">100</td>
+<td align="right">5,049</td>
+<td>Hard maximum</td>
+</tr>
+</tbody></table>
+<p>Every full 10 PD reduces unrest by 1 each turn. Beginning at PD 15, patrol strength equals <code>PD - 14</code>; the manual&#39;s example gives PD 25 a patrol strength of 11.</p>
+<p>PD costs no upkeep and fully returns after a battle if control is retained. It cannot be voluntarily reduced. It requires 10 population per point and is reduced at hosting step 61 when population cannot support it. Capture wipes existing PD. Relinquishing a province in a disciple game reduces it by 25%.</p>
+<p>PD is a local delay mechanism and raid tax, not a mobile army. Its national roster, magic support, terrain, attacker&#39;s script, and retreat situation determine its actual combat value.</p>
+<h2 id="field-magic-sites-and-gems">Magic sites and gems<a class="heading-link" href="#field-magic-sites-and-gems" aria-label="Link to Magic sites and gems">#</a></h2><ul>
+<li>Forests, wastes, deep seas, and several unusual terrains tend to have more sites; plains and farms tend to have fewer.</li>
+<li>Hidden sites have difficulty 1 through 4.</li>
+<li>A searching mage finds sites in a path up to that mage&#39;s path level.</li>
+<li>Path level 4 is the highest needed for ordinary manual searching.</li>
+<li>Path-search rituals reveal every site of their path in the target province.</li>
+<li>Acashic Knowledge reveals every magic site there.</li>
+<li>A site may provide gems, gold, recruits, entry orders, discounts, unrest, disease, or other effects.</li>
+<li>Harmful site effects can operate while the site is undiscovered.</li>
+<li>A captured national recruitment site may continue to yield gems without granting its former nation&#39;s special recruits.</li>
+<li>Some site recruitment requires a laboratory.</li>
+</ul>
+<p>Search orders resolve at step 14. Site effects resolve at step 44. Discovery does not retroactively create earlier recruitment or ritual orders.</p>
+<h2 id="field-blood-hunting">Blood Hunting<a class="heading-link" href="#field-blood-hunting" aria-label="Link to Blood Hunting">#</a></h2><p>For an ordinary hunter, the manual gives three checks:</p>
+<pre><code class="language-text">Blood success chance = 10% + 30% x Blood level
+Population success chance = population / 75 percent
+Unrest failure chance = unrest / 4 percent
+</code></pre>
+<p>If all checks succeed:</p>
+<pre><code class="language-text">slaves found = d6 + Blood level
+unrest gained = d(slaves x 3 + 4)
+</code></pre>
+<p>If any check fails, no slaves are found and unrest rises by <code>d6 - 1</code>.</p>
+<p>Population reaches a 100% nominal population check at 7,500. A Blood 3 hunter reaches a 100% nominal Blood check. Unrest can still cause failure. Site frequency changes the average yield by 0.5 slaves for every five percentage points away from 50%. Strong friendly dominion reduces the risk of hostile commoners attacking; the manual states that dominion 10 makes such resistance almost disappear.</p>
+<p>Blood Hunting is not free gem generation. It converts mage-turns, population, patrol labour, gold income, and attention into slaves.</p>
+<h2 id="field-scale-effects-used-in-economic-calculations">Scale effects used in economic calculations<a class="heading-link" href="#field-scale-effects-used-in-economic-calculations" aria-label="Link to Scale effects used in economic calculations">#</a></h2><p>The current unmodded 6.36 baseline uses the following ordinary per-step effects. Growth and Death use the newer official Modding Manual default rather than the stale one-percent entry in the revision-2 main manual.</p>
+<table>
+<thead>
+<tr>
+<th>Scale step</th>
+<th align="right">Income</th>
+<th align="right">Resources</th>
+<th align="right">Recruitment Points</th>
+<th align="right">Supplies</th>
+<th align="right">Population</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Order</td>
+<td align="right">+3%</td>
+<td align="right">+2%</td>
+<td align="right">+10%</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Turmoil</td>
+<td align="right">-3%</td>
+<td align="right">-2%</td>
+<td align="right">-10%</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Productivity</td>
+<td align="right">+3%</td>
+<td align="right">+15%</td>
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Sloth</td>
+<td align="right">-3%</td>
+<td align="right">-15%</td>
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Heat/Cold away from preference</td>
+<td align="right">-5%</td>
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">-10%</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Growth</td>
+<td align="right">+2%</td>
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">+10%</td>
+<td align="right">+0.2% per month</td>
+</tr>
+<tr>
+<td>Death</td>
+<td align="right">-2%</td>
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">-10%</td>
+<td align="right">-0.2% per month</td>
+</tr>
+</tbody></table>
+<p>Evidence boundary:</p>
+<ul>
+<li>Modding Manual 6.34 defines the unmodded <code>#deathincome</code> default as 2. No official announcement through 6.36 changes that general default. The current baseline uses 2% income per Growth/Death step; the revision-2 main-manual entry remains only as a documented older conflict.</li>
+<li>The revision-2 main manual gives Order/Turmoil resources as 2% per step, and no later official announcement changes it. Unsourced three-percent tables are not used as current evidence.</li>
+</ul>
+<p>Exact integer rounding remains unresolved. A calculation near an integer boundary should still defer to the displayed in-game province value.</p>
+<h2 id="field-active-mod-economy-deltas">Active mod economy deltas<a class="heading-link" href="#field-active-mod-economy-deltas" aria-label="Link to Active mod economy deltas">#</a></h2><p>The exact supplied files define the combined ruleset as Dominions Enhanced 2.16 loaded before Divinitus 1.15.3 DE.</p>
+<p>Dominions Enhanced changes these global values:</p>
+<table>
+<thead>
+<tr>
+<th>Global rule</th>
+<th align="right">Unmodded source value</th>
+<th align="right">DE 2.16</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Order/Turmoil income per step</td>
+<td align="right">3%</td>
+<td align="right">4%</td>
+</tr>
+<tr>
+<td>Productivity/Sloth income per step</td>
+<td align="right">3%</td>
+<td align="right">4%</td>
+</tr>
+<tr>
+<td>Growth/Death income per step</td>
+<td align="right">2%</td>
+<td align="right">2%</td>
+</tr>
+<tr>
+<td>Growth/Death population change per step</td>
+<td align="right">0.2%</td>
+<td align="right">0.25%</td>
+</tr>
+<tr>
+<td>Fortune/Misfortune event frequency per step</td>
+<td align="right">5%</td>
+<td align="right">7%</td>
+</tr>
+</tbody></table>
+<p>Divinitus does not redefine those five global commands, so its later load position does not reset them.</p>
+<p>Both mods contain many object-, site-, event-, item-, unit-, and nation-specific economic effects. A global table cannot safely predict a specific nation until its roster and source overrides are examined.</p>
+<h2 id="field-order-writing-audit">Order-writing audit<a class="heading-link" href="#field-order-writing-audit" aria-label="Link to Order-writing audit">#</a></h2><p>Before submission:</p>
+<ul>
+<li>Check the treasury after both recruitment and construction.</li>
+<li>Check projected upkeep against income, including isolated provinces.</li>
+<li>Scan local resources and Recruitment Points for greyed-out queues.</li>
+<li>Check Commander Points and Holy Points separately from troop capacity.</li>
+<li>Trace tax lines from vulnerable provinces to a friendly fort.</li>
+<li>Compare army Supply Usage against both the destination and every likely battle province.</li>
+<li>Inspect unrest in recruiting and income-critical provinces.</li>
+<li>Confirm that new infrastructure is not being treated as operational one step too early.</li>
+<li>Distinguish the province outside a fort from the fort interior.</li>
+<li>Confirm which siege commanders remain on Maintain Siege.</li>
+<li>Recalculate PD cost cumulatively rather than valuing only the next point.</li>
+<li>Check whether a site search, Blood Hunt, patrol, or research assignment consumes the mage-turn needed elsewhere.</li>
+</ul>
+<p>After hosting:</p>
+<ul>
+<li>Read battle and event reports before changing queues.</li>
+<li>Check for recruitment that remained queued.</li>
+<li>Compare treasury income and upkeep totals.</li>
+<li>Inspect new unrest before projecting the next month&#39;s income.</li>
+<li>Check supply, Starving, disease, and attritions on every large army.</li>
+<li>Recheck tax traces and besieged forts.</li>
+<li>Record new sites and whether their benefits require a lab.</li>
+<li>Check wall condition from the correct side&#39;s available information.</li>
+<li>Confirm unsupported PD reductions in depopulated provinces.</li>
+</ul>
+<h2 id="field-source-note-and-unresolved-tests">Source note and unresolved tests<a class="heading-link" href="#field-source-note-and-unresolved-tests" aria-label="Link to Source note and unresolved tests">#</a></h2><p><strong>Official core:</strong> Dominions 6 Manual, revision 2, especially pages 21-29, 51-57, and 71-72.<br><strong>Global defaults:</strong> Dominions 6 Modding Manual, version 6.34.<br><strong>Mod values:</strong> exact source of <code>DomEnhanced2_16.dm</code> and <code>Divinitus_1.15.3_DE.dm</code>.<br><strong>Official plus current community evidence:</strong> ordinary Commander Point base behaviour, sacred-and-slave upkeep stacking, and mounted upkeep decomposition.<br><strong>Community details retained provisionally:</strong> exact unrest reductions to Recruitment Points and Commander Points, and generic commander feeding priority.</p>
+<p>Priority reproductions:</p>
+<ol>
+<li>Recruitment Point rounding at population-band and scale boundaries.</li>
+<li>Fort supply at distance zero through four.</li>
+<li>Resource rounding and overlapping fort draw.</li>
+<li>Shapechanged upkeep and fractional monthly aggregation.</li>
+<li>Unrest effects on Recruitment Points and Commander Points.</li>
+<li>Commander feeding priority and starvation eligibility.</li>
+</ol>
+<p>Growth/Death income and Order/Turmoil resources are resolved at 2% per step, and the ordinary Commander Point ladder is closed. Future tests of those values are regression checks, not prerequisites for using the published baseline.</p>
+
+{% endraw %}
+    </article>
+    <aside class="sidebar library-toc">
+      <h2>In this book</h2>
+      <nav><a href="#field-scope-and-use">Scope and use</a>
+<a href="#field-the-hosting-spine">The hosting spine</a>
+<a href="#field-provincial-gold">Provincial gold</a>
+<a href="#field-provincial-resources">Provincial resources</a>
+<a href="#field-recruitment-capacity">Recruitment capacity</a>
+<a href="#field-upkeep">Upkeep</a>
+<a href="#field-supplies-and-starvation">Supplies and starvation</a>
+<a href="#field-fortification-table">Fortification table</a>
+<a href="#field-buildings">Buildings</a>
+<a href="#field-siege-calculation">Siege calculation</a>
+<a href="#field-province-defence">Province Defence</a>
+<a href="#field-magic-sites-and-gems">Magic sites and gems</a>
+<a href="#field-blood-hunting">Blood Hunting</a>
+<a href="#field-scale-effects-used-in-economic-calculations">Scale effects used in economic calculations</a>
+<a href="#field-active-mod-economy-deltas">Active mod economy deltas</a>
+<a href="#field-order-writing-audit">Order-writing audit</a>
+<a href="#field-source-note-and-unresolved-tests">Source note and unresolved tests</a></nav>
+      <nav class="library-side-links">
+        <a href="/dominions/library/">Complete library</a>
+        <a href="/dominions/library/glossary/">Glossary</a>
+        <a href="/dominions/library/research/">Research register</a>
+        <a href="/downloads/dominions-6-knowledge-library-edition-24.pdf">Edition 24 PDF</a>
+      </nav>
+    </aside>
+  </div>
+  <nav class="library-pagination" aria-label="Adjacent books">
+    <a href="/dominions/library/books/book-i/"><small>Previous</small>Foundation Book I</a>
+    <a class="library-next" href="/dominions/library/books/book-ii/"><small>Next</small>Foundation Book II</a>
+  </nav>
+</section>

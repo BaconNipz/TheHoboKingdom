@@ -1,0 +1,1841 @@
+---
+title: "Foundation Book X - Playing and Hosting Dominions 6"
+description: "Installation, game creation, interface use, turn submission, multiplayer hosting, recovery, and administration."
+nav_section: guides
+extra_css: /assets/dominions-library.css
+extra_js: /assets/dominions-library.js
+og_image: /assets/images/dominions-6-library-edition-24.png
+---
+
+<section class="page-hero library-page-hero">
+  <div class="shell">
+    <div class="breadcrumbs">
+      <a href="/dominions/">Dominions 6</a><span aria-hidden="true">/</span>
+      <a href="/dominions/library/">Knowledge Library</a><span aria-hidden="true">/</span>
+      <span>Foundation Book X</span>
+    </div>
+    <p class="eyebrow">Progress Edition 24</p>
+    <h1>Foundation Book X - Playing and Hosting Dominions 6</h1>
+    <p class="lead">Installation, game creation, interface use, turn submission, multiplayer hosting, recovery, and administration.</p>
+    <div class="meta-row">
+      <span class="status status--stable">Published reference</span>
+      <span class="meta-chip">Dominions 6.36</span>
+      <span class="meta-chip">13,326 words</span>
+      <span class="meta-chip">179 sections</span>
+    </div>
+  </div>
+</section>
+
+<section class="section shell library-section">
+  <details class="library-mobile-toc">
+    <summary>Table of contents</summary>
+    <nav><a href="#b10-interface-game-setup-orders-and-the-first-campaign">Interface, Game Setup, Orders, and the First Campaign</a>
+<a href="#b10-1-purpose">1. Purpose</a>
+<a href="#b10-2-three-layers-of-operational-knowledge">2. Three Layers of Operational Knowledge</a>
+<a href="#b10-3-establish-the-exact-ruleset">3. Establish the Exact Ruleset</a>
+<a href="#b10-4-find-the-user-data-directory">4. Find the User Data Directory</a>
+<a href="#b10-5-install-and-freeze-mods-safely">5. Install and Freeze Mods Safely</a>
+<a href="#b10-6-backups-and-campaign-continuity">6. Backups and Campaign Continuity</a>
+<a href="#b10-7-the-pregame-record">7. The Pregame Record</a>
+<a href="#b10-8-create-continue-or-join">8. Create, Continue, or Join</a>
+<a href="#b10-9-choose-the-map">9. Choose the Map</a>
+<a href="#b10-10-choose-the-age-and-participants">10. Choose the Age and Participants</a>
+<a href="#b10-11-disciple-games">11. Disciple Games</a>
+<a href="#b10-12-create-and-protect-pretenders">12. Create and Protect Pretenders</a>
+<a href="#b10-13-game-settings-by-consequence">13. Game Settings by Consequence</a>
+<a href="#b10-14-victory-conditions">14. Victory Conditions</a>
+<a href="#b10-15-host-setup-sheet">15. Host Setup Sheet</a>
+<a href="#b10-16-game-modes">16. Game Modes</a>
+<a href="#b10-17-official-lobby-workflow">17. Official Lobby Workflow</a>
+<a href="#b10-18-turn-submission-and-revision">18. Turn Submission and Revision</a>
+<a href="#b10-19-hosting-policy">19. Hosting Policy</a>
+<a href="#b10-20-security-and-trust">20. Security and Trust</a>
+<a href="#b10-21-the-map-as-a-control-surface">21. The Map as a Control Surface</a>
+<a href="#b10-22-province-and-nation-controls">22. Province and Nation Controls</a>
+<a href="#b10-23-map-navigation-shortcuts">23. Map Navigation Shortcuts</a>
+<a href="#b10-24-strategic-map-filters">24. Strategic Map Filters</a>
+<a href="#b10-25-right-click-tooltips-and-popups">25. Right-Click, Tooltips, and Popups</a>
+<a href="#b10-26-current-operational-additions-worth-learning">26. Current Operational Additions Worth Learning</a>
+<a href="#b10-27-begin-with-messages-not-with-memory">27. Begin with Messages, Not with Memory</a>
+<a href="#b10-28-message-triage">28. Message Triage</a>
+<a href="#b10-29-battle-review-as-evidence">29. Battle Review as Evidence</a>
+<a href="#b10-30-the-nation-overview-as-an-administrative-ledger">30. The Nation Overview as an Administrative Ledger</a>
+<a href="#b10-31-establish-the-monthly-priorities">31. Establish the Monthly Priorities</a>
+<a href="#b10-32-work-from-dependencies-outward">32. Work from Dependencies Outward</a>
+<a href="#b10-33-the-end-of-turn-audit">33. The End-of-Turn Audit</a>
+<a href="#b10-34-recruitment-is-local">34. Recruitment Is Local</a>
+<a href="#b10-35-reading-a-recruitment-queue">35. Reading a Recruitment Queue</a>
+<a href="#b10-36-army-setup">36. Army Setup</a>
+<a href="#b10-37-positioning-and-battle-orders">37. Positioning and Battle Orders</a>
+<a href="#b10-38-items-treasury-and-equipment">38. Items, Treasury, and Equipment</a>
+<a href="#b10-39-gems-and-gem-squiring">39. Gems and Gem Squiring</a>
+<a href="#b10-40-mounted-units-and-reclaiming-mounts">40. Mounted Units and Reclaiming Mounts</a>
+<a href="#b10-41-orders-are-requests-with-preconditions">41. Orders Are Requests with Preconditions</a>
+<a href="#b10-42-ordinary-movement">42. Ordinary Movement</a>
+<a href="#b10-43-sneak-hide-and-attack-current-province">43. Sneak, Hide, and Attack Current Province</a>
+<a href="#b10-44-patrol-and-move-and-patrol">44. Patrol and Move-and-Patrol</a>
+<a href="#b10-45-defend">45. Defend</a>
+<a href="#b10-46-siege-orders">46. Siege Orders</a>
+<a href="#b10-47-construction-and-demolition-orders">47. Construction and Demolition Orders</a>
+<a href="#b10-48-religious-and-divine-orders">48. Religious and Divine Orders</a>
+<a href="#b10-49-research-search-forge-and-cast-ritual">49. Research, Search, Forge, and Cast Ritual</a>
+<a href="#b10-50-pillage-and-raid">50. Pillage and Raid</a>
+<a href="#b10-51-blood-hunt">51. Blood Hunt</a>
+<a href="#b10-52-reanimate-manikin-contact-allies-and-capture-slaves">52. Reanimate, Manikin, Contact Allies, and Capture Slaves</a>
+<a href="#b10-53-espionage-orders">53. Espionage Orders</a>
+<a href="#b10-54-assassination-and-abduction-orders">54. Assassination and Abduction Orders</a>
+<a href="#b10-55-strategic-order-quick-reference">55. Strategic Order Quick Reference</a>
+<a href="#b10-56-the-learning-campaign">56. The Learning Campaign</a>
+<a href="#b10-57-before-turn-one">57. Before Turn One</a>
+<a href="#b10-58-turn-one">58. Turn One</a>
+<a href="#b10-59-turns-two-to-four-establish-the-expansion-cycle">59. Turns Two to Four: Establish the Expansion Cycle</a>
+<a href="#b10-60-turns-five-to-eight-build-the-second-centre">60. Turns Five to Eight: Build the Second Centre</a>
+<a href="#b10-61-turns-nine-to-twelve-form-the-national-shape">61. Turns Nine to Twelve: Form the National Shape</a>
+<a href="#b10-62-first-contact">62. First Contact</a>
+<a href="#b10-63-preparing-the-first-war">63. Preparing the First War</a>
+<a href="#b10-64-the-first-siege">64. The First Siege</a>
+<a href="#b10-65-entering-the-midgame">65. Entering the Midgame</a>
+<a href="#b10-66-ending-the-first-game-well">66. Ending the First Game Well</a>
+<a href="#b10-67-cannot-find-or-join-the-game">67. Cannot Find or Join the Game</a>
+<a href="#b10-68-mod-or-map-mismatch">68. Mod or Map Mismatch</a>
+<a href="#b10-69-a-commander-will-not-move">69. A Commander Will Not Move</a>
+<a href="#b10-70-a-force-entered-a-fort-or-missed-the-exterior-battle">70. A Force Entered a Fort or Missed the Exterior Battle</a>
+<a href="#b10-71-an-order-disappeared-or-changed">71. An Order Disappeared or Changed</a>
+<a href="#b10-72-recruitment-is-dimmed-or-stalled">72. Recruitment Is Dimmed or Stalled</a>
+<a href="#b10-73-troops-did-not-move-with-the-commander">73. Troops Did Not Move with the Commander</a>
+<a href="#b10-74-an-item-or-gem-cannot-be-used">74. An Item or Gem Cannot Be Used</a>
+<a href="#b10-75-a-ritual-or-forge-order-is-unavailable">75. A Ritual or Forge Order Is Unavailable</a>
+<a href="#b10-76-a-siege-is-not-progressing">76. A Siege Is Not Progressing</a>
+<a href="#b10-77-scoregraphs-are-missing-or-incomplete">77. Scoregraphs Are Missing or Incomplete</a>
+<a href="#b10-78-a-turn-staled">78. A Turn Staled</a>
+<a href="#b10-79-a-battle-replay-looks-impossible">79. A Battle Replay Looks Impossible</a>
+<a href="#b10-80-performance-or-large-turn-problems">80. Performance or Large-Turn Problems</a>
+<a href="#b10-81-recovery-principle">81. Recovery Principle</a>
+<a href="#b10-82-the-host-is-custodian-not-author-of-outcomes">82. The Host Is Custodian, Not Author of Outcomes</a>
+<a href="#b10-83-hosting-runbook">83. Hosting Runbook</a>
+<a href="#b10-84-tournament-and-expert-records">84. Tournament and Expert Records</a>
+<a href="#b10-85-dispute-handling">85. Dispute Handling</a>
+<a href="#b10-86-new-installation">86. New Installation</a>
+<a href="#b10-87-create-world">87. Create World</a>
+<a href="#b10-88-join-a-lobby-game">88. Join a Lobby Game</a>
+<a href="#b10-89-build-an-army">89. Build an Army</a>
+<a href="#b10-90-issue-a-special-order">90. Issue a Special Order</a>
+<a href="#b10-91-submit-a-turn">91. Submit a Turn</a>
+<a href="#b10-92-host-a-campaign">92. Host a Campaign</a>
+<a href="#b10-essay-i-interface-literacy-is-strategic-power">Essay I: Interface Literacy Is Strategic Power</a>
+<a href="#b10-essay-ii-administrative-failure-is-still-strategic-failure">Essay II: Administrative Failure Is Still Strategic Failure</a>
+<a href="#b10-essay-iii-the-host-as-custodian">Essay III: The Host as Custodian</a>
+<a href="#b10-93-sources-used">93. Sources Used</a>
+<a href="#b10-94-version-sensitive-boundaries">94. Version-Sensitive Boundaries</a>
+<a href="#b10-95-evidence-labels-for-operational-reports">95. Evidence Labels for Operational Reports</a>
+<a href="#b10-96-closing-principle">96. Closing Principle</a></nav>
+  </details>
+  <div class="library-reader-grid">
+    <article class="content library-prose">
+{% raw %}
+<h1 id="b10-foundation-book-x-playing-and-hosting-dominions-6">Foundation Book X - Playing and Hosting Dominions 6<a class="heading-link" href="#b10-foundation-book-x-playing-and-hosting-dominions-6" aria-label="Link to Foundation Book X - Playing and Hosting Dominions 6">#</a></h1><h2 id="b10-interface-game-setup-orders-and-the-first-campaign">Interface, Game Setup, Orders, and the First Campaign<a class="heading-link" href="#b10-interface-game-setup-orders-and-the-first-campaign" aria-label="Link to Interface, Game Setup, Orders, and the First Campaign">#</a></h2><p>Baseline: Dominions 6.36; vanilla procedure unless a ruleset is named; research edition 20 August 2026.</p>
+<h2 id="b10-1-purpose">1. Purpose<a class="heading-link" href="#b10-1-purpose" aria-label="Link to 1. Purpose">#</a></h2><p>Dominions is not played only on the battlefield. It is played in setup screens, message lists, province windows, recruitment queues, army panels, item treasuries, order menus, network lobbies, and the short interval between finishing a turn and committing it to the host. A commander can have the correct statistics, the right troops, and a sound strategic purpose and still fail because one operational detail was missed.</p>
+<p>Book X is the operating manual for the library. It explains how to create and join a game, read the interface, translate intentions into legal orders, submit a turn safely, host a fair campaign, recover from common mistakes, and guide a first nation through its opening months. It is written for two readers at once:</p>
+<ul>
+<li>the new player who needs a complete route from the title screen to the end of a campaign;</li>
+<li>the experienced player who needs an exact procedural reference when the interface, network, or order system becomes the binding constraint.</li>
+</ul>
+<p>Book X does not repeat mechanics owned elsewhere. <a href="/dominions/library/books/book-i/#b1-foundation-book-i-rulesets-language-and-the-anatomy-of-a-turn">Book I</a> owns hosting order and evidence; <a href="/dominions/library/books/book-ii/#b2-foundation-book-ii-economy-provinces-and-the-machinery-of-state">Book II</a> owns the state economy; <a href="/dominions/library/books/book-iii/#b3-foundation-book-iii-pretenders-dominion-scales-and-blessings">Book III</a> owns Pretenders and dominion; <a href="/dominions/library/books/book-iv/#b4-foundation-book-iv-armies-and-battle">Book IV</a> owns battle; <a href="/dominions/library/books/book-v/#b5-foundation-book-v-magic">Book V</a> owns magic; and <a href="/dominions/library/books/book-vi/#b6-foundation-book-vi-strategy-and-campaign-conduct">Book VI</a> owns campaign doctrine. Book X explains how players operate those rules.</p>
+<h2 id="b10-2-three-layers-of-operational-knowledge">2. Three Layers of Operational Knowledge<a class="heading-link" href="#b10-2-three-layers-of-operational-knowledge" aria-label="Link to 2. Three Layers of Operational Knowledge">#</a></h2><p>Every instruction belongs to one of three layers.</p>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Question</th>
+<th>Typical failure</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ruleset</td>
+<td>What game is being played?</td>
+<td>The wrong patch, map, mod stack, age, or setting is assumed.</td>
+</tr>
+<tr>
+<td>Interface</td>
+<td>What is the game showing, and where is the control?</td>
+<td>Information is overlooked or a control is mistaken for the underlying rule.</td>
+</tr>
+<tr>
+<td>Commitment</td>
+<td>What will the host attempt to resolve?</td>
+<td>An arrow, queue, script, or submitted file does not express the intended action.</td>
+</tr>
+</tbody></table>
+<p>The layers should be checked in that order. An unexplained result is rarely clarified by studying battle arithmetic if the game was created with a different mod list. A legal order cannot be inferred from an arrow alone. A completed local turn is not necessarily a received network submission.</p>
+<h3 id="b10-2-1-the-operational-chain">2.1 The operational chain<a class="heading-link" href="#b10-2-1-the-operational-chain" aria-label="Link to 2.1 The operational chain">#</a></h3><p>A reliable turn follows one chain:</p>
+<p><code>identify ruleset -&gt; read new information -&gt; inspect state -&gt; choose priorities -&gt; enter orders -&gt; audit dependencies -&gt; submit -&gt; confirm receipt</code></p>
+<p>The chain is simple enough to memorize and strict enough to prevent most administrative losses. Expert play adds better judgment at each step; it does not remove the steps.</p>
+<h3 id="b10-2-2-interface-facts-and-game-facts">2.2 Interface facts and game facts<a class="heading-link" href="#b10-2-2-interface-facts-and-game-facts" aria-label="Link to 2.2 Interface facts and game facts">#</a></h3><p>An interface fact describes what a control does. A game fact describes how the engine resolves the resulting order. The distinction matters:</p>
+<ul>
+<li>Clicking a province creates a movement instruction; <a href="/dominions/library/books/book-i/#b1-phase-iii-movement-and-conquest">Book I</a> explains when movement resolves.</li>
+<li>Pressing <strong>Patrol</strong> assigns an order; <a href="/dominions/library/books/book-ii/#b2-part-v-unrest-and-coercive-economy">Book II</a> owns patrol strength and unrest consequences.</li>
+<li>Placing a spell in a script requests it; <a href="/dominions/library/books/book-iv/#b4-part-v-orders-and-scripting">Books IV</a> and <a href="/dominions/library/books/book-v/#b5-part-v-the-anatomy-of-battle-magic">V</a> explain legality, targeting, gems, fatigue, and spellcasting behaviour.</li>
+<li>Pressing <strong>End Turn</strong> commits or hosts the local orders depending on game type; it does not certify that every planned action remains legal when hosting occurs.</li>
+</ul>
+<p>The interface is a contract-writing system. It records requests to the host. Resolution belongs to the engine.</p>
+<h1 id="b10-part-i-ruleset-installation-and-local-continuity">Part I: Ruleset, Installation, and Local Continuity<a class="heading-link" href="#b10-part-i-ruleset-installation-and-local-continuity" aria-label="Link to Part I: Ruleset, Installation, and Local Continuity">#</a></h1><h2 id="b10-3-establish-the-exact-ruleset">3. Establish the Exact Ruleset<a class="heading-link" href="#b10-3-establish-the-exact-ruleset" aria-label="Link to 3. Establish the Exact Ruleset">#</a></h2><p>Before creating a game or interpreting an old save, record:</p>
+<ol>
+<li>Dominions version;</li>
+<li>enabled mods and their versions;</li>
+<li>mod load order where relevant;</li>
+<li>map and map version;</li>
+<li>age;</li>
+<li>participating nations and teams;</li>
+<li>game settings;</li>
+<li>victory conditions;</li>
+<li>hosting method and timetable.</li>
+</ol>
+<p>The title of a mod or map is not a sufficient identifier. Workshop content can change while retaining its public name. A file name, declared version, release date, and hash provide a stronger frozen record. Book IX demonstrates that practice for the supplied Dominions Enhanced and Divinitus files.</p>
+<h3 id="b10-3-1-current-official-baseline">3.1 Current official baseline<a class="heading-link" href="#b10-3-1-current-official-baseline" aria-label="Link to 3.1 Current official baseline">#</a></h3><p>The current baseline is Dominions 6.36, released 17 August 2026 UTC. It includes interface and operational changes from the 6.2x-6.36 series: expanded order copying, gem-transfer shortcuts, treasury sorting, clearer province and message displays, lobby safeguards, touchscreen operation, research navigation, and the ability of teleport-moving commanders to leave a besieged fort.</p>
+<p>The patch baseline is not decorative. A player returning from an older release may remember a limitation that no longer exists, while a guide written for a later patch may recommend a control unavailable to an older host.</p>
+<h2 id="b10-4-find-the-user-data-directory">4. Find the User Data Directory<a class="heading-link" href="#b10-4-find-the-user-data-directory" aria-label="Link to 4. Find the User Data Directory">#</a></h2><p>The safest route is the in-game <strong>Game Tools</strong> menu and <strong>Open User Data Directory</strong>. This avoids guessing whether the operating system, storefront, or installation has placed personal files somewhere unexpected.</p>
+<p>Common default locations are:</p>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Usual user-data root</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Windows</td>
+<td><code>%APPDATA%\dominions6\</code></td>
+</tr>
+<tr>
+<td>Linux</td>
+<td><code>~/.dominions6/</code></td>
+</tr>
+<tr>
+<td>macOS</td>
+<td><code>~/.dominions6/</code></td>
+</tr>
+</tbody></table>
+<p>Important subdirectories commonly include <code>mods</code>, <code>maps</code>, and <code>savedgames</code>. These are user-data locations, not the installed game directory. The distinction matters during reinstalls and updates: personal game material should not depend on editing installation files.</p>
+<p>Book VIII owns the full <a href="/dominions/library/books/book-viii/#b8-locating-the-user-data-directory">directory and packaging procedure</a>. The practical rule here is narrower: open the directory from the game, confirm the exact folder before copying anything, and preserve original downloaded files separately from edited working copies.</p>
+<h2 id="b10-5-install-and-freeze-mods-safely">5. Install and Freeze Mods Safely<a class="heading-link" href="#b10-5-install-and-freeze-mods-safely" aria-label="Link to 5. Install and Freeze Mods Safely">#</a></h2><h3 id="b10-5-1-a-reproducible-mod-stack">5.1 A reproducible mod stack<a class="heading-link" href="#b10-5-1-a-reproducible-mod-stack" aria-label="Link to 5.1 A reproducible mod stack">#</a></h3><p>A reproducible stack has four properties:</p>
+<ul>
+<li>every participant has the same files;</li>
+<li>every participant enables the same releases;</li>
+<li>the host records any meaningful load-order requirement;</li>
+<li>the stack is not changed after pretenders or turns have been created unless every participant accepts the consequences.</li>
+</ul>
+<p>The modern lobby performs a safety check intended to ensure that required mods have been uploaded, but it cannot replace a written baseline. The lobby can distribute what the host provides; it cannot prove that a public guide, local source inspection, or remembered balance rule refers to that exact file.</p>
+<h3 id="b10-5-2-installation-procedure">5.2 Installation procedure<a class="heading-link" href="#b10-5-2-installation-procedure" aria-label="Link to 5.2 Installation procedure">#</a></h3><ol>
+<li>Close any game session that is using the files.</li>
+<li>Place the mod&#39;s <code>.dm</code> file and required asset folders in the user-data <code>mods</code> directory.</li>
+<li>Preserve the supplied directory structure. Image paths in a <code>.dm</code> file are relative and can fail if folders are flattened or renamed.</li>
+<li>Start Dominions and open <strong>Game Tools</strong> to enable the required mods.</li>
+<li>Confirm that each mod is listed without a load error.</li>
+<li>Create a small disposable game if the stack is unfamiliar.</li>
+<li>Record file versions and, for a long campaign, checksums.</li>
+</ol>
+<p>The procedure for maps is similar: place the <code>.map</code> file and associated images under <code>maps</code>, preserve relative paths, and test the map before committing a multiplayer group.</p>
+<h3 id="b10-5-3-never-repair-the-live-baseline-casually">5.3 Never repair the live baseline casually<a class="heading-link" href="#b10-5-3-never-repair-the-live-baseline-casually" aria-label="Link to 5.3 Never repair the live baseline casually">#</a></h3><p>An apparent spelling error, duplicate definition, broken image, or balance problem in a live mod is not permission to edit the campaign copy. A local change creates a distinct ruleset. Repair experiments belong in a separate working file with a new version label. Book VIII owns <a href="/dominions/library/books/book-viii/#b8-part-xii-testing-validation-and-release-engineering">safe release engineering</a>.</p>
+<h2 id="b10-6-backups-and-campaign-continuity">6. Backups and Campaign Continuity<a class="heading-link" href="#b10-6-backups-and-campaign-continuity" aria-label="Link to 6. Backups and Campaign Continuity">#</a></h2><p>Backups are useful before a version change, a computer migration, a host transfer, or any repair attempt. Copy the specific game or content directory to a clearly dated destination. Do not replace the only working copy while diagnosing a problem.</p>
+<p>For an ordinary campaign, preserve:</p>
+<ul>
+<li>the frozen map and mod files;</li>
+<li>the game-creation settings;</li>
+<li>the current saved game or host state;</li>
+<li>any separately distributed pretender or turn material;</li>
+<li>the hosting schedule and player roster;</li>
+<li>a short incident log when a stale, rollback, substitution, or disputed resolution occurs.</li>
+</ul>
+<p>A backup is not a sanctioned alternate timeline. Multiplayer hosts should state in advance when restoration is permitted. A rollback can expose hidden orders or battle information and alter the competitive game even when the technical state is restored perfectly.</p>
+<h2 id="b10-7-the-pregame-record">7. The Pregame Record<a class="heading-link" href="#b10-7-the-pregame-record" aria-label="Link to 7. The Pregame Record">#</a></h2><p>The following compact record is sufficient for most private games:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Record</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Game name</td>
+<td>Unique, filename-safe identifier</td>
+</tr>
+<tr>
+<td>Dominions version</td>
+<td>Host version and intended lock</td>
+</tr>
+<tr>
+<td>Map</td>
+<td>Exact title and release/file identity</td>
+</tr>
+<tr>
+<td>Mods</td>
+<td>Ordered list with versions</td>
+</tr>
+<tr>
+<td>Age</td>
+<td>Early, Middle, or Late</td>
+</tr>
+<tr>
+<td>Nations</td>
+<td>Player, nation, team, human/AI status</td>
+</tr>
+<tr>
+<td>Pretender rules</td>
+<td>Password requirement, disciples, design restrictions</td>
+</tr>
+<tr>
+<td>Economy</td>
+<td>Gold, sites, independents, research, special limits</td>
+</tr>
+<tr>
+<td>Information</td>
+<td>Scoregraph setting and diplomacy convention</td>
+</tr>
+<tr>
+<td>Victory</td>
+<td>Throne requirements, conquest, Cataclysm</td>
+</tr>
+<tr>
+<td>Hosting</td>
+<td>Lobby/private/PBEM/hotseat, timer, extensions, stale policy</td>
+</tr>
+<tr>
+<td>Administration</td>
+<td>Host, backup host, substitution and rollback policy</td>
+</tr>
+</tbody></table>
+<p>Experts often retain this record because it lets later analysis separate a game result from a ruleset mismatch. New players benefit for the same reason.</p>
+<span class="anchor-alias" id="b10-game-setup" aria-hidden="true"></span><h1 id="b10-part-ii-creating-the-world">Part II: Creating the World<a class="heading-link" href="#b10-part-ii-creating-the-world" aria-label="Link to Part II: Creating the World">#</a></h1><h2 id="b10-8-create-continue-or-join">8. Create, Continue, or Join<a class="heading-link" href="#b10-8-create-continue-or-join" aria-label="Link to 8. Create, Continue, or Join">#</a></h2><p>The title screen divides three different acts:</p>
+<ul>
+<li><strong>Create World</strong> establishes a new game&#39;s map, participants, settings, and victory conditions.</li>
+<li><strong>Continue Old Game</strong> opens a local game that already exists.</li>
+<li><strong>Network</strong> leads to multiplayer connections, including the official lobby.</li>
+</ul>
+<p>Treat these as different workflows. Creating a world is an act of ruleset authorship. Continuing a game is a state-loading act. Joining a network game is a compatibility and identity check.</p>
+<h2 id="b10-9-choose-the-map">9. Choose the Map<a class="heading-link" href="#b10-9-choose-the-map" aria-label="Link to 9. Choose the Map">#</a></h2><p>A game can use a premade map or a generated world. The correct choice depends less on visual novelty than on whether the map supports the intended player count and game character.</p>
+<p>Check at least:</p>
+<ul>
+<li>land and water province counts;</li>
+<li>required start positions and whether they are appropriate for the chosen age;</li>
+<li>wraparound behaviour;</li>
+<li>cave or plane structure;</li>
+<li>chokepoints, island isolation, and unusually dense water barriers;</li>
+<li>map-specific victory locations or scenario rules;</li>
+<li>whether every participant possesses the exact file and images.</li>
+</ul>
+<p>A visually striking map may still be unsuitable for a competitive game if starting regions differ drastically or one nation begins without meaningful routes. Book VI owns <a href="/dominions/library/books/book-vi/#b6-part-iv-map-structure-borders-and-infrastructure">map structure and strategic geography</a>; Book VIII owns map-file construction.</p>
+<h2 id="b10-10-choose-the-age-and-participants">10. Choose the Age and Participants<a class="heading-link" href="#b10-10-choose-the-age-and-participants" aria-label="Link to 10. Choose the Age and Participants">#</a></h2><p>The age determines which nations are available and changes the broad magical and military environment. Early Age nations tend, as a general pattern rather than a universal law, to have stronger magical access and less developed mundane equipment or institutions. Later ages tend toward heavier conventional equipment, more organized states, and diminished magical abundance. Nation-specific exceptions are extensive.</p>
+<p>On the participant screen:</p>
+<ol>
+<li>add each nation;</li>
+<li>set it to human or AI;</li>
+<li>confirm that no nation is duplicated;</li>
+<li>assign teams if using disciples;</li>
+<li>verify that water nations and unusual starts are compatible with the map.</li>
+</ol>
+<p>Do not use AI difficulty as a substitute for a stated learning purpose. A new player&#39;s test game, a balance test, and an expert&#39;s endurance game require different opposition.</p>
+<h2 id="b10-11-disciple-games">11. Disciple Games<a class="heading-link" href="#b10-11-disciple-games" aria-label="Link to 11. Disciple Games">#</a></h2><p>Enable the disciple option before assigning teams. Each team must contain exactly one Pretender and may contain disciples. Current releases support up to twenty teams.</p>
+<p>The official rules create important design differences:</p>
+<ul>
+<li>a disciple receives 400 design points;</li>
+<li>a disciple does not choose dominion strength or scales;</li>
+<li>awakening time is half that of the team&#39;s Pretender;</li>
+<li>a team with disciples cannot appoint ordinary prophets.</li>
+</ul>
+<p>Book III owns the divine mechanics. The setup obligation is to verify team composition before creation. A nation placed on the wrong team cannot be treated as a harmless lobby typo after designs and diplomacy have been built around it.</p>
+<h2 id="b10-12-create-and-protect-pretenders">12. Create and Protect Pretenders<a class="heading-link" href="#b10-12-create-and-protect-pretenders" aria-label="Link to 12. Create and Protect Pretenders">#</a></h2><p>The Pretender-design screen supports saving and loading designs with <strong>Ctrl+S</strong> and <strong>Ctrl+L</strong>. Saving a tested design avoids reconstruction errors and gives the campaign a recoverable baseline.</p>
+<p>For network play:</p>
+<ul>
+<li>use a player password where the workflow permits it;</li>
+<li>do not reuse an important real-world password;</li>
+<li>confirm the chosen nation, age, team, and active mods before submission;</li>
+<li>keep the local design file until the game has begun successfully.</li>
+</ul>
+<p>Cheat prevention is useful but does not protect players from a malicious or careless host. The host necessarily holds privileged game state. Trust and administrative policy remain part of multiplayer security.</p>
+<p>Pretender design itself belongs to <a href="/dominions/library/books/book-iii/#b3-part-i-pretender-design-as-a-national-system">Book III</a>. Book X adds only the operational rule: save, label, verify, and submit the design that was actually tested.</p>
+<h2 id="b10-13-game-settings-by-consequence">13. Game Settings by Consequence<a class="heading-link" href="#b10-13-game-settings-by-consequence" aria-label="Link to 13. Game Settings by Consequence">#</a></h2><p>Game settings should be chosen by the experience they create, not by habit.</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it changes operationally</th>
+<th>Questions for the host</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Starting gold</td>
+<td>Opening purchasing power</td>
+<td>Is the game meant to accelerate first forts or preserve normal scarcity?</td>
+</tr>
+<tr>
+<td>Magic-site frequency</td>
+<td>Gem and site density</td>
+<td>Will this support the intended map size and magic level?</td>
+</tr>
+<tr>
+<td>Independent strength</td>
+<td>Expansion danger</td>
+<td>Are players expected to use tested expansion parties or learn against forgiving provinces?</td>
+</tr>
+<tr>
+<td>Research or magic setting</td>
+<td>Time to research thresholds</td>
+<td>Does the timer match the intended campaign length?</td>
+</tr>
+<tr>
+<td>Scoregraphs</td>
+<td>Public strategic information</td>
+<td>Are graphs visible, hidden, or recoverable through intelligence?</td>
+</tr>
+<tr>
+<td>Master password</td>
+<td>Emergency administrative access</td>
+<td>Who holds it, and under what written circumstances may it be used?</td>
+</tr>
+<tr>
+<td>Limited artifact forging</td>
+<td>Competition for unique artifacts</td>
+<td>Is the default one unique artifact per game turn retained?</td>
+</tr>
+<tr>
+<td>Limited legendary research</td>
+<td>Competition at level nine</td>
+<td>Is only one level-nine discovery permitted at a time, with repeat research required?</td>
+</tr>
+<tr>
+<td>Commander renaming</td>
+<td>Information organization and deception</td>
+<td>Is renaming allowed, and are naming conventions restricted?</td>
+</tr>
+<tr>
+<td>Cheat prevention</td>
+<td>Detectable file manipulation</td>
+<td>Is it enabled, and do players understand its limits?</td>
+</tr>
+<tr>
+<td>Throne settings</td>
+<td>Victory arithmetic</td>
+<td>How many Ascension Points exist and how many are required?</td>
+</tr>
+<tr>
+<td>Cataclysm</td>
+<td>Endgame clock</td>
+<td>When does it begin, and how will Throne loss alter the required total?</td>
+</tr>
+</tbody></table>
+<h3 id="b10-13-1-scoregraphs">13.1 Scoregraphs<a class="heading-link" href="#b10-13-1-scoregraphs" aria-label="Link to 13.1 Scoregraphs">#</a></h3><p>Scoregraphs change diplomacy because they change common knowledge. Visible army, income, research, fort, province, dominion, or gem trends allow coalitions to form around measurable growth. Hidden graphs place more weight on scouting and negotiation. Spies operating in an enemy capital can reveal graphs, so hidden does not mean unobtainable.</p>
+<p>At victory, current versions reveal scoregraphs and the hidden map to players who remain until the end; an eliminated player does not receive that later revelation. This makes post-game review stronger than mid-game speculation. Book VI owns the strategic use of information.</p>
+<h3 id="b10-13-2-master-password">13.2 Master password<a class="heading-link" href="#b10-13-2-master-password" aria-label="Link to 13.2 Master password">#</a></h3><p>A master password can rescue a game by allowing an absent player to be set to AI or by permitting necessary administration. It also provides broad access. It should be held by the host and, if desired, a trusted backup under a written policy. Its use should be logged.</p>
+<h3 id="b10-13-3-limited-artifacts-and-legendary-research">13.3 Limited artifacts and legendary research<a class="heading-link" href="#b10-13-3-limited-artifacts-and-legendary-research" aria-label="Link to 13.3 Limited artifacts and legendary research">#</a></h3><p>Under the usual limited-artifact setting, a particular unique artifact may be forged only once per game turn. Several players can race for it in the same month. Under limited legendary research, only one level-nine spell in a school can be completed at a time; the level can be researched again to reach another. These settings turn a menu choice into an initiative contest.</p>
+<h3 id="b10-13-4-renaming">13.4 Renaming<a class="heading-link" href="#b10-13-4-renaming" aria-label="Link to 13.4 Renaming">#</a></h3><p>When enabled, most commanders can be renamed by opening their statistics and pressing <strong>R</strong>. Pretenders, disciples, prophets, and famous heroes are exceptions. Good internal names encode function or theatre without exposing more than necessary in multiplayer screenshots or streams.</p>
+<h2 id="b10-14-victory-conditions">14. Victory Conditions<a class="heading-link" href="#b10-14-victory-conditions" aria-label="Link to 14. Victory Conditions">#</a></h2><p>The standard route is control of enough Ascension Points from Thrones. The setup screen can use recommended/default Throne distributions or a custom arrangement. A conquest game instead requires elimination or control on the specified terms.</p>
+<p>Cataclysm creates a hardening endgame. It destroys Thrones over time and reduces the Ascension Points required for victory. The finishing line moves while the map deteriorates. Record the starting turn and make sure every player understands the interaction before play begins.</p>
+<p>Book VI owns <a href="/dominions/library/books/book-vi/#b6-part-xii-thrones-cataclysm-and-endgame-conversion">Throne arithmetic and victory conversion</a>. The setup standard is exactness: state the number and level of Thrones, total points, points required, and Cataclysm turn.</p>
+<span class="anchor-alias" id="b10-host-setup-sheet" aria-hidden="true"></span><h2 id="b10-15-host-setup-sheet">15. Host Setup Sheet<a class="heading-link" href="#b10-15-host-setup-sheet" aria-label="Link to 15. Host Setup Sheet">#</a></h2><p>Before pressing the final creation control, the host should be able to answer every row:</p>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Pass condition</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Version</td>
+<td>Host is on the announced patch.</td>
+</tr>
+<tr>
+<td>Content</td>
+<td>Exact map and mod stack are installed and tested.</td>
+</tr>
+<tr>
+<td>Participants</td>
+<td>Nations, human/AI status, and teams match the roster.</td>
+</tr>
+<tr>
+<td>Settings</td>
+<td>Every non-default setting is written down.</td>
+</tr>
+<tr>
+<td>Victory</td>
+<td>Throne or conquest conditions are explicit.</td>
+</tr>
+<tr>
+<td>Security</td>
+<td>Player passwords, master-password custody, and host trust are addressed.</td>
+</tr>
+<tr>
+<td>Schedule</td>
+<td>First hosting time, regular timer, and extension channel are known.</td>
+</tr>
+<tr>
+<td>Recovery</td>
+<td>Backup and substitution policy exists.</td>
+</tr>
+</tbody></table>
+<p>Creating the world should feel like signing the campaign charter, because that is what it is.</p>
+<span class="anchor-alias" id="b10-hosting" aria-hidden="true"></span><h1 id="b10-part-iii-starting-joining-and-hosting">Part III: Starting, Joining, and Hosting<a class="heading-link" href="#b10-part-iii-starting-joining-and-hosting" aria-label="Link to Part III: Starting, Joining, and Hosting">#</a></h1><h2 id="b10-16-game-modes">16. Game Modes<a class="heading-link" href="#b10-16-game-modes" aria-label="Link to 16. Game Modes">#</a></h2><p>Dominions supports several multiplayer patterns.</p>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Best use</th>
+<th>Principal operational risk</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Single-player</td>
+<td>Learning, testing, and private analysis</td>
+<td><strong>End Turn</strong> hosts immediately; there is no submission grace period.</td>
+</tr>
+<tr>
+<td>Hotseat</td>
+<td>Several players on one machine</td>
+<td>Hidden information and passwords require disciplined handoff.</td>
+</tr>
+<tr>
+<td>Official lobby</td>
+<td>Most online groups</td>
+<td>Identity, version, mod, password, and timer errors.</td>
+</tr>
+<tr>
+<td>Private server</td>
+<td>Controlled communities and persistent hosts</td>
+<td>Server setup and maintenance depend on the current executable and network environment.</td>
+</tr>
+<tr>
+<td>PBEM/file exchange</td>
+<td>Asynchronous groups using external coordination</td>
+<td>Wrong or missing files, weak confirmation, and manual version control.</td>
+</tr>
+</tbody></table>
+<p>The official lobby is the recommended online route for ordinary groups. Private servers and PBEM remain valid when the group has a reason to manage its own infrastructure, but exact command-line instructions are version-sensitive and should be taken from the current official documentation or executable help rather than copied uncritically from an older guide.</p>
+<span class="anchor-alias" id="b10-official-lobby-workflow" aria-hidden="true"></span><h2 id="b10-17-official-lobby-workflow">17. Official Lobby Workflow<a class="heading-link" href="#b10-17-official-lobby-workflow" aria-label="Link to 17. Official Lobby Workflow">#</a></h2><h3 id="b10-17-1-joining">17.1 Joining<a class="heading-link" href="#b10-17-1-joining" aria-label="Link to 17.1 Joining">#</a></h3><ol>
+<li>Start the announced Dominions version.</li>
+<li>Enable or install the required mods.</li>
+<li>Select <strong>Network</strong> and <strong>Enter Game Lobby</strong>.</li>
+<li>Locate the exact game name rather than a similar title.</li>
+<li>Check nation, status, remaining time, and any displayed content requirements.</li>
+<li>Enter the player password if required.</li>
+<li>Inspect the loaded turn before issuing orders.</li>
+</ol>
+<p>If the game cannot be entered, stop before changing local files at random. Compare version, mod list, mod file identity, map, password, and whether the game is awaiting pretenders, running, finished, or currently hosting.</p>
+<h3 id="b10-17-2-creating-or-administering-a-lobby-game">17.2 Creating or administering a lobby game<a class="heading-link" href="#b10-17-2-creating-or-administering-a-lobby-game" aria-label="Link to 17.2 Creating or administering a lobby game">#</a></h3><p>The lobby host should keep the game name distinctive, publish the ruleset separately, and test the connection before the first real deadline. Current releases have improved lobby validation and handling of larger turn files, but administrative clarity remains necessary.</p>
+<p>Do not change mods or the map to make one client connect unless the host has first confirmed the canonical campaign files. The correct repair is to bring the client to the baseline, not to create competing baselines.</p>
+<span class="anchor-alias" id="b10-turn-submission" aria-hidden="true"></span><span class="anchor-alias" id="b10-turn-submission-and-revision" aria-hidden="true"></span><h2 id="b10-18-turn-submission-and-revision">18. Turn Submission and Revision<a class="heading-link" href="#b10-18-turn-submission-and-revision" aria-label="Link to 18. Turn Submission and Revision">#</a></h2><p>In network multiplayer, <strong>End Turn</strong> saves and submits the turn. The player can normally revise and resubmit before hosting. In single-player, <strong>End Turn</strong> immediately resolves the month.</p>
+<p>That difference changes the safe habit:</p>
+<ul>
+<li>In single-player, perform the complete audit before ending the turn.</li>
+<li>In multiplayer, early submission can protect against a missed deadline, but a later revision still requires confirmation that the replacement was received.</li>
+</ul>
+<p>A submitted marker is evidence of receipt, not evidence of strategic quality. The final pre-host check remains necessary.</p>
+<h3 id="b10-18-1-submission-protocol">18.1 Submission protocol<a class="heading-link" href="#b10-18-1-submission-protocol" aria-label="Link to 18.1 Submission protocol">#</a></h3><ol>
+<li>Save enough time before the deadline for a connection failure.</li>
+<li>Finish a complete local audit.</li>
+<li>Press <strong>End Turn</strong> and allow the transfer to finish.</li>
+<li>Re-enter or refresh the game state if necessary to confirm the nation is marked submitted.</li>
+<li>If revising, make the change, submit again, and confirm the new submission.</li>
+<li>Notify the host immediately if the status is uncertain near the deadline.</li>
+</ol>
+<h3 id="b10-18-2-stales">18.2 Stales<a class="heading-link" href="#b10-18-2-stales" aria-label="Link to 18.2 Stales">#</a></h3><p>A stale is a hosted turn without a valid new submission for that nation. The engine must continue the game from existing state and default order persistence. The result may preserve some standing behaviour but it does not replace active planning.</p>
+<p>The host should distinguish:</p>
+<ul>
+<li>an ordinary missed deadline governed by the published stale policy;</li>
+<li>a platform or host failure affecting several players;</li>
+<li>an announced emergency for which an extension was requested;</li>
+<li>strategic regret after the player already had a fair opportunity to submit.</li>
+</ul>
+<p>These are not ethically identical events, even if all can produce a missing turn file.</p>
+<h2 id="b10-19-hosting-policy">19. Hosting Policy<a class="heading-link" href="#b10-19-hosting-policy" aria-label="Link to 19. Hosting Policy">#</a></h2><p>A healthy campaign states its administrative rules before they become politically useful.</p>
+<h3 id="b10-19-1-minimum-charter">19.1 Minimum charter<a class="heading-link" href="#b10-19-1-minimum-charter" aria-label="Link to 19.1 Minimum charter">#</a></h3><ul>
+<li>regular hosting interval and timezone;</li>
+<li>how automatic hosting interacts with all turns being submitted;</li>
+<li>extension request channel and expected notice;</li>
+<li>maximum ordinary extension, if any;</li>
+<li>stale and consecutive-stale policy;</li>
+<li>substitution and AI-conversion procedure;</li>
+<li>rollback conditions;</li>
+<li>rules for diplomacy, trades, concessions, and coordinated victory;</li>
+<li>rules for bugs, exploits, and prohibited file inspection;</li>
+<li>who can administer the game if the host is unavailable.</li>
+</ul>
+<h3 id="b10-19-2-extensions">19.2 Extensions<a class="heading-link" href="#b10-19-2-extensions" aria-label="Link to 19.2 Extensions">#</a></h3><p>Extensions protect the quality of a long game when real life intervenes. They also delay every participant. A good rule is predictable and symmetric: ask as early as possible, give a new exact deadline, and record it in the common channel. Do not make the host infer that an unsubmitted nation wants more time.</p>
+<h3 id="b10-19-3-substitutions">19.3 Substitutions<a class="heading-link" href="#b10-19-3-substitutions" aria-label="Link to 19.3 Substitutions">#</a></h3><p>A substitute needs the nation password, current turn access, public rules, diplomatic obligations, and enough strategic context to avoid accidental treaty breaches. Private intelligence should be transferred only as the game permits. The original player should not continue advising several sides after departure unless the group explicitly allows it.</p>
+<h3 id="b10-19-4-rollbacks">19.4 Rollbacks<a class="heading-link" href="#b10-19-4-rollbacks" aria-label="Link to 19.4 Rollbacks">#</a></h3><p>Rollback is a last resort for technical corruption or a clearly defined administrative failure. It is not a remedy for a forgotten script, a bad move, or a surprising battle. Once players have seen hosted information, replaying the month changes their knowledge. If a rollback is unavoidable, document the reason, restored point, affected submissions, and any required order-repetition rule.</p>
+<h2 id="b10-20-security-and-trust">20. Security and Trust<a class="heading-link" href="#b10-20-security-and-trust" aria-label="Link to 20. Security and Trust">#</a></h2><p>Use unique game passwords. Do not send credentials through public channels. The master password and host files deserve the same care as any private competitive record.</p>
+<p>Cheat detection can identify some forms of manipulation, but it cannot make an untrusted host trustworthy. The host has privileged access by design. Choose a host who treats the role as custodial, preserve administrative logs, and settle disputes through evidence instead of speculation.</p>
+<span class="anchor-alias" id="b10-interface" aria-hidden="true"></span><h1 id="b10-part-iv-the-main-interface">Part IV: The Main Interface<a class="heading-link" href="#b10-part-iv-the-main-interface" aria-label="Link to Part IV: The Main Interface">#</a></h1><h2 id="b10-21-the-map-as-a-control-surface">21. The Map as a Control Surface<a class="heading-link" href="#b10-21-the-map-as-a-control-surface" aria-label="Link to 21. The Map as a Control Surface">#</a></h2><p>The strategic map is simultaneously a world view, an order editor, and an information filter. The default interaction pattern is:</p>
+<ul>
+<li>right-click a province or object for information;</li>
+<li>left-click a commander to select it;</li>
+<li>left-click a destination to issue movement;</li>
+<li>use the province and nation controls for recruitment, messages, research, and overviews.</li>
+</ul>
+<p>Mouse behaviour can be altered in preferences, so a player following instructions on another machine should confirm whether selection and information buttons have been swapped.</p>
+<h3 id="b10-21-1-selection-discipline">21.1 Selection discipline<a class="heading-link" href="#b10-21-1-selection-discipline" aria-label="Link to 21.1 Selection discipline">#</a></h3><p>Before entering an order, identify three things:</p>
+<ol>
+<li>the selected province;</li>
+<li>the selected commander or group of commanders;</li>
+<li>the destination or target province.</li>
+</ol>
+<p>Most accidental orders are selection failures. The map arrow can look plausible even when the wrong commander is carrying the order.</p>
+<h2 id="b10-22-province-and-nation-controls">22. Province and Nation Controls<a class="heading-link" href="#b10-22-province-and-nation-controls" aria-label="Link to 22. Province and Nation Controls">#</a></h2><p>The standard controls include:</p>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Function</th>
+<th>Operational use</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>E</strong></td>
+<td>End Turn</td>
+<td>Save/submit in multiplayer; host immediately in single-player.</td>
+</tr>
+<tr>
+<td><strong>T</strong></td>
+<td>Army Setup</td>
+<td>Organize commanders and troops in the selected province.</td>
+</tr>
+<tr>
+<td><strong>Y</strong></td>
+<td>Army Setup at Destination</td>
+<td>Inspect or organize the destination context.</td>
+</tr>
+<tr>
+<td><strong>U</strong></td>
+<td>Patrolling Army Setup</td>
+<td>Work with forces assigned to patrol.</td>
+</tr>
+<tr>
+<td><strong>R</strong></td>
+<td>Recruit Units</td>
+<td>Open the local recruitment screen.</td>
+</tr>
+<tr>
+<td><strong>B</strong></td>
+<td>Mercenaries</td>
+<td>Review and bid on available mercenaries.</td>
+</tr>
+<tr>
+<td><strong>I</strong></td>
+<td>Province Chronicles</td>
+<td>Review the province&#39;s recorded history.</td>
+</tr>
+<tr>
+<td><strong>M</strong></td>
+<td>Read Messages</td>
+<td>Open the month&#39;s messages.</td>
+</tr>
+<tr>
+<td><strong>S</strong></td>
+<td>Send Messages</td>
+<td>Open diplomacy and transfer messaging.</td>
+</tr>
+<tr>
+<td><strong>F1</strong></td>
+<td>Nation Overview</td>
+<td>Inspect commanders, provinces, and national administration.</td>
+</tr>
+<tr>
+<td><strong>F2</strong></td>
+<td>Scoregraphs</td>
+<td>View information allowed by the game setting and intelligence.</td>
+</tr>
+<tr>
+<td><strong>F3</strong></td>
+<td>Hall of Fame</td>
+<td>Inspect experience leaders and heroic abilities.</td>
+</tr>
+<tr>
+<td><strong>F4</strong></td>
+<td>Pretenders</td>
+<td>Review known divine players and status.</td>
+</tr>
+<tr>
+<td><strong>F5</strong></td>
+<td>Research</td>
+<td>Set school priorities and inspect progress.</td>
+</tr>
+<tr>
+<td><strong>F6</strong></td>
+<td>Global Enchantments</td>
+<td>Review active globals and available public information.</td>
+</tr>
+<tr>
+<td><strong>F7</strong></td>
+<td>Magic Item Treasury</td>
+<td>Store, equip, and manage items where access permits.</td>
+</tr>
+<tr>
+<td><strong>F8</strong></td>
+<td>Magic Item Overview</td>
+<td>Find items and their holders across the nation.</td>
+</tr>
+<tr>
+<td><strong>F9</strong></td>
+<td>Thrones</td>
+<td>Review known Thrones and Ascension Point information.</td>
+</tr>
+<tr>
+<td><strong>Esc</strong></td>
+<td>Options/menu</td>
+<td>Access preferences, save/quit controls, and other session options.</td>
+</tr>
+</tbody></table>
+<p>The letter shortcuts are efficient because they reduce navigation cost, but context still controls what can be done. <strong>R</strong> opens local recruitment only where the province and ownership permit it. <strong>F7</strong> does not make a remote commander share a laboratory treasury.</p>
+<h2 id="b10-23-map-navigation-shortcuts">23. Map Navigation Shortcuts<a class="heading-link" href="#b10-23-map-navigation-shortcuts" aria-label="Link to 23. Map Navigation Shortcuts">#</a></h2><table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Arrow keys</td>
+<td>Scroll the map.</td>
+</tr>
+<tr>
+<td><strong>Home</strong></td>
+<td>Centre on the home province.</td>
+</tr>
+<tr>
+<td><strong>Ctrl+Home</strong></td>
+<td>Centre on the Pretender or disciple.</td>
+</tr>
+<tr>
+<td><strong>G</strong> or <strong>#</strong></td>
+<td>Go to a province by number.</td>
+</tr>
+<tr>
+<td><strong>End</strong></td>
+<td>Set half-scale zoom.</td>
+</tr>
+<tr>
+<td><strong>Insert</strong></td>
+<td>Zoom to cover the screen.</td>
+</tr>
+<tr>
+<td><strong>Delete</strong></td>
+<td>Fit the whole map.</td>
+</tr>
+<tr>
+<td><strong>Page Up</strong> or <strong>Ctrl+Up</strong></td>
+<td>Zoom in.</td>
+</tr>
+<tr>
+<td><strong>Page Down</strong> or <strong>Ctrl+Down</strong></td>
+<td>Zoom out.</td>
+</tr>
+<tr>
+<td><strong>Ctrl+F</strong></td>
+<td>Open map filtering.</td>
+</tr>
+<tr>
+<td><strong>H</strong></td>
+<td>Hide interface buttons and commanders.</td>
+</tr>
+<tr>
+<td><strong>?</strong></td>
+<td>Show contextual shortcut help on supported screens.</td>
+</tr>
+</tbody></table>
+<p>The <strong>?</strong> control deserves special emphasis. Dominions exposes more context-sensitive shortcuts than any static summary can comfortably hold. When a selection, army, recruitment, or treasury screen feels slow, open the contextual help before assuming the operation requires repeated clicking.</p>
+<h3 id="b10-23-1-touchscreen-mode">23.1 Touchscreen mode<a class="heading-link" href="#b10-23-1-touchscreen-mode" aria-label="Link to 23.1 Touchscreen mode">#</a></h3><p>Version 6.36 adds a touchscreen mode for play with little or no keyboard use. In that mode, a long-click is interpreted as a right-click and the map can be scrolled by dragging broadly rather than relying on a narrow scroll region. The settings popup remains the release-specific control reference. Because long-click changes the meaning of a press, practise opening and closing popups before entering time-sensitive orders.</p>
+<h2 id="b10-24-strategic-map-filters">24. Strategic Map Filters<a class="heading-link" href="#b10-24-strategic-map-filters" aria-label="Link to 24. Strategic Map Filters">#</a></h2><table>
+<thead>
+<tr>
+<th>Shortcut</th>
+<th>Filter or overlay</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Ctrl+1</strong></td>
+<td>Flags and forts</td>
+</tr>
+<tr>
+<td><strong>Ctrl+2</strong></td>
+<td>Armies</td>
+</tr>
+<tr>
+<td><strong>Ctrl+3</strong></td>
+<td>Dominion</td>
+</tr>
+<tr>
+<td><strong>Ctrl+4</strong></td>
+<td>Income</td>
+</tr>
+<tr>
+<td><strong>Ctrl+5</strong></td>
+<td>Thrones and events</td>
+</tr>
+<tr>
+<td><strong>Ctrl+6</strong></td>
+<td>Own troops in allied provinces</td>
+</tr>
+<tr>
+<td><strong>Ctrl+7</strong></td>
+<td>Allied troops in own provinces</td>
+</tr>
+<tr>
+<td><strong>Ctrl+8</strong></td>
+<td>Neighbour relationships</td>
+</tr>
+<tr>
+<td><strong>Ctrl+9</strong></td>
+<td>Province names</td>
+</tr>
+<tr>
+<td><strong>Ctrl+0</strong></td>
+<td>Remote rituals</td>
+</tr>
+</tbody></table>
+<p>A filter is an analytical lens. Income view finds economic discontinuities; dominion view finds religious fronts; army view finds exposed force; neighbour view tests movement assumptions. Use several filters in sequence rather than treating the default map as complete information.</p>
+<h3 id="b10-24-1-planes">24.1 Planes<a class="heading-link" href="#b10-24-1-planes" aria-label="Link to 24.1 Planes">#</a></h3><p>Plane controls switch among accessible realms: the Pantokrator&#39;s realm, the realm beneath, and the Void. A control is grey when the nation lacks access. A plane is more than another zoom layer; it can have its own movement, access, provinces, and strategic relationships. Verify the active plane before issuing or diagnosing a movement order.</p>
+<h2 id="b10-25-right-click-tooltips-and-popups">25. Right-Click, Tooltips, and Popups<a class="heading-link" href="#b10-25-right-click-tooltips-and-popups" aria-label="Link to 25. Right-Click, Tooltips, and Popups">#</a></h2><p>Right-click is the first research tool inside the game. Use it on units, weapons, armour, abilities, provinces, paths, items, and other interface elements. Hover text and popups often expose the difference between a familiar name and the actual current ruleset.</p>
+<p>Recent releases have expanded popups for areas of effect, movement destinations, Ascension Point information, ritual targets, and other state. Treat a tooltip as a current local clue, then distinguish three cases:</p>
+<ul>
+<li>the popup states an exact game value;</li>
+<li>the popup summarizes a mechanic owned by the manual;</li>
+<li>the popup describes an effect whose full result still depends on hidden state or hosting order.</li>
+</ul>
+<p>The first can be recorded directly. The second should be linked to its canonical rule. The third requires evidence, not confident interpolation.</p>
+<span class="anchor-alias" id="b10-current-operational-additions-worth-learning" aria-hidden="true"></span><h2 id="b10-26-current-operational-additions-worth-learning">26. Current Operational Additions Worth Learning<a class="heading-link" href="#b10-26-current-operational-additions-worth-learning" aria-label="Link to 26. Current Operational Additions Worth Learning">#</a></h2><p>Players returning from earlier Dominions 6 releases should learn these accumulated improvements:</p>
+<ul>
+<li><strong>Ctrl+A</strong> can sort the item treasury automatically.</li>
+<li>Gem transfers have fast keyboard controls in several screens; for example, hovering a commander and using <strong>Alt+F</strong> adds a Fire gem, while <strong>Alt+Backspace</strong> removes the corresponding gem in the supported context.</li>
+<li>Order copying is available more broadly, including army positioning; <strong>0</strong> is used for order copy/paste in supported screens, while squad scripting also retains numbered script storage.</li>
+<li>The bless interface can repeat the last effect with <strong>X</strong> and remove an effect with <strong>Backspace</strong>.</li>
+<li>In version 6.35, the Nation Overview&#39;s <strong>L</strong> filter isolates commanders assigned to Pillage.</li>
+<li>Ritual messages and destination displays provide stronger province navigation.</li>
+<li>Teleport-moving commanders can leave a besieged fort in 6.35.</li>
+<li>In 6.36, right-clicking the supported Province Defence increase or decrease control changes PD by ten, and right-clicking the <strong>T</strong> Army Setup control invokes the <strong>Y</strong> destination form.</li>
+<li>The 6.36 Research screen uses <strong>Up</strong> and <strong>Down</strong> to swap research targets and includes <strong>?</strong> help.</li>
+<li>In the 6.36 battle overview, <strong>S</strong> hides temporary summons; in spell selection, <strong>Space</strong> clears the active filter.</li>
+<li>Current victory review reveals scoregraphs and the hidden map for players who remain until the end.</li>
+</ul>
+<p>Shortcuts are not all global. If a key does nothing, confirm the active screen and open <strong>?</strong> rather than assuming the rule has failed.</p>
+<h1 id="b10-part-v-reading-and-preparing-a-turn">Part V: Reading and Preparing a Turn<a class="heading-link" href="#b10-part-v-reading-and-preparing-a-turn" aria-label="Link to Part V: Reading and Preparing a Turn">#</a></h1><h2 id="b10-27-begin-with-messages-not-with-memory">27. Begin with Messages, Not with Memory<a class="heading-link" href="#b10-27-begin-with-messages-not-with-memory" aria-label="Link to 27. Begin with Messages, Not with Memory">#</a></h2><p>Every hosted month can invalidate part of the plan made in the previous one. A border changed, a commander died, a site was discovered, a fort completed, a ritual failed, an enemy army appeared, or a diplomatic promise became due. Read the new state before continuing yesterday&#39;s intentions.</p>
+<p>A strong review order follows causation:</p>
+<ol>
+<li>hosting and administrative notices;</li>
+<li>battles, assassinations, and movement outcomes;</li>
+<li>province gains, losses, sieges, and unrest events;</li>
+<li>new commanders, troops, construction, and recruitment;</li>
+<li>research, spells, items, sites, and rituals;</li>
+<li>dominion, Throne, and global changes;</li>
+<li>diplomacy and transfers;</li>
+<li>attrition, disease, desertion, and other end-state changes.</li>
+</ol>
+<p>This mirrors the principle in <a href="/dominions/library/books/book-i/#b1-the-complete-63-step-hosting-sequence">Book I&#39;s hosting sequence</a>: consequences should be read in the order that explains them. The message list is not always displayed as a complete causal proof, so province state, commander state, and the battle replay may need to be compared.</p>
+<h2 id="b10-28-message-triage">28. Message Triage<a class="heading-link" href="#b10-28-message-triage" aria-label="Link to 28. Message Triage">#</a></h2><p>Classify each message before acting.</p>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Meaning</th>
+<th>Immediate question</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Fatal dependency</td>
+<td>A commander, fort, laboratory, army, or route no longer exists</td>
+<td>Which downstream orders are now impossible?</td>
+</tr>
+<tr>
+<td>Strategic change</td>
+<td>A war, Throne, global, border, or alliance changed</td>
+<td>Does the monthly priority still hold?</td>
+</tr>
+<tr>
+<td>Resource change</td>
+<td>Gold, gems, research, recruitment, or items changed</td>
+<td>Which queue or package is now underfunded?</td>
+</tr>
+<tr>
+<td>Local exception</td>
+<td>An event or isolated result needs attention</td>
+<td>Is it urgent, or can it wait behind national priorities?</td>
+</tr>
+<tr>
+<td>Informational</td>
+<td>The message confirms an expected result</td>
+<td>Can it be archived after verification?</td>
+</tr>
+</tbody></table>
+<p>The greatest danger is not the most dramatic message. It is the message that silently invalidates several orders: a laboratory loss that strands gem transfers, a dead ferry commander that leaves troops behind, or a captured province that breaks a movement chain.</p>
+<h3 id="b10-28-1-use-message-navigation">28.1 Use message navigation<a class="heading-link" href="#b10-28-1-use-message-navigation" aria-label="Link to 28.1 Use message navigation">#</a></h3><p>Where a message offers a province or unit link, use it. Current versions provide better destination and ritual-message navigation than early releases. After arriving at the province, inspect the surrounding map; a message&#39;s named location may be only one part of the consequence.</p>
+<h2 id="b10-29-battle-review-as-evidence">29. Battle Review as Evidence<a class="heading-link" href="#b10-29-battle-review-as-evidence" aria-label="Link to 29. Battle Review as Evidence">#</a></h2><p>A battle replay answers more than “who won?” Record:</p>
+<ul>
+<li>initial formation and whether expected squads appeared;</li>
+<li>actual scripts and whether requested spells were cast;</li>
+<li>first contact timing;</li>
+<li>important damage, fatigue, morale, and targeting failures;</li>
+<li>retreats and the provinces into which survivors escaped;</li>
+<li>commander and specialist losses;</li>
+<li>whether the result achieved the campaign purpose.</li>
+</ul>
+<p>Book IV owns the <a href="/dominions/library/books/book-iv/#b4-post-battle-audit">post-battle audit</a>, while Book VI owns conversion. The operational duty is to preserve enough evidence to tell a bad plan from a mis-entered plan.</p>
+<h3 id="b10-29-1-replay-version-awareness">29.1 Replay version awareness<a class="heading-link" href="#b10-29-1-replay-version-awareness" aria-label="Link to 29.1 Replay version awareness">#</a></h3><p>Battle displays are interpretations of a hosted result. Version mismatches can create misleading replays. In supported versions, <strong>Ctrl+I</strong> during battle can display host and current version information. If the visible replay appears impossible, compare the host version before constructing a new theory of combat.</p>
+<h2 id="b10-30-the-nation-overview-as-an-administrative-ledger">30. The Nation Overview as an Administrative Ledger<a class="heading-link" href="#b10-30-the-nation-overview-as-an-administrative-ledger" aria-label="Link to 30. The Nation Overview as an Administrative Ledger">#</a></h2><p><strong>F1</strong> is the broadest audit screen. It makes dispersed national state searchable without clicking every province. Use its columns, filters, and sorting to answer questions such as:</p>
+<ul>
+<li>Which commanders have no useful order?</li>
+<li>Which mages are researching, moving, forging, searching, or idle?</li>
+<li>Which provinces are recruiting commanders or troops?</li>
+<li>Where are unrest, low income, fortification, or siege problems developing?</li>
+<li>Which forces are pillaging, patrolling, or otherwise assigned to exceptional work?</li>
+</ul>
+<p>The overview is most valuable near the end of the turn, after local plans have been entered. It reveals omissions that province-by-province work hides.</p>
+<p>On version 6.35, press <strong>L</strong> within the Nation Overview to isolate Pillage orders. This is especially useful before submission: a commander left pillaging after an emergency can permanently damage a province that has already returned to ordinary economic use.</p>
+<h2 id="b10-31-establish-the-monthly-priorities">31. Establish the Monthly Priorities<a class="heading-link" href="#b10-31-establish-the-monthly-priorities" aria-label="Link to 31. Establish the Monthly Priorities">#</a></h2><p>Before issuing many orders, state the month in a few lines:</p>
+<ul>
+<li>primary strategic objective;</li>
+<li>threat that must be answered;</li>
+<li>research threshold being pursued;</li>
+<li>infrastructure or recruitment commitment;</li>
+<li>gem or item package that must be delivered;</li>
+<li>diplomatic obligation due this month;</li>
+<li>acceptable loss and reserve requirement.</li>
+</ul>
+<p>The statement prevents locally attractive actions from consuming resources required by the national plan. It also makes the final audit intelligible: each essential order can be checked against a declared purpose.</p>
+<h2 id="b10-32-work-from-dependencies-outward">32. Work from Dependencies Outward<a class="heading-link" href="#b10-32-work-from-dependencies-outward" aria-label="Link to 32. Work from Dependencies Outward">#</a></h2><p>Enter fragile, dependent orders before routine orders.</p>
+<ol>
+<li>confirm irreplaceable commanders and movement leaders;</li>
+<li>assign magic, gems, items, and ritual targets;</li>
+<li>organize armies and scripts;</li>
+<li>enter movement, stealth, patrol, siege, and special orders;</li>
+<li>complete recruitment and construction;</li>
+<li>adjust research and recurring administration;</li>
+<li>send diplomacy and transfers;</li>
+<li>audit the entire nation.</li>
+</ol>
+<p>This is not the engine&#39;s hosting sequence. It is a human error-control sequence. A recruitment queue is easy to reconstruct; a multi-province communion package assembled after movement orders is easy to break.</p>
+<span class="anchor-alias" id="b10-the-end-of-turn-audit" aria-hidden="true"></span><h2 id="b10-33-the-end-of-turn-audit">33. The End-of-Turn Audit<a class="heading-link" href="#b10-33-the-end-of-turn-audit" aria-label="Link to 33. The End-of-Turn Audit">#</a></h2><p>Run four passes.</p>
+<h3 id="b10-33-1-commanders">33.1 Commanders<a class="heading-link" href="#b10-33-1-commanders" aria-label="Link to 33.1 Commanders">#</a></h3><ul>
+<li>Every important commander has the intended order.</li>
+<li>Movement arrows belong to the intended units.</li>
+<li>Stealth, normal movement, and attack-current-province choices are distinguished.</li>
+<li>Researchers, site searchers, forgers, preachers, blood hunters, and builders are not accidentally idle.</li>
+<li>Besieged commanders have legal orders for their side of the walls.</li>
+</ul>
+<h3 id="b10-33-2-armies">33.2 Armies<a class="heading-link" href="#b10-33-2-armies" aria-label="Link to 33.2 Armies">#</a></h3><ul>
+<li>Troops are assigned to commanders rather than left unintentionally in the garrison.</li>
+<li>Leadership type and capacity are sufficient.</li>
+<li>Formation, orders, scripts, gems, and items belong to the correct commander.</li>
+<li>Retreat routes and supply are plausible.</li>
+<li>A moving commander is actually carrying the intended squads.</li>
+</ul>
+<h3 id="b10-33-3-state">33.3 State<a class="heading-link" href="#b10-33-3-state" aria-label="Link to 33.3 State">#</a></h3><ul>
+<li>Capital and fort recruitment queues are funded as intended.</li>
+<li>Commander Points, Recruitment Points, resources, Holy Points, and gold bind where expected.</li>
+<li>Forts, temples, laboratories, Province Defence, and repairs match the budget.</li>
+<li>Research is assigned to the intended schools.</li>
+<li>Treasury gems and items are where next month&#39;s plan expects them.</li>
+</ul>
+<h3 id="b10-33-4-campaign">33.4 Campaign<a class="heading-link" href="#b10-33-4-campaign" aria-label="Link to 33.4 Campaign">#</a></h3><ul>
+<li>Border gaps, Throne approaches, and known raiders were inspected.</li>
+<li>Treaties, trades, warnings, and extension needs were communicated.</li>
+<li>The action creates a useful position if it succeeds and a survivable position if it fails.</li>
+<li>The turn is submitted and receipt confirmed.</li>
+</ul>
+<h1 id="b10-part-vi-recruitment-army-setup-and-inventories">Part VI: Recruitment, Army Setup, and Inventories<a class="heading-link" href="#b10-part-vi-recruitment-army-setup-and-inventories" aria-label="Link to Part VI: Recruitment, Army Setup, and Inventories">#</a></h1><h2 id="b10-34-recruitment-is-local">34. Recruitment Is Local<a class="heading-link" href="#b10-34-recruitment-is-local" aria-label="Link to 34. Recruitment Is Local">#</a></h2><p>The recruitment screen converts local capacity into a future force. National troops are usually available in the capital and in forts, subject to nation and unit rules. Some troops are capital-only; some require terrain, a particular site, a foreign-recruitment condition, or recruitment outside a fort.</p>
+<p>A unit or commander can be constrained by several independent resources:</p>
+<ul>
+<li>gold;</li>
+<li>local resources;</li>
+<li>Recruitment Points;</li>
+<li>Commander Points;</li>
+<li>Holy Points;</li>
+<li>a per-turn or per-location recruitment limit;</li>
+<li>a fort, site, terrain, dominion, or other prerequisite.</li>
+</ul>
+<p>Book II owns <a href="/dominions/library/books/book-ii/#b2-part-iv-resources-and-recruitment">recruitment constraints</a>. The recruitment screen expresses those constraints locally.</p>
+<h2 id="b10-35-reading-a-recruitment-queue">35. Reading a Recruitment Queue<a class="heading-link" href="#b10-35-reading-a-recruitment-queue" aria-label="Link to 35. Reading a Recruitment Queue">#</a></h2><h3 id="b10-35-1-immediate-gold-later-local-capacity">35.1 Immediate gold, later local capacity<a class="heading-link" href="#b10-35-1-immediate-gold-later-local-capacity" aria-label="Link to 35.1 Immediate gold, later local capacity">#</a></h3><p>The game will not queue a purchase that cannot be afforded with current gold. Some shortages in resources, Recruitment Points, or Holy Points can remain in a queue for later turns. A dimmed entry needs to be diagnosed: inspect every cost and prerequisite instead of assuming gold is the problem.</p>
+<h3 id="b10-35-2-queue-behaviour">35.2 Queue behaviour<a class="heading-link" href="#b10-35-2-queue-behaviour" aria-label="Link to 35.2 Queue behaviour">#</a></h3><ul>
+<li>Hold <strong>Shift</strong> while selecting a recruit to add ten at a time.</li>
+<li>A queue can hold up to 250 entries.</li>
+<li>Commanders are separately restricted by local Commander Points.</li>
+<li>Units with a limited recruitment rate cannot exceed that local monthly rate.</li>
+<li>Newly recruited units arrive early enough in the hosted month to defend the province.</li>
+<li>Recruits in a fort that becomes besieged are placed within the besieged fort.</li>
+<li>New units enter the unassigned garrison until deliberately organized.</li>
+</ul>
+<h3 id="b10-35-3-queue-audit">35.3 Queue audit<a class="heading-link" href="#b10-35-3-queue-audit" aria-label="Link to 35.3 Queue audit">#</a></h3><p>For each recruiting centre, ask:</p>
+<ol>
+<li>What role is being purchased?</li>
+<li>Which resource is binding?</li>
+<li>Will the queue complete this month or spill into the next?</li>
+<li>Is a commander being produced to lead or use the troops?</li>
+<li>Can the province survive long enough for the investment to matter?</li>
+</ol>
+<p>An overflowing queue is not a plan. It is a claim on future capacity.</p>
+<h2 id="b10-36-army-setup">36. Army Setup<a class="heading-link" href="#b10-36-army-setup" aria-label="Link to 36. Army Setup">#</a></h2><p>Open Army Setup with <strong>T</strong>. The screen is where troops are transferred, grouped, positioned, and given battle orders.</p>
+<h3 id="b10-36-1-the-unassigned-garrison">36.1 The unassigned garrison<a class="heading-link" href="#b10-36-1-the-unassigned-garrison" aria-label="Link to 36.1 The unassigned garrison">#</a></h3><p>Unassigned units are not attached to a commander.</p>
+<ul>
+<li>In a fort, they remain inside unless assigned or used in a relevant patrol or defensive arrangement.</li>
+<li>Outside a fort, unassigned defenders join a battle as a central squad.</li>
+</ul>
+<p>Leaving troops in the garrison can be deliberate. Leaving the only troops meant to move there is an operational failure.</p>
+<h3 id="b10-36-2-forming-squads">36.2 Forming squads<a class="heading-link" href="#b10-36-2-forming-squads" aria-label="Link to 36.2 Forming squads">#</a></h3><p>A commander can lead up to five squads, subject to leadership type and capacity. Select units and then a squad box to add them. Dropping selected units on a commander can create a new squad when a slot is available.</p>
+<p>Useful selection controls include:</p>
+<ul>
+<li>double-click to select matching units;</li>
+<li><strong>Shift-click</strong> to build a selection;</li>
+<li>hover a squad and press <strong>W</strong> to select afflicted units;</li>
+<li><strong>E</strong> to select units with at least two experience stars in the supported context;</li>
+<li><strong>M</strong> to select the slowest units;</li>
+<li><strong>Enter</strong> to clear a selection;</li>
+<li><strong>?</strong> to display the complete contextual shortcut list.</li>
+</ul>
+<p>Selection shortcuts are tools for preserving composition. They allow the wounded, experienced, or slowest part of a formation to be separated without checking every card.</p>
+<h3 id="b10-36-3-leadership-audit">36.3 Leadership audit<a class="heading-link" href="#b10-36-3-leadership-audit" aria-label="Link to 36.3 Leadership audit">#</a></h3><p>The army screen may permit a visually convincing group that performs poorly because the commander lacks appropriate ordinary, undead, magical, or special leadership. Before leaving the screen, compare:</p>
+<ul>
+<li>number and type of units;</li>
+<li>commander leadership categories;</li>
+<li>command penalties or bonuses;</li>
+<li>squad morale;</li>
+<li>movement compatibility.</li>
+</ul>
+<p>Book IV owns <a href="/dominions/library/books/book-iv/#b4-part-iii-command-squads-and-army-construction">leadership and army construction</a>.</p>
+<h2 id="b10-37-positioning-and-battle-orders">37. Positioning and Battle Orders<a class="heading-link" href="#b10-37-positioning-and-battle-orders" aria-label="Link to 37. Positioning and Battle Orders">#</a></h2><p>Each squad and commander has a placement box. Selected formations can be repositioned by right-clicking in the battlefield diagram. Colour and order indicators distinguish assigned behaviour, but the order text remains the authoritative check.</p>
+<h3 id="b10-37-1-squad-orders">37.1 Squad orders<a class="heading-link" href="#b10-37-1-squad-orders" aria-label="Link to 37.1 Squad orders">#</a></h3><p>Assign orders based on delivery rather than theme. A missile squad, bodyguard group, flanking force, line holder, and attack squad have different contact problems. The detailed order and targeting analysis belongs to <a href="/dominions/library/books/book-iv/#b4-part-v-orders-and-scripting">Book IV</a>.</p>
+<h3 id="b10-37-2-commander-scripts">37.2 Commander scripts<a class="heading-link" href="#b10-37-2-commander-scripts" aria-label="Link to 37.2 Commander scripts">#</a></h3><p>A commander can receive up to five specific scripted orders before falling back to the standing order or spellcasting AI. In the army screen:</p>
+<ul>
+<li><strong>Ctrl+number</strong> stores a script in the supported context;</li>
+<li>pressing the corresponding number pastes it;</li>
+<li><strong>X</strong> can repeat the same requested order while constructing the script;</li>
+<li>current versions also support broader order copy/paste, including <strong>0</strong> in supported screens.</li>
+</ul>
+<p>After copying a script, re-check gems, paths, equipment, range, fatigue, and spell availability. Copying transfers instructions; it does not make commanders interchangeable.</p>
+<h3 id="b10-37-3-the-script-audit">37.3 The script audit<a class="heading-link" href="#b10-37-3-the-script-audit" aria-label="Link to 37.3 The script audit">#</a></h3><p>For each important caster or specialist:</p>
+<ol>
+<li>confirm the current unit, not merely its name;</li>
+<li>confirm paths after items and modifiers;</li>
+<li>confirm required gems are personal or otherwise accessible under the rule;</li>
+<li>confirm the spell is researched and legal in the expected battle;</li>
+<li>confirm the army will create the intended range and timing;</li>
+<li>define acceptable fallback behaviour.</li>
+</ol>
+<h2 id="b10-38-items-treasury-and-equipment">38. Items, Treasury, and Equipment<a class="heading-link" href="#b10-38-items-treasury-and-equipment" aria-label="Link to 38. Items, Treasury, and Equipment">#</a></h2><p>Clicking an empty item slot opens the treasury when the commander has laboratory access. Body form determines available slots. A mounted commander may have foot equipment disabled while mounted; barding belongs to the mount through the commander&#39;s mounted equipment relationship.</p>
+<p>Some units have standard equipment that returns when a magical replacement is removed. This can make an inventory look as if an item appeared from nowhere. Inspect the unit&#39;s normal equipment before treating the result as duplication.</p>
+<h3 id="b10-38-1-treasury-controls">38.1 Treasury controls<a class="heading-link" href="#b10-38-1-treasury-controls" aria-label="Link to 38.1 Treasury controls">#</a></h3><ul>
+<li><strong>F7</strong> opens the Magic Item Treasury.</li>
+<li><strong>F8</strong> opens the national Magic Item Overview.</li>
+<li><strong>Ctrl+A</strong> sorts the treasury in current versions.</li>
+<li>Right-click items to inspect exact abilities and restrictions.</li>
+<li>Verify laboratory access before assuming an item can be equipped or returned.</li>
+</ul>
+<p>Use the overview to locate a missing artifact before recreating it. An item on a remote or hidden commander is still part of national inventory but may not be transferable this month.</p>
+<h2 id="b10-39-gems-and-gem-squiring">39. Gems and Gem Squiring<a class="heading-link" href="#b10-39-gems-and-gem-squiring" aria-label="Link to 39. Gems and Gem Squiring">#</a></h2><p>Any commander can carry up to forty gems. This permits non-mage commanders to transport gems as squires, even though they may not be able to spend them as a mage would.</p>
+<p>Gem logistics has three distinct questions:</p>
+<ol>
+<li>Does the nation possess the gems?</li>
+<li>Can this commander access or carry them now?</li>
+<li>Can the intended caster legally spend them for the order or battle?</li>
+</ol>
+<p>The transfer interface and fast shortcuts answer the second question only. Book V owns <a href="/dominions/library/books/book-v/#b5-part-iv-gems-slaves-and-magical-logistics">gem spending and magical logistics</a>.</p>
+<h3 id="b10-39-1-safe-gem-procedure">39.1 Safe gem procedure<a class="heading-link" href="#b10-39-1-safe-gem-procedure" aria-label="Link to 39.1 Safe gem procedure">#</a></h3><ol>
+<li>Open the relevant laboratory or transfer context.</li>
+<li>Move the exact battle or ritual allocation.</li>
+<li>Add a reserve only if the script and AI are permitted to spend it.</li>
+<li>Check the commander&#39;s personal gem display.</li>
+<li>Re-check after changing items, scripts, or movement.</li>
+<li>Use the national overview or treasury controls to catch stranded stock.</li>
+</ol>
+<p>Fast keys save time, but they can also create off-by-one errors. The final displayed count is authoritative.</p>
+<h2 id="b10-40-mounted-units-and-reclaiming-mounts">40. Mounted Units and Reclaiming Mounts<a class="heading-link" href="#b10-40-mounted-units-and-reclaiming-mounts" aria-label="Link to 40. Mounted Units and Reclaiming Mounts">#</a></h2><p>Mounted units can lose or change their mounted state through battle and end-of-turn systems. Where the unit supports it, <strong>Reclaim Mount</strong> allows the rider to recover the appropriate mount relationship. Current versions also include end-of-turn handling for mounts.</p>
+<p>Do not assume that a rider and mount remain a single unchanging card. Check movement, equipment slots, size, protection, and battlefield function after a mount loss or recovery. The combat consequences belong to <a href="/dominions/library/books/book-iv/#b4-part-ix-mounts-trampling-and-size">Book IV&#39;s mount chapter</a>.</p>
+<span class="anchor-alias" id="b10-orders" aria-hidden="true"></span><h1 id="b10-part-vii-strategic-order-reference">Part VII: Strategic Order Reference<a class="heading-link" href="#b10-part-vii-strategic-order-reference" aria-label="Link to Part VII: Strategic Order Reference">#</a></h1><h2 id="b10-41-orders-are-requests-with-preconditions">41. Orders Are Requests with Preconditions<a class="heading-link" href="#b10-41-orders-are-requests-with-preconditions" aria-label="Link to 41. Orders Are Requests with Preconditions">#</a></h2><p>An order is checked when entered, but some preconditions can change before hosting reaches it. A legal movement arrow may remain visible even if an item that enabled the movement is removed. A ritual can fail because the caster, gems, laboratory, target, or path state changed. An army can reach a destination without the troops that were left in the garrison.</p>
+<p>Every important order needs two checks:</p>
+<ul>
+<li><strong>entry legality:</strong> the interface accepted it now;</li>
+<li><strong>resolution viability:</strong> the required commander, route, army, item, gem, building, and target are expected to exist when the engine reaches it.</li>
+</ul>
+<span class="anchor-alias" id="b10-ordinary-movement" aria-hidden="true"></span><h2 id="b10-42-ordinary-movement">42. Ordinary Movement<a class="heading-link" href="#b10-42-ordinary-movement" aria-label="Link to 42. Ordinary Movement">#</a></h2><p>A movement arrow connects origin and destination. It is not a promise that the commander will follow a particular visible route. Entering an enemy province generally creates combat; entering a friendly province containing a fort normally places the force inside that fort.</p>
+<p>Friendly movement and hostile movement have different resolution relationships. Opposing forces can meet on either side or pass into one another&#39;s provinces depending on orders and the hosting sequence. Use <a href="/dominions/library/books/book-i/#b1-phase-iii-movement-and-conquest">Book I</a> for exact timing and <a href="/dominions/library/books/book-vi/#b6-friendly-hostile-and-intercepting-movement">Book VI</a> for interception doctrine.</p>
+<h3 id="b10-42-1-movement-audit">42.1 Movement audit<a class="heading-link" href="#b10-42-1-movement-audit" aria-label="Link to 42.1 Movement audit">#</a></h3><ul>
+<li>movement mode is correct;</li>
+<li>commander and all squads can make the move;</li>
+<li>no item or shape change is providing a fragile movement entitlement;</li>
+<li>destination ownership is interpreted correctly;</li>
+<li>entering a friendly fort is intended;</li>
+<li>retreat and supply consequences are understood.</li>
+</ul>
+<h2 id="b10-43-sneak-hide-and-attack-current-province">43. Sneak, Hide, and Attack Current Province<a class="heading-link" href="#b10-43-sneak-hide-and-attack-current-province" aria-label="Link to 43. Sneak, Hide, and Attack Current Province">#</a></h2><p><strong>Sneak</strong> is the default movement mode for an eligible stealthy commander whose entire army can move stealthily. Holding <strong>Ctrl</strong> while selecting the destination can request normal movement instead. Removing the last non-stealth unit does not necessarily restore a previously changed defensive order to Sneak; inspect the displayed order.</p>
+<p><strong>Hide</strong> is the stationary default for a stealthy force in suitable circumstances. Hidden forces do not join an ordinary battle merely because friendly conventional troops fight there. If discovered, they can fight a separate detection battle.</p>
+<p><strong>Attack Current Province</strong> lets a hidden force in an enemy province emerge and attack without moving to another province. It can join friendly attackers arriving there. The distinction among Sneak, Hide, and Attack Current Province is operationally decisive:</p>
+<table>
+<thead>
+<tr>
+<th>Intent</th>
+<th>Correct family</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Move unseen to another province</td>
+<td>Sneak</td>
+</tr>
+<tr>
+<td>Remain concealed here</td>
+<td>Hide</td>
+</tr>
+<tr>
+<td>Reveal and fight in this province</td>
+<td>Attack Current Province</td>
+</tr>
+</tbody></table>
+<h2 id="b10-44-patrol-and-move-and-patrol">44. Patrol and Move-and-Patrol<a class="heading-link" href="#b10-44-patrol-and-move-and-patrol" aria-label="Link to 44. Patrol and Move-and-Patrol">#</a></h2><p><strong>Patrol</strong> searches for hidden enemies and reduces unrest according to the patrolling force. A patroller outside a fort participates in exterior combat. Where there is no unrest, ordinary patrolling does not damage population merely for being performed.</p>
+<p><strong>Move and Patrol</strong> is assigned after entering movement into a friendly fort province. It can also be requested with the supported <strong>Shift+Ctrl</strong> destination shortcut. The force arrives outside the fort and is available to fight there; it becomes an ordinary Patrol order in the following month. It does not provide the same-turn stealth-search result that a stationary patrol would.</p>
+<p>Use Move and Patrol when relief must arrive on the exterior rather than disappear inside a friendly fort. Verify the displayed compound order before leaving the province.</p>
+<h2 id="b10-45-defend">45. Defend<a class="heading-link" href="#b10-45-defend" aria-label="Link to 45. Defend">#</a></h2><p><strong>Defend</strong> means remain and fight without patrolling. In a friendly fort it generally concedes the exterior and places the force inside. A stealthy commander on Defend fights openly rather than remaining hidden.</p>
+<p>This is one of the most common interface traps: “do nothing” is not a single order. Defend, Hide, Patrol, Research, and the relevant siege order have different participation in battle and control of the fort exterior.</p>
+<span class="anchor-alias" id="b10-siege-orders" aria-hidden="true"></span><h2 id="b10-46-siege-orders">46. Siege Orders<a class="heading-link" href="#b10-46-siege-orders" aria-label="Link to 46. Siege Orders">#</a></h2><h3 id="b10-46-1-maintain-siege">46.1 Maintain Siege<a class="heading-link" href="#b10-46-1-maintain-siege" aria-label="Link to 46.1 Maintain Siege">#</a></h3><p>Only forces assigned to <strong>Maintain Siege</strong> contribute to breaking the walls. An army in the province performing another order should not be counted in the siege calculation.</p>
+<h3 id="b10-46-2-storm-castle">46.2 Storm Castle<a class="heading-link" href="#b10-46-2-storm-castle" aria-label="Link to 46.2 Storm Castle">#</a></h3><p><strong>Storm Castle</strong> becomes available after fortification defence has been reduced to zero, and the assault occurs in the following hosted month. A relief battle or another exterior event can intervene before the storm. A zero-wall message gives permission to prepare an assault; it does not mean the fort has already fallen.</p>
+<h3 id="b10-46-3-break-siege">46.3 Break Siege<a class="heading-link" href="#b10-46-3-break-siege" aria-label="Link to 46.3 Break Siege">#</a></h3><p>The besieged force uses <strong>Break Siege</strong> to sortie. Retreating survivors may return inside or escape to a legal adjacent friendly province according to the rules. If both sides try to force the decisive siege action at once, the relevant contest can determine which proceeds.</p>
+<p>Book II owns <a href="/dominions/library/books/book-ii/#b2-part-viii-siege-and-fort-control">siege calculation</a>; Book IV owns the assault battle; Book VI owns the campaign clock.</p>
+<h3 id="b10-46-4-teleport-movement-from-a-siege">46.4 Teleport movement from a siege<a class="heading-link" href="#b10-46-4-teleport-movement-from-a-siege" aria-label="Link to 46.4 Teleport movement from a siege">#</a></h3><p>Since 6.35, commanders using teleport movement can move out of a besieged fort. Do not generalize this to ordinary strategic movement or to every ritual movement effect. Confirm the actual movement mode and current version.</p>
+<h2 id="b10-47-construction-and-demolition-orders">47. Construction and Demolition Orders<a class="heading-link" href="#b10-47-construction-and-demolition-orders" aria-label="Link to 47. Construction and Demolition Orders">#</a></h2><p>The ordinary construction relationships are:</p>
+<ul>
+<li>a fort can be started by a commander allowed to construct it;</li>
+<li>a temple requires an eligible sacred commander;</li>
+<li>a laboratory requires an eligible mage.</li>
+</ul>
+<p>Costs, nation modifiers, terrain, and completion timing belong to Book II and Book I.</p>
+<p><strong>Demolish</strong> takes one month for an eligible building. A temple cannot simply be voluntarily demolished under the ordinary rule; an enemy temple is destroyed when the province is captured. A fort cannot be demolished while it is under siege. Because demolition removes national infrastructure and can change access, it deserves the same audit as a movement order.</p>
+<h2 id="b10-48-religious-and-divine-orders">48. Religious and Divine Orders<a class="heading-link" href="#b10-48-religious-and-divine-orders" aria-label="Link to 48. Religious and Divine Orders">#</a></h2><h3 id="b10-48-1-preach">48.1 Preach<a class="heading-link" href="#b10-48-1-preach" aria-label="Link to 48.1 Preach">#</a></h3><p>An eligible priest can preach to strengthen friendly dominion, subject to Holy level and local limits. Book III owns the formula and strategic religious system.</p>
+<h3 id="b10-48-2-blood-sacrifice">48.2 Blood Sacrifice<a class="heading-link" href="#b10-48-2-blood-sacrifice" aria-label="Link to 48.2 Blood Sacrifice">#</a></h3><p>An eligible national unit at a temple can sacrifice blood slaves where the nation permits it. Possessing slaves, priesthood, and a temple separately does not imply the order exists; the nation or unit must have the relevant ability.</p>
+<h3 id="b10-48-3-become-prophet">48.3 Become Prophet<a class="heading-link" href="#b10-48-3-become-prophet" aria-label="Link to 48.3 Become Prophet">#</a></h3><p>A nation can normally have one prophet. An eligible commander becomes a priest one level higher than before, or Holy 3 if that is higher, and gains prophet-related dominion effects. After a prophet dies, a six-turn interval applies before another can be appointed under the ordinary rule.</p>
+<p>The order is both a religious investment and an opportunity cost for that commander during the appointment month. Book III owns the full consequences.</p>
+<h2 id="b10-49-research-search-forge-and-cast-ritual">49. Research, Search, Forge, and Cast Ritual<a class="heading-link" href="#b10-49-research-search-forge-and-cast-ritual" aria-label="Link to 49. Research, Search, Forge, and Cast Ritual">#</a></h2><p>These magic orders share a dependency pattern:</p>
+<table>
+<thead>
+<tr>
+<th>Order</th>
+<th>Essential checks</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Research</td>
+<td>Mage can research; school allocation still serves the target; local events have not removed the mage.</td>
+</tr>
+<tr>
+<td>Search</td>
+<td>Correct province and search mode; caster paths are relevant; movement and stealth expectations are not confused with the order.</td>
+</tr>
+<tr>
+<td>Forge</td>
+<td>Laboratory, path, research, gems, item availability, and artifact race.</td>
+</tr>
+<tr>
+<td>Cast Ritual</td>
+<td>Laboratory or specific exception, path, research, gems, target legality, range, and hosting timing.</td>
+</tr>
+</tbody></table>
+<p>Ritual caster order is not a safe basis for precise informal sequencing. If two rituals depend on one another in the same month, verify the documented hosting relationship or separate them across months. Book I owns resolution order; Book V owns magical legality.</p>
+<h2 id="b10-50-pillage-and-raid">50. Pillage and Raid<a class="heading-link" href="#b10-50-pillage-and-raid" aria-label="Link to 50. Pillage and Raid">#</a></h2><p><strong>Pillage</strong> converts local destruction into immediate gain. It raises unrest, kills population, damages supply conditions, and can produce gold and temporary provisions. Large, fast, frightening, barbarian, or otherwise suitable troops can be effective pillagers. The economic arithmetic belongs to Book II.</p>
+<p><strong>Raid</strong> is movement combined with pillaging under a commander with the Pillager ability and sufficient strategic army movement, ordinarily at least 20. Only units with the Pillager ability contribute to the pillaging component, and at half their ordinary pillage value. The force must win the province fight before the pillage occurs.</p>
+<p>The order distinction is:</p>
+<ul>
+<li>Pillage destroys the province currently occupied.</li>
+<li>Raid attempts to move, win, and then damage the destination.</li>
+</ul>
+<p>Both should be evaluated as campaign acts. Damage to a province that must soon be governed can cost more than the gold obtained.</p>
+<h2 id="b10-51-blood-hunt">51. Blood Hunt<a class="heading-link" href="#b10-51-blood-hunt" aria-label="Link to 51. Blood Hunt">#</a></h2><p>An eligible blood hunter searches the province for blood slaves. The order risks unrest, population loss through subsequent enforcement conditions, and opportunity cost. High population and controlled unrest are operational considerations; exact hunting probability and economic doctrine belong to <a href="/dominions/library/books/book-ii/#b2-part-xi-blood-economy">Book II</a>.</p>
+<p>Before assigning the order, confirm that patrol capacity, laboratory access for collection where needed, and a plan for transporting or spending slaves exist. Blood hunting without administration can immobilize the province that funds it.</p>
+<h2 id="b10-52-reanimate-manikin-contact-allies-and-capture-slaves">52. Reanimate, Manikin, Contact Allies, and Capture Slaves<a class="heading-link" href="#b10-52-reanimate-manikin-contact-allies-and-capture-slaves" aria-label="Link to 52. Reanimate, Manikin, Contact Allies, and Capture Slaves">#</a></h2><p>These are nation- or unit-specific orders rather than universal controls.</p>
+<ul>
+<li><strong>Reanimate</strong> produces a permitted undead type. Ghouls consume population, Soulless draw on corpses, and Longdead can be raised without those two local stocks under the ordinary distinctions. Available forms depend on the reanimator.</li>
+<li><strong>Manikin</strong> is associated with Asphodel&#39;s nature-death system and can depend on human population, corpses, and hostile dominion.</li>
+<li><strong>Contact Allies</strong> occupies the commander for the month while gathering the defined allied troops.</li>
+<li><strong>Capture Slaves</strong> is available to specific national actors, including ordinary manual examples in Mictlan and Nazca, and produces a small random group under the documented order.</li>
+</ul>
+<p>The interface presence of one variant should never be generalized to every unit with similar lore. Right-click the actor and treat the exact ruleset as authoritative.</p>
+<h2 id="b10-53-espionage-orders">53. Espionage Orders<a class="heading-link" href="#b10-53-espionage-orders" aria-label="Link to 53. Espionage Orders">#</a></h2><h3 id="b10-53-1-instill-uprising">53.1 Instill Uprising<a class="heading-link" href="#b10-53-1-instill-uprising" aria-label="Link to 53.1 Instill Uprising">#</a></h3><p>A Spy can increase unrest in an enemy province. This is an economic and administrative attack rather than a direct attempt to capture the province.</p>
+<h3 id="b10-53-2-infiltrate">53.2 Infiltrate<a class="heading-link" href="#b10-53-2-infiltrate" aria-label="Link to 53.2 Infiltrate">#</a></h3><p>Infiltration is performed in an enemy capital by a Spy. It can reveal mundane scoregraph information, with additional categories available when the infiltrator is a spellcaster or priest. The attempt can fail and expose the infiltrator; the official manual describes the ordinary success chance as roughly even before relevant conditions.</p>
+<p>The order should be judged against the intelligence actually needed. Risking an established scout network to learn a graph already inferable from the map may be poor value.</p>
+<h2 id="b10-54-assassination-and-abduction-orders">54. Assassination and Abduction Orders<a class="heading-link" href="#b10-54-assassination-and-abduction-orders" aria-label="Link to 54. Assassination and Abduction Orders">#</a></h2><h3 id="b10-54-1-assassinate">54.1 Assassinate<a class="heading-link" href="#b10-54-1-assassinate" aria-label="Link to 54.1 Assassinate">#</a></h3><p>An assassin selects a random eligible enemy commander in the province. Bodyguards can accompany the victim when their individual checks succeed; the ordinary base is one chance in two per bodyguard before relevant modifiers. The victim is caught unprepared and does not follow an ordinary prepared battle script.</p>
+<p>Assassination battlefields can include local features or bystanders. Fort walls block ordinary attempts into or out of a siege unless the actor has a relevant bypass such as Scale Walls, flight, or teleportation.</p>
+<h3 id="b10-54-2-seduction">54.2 Seduction<a class="heading-link" href="#b10-54-2-seduction" aria-label="Link to 54.2 Seduction">#</a></h3><p>Seduction targets an eligible commander of the opposite sex and tests morale. A successful target may escape toward a friendly adjacent province or, for some flying movement, toward the capital. Beauty improves the attempt. Failure can lead to an assassination battle.</p>
+<h3 id="b10-54-3-dream-seduction">54.3 Dream Seduction<a class="heading-link" href="#b10-54-3-dream-seduction" aria-label="Link to 54.3 Dream Seduction">#</a></h3><p>Dream Seduction first confronts Magic Resistance and then morale. Penetration and Beauty can matter to the respective checks. Failure can create the special confrontation defined by the ability.</p>
+<h3 id="b10-54-4-corruption">54.4 Corruption<a class="heading-link" href="#b10-54-4-corruption" aria-label="Link to 54.4 Corruption">#</a></h3><p>Corruption resembles seduction in strategic purpose but Beauty does not improve it. Its exact actor and target restrictions remain ability-specific.</p>
+<h3 id="b10-54-5-lure-of-the-sirens">54.5 Lure of the Sirens<a class="heading-link" href="#b10-54-5-lure-of-the-sirens" aria-label="Link to 54.5 Lure of the Sirens">#</a></h3><p>This coastal order tests resistance and morale without using Beauty. A successful victim can drown or face an underwater battle; failure does not create the same assassination response as ordinary seduction. Penetration can improve the magical component.</p>
+<p>All five orders are asymmetric operations. The target pool, fort state, bodyguards, escape geography, actor survival, and information gained should be considered before the order is entered.</p>
+<h2 id="b10-55-strategic-order-quick-reference">55. Strategic Order Quick Reference<a class="heading-link" href="#b10-55-strategic-order-quick-reference" aria-label="Link to 55. Strategic Order Quick Reference">#</a></h2><table>
+<thead>
+<tr>
+<th>Intended act</th>
+<th>Order</th>
+<th>Principal operational trap</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Move openly</td>
+<td>Move</td>
+<td>Arrow survives a lost movement prerequisite or enters a friendly fort unexpectedly.</td>
+</tr>
+<tr>
+<td>Move covertly</td>
+<td>Sneak</td>
+<td>A non-stealth unit prevents the army from sneaking.</td>
+</tr>
+<tr>
+<td>Remain covert</td>
+<td>Hide</td>
+<td>Hidden force does not join an ordinary friendly battle.</td>
+</tr>
+<tr>
+<td>Emerge here</td>
+<td>Attack Current Province</td>
+<td>Confused with movement to a neighbouring province.</td>
+</tr>
+<tr>
+<td>Defend openly</td>
+<td>Defend</td>
+<td>Force inside a fort concedes the exterior.</td>
+</tr>
+<tr>
+<td>Find hidden units/reduce unrest</td>
+<td>Patrol</td>
+<td>Not the same as Move and Patrol or Defend.</td>
+</tr>
+<tr>
+<td>Arrive outside a friendly fort</td>
+<td>Move and Patrol</td>
+<td>Does not conduct a same-month stealth search on arrival.</td>
+</tr>
+<tr>
+<td>Break walls</td>
+<td>Maintain Siege</td>
+<td>Other orders do not contribute siege strength.</td>
+</tr>
+<tr>
+<td>Assault zero walls</td>
+<td>Storm Castle</td>
+<td>Relief and exterior battles can occur first.</td>
+</tr>
+<tr>
+<td>Sortie</td>
+<td>Break Siege</td>
+<td>Retreat and concurrent siege action require careful interpretation.</td>
+</tr>
+<tr>
+<td>Build</td>
+<td>Construct Fort/Temple/Lab</td>
+<td>Actor eligibility, cost, terrain, and timing differ.</td>
+</tr>
+<tr>
+<td>Remove infrastructure</td>
+<td>Demolish</td>
+<td>Temples and besieged forts have special restrictions.</td>
+</tr>
+<tr>
+<td>Produce research</td>
+<td>Research</td>
+<td>Mage-turn opportunity cost is easy to overlook.</td>
+</tr>
+<tr>
+<td>Strategic magic</td>
+<td>Cast Ritual</td>
+<td>Lab, path, gems, range, target, and timing all bind.</td>
+</tr>
+<tr>
+<td>Produce an item</td>
+<td>Forge</td>
+<td>Artifact competition and remote treasury access matter.</td>
+</tr>
+<tr>
+<td>Find sites</td>
+<td>Search</td>
+<td>Search mode and paths may not match the province.</td>
+</tr>
+<tr>
+<td>Strengthen dominion</td>
+<td>Preach</td>
+<td>Holy level and local dominion conditions govern effect.</td>
+</tr>
+<tr>
+<td>Appoint religious leader</td>
+<td>Become Prophet</td>
+<td>One-prophet limit and six-turn replacement interval.</td>
+</tr>
+<tr>
+<td>Extract blood slaves</td>
+<td>Blood Hunt</td>
+<td>Unrest and administrative support can bind.</td>
+</tr>
+<tr>
+<td>Damage current province</td>
+<td>Pillage</td>
+<td>Permanent economic damage may exceed immediate return.</td>
+</tr>
+<tr>
+<td>Move and damage</td>
+<td>Raid</td>
+<td>Requires Pillager commander, movement, qualifying units, and victory.</td>
+</tr>
+<tr>
+<td>Raise special troops</td>
+<td>Reanimate/Manikin/Contact Allies</td>
+<td>Output and local inputs are unit-specific.</td>
+</tr>
+<tr>
+<td>Attack administration</td>
+<td>Instill Uprising/Infiltrate</td>
+<td>Exposure risk and target value.</td>
+</tr>
+<tr>
+<td>Remove or convert commanders</td>
+<td>Assassin/Seduction family</td>
+<td>Target pool, bodyguards, walls, escape, and actor survival.</td>
+</tr>
+</tbody></table>
+<span class="anchor-alias" id="b10-first-campaign" aria-hidden="true"></span><h1 id="b10-part-viii-a-guided-first-campaign">Part VIII: A Guided First Campaign<a class="heading-link" href="#b10-part-viii-a-guided-first-campaign" aria-label="Link to Part VIII: A Guided First Campaign">#</a></h1><h2 id="b10-56-the-learning-campaign">56. The Learning Campaign<a class="heading-link" href="#b10-56-the-learning-campaign" aria-label="Link to 56. The Learning Campaign">#</a></h2><p>The first campaign should expose the whole game without hiding mistakes behind excessive advantages. A useful environment is:</p>
+<ul>
+<li>a small or medium land map with enough space for several expansion routes;</li>
+<li>a nation with understandable conventional troops and mages;</li>
+<li>ordinary or slightly forgiving independent strength;</li>
+<li>standard research and broadly standard economy;</li>
+<li>a clear Throne victory condition;</li>
+<li>few or no overhaul mods during the first pass;</li>
+<li>several AI opponents, followed by a second game against people.</li>
+</ul>
+<p>The purpose is not to guarantee victory. It is to make every failure legible.</p>
+<h2 id="b10-57-before-turn-one">57. Before Turn One<a class="heading-link" href="#b10-57-before-turn-one" aria-label="Link to 57. Before Turn One">#</a></h2><p>Complete five preparations.</p>
+<h3 id="b10-57-1-state-the-national-idea">57.1 State the national idea<a class="heading-link" href="#b10-57-1-state-the-national-idea" aria-label="Link to 57.1 State the national idea">#</a></h3><p>Write one paragraph covering:</p>
+<ul>
+<li>how the nation expands;</li>
+<li>what the capital produces every month;</li>
+<li>what the first non-capital fort contributes;</li>
+<li>the first two research objectives;</li>
+<li>how the Pretender supports the opening;</li>
+<li>what threatens the plan.</li>
+</ul>
+<p>If the paragraph cannot be written, return to Books II, III, V, and VI. A list of strong units is not a national idea.</p>
+<h3 id="b10-57-2-test-the-expansion-party">57.2 Test the expansion party<a class="heading-link" href="#b10-57-2-test-the-expansion-party" aria-label="Link to 57.2 Test the expansion party">#</a></h3><p>Use a disposable game to test the intended commander, troop count, formation, and orders against several independent types. Record losses rather than remembering only victories. Book VI owns <a href="/dominions/library/books/book-vi/#b6-expansion-testing">expansion testing</a>.</p>
+<h3 id="b10-57-3-save-the-pretender">57.3 Save the Pretender<a class="heading-link" href="#b10-57-3-save-the-pretender" aria-label="Link to 57.3 Save the Pretender">#</a></h3><p>Save the actual design with <strong>Ctrl+S</strong> and label it with nation, age, ruleset, and purpose. A changed blessing, scale, or awakening state makes it a new design.</p>
+<h3 id="b10-57-4-prepare-a-simple-turn-record">57.4 Prepare a simple turn record<a class="heading-link" href="#b10-57-4-prepare-a-simple-turn-record" aria-label="Link to 57.4 Prepare a simple turn record">#</a></h3><p>Keep:</p>
+<ul>
+<li>province targets;</li>
+<li>recruitment plan;</li>
+<li>research target and expected arrival;</li>
+<li>fort and laboratory schedule;</li>
+<li>important gem and item commitments;</li>
+<li>contacts, borders, and treaty terms.</li>
+</ul>
+<h3 id="b10-57-5-learn-the-five-screens">57.5 Learn the five screens<a class="heading-link" href="#b10-57-5-learn-the-five-screens" aria-label="Link to 57.5 Learn the five screens">#</a></h3><p>Before playing, open and close Army Setup, Recruitment, Nation Overview, Research, and Messages. The goal is familiarity, not optimization.</p>
+<h2 id="b10-58-turn-one">58. Turn One<a class="heading-link" href="#b10-58-turn-one" aria-label="Link to 58. Turn One">#</a></h2><p>Turn one is an allocation problem.</p>
+<ol>
+<li>Read the starting messages and inspect the capital, commanders, troops, scales, sites, treasury, and neighbours.</li>
+<li>Recruit the commander or mage required by the national plan.</li>
+<li>Queue the tested expansion troops within the actual gold, resource, and Recruitment Point limits.</li>
+<li>Set the first research target.</li>
+<li>Organize the starting army. Confirm leadership, squad orders, formation, and commander script.</li>
+<li>Decide whether the Pretender acts, researches, forges, searches, preaches, or remains unavailable according to awakening.</li>
+<li>Inspect every adjacent province before choosing expansion direction.</li>
+<li>Run the four-pass audit and end the turn.</li>
+</ol>
+<p>The first turn should create a repeatable monthly process. Spending all gold can be correct; spending it without knowing which local constraint limited the queue is not.</p>
+<h2 id="b10-59-turns-two-to-four-establish-the-expansion-cycle">59. Turns Two to Four: Establish the Expansion Cycle<a class="heading-link" href="#b10-59-turns-two-to-four-establish-the-expansion-cycle" aria-label="Link to 59. Turns Two to Four: Establish the Expansion Cycle">#</a></h2><p>The opening cycle is:</p>
+<p><code>recruit -&gt; assemble -&gt; capture -&gt; reinforce -&gt; launch the next party</code></p>
+<p>During these turns:</p>
+<ul>
+<li>review every expansion battle rather than accepting the flag change;</li>
+<li>separate recoverable attrition from a failed party design;</li>
+<li>keep capital commander production aligned with troop output;</li>
+<li>identify the first fort location from income, resources, recruitment purpose, geometry, and safety;</li>
+<li>start scouting beyond the immediate expansion ring;</li>
+<li>watch supply and movement compatibility;</li>
+<li>preserve enough gold to avoid delaying the first key infrastructure decision by accident.</li>
+</ul>
+<h3 id="b10-59-1-when-an-expansion-battle-fails">59.1 When an expansion battle fails<a class="heading-link" href="#b10-59-1-when-an-expansion-battle-fails" aria-label="Link to 59.1 When an expansion battle fails">#</a></h3><p>Diagnose in order:</p>
+<ol>
+<li>Was the province scouted accurately?</li>
+<li>Did the intended troops and commander arrive?</li>
+<li>Did formation and orders match the tested version?</li>
+<li>Was the independent type a known bad matchup?</li>
+<li>Was the loss statistical variation or a structural weakness?</li>
+<li>Can the survivors retreat, regroup, or defend?</li>
+<li>Does the recruitment cycle need revision?</li>
+</ol>
+<p>Do not answer a formation failure by buying more of the same formation without review.</p>
+<h2 id="b10-60-turns-five-to-eight-build-the-second-centre">60. Turns Five to Eight: Build the Second Centre<a class="heading-link" href="#b10-60-turns-five-to-eight-build-the-second-centre" aria-label="Link to 60. Turns Five to Eight: Build the Second Centre">#</a></h2><p>By this stage, the nation should be converting expansion into administration.</p>
+<h3 id="b10-60-1-first-fort-purpose">60.1 First fort purpose<a class="heading-link" href="#b10-60-1-first-fort-purpose" aria-label="Link to 60.1 First fort purpose">#</a></h3><p>Choose the fort for a declared function:</p>
+<ul>
+<li>recruit a valuable non-capital mage or troop;</li>
+<li>collect regional resources;</li>
+<li>shorten reinforcement routes;</li>
+<li>secure a chokepoint or rich cluster;</li>
+<li>establish a laboratory and research centre;</li>
+<li>support a future border.</li>
+</ul>
+<p>The fort is not finished strategy. It still needs the right laboratory, temple where required, commander recruitment, roads of movement, and defensible surroundings.</p>
+<h3 id="b10-60-2-research-checkpoint">60.2 Research checkpoint<a class="heading-link" href="#b10-60-2-research-checkpoint" aria-label="Link to 60.2 Research checkpoint">#</a></h3><p>At the end of this interval, compare expected and actual research. A shortfall can result from:</p>
+<ul>
+<li>too few recruited mages;</li>
+<li>mages diverted to expansion or infrastructure;</li>
+<li>unexpected deaths;</li>
+<li>Drain or other ruleset consequences;</li>
+<li>the chosen fort not yet producing researchers;</li>
+<li>research points assigned across too many schools.</li>
+</ul>
+<p>Book V owns the solution tree. Book X&#39;s contribution is to make the discrepancy visible early.</p>
+<h3 id="b10-60-3-first-magical-package">60.3 First magical package<a class="heading-link" href="#b10-60-3-first-magical-package" aria-label="Link to 60.3 First magical package">#</a></h3><p>Prepare one package that can actually be delivered: a small battlefield script, a site-search route, a useful item chain, or a ritual with a clear strategic purpose. Confirm research, path, gems, laboratory, caster turn, and destination.</p>
+<h2 id="b10-61-turns-nine-to-twelve-form-the-national-shape">61. Turns Nine to Twelve: Form the National Shape<a class="heading-link" href="#b10-61-turns-nine-to-twelve-form-the-national-shape" aria-label="Link to 61. Turns Nine to Twelve: Form the National Shape">#</a></h2><p>The nation should now have:</p>
+<ul>
+<li>a capital role that is not constantly improvised;</li>
+<li>at least one expansion or security formation that can be reproduced;</li>
+<li>a second recruitment or research centre under construction or active;</li>
+<li>scouts watching likely borders;</li>
+<li>a research threshold with a force attached to it;</li>
+<li>a reserve plan for an unexpected neighbour.</li>
+</ul>
+<p>This is also the moment to inspect inefficiency. Use <strong>F1</strong> to find idle commanders, stalled queues, excessive garrisons, researchers carrying unused items, and provinces whose unrest or infrastructure does not match their purpose.</p>
+<span class="anchor-alias" id="b10-first-contact" aria-hidden="true"></span><h2 id="b10-62-first-contact">62. First Contact<a class="heading-link" href="#b10-62-first-contact" aria-label="Link to 62. First Contact">#</a></h2><p>On meeting another player, separate facts from stories.</p>
+<p>Facts include visible provinces, army icons, dominion, fort locations, scouts lost, public graphs, and direct messages. Stories include guessed research, supposed weakness, claimed enemies, and implied peaceful intent.</p>
+<p>A useful first-contact record states:</p>
+<ul>
+<li>exact border proposal by province number or unmistakable landmark;</li>
+<li>whether movement, scouting, preaching, raiding, and remote magic are addressed;</li>
+<li>duration and cancellation terms of any non-aggression pact;</li>
+<li>communication channel and timing convention;</li>
+<li>unresolved provinces or Thrones.</li>
+</ul>
+<p>Book VI owns diplomacy and intelligence. The operational standard is that the agreement can be read later without reconstructing tone.</p>
+<h2 id="b10-63-preparing-the-first-war">63. Preparing the First War<a class="heading-link" href="#b10-63-preparing-the-first-war" aria-label="Link to 63. Preparing the First War">#</a></h2><p>Do not begin with “attack the neighbour.” Define:</p>
+<ol>
+<li>the political purpose;</li>
+<li>the first-turn objectives;</li>
+<li>the enemy response most likely to break the plan;</li>
+<li>the research and magic package available on the attack turn;</li>
+<li>the routes for main force, raiders, scouts, and reinforcements;</li>
+<li>the siege force and assault plan;</li>
+<li>the point at which the war is no longer worth its cost.</li>
+</ol>
+<p>Then translate the plan into interface commitments:</p>
+<ul>
+<li>commanders selected correctly;</li>
+<li>squads transferred and led;</li>
+<li>movement arrows checked;</li>
+<li>stealth forces using the intended mode;</li>
+<li>gems and items delivered;</li>
+<li>scripts legal;</li>
+<li>recruitment continuing behind the front;</li>
+<li>diplomacy sent before the deadline;</li>
+<li>turn submitted and confirmed.</li>
+</ul>
+<p>The last list is deliberately mundane. Wars are lost by mundane omissions.</p>
+<h2 id="b10-64-the-first-siege">64. The First Siege<a class="heading-link" href="#b10-64-the-first-siege" aria-label="Link to 64. The First Siege">#</a></h2><p>When a hostile fort is reached:</p>
+<ol>
+<li>confirm which units are assigned to Maintain Siege;</li>
+<li>estimate wall-breaking strength using Book II;</li>
+<li>screen the exterior against relief and raiding;</li>
+<li>preserve supply and reinforcement routes;</li>
+<li>prepare the storming formation before the walls fall;</li>
+<li>monitor enemy movement, magic, and possible break-siege force;</li>
+<li>when defence reaches zero, assign Storm Castle and re-check for relief sequencing;</li>
+<li>after capture, decide immediately whether the fort is a front, a recruitment centre, a trap, or a demolition candidate.</li>
+</ol>
+<p>A siege is not a pause between real battles. It is an administrative contest conducted under threat.</p>
+<h2 id="b10-65-entering-the-midgame">65. Entering the Midgame<a class="heading-link" href="#b10-65-entering-the-midgame" aria-label="Link to 65. Entering the Midgame">#</a></h2><p>The learning campaign has reached the midgame when decisions are governed by interacting systems rather than a single expansion loop. Typical signs are:</p>
+<ul>
+<li>several forts and laboratories compete for gold;</li>
+<li>research opens multiple viable packages;</li>
+<li>gems must be allocated among battle, ritual, forging, and reserve;</li>
+<li>more than one border can become active;</li>
+<li>diplomacy changes which military move is safe;</li>
+<li>Thrones become practical objectives;</li>
+<li>specialist commanders require items, gems, and transport.</li>
+</ul>
+<p>At this point, use the <a href="/dominions/library/books/guide/#guide-reader-s-guide-and-concordance">Reader&#39;s Guide</a> by live problem. The foundation has succeeded when the next question can be located precisely.</p>
+<h2 id="b10-66-ending-the-first-game-well">66. Ending the First Game Well<a class="heading-link" href="#b10-66-ending-the-first-game-well" aria-label="Link to 66. Ending the First Game Well">#</a></h2><p>Play through the endgame if possible. Dominions changes when armies become magically dense, globals alter the world, Thrones can be claimed in combinations, and research approaches its final tiers. A player who restarts every imperfect opening never learns conversion.</p>
+<p>After victory or defeat, review:</p>
+<ul>
+<li>revealed scoregraphs and map;</li>
+<li>first divergence between plan and result;</li>
+<li>recruitment and research bottlenecks;</li>
+<li>battles whose replay contradicted expectations;</li>
+<li>wasted gems, items, forts, or commander turns;</li>
+<li>diplomatic predictions that proved wrong;</li>
+<li>the final opportunity to contest or secure victory.</li>
+</ul>
+<p>Write three changes for the next game. More than three often turns evidence into a wish list.</p>
+<span class="anchor-alias" id="b10-troubleshooting" aria-hidden="true"></span><h1 id="b10-part-ix-troubleshooting-by-symptom">Part IX: Troubleshooting by Symptom<a class="heading-link" href="#b10-part-ix-troubleshooting-by-symptom" aria-label="Link to Part IX: Troubleshooting by Symptom">#</a></h1><span class="anchor-alias" id="b10-cannot-find-or-join-the-game" aria-hidden="true"></span><h2 id="b10-67-cannot-find-or-join-the-game">67. Cannot Find or Join the Game<a class="heading-link" href="#b10-67-cannot-find-or-join-the-game" aria-label="Link to 67. Cannot Find or Join the Game">#</a></h2><p>Check in this order:</p>
+<ol>
+<li>exact game name and lobby/server;</li>
+<li>network connection and lobby availability;</li>
+<li>game status: pretender collection, running, hosting, or finished;</li>
+<li>Dominions version;</li>
+<li>required mod files and activation;</li>
+<li>map availability where locally required;</li>
+<li>player or game password;</li>
+<li>whether the nation is already claimed or was set to AI;</li>
+<li>host announcements or maintenance.</li>
+</ol>
+<p>Preserve the error text. “It does not work” discards the best evidence.</p>
+<h2 id="b10-68-mod-or-map-mismatch">68. Mod or Map Mismatch<a class="heading-link" href="#b10-68-mod-or-map-mismatch" aria-label="Link to 68. Mod or Map Mismatch">#</a></h2><p>Symptoms include refusal to load, missing graphics, different unit cards, checksum complaints, or impossible replay behaviour.</p>
+<p>Repair procedure:</p>
+<ol>
+<li>stop changing files;</li>
+<li>obtain the host&#39;s exact file identity;</li>
+<li>compare names, versions, sizes, and hashes where available;</li>
+<li>remove only the incorrect campaign copy from active use without destroying the archive;</li>
+<li>install the canonical file with its directory structure;</li>
+<li>restart Dominions;</li>
+<li>test in a disposable game if the error persists.</li>
+</ol>
+<p>Do not download “the latest” unless the latest is the frozen campaign version.</p>
+<h2 id="b10-69-a-commander-will-not-move">69. A Commander Will Not Move<a class="heading-link" href="#b10-69-a-commander-will-not-move" aria-label="Link to 69. A Commander Will Not Move">#</a></h2><p>Inspect:</p>
+<ul>
+<li>commander is selected and has not been given another order;</li>
+<li>destination is a legal neighbour or special-movement target;</li>
+<li>strategic movement allowance and terrain costs;</li>
+<li>all assigned troops and mounts can accompany the commander;</li>
+<li>stealth mode and non-stealth units;</li>
+<li>immobility, shape, item, disease, or other status;</li>
+<li>siege restrictions and the exact movement method;</li>
+<li>plane and map layer;</li>
+<li>whether the visible arrow depends on an item already removed.</li>
+</ul>
+<p>If the interface accepted an arrow but hosting did not move the force, compare entry legality with resolution viability.</p>
+<h2 id="b10-70-a-force-entered-a-fort-or-missed-the-exterior-battle">70. A Force Entered a Fort or Missed the Exterior Battle<a class="heading-link" href="#b10-70-a-force-entered-a-fort-or-missed-the-exterior-battle" aria-label="Link to 70. A Force Entered a Fort or Missed the Exterior Battle">#</a></h2><p>Ordinary movement into a friendly fort commonly enters it. To arrive outside for immediate exterior duty, use Move and Patrol where legal. A force on Defend inside the fort concedes the exterior. A hidden force does not automatically join conventional allies.</p>
+<p>Diagnose by displayed order, fort ownership, stealth state, and hosting phase—not by where the arrow seemed to end.</p>
+<h2 id="b10-71-an-order-disappeared-or-changed">71. An Order Disappeared or Changed<a class="heading-link" href="#b10-71-an-order-disappeared-or-changed" aria-label="Link to 71. An Order Disappeared or Changed">#</a></h2><p>Common causes include:</p>
+<ul>
+<li>another order was entered afterward;</li>
+<li>army composition changed the legality of Sneak or movement;</li>
+<li>the commander changed shape, mount, item, or path state;</li>
+<li>a copied order was not legal for the recipient;</li>
+<li>the commander became besieged or changed sides;</li>
+<li>the order completed and returned to a default state;</li>
+<li>a stale preserved or replaced behaviour differently than expected.</li>
+</ul>
+<p>Use <strong>F1</strong>, inspect the commander, and reconstruct the last legal state. Do not infer an engine bug before checking the dependency that disappeared.</p>
+<h2 id="b10-72-recruitment-is-dimmed-or-stalled">72. Recruitment Is Dimmed or Stalled<a class="heading-link" href="#b10-72-recruitment-is-dimmed-or-stalled" aria-label="Link to 72. Recruitment Is Dimmed or Stalled">#</a></h2><p>Check gold first, then local resources, Recruitment Points, Commander Points, Holy Points, recruitment limits, fort/site/terrain prerequisites, and whether the unit is capital-only. Inspect the queue order: an expensive earlier unit can consume capacity needed by later entries.</p>
+<p>If the province has changed ownership or become besieged, re-evaluate where recruits appear and whether the national roster remains available.</p>
+<h2 id="b10-73-troops-did-not-move-with-the-commander">73. Troops Did Not Move with the Commander<a class="heading-link" href="#b10-73-troops-did-not-move-with-the-commander" aria-label="Link to 73. Troops Did Not Move with the Commander">#</a></h2><p>Open Army Setup and confirm that the units were in that commander&#39;s squads rather than in the unassigned garrison or under another commander. Then check leadership type, leadership capacity, movement compatibility, and whether the commander survived an earlier hosting event.</p>
+<p>An army icon in the same province does not prove command attachment.</p>
+<h2 id="b10-74-an-item-or-gem-cannot-be-used">74. An Item or Gem Cannot Be Used<a class="heading-link" href="#b10-74-an-item-or-gem-cannot-be-used" aria-label="Link to 74. An Item or Gem Cannot Be Used">#</a></h2><p>Check:</p>
+<ul>
+<li>laboratory access for treasury transfers;</li>
+<li>body slots and mounted slot restrictions;</li>
+<li>item ownership and unique status;</li>
+<li>path and research requirements;</li>
+<li>commander&#39;s personal gem allocation;</li>
+<li>maximum carried gems;</li>
+<li>whether the resource is national stock, local treasury access, or personal inventory;</li>
+<li>whether the relevant order permits that gem or item effect.</li>
+</ul>
+<p>Use <strong>F8</strong> to find items nationally. For gems, inspect both national totals and the actual commander.</p>
+<h2 id="b10-75-a-ritual-or-forge-order-is-unavailable">75. A Ritual or Forge Order Is Unavailable<a class="heading-link" href="#b10-75-a-ritual-or-forge-order-is-unavailable" aria-label="Link to 75. A Ritual or Forge Order Is Unavailable">#</a></h2><p>Confirm laboratory, research school and level, path after current items and shapes, gem stock, target range and type, ritual or item restrictions, artifact availability, and current ruleset. A commander who moved, was sieged, or lost laboratory access may no longer meet the order&#39;s conditions.</p>
+<p>If several rituals were intended to enable one another in one month, revisit <a href="/dominions/library/books/book-i/#b1-the-complete-63-step-hosting-sequence">Book I&#39;s hosting sequence</a>.</p>
+<h2 id="b10-76-a-siege-is-not-progressing">76. A Siege Is Not Progressing<a class="heading-link" href="#b10-76-a-siege-is-not-progressing" aria-label="Link to 76. A Siege Is Not Progressing">#</a></h2><p>Check that the relevant force is on Maintain Siege, not Defend, Patrol, Research, Pillage, or another order. Compare siege strength with fortification repair and defender strength. Confirm whether a battle, movement, relief, or supply problem removed key siegers.</p>
+<p>Zero wall defence does not capture the fort. Storming is a separate order for the next resolution.</p>
+<h2 id="b10-77-scoregraphs-are-missing-or-incomplete">77. Scoregraphs Are Missing or Incomplete<a class="heading-link" href="#b10-77-scoregraphs-are-missing-or-incomplete" aria-label="Link to 77. Scoregraphs Are Missing or Incomplete">#</a></h2><p>The game may have hidden graphs. Intelligence may reveal only some categories. A Spy in an enemy capital can infiltrate, while spellcaster or priest qualities can broaden obtainable information. Confirm the game setting and current intelligence before treating an empty graph as a display fault.</p>
+<span class="anchor-alias" id="b10-a-turn-staled" aria-hidden="true"></span><h2 id="b10-78-a-turn-staled">78. A Turn Staled<a class="heading-link" href="#b10-78-a-turn-staled" aria-label="Link to 78. A Turn Staled">#</a></h2><p>Preserve the submission status, deadline, host messages, and any connection error. Notify the host without editing files. The response depends on the published policy: continuation, extension before hosting, substitution, or a rare rollback for verified technical failure.</p>
+<p>Afterward, reduce recurrence:</p>
+<ul>
+<li>submit an early complete version;</li>
+<li>confirm receipt;</li>
+<li>request extensions earlier;</li>
+<li>avoid making the only final submission in the last minutes;</li>
+<li>maintain a backup connection method if the campaign warrants it.</li>
+</ul>
+<h2 id="b10-79-a-battle-replay-looks-impossible">79. A Battle Replay Looks Impossible<a class="heading-link" href="#b10-79-a-battle-replay-looks-impossible" aria-label="Link to 79. A Battle Replay Looks Impossible">#</a></h2><p>Compare host and client versions, mod identity, and whether the replay is being viewed under the ruleset that generated it. Inspect messages and final unit state. Visual playback can diverge from the hosted result when versions differ. Preserve the turn and replay evidence before updating or replacing files.</p>
+<h2 id="b10-80-performance-or-large-turn-problems">80. Performance or Large-Turn Problems<a class="heading-link" href="#b10-80-performance-or-large-turn-problems" aria-label="Link to 80. Performance or Large-Turn Problems">#</a></h2><p>Current versions have improved handling of larger network turns, but late games can still be demanding. Close unnecessary applications, preserve disk space, avoid repeatedly interrupting transfers, and allow the client to finish processing. If a file appears corrupt, retain it and compare with a fresh host download rather than overwriting the only copy.</p>
+<p>Performance diagnosis should separate:</p>
+<ul>
+<li>slow local interface;</li>
+<li>slow battle replay;</li>
+<li>network transfer delay;</li>
+<li>lobby or server availability;</li>
+<li>hosting computation;</li>
+<li>a genuinely damaged file.</li>
+</ul>
+<h2 id="b10-81-recovery-principle">81. Recovery Principle<a class="heading-link" href="#b10-81-recovery-principle" aria-label="Link to 81. Recovery Principle">#</a></h2><p>Use the least destructive repair:</p>
+<p><code>observe -&gt; record -&gt; compare baseline -&gt; copy/backup -&gt; test separately -&gt; replace only the confirmed faulty component</code></p>
+<p>Random reinstallations, live mod edits, and broad deletion destroy evidence. Recovery should make the campaign more reproducible, not only make the current error disappear.</p>
+<h1 id="b10-part-x-hosting-as-a-competitive-institution">Part X: Hosting as a Competitive Institution<a class="heading-link" href="#b10-part-x-hosting-as-a-competitive-institution" aria-label="Link to Part X: Hosting as a Competitive Institution">#</a></h1><h2 id="b10-82-the-host-is-custodian-not-author-of-outcomes">82. The Host Is Custodian, Not Author of Outcomes<a class="heading-link" href="#b10-82-the-host-is-custodian-not-author-of-outcomes" aria-label="Link to 82. The Host Is Custodian, Not Author of Outcomes">#</a></h2><p>The host establishes procedure, keeps the service available, applies announced rules consistently, and preserves recoverability. The host should not use privileged knowledge or flexible administration to shape the strategic result.</p>
+<p>A host decision is strongest when it can be explained as:</p>
+<ol>
+<li>the published rule;</li>
+<li>the observed event;</li>
+<li>the evidence preserved;</li>
+<li>the same remedy that would apply to any player.</li>
+</ol>
+<span class="anchor-alias" id="b10-hosting-runbook" aria-hidden="true"></span><h2 id="b10-83-hosting-runbook">83. Hosting Runbook<a class="heading-link" href="#b10-83-hosting-runbook" aria-label="Link to 83. Hosting Runbook">#</a></h2><h3 id="b10-83-1-before-launch">83.1 Before launch<a class="heading-link" href="#b10-83-1-before-launch" aria-label="Link to 83.1 Before launch">#</a></h3><ul>
+<li>freeze version, map, and mods;</li>
+<li>publish settings and victory conditions;</li>
+<li>test lobby/server and content distribution;</li>
+<li>collect pretenders with passwords;</li>
+<li>verify roster and teams;</li>
+<li>publish timer, extension, stale, substitution, and rollback policy;</li>
+<li>establish a backup host or continuity plan.</li>
+</ul>
+<h3 id="b10-83-2-during-the-campaign">83.2 During the campaign<a class="heading-link" href="#b10-83-2-during-the-campaign" aria-label="Link to 83.2 During the campaign">#</a></h3><ul>
+<li>announce deadline changes with an exact date, time, and timezone;</li>
+<li>check that hosting completed and clients can receive the new turn;</li>
+<li>preserve periodic backups appropriate to the hosting system;</li>
+<li>record stales, substitutions, rollbacks, and version incidents;</li>
+<li>avoid inspecting privileged player information except when technically required and allowed;</li>
+<li>resolve disputes from the charter and evidence.</li>
+</ul>
+<h3 id="b10-83-3-at-campaign-end">83.3 At campaign end<a class="heading-link" href="#b10-83-3-at-campaign-end" aria-label="Link to 83.3 At campaign end">#</a></h3><ul>
+<li>preserve final state long enough for review;</li>
+<li>publish result and any shared post-game materials;</li>
+<li>permit scoregraph and map analysis;</li>
+<li>record ruleset and notable administrative incidents;</li>
+<li>archive or remove credentials securely.</li>
+</ul>
+<h2 id="b10-84-tournament-and-expert-records">84. Tournament and Expert Records<a class="heading-link" href="#b10-84-tournament-and-expert-records" aria-label="Link to 84. Tournament and Expert Records">#</a></h2><p>Serious competitive play benefits from a more exact record:</p>
+<ul>
+<li>file hashes for map and mods;</li>
+<li>host executable and operating environment;</li>
+<li>creation settings captured in text or screenshots;</li>
+<li>player/nation/team roster;</li>
+<li>every hosting timestamp;</li>
+<li>stales, extensions, substitutions, and connection incidents;</li>
+<li>mod or patch deviation, even if accidental;</li>
+<li>final victory state.</li>
+</ul>
+<p>This is not bureaucracy for its own sake. It permits later rulings and analysis without relying on the memory of interested parties.</p>
+<span class="anchor-alias" id="b10-dispute-handling" aria-hidden="true"></span><h2 id="b10-85-dispute-handling">85. Dispute Handling<a class="heading-link" href="#b10-85-dispute-handling" aria-label="Link to 85. Dispute Handling">#</a></h2><p>When a dispute occurs:</p>
+<ol>
+<li>pause any irreversible administrative action if the schedule permits;</li>
+<li>identify the exact claim;</li>
+<li>preserve messages, timestamps, versions, files, and settings;</li>
+<li>consult the charter and official rule source;</li>
+<li>distinguish interface misunderstanding, engine behaviour, technical failure, and conduct;</li>
+<li>apply the narrowest consistent remedy;</li>
+<li>record the decision.</li>
+</ol>
+<p>Not every bug justifies a rollback. Not every surprising result is a bug. Not every policy omission can be repaired fairly after hidden information has changed hands.</p>
+<h1 id="b10-part-xi-operational-checklists">Part XI: Operational Checklists<a class="heading-link" href="#b10-part-xi-operational-checklists" aria-label="Link to Part XI: Operational Checklists">#</a></h1><h2 id="b10-86-new-installation">86. New Installation<a class="heading-link" href="#b10-86-new-installation" aria-label="Link to 86. New Installation">#</a></h2><ul>
+<li>Launch the game and confirm version.</li>
+<li>Open the user data directory from Game Tools.</li>
+<li>Install required maps and mods with directory structure intact.</li>
+<li>Enable the exact stack.</li>
+<li>Test a disposable world.</li>
+<li>Save a labelled Pretender design.</li>
+<li>Learn Messages, Recruitment, Army Setup, Nation Overview, and Research.</li>
+</ul>
+<h2 id="b10-87-create-world">87. Create World<a class="heading-link" href="#b10-87-create-world" aria-label="Link to 87. Create World">#</a></h2><ul>
+<li>Confirm map and player count.</li>
+<li>Choose age.</li>
+<li>Add every participant and set human/AI status.</li>
+<li>Verify disciple teams if used.</li>
+<li>Record all non-default settings.</li>
+<li>Record scoregraph, security, artifact, and legendary-research rules.</li>
+<li>Set and verify victory conditions and Cataclysm.</li>
+<li>Protect Pretenders and administrative access.</li>
+<li>Publish hosting policy before launch.</li>
+</ul>
+<h2 id="b10-88-join-a-lobby-game">88. Join a Lobby Game<a class="heading-link" href="#b10-88-join-a-lobby-game" aria-label="Link to 88. Join a Lobby Game">#</a></h2><ul>
+<li>Match Dominions version.</li>
+<li>Match map and mod files.</li>
+<li>Enter Network, then the official lobby.</li>
+<li>Select the exact game.</li>
+<li>Confirm nation and status.</li>
+<li>Use the game password securely.</li>
+<li>Inspect the current turn before entering orders.</li>
+<li>Confirm submission after End Turn.</li>
+</ul>
+<h2 id="b10-89-build-an-army">89. Build an Army<a class="heading-link" href="#b10-89-build-an-army" aria-label="Link to 89. Build an Army">#</a></h2><ul>
+<li>Choose role and campaign purpose.</li>
+<li>Recruit within all local constraints.</li>
+<li>Provide suitable leadership.</li>
+<li>Transfer troops from the garrison.</li>
+<li>Divide no more than five squads per commander.</li>
+<li>Position squads and commanders.</li>
+<li>Assign squad orders and scripts.</li>
+<li>Equip items and gems.</li>
+<li>Confirm movement and supply compatibility.</li>
+<li>Re-open the screen after major transfers.</li>
+</ul>
+<h2 id="b10-90-issue-a-special-order">90. Issue a Special Order<a class="heading-link" href="#b10-90-issue-a-special-order" aria-label="Link to 90. Issue a Special Order">#</a></h2><ul>
+<li>Confirm actor has the ability.</li>
+<li>Confirm province and target.</li>
+<li>Confirm building, terrain, path, gem, population, corpse, or other input.</li>
+<li>Check siege and fort-wall restrictions.</li>
+<li>Check hosting timing and opportunity cost.</li>
+<li>Enter the order.</li>
+<li>Inspect the displayed result.</li>
+<li>Re-check after changing movement, army, items, or infrastructure.</li>
+</ul>
+<h2 id="b10-91-submit-a-turn">91. Submit a Turn<a class="heading-link" href="#b10-91-submit-a-turn" aria-label="Link to 91. Submit a Turn">#</a></h2><ul>
+<li>Read all new messages.</li>
+<li>Review battles and changed provinces.</li>
+<li>State monthly priorities.</li>
+<li>Enter fragile dependent orders first.</li>
+<li>Audit commanders, armies, state, and campaign.</li>
+<li>Submit before the deadline margin disappears.</li>
+<li>Confirm receipt.</li>
+<li>If revising, resubmit and confirm again.</li>
+</ul>
+<h2 id="b10-92-host-a-campaign">92. Host a Campaign<a class="heading-link" href="#b10-92-host-a-campaign" aria-label="Link to 92. Host a Campaign">#</a></h2><ul>
+<li>Freeze and publish ruleset.</li>
+<li>Test creation and connection.</li>
+<li>Publish timer and policies.</li>
+<li>Protect passwords and host state.</li>
+<li>Announce exact deadline changes.</li>
+<li>Back up without creating unapproved alternate histories.</li>
+<li>Apply rules symmetrically.</li>
+<li>Preserve incident evidence.</li>
+<li>Arrange substitution or AI conversion according to policy.</li>
+<li>Archive the final game for review.</li>
+</ul>
+<h1 id="b10-part-xii-essays">Part XII: Essays<a class="heading-link" href="#b10-part-xii-essays" aria-label="Link to Part XII: Essays">#</a></h1><h2 id="b10-essay-i-interface-literacy-is-strategic-power">Essay I: Interface Literacy Is Strategic Power<a class="heading-link" href="#b10-essay-i-interface-literacy-is-strategic-power" aria-label="Link to Essay I: Interface Literacy Is Strategic Power">#</a></h2><p>The interface is often treated as a transparent layer between a player and the “real” game. In Dominions it is closer to a language. Province filters determine which relationships become visible. Army Setup determines whether a force exists as an army or as unrelated bodies in one province. A movement arrow records an intention but carries hidden dependence on leadership, terrain, items, stealth, siege state, and hosting order. The Nation Overview converts a sprawling realm into an administrative object that can actually be governed.</p>
+<p>This creates a form of power that is easy to undervalue because it does not appear on a unit card: the ability to ask the game the right question quickly. Where are the idle mages? Which forts are producing commanders? Which province changed income? Which movement depends on one item? Which caster holds the gems? Which squad was left unassigned? Each answer recovers a little national capacity.</p>
+<p>For a new player, interface literacy reduces cognitive load. Shortcuts and filters stop ten provinces from feeling like ten separate games. For an expert, the same literacy increases strategic bandwidth. Less time spent finding information means more time comparing lines, testing assumptions, communicating, and auditing adversarial possibilities.</p>
+<p>There is no need to memorise every key. What matters is building reliable routes through the interface. Messages begin the month. F1 surveys the nation. Map filters expose one strategic concern at a time. Army Setup proves attachment and command. F7 and F8 prove equipment location. The final audit proves commitment. Once those routes become habitual, the game&#39;s complexity becomes searchable instead of overwhelming.</p>
+<h2 id="b10-essay-ii-administrative-failure-is-still-strategic-failure">Essay II: Administrative Failure Is Still Strategic Failure<a class="heading-link" href="#b10-essay-ii-administrative-failure-is-still-strategic-failure" aria-label="Link to Essay II: Administrative Failure Is Still Strategic Failure">#</a></h2><p>Dominions rewards elaborate plans, which makes clerical errors feel somehow beneath strategy. They are not. If a commander moved without the intended squad, the nation did not possess that army at the decisive place. If a caster lacked one gem, the spell package did not exist. If a turn was not received, the plan was absent from the shared game. The reason may be administrative, but the strategic world contains only the result.</p>
+<p>This does not mean every mistake deserves punishment without context. Technical services fail, emergencies happen, and hosts need humane policies. It means that personal preparation should treat operational reliability as part of force design. A formation includes its transfer procedure. A ritual includes laboratory access and target selection. A timing attack includes submission before the timer. A long campaign includes passwords, backups, and substitution rules.</p>
+<p>The best control is a short, repeatable audit, not constant anxiety: important commanders, armies, state, campaign, receipt. It turns a vague fear of forgetting something into a bounded procedure. It also improves analysis after failure. When the submitted orders are known, tactical and strategic theories can be tested against evidence instead of reconstructed from regret.</p>
+<h2 id="b10-essay-iii-the-host-as-custodian">Essay III: The Host as Custodian<a class="heading-link" href="#b10-essay-iii-the-host-as-custodian" aria-label="Link to Essay III: The Host as Custodian">#</a></h2><p>The host occupies an unusual position. The role is technically powerful but should be strategically neutral. A host determines deadlines, operates the game state, holds recovery tools, and may be able to access information unavailable to ordinary players. The campaign remains legitimate only when that power is exercised as custody rather than ownership.</p>
+<p>Custody begins before turn one. Rules are published while no one knows whom they will favour. Extension and rollback standards exist before a leading army is at risk. A backup host is chosen before absence becomes leverage. Version and mod records are frozen before an update offers convenient ambiguity.</p>
+<p>During play, good administration is conspicuously exact: a deadline includes date, time, and timezone; an extension is visible to everyone; a stale is recorded; a substitute receives the same access process another substitute would receive; a rollback requires a narrow technical reason. The host does not need to eliminate judgment, which is impossible. The host needs to make judgment reviewable.</p>
+<p>That standard protects the host as much as the players. Evidence replaces accusation. A charter replaces improvised favour. A campaign can survive mistakes because its continuity does not depend on one person&#39;s memory or goodwill.</p>
+<h1 id="b10-part-xiii-authority-version-notes-and-research-boundaries">Part XIII: Authority, Version Notes, and Research Boundaries<a class="heading-link" href="#b10-part-xiii-authority-version-notes-and-research-boundaries" aria-label="Link to Part XIII: Authority, Version Notes, and Research Boundaries">#</a></h1><h2 id="b10-93-sources-used">93. Sources Used<a class="heading-link" href="#b10-93-sources-used" aria-label="Link to 93. Sources Used">#</a></h2><p>Book X is based primarily on:</p>
+<ul>
+<li>the official <em>Dominions 6 Manual</em> for creation, interface, multiplayer modes, recruitment, army setup, inventories, movement, and strategic orders;</li>
+<li>Illwinter&#39;s official Dominions 6 documentation index;</li>
+<li>Illwinter&#39;s official Steam announcements through Dominions 6.36 for current interface, lobby, network, mount, siege-movement, and post-game changes;</li>
+<li>the official modding and file-format manuals where local data structure is relevant;</li>
+<li>the verified foundation books in this library for mechanics whose canonical explanations already exist.</li>
+</ul>
+<p>Official documentation:</p>
+<ul>
+<li><a href="https://www.illwinter.com/dom6/docs.html" target="_blank" rel="noreferrer">https://www.illwinter.com/dom6/docs.html</a></li>
+<li><a href="https://www.illwinter.com/dom6/dom6manual.pdf" target="_blank" rel="noreferrer">https://www.illwinter.com/dom6/dom6manual.pdf</a></li>
+<li><a href="https://steamcommunity.com/app/2511500/announcements/" target="_blank" rel="noreferrer">https://steamcommunity.com/app/2511500/announcements/</a></li>
+</ul>
+<h2 id="b10-94-version-sensitive-boundaries">94. Version-Sensitive Boundaries<a class="heading-link" href="#b10-94-version-sensitive-boundaries" aria-label="Link to 94. Version-Sensitive Boundaries">#</a></h2><p>Exact private-server command lines, unattended host options, and external PBEM automation are not frozen here. They depend on the current executable, platform, and hosting environment. The official manual itself refers some private-server and PBEM detail to earlier documentation. Copying old commands into a current operational encyclopaedia would create false certainty.</p>
+<p>Keyboard shortcuts are context-sensitive and continue to evolve. Book X records verified high-value controls, but <strong>?</strong> in the active screen and current official patch notes remain the authority for a specific release.</p>
+<h2 id="b10-95-evidence-labels-for-operational-reports">95. Evidence Labels for Operational Reports<a class="heading-link" href="#b10-95-evidence-labels-for-operational-reports" aria-label="Link to 95. Evidence Labels for Operational Reports">#</a></h2><p>When a result differs from Book X, record it as one of:</p>
+<ul>
+<li><strong>confirmed interface fact:</strong> reproduced on the named version and screen;</li>
+<li><strong>confirmed engine result:</strong> reproduced through hosting under a frozen ruleset;</li>
+<li><strong>version divergence:</strong> host and client or guide and executable differ;</li>
+<li><strong>mod divergence:</strong> a mod changes or replaces the ordinary control or order;</li>
+<li><strong>unresolved report:</strong> evidence is incomplete or reproduction has not succeeded.</li>
+</ul>
+<p>This protects the library from turning a single surprising turn into a universal rule.</p>
+<h2 id="b10-96-closing-principle">96. Closing Principle<a class="heading-link" href="#b10-96-closing-principle" aria-label="Link to 96. Closing Principle">#</a></h2><p>Dominions becomes manageable when intentions are converted into inspectable commitments. Freeze the ruleset. Read the new state. Use the interface as an analytical instrument. Enter orders with their dependencies. Audit the nation. Confirm submission. Preserve evidence when reality disagrees.</p>
+<p>The process is not separate from mastery. It is the structure that allows mastery to survive contact with a live game.</p>
+
+{% endraw %}
+    </article>
+    <aside class="sidebar library-toc">
+      <h2>In this book</h2>
+      <nav><a href="#b10-interface-game-setup-orders-and-the-first-campaign">Interface, Game Setup, Orders, and the First Campaign</a>
+<a href="#b10-1-purpose">1. Purpose</a>
+<a href="#b10-2-three-layers-of-operational-knowledge">2. Three Layers of Operational Knowledge</a>
+<a href="#b10-3-establish-the-exact-ruleset">3. Establish the Exact Ruleset</a>
+<a href="#b10-4-find-the-user-data-directory">4. Find the User Data Directory</a>
+<a href="#b10-5-install-and-freeze-mods-safely">5. Install and Freeze Mods Safely</a>
+<a href="#b10-6-backups-and-campaign-continuity">6. Backups and Campaign Continuity</a>
+<a href="#b10-7-the-pregame-record">7. The Pregame Record</a>
+<a href="#b10-8-create-continue-or-join">8. Create, Continue, or Join</a>
+<a href="#b10-9-choose-the-map">9. Choose the Map</a>
+<a href="#b10-10-choose-the-age-and-participants">10. Choose the Age and Participants</a>
+<a href="#b10-11-disciple-games">11. Disciple Games</a>
+<a href="#b10-12-create-and-protect-pretenders">12. Create and Protect Pretenders</a>
+<a href="#b10-13-game-settings-by-consequence">13. Game Settings by Consequence</a>
+<a href="#b10-14-victory-conditions">14. Victory Conditions</a>
+<a href="#b10-15-host-setup-sheet">15. Host Setup Sheet</a>
+<a href="#b10-16-game-modes">16. Game Modes</a>
+<a href="#b10-17-official-lobby-workflow">17. Official Lobby Workflow</a>
+<a href="#b10-18-turn-submission-and-revision">18. Turn Submission and Revision</a>
+<a href="#b10-19-hosting-policy">19. Hosting Policy</a>
+<a href="#b10-20-security-and-trust">20. Security and Trust</a>
+<a href="#b10-21-the-map-as-a-control-surface">21. The Map as a Control Surface</a>
+<a href="#b10-22-province-and-nation-controls">22. Province and Nation Controls</a>
+<a href="#b10-23-map-navigation-shortcuts">23. Map Navigation Shortcuts</a>
+<a href="#b10-24-strategic-map-filters">24. Strategic Map Filters</a>
+<a href="#b10-25-right-click-tooltips-and-popups">25. Right-Click, Tooltips, and Popups</a>
+<a href="#b10-26-current-operational-additions-worth-learning">26. Current Operational Additions Worth Learning</a>
+<a href="#b10-27-begin-with-messages-not-with-memory">27. Begin with Messages, Not with Memory</a>
+<a href="#b10-28-message-triage">28. Message Triage</a>
+<a href="#b10-29-battle-review-as-evidence">29. Battle Review as Evidence</a>
+<a href="#b10-30-the-nation-overview-as-an-administrative-ledger">30. The Nation Overview as an Administrative Ledger</a>
+<a href="#b10-31-establish-the-monthly-priorities">31. Establish the Monthly Priorities</a>
+<a href="#b10-32-work-from-dependencies-outward">32. Work from Dependencies Outward</a>
+<a href="#b10-33-the-end-of-turn-audit">33. The End-of-Turn Audit</a>
+<a href="#b10-34-recruitment-is-local">34. Recruitment Is Local</a>
+<a href="#b10-35-reading-a-recruitment-queue">35. Reading a Recruitment Queue</a>
+<a href="#b10-36-army-setup">36. Army Setup</a>
+<a href="#b10-37-positioning-and-battle-orders">37. Positioning and Battle Orders</a>
+<a href="#b10-38-items-treasury-and-equipment">38. Items, Treasury, and Equipment</a>
+<a href="#b10-39-gems-and-gem-squiring">39. Gems and Gem Squiring</a>
+<a href="#b10-40-mounted-units-and-reclaiming-mounts">40. Mounted Units and Reclaiming Mounts</a>
+<a href="#b10-41-orders-are-requests-with-preconditions">41. Orders Are Requests with Preconditions</a>
+<a href="#b10-42-ordinary-movement">42. Ordinary Movement</a>
+<a href="#b10-43-sneak-hide-and-attack-current-province">43. Sneak, Hide, and Attack Current Province</a>
+<a href="#b10-44-patrol-and-move-and-patrol">44. Patrol and Move-and-Patrol</a>
+<a href="#b10-45-defend">45. Defend</a>
+<a href="#b10-46-siege-orders">46. Siege Orders</a>
+<a href="#b10-47-construction-and-demolition-orders">47. Construction and Demolition Orders</a>
+<a href="#b10-48-religious-and-divine-orders">48. Religious and Divine Orders</a>
+<a href="#b10-49-research-search-forge-and-cast-ritual">49. Research, Search, Forge, and Cast Ritual</a>
+<a href="#b10-50-pillage-and-raid">50. Pillage and Raid</a>
+<a href="#b10-51-blood-hunt">51. Blood Hunt</a>
+<a href="#b10-52-reanimate-manikin-contact-allies-and-capture-slaves">52. Reanimate, Manikin, Contact Allies, and Capture Slaves</a>
+<a href="#b10-53-espionage-orders">53. Espionage Orders</a>
+<a href="#b10-54-assassination-and-abduction-orders">54. Assassination and Abduction Orders</a>
+<a href="#b10-55-strategic-order-quick-reference">55. Strategic Order Quick Reference</a>
+<a href="#b10-56-the-learning-campaign">56. The Learning Campaign</a>
+<a href="#b10-57-before-turn-one">57. Before Turn One</a>
+<a href="#b10-58-turn-one">58. Turn One</a>
+<a href="#b10-59-turns-two-to-four-establish-the-expansion-cycle">59. Turns Two to Four: Establish the Expansion Cycle</a>
+<a href="#b10-60-turns-five-to-eight-build-the-second-centre">60. Turns Five to Eight: Build the Second Centre</a>
+<a href="#b10-61-turns-nine-to-twelve-form-the-national-shape">61. Turns Nine to Twelve: Form the National Shape</a>
+<a href="#b10-62-first-contact">62. First Contact</a>
+<a href="#b10-63-preparing-the-first-war">63. Preparing the First War</a>
+<a href="#b10-64-the-first-siege">64. The First Siege</a>
+<a href="#b10-65-entering-the-midgame">65. Entering the Midgame</a>
+<a href="#b10-66-ending-the-first-game-well">66. Ending the First Game Well</a>
+<a href="#b10-67-cannot-find-or-join-the-game">67. Cannot Find or Join the Game</a>
+<a href="#b10-68-mod-or-map-mismatch">68. Mod or Map Mismatch</a>
+<a href="#b10-69-a-commander-will-not-move">69. A Commander Will Not Move</a>
+<a href="#b10-70-a-force-entered-a-fort-or-missed-the-exterior-battle">70. A Force Entered a Fort or Missed the Exterior Battle</a>
+<a href="#b10-71-an-order-disappeared-or-changed">71. An Order Disappeared or Changed</a>
+<a href="#b10-72-recruitment-is-dimmed-or-stalled">72. Recruitment Is Dimmed or Stalled</a>
+<a href="#b10-73-troops-did-not-move-with-the-commander">73. Troops Did Not Move with the Commander</a>
+<a href="#b10-74-an-item-or-gem-cannot-be-used">74. An Item or Gem Cannot Be Used</a>
+<a href="#b10-75-a-ritual-or-forge-order-is-unavailable">75. A Ritual or Forge Order Is Unavailable</a>
+<a href="#b10-76-a-siege-is-not-progressing">76. A Siege Is Not Progressing</a>
+<a href="#b10-77-scoregraphs-are-missing-or-incomplete">77. Scoregraphs Are Missing or Incomplete</a>
+<a href="#b10-78-a-turn-staled">78. A Turn Staled</a>
+<a href="#b10-79-a-battle-replay-looks-impossible">79. A Battle Replay Looks Impossible</a>
+<a href="#b10-80-performance-or-large-turn-problems">80. Performance or Large-Turn Problems</a>
+<a href="#b10-81-recovery-principle">81. Recovery Principle</a>
+<a href="#b10-82-the-host-is-custodian-not-author-of-outcomes">82. The Host Is Custodian, Not Author of Outcomes</a>
+<a href="#b10-83-hosting-runbook">83. Hosting Runbook</a>
+<a href="#b10-84-tournament-and-expert-records">84. Tournament and Expert Records</a>
+<a href="#b10-85-dispute-handling">85. Dispute Handling</a>
+<a href="#b10-86-new-installation">86. New Installation</a>
+<a href="#b10-87-create-world">87. Create World</a>
+<a href="#b10-88-join-a-lobby-game">88. Join a Lobby Game</a>
+<a href="#b10-89-build-an-army">89. Build an Army</a>
+<a href="#b10-90-issue-a-special-order">90. Issue a Special Order</a>
+<a href="#b10-91-submit-a-turn">91. Submit a Turn</a>
+<a href="#b10-92-host-a-campaign">92. Host a Campaign</a>
+<a href="#b10-essay-i-interface-literacy-is-strategic-power">Essay I: Interface Literacy Is Strategic Power</a>
+<a href="#b10-essay-ii-administrative-failure-is-still-strategic-failure">Essay II: Administrative Failure Is Still Strategic Failure</a>
+<a href="#b10-essay-iii-the-host-as-custodian">Essay III: The Host as Custodian</a>
+<a href="#b10-93-sources-used">93. Sources Used</a>
+<a href="#b10-94-version-sensitive-boundaries">94. Version-Sensitive Boundaries</a>
+<a href="#b10-95-evidence-labels-for-operational-reports">95. Evidence Labels for Operational Reports</a>
+<a href="#b10-96-closing-principle">96. Closing Principle</a></nav>
+      <nav class="library-side-links">
+        <a href="/dominions/library/">Complete library</a>
+        <a href="/dominions/library/glossary/">Glossary</a>
+        <a href="/dominions/library/research/">Research register</a>
+        <a href="/downloads/dominions-6-knowledge-library-edition-24.pdf">Edition 24 PDF</a>
+      </nav>
+    </aside>
+  </div>
+  <nav class="library-pagination" aria-label="Adjacent books">
+    <a href="/dominions/library/books/book-ix/"><small>Previous</small>Foundation Book IX</a>
+    <a class="library-next" href="/dominions/library/books/book-xi/"><small>Next</small>Foundation Book XI</a>
+  </nav>
+</section>

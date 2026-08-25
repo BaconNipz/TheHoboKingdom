@@ -1,0 +1,2537 @@
+---
+title: "Reader's Guide and Concordance"
+description: "How the collection is organised, where each subject lives, and the quickest route to a dependable answer."
+nav_section: guides
+extra_css: /assets/dominions-library.css
+extra_js: /assets/dominions-library.js
+og_image: /assets/images/dominions-6-library-edition-24.png
+---
+
+<section class="page-hero library-page-hero">
+  <div class="shell">
+    <div class="breadcrumbs">
+      <a href="/dominions/">Dominions 6</a><span aria-hidden="true">/</span>
+      <a href="/dominions/library/">Knowledge Library</a><span aria-hidden="true">/</span>
+      <span>Reader's Guide and Concordance</span>
+    </div>
+    <p class="eyebrow">Progress Edition 24</p>
+    <h1>Reader's Guide and Concordance</h1>
+    <p class="lead">How the collection is organised, where each subject lives, and the quickest route to a dependable answer.</p>
+    <div class="meta-row">
+      <span class="status status--stable">Published reference</span>
+      <span class="meta-chip">Dominions 6.36</span>
+      <span class="meta-chip">11,192 words</span>
+      <span class="meta-chip">62 sections</span>
+    </div>
+  </div>
+</section>
+
+<section class="section shell library-section">
+  <details class="library-mobile-toc">
+    <summary>Table of contents</summary>
+    <nav><a href="#guide-the-retrieval-layer">The retrieval layer</a>
+<a href="#guide-how-the-links-behave">How the links behave</a>
+<a href="#guide-path-a-the-first-complete-game">Path A: The first complete game</a>
+<a href="#guide-path-b-the-first-multiplayer-game">Path B: The first multiplayer game</a>
+<a href="#guide-path-c-returning-after-a-long-break">Path C: Returning after a long break</a>
+<a href="#guide-path-d-expert-rules-lookup">Path D: Expert rules lookup</a>
+<a href="#guide-path-e-diagnosing-a-failed-turn">Path E: Diagnosing a failed turn</a>
+<a href="#guide-path-f-modding-source-inspection-and-website-work">Path F: Modding, source inspection, and website work</a>
+<a href="#guide-game-operation-and-hosting">Game operation and hosting</a>
+<a href="#guide-units-abilities-experience-and-conditions">Units, abilities, experience, and conditions</a>
+<a href="#guide-base-game-object-lookup">Base-game object lookup</a>
+<a href="#guide-version-history-and-stale-guide-repair">Version history and stale-guide repair</a>
+<a href="#guide-economy-and-state">Economy and state</a>
+<a href="#guide-pretenders-dominion-scales-and-blessings">Pretenders, dominion, scales, and blessings</a>
+<a href="#guide-armies-and-battle">Armies and battle</a>
+<a href="#guide-magic">Magic</a>
+<a href="#guide-strategy-and-campaign">Strategy and campaign</a>
+<a href="#guide-nations-mods-and-combined-rulesets">Nations, mods, and combined rulesets</a>
+<a href="#guide-a">A</a>
+<a href="#guide-b">B</a>
+<a href="#guide-c">C</a>
+<a href="#guide-d">D</a>
+<a href="#guide-e">E</a>
+<a href="#guide-f">F</a>
+<a href="#guide-g">G</a>
+<a href="#guide-h">H</a>
+<a href="#guide-i">I</a>
+<a href="#guide-l">L</a>
+<a href="#guide-m">M</a>
+<a href="#guide-n">N</a>
+<a href="#guide-o">O</a>
+<a href="#guide-p">P</a>
+<a href="#guide-r">R</a>
+<a href="#guide-s">S</a>
+<a href="#guide-t">T</a>
+<a href="#guide-u">U</a>
+<a href="#guide-v">V</a>
+<a href="#guide-w">W</a>
+<a href="#guide-z">Z</a>
+<a href="#guide-the-unit-of-publication">The unit of publication</a>
+<a href="#guide-required-metadata">Required metadata</a>
+<a href="#guide-structured-object-records">Structured object records</a>
+<a href="#guide-structured-patch-records">Structured patch records</a>
+<a href="#guide-structured-command-records">Structured command records</a>
+<a href="#guide-content-block-types">Content block types</a>
+<a href="#guide-version-and-ruleset-behaviour">Version and ruleset behaviour</a>
+<a href="#guide-beginner-and-expert-presentation">Beginner and expert presentation</a>
+<a href="#guide-search-and-filtering">Search and filtering</a>
+<a href="#guide-scope-of-the-active-register">Scope of the active register</a>
+<a href="#guide-blocked-engine-questions">Blocked engine questions</a>
+<a href="#guide-research-order">Research order</a>
+<a href="#guide-adding-a-section">Adding a section</a>
+<a href="#guide-moving-or-replacing-a-section">Moving or replacing a section</a>
+<a href="#guide-preventing-duplication-from-returning">Preventing duplication from returning</a></nav>
+  </details>
+  <div class="library-reader-grid">
+    <article class="content library-prose">
+{% raw %}
+<span class="anchor-alias" id="guide-readers-guide-and-concordance" aria-hidden="true"></span><h1 id="guide-reader-s-guide-and-concordance">Reader&#39;s Guide and Concordance<a class="heading-link" href="#guide-reader-s-guide-and-concordance" aria-label="Link to Reader's Guide and Concordance">#</a></h1><h2 id="guide-the-retrieval-layer">The retrieval layer<a class="heading-link" href="#guide-the-retrieval-layer" aria-label="Link to The retrieval layer">#</a></h2><p>The Knowledge Library is large enough that most players will not read it from front to back. Its fourteen books answer different questions, and one game situation can easily touch several of them. A failed battle might begin with an interface mistake or an economic shortage, then run through unit classes, scripting, fatigue, and conditions before becoming a wider campaign problem. A Pretender design might begin with scales, but its value can depend on the chosen form, research timing, mage recruitment, the patch that established the current rule, and the likely date of the first war.</p>
+<p>This guide joins those subjects together without explaining them a second time. Every entry points to the chapter that owns the full rule or method, and definitions here stay short for that reason. If a summary appears to disagree with the linked chapter, the chapter takes priority.</p>
+<p>The guide serves five purposes:</p>
+<ol>
+<li>give a new player a controlled route through the library;</li>
+<li>let an experienced player move directly from a live problem to the relevant rule;</li>
+<li>provide an alphabetical concordance and expanded glossary;</li>
+<li>define the content model used for website publication;</li>
+<li>separate research that can be resolved from reliable sources from questions that still require engine evidence.</li>
+</ol>
+<h2 id="guide-how-the-links-behave">How the links behave<a class="heading-link" href="#guide-how-the-links-behave" aria-label="Link to How the links behave">#</a></h2><p>Every major heading now has a stable destination. The identifiers are shared by the PDF bookmarks, the website index, and the machine-readable export. A heading can move to a different page in a later edition without breaking a link, provided its subject and destination identifier remain the same.</p>
+<p>The linked table of contents remains the complete structural map. The concordance is the practical one: it begins with the question at hand, not the order in which the books were written.</p>
+<h1 id="guide-part-i-reading-paths">Part I: Reading Paths<a class="heading-link" href="#guide-part-i-reading-paths" aria-label="Link to Part I: Reading Paths">#</a></h1><h2 id="guide-path-a-the-first-complete-game">Path A: The first complete game<a class="heading-link" href="#guide-path-a-the-first-complete-game" aria-label="Link to Path A: The first complete game">#</a></h2><p>This route supplies enough structure to play a full game without demanding mastery of every spell, special ability, or diplomatic edge case. The order is intentional: timing and economy come before Pretender theory because a design cannot be judged without knowing what a turn and a province can actually produce.</p>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Read</th>
+<th>What should be understood before moving on</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1. Operate</td>
+<td><a href="/dominions/library/books/book-x/#b10-part-i-ruleset-installation-and-local-continuity">Book X - ruleset and local continuity</a>, <a href="/dominions/library/books/book-x/#b10-part-ii-creating-the-world">creating the world</a>, and <a href="/dominions/library/books/book-x/#b10-part-iv-the-main-interface">the main interface</a></td>
+<td>The correct game is installed, the essential screens are legible, and orders can be submitted safely.</td>
+</tr>
+<tr>
+<td>2. Ruleset</td>
+<td><a href="/dominions/library/books/book-i/#b1-the-baseline-used-by-this-edition">Book I - baseline and evidence</a></td>
+<td>Which patch and mods govern the game, and how confirmed rules differ from doctrine or pending tests.</td>
+</tr>
+<tr>
+<td>3. Turn</td>
+<td><a href="/dominions/library/books/book-i/#b1-a-six-phase-model-of-hosting">Book I - six-phase hosting model</a> and <a href="/dominions/library/books/book-i/#b1-the-complete-63-step-hosting-sequence">the complete 63-step sequence</a></td>
+<td>Orders are simultaneous when submitted but sequential when resolved.</td>
+</tr>
+<tr>
+<td>4. Province</td>
+<td><a href="/dominions/library/books/book-ii/#b2-part-i-the-economic-model">Book II - the economic model</a>, <a href="/dominions/library/books/book-ii/#b2-income-formula">income</a>, and <a href="/dominions/library/books/book-ii/#b2-part-iv-resources-and-recruitment">recruitment constraints</a></td>
+<td>Gold, resources, Recruitment Points, infrastructure, and time are separate constraints.</td>
+</tr>
+<tr>
+<td>5. Read a unit</td>
+<td><a href="/dominions/library/books/book-xi/#b11-3-begin-with-the-body-not-the-icon">Book XI - unit-reading method</a>, <a href="/dominions/library/books/book-xi/#b11-part-ii-unit-classes-and-status-tags">unit classes</a>, and <a href="/dominions/library/books/book-xi/#b11-part-xii-master-ability-and-condition-register">ability register</a></td>
+<td>Classes, leadership, movement, abilities, experience, and conditions are read as one current state.</td>
+</tr>
+<tr>
+<td>6. Expansion army</td>
+<td><a href="/dominions/library/books/book-iv/#b4-part-i-what-a-battle-decides">Book IV - what a battle decides</a>, <a href="/dominions/library/books/book-iv/#b4-part-ii-reading-a-unit">unit roles</a>, and <a href="/dominions/library/books/book-iv/#b4-part-v-orders-and-scripting">orders and scripts</a></td>
+<td>A unit card is not a plan; placement, leadership, morale, and target contact determine whether statistics are delivered.</td>
+</tr>
+<tr>
+<td>7. Pretender</td>
+<td><a href="/dominions/library/books/book-iii/#b3-part-i-pretender-design-as-a-national-system">Book III - Pretender design as a national system</a>, <a href="/dominions/library/books/book-iii/#b3-part-v-scales">scales</a>, and <a href="/dominions/library/books/book-iii/#b3-part-vi-blessings">blessings</a></td>
+<td>The design should solve national problems rather than maximize an isolated chassis.</td>
+</tr>
+<tr>
+<td>8. Research</td>
+<td><a href="/dominions/library/books/book-v/#b5-part-iii-research-as-strategic-planning">Book V - research as strategic planning</a> and <a href="/dominions/library/books/book-v/#b5-part-v-the-anatomy-of-battle-magic">battlefield magic by function</a></td>
+<td>Research is a response tree whose branches must be deliverable by actual mages and gems.</td>
+</tr>
+<tr>
+<td>9. Campaign</td>
+<td><a href="/dominions/library/books/book-vi/#b6-part-ii-expansion">Book VI - expansion and first contact</a>, <a href="/dominions/library/books/book-vi/#b6-part-iv-map-structure-borders-and-infrastructure">borders and infrastructure</a>, and <a href="/dominions/library/books/book-vi/#b6-part-xiii-recovery-elastic-defence-and-defeat-management">recovery</a></td>
+<td>Winning a battle matters only if the result can be converted into position, forts, research, or victory.</td>
+</tr>
+<tr>
+<td>10. Guided play</td>
+<td><a href="/dominions/library/books/book-x/#b10-part-viii-a-guided-first-campaign">Book X - guided first campaign</a> and <a href="/dominions/library/books/book-x/#b10-33-the-end-of-turn-audit">turn audit</a></td>
+<td>The foundation is translated into a repeatable opening, first contact, first war, siege, and post-game review.</td>
+</tr>
+<tr>
+<td>11. Live reference</td>
+<td><a href="/dominions/library/books/field-reference/#field-turn-and-economy-quick-reference">Turn and Economy Quick Reference</a>, <a href="/dominions/library/books/book-xi/#b11-part-xii-master-ability-and-condition-register">Book XI&#39;s master register</a>, <a href="/dominions/library/books/book-xii/#b12-what-the-first-register-contains">Book XII&#39;s object register</a>, <a href="/dominions/library/books/book-xiii/#b13-foundation-book-xiii-version-history-and-the-official-patch-ledger">Book XIII&#39;s patch ledger</a>, and <a href="/dominions/library/books/book-xiv/#b14-foundation-book-xiv-the-command-and-terminology-lexicon">Book XIV&#39;s command lexicon</a></td>
+<td>Common timing, economy, unit-state, object, current-version, and official mod-language facts can be checked without reopening full chapters or treating an old guide as current.</td>
+</tr>
+</tbody></table>
+<p>The first pass can stop once the current question has been answered. Controlled tests, complete object inventories, and specialist essays can wait until they are actually needed.</p>
+<h2 id="guide-path-b-the-first-multiplayer-game">Path B: The first multiplayer game<a class="heading-link" href="#guide-path-b-the-first-multiplayer-game" aria-label="Link to Path B: The first multiplayer game">#</a></h2><p>Single-player fundamentals still matter, but multiplayer adds hidden intentions, negotiated borders, reputation, timing attacks, and the possibility that an apparently efficient action creates a coalition.</p>
+<ol>
+<li>Complete stages 1-8 of Path A.</li>
+<li>Read <a href="/dominions/library/books/book-x/#b10-part-iii-starting-joining-and-hosting">joining and hosting</a> and the <a href="/dominions/library/books/book-x/#b10-18-turn-submission-and-revision">submission protocol</a>.</li>
+<li>Read <a href="/dominions/library/books/book-vi/#b6-part-iii-scouting-intelligence-and-uncertainty">scouting, intelligence, and uncertainty</a>.</li>
+<li>Read <a href="/dominions/library/books/book-vi/#b6-part-vii-raiding-and-counter-raiding">raiding and counter-raiding</a>.</li>
+<li>Read <a href="/dominions/library/books/book-vi/#b6-part-viii-war-planning-timing-and-decision">timing attacks and power spikes</a>.</li>
+<li>Read <a href="/dominions/library/books/book-vi/#b6-part-xi-diplomacy-treaties-and-reputation">diplomacy, treaties, and reputation</a>.</li>
+<li>Read <a href="/dominions/library/books/book-vi/#b6-part-xii-thrones-cataclysm-and-endgame-conversion">Thrones, Cataclysm, and endgame conversion</a>.</li>
+<li>Use the <a href="/dominions/library/books/book-vi/#b6-part-viii-war-planning-timing-and-decision">campaign decision framework</a> before committing to a major war.</li>
+</ol>
+<p>The central multiplayer habit is to calculate political cost alongside material gain. Territory, globals, Thrones, visible research, border dominion, and repeated treaty behaviour all alter how other players price the threat.</p>
+<h2 id="guide-path-c-returning-after-a-long-break">Path C: Returning after a long break<a class="heading-link" href="#guide-path-c-returning-after-a-long-break" aria-label="Link to Path C: Returning after a long break">#</a></h2><p>This route is for a player who remembers the game but not the current version or the exact order of operations.</p>
+<ol>
+<li>Read <a href="/dominions/library/books/book-i/#b1-the-baseline-used-by-this-edition">Book I&#39;s current baseline</a>.</li>
+<li>Review <a href="/dominions/library/books/book-xiii/#b13-part-ii-the-complete-official-release-spine">Book XIII&#39;s release spine</a> and <a href="/dominions/library/books/book-xiii/#b13-part-iv-player-facing-changes-that-commonly-make-guides-stale">player-facing changes</a> for the period missed.</li>
+<li>Review <a href="/dominions/library/books/book-x/#b10-26-current-operational-additions-worth-learning">Book X&#39;s current operational additions</a>.</li>
+<li>Review <a href="/dominions/library/books/book-iv/#b4-current-version-corrections-that-matter">current-version corrections in battle</a>, <a href="/dominions/library/books/book-v/#b5-current-version-corrections-that-matter">magic</a>, and <a href="/dominions/library/books/book-vi/#b6-current-version-corrections-and-additions-that-matter">strategy</a>.</li>
+<li>Review <a href="/dominions/library/books/book-xi/#b11-73-current-ability-facing-patch-notes">Book XI&#39;s ability-facing patch notes</a> and <a href="/dominions/library/books/book-xi/#b11-part-xii-master-ability-and-condition-register">master register</a>.</li>
+<li>Use <a href="/dominions/library/books/book-xii/#b12-what-the-first-register-contains">Book XII&#39;s versioned object layer</a> for exact spell, item, summon, Pretender, Throne, site, mercenary, and special-dominion lookups.</li>
+<li>Keep the <a href="/dominions/library/books/field-reference/#field-the-hosting-spine">hosting spine</a>, <a href="/dominions/library/books/field-reference/#field-provincial-gold">provincial gold</a>, <a href="/dominions/library/books/field-reference/#field-the-four-recruitment-gates">recruitment gates</a>, and <a href="/dominions/library/books/field-reference/#field-siege-calculation">siege calculation</a> open during the first turns.</li>
+<li>Revisit only the chapter belonging to the nation or mechanic currently being used.</li>
+<li>If DE and Divinitus are enabled, read the <a href="/dominions/library/books/book-ix/#b9-2-frozen-baseline-and-evidence">frozen combined baseline</a> before trusting an older build or guide.</li>
+</ol>
+<h2 id="guide-path-d-expert-rules-lookup">Path D: Expert rules lookup<a class="heading-link" href="#guide-path-d-expert-rules-lookup" aria-label="Link to Path D: Expert rules lookup">#</a></h2><p>The expert route begins by finding the chapter that owns the answer.</p>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Primary destination</th>
+<th>Secondary destination</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Create or join a game</td>
+<td><a href="/dominions/library/books/book-x/#b10-part-ii-creating-the-world">Book X - creating the world</a></td>
+<td><a href="/dominions/library/books/book-x/#b10-part-iii-starting-joining-and-hosting">Book X - joining and hosting</a></td>
+</tr>
+<tr>
+<td>Interface or shortcut</td>
+<td><a href="/dominions/library/books/book-x/#b10-part-iv-the-main-interface">Book X - main interface</a></td>
+<td><a href="/dominions/library/books/book-x/#b10-26-current-operational-additions-worth-learning">Book X - current additions</a></td>
+</tr>
+<tr>
+<td>Strategic order procedure</td>
+<td><a href="/dominions/library/books/book-x/#b10-part-vii-strategic-order-reference">Book X - order reference</a></td>
+<td>Underlying system in Books I-VI</td>
+</tr>
+<tr>
+<td>Submit or administer turns</td>
+<td><a href="/dominions/library/books/book-x/#b10-18-turn-submission-and-revision">Book X - turn submission</a></td>
+<td><a href="/dominions/library/books/book-x/#b10-83-hosting-runbook">Book X - hosting runbook</a></td>
+</tr>
+<tr>
+<td>Operational failure</td>
+<td><a href="/dominions/library/books/book-x/#b10-part-ix-troubleshooting-by-symptom">Book X - troubleshooting</a></td>
+<td><a href="#guide-path-e-diagnosing-a-failed-turn">Path E</a></td>
+</tr>
+<tr>
+<td>Unit class or leadership requirement</td>
+<td><a href="/dominions/library/books/book-xi/#b11-part-ii-unit-classes-and-status-tags">Book XI - unit classes</a></td>
+<td><a href="/dominions/library/books/book-iv/#b4-part-iii-command-squads-and-army-construction">Book IV - command and squads</a></td>
+</tr>
+<tr>
+<td>Unfamiliar ability or icon</td>
+<td><a href="/dominions/library/books/book-xi/#b11-part-xii-master-ability-and-condition-register">Book XI - master register</a></td>
+<td><a href="/dominions/library/books/book-xi/#b11-3-begin-with-the-body-not-the-icon">Book XI - unit-reading method</a></td>
+</tr>
+<tr>
+<td>Experience or heroic ability</td>
+<td><a href="/dominions/library/books/book-xi/#b11-part-ix-experience-and-veteran-units">Book XI - experience</a></td>
+<td><a href="/dominions/library/books/book-xi/#b11-part-x-hall-of-fame-and-heroic-abilities">Book XI - Hall of Fame</a></td>
+</tr>
+<tr>
+<td>Affliction or condition</td>
+<td><a href="/dominions/library/books/book-xi/#b11-part-xi-conditions-and-lasting-state">Book XI - conditions</a></td>
+<td><a href="/dominions/library/books/book-iv/#b4-part-xiii-afflictions-regeneration-and-lasting-loss">Book IV - affliction resolution</a></td>
+</tr>
+<tr>
+<td>Exact spell or item record</td>
+<td><a href="/dominions/library/books/book-xii/#b12-part-ii-spells">Book XII - spells</a> or <a href="/dominions/library/books/book-xii/#b12-part-iii-magic-items-artifacts-and-barding">items and artifacts</a></td>
+<td><a href="/dominions/library/books/book-v/#b5-foundation-book-v-magic">Book V - strategic magic</a></td>
+</tr>
+<tr>
+<td>Summon or summoned-unit relation</td>
+<td><a href="/dominions/library/books/book-xii/#b12-part-iv-summons">Book XII - summons</a></td>
+<td><a href="/dominions/library/books/book-v/#b5-summoning">Book V - summoning</a></td>
+</tr>
+<tr>
+<td>Pretender form availability</td>
+<td><a href="/dominions/library/books/book-xii/#b12-part-v-pretender-forms">Book XII - Pretender forms</a></td>
+<td><a href="/dominions/library/books/book-iii/#b3-part-i-pretender-design-as-a-national-system">Book III - national design system</a></td>
+</tr>
+<tr>
+<td>Throne, site, mercenary, or special dominion record</td>
+<td><a href="/dominions/library/books/book-xii/#b12-part-vi-thrones-and-magic-sites">Book XII - Thrones and sites</a>, <a href="/dominions/library/books/book-xii/#b12-part-vii-mercenaries-and-independent-recruitment">mercenaries and independents</a>, or <a href="/dominions/library/books/book-xii/#b12-part-viii-special-dominion-systems">special dominions</a></td>
+<td>Strategic interpretation in Books II, III, and VI</td>
+</tr>
+<tr>
+<td>Official change by version or subject</td>
+<td><a href="/dominions/library/books/book-xiii/#b13-foundation-book-xiii-version-history-and-the-official-patch-ledger">Book XIII - official patch ledger</a></td>
+<td>Current rule in the linked canonical book</td>
+</tr>
+<tr>
+<td>Repair an old or undated guide</td>
+<td><a href="/dominions/library/books/book-xiii/#b13-part-vi-repairing-stale-guides-and-maintaining-the-library">Book XIII - stale-guide repair</a></td>
+<td><a href="/dominions/library/books/book-xiii/#b13-part-iii-the-classification-and-evidence-model">Book XIII - classification model</a></td>
+</tr>
+<tr>
+<td>Command introduction or patch history</td>
+<td><a href="/dominions/library/books/book-xiii/#b13-part-v-modding-and-command-chronology">Book XIII - command chronology</a></td>
+<td><a href="/dominions/library/books/book-xiv/#b14-part-vi-patch-to-manual-reconciliation">Book XIV - patch reconciliation</a></td>
+</tr>
+<tr>
+<td>Exact command syntax, context, or manual locator</td>
+<td><a href="/dominions/library/books/book-xiv/#b14-foundation-book-xiv-the-command-and-terminology-lexicon">Book XIV - command lexicon</a></td>
+<td><a href="/dominions/library/books/book-viii/#b8-part-i-the-object-and-parser-model">Book VIII - object and parser method</a></td>
+</tr>
+<tr>
+<td>Exact hosting order</td>
+<td><a href="/dominions/library/books/book-i/#b1-the-complete-63-step-hosting-sequence">Book I - complete hosting sequence</a></td>
+<td><a href="/dominions/library/books/field-reference/#field-the-hosting-spine">Field hosting spine</a></td>
+</tr>
+<tr>
+<td>Income or fort economics</td>
+<td><a href="/dominions/library/books/book-ii/#b2-part-iii-gold-income-and-upkeep">Book II - gold, income, and upkeep</a></td>
+<td><a href="/dominions/library/books/field-reference/#field-provincial-gold">Field provincial gold</a></td>
+</tr>
+<tr>
+<td>Recruitment bottleneck</td>
+<td><a href="/dominions/library/books/book-ii/#b2-part-iv-resources-and-recruitment">Book II - resources and recruitment</a></td>
+<td><a href="/dominions/library/books/field-reference/#field-the-four-recruitment-gates">Field recruitment gates</a></td>
+</tr>
+<tr>
+<td>Pretender design</td>
+<td><a href="/dominions/library/books/book-iii/#b3-part-i-pretender-design-as-a-national-system">Book III - national design system</a></td>
+<td><a href="/dominions/library/books/book-vii/#b7-part-viii-pretender-families">Book VII - Pretender families in a dossier</a></td>
+</tr>
+<tr>
+<td>Bless legality or activation</td>
+<td><a href="/dominions/library/books/book-iii/#b3-part-vi-blessings">Book III - blessings</a></td>
+<td><a href="/dominions/library/books/book-ix/#b9-8-complete-de-blessing-revision">Book IX - exact DE blessing layer</a></td>
+</tr>
+<tr>
+<td>Melee result</td>
+<td><a href="/dominions/library/books/book-iv/#b4-part-vii-melee-resolution">Book IV - melee resolution</a></td>
+<td><a href="/dominions/library/books/book-iv/#b4-damage-and-protection">Book IV - protection and damage</a></td>
+</tr>
+<tr>
+<td>Rout or retreat</td>
+<td><a href="/dominions/library/books/book-iv/#b4-part-xi-morale-fear-rout-and-retreat">Book IV - morale, rout, and retreat</a></td>
+<td><a href="/dominions/library/books/book-vi/#b6-part-xiii-recovery-elastic-defence-and-defeat-management">Book VI - army preservation</a></td>
+</tr>
+<tr>
+<td>Battle spell arithmetic</td>
+<td><a href="/dominions/library/books/book-iv/#b4-part-xiv-battle-magic-within-the-army">Book IV - battlefield magic</a></td>
+<td><a href="/dominions/library/books/book-v/#b5-part-v-the-anatomy-of-battle-magic">Book V - spell package design</a></td>
+</tr>
+<tr>
+<td>Research branch</td>
+<td><a href="/dominions/library/books/book-v/#b5-part-iii-research-as-strategic-planning">Book V - research planning</a></td>
+<td><a href="/dominions/library/books/book-vi/#b6-part-v-research-as-a-strategic-response-tree">Book VI - strategic response tree</a></td>
+</tr>
+<tr>
+<td>Communion failure</td>
+<td><a href="/dominions/library/books/book-v/#b5-part-vii-communions-sabbaths-choruses-and-grand-communions">Book V - communions</a></td>
+<td><a href="/dominions/library/books/book-iv/#b4-part-x-fatigue-recovery-and-collapse">Book IV - fatigue</a></td>
+</tr>
+<tr>
+<td>Ritual, dome, or global</td>
+<td><a href="/dominions/library/books/book-v/#b5-part-viii-rituals-and-strategic-magic">Book V - rituals</a>, <a href="/dominions/library/books/book-v/#b5-part-ix-domes-and-remote-magic-defence">domes</a>, or <a href="/dominions/library/books/book-v/#b5-part-x-global-enchantments-and-dispel-wars">globals</a></td>
+<td><a href="/dominions/library/books/book-i/#b1-the-complete-63-step-hosting-sequence">Book I - hosting timing</a></td>
+</tr>
+<tr>
+<td>Campaign conversion</td>
+<td><a href="/dominions/library/books/book-vi/#b6-foundation-book-vi-strategy-and-campaign-conduct">Book VI - campaign conduct</a></td>
+<td><a href="/dominions/library/books/book-ii/#b2-foundation-book-ii-economy-provinces-and-the-machinery-of-state">Book II - economic state</a></td>
+</tr>
+<tr>
+<td>Nation analysis</td>
+<td><a href="/dominions/library/books/book-vii/#b7-part-i-the-nation-dossier-method">Book VII - dossier method</a></td>
+<td><a href="/dominions/library/books/book-vii/#b7-part-ii-middle-age-arcoscephale-the-old-kingdom">Book VII - MA Arcoscephale pilot</a></td>
+</tr>
+<tr>
+<td>Mod syntax or validation</td>
+<td><a href="/dominions/library/books/book-xiv/#b14-part-i-reading-the-modding-language">Book XIV - syntax and lookup</a></td>
+<td><a href="/dominions/library/books/book-viii/#b8-part-xii-testing-validation-and-release-engineering">Book VIII - parser model, testing, and release engineering</a></td>
+</tr>
+<tr>
+<td>DE/Divinitus exact source fact</td>
+<td><a href="/dominions/library/books/book-ix/#b9-foundation-book-ix-dominions-enhanced-and-divinitus">Book IX - technical encyclopaedia</a></td>
+<td><a href="/dominions/library/books/book-ix/#b9-6-exact-source-inventory">Book IX - source inventory</a></td>
+</tr>
+<tr>
+<td>Collision or load order</td>
+<td><a href="/dominions/library/books/book-ix/#b9-19-combined-load-order-and-collision-matrix">Book IX - collision matrix</a></td>
+<td><a href="/dominions/library/books/book-viii/#b8-part-xi-compatibility-engineering">Book VIII - compatibility engineering</a></td>
+</tr>
+</tbody></table>
+<h2 id="guide-path-e-diagnosing-a-failed-turn">Path E: Diagnosing a failed turn<a class="heading-link" href="#guide-path-e-diagnosing-a-failed-turn" aria-label="Link to Path E: Diagnosing a failed turn">#</a></h2><p>When a turn fails, trace the causes in order instead of starting with the most frustrating result.</p>
+<ol>
+<li><strong>Confirm the ruleset.</strong> Check patch, mods, load order, map, age, and game settings against <a href="/dominions/library/books/book-i/#b1-ruleset-labels">Book I&#39;s baseline rules</a>.</li>
+<li><strong>Find the resolution step.</strong> Use <a href="/dominions/library/books/book-i/#b1-the-complete-63-step-hosting-sequence">the hosting sequence</a> to identify when the expected action should have happened.</li>
+<li><strong>Check operation and legality.</strong> Use <a href="/dominions/library/books/book-x/#b10-part-ix-troubleshooting-by-symptom">Book X&#39;s troubleshooting route</a>, then confirm paths, gems, laboratory, movement route, commander status, recruitment capacity, target, and order.</li>
+<li><strong>Check the binding resource.</strong> Use <a href="/dominions/library/books/book-ii/#b2-the-binding-constraint">Book II&#39;s constraint model</a> for gold, resources, Recruitment Points, Commander Points, Holy Points, supplies, or infrastructure.</li>
+<li><strong>Check tactical delivery.</strong> Use <a href="/dominions/library/books/book-iv/#b4-melee-resolution-order">Book IV&#39;s resolution order</a>, <a href="/dominions/library/books/book-iv/#b4-part-v-orders-and-scripting">scripting</a>, fatigue, morale, and targeting chapters.</li>
+<li><strong>Check strategic conversion.</strong> Use <a href="/dominions/library/books/book-vi/#b6-part-viii-war-planning-timing-and-decision">Book VI&#39;s campaign decision framework</a> to decide whether the result was a local loss, a recoverable exchange, or a campaign failure.</li>
+<li><strong>Check evidence status.</strong> If the exact behaviour is listed in the research register, preserve the report as evidence. Do not force a confident explanation where the current record does not support one.</li>
+</ol>
+<h2 id="guide-path-f-modding-source-inspection-and-website-work">Path F: Modding, source inspection, and website work<a class="heading-link" href="#guide-path-f-modding-source-inspection-and-website-work" aria-label="Link to Path F: Modding, source inspection, and website work">#</a></h2><ol>
+<li>Read <a href="/dominions/library/books/book-viii/#b8-part-i-the-object-and-parser-model">the object-and-parser model</a>.</li>
+<li>Read <a href="/dominions/library/books/book-viii/#b8-part-i-the-object-and-parser-model">identifier allocation and collision safety</a>.</li>
+<li>Read <a href="/dominions/library/books/book-xii/#b12-part-i-the-object-reference-method">Book XII&#39;s object identity, provenance, and hashing method</a>.</li>
+<li>Read <a href="/dominions/library/books/book-xiii/#b13-part-v-modding-and-command-chronology">Book XIII&#39;s command chronology</a> and <a href="/dominions/library/books/book-xiii/#b13-27-safe-treatment-of-post-manual-commands">safe treatment of post-manual commands</a>.</li>
+<li>Use <a href="/dominions/library/books/book-xiv/#b14-part-x-complete-search-locators">Book XIV&#39;s complete command locator</a>, <a href="/dominions/library/books/book-xiv/#b14-part-iii-the-evidence-ladder-and-version-drift">evidence ladder</a>, and <a href="/dominions/library/books/book-xiv/#b14-part-vi-patch-to-manual-reconciliation">patch reconciliation</a> before treating a token as complete syntax.</li>
+<li>Choose the relevant object chapter in Books VIII, IX, or XII.</li>
+<li>Apply <a href="/dominions/library/books/book-viii/#b8-part-xi-compatibility-engineering">compatibility engineering</a> before combining releases.</li>
+<li>Apply <a href="/dominions/library/books/book-viii/#b8-part-xii-testing-validation-and-release-engineering">testing, validation, and release engineering</a>.</li>
+<li>Use the website schema described later in this guide rather than scraping prose into unversioned pages.</li>
+</ol>
+<h1 id="guide-part-ii-navigation-by-problem">Part II: Navigation by Problem<a class="heading-link" href="#guide-part-ii-navigation-by-problem" aria-label="Link to Part II: Navigation by Problem">#</a></h1><h2 id="guide-game-operation-and-hosting">Game operation and hosting<a class="heading-link" href="#guide-game-operation-and-hosting" aria-label="Link to Game operation and hosting">#</a></h2><table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Start here</th>
+<th>Continue here</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>The correct map, mod, or save directory is unclear</td>
+<td><a href="/dominions/library/books/book-x/#b10-part-i-ruleset-installation-and-local-continuity">Ruleset, installation, and local continuity</a></td>
+<td><a href="/dominions/library/books/book-viii/#b8-locating-the-user-data-directory">Book VIII - user data and packaging</a></td>
+</tr>
+<tr>
+<td>A new game needs reproducible settings</td>
+<td><a href="/dominions/library/books/book-x/#b10-part-ii-creating-the-world">Creating the world</a></td>
+<td><a href="/dominions/library/books/book-x/#b10-15-host-setup-sheet">Host setup sheet</a></td>
+</tr>
+<tr>
+<td>A lobby game cannot be joined</td>
+<td><a href="/dominions/library/books/book-x/#b10-17-official-lobby-workflow">Official lobby workflow</a></td>
+<td><a href="/dominions/library/books/book-x/#b10-67-cannot-find-or-join-the-game">Cannot find or join the game</a></td>
+</tr>
+<tr>
+<td>The interface control or shortcut is unclear</td>
+<td><a href="/dominions/library/books/book-x/#b10-part-iv-the-main-interface">The main interface</a></td>
+<td><a href="/dominions/library/books/book-x/#b10-26-current-operational-additions-worth-learning">Current operational additions</a></td>
+</tr>
+<tr>
+<td>A turn may not have been received</td>
+<td><a href="/dominions/library/books/book-x/#b10-18-turn-submission-and-revision">Turn submission and revision</a></td>
+<td><a href="/dominions/library/books/book-x/#b10-78-a-turn-staled">A turn staled</a></td>
+</tr>
+<tr>
+<td>Troops, items, or gems are in the wrong place</td>
+<td><a href="/dominions/library/books/book-x/#b10-part-vi-recruitment-army-setup-and-inventories">Recruitment, army setup, and inventories</a></td>
+<td><a href="/dominions/library/books/book-x/#b10-part-ix-troubleshooting-by-symptom">Troubleshooting by symptom</a></td>
+</tr>
+<tr>
+<td>A special strategic order is unclear</td>
+<td><a href="/dominions/library/books/book-x/#b10-part-vii-strategic-order-reference">Strategic order reference</a></td>
+<td>Linked mechanics in Books I-VI</td>
+</tr>
+<tr>
+<td>A first full campaign needs structure</td>
+<td><a href="/dominions/library/books/book-x/#b10-part-viii-a-guided-first-campaign">A guided first campaign</a></td>
+<td><a href="#guide-path-a-the-first-complete-game">Path A</a></td>
+</tr>
+<tr>
+<td>The host needs a fair administrative standard</td>
+<td><a href="/dominions/library/books/book-x/#b10-part-x-hosting-as-a-competitive-institution">Hosting as a competitive institution</a></td>
+<td><a href="/dominions/library/books/book-x/#b10-85-dispute-handling">Dispute handling</a></td>
+</tr>
+</tbody></table>
+<h2 id="guide-units-abilities-experience-and-conditions">Units, abilities, experience, and conditions<a class="heading-link" href="#guide-units-abilities-experience-and-conditions" aria-label="Link to Units, abilities, experience, and conditions">#</a></h2><table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Start here</th>
+<th>Continue here</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A unit&#39;s type is unclear</td>
+<td><a href="/dominions/library/books/book-xi/#b11-part-ii-unit-classes-and-status-tags">Unit classes and status tags</a></td>
+<td><a href="/dominions/library/books/book-xi/#b11-8-classes-can-overlap">How classes overlap</a></td>
+</tr>
+<tr>
+<td>An army cannot be assigned to its commander</td>
+<td><a href="/dominions/library/books/book-xi/#b11-24-three-leadership-pools">Three leadership pools</a></td>
+<td><a href="/dominions/library/books/book-xi/#b11-70-army-compatibility-audit">Army compatibility audit</a></td>
+</tr>
+<tr>
+<td>A movement icon appears to permit an unusual route</td>
+<td><a href="/dominions/library/books/book-xi/#b11-part-iii-movement-terrain-water-and-position">Movement, terrain, water, and position</a></td>
+<td><a href="/dominions/library/books/book-vi/#b6-part-vi-movement-logistics-and-force-projection">Book VI - movement and logistics</a></td>
+</tr>
+<tr>
+<td>An unfamiliar ability needs a quick definition</td>
+<td><a href="/dominions/library/books/book-xi/#b11-part-xii-master-ability-and-condition-register">Master ability and condition register</a></td>
+<td><a href="/dominions/library/books/book-xi/#b11-part-i-how-to-read-an-ability">How to read an ability</a></td>
+</tr>
+<tr>
+<td>A counter is needed for a special defence or aura</td>
+<td><a href="/dominions/library/books/book-xi/#b11-71-counter-construction-matrix">Counter-construction matrix</a></td>
+<td><a href="/dominions/library/books/book-iv/#b4-part-xvi-counter-construction">Book IV - counter construction</a></td>
+</tr>
+<tr>
+<td>Veteran value or star thresholds are unclear</td>
+<td><a href="/dominions/library/books/book-xi/#b11-part-ix-experience-and-veteran-units">Experience and veteran units</a></td>
+<td><a href="/dominions/library/books/book-xi/#b11-54-experience-thresholds">Official experience thresholds</a></td>
+</tr>
+<tr>
+<td>A Hall-of-Fame formula is being treated as certain</td>
+<td><a href="/dominions/library/books/book-xi/#b11-57-what-is-officially-established">What is officially established</a></td>
+<td><a href="/dominions/library/books/book-xi/#b11-58-community-derived-heroic-families">Community-derived heroic families</a></td>
+</tr>
+<tr>
+<td>An affliction, disease, curse, or horror mark needs treatment</td>
+<td><a href="/dominions/library/books/book-xi/#b11-part-xi-conditions-and-lasting-state">Conditions and lasting state</a></td>
+<td><a href="/dominions/library/books/book-iv/#b4-part-xiii-afflictions-regeneration-and-lasting-loss">Book IV - lasting loss</a></td>
+</tr>
+</tbody></table>
+<h2 id="guide-base-game-object-lookup">Base-game object lookup<a class="heading-link" href="#guide-base-game-object-lookup" aria-label="Link to Base-game object lookup">#</a></h2><table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Start here</th>
+<th>Continue here</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A spell&#39;s school, path, cost, or delivery type is unclear</td>
+<td><a href="/dominions/library/books/book-xii/#b12-part-ii-spells">Spell records</a></td>
+<td><a href="/dominions/library/books/book-v/#b5-part-ii-paths-schools-and-access">Book V - paths, schools, and access</a></td>
+</tr>
+<tr>
+<td>A forge target, artifact, or barding record needs comparison</td>
+<td><a href="/dominions/library/books/book-xii/#b12-part-iii-magic-items-artifacts-and-barding">Item records</a></td>
+<td><a href="/dominions/library/books/book-v/#b5-part-xi-forging-items-and-artifacts">Book V - forging, items, and artifacts</a></td>
+</tr>
+<tr>
+<td>A ritual&#39;s summoned result is unclear</td>
+<td><a href="/dominions/library/books/book-xii/#b12-part-iv-summons">Summon relations</a></td>
+<td><a href="/dominions/library/books/book-xii/#b12-29-shape-graphs-after-summoning">Book XII - shape graphs</a></td>
+</tr>
+<tr>
+<td>A Pretender form needs to be filtered by age or nation</td>
+<td><a href="/dominions/library/books/book-xii/#b12-part-v-pretender-forms">Pretender-form records</a></td>
+<td><a href="/dominions/library/books/book-iii/#b3-expert-design-audit">Book III - design audit</a></td>
+</tr>
+<tr>
+<td>A Throne or magic site needs an exact identity</td>
+<td><a href="/dominions/library/books/book-xii/#b12-part-vi-thrones-and-magic-sites">Thrones and sites</a></td>
+<td><a href="/dominions/library/books/book-vi/#b6-part-xii-thrones-cataclysm-and-endgame-conversion">Book VI - endgame conversion</a></td>
+</tr>
+<tr>
+<td>A mercenary company or independent option needs checking</td>
+<td><a href="/dominions/library/books/book-xii/#b12-part-vii-mercenaries-and-independent-recruitment">Mercenaries and independent recruitment</a></td>
+<td><a href="/dominions/library/books/book-vi/#b6-part-ii-expansion">Book VI - expansion</a></td>
+</tr>
+<tr>
+<td>A nation&#39;s dominion changes the ordinary rules</td>
+<td><a href="/dominions/library/books/book-xii/#b12-part-viii-special-dominion-systems">Special dominion systems</a></td>
+<td><a href="/dominions/library/books/book-iii/#b3-part-iv-dominion">Book III - dominion</a></td>
+</tr>
+<tr>
+<td>A website record needs provenance or refresh instructions</td>
+<td><a href="/dominions/library/books/book-xii/#b12-part-ix-website-and-research-use">Publication contract</a></td>
+<td><a href="/dominions/library/books/book-xii/#b12-part-x-verification-and-maintenance">Verification and maintenance</a></td>
+</tr>
+</tbody></table>
+<h2 id="guide-version-history-and-stale-guide-repair">Version history and stale-guide repair<a class="heading-link" href="#guide-version-history-and-stale-guide-repair" aria-label="Link to Version history and stale-guide repair">#</a></h2><table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Start here</th>
+<th>Continue here</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>An old guide conflicts with current play</td>
+<td><a href="/dominions/library/books/book-xiii/#b13-part-vi-repairing-stale-guides-and-maintaining-the-library">Stale-guide repair workflow</a></td>
+<td>Current rule in the linked canonical book</td>
+</tr>
+<tr>
+<td>A change needs to be found by release</td>
+<td><a href="/dominions/library/books/book-xiii/#b13-part-ii-the-complete-official-release-spine">Complete release spine</a></td>
+<td><a href="/dominions/library/books/book-xiii/#b13-foundation-book-xiii-version-history-and-the-official-patch-ledger">Official patch ledger method</a></td>
+</tr>
+<tr>
+<td>A patch category appears uncertain</td>
+<td><a href="/dominions/library/books/book-xiii/#b13-14-classification-confidence-is-not-source-confidence">Classification confidence</a></td>
+<td>Open the linked official announcement</td>
+</tr>
+<tr>
+<td>A mechanic has changed several times</td>
+<td><a href="/dominions/library/books/book-xiii/#b13-part-iv-player-facing-changes-that-commonly-make-guides-stale">Player-facing change survey</a></td>
+<td>Search the JSON ledger by domain and named term</td>
+</tr>
+<tr>
+<td>A mod command may postdate the manual</td>
+<td><a href="/dominions/library/books/book-xiii/#b13-part-v-modding-and-command-chronology">Command chronology</a></td>
+<td><a href="/dominions/library/books/book-xiv/#b14-part-vi-patch-to-manual-reconciliation">Book XIV - patch reconciliation</a></td>
+</tr>
+<tr>
+<td>A patch token differs from the current manual</td>
+<td><a href="/dominions/library/books/book-xiv/#b14-part-vi-patch-to-manual-reconciliation">Controlled exceptions</a></td>
+<td><a href="/dominions/library/books/book-xiv/#b14-part-iii-the-evidence-ladder-and-version-drift">Book XIV - evidence ladder</a></td>
+</tr>
+<tr>
+<td>A command is listed but not fully explained</td>
+<td><a href="/dominions/library/books/book-xiv/#b14-part-iii-the-evidence-ladder-and-version-drift">Documentation-status model</a></td>
+<td><a href="/dominions/library/books/book-xiv/#b14-part-v-a-safe-lookup-workflow">Book XIV - safe lookup workflow</a></td>
+</tr>
+<tr>
+<td>A new release needs to be ingested</td>
+<td><a href="/dominions/library/books/book-xiii/#b13-33-updating-the-official-feed-safely">Safe feed update</a></td>
+<td><a href="/dominions/library/books/book-xiii/#b13-34-website-uses">Website uses</a></td>
+</tr>
+</tbody></table>
+<h2 id="guide-economy-and-state">Economy and state<a class="heading-link" href="#guide-economy-and-state" aria-label="Link to Economy and state">#</a></h2><table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Start here</th>
+<th>Continue here</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Income is lower than expected</td>
+<td><a href="/dominions/library/books/book-ii/#b2-income-formula">Income formula</a></td>
+<td><a href="/dominions/library/books/book-ii/#b2-tax-trace-and-the-administrative-map">Tax trace</a>, <a href="/dominions/library/books/book-ii/#b2-part-v-unrest-and-coercive-economy">unrest</a></td>
+</tr>
+<tr>
+<td>A unit cannot be recruited</td>
+<td><a href="/dominions/library/books/book-ii/#b2-the-binding-constraint">The binding constraint</a></td>
+<td><a href="/dominions/library/books/book-ii/#b2-recruitment-points">Recruitment Points</a>, <a href="/dominions/library/books/book-ii/#b2-resources-are-local-industrial-capacity">resources</a>, <a href="/dominions/library/books/book-ii/#b2-commander-points">Commander and Holy Points</a></td>
+</tr>
+<tr>
+<td>A fort appears inefficient</td>
+<td><a href="/dominions/library/books/book-ii/#b2-part-vii-infrastructure">Infrastructure as delayed conversion</a></td>
+<td><a href="/dominions/library/books/book-ii/#b2-fort-resource-draw">Fort resource draw</a>, <a href="/dominions/library/books/book-ii/#b2-fort-now-test">fort-now test</a></td>
+</tr>
+<tr>
+<td>An army is starving</td>
+<td><a href="/dominions/library/books/book-ii/#b2-part-vi-supplies-armies-and-logistics">Supplies and supply usage</a></td>
+<td><a href="/dominions/library/books/book-vi/#b6-part-vi-movement-logistics-and-force-projection">Strategic logistics</a></td>
+</tr>
+<tr>
+<td>A siege is taking too long</td>
+<td><a href="/dominions/library/books/book-ii/#b2-part-viii-siege-and-fort-control">Siege and fort control</a></td>
+<td><a href="/dominions/library/books/book-vi/#b6-the-siege-clock">Siege as a campaign clock</a>, <a href="/dominions/library/books/field-reference/#field-siege-calculation">field calculation</a></td>
+</tr>
+<tr>
+<td>Province Defence is being misused</td>
+<td><a href="/dominions/library/books/book-ii/#b2-part-ix-province-defence">Province Defence</a></td>
+<td><a href="/dominions/library/books/book-vi/#b6-province-defence-as-delay-and-information">PD as delay and information</a></td>
+</tr>
+<tr>
+<td>Gem income feels disconnected from strategy</td>
+<td><a href="/dominions/library/books/book-ii/#b2-part-x-sites-gems-and-magical-capital">Sites, gems, and magical capital</a></td>
+<td><a href="/dominions/library/books/book-v/#b5-part-iv-gems-slaves-and-magical-logistics">Gem logistics</a></td>
+</tr>
+</tbody></table>
+<h2 id="guide-pretenders-dominion-scales-and-blessings">Pretenders, dominion, scales, and blessings<a class="heading-link" href="#guide-pretenders-dominion-scales-and-blessings" aria-label="Link to Pretenders, dominion, scales, and blessings">#</a></h2><table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Start here</th>
+<th>Continue here</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A design has too many unrelated goals</td>
+<td><a href="/dominions/library/books/book-iii/#b3-the-design-in-one-model">The design in one model</a></td>
+<td><a href="/dominions/library/books/book-iii/#b3-expert-design-audit">Design audit</a></td>
+</tr>
+<tr>
+<td>Awake, dormant, or imprisoned is unclear</td>
+<td><a href="/dominions/library/books/book-iii/#b3-part-iii-awakening-time-and-the-opening">Awakening, time, and the opening</a></td>
+<td><a href="/dominions/library/books/book-iii/#b3-step-5-test-the-opening">Opening tests</a></td>
+</tr>
+<tr>
+<td>Dominion is collapsing</td>
+<td><a href="/dominions/library/books/book-iii/#b3-part-iv-dominion">Dominion and religious territory</a></td>
+<td><a href="/dominions/library/books/book-vi/#b6-part-xi-diplomacy-treaties-and-reputation">Campaign dominion</a></td>
+</tr>
+<tr>
+<td>Scale trade-offs are unclear</td>
+<td><a href="/dominions/library/books/book-iii/#b3-part-v-scales">Scales</a></td>
+<td><a href="/dominions/library/books/book-ii/#b2-scale-interaction">Economic consequences</a></td>
+</tr>
+<tr>
+<td>A bless looks powerful but unaffordable</td>
+<td><a href="/dominions/library/books/book-iii/#b3-part-vi-blessings">Blessings</a></td>
+<td><a href="/dominions/library/books/book-iii/#b3-mass-sacreds-versus-elite-sacreds">Sacred capacity audit</a></td>
+</tr>
+<tr>
+<td>The god has died</td>
+<td><a href="/dominions/library/books/book-iii/#b3-part-viii-death-of-a-god">Pretender death and recall</a></td>
+<td><a href="/dominions/library/books/book-vi/#b6-part-xiii-recovery-elastic-defence-and-defeat-management">Campaign recovery</a></td>
+</tr>
+<tr>
+<td>DE changes invalidate a vanilla build</td>
+<td><a href="/dominions/library/books/book-ix/#b9-7-the-six-global-de-rules">Book IX - global rules</a></td>
+<td><a href="/dominions/library/books/book-ix/#b9-8-complete-de-blessing-revision">Book IX - blessing revision</a></td>
+</tr>
+</tbody></table>
+<h2 id="guide-armies-and-battle">Armies and battle<a class="heading-link" href="#guide-armies-and-battle" aria-label="Link to Armies and battle">#</a></h2><table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Start here</th>
+<th>Continue here</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A strong unit underperformed</td>
+<td><a href="/dominions/library/books/book-iv/#b4-part-ii-reading-a-unit">Reading a unit</a></td>
+<td><a href="/dominions/library/books/book-iv/#b4-part-iv-formation-density-and-placement">Formation</a>, <a href="/dominions/library/books/book-iv/#b4-part-x-fatigue-recovery-and-collapse">fatigue</a>, <a href="/dominions/library/books/book-iv/#b4-part-xi-morale-fear-rout-and-retreat">morale</a></td>
+</tr>
+<tr>
+<td>Troops arrived in the wrong shape</td>
+<td><a href="/dominions/library/books/book-iv/#b4-part-iii-command-squads-and-army-construction">Army organisation</a></td>
+<td><a href="/dominions/library/books/book-iv/#b4-part-iv-formation-density-and-placement">Formations and contact</a></td>
+</tr>
+<tr>
+<td>The script broke</td>
+<td><a href="/dominions/library/books/book-iv/#b4-part-v-orders-and-scripting">Orders, scripts, and spellcasting AI</a></td>
+<td><a href="/dominions/library/books/book-v/#b5-part-v-the-anatomy-of-battle-magic">Battle-magic planning</a></td>
+</tr>
+<tr>
+<td>Melee arithmetic is disputed</td>
+<td><a href="/dominions/library/books/book-iv/#b4-part-vii-melee-resolution">Melee resolution</a></td>
+<td><a href="/dominions/library/books/book-iv/#b4-damage-and-protection">Protection and damage</a></td>
+</tr>
+<tr>
+<td>Missiles hit the wrong target</td>
+<td><a href="/dominions/library/books/book-iv/#b4-part-viii-missiles-and-ranged-delivery">Missile combat</a></td>
+<td><a href="/dominions/library/books/book-iv/#b4-part-iv-formation-density-and-placement">Formation and contact</a></td>
+</tr>
+<tr>
+<td>The army routed while still large</td>
+<td><a href="/dominions/library/books/book-iv/#b4-part-xi-morale-fear-rout-and-retreat">Morale, fear, rout, and retreat</a></td>
+<td><a href="/dominions/library/books/book-vi/#b6-part-xiii-recovery-elastic-defence-and-defeat-management">Army preservation</a></td>
+</tr>
+<tr>
+<td>A thug or supercombatant seems invincible</td>
+<td><a href="/dominions/library/books/book-vi/#b6-part-ix-thugs-supercombatants-assassins-and-remote-force">Thugs and remote force</a></td>
+<td><a href="/dominions/library/books/book-iv/#b4-part-xii-resistances-and-special-damage">Damage families and counters</a></td>
+</tr>
+<tr>
+<td>A battlefield spell produced a surprising result</td>
+<td><a href="/dominions/library/books/book-iv/#b4-part-xiv-battle-magic-within-the-army">Battlefield magic arithmetic</a></td>
+<td><a href="/dominions/library/books/book-v/#b5-part-v-the-anatomy-of-battle-magic">Magic package design</a></td>
+</tr>
+</tbody></table>
+<h2 id="guide-magic">Magic<a class="heading-link" href="#guide-magic" aria-label="Link to Magic">#</a></h2><table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Start here</th>
+<th>Continue here</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Research feels aimless</td>
+<td><a href="/dominions/library/books/book-v/#b5-part-iii-research-as-strategic-planning">Research as strategic planning</a></td>
+<td><a href="/dominions/library/books/book-vi/#b6-part-v-research-as-a-strategic-response-tree">Research as a campaign response tree</a></td>
+</tr>
+<tr>
+<td>A spell is known but cannot be delivered</td>
+<td><a href="/dominions/library/books/book-v/#b5-part-ii-paths-schools-and-access">Paths and access</a></td>
+<td><a href="/dominions/library/books/book-v/#b5-part-iv-gems-slaves-and-magical-logistics">Gems and logistics</a>, <a href="/dominions/library/books/book-v/#b5-booster-reference">boosters</a></td>
+</tr>
+<tr>
+<td>Gems disappear too quickly</td>
+<td><a href="/dominions/library/books/book-v/#b5-combat-gem-rules">Gem spending</a></td>
+<td><a href="/dominions/library/books/book-v/#b5-reserve-doctrine">Reserve policy</a></td>
+</tr>
+<tr>
+<td>A communion is killing its slaves</td>
+<td><a href="/dominions/library/books/book-v/#b5-part-vii-communions-sabbaths-choruses-and-grand-communions">Communions</a></td>
+<td><a href="/dominions/library/books/book-iv/#b4-part-x-fatigue-recovery-and-collapse">Fatigue</a></td>
+</tr>
+<tr>
+<td>Remote magic is being intercepted or blocked</td>
+<td><a href="/dominions/library/books/book-v/#b5-part-ix-domes-and-remote-magic-defence">Domes and remote attacks</a></td>
+<td><a href="/dominions/library/books/book-i/#b1-rituals-have-random-caster-order">Ritual timing</a></td>
+</tr>
+<tr>
+<td>A global is politically dangerous</td>
+<td><a href="/dominions/library/books/book-v/#b5-part-x-global-enchantments-and-dispel-wars">Global enchantments</a></td>
+<td><a href="/dominions/library/books/book-vi/#b6-part-viii-war-planning-timing-and-decision">Timing attacks and deterrence</a></td>
+</tr>
+<tr>
+<td>A booster chain does not reach the expected path</td>
+<td><a href="/dominions/library/books/book-v/#b5-part-xi-forging-items-and-artifacts">Forging, items, and artifacts</a></td>
+<td><a href="/dominions/library/books/book-v/#b5-booster-reference">Booster reference</a></td>
+</tr>
+<tr>
+<td>A level-nine plan is becoming a trap</td>
+<td><a href="/dominions/library/books/book-v/#b5-part-xiii-legendary-and-late-game-magic">Legendary magic</a></td>
+<td><a href="/dominions/library/books/book-vi/#b6-part-xii-thrones-cataclysm-and-endgame-conversion">Victory conversion</a></td>
+</tr>
+</tbody></table>
+<h2 id="guide-strategy-and-campaign">Strategy and campaign<a class="heading-link" href="#guide-strategy-and-campaign" aria-label="Link to Strategy and campaign">#</a></h2><table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Start here</th>
+<th>Continue here</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Expansion results vary wildly</td>
+<td><a href="/dominions/library/books/book-vi/#b6-expansion-testing">Expansion testing</a></td>
+<td><a href="/dominions/library/books/book-iv/#b4-part-xvi-counter-construction">Battle diagnosis</a></td>
+</tr>
+<tr>
+<td>The border is too wide</td>
+<td><a href="/dominions/library/books/book-vi/#b6-part-iv-map-structure-borders-and-infrastructure">Map structure and borders</a></td>
+<td><a href="/dominions/library/books/book-vi/#b6-creating-a-raiding-front">Raiding fronts</a></td>
+</tr>
+<tr>
+<td>Research is collapsing under invasion</td>
+<td><a href="/dominions/library/books/book-vi/#b6-research-under-invasion">Research under invasion</a></td>
+<td><a href="/dominions/library/books/book-vi/#b6-part-xiii-recovery-elastic-defence-and-defeat-management">Recovery</a></td>
+</tr>
+<tr>
+<td>Raids gain provinces but lose the war</td>
+<td><a href="/dominions/library/books/book-vi/#b6-part-vii-raiding-and-counter-raiding">Raiding and counter-raiding</a></td>
+<td><a href="/dominions/library/books/book-vi/#b6-part-xii-thrones-cataclysm-and-endgame-conversion">Campaign conversion</a></td>
+</tr>
+<tr>
+<td>A power spike is visible too early</td>
+<td><a href="/dominions/library/books/book-vi/#b6-part-viii-war-planning-timing-and-decision">Timing attacks and deterrence</a></td>
+<td><a href="/dominions/library/books/book-vi/#b6-information-denial-and-deception">Information denial</a></td>
+</tr>
+<tr>
+<td>A treaty is ambiguous</td>
+<td><a href="/dominions/library/books/book-vi/#b6-part-xi-diplomacy-treaties-and-reputation">Diplomacy and treaties</a></td>
+<td><a href="/dominions/library/books/book-vi/#b6-diplomacy-records">Diplomacy records</a></td>
+</tr>
+<tr>
+<td>A Throne opportunity may end the game</td>
+<td><a href="/dominions/library/books/book-vi/#b6-throne-arithmetic">Throne arithmetic</a></td>
+<td><a href="/dominions/library/books/book-vi/#b6-the-throne-rush-sequence">Throne-rush sequence</a></td>
+</tr>
+<tr>
+<td>The army won but the campaign stalled</td>
+<td><a href="/dominions/library/books/book-vi/#b6-part-xii-thrones-cataclysm-and-endgame-conversion">Victory conversion</a></td>
+<td><a href="/dominions/library/books/book-ii/#b2-dominions-as-a-game-of-conversion">Economic conversion</a></td>
+</tr>
+</tbody></table>
+<h2 id="guide-nations-mods-and-combined-rulesets">Nations, mods, and combined rulesets<a class="heading-link" href="#guide-nations-mods-and-combined-rulesets" aria-label="Link to Nations, mods, and combined rulesets">#</a></h2><table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Start here</th>
+<th>Continue here</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A nation guide lists strengths but gives no method</td>
+<td><a href="/dominions/library/books/book-vii/#b7-part-i-the-nation-dossier-method">Nation dossier method</a></td>
+<td><a href="/dominions/library/books/book-vii/#b7-part-i-the-nation-dossier-method">Evidence architecture</a></td>
+</tr>
+<tr>
+<td>Mage randoms are being described as guaranteed access</td>
+<td><a href="/dominions/library/books/book-vii/#b7-magic-access-as-a-probability-portfolio">Probability method</a></td>
+<td><a href="/dominions/library/books/book-vii/#b7-mystic-threshold-probabilities">Mystic worked example</a></td>
+</tr>
+<tr>
+<td>A mod object behaves unlike its visible card</td>
+<td><a href="/dominions/library/books/book-viii/#b8-part-i-the-object-and-parser-model">Object and parser model</a></td>
+<td><a href="/dominions/library/books/book-viii/#b8-part-iv-monsters-mounts-shapes-and-commanders">Copy and selection semantics</a></td>
+</tr>
+<tr>
+<td>Two mods claim the same ID</td>
+<td><a href="/dominions/library/books/book-viii/#b8-part-xi-compatibility-engineering">Compatibility engineering</a></td>
+<td><a href="/dominions/library/books/book-ix/#b9-19-combined-load-order-and-collision-matrix">DE/Divinitus collision matrix</a></td>
+</tr>
+<tr>
+<td>An event chain has become unreliable</td>
+<td><a href="/dominions/library/books/book-viii/#b8-part-vii-event-modding-as-a-state-machine">Event modding as a state machine</a></td>
+<td><a href="/dominions/library/books/book-ix/#b9-15-the-divinitus-event-engine">Divinitus event architecture</a></td>
+</tr>
+<tr>
+<td>The AI needs scenario guidance</td>
+<td><a href="/dominions/library/books/book-viii/#b8-part-x-ai-modding">AI scaffolding</a></td>
+<td><a href="/dominions/library/books/book-viii/#b8-ai-testing-is-behavioural-sampling">Behavioural sampling</a></td>
+</tr>
+<tr>
+<td>A map changes strategic balance</td>
+<td><a href="/dominions/library/books/book-viii/#b8-part-ix-maps-and-scenario-design">Maps and scenario design</a></td>
+<td><a href="/dominions/library/books/book-vi/#b6-part-iv-map-structure-borders-and-infrastructure">Map structure and borders</a></td>
+</tr>
+<tr>
+<td>A public guide may be using the wrong mod version</td>
+<td><a href="/dominions/library/books/book-ix/#b9-2-frozen-baseline-and-evidence">Frozen baseline</a></td>
+<td><a href="/dominions/library/books/book-ix/#b9-essay-iv-versioned-knowledge-is-the-real-encyclopaedia">Versioned knowledge essay</a></td>
+</tr>
+</tbody></table>
+<h1 id="guide-part-iii-alphabetical-subject-concordance">Part III: Alphabetical Subject Concordance<a class="heading-link" href="#guide-part-iii-alphabetical-subject-concordance" aria-label="Link to Part III: Alphabetical Subject Concordance">#</a></h1><p>The concordance lists the best first destination, not every occurrence. Related chapters are included where a subject has a separate mechanical, strategic, or modding treatment.</p>
+<h2 id="guide-a">A<a class="heading-link" href="#guide-a" aria-label="Link to A">#</a></h2><ul>
+<li><strong>Abilities:</strong> <a href="/dominions/library/books/book-xi/#b11-part-xii-master-ability-and-condition-register">Book XI - master ability and condition register</a>; combat resolution is in <a href="/dominions/library/books/book-iv/#b4-foundation-book-iv-armies-and-battle">Book IV</a>.</li>
+<li><strong>Accuracy and spell deviation:</strong> <a href="/dominions/library/books/book-iv/#b4-spell-accuracy">Book IV - battlefield spell accuracy</a>.</li>
+<li><strong>Administration:</strong> <a href="/dominions/library/books/book-ii/#b2-part-vii-infrastructure">Book II - infrastructure and administration</a>; see also <a href="/dominions/library/books/book-ii/#b2-fort-resource-draw">fort resource draw</a>.</li>
+<li><strong>Afflictions:</strong> <a href="/dominions/library/books/book-xi/#b11-part-xi-conditions-and-lasting-state">Book XI - conditions and lasting state</a>; exact battle resolution and healing are in <a href="/dominions/library/books/book-iv/#b4-part-xiii-afflictions-regeneration-and-lasting-loss">Book IV</a>.</li>
+<li><strong>Ages:</strong> <a href="/dominions/library/books/book-i/#b1-foundation-book-i-rulesets-language-and-the-anatomy-of-a-turn">Book I - eras and national identity</a>.</li>
+<li><strong>AI scaffolds:</strong> <a href="/dominions/library/books/book-viii/#b8-part-x-ai-modding">Book VIII - AI scaffolding without false claims</a>.</li>
+<li><strong>Alchemy:</strong> <a href="/dominions/library/books/book-v/#b5-alchemy">Book V - alchemy</a>.</li>
+<li><strong>Alteration discounts:</strong> <a href="/dominions/library/books/book-v/#b5-research-efficiency">Book V - research and site discounts</a>.</li>
+<li><strong>Army composition:</strong> <a href="/dominions/library/books/book-iv/#b4-part-iii-command-squads-and-army-construction">Book IV - army organisation</a>.</li>
+<li><strong>Army preservation:</strong> <a href="/dominions/library/books/book-vi/#b6-part-xiii-recovery-elastic-defence-and-defeat-management">Book VI - army preservation and force regeneration</a>.</li>
+<li><strong>Army rout:</strong> <a href="/dominions/library/books/book-iv/#b4-army-level-rout">Book IV - army rout</a>.</li>
+<li><strong>Armour:</strong> <a href="/dominions/library/books/book-iv/#b4-damage-and-protection">Book IV - armour and protection</a>; mod construction is in <a href="/dominions/library/books/book-viii/#b8-part-iii-weapons-armour-and-combat-effects">Book VIII</a>.</li>
+<li><strong>Artifacts:</strong> <a href="/dominions/library/books/book-xii/#b12-part-iii-magic-items-artifacts-and-barding">Book XII - item and artifact records</a>; strategy and access in <a href="/dominions/library/books/book-v/#b5-artifacts">Book V - artifacts</a> and <a href="/dominions/library/books/book-v/#b5-artifacts">artifact races</a>.</li>
+<li><strong>Assassination:</strong> <a href="/dominions/library/books/book-vi/#b6-part-ix-thugs-supercombatants-assassins-and-remote-force">Book VI - assassins and remote force</a>; timing is in <a href="/dominions/library/books/book-i/#b1-horrors-and-assassinations-can-remove-movement-leaders">Book I</a>.</li>
+<li><strong>Automatic IDs:</strong> <a href="/dominions/library/books/book-viii/#b8-automatic-allocation-is-convenient-but-fragile">Book VIII - automatic allocation</a> and <a href="/dominions/library/books/book-ix/#b9-19-4-automatic-allocation">Book IX - automatic Divinitus objects</a>.</li>
+<li><strong>Awakening:</strong> <a href="/dominions/library/books/book-iii/#b3-part-iii-awakening-time-and-the-opening">Book III - awakening, time, and the opening</a>.</li>
+</ul>
+<h2 id="guide-b">B<a class="heading-link" href="#guide-b" aria-label="Link to B">#</a></h2><ul>
+<li><strong>Battle groups:</strong> <a href="/dominions/library/books/book-iv/#b4-part-i-what-a-battle-decides">Book IV - battle groups</a>.</li>
+<li><strong>Battlefield enchantments:</strong> <a href="/dominions/library/books/book-iv/#b4-battle-enchantments">Book IV - battlefield enchantments</a>; strategic selection is in <a href="/dominions/library/books/book-v/#b5-spell-classes-by-battlefield-job">Book V</a>.</li>
+<li><strong>Battlefield magic:</strong> <a href="/dominions/library/books/book-iv/#b4-part-xiv-battle-magic-within-the-army">Book IV - battlefield magic</a>.</li>
+<li><strong>Battle scripting:</strong> <a href="/dominions/library/books/book-iv/#b4-part-v-orders-and-scripting">Book IV - orders, scripts, and spellcasting AI</a>.</li>
+<li><strong>Berserk:</strong> <a href="/dominions/library/books/book-xi/#b11-44-ambidextrous-clumsy-berserker-and-multiweapon-bodies">Book XI - Ambidextrous, Clumsy, and Berserker</a>; battle consequences are in <a href="/dominions/library/books/book-iv/#b4-part-xi-morale-fear-rout-and-retreat">Book IV</a>.</li>
+<li><strong>Bless design:</strong> <a href="/dominions/library/books/book-iii/#b3-part-vi-blessings">Book III - blessings</a>; DE changes are in <a href="/dominions/library/books/book-ix/#b9-8-complete-de-blessing-revision">Book IX</a>.</li>
+<li><strong>Blood Hunting:</strong> <a href="/dominions/library/books/book-ii/#b2-part-xi-blood-economy">Book II - Blood Hunting</a>; field checks are in <a href="/dominions/library/books/field-reference/#field-blood-hunting">the quick reference</a>.</li>
+<li><strong>Blood slaves:</strong> <a href="/dominions/library/books/book-v/#b5-blood-slaves">Book V - Blood slaves</a>.</li>
+<li><strong>Bodyguards:</strong> <a href="/dominions/library/books/book-xi/#b11-28-bodyguards-and-warning">Book XI - bodyguards and Warning</a>; assassination defence is in <a href="/dominions/library/books/book-vi/#b6-assassin-rules">Book VI</a>.</li>
+<li><strong>Boosters:</strong> <a href="/dominions/library/books/book-v/#b5-booster-reference">Book V - booster reference</a>.</li>
+<li><strong>Borders:</strong> <a href="/dominions/library/books/book-vi/#b6-border-shapes">Book VI - borders</a>.</li>
+<li><strong>Breakpoints:</strong> <a href="/dominions/library/books/book-v/#b5-research-portfolios">Book V - research breakpoints</a>.</li>
+</ul>
+<h2 id="guide-c">C<a class="heading-link" href="#guide-c" aria-label="Link to C">#</a></h2><ul>
+<li><strong>Call God:</strong> <a href="/dominions/library/books/book-iii/#b3-call-god">Book III - Call God</a>.</li>
+<li><strong>Capital-only recruitment:</strong> <a href="/dominions/library/books/book-i/#b1-capital-only">Book I - capital-only</a> and <a href="/dominions/library/books/book-ii/#b2-ownership-and-national-recruitment">Book II - recruitment restrictions</a>.</li>
+<li><strong>Cataclysm:</strong> <a href="/dominions/library/books/book-vi/#b6-cataclysm">Book VI - Cataclysm</a>.</li>
+<li><strong>Chassis:</strong> <a href="/dominions/library/books/book-iii/#b3-chassis-roles">Book III - chassis roles</a>.</li>
+<li><strong>Clouds:</strong> <a href="/dominions/library/books/book-iv/#b4-clouds-and-auras">Book IV - clouds and persistent area effects</a>.</li>
+<li><strong>Coalitions:</strong> <a href="/dominions/library/books/book-vi/#b6-coalition-politics">Book VI - coalition formation</a>.</li>
+<li><strong>Cold and heat:</strong> <a href="/dominions/library/books/book-iii/#b3-temperature">Book III - Heat and Cold</a>; battlefield resistance is in <a href="/dominions/library/books/book-iv/#b4-part-xii-resistances-and-special-damage">Book IV</a>.</li>
+<li><strong>Combat gems:</strong> <a href="/dominions/library/books/book-v/#b5-combat-gem-rules">Book V - battlefield gem spending</a>.</li>
+<li><strong>Commander Points:</strong> <a href="/dominions/library/books/book-ii/#b2-commander-points">Book II - Commander Points and Holy Points</a>.</li>
+<li><strong>Command context:</strong> <a href="/dominions/library/books/book-xiv/#b14-part-ii-context-is-part-of-syntax">Book XIV - context is part of syntax</a>; parser consequences remain in <a href="/dominions/library/books/book-viii/#b8-part-i-the-object-and-parser-model">Book VIII</a>.</li>
+<li><strong>Command lexicon:</strong> <a href="/dominions/library/books/book-xiv/#b14-foundation-book-xiv-the-command-and-terminology-lexicon">Book XIV - official command and terminology locator</a>.</li>
+<li><strong>Command patch history:</strong> <a href="/dominions/library/books/book-xiii/#b13-part-v-modding-and-command-chronology">Book XIII - command chronology</a>; present syntax reconciliation is in <a href="/dominions/library/books/book-xiv/#b14-part-vi-patch-to-manual-reconciliation">Book XIV</a>.</li>
+<li><strong>Communions:</strong> <a href="/dominions/library/books/book-v/#b5-part-vii-communions-sabbaths-choruses-and-grand-communions">Book V - communions, Sabbaths, Choruses, and Grand Communions</a>.</li>
+<li><strong>Conditions:</strong> <a href="/dominions/library/books/book-xi/#b11-part-xi-conditions-and-lasting-state">Book XI - conditions and lasting state</a>.</li>
+<li><strong>Compatibility patches:</strong> <a href="/dominions/library/books/book-viii/#b8-compatibility-patch-structure">Book VIII - compatibility patch structure</a>.</li>
+<li><strong>Construction:</strong> <a href="/dominions/library/books/book-ii/#b2-construction-timing">Book II - construction and timing</a>; magical Construction is covered in <a href="/dominions/library/books/book-v/#b5-construction-tiers">Book V</a>.</li>
+<li><strong>Contact timing:</strong> <a href="/dominions/library/books/book-iv/#b4-part-iv-formation-density-and-placement">Book IV - formations, placement, and contact</a>.</li>
+<li><strong>Corpses:</strong> <a href="/dominions/library/books/book-ii/#b2-corpses-as-provincial-stock">Book II - corpses as provincial stock</a>; order entry remains in <a href="/dominions/library/books/book-x/#b10-52-reanimate-manikin-contact-allies-and-capture-slaves">Book X</a>.</li>
+<li><strong>Counter-raiding:</strong> <a href="/dominions/library/books/book-vi/#b6-counter-raiding-as-a-system">Book VI - counter-raiding as a system</a>.</li>
+<li><strong>Critical hits:</strong> <a href="/dominions/library/books/book-iv/#b4-part-x-fatigue-recovery-and-collapse">Book IV - critical hits</a>.</li>
+</ul>
+<h2 id="guide-d">D<a class="heading-link" href="#guide-d" aria-label="Link to D">#</a></h2><ul>
+<li><strong>Damage:</strong> <a href="/dominions/library/books/book-iv/#b4-damage-and-protection">Book IV - protection, damage, and survival</a>.</li>
+<li><strong>Damage reversal:</strong> <a href="/dominions/library/books/book-iv/#b4-part-xii-resistances-and-special-damage">Book IV - damage reversal</a>.</li>
+<li><strong>Disease:</strong> <a href="/dominions/library/books/book-xi/#b11-62-disease-and-old-age">Book XI - disease and old age</a>; battle consequences are in <a href="/dominions/library/books/book-iv/#b4-part-xiii-afflictions-regeneration-and-lasting-loss">Book IV</a>.</li>
+<li><strong>Dispel:</strong> <a href="/dominions/library/books/book-v/#b5-dispel">Book V - Dispel</a>.</li>
+<li><strong>Divinitus:</strong> <a href="/dominions/library/books/book-ix/#b9-15-the-divinitus-event-engine">Book IX - Divinitus encyclopaedia</a>.</li>
+<li><strong>Divine institutions:</strong> <a href="/dominions/library/books/book-ix/#b9-16-1-capital-institutions">Book IX - capital institutions</a>.</li>
+<li><strong>Dominion:</strong> <a href="/dominions/library/books/book-iii/#b3-part-iv-dominion">Book III - dominion and religious territory</a>.</li>
+<li><strong>Dominion kill:</strong> <a href="/dominions/library/books/book-iii/#b3-dominion-elimination">Book III - dominion elimination</a>.</li>
+<li><strong>Dominions Enhanced:</strong> <a href="/dominions/library/books/book-ix/#b9-7-the-six-global-de-rules">Book IX - DE global rules</a>.</li>
+<li><strong>Domes:</strong> <a href="/dominions/library/books/book-v/#b5-part-ix-domes-and-remote-magic-defence">Book V - domes, remote attacks, and magic movement</a>.</li>
+<li><strong>DRN:</strong> <a href="/dominions/library/books/book-iv/#b4-the-open-ended-random-roll">Book IV - the open-ended random roll</a>.</li>
+</ul>
+<h2 id="guide-e">E<a class="heading-link" href="#guide-e" aria-label="Link to E">#</a></h2><ul>
+<li><strong>Economy:</strong> <a href="/dominions/library/books/book-ii/#b2-part-i-the-economic-model">Book II - the economic model</a>.</li>
+<li><strong>Empowerment:</strong> <a href="/dominions/library/books/book-v/#b5-empowerment-as-a-bridge">Book V - empowerment</a>.</li>
+<li><strong>Encumbrance:</strong> <a href="/dominions/library/books/book-iv/#b4-part-x-fatigue-recovery-and-collapse">Book IV - encumbrance</a>.</li>
+<li><strong>Endgame conversion:</strong> <a href="/dominions/library/books/book-vi/#b6-part-xii-thrones-cataclysm-and-endgame-conversion">Book VI - victory conversion</a>.</li>
+<li><strong>Event codes and variables:</strong> <a href="/dominions/library/books/book-viii/#b8-event-variables">Book VIII - codes and variables</a>; exact combined registries are in <a href="/dominions/library/books/book-ix/#b9-19-combined-load-order-and-collision-matrix">Book IX</a>.</li>
+<li><strong>Event chains:</strong> <a href="/dominions/library/books/book-viii/#b8-event-chains">Book VIII - event chains</a>.</li>
+<li><strong>Event modding:</strong> <a href="/dominions/library/books/book-viii/#b8-part-vii-event-modding-as-a-state-machine">Book VIII - event modding as a state machine</a>.</li>
+<li><strong>Evidence labels:</strong> <a href="/dominions/library/books/book-i/#b1-evidence-and-confidence">Book I - evidence standard</a>.</li>
+<li><strong>Experience:</strong> <a href="/dominions/library/books/book-xi/#b11-part-ix-experience-and-veteran-units">Book XI - experience and veteran units</a>.</li>
+<li><strong>Expansion:</strong> <a href="/dominions/library/books/book-vi/#b6-part-ii-expansion">Book VI - expansion and first contact</a>.</li>
+<li><strong>Expansion testing:</strong> <a href="/dominions/library/books/book-vi/#b6-expansion-testing">Book VI - expansion testing</a>.</li>
+</ul>
+<h2 id="guide-f">F<a class="heading-link" href="#guide-f" aria-label="Link to F">#</a></h2><ul>
+<li><strong>Fatigue:</strong> <a href="/dominions/library/books/book-iv/#b4-part-x-fatigue-recovery-and-collapse">Book IV - fatigue, recovery, and collapse</a>.</li>
+<li><strong>Fear:</strong> <a href="/dominions/library/books/book-xi/#b11-39-awe-sun-awe-fear-and-dread">Book XI - Awe, Sun Awe, Fear, and Dread</a>; morale resolution is in <a href="/dominions/library/books/book-iv/#b4-fear">Book IV</a>.</li>
+<li><strong>Fire, cold, shock, and poison:</strong> <a href="/dominions/library/books/book-iv/#b4-part-xii-resistances-and-special-damage">Book IV - resistances and special damage</a>.</li>
+<li><strong>First campaign:</strong> <a href="/dominions/library/books/book-x/#b10-part-viii-a-guided-first-campaign">Book X - guided first campaign</a>.</li>
+<li><strong>First contact:</strong> <a href="/dominions/library/books/book-vi/#b6-first-contact">Book VI - first contact</a>; first-game procedure is in <a href="/dominions/library/books/book-x/#b10-62-first-contact">Book X</a>.</li>
+<li><strong>First fort:</strong> <a href="/dominions/library/books/book-ii/#b2-fort-now-test">Book II - fort-now test</a>.</li>
+<li><strong>First war:</strong> <a href="/dominions/library/books/book-vi/#b6-part-viii-war-planning-timing-and-decision">Book VI - from expansion to the first war</a>.</li>
+<li><strong>Formation Fighter:</strong> <a href="/dominions/library/books/book-iv/#b4-formation-types">Book IV - Formation Fighter</a>.</li>
+<li><strong>Formations:</strong> <a href="/dominions/library/books/book-iv/#b4-part-iv-formation-density-and-placement">Book IV - formations, placement, and contact</a>.</li>
+<li><strong>Forts:</strong> <a href="/dominions/library/books/book-ii/#b2-part-vii-infrastructure">Book II - infrastructure and administration</a>.</li>
+<li><strong>Friendly fire:</strong> <a href="/dominions/library/books/book-iv/#b4-part-viii-missiles-and-ranged-delivery">Book IV - friendly fire</a>.</li>
+</ul>
+<h2 id="guide-g">G<a class="heading-link" href="#guide-g" aria-label="Link to G">#</a></h2><ul>
+<li><strong>Gates and planes:</strong> <a href="/dominions/library/books/book-viii/#b8-gates">Book VIII - gates and multiple planes</a>.</li>
+<li><strong>Gem income:</strong> <a href="/dominions/library/books/book-ii/#b2-part-x-sites-gems-and-magical-capital">Book II - sites, gems, and magical capital</a>.</li>
+<li><strong>Gem logistics:</strong> <a href="/dominions/library/books/book-v/#b5-part-iv-gems-slaves-and-magical-logistics">Book V - gems, slaves, and magical logistics</a>.</li>
+<li><strong>Gem reserves:</strong> <a href="/dominions/library/books/book-v/#b5-reserve-doctrine">Book V - gem reserves</a>.</li>
+<li><strong>Global enchantments:</strong> <a href="/dominions/library/books/book-v/#b5-part-x-global-enchantments-and-dispel-wars">Book V - global enchantments and Dispel wars</a>.</li>
+<li><strong>Global slots:</strong> <a href="/dominions/library/books/book-v/#b5-global-slots">Book V - global slots</a>.</li>
+<li><strong>Glamour:</strong> <a href="/dominions/library/books/book-v/#b5-glamour">Book V - Glamour</a>.</li>
+<li><strong>Grand Communions:</strong> <a href="/dominions/library/books/book-v/#b5-grand-communions-are-different">Book V - Grand Communions</a>.</li>
+<li><strong>Grand Hierophant:</strong> <a href="/dominions/library/books/book-vii/#b7-part-xi-divinitus-1-15-3-de-and-the-grand-hierophant">Book VII - Divinitus and the Grand Hierophant</a>.</li>
+</ul>
+<h2 id="guide-h">H<a class="heading-link" href="#guide-h" aria-label="Link to H">#</a></h2><ul>
+<li><strong>Harassment:</strong> <a href="/dominions/library/books/book-iv/#b4-harassment">Book IV - harassment</a>.</li>
+<li><strong>Healing:</strong> <a href="/dominions/library/books/book-iv/#b4-part-xiii-afflictions-regeneration-and-lasting-loss">Book IV - afflictions, regeneration, and healing</a>.</li>
+<li><strong>Heroic abilities:</strong> <a href="/dominions/library/books/book-xi/#b11-part-x-hall-of-fame-and-heroic-abilities">Book XI - Hall of Fame and heroic abilities</a>.</li>
+<li><strong>Horror marks:</strong> <a href="/dominions/library/books/book-xi/#b11-63-curse-and-horror-mark">Book XI - curse and Horror Mark</a>.</li>
+<li><strong>Hidden paths:</strong> <a href="/dominions/library/books/book-v/#b5-indirect-magic">Book V - hidden and indirect access</a>.</li>
+<li><strong>Holy Points:</strong> <a href="/dominions/library/books/book-ii/#b2-commander-points">Book II - Commander Points and Holy Points</a>.</li>
+<li><strong>Hosting:</strong> <a href="/dominions/library/books/book-i/#b1-the-complete-63-step-hosting-sequence">Book I - complete engine sequence</a>; multiplayer administration is in <a href="/dominions/library/books/book-x/#b10-part-iii-starting-joining-and-hosting">Book X</a>.</li>
+<li><strong>Hosting failures:</strong> <a href="/dominions/library/books/book-x/#b10-part-ix-troubleshooting-by-symptom">Book X - troubleshooting by symptom</a>; engine-order diagnosis is in <a href="/dominions/library/books/book-i/#b1-troubleshooting-why-did-the-order-fail">Book I</a>.</li>
+</ul>
+<h2 id="guide-i">I<a class="heading-link" href="#guide-i" aria-label="Link to I">#</a></h2><ul>
+<li><strong>Immortality:</strong> <a href="/dominions/library/books/book-xi/#b11-38-immortality-reformation-and-extra-lives">Book XI - immortality, reformation, and extra lives</a>; return timing is in <a href="/dominions/library/books/book-i/#b1-victory-before-immortal-return">Book I</a>.</li>
+<li><strong>Incarnate blessings:</strong> <a href="/dominions/library/books/book-iii/#b3-ordinary-innate-and-incarnate">Book III - Incarnate effects</a>.</li>
+<li><strong>Income:</strong> <a href="/dominions/library/books/book-ii/#b2-part-iii-gold-income-and-upkeep">Book II - gold, income, and upkeep</a>; field formula is in <a href="/dominions/library/books/field-reference/#field-base-and-final-income">the quick reference</a>.</li>
+<li><strong>Independents:</strong> <a href="/dominions/library/books/book-xii/#b12-part-vii-mercenaries-and-independent-recruitment">Book XII - current coverage boundary and evaluation</a>; strategy in <a href="/dominions/library/books/book-vi/#b6-part-ii-expansion">Book VI - independent province classes</a>.</li>
+<li><strong>Information denial:</strong> <a href="/dominions/library/books/book-vi/#b6-information-denial-and-deception">Book VI - information denial</a>.</li>
+<li><strong>Infrastructure:</strong> <a href="/dominions/library/books/book-ii/#b2-part-vii-infrastructure">Book II - infrastructure and administration</a>.</li>
+<li><strong>Initiative:</strong> <a href="/dominions/library/books/book-vi/#b6-tempo-and-initiative">Book VI - initiative</a>.</li>
+<li><strong>Interface:</strong> <a href="/dominions/library/books/book-x/#b10-part-iv-the-main-interface">Book X - main interface</a>.</li>
+<li><strong>Inspector data:</strong> <a href="/dominions/library/books/book-xii/#b12-part-i-the-object-reference-method">Book XII - object-reference method</a> and <a href="/dominions/library/books/book-xii/#b12-part-x-verification-and-maintenance">maintenance</a>; modded-data use in <a href="/dominions/library/books/book-ix/#b9-23-website-architecture">Book IX - website and inspector layer</a>.</li>
+<li><strong>Item forging:</strong> <a href="/dominions/library/books/book-xii/#b12-part-iii-magic-items-artifacts-and-barding">Book XII - item records</a>; access and strategy in <a href="/dominions/library/books/book-v/#b5-part-xi-forging-items-and-artifacts">Book V - forging, items, and artifacts</a>.</li>
+</ul>
+<h2 id="guide-l">L<a class="heading-link" href="#guide-l" aria-label="Link to L">#</a></h2><ul>
+<li><strong>Laboratories:</strong> <a href="/dominions/library/books/book-ii/#b2-laboratories">Book II - laboratories</a>; order timing is in <a href="/dominions/library/books/book-i/#b1-buildings-finish-after-the-month-s-active-systems">Book I</a>.</li>
+<li><strong>Leadership:</strong> <a href="/dominions/library/books/book-xi/#b11-24-three-leadership-pools">Book XI - three leadership pools</a>; army organisation is in <a href="/dominions/library/books/book-iv/#b4-part-iii-command-squads-and-army-construction">Book IV</a>.</li>
+<li><strong>Legendary magic:</strong> <a href="/dominions/library/books/book-v/#b5-part-xiii-legendary-and-late-game-magic">Book V - legendary and level-nine magic</a>.</li>
+<li><strong>Life drain:</strong> <a href="/dominions/library/books/book-iv/#b4-life-drain">Book IV - life drain</a>.</li>
+<li><strong>Load order:</strong> <a href="/dominions/library/books/book-viii/#b8-essay-i-load-order-is-part-of-game-design">Book VIII - load order</a> and <a href="/dominions/library/books/book-ix/#b9-19-combined-load-order-and-collision-matrix">Book IX - combined load order</a>.</li>
+<li><strong>Lobby:</strong> <a href="/dominions/library/books/book-x/#b10-17-official-lobby-workflow">Book X - official lobby workflow</a>.</li>
+<li><strong>Logistics:</strong> <a href="/dominions/library/books/book-vi/#b6-part-vi-movement-logistics-and-force-projection">Book VI - logistics, supply, and operational reach</a>.</li>
+</ul>
+<h2 id="guide-m">M<a class="heading-link" href="#guide-m" aria-label="Link to M">#</a></h2><ul>
+<li><strong>Mage-turns:</strong> <a href="/dominions/library/books/book-v/#b5-mage-turn-accounting">Book V - mage-turn economy</a>.</li>
+<li><strong>Magic access:</strong> <a href="/dominions/library/books/book-v/#b5-part-ii-paths-schools-and-access">Book V - paths, schools, and access</a>.</li>
+<li><strong>Magic Duel:</strong> <a href="/dominions/library/books/book-v/#b5-part-vi-the-nine-paths-in-practice">Book V - Magic Duel</a>.</li>
+<li><strong>Magic phase:</strong> <a href="/dominions/library/books/book-i/#b1-phase-ii-magic-and-special-threats">Book I - magic and special threats</a>.</li>
+<li><strong>Magic Being:</strong> <a href="/dominions/library/books/book-xi/#b11-11-magic-being">Book XI - Magic Being</a>.</li>
+<li><strong>Magic Resistance:</strong> <a href="/dominions/library/books/book-iv/#b4-magic-resistance">Book IV - Magic Resistance contests</a>.</li>
+<li><strong>Maps:</strong> <a href="/dominions/library/books/book-viii/#b8-part-ix-maps-and-scenario-design">Book VIII - maps and scenario design</a>; strategic interpretation is in <a href="/dominions/library/books/book-vi/#b6-part-iv-map-structure-borders-and-infrastructure">Book VI</a>.</li>
+<li><strong>Manual version drift:</strong> <a href="/dominions/library/books/book-xiv/#b14-part-iii-the-evidence-ladder-and-version-drift">Book XIV - evidence ladder and version drift</a>; release chronology is in <a href="/dominions/library/books/book-xiii/#b13-part-ii-the-complete-official-release-spine">Book XIII</a>.</li>
+<li><strong>Melee:</strong> <a href="/dominions/library/books/book-iv/#b4-part-vii-melee-resolution">Book IV - melee resolution</a>.</li>
+<li><strong>Mercenaries:</strong> <a href="/dominions/library/books/book-xii/#b12-part-vii-mercenaries-and-independent-recruitment">Book XII - mercenary company records</a>; economic timing in <a href="/dominions/library/books/book-ii/#b2-dominions-as-a-game-of-conversion">Book II - mercenaries</a>.</li>
+<li><strong>Mindless units:</strong> <a href="/dominions/library/books/book-xi/#b11-12-mindless">Book XI - Mindless</a>; battle-wide routing is in <a href="/dominions/library/books/book-iv/#b4-part-xi-morale-fear-rout-and-retreat">Book IV</a>.</li>
+<li><strong>Missile combat:</strong> <a href="/dominions/library/books/book-iv/#b4-part-viii-missiles-and-ranged-delivery">Book IV - missile combat</a>.</li>
+<li><strong>Message substitutions:</strong> <a href="/dominions/library/books/book-xiv/#b14-part-i-reading-the-modding-language">Book XIV - double-hash substitutions</a>.</li>
+<li><strong>Mod object IDs:</strong> <a href="/dominions/library/books/book-viii/#b8-part-i-the-object-and-parser-model">Book VIII - identifiers, allocation, and collision safety</a>.</li>
+<li><strong>Mod testing:</strong> <a href="/dominions/library/books/book-viii/#b8-part-xii-testing-validation-and-release-engineering">Book VIII - testing, validation, and release engineering</a>.</li>
+<li><strong>Morale:</strong> <a href="/dominions/library/books/book-iv/#b4-part-xi-morale-fear-rout-and-retreat">Book IV - morale, fear, rout, and retreat</a>.</li>
+<li><strong>Mounted units:</strong> <a href="/dominions/library/books/book-iv/#b4-part-ix-mounts-trampling-and-size">Book IV - mounted units</a>.</li>
+<li><strong>Movement:</strong> <a href="/dominions/library/books/book-vi/#b6-friendly-hostile-and-intercepting-movement">Book VI - movement and interception</a>; order procedure is in <a href="/dominions/library/books/book-x/#b10-42-ordinary-movement">Book X</a>, and hosting timing is in <a href="/dominions/library/books/book-i/#b1-phase-iii-movement-and-conquest">Book I</a>.</li>
+<li><strong>Mystics:</strong> <a href="/dominions/library/books/book-vii/#b7-mystic-random-structure">Book VII - Mystic random structure</a>.</li>
+</ul>
+<h2 id="guide-n">N<a class="heading-link" href="#guide-n" aria-label="Link to N">#</a></h2><ul>
+<li><strong>NAPs:</strong> <a href="/dominions/library/books/book-vi/#b6-formal-and-social-naps">Book VI - NAP doctrine</a>.</li>
+<li><strong>Nation dossiers:</strong> <a href="/dominions/library/books/book-vii/#b7-part-i-the-nation-dossier-method">Book VII - nation dossier method</a>.</li>
+<li><strong>National spells:</strong> <a href="/dominions/library/books/book-xii/#b12-14-national-and-realm-restrictions">Book XII - spell restrictions</a>; strategic access in <a href="/dominions/library/books/book-v/#b5-national-access-is-a-distribution">Book V - national and restricted magic</a>.</li>
+<li><strong>Nexus:</strong> <a href="/dominions/library/books/book-v/#b5-part-x-global-enchantments-and-dispel-wars">Book V - global enchantments</a>.</li>
+</ul>
+<h2 id="guide-o">O<a class="heading-link" href="#guide-o" aria-label="Link to O">#</a></h2><ul>
+<li><strong>Object copying:</strong> <a href="/dominions/library/books/book-viii/#b8-copy-first-and-clear-first-are-different-designs">Book VIII - selection, copying, and inheritance</a>.</li>
+<li><strong>Object limits:</strong> <a href="/dominions/library/books/book-viii/#b8-part-i-the-object-and-parser-model">Book VIII - identifier limits</a>.</li>
+<li><strong>Obstacles:</strong> <a href="/dominions/library/books/book-iv/#b4-obstacles-and-battlefield-terrain">Book IV - obstacles</a>.</li>
+<li><strong>Orders:</strong> <a href="/dominions/library/books/book-iv/#b4-part-v-orders-and-scripting">Book IV - orders, scripts, and spellcasting AI</a>.</li>
+<li><strong>Order of operations:</strong> <a href="/dominions/library/books/book-i/#b1-the-complete-63-step-hosting-sequence">Book I - hosting sequence</a> and <a href="/dominions/library/books/book-iv/#b4-melee-resolution-order">Book IV - melee resolution order</a>.</li>
+<li><strong>Overcasting globals:</strong> <a href="/dominions/library/books/book-v/#b5-overcasting">Book V - overcasting</a>.</li>
+</ul>
+<h2 id="guide-p">P<a class="heading-link" href="#guide-p" aria-label="Link to P">#</a></h2><ul>
+<li><strong>Patch history:</strong> <a href="/dominions/library/books/book-xiii/#b13-foundation-book-xiii-version-history-and-the-official-patch-ledger">Book XIII - official release spine and patch ledger</a>; current command reconciliation is in <a href="/dominions/library/books/book-xiv/#b14-part-vi-patch-to-manual-reconciliation">Book XIV</a>, while current rules remain in their linked foundation books.</li>
+<li><strong>Paralysis:</strong> <a href="/dominions/library/books/book-iv/#b4-paralysis">Book IV - paralysis</a>.</li>
+<li><strong>Patrol:</strong> <a href="/dominions/library/books/book-ii/#b2-patrolling">Book II - patrolling</a>; detection doctrine is in <a href="/dominions/library/books/book-vi/#b6-patrol-and-concealment">Book VI</a>.</li>
+<li><strong>Penetration:</strong> <a href="/dominions/library/books/book-iv/#b4-magic-resistance">Book IV - penetration</a>.</li>
+<li><strong>Pillage:</strong> <a href="/dominions/library/books/book-ii/#b2-pillaging-and-raiding">Book II - pillaging and raiding</a>; campaign use is in <a href="/dominions/library/books/book-vi/#b6-part-vii-raiding-and-counter-raiding">Book VI</a>.</li>
+<li><strong>Planes:</strong> <a href="/dominions/library/books/book-viii/#b8-gates">Book VIII - gates and multiple planes</a>.</li>
+<li><strong>Poison:</strong> <a href="/dominions/library/books/book-iv/#b4-poison">Book IV - poison</a>.</li>
+<li><strong>Population:</strong> <a href="/dominions/library/books/book-ii/#b2-part-v-unrest-and-coercive-economy">Book II - population, unrest, pillage, patrol, and Blood Hunting</a>.</li>
+<li><strong>Power spikes:</strong> <a href="/dominions/library/books/book-vi/#b6-part-viii-war-planning-timing-and-decision">Book VI - timing attacks, power spikes, and deterrence</a>.</li>
+<li><strong>Precision:</strong> <a href="/dominions/library/books/book-iv/#b4-deviation">Book IV - missile deviation</a> and <a href="/dominions/library/books/book-iv/#b4-spell-accuracy">spell accuracy</a>.</li>
+<li><strong>Preaching:</strong> <a href="/dominions/library/books/book-iii/#b3-preaching">Book III - preaching</a>; timing is in <a href="/dominions/library/books/book-i/#b1-preaching-is-not-ordinary-dominion-spread">Book I</a>.</li>
+<li><strong>Pretender design:</strong> <a href="/dominions/library/books/book-iii/#b3-part-i-pretender-design-as-a-national-system">Book III - Pretender design as a national system</a>; exact forms and availability in <a href="/dominions/library/books/book-xii/#b12-part-v-pretender-forms">Book XII</a>.</li>
+<li><strong>Province Defence:</strong> <a href="/dominions/library/books/book-ii/#b2-part-ix-province-defence">Book II - Province Defence</a>; operational doctrine is in <a href="/dominions/library/books/book-vi/#b6-province-defence-as-delay-and-information">Book VI</a>.</li>
+<li><strong>Protection:</strong> <a href="/dominions/library/books/book-iv/#b4-damage-and-protection">Book IV - protection, damage, and survival</a>.</li>
+</ul>
+<h2 id="guide-r">R<a class="heading-link" href="#guide-r" aria-label="Link to R">#</a></h2><ul>
+<li><strong>Raid orders:</strong> <a href="/dominions/library/books/book-vi/#b6-what-a-raid-is">Book VI - raid mechanics</a>.</li>
+<li><strong>Raiding:</strong> <a href="/dominions/library/books/book-vi/#b6-part-vii-raiding-and-counter-raiding">Book VI - raiding and counter-raiding</a>.</li>
+<li><strong>Random paths:</strong> <a href="/dominions/library/books/book-vii/#b7-magic-access-as-a-probability-portfolio">Book VII - path probability and thresholds</a>.</li>
+<li><strong>Recruitment Points:</strong> <a href="/dominions/library/books/book-ii/#b2-recruitment-points">Book II - Recruitment Points</a>; field bands are in <a href="/dominions/library/books/field-reference/#field-recruitment-points">the quick reference</a>.</li>
+<li><strong>Regeneration:</strong> <a href="/dominions/library/books/book-xi/#b11-35-regeneration-families">Book XI - regeneration families</a>; combat arithmetic is in <a href="/dominions/library/books/book-iv/#b4-part-xiii-afflictions-regeneration-and-lasting-loss">Book IV</a>.</li>
+<li><strong>Remote attacks:</strong> <a href="/dominions/library/books/book-v/#b5-part-ix-domes-and-remote-magic-defence">Book V - domes, remote attacks, and magic movement</a>.</li>
+<li><strong>Repel:</strong> <a href="/dominions/library/books/book-iv/#b4-repel">Book IV - repel</a>.</li>
+<li><strong>Research:</strong> <a href="/dominions/library/books/book-v/#b5-part-iii-research-as-strategic-planning">Book V - research as strategic planning</a>.</li>
+<li><strong>Research response trees:</strong> <a href="/dominions/library/books/book-vi/#b6-part-v-research-as-a-strategic-response-tree">Book VI - research as a strategic response tree</a>.</li>
+<li><strong>Resistances:</strong> <a href="/dominions/library/books/book-iv/#b4-part-xii-resistances-and-special-damage">Book IV - resistances and special damage</a>.</li>
+<li><strong>Retreat:</strong> <a href="/dominions/library/books/book-iv/#b4-retreat-destination">Book IV - retreat destination</a>.</li>
+<li><strong>Rituals:</strong> <a href="/dominions/library/books/book-v/#b5-part-viii-rituals-and-strategic-magic">Book V - rituals and strategic magic</a>.</li>
+<li><strong>Rout:</strong> <a href="/dominions/library/books/book-iv/#b4-part-xi-morale-fear-rout-and-retreat">Book IV - morale, fear, rout, and retreat</a>.</li>
+<li><strong>Rulesets:</strong> <a href="/dominions/library/books/book-i/#b1-ruleset-labels">Book I - rulesets must never be silently merged</a>.</li>
+</ul>
+<h2 id="guide-s">S<a class="heading-link" href="#guide-s" aria-label="Link to S">#</a></h2><ul>
+<li><strong>Sabbaths and Choruses:</strong> <a href="/dominions/library/books/book-v/#b5-part-vii-communions-sabbaths-choruses-and-grand-communions">Book V - communions, Sabbaths, Choruses, and Grand Communions</a>.</li>
+<li><strong>Sacreds:</strong> <a href="/dominions/library/books/book-iii/#b3-mass-sacreds-versus-elite-sacreds">Book III - sacred capacity</a>.</li>
+<li><strong>Scales:</strong> <a href="/dominions/library/books/book-iii/#b3-part-v-scales">Book III - scales</a>.</li>
+<li><strong>Scenario design:</strong> <a href="/dominions/library/books/book-viii/#b8-part-ix-maps-and-scenario-design">Book VIII - maps and scenario design</a>.</li>
+<li><strong>Schools:</strong> <a href="/dominions/library/books/book-v/#b5-part-ii-paths-schools-and-access">Book V - paths, schools, and access</a>.</li>
+<li><strong>Scouting:</strong> <a href="/dominions/library/books/book-vi/#b6-part-iii-scouting-intelligence-and-uncertainty">Book VI - scouting, intelligence, and uncertainty</a>.</li>
+<li><strong>Scrying:</strong> <a href="/dominions/library/books/book-v/#b5-part-viii-rituals-and-strategic-magic">Book V - scrying</a>.</li>
+<li><strong>Siege:</strong> <a href="/dominions/library/books/book-ii/#b2-part-viii-siege-and-fort-control">Book II - siege and fort control</a>; orders are in <a href="/dominions/library/books/book-x/#b10-46-siege-orders">Book X</a>, and field arithmetic is in <a href="/dominions/library/books/field-reference/#field-siege-calculation">the quick reference</a>.</li>
+<li><strong>Sites:</strong> <a href="/dominions/library/books/book-xii/#b12-part-vi-thrones-and-magic-sites">Book XII - Throne and site records</a>; economic meaning in <a href="/dominions/library/books/book-ii/#b2-part-x-sites-gems-and-magical-capital">Book II - sites, gems, and magical capital</a>.</li>
+<li><strong>Size:</strong> <a href="/dominions/library/books/book-iv/#b4-part-ix-mounts-trampling-and-size">Book IV - size, mounts, trampling, and movement</a>.</li>
+<li><strong>Special dominions:</strong> <a href="/dominions/library/books/book-xii/#b12-part-viii-special-dominion-systems">Book XII - official system register</a>; design and religious interpretation in <a href="/dominions/library/books/book-iii/#b3-part-ix-special-dominions">Book III - special dominions</a>.</li>
+<li><strong>Spell fatigue:</strong> <a href="/dominions/library/books/book-iv/#b4-spell-fatigue">Book IV - spell fatigue</a>.</li>
+<li><strong>Spellcasting AI:</strong> <a href="/dominions/library/books/book-iv/#b4-part-v-orders-and-scripting">Book IV - orders, scripts, and spellcasting AI</a>.</li>
+<li><strong>Squads:</strong> <a href="/dominions/library/books/book-iv/#b4-part-iii-command-squads-and-army-construction">Book IV - commanders, squads, leadership, and army organisation</a>.</li>
+<li><strong>Starvation:</strong> <a href="/dominions/library/books/book-ii/#b2-part-vi-supplies-armies-and-logistics">Book II - supplies, logistics, and starvation</a>.</li>
+<li><strong>Stealth:</strong> <a href="/dominions/library/books/book-vi/#b6-patrol-and-concealment">Book VI - patrol and stealth</a>.</li>
+<li><strong>Submission:</strong> <a href="/dominions/library/books/book-x/#b10-18-turn-submission-and-revision">Book X - turn submission and revision</a>.</li>
+<li><strong>Storming:</strong> <a href="/dominions/library/books/book-ii/#b2-part-viii-siege-and-fort-control">Book II - siege and fort control</a>; battle context is in <a href="/dominions/library/books/book-iv/#b4-part-xv-sieges-storming-and-battle-context">Book IV</a>.</li>
+<li><strong>Summons:</strong> <a href="/dominions/library/books/book-xii/#b12-part-iv-summons">Book XII - summon relations</a>; magical planning in <a href="/dominions/library/books/book-v/#b5-summoning">Book V - summoning</a>.</li>
+<li><strong>Supply:</strong> <a href="/dominions/library/books/book-ii/#b2-part-vi-supplies-armies-and-logistics">Book II - supplies, logistics, and starvation</a>.</li>
+</ul>
+<h2 id="guide-t">T<a class="heading-link" href="#guide-t" aria-label="Link to T">#</a></h2><ul>
+<li><strong>Targeting:</strong> <a href="/dominions/library/books/book-iv/#b4-squad-orders">Book IV - targeting orders</a> and <a href="/dominions/library/books/book-iv/#b4-part-xiv-battle-magic-within-the-army">spell targeting</a>.</li>
+<li><strong>Taskmasters:</strong> <a href="/dominions/library/books/book-xi/#b11-26-taskmaster-beast-master-and-special-followers">Book XI - Taskmaster and Beast Master</a>; squad morale is in <a href="/dominions/library/books/book-iv/#b4-standards-inspiration-and-taskmasters">Book IV</a>.</li>
+<li><strong>Template commands:</strong> <a href="/dominions/library/books/book-xiv/#b14-part-i-reading-the-modding-language">Book XIV - templates describe a grammar</a> and <a href="/dominions/library/books/book-xiv/#b14-part-x-complete-search-locators">template alias locator</a>.</li>
+<li><strong>Tempo:</strong> <a href="/dominions/library/books/book-vi/#b6-tempo-and-initiative">Book VI - tempo</a>.</li>
+<li><strong>Thrones:</strong> <a href="/dominions/library/books/book-xii/#b12-part-vi-thrones-and-magic-sites">Book XII - exact Throne records</a>; strategic conversion in <a href="/dominions/library/books/book-vi/#b6-part-xii-thrones-cataclysm-and-endgame-conversion">Book VI - Thrones, Cataclysm, and endgame conversion</a>.</li>
+<li><strong>Throne rush:</strong> <a href="/dominions/library/books/book-vi/#b6-the-throne-rush-sequence">Book VI - throne-rush sequence</a>.</li>
+<li><strong>Timing attacks:</strong> <a href="/dominions/library/books/book-vi/#b6-part-viii-war-planning-timing-and-decision">Book VI - timing attacks, power spikes, and deterrence</a>.</li>
+<li><strong>Trample:</strong> <a href="/dominions/library/books/book-xi/#b11-45-trample">Book XI - Trample ability</a>; exact resolution is in <a href="/dominions/library/books/book-iv/#b4-trampling">Book IV</a>.</li>
+<li><strong>Turn resolution:</strong> <a href="/dominions/library/books/book-i/#b1-the-complete-63-step-hosting-sequence">Book I - complete hosting sequence</a>.</li>
+<li><strong>Turn audit:</strong> <a href="/dominions/library/books/book-x/#b10-33-the-end-of-turn-audit">Book X - end-of-turn audit</a>.</li>
+</ul>
+<h2 id="guide-u">U<a class="heading-link" href="#guide-u" aria-label="Link to U">#</a></h2><ul>
+<li><strong>Unit classes:</strong> <a href="/dominions/library/books/book-xi/#b11-part-ii-unit-classes-and-status-tags">Book XI - unit classes and status tags</a>.</li>
+<li><strong>Underwater play:</strong> <a href="/dominions/library/books/book-ix/#b9-10-3-underwater-play">Book IX - underwater and cross-terrain systems</a>.</li>
+<li><strong>Unrest:</strong> <a href="/dominions/library/books/book-ii/#b2-part-v-unrest-and-coercive-economy">Book II - population, unrest, pillage, patrol, and Blood Hunting</a>.</li>
+<li><strong>Upkeep:</strong> <a href="/dominions/library/books/book-ii/#b2-upkeep">Book II - upkeep</a>; timing is in <a href="/dominions/library/books/book-i/#b1-income-precedes-upkeep">Book I</a>.</li>
+</ul>
+<h2 id="guide-v">V<a class="heading-link" href="#guide-v" aria-label="Link to V">#</a></h2><ul>
+<li><strong>Versioning:</strong> <a href="/dominions/library/books/book-xiii/#b13-foundation-book-xiii-version-history-and-the-official-patch-ledger">Book XIII - official patch ledger</a>; modded-ruleset consequences are in <a href="/dominions/library/books/book-ix/#b9-essay-iv-versioned-knowledge-is-the-real-encyclopaedia">Book IX - versioned knowledge</a>.</li>
+<li><strong>Victory conditions:</strong> <a href="/dominions/library/books/book-vi/#b6-part-xii-thrones-cataclysm-and-endgame-conversion">Book VI - Thrones and endgame conversion</a>.</li>
+</ul>
+<h2 id="guide-w">W<a class="heading-link" href="#guide-w" aria-label="Link to W">#</a></h2><ul>
+<li><strong>Wall integrity:</strong> <a href="/dominions/library/books/book-ii/#b2-part-viii-siege-and-fort-control">Book II - siege and fort control</a>.</li>
+<li><strong>Weapons:</strong> <a href="/dominions/library/books/book-iv/#b4-part-ii-reading-a-unit">Book IV - weapon profiles</a>; mod construction is in <a href="/dominions/library/books/book-viii/#b8-part-iii-weapons-armour-and-combat-effects">Book VIII</a>.</li>
+<li><strong>Wish:</strong> <a href="/dominions/library/books/book-v/#b5-wish">Book V - Wish</a>.</li>
+<li><strong>World effects:</strong> <a href="/dominions/library/books/book-i/#b1-phase-iv-world-effects-and-hidden-conflict">Book I - world effects and hidden conflict</a>.</li>
+</ul>
+<h2 id="guide-z">Z<a class="heading-link" href="#guide-z" aria-label="Link to Z">#</a></h2><ul>
+<li><strong>Zones of control:</strong> <a href="/dominions/library/books/book-iv/#b4-zones-of-control">Book IV - zones of control</a>.</li>
+</ul>
+<h1 id="guide-part-iv-expanded-glossary">Part IV: Expanded Glossary<a class="heading-link" href="#guide-part-iv-expanded-glossary" aria-label="Link to Part IV: Expanded Glossary">#</a></h1><p>This glossary is an orientation layer. Each primary link leads to the fuller rules treatment.</p>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Working definition</th>
+<th>Primary anchor</th>
+<th>Related anchors</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Administration</td>
+<td>A fort percentage used in income and adjacent resource draw calculations.</td>
+<td>b2-part-vi-infrastructure-and-administration</td>
+<td>b2-fort-resource-draw; field-base-and-final-income</td>
+</tr>
+<tr>
+<td>Affliction</td>
+<td>A persistent injury or impairment usually gained through damage, age, disease, or special effects.</td>
+<td>b11-61-afflictions</td>
+<td>b4-part-xiii-afflictions-regeneration-and-lasting-loss; b11-37-recuperation-and-healers</td>
+</tr>
+<tr>
+<td>Army</td>
+<td>A convenient name for commanders and assigned troops operating together; not always one indivisible rules object.</td>
+<td>b1-army</td>
+<td>b4-part-iii-commanders-squads-leadership-and-army-organisation</td>
+</tr>
+<tr>
+<td>Army rout</td>
+<td>The battle-wide morale collapse that can force remaining units to retreat even when individual squads have not already routed.</td>
+<td>b4-army-rout</td>
+<td>b4-part-xi-morale-fear-rout-and-retreat</td>
+</tr>
+<tr>
+<td>Artifact</td>
+<td>A unique magic item that only one copy can normally exist at a time.</td>
+<td>b12-22-artifacts-as-a-world-state-race</td>
+<td>b5-artifacts; b5-artifact-races</td>
+</tr>
+<tr>
+<td>Ascension Point</td>
+<td>A victory point supplied by a claimed Throne of Ascension.</td>
+<td>b6-throne-arithmetic</td>
+<td>b1-throne-of-ascension</td>
+</tr>
+<tr>
+<td>Assassin</td>
+<td>A commander or effect that initiates a restricted battle against a target commander.</td>
+<td>b6-part-ix-thugs-supercombatants-assassins-and-remote-force</td>
+<td>b1-assassinations-resolve-before-conventional-movement</td>
+</tr>
+<tr>
+<td>Automatic ID</td>
+<td>An object identity assigned by the loader when a mod creates an object without a fixed numeric ID.</td>
+<td>b8-automatic-allocation</td>
+<td>b9-19-4-automatic-id-collision-risk</td>
+</tr>
+<tr>
+<td>Awakening</td>
+<td>The process and timing by which a dormant or imprisoned Pretender becomes active.</td>
+<td>b3-part-iii-awakening-time-and-the-opening</td>
+<td>b3-awakening-points</td>
+</tr>
+<tr>
+<td>Battle group</td>
+<td>A force that enters and resolves one tactical battle together; several forces in a province may not always form one group.</td>
+<td>b4-battle-groups</td>
+<td>b1-retreats-belong-to-battle-groups</td>
+</tr>
+<tr>
+<td>Battle magic</td>
+<td>Spells cast during tactical battle under scripting, range, targeting, gem, fatigue, and AI constraints.</td>
+<td>b4-part-xiv-battlefield-magic</td>
+<td>b5-part-vi-battlefield-magic-by-function</td>
+</tr>
+<tr>
+<td>Bless</td>
+<td>The collection of effects granted to a blessed sacred unit or commander.</td>
+<td>b3-part-vi-blessings</td>
+<td>b9-8-de-blessing-revision</td>
+</tr>
+<tr>
+<td>Blood slave</td>
+<td>A Blood-magic resource with unit-like and logistical properties distinct from ordinary gems.</td>
+<td>b5-blood-slaves</td>
+<td>b2-blood-hunting</td>
+</tr>
+<tr>
+<td>Bodyguard</td>
+<td>A unit assigned to protect a commander in an assassination battle, subject to bodyguard limits and arrival rules.</td>
+<td>b11-28-bodyguards-and-warning</td>
+<td>b6-assassination-defence</td>
+</tr>
+<tr>
+<td>Booster</td>
+<td>An item, spell, shape, site, or effect that increases effective magic-path access.</td>
+<td>b5-booster-reference</td>
+<td>b5-hidden-and-indirect-access</td>
+</tr>
+<tr>
+<td>Breakpoint</td>
+<td>A research level or access threshold at which a usable strategic or battlefield package becomes available.</td>
+<td>b5-research-breakpoints</td>
+<td>b6-part-v-research-as-a-strategic-response-tree</td>
+</tr>
+<tr>
+<td>Call God</td>
+<td>The priestly process used to return a dead Pretender, governed by rules distinct from ordinary resurrection.</td>
+<td>b3-call-god</td>
+<td>b3-part-vii-pretender-death-recall-and-divine-continuity</td>
+</tr>
+<tr>
+<td>Capital-only</td>
+<td>A restriction tying recruitment or another feature to a nation&#39;s original capital.</td>
+<td>b1-capital-only</td>
+<td>b2-recruitment-restrictions</td>
+</tr>
+<tr>
+<td>Cataclysm</td>
+<td>An endgame mechanism that increases late-game pressure and horror activity under relevant game settings.</td>
+<td>b6-cataclysm</td>
+<td>b6-part-xii-thrones-cataclysm-and-endgame-conversion</td>
+</tr>
+<tr>
+<td>Chassis</td>
+<td>The Pretender&#39;s physical form, including cost, paths, slots, statistics, movement, and special abilities.</td>
+<td>b3-chassis-roles</td>
+<td>b3-part-ii-chassis-paths-and-design-capabilities; b12-pretenders</td>
+</tr>
+<tr>
+<td>Collision</td>
+<td>A conflict in which mods claim or alter the same identifier, code, variable, name reference, or dependent object incompatibly.</td>
+<td>b8-part-xi-compatibility-engineering</td>
+<td>b9-19-combined-load-order-and-collision-matrix</td>
+</tr>
+<tr>
+<td>Command</td>
+<td>A single-hash instruction whose practical meaning depends on its object language, arguments, selector state, and manual context.</td>
+<td>b14-syntax</td>
+<td>b14-context; b8-part-i-the-object-and-parser-model</td>
+</tr>
+<tr>
+<td>Command template</td>
+<td>An official grammar such as <code>(terrain)</code> or a numeric range that generates literal command spellings under stated restrictions.</td>
+<td>b14-syntax</td>
+<td>b14-complete-locator</td>
+</tr>
+<tr>
+<td>Commander</td>
+<td>A unit that can receive strategic orders and may lead troops, cast spells, preach, patrol, build, or perform other commander actions.</td>
+<td>b1-commander</td>
+<td>b4-part-iii-commanders-squads-leadership-and-army-organisation</td>
+</tr>
+<tr>
+<td>Commander Point</td>
+<td>A local recruitment capacity used by commanders, separate from gold, resources, and ordinary Recruitment Points.</td>
+<td>b2-commander-points-and-holy-points</td>
+<td>field-commander-points</td>
+</tr>
+<tr>
+<td>Condition</td>
+<td>A temporary or persistent unit state that changes action, statistics, targeting, recovery, loyalty, or future risk.</td>
+<td>b11-60-conditions-are-state-not-flavour-text</td>
+<td>b11-part-xi-conditions-and-lasting-state</td>
+</tr>
+<tr>
+<td>Documentation status</td>
+<td>The evidence class distinguishing a full official definition, reference-only entry, prose mention, derived template alias, or patch reconciliation.</td>
+<td>b14-evidence</td>
+<td>b1-evidence-standard; b13-classification-model</td>
+</tr>
+<tr>
+<td>Communion</td>
+<td>A battlefield magical network in which masters gain paths while slaves receive distributed fatigue and certain master-cast personal effects.</td>
+<td>b5-part-vii-communions-sabbaths-choruses-and-grand-communions</td>
+<td>b5-designing-a-safe-communion</td>
+</tr>
+<tr>
+<td>Counter</td>
+<td>A capability that attacks a necessary layer of an enemy plan rather than merely naming a theoretically favourable unit or spell.</td>
+<td>b4-part-xv-counter-construction-and-battle-analysis</td>
+<td>b6-counter-portfolios</td>
+</tr>
+<tr>
+<td>Critical hit</td>
+<td>A fatigue-influenced combat result that can reduce the protection applied against damage.</td>
+<td>b4-critical-hits</td>
+<td>b4-part-ix-protection-damage-and-survival</td>
+</tr>
+<tr>
+<td>Dominion</td>
+<td>A Pretender&#39;s religious territorial influence, carrying scales and interacting with gods, provinces, units, events, and elimination.</td>
+<td>b3-part-iv-dominion-and-religious-territory</td>
+<td>b6-dominion-as-campaign-pressure</td>
+</tr>
+<tr>
+<td>Dome</td>
+<td>A province-centred magical defence that may intercept or interfere with remote spells and attacks.</td>
+<td>b5-part-ix-domes-remote-attacks-and-magic-movement</td>
+<td>b5-layered-domes</td>
+</tr>
+<tr>
+<td>DRN</td>
+<td>The open-ended Dominions Random Number roll used in many opposed checks and damage calculations.</td>
+<td>b4-the-open-ended-random-roll</td>
+<td>b1-randomness-and-the-dominions-random-number</td>
+</tr>
+<tr>
+<td>Event</td>
+<td>A hosting-time occurrence selected from conditions, rarity, state, targets, codes, variables, and effects.</td>
+<td>b1-event</td>
+<td>b8-part-vii-event-modding-as-a-state-machine</td>
+</tr>
+<tr>
+<td>Event code</td>
+<td>An identifier used to coordinate, restrict, or connect event logic; collisions can corrupt chains across mods.</td>
+<td>b8-codes-and-variables</td>
+<td>b9-19-combined-load-order-and-collision-matrix</td>
+</tr>
+<tr>
+<td>Event variable</td>
+<td>Stored event state used by modded event systems to remember counters, flags, or progression.</td>
+<td>b8-codes-and-variables</td>
+<td>b8-event-chains</td>
+</tr>
+<tr>
+<td>Experience</td>
+<td>Unit-specific development gained over time and through battle, producing star bonuses at defined thresholds.</td>
+<td>b11-54-experience-thresholds</td>
+<td>b11-56-veteran-preservation</td>
+</tr>
+<tr>
+<td>Expansion party</td>
+<td>A commander and troop package intended to capture independent provinces at an acceptable cost and tempo.</td>
+<td>b6-expansion-party-roles</td>
+<td>b6-expansion-testing</td>
+</tr>
+<tr>
+<td>Fatigue</td>
+<td>An accumulating combat burden that reduces performance, increases vulnerability to critical hits, and can cause unconsciousness.</td>
+<td>b4-part-x-fatigue-recovery-and-collapse</td>
+<td>b4-fatigue-as-offence</td>
+</tr>
+<tr>
+<td>Fear</td>
+<td>An effect that pressures enemy morale and can accelerate rout without directly killing every target.</td>
+<td>b4-fear</td>
+<td>b4-part-xi-morale-fear-rout-and-retreat</td>
+</tr>
+<tr>
+<td>Fort</td>
+<td>A fortified location that changes recruitment, administration, resource draw, supply, ownership, siege, and retreat behaviour.</td>
+<td>b2-part-vi-infrastructure-and-administration</td>
+<td>b2-part-viii-siege-and-fort-control</td>
+</tr>
+<tr>
+<td>Formation</td>
+<td>A squad arrangement that changes density, frontage, contact time, exposure, and movement through the battlefield.</td>
+<td>b4-part-v-formations-placement-and-contact</td>
+<td>b4-formation-fighter</td>
+</tr>
+<tr>
+<td>Gem</td>
+<td>A magical resource associated with a non-Blood path and used for rituals, forging, empowerment, and some battle spells.</td>
+<td>b1-gem</td>
+<td>b5-part-iv-gems-slaves-and-magical-logistics</td>
+</tr>
+<tr>
+<td>Global enchantment</td>
+<td>A persistent ritual effect with broad world impact and political consequences.</td>
+<td>b5-part-x-global-enchantments-and-dispel-wars</td>
+<td>b1-global-enchantment</td>
+</tr>
+<tr>
+<td>Grand Communion</td>
+<td>A special strategic or large-scale communion system with rules distinct from an ordinary battlefield communion.</td>
+<td>b5-grand-communions-are-different</td>
+<td>b5-part-vii-communions-sabbaths-choruses-and-grand-communions</td>
+</tr>
+<tr>
+<td>Harassment</td>
+<td>A melee pressure mechanic in which repeated attackers can degrade a defender&#39;s effective defence.</td>
+<td>b4-harassment</td>
+<td>b4-part-vii-melee-resolution</td>
+</tr>
+<tr>
+<td>Holy Point</td>
+<td>A local recruitment capacity used by some sacred or holy commanders and units.</td>
+<td>b2-commander-points-and-holy-points</td>
+<td>field-holy-points</td>
+</tr>
+<tr>
+<td>Heroic ability</td>
+<td>A growing special trait received by an eligible non-Pretender commander while in the Hall of Fame.</td>
+<td>b11-57-what-is-officially-established</td>
+<td>b11-58-community-derived-heroic-families</td>
+</tr>
+<tr>
+<td>Horror Mark</td>
+<td>A persistent, stackable hidden mark that creates a monthly risk of a horror attack and makes the bearer a preferred target.</td>
+<td>b11-63-curse-and-horror-mark</td>
+<td>b11-42-damage-reversal-blood-vengeance-curses-and-horror-marks</td>
+</tr>
+<tr>
+<td>Host</td>
+<td>To resolve submitted turns; also the computer or service performing that resolution.</td>
+<td>b1-host</td>
+<td>b1-the-complete-63-step-hosting-sequence</td>
+</tr>
+<tr>
+<td>Incarnate</td>
+<td>A blessing condition generally requiring the Pretender to be active for the marked effect to function.</td>
+<td>b3-incarnate-effects</td>
+<td>b3-how-blessings-work</td>
+</tr>
+<tr>
+<td>Inspector</td>
+<td>A structured data viewer used to inspect game or mod objects; its version and load order determine what it can prove.</td>
+<td>b12-part-i-the-object-reference-method</td>
+<td>b9-24-website-and-inspector-schema; b12-maintenance</td>
+</tr>
+<tr>
+<td>Laboratory</td>
+<td>Infrastructure required for research and most rituals and forging; construction finishes too late for earlier same-turn uses.</td>
+<td>b2-laboratories</td>
+<td>b1-building-construction</td>
+</tr>
+<tr>
+<td>Leadership</td>
+<td>Commander capacity and type governing troop assignment, morale effects, and special troop compatibility.</td>
+<td>b11-24-three-leadership-pools</td>
+<td>b4-special-leadership</td>
+</tr>
+<tr>
+<td>Load order</td>
+<td>The order in which enabled mods are applied, determining which later definitions overwrite or extend earlier ones.</td>
+<td>b8-load-order</td>
+<td>b9-19-combined-load-order-and-collision-matrix</td>
+</tr>
+<tr>
+<td>Mage-turn</td>
+<td>One mage&#39;s opportunity to research, forge, cast, move, search, patrol, or perform another mutually exclusive order.</td>
+<td>b5-mage-turn-opportunity-cost</td>
+<td>b2-gem-income-and-mage-turn-economy</td>
+</tr>
+<tr>
+<td>Mercenary company</td>
+<td>A named, time-limited force bid for during hosting, represented by a commander, troops, price, availability, and continuity fields.</td>
+<td>b12-44-mercenary-company-records</td>
+<td>b2-mercenaries</td>
+</tr>
+<tr>
+<td>Magic phase</td>
+<td>Community shorthand for the early hosting steps containing rituals, magical movement, remote attacks, and associated battles.</td>
+<td>b1-magic-phase</td>
+<td>b1-phase-ii-magic-and-special-threats</td>
+</tr>
+<tr>
+<td>Magic Being</td>
+<td>A unit class requiring magic leadership unless an overlapping undead or demon tag makes undead leadership take precedence.</td>
+<td>b11-11-magic-being</td>
+<td>b11-8-classes-can-overlap</td>
+</tr>
+<tr>
+<td>Magic Resistance</td>
+<td>A defence statistic used in opposed checks against many spells and supernatural effects.</td>
+<td>b4-magic-resistance-contests</td>
+<td>b4-penetration</td>
+</tr>
+<tr>
+<td>Message substitution</td>
+<td>A case-sensitive double-hash token inserted inside supported event or enchantment text rather than issued as a mod command.</td>
+<td>b14-syntax</td>
+<td>b8-messages-can-carry-required-object-names</td>
+</tr>
+<tr>
+<td>Mindless</td>
+<td>A leadership and morale category with special command, routing, and survival behaviour.</td>
+<td>b11-12-mindless</td>
+<td>b4-mindless-troops</td>
+</tr>
+<tr>
+<td>Mod</td>
+<td>A loaded modification, usually defined through <code>.dm</code> commands, that can add or alter data within engine-defined limits.</td>
+<td>b1-mod</td>
+<td>b8-part-i-the-object-and-parser-model</td>
+</tr>
+<tr>
+<td>Movement phase</td>
+<td>Community shorthand for the hosting steps resolving friendly movement, other movement, movement battles, and storming.</td>
+<td>b1-movement-phase</td>
+<td>b1-movement-and-conquest</td>
+</tr>
+<tr>
+<td>NAP</td>
+<td>A non-aggression pact whose exact meaning depends on explicit player convention unless the game setting makes it binding.</td>
+<td>b6-non-aggression-pacts</td>
+<td>b6-binding-diplomacy</td>
+</tr>
+<tr>
+<td>Object ID</td>
+<td>A numeric or automatic identity used by the engine, data layer, or mod loader to distinguish and reference an object.</td>
+<td>b12-1-an-object-is-an-identity-not-merely-a-name</td>
+<td>b8-part-ii-identifiers-allocation-and-collision-safety; b8-object-lifecycle</td>
+</tr>
+<tr>
+<td>Patch record</td>
+<td>One source-linked entry representing an official update bullet together with derived classification, domains, commands, canonical destinations, and stable hashes.</td>
+<td>b13-11-one-official-bullet-becomes-one-patch-record</td>
+<td>b13-classification-model; b13-domain-map</td>
+</tr>
+<tr>
+<td>Path</td>
+<td>A level of magical skill in Fire, Air, Water, Earth, Astral, Death, Nature, Glamour, Blood, or Holy.</td>
+<td>b1-path</td>
+<td>b5-part-ii-paths-schools-and-access</td>
+</tr>
+<tr>
+<td>Penetration</td>
+<td>A bonus applied to the attacking side of relevant Magic Resistance contests.</td>
+<td>b4-penetration</td>
+<td>b4-magic-resistance-contests</td>
+</tr>
+<tr>
+<td>Pillage</td>
+<td>A strategic order that converts population and order into immediate damage, unrest, and sometimes resources or gold.</td>
+<td>b2-pillaging-and-raiding</td>
+<td>b6-pillage-as-a-campaign-tool</td>
+</tr>
+<tr>
+<td>Plane</td>
+<td>A distinct strategic map layer such as the surface, caves, or another connected world.</td>
+<td>b1-plane</td>
+<td>b8-gates-and-multiple-planes</td>
+</tr>
+<tr>
+<td>Population</td>
+<td>A province value influencing income, supplies, recruitment capacity, events, and the effects of pillaging or Blood Hunting.</td>
+<td>b2-population</td>
+<td>b2-part-vii-population-unrest-pillage-patrol-and-blood-hunting</td>
+</tr>
+<tr>
+<td>Pretender</td>
+<td>The designed god of a nation or team, providing dominion, scales, blessings, paths, and a physical chassis.</td>
+<td>b1-pretender</td>
+<td>b3-part-i-pretender-design-as-a-national-system; b12-pretenders</td>
+</tr>
+<tr>
+<td>Province Defence</td>
+<td>Locally purchased automatic defence that appears when a province is attacked and cannot move as a normal army.</td>
+<td>b2-part-ix-province-defence</td>
+<td>b6-province-defence-as-delay-and-information</td>
+</tr>
+<tr>
+<td>Recruitment Point</td>
+<td>A local capacity that limits ordinary troop recruitment independently of gold and resources.</td>
+<td>b2-recruitment-points</td>
+<td>field-recruitment-points</td>
+</tr>
+<tr>
+<td>Regeneration</td>
+<td>Exact-percentage recovery of hit points during battle, with body-class, affliction, and damage-tempo interactions.</td>
+<td>b11-35-regeneration-families</td>
+<td>b4-regeneration</td>
+</tr>
+<tr>
+<td>Remote attack</td>
+<td>A ritual or effect that attacks a distant province or commander without conventional movement.</td>
+<td>b5-part-ix-domes-remote-attacks-and-magic-movement</td>
+<td>b1-remote-attacks-and-magic-battles</td>
+</tr>
+<tr>
+<td>Repel</td>
+<td>A weapon-length interaction allowing a defender to threaten or deter an incoming shorter-reach melee attack.</td>
+<td>b4-repel</td>
+<td>b4-part-vii-melee-resolution</td>
+</tr>
+<tr>
+<td>Research point</td>
+<td>A contribution toward progress in a school; research resolves very early during hosting.</td>
+<td>b1-research-point</td>
+<td>b5-the-research-formula</td>
+</tr>
+<tr>
+<td>Ritual</td>
+<td>A strategic spell cast outside tactical battle.</td>
+<td>b1-ritual</td>
+<td>b5-part-viii-rituals-and-strategic-magic</td>
+</tr>
+<tr>
+<td>Rout</td>
+<td>A unit or squad state in which it attempts to leave battle because morale has failed.</td>
+<td>b1-rout</td>
+<td>b4-part-xi-morale-fear-rout-and-retreat</td>
+</tr>
+<tr>
+<td>Sacred</td>
+<td>A unit eligible to receive a blessing and often affected by special recruitment or upkeep rules.</td>
+<td>b1-sacred</td>
+<td>b3-sacred-capacity</td>
+</tr>
+<tr>
+<td>Scale</td>
+<td>One value in the dominion pairs governing Order, Production, temperature, Growth, Fortune, and Magic.</td>
+<td>b1-scale</td>
+<td>b3-part-v-scales</td>
+</tr>
+<tr>
+<td>School</td>
+<td>A research category that unlocks spells at successive levels.</td>
+<td>b5-research-schools</td>
+<td>b5-part-iii-research-as-strategic-planning</td>
+</tr>
+<tr>
+<td>Siege strength</td>
+<td>The attacking contribution used against a fort&#39;s walls during siege resolution.</td>
+<td>field-siege-calculation</td>
+<td>b2-part-viii-siege-and-fort-control</td>
+</tr>
+<tr>
+<td>Site</td>
+<td>A province feature that can provide gems, gold, recruitment, discounts, rituals, unrest, disease, or other effects.</td>
+<td>b12-part-vi-thrones-and-magic-sites</td>
+<td>b1-site; b2-part-x-sites-gems-and-magical-capital</td>
+</tr>
+<tr>
+<td>Size point</td>
+<td>A unit of battlefield-square occupancy used by unit size and formation density.</td>
+<td>b1-size-point</td>
+<td>b4-square-capacity</td>
+</tr>
+<tr>
+<td>Special dominion</td>
+<td>A national or Pretender rule that changes what dominion does beyond ordinary candle and scale effects.</td>
+<td>b12-part-viii-special-dominion-systems</td>
+<td>b3-special-dominions; b3-test-p11-special-dominions</td>
+</tr>
+<tr>
+<td>Spell fatigue</td>
+<td>Fatigue generated by spellcasting after spell cost, caster skill, gems, and other modifiers.</td>
+<td>b4-spell-fatigue</td>
+<td>b5-fatigue-and-overcasting</td>
+</tr>
+<tr>
+<td>Squad</td>
+<td>A tactical troop group assigned to a commander and given one formation and order set.</td>
+<td>b1-squad</td>
+<td>b4-squads</td>
+</tr>
+<tr>
+<td>Starvation</td>
+<td>The post-battle condition caused by insufficient supplies, producing disease, morale, and attritional consequences.</td>
+<td>b2-starvation</td>
+<td>b1-starvation-is-late</td>
+</tr>
+<tr>
+<td>Stealth</td>
+<td>The ability to move or remain hidden in hostile territory, opposed by patrol and detection effects.</td>
+<td>b6-patrol-and-stealth</td>
+<td>b1-sneaking-discovery-can-cause-a-late-battle</td>
+</tr>
+<tr>
+<td>Summon relation</td>
+<td>A versioned link from a summoning spell to the unit, unit group, or selection rule that produces its result.</td>
+<td>b12-24-a-summon-record-is-a-relationship</td>
+<td>b5-summoning</td>
+</tr>
+<tr>
+<td>Supply</td>
+<td>Provincial and army logistical capacity used to feed units and modified by terrain, forts, dominion, seasons, and abilities.</td>
+<td>b2-part-v-supplies-logistics-and-starvation</td>
+<td>b6-part-vi-logistics-supply-and-operational-reach</td>
+</tr>
+<tr>
+<td>Taskmaster</td>
+<td>A leadership ability that manages slave units and changes their morale handling.</td>
+<td>b11-26-taskmaster-beast-master-and-special-followers</td>
+<td>b4-taskmasters</td>
+</tr>
+<tr>
+<td>Tempo</td>
+<td>The rate at which a position turns present resources and opportunities into initiative before opponents can answer.</td>
+<td>b6-tempo</td>
+<td>b6-initiative</td>
+</tr>
+<tr>
+<td>Throne of Ascension</td>
+<td>A claimable special site providing Ascension Points and other effects toward the configured victory condition.</td>
+<td>b12-36-thrones-are-sites-with-victory-meaning</td>
+<td>b1-throne-of-ascension; b6-part-xii-thrones-cataclysm-and-endgame-conversion</td>
+</tr>
+<tr>
+<td>Thug</td>
+<td>A relatively cheap, equipped commander designed for a bounded independent combat or raiding role.</td>
+<td>b6-part-ix-thugs-supercombatants-assassins-and-remote-force</td>
+<td>b6-thug-roles</td>
+</tr>
+<tr>
+<td>Trample</td>
+<td>A size-based attack produced by moving through smaller units, with displacement, damage, and fatigue consequences.</td>
+<td>b11-45-trample</td>
+<td>b4-trampling</td>
+</tr>
+<tr>
+<td>Unit class</td>
+<td>One of several overlapping type tags that can determine leadership, targeting, supplies, healing, morale, immunity, or movement.</td>
+<td>b11-8-classes-can-overlap</td>
+<td>b11-part-ii-unit-classes-and-status-tags</td>
+</tr>
+<tr>
+<td>Unrest</td>
+<td>A province condition that reduces income and administration and interacts with recruitment, events, patrol, pillage, and Blood Hunting.</td>
+<td>b1-unrest</td>
+<td>b2-part-vii-population-unrest-pillage-patrol-and-blood-hunting</td>
+</tr>
+<tr>
+<td>Upkeep</td>
+<td>The recurring gold cost of maintaining units and commanders, paid after income during hosting.</td>
+<td>b1-upkeep</td>
+<td>b2-upkeep</td>
+</tr>
+<tr>
+<td>Version delta</td>
+<td>An official or verified change between two named ruleset versions, kept separate from the current rule it modifies.</td>
+<td>b13-3-patch-notes-are-deltas-not-replacement-manuals</td>
+<td>b13-release-timeline; b13-stale-guide-repair</td>
+</tr>
+<tr>
+<td>Wall integrity</td>
+<td>The remaining defensive strength of a fort during siege, reduced by besiegers and restored by defenders.</td>
+<td>b2-part-viii-siege-and-fort-control</td>
+<td>field-siege-calculation</td>
+</tr>
+<tr>
+<td>Wish</td>
+<td>A high-level Astral spell offering a defined but partly version-sensitive set of requested outcomes.</td>
+<td>b5-wish</td>
+<td>b5-test-18-wish</td>
+</tr>
+<tr>
+<td>Zone of control</td>
+<td>A battlefield movement constraint created by nearby hostile units.</td>
+<td>b4-zones-of-control</td>
+<td>b4-part-v-formations-placement-and-contact</td>
+</tr>
+</tbody></table>
+<h1 id="guide-part-v-website-publication-model">Part V: Website Publication Model<a class="heading-link" href="#guide-part-v-website-publication-model" aria-label="Link to Part V: Website Publication Model">#</a></h1><h2 id="guide-the-unit-of-publication">The unit of publication<a class="heading-link" href="#guide-the-unit-of-publication" aria-label="Link to The unit of publication">#</a></h2><p>The website should not treat an entire book as one page or every paragraph as an independent fact. The practical unit is a <strong>section</strong> containing ordered blocks. A section belongs to one versioned ruleset, has one stable destination, and can contain prose, tables, formulas, examples, checklists, claims, and source references.</p>
+<p>The hierarchy is:</p>
+<pre><code class="language-text">library
+  book or guide
+    part
+      section
+        content blocks
+          claims
+            evidence and sources
+</code></pre>
+<p>Each claim can be updated without silently changing the status of the surrounding advice. A strategic recommendation can sit beside an official formula while remaining a different kind of knowledge.</p>
+<h2 id="guide-required-metadata">Required metadata<a class="heading-link" href="#guide-required-metadata" aria-label="Link to Required metadata">#</a></h2><p>Every publishable section should carry:</p>
+<ul>
+<li>stable ID and URL slug;</li>
+<li>title, short title, and parent;</li>
+<li>book, part, and display order;</li>
+<li>ruleset and exact version scope;</li>
+<li>evidence status;</li>
+<li>source references and access dates;</li>
+<li>topic tags and audience level;</li>
+<li>related sections;</li>
+<li>unresolved-question IDs where applicable;</li>
+<li>last verified and last edited dates;</li>
+<li>replacement or deprecation links when a section moves.</li>
+</ul>
+<p>The machine-readable schema makes these fields explicit. Empty fields remain visible during validation rather than being silently discarded.</p>
+<h2 id="guide-structured-object-records">Structured object records<a class="heading-link" href="#guide-structured-object-records" aria-label="Link to Structured object records">#</a></h2><p>Book XII adds a second publication unit for facts that are too numerous for readable prose: the <strong>object record</strong>. The 6.35 register contains 4,196 versioned records across spells, items, summon relations, Pretender forms, Thrones, other sites, mercenary companies, independent-coverage status, and special dominion systems. Each record carries a stable identity, category, ruleset, evidence status, provenance, record hash, source fields, editorial tags, and a canonical Book XII section.</p>
+<p>The object register does not compete with the main explanations. Books II-VI still own economic, religious, magical, and strategic interpretation. Object pages expose exact fields and link to those chapters; the chapters use selected examples and link back to the records. Independent population types and unresolved selection-based summons remain visibly incomplete instead of being filled from obsolete data.</p>
+<h2 id="guide-structured-patch-records">Structured patch records<a class="heading-link" href="#guide-structured-patch-records" aria-label="Link to Structured patch records">#</a></h2><p>Book XIII adds a third publication unit: the <strong>patch record</strong>. The 6.36 ledger contains 1,090 records covering all 32 official public update announcements from 6.01 onward. Each record carries release and source identity, official section and bullet locator, source hash, derived change class and confidence, affected domains, commands and named terms, canonical destinations, and a record hash.</p>
+<p>The patch record establishes chronology and maintenance impact. It does not replace the official announcement or the current-rule chapter. Source identity is official; classification, materiality, domain routing, and summaries are editorial. The 250 review-recommended classifications remain searchable while their lower interpretive confidence is visible.</p>
+<h2 id="guide-structured-command-records">Structured command records<a class="heading-link" href="#guide-structured-command-records" aria-label="Link to Structured command records">#</a></h2><p>Book XIV adds a fourth publication unit: the <strong>command record</strong>. The 6.36 lexicon contains 1,609 distinct hash tokens found in the current official Modding, Event Modding, and Map Making manuals. Each record preserves spelling, token kind, documentation status, domains, manual versions and pages, syntax locators, patch relations, cautions, canonical destinations, and a record hash. The same data layer also supplies 97 controlled aliases for official terrain and numeric templates and reconciles all 226 patch-note tokens without silently rewriting historical wording. Five commands introduced by 6.36 are marked official patch-only because the announcement does not supply their full syntax.</p>
+<p>Command records are locators rather than copied manual prose. A defined record points to the full official explanation. Reference-only and mention-only records keep documentation gaps visible. Double-hash message substitutions remain a separate token kind, while patch family expressions and spelling discrepancies live in explicit reconciliation relations.</p>
+<h2 id="guide-content-block-types">Content block types<a class="heading-link" href="#guide-content-block-types" aria-label="Link to Content block types">#</a></h2><p>The schema supports:</p>
+<ol>
+<li>prose;</li>
+<li>callout;</li>
+<li>formula;</li>
+<li>table;</li>
+<li>ordered or unordered list;</li>
+<li>worked example;</li>
+<li>checklist;</li>
+<li>quotation within copyright limits;</li>
+<li>source note;</li>
+<li>unresolved research question.</li>
+</ol>
+<p>Formulas receive their own IDs, variables, units, rounding notes, evidence status, and worked examples. This prevents a formula from becoming an untraceable sentence copied across several web pages.</p>
+<h2 id="guide-version-and-ruleset-behaviour">Version and ruleset behaviour<a class="heading-link" href="#guide-version-and-ruleset-behaviour" aria-label="Link to Version and ruleset behaviour">#</a></h2><p>The website must never display an unqualified value when several rulesets are available. A page may compare unmodded Dominions 6, DE, Divinitus, and the frozen combined load order, but every value is attached to its own scope. Historical values remain accessible through version records rather than being overwritten without explanation.</p>
+<p>Recommended default labels are:</p>
+<ul>
+<li><code>dom6-6.36</code> for the live rules baseline;</li>
+<li><code>dom6-6.35-data</code> for records pinned to the Inspector snapshot;</li>
+<li><code>de-2.16</code>;</li>
+<li><code>divinitus-1.15.3-de</code>;</li>
+<li><code>de-2.16__divinitus-1.15.3-de</code> with DE loaded first;</li>
+<li><code>historical</code> with the original version stated;</li>
+<li><code>experimental</code> with project version and test harness.</li>
+</ul>
+<h2 id="guide-beginner-and-expert-presentation">Beginner and expert presentation<a class="heading-link" href="#guide-beginner-and-expert-presentation" aria-label="Link to Beginner and expert presentation">#</a></h2><p>The same source section can support two interfaces:</p>
+<ul>
+<li><strong>Guide view</strong> shows the explanation, a restrained number of examples, and the next useful section.</li>
+<li><strong>Reference view</strong> foregrounds formulas, exact tables, evidence, version scope, exceptions, and related records.</li>
+</ul>
+<p>These are views over the same content identity. Maintaining separate beginner and expert articles would recreate the duplication problem solved in Edition 11.</p>
+<h2 id="guide-search-and-filtering">Search and filtering<a class="heading-link" href="#guide-search-and-filtering" aria-label="Link to Search and filtering">#</a></h2><p>At minimum, the website index should support:</p>
+<ul>
+<li>title and full-text search;</li>
+<li>book, topic, ruleset, evidence, and audience filters;</li>
+<li>exact-object lookup by category and numeric ID;</li>
+<li>patch lookup by version range, class, domain, command, named term, and canonical destination;</li>
+<li>command lookup by exact spelling, alias, domain, manual, page, documentation status, patch version, context collision, and token kind;</li>
+<li>unresolved-only and recently-verified views;</li>
+<li>reverse links showing every section that depends on a claim;</li>
+<li>aliases so terms such as <code>PD</code>, <code>Province Defence</code>, and <code>province defense</code> reach the same destination.</li>
+</ul>
+<p>The generated content index already records every heading, parent, stable anchor, source file, website path, and source line number. It helps locate material, but it does not replace parsed claims.</p>
+<h1 id="guide-part-vi-prioritised-foundational-research-register">Part VI: Prioritised Foundational Research Register<a class="heading-link" href="#guide-part-vi-prioritised-foundational-research-register" aria-label="Link to Part VI: Prioritised Foundational Research Register">#</a></h1><h2 id="guide-scope-of-the-active-register">Scope of the active register<a class="heading-link" href="#guide-scope-of-the-active-register" aria-label="Link to Scope of the active register">#</a></h2><p>The active queue contains questions that can be advanced without asking the player to run bespoke tests. Acceptable routes are current official documentation, official patch records, supplied mod source, current structured data tied to a version, or a published reproduction with enough procedure and evidence to audit. Questions that still depend on undocumented engine behaviour remain visible in a blocked register but do not interrupt the next writing phase.</p>
+<p>Priority means:</p>
+<ul>
+<li><strong>P0 - integrity:</strong> a wrong answer can invalidate a ruleset, mod load, or large body of derived work;</li>
+<li><strong>P1 - frequent play:</strong> the rule affects common economic, combat, magic, or campaign decisions;</li>
+<li><strong>P2 - advanced play:</strong> the rule matters regularly to expert planning but less often to a new player;</li>
+<li><strong>P3 - specialist:</strong> the rule chiefly affects unusual objects, mod engineering, or edge-case publication.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Priority</th>
+<th>Domain</th>
+<th>Question</th>
+<th>Why it matters</th>
+<th>Reliable route</th>
+<th>Primary anchor</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>R-001</td>
+<td>P0</td>
+<td>Versioning</td>
+<td>Which official rules and commands changed after the revision-2 manual and the 6.34, 6.29, and 6.26 auxiliary manuals?</td>
+<td>Every later formula and mod claim depends on the correct current baseline.</td>
+<td>Book XIII supplies the complete official patch side; Book XIV reconciles every patch token against the current auxiliary manuals.</td>
+<td>b14-patch-reconciliation</td>
+<td>completed</td>
+</tr>
+<tr>
+<td>R-002</td>
+<td>P0</td>
+<td>Load order</td>
+<td>What load order did the Divinitus 1.15.3 DE author intend in the public release wording?</td>
+<td>A reversed order can change hundreds of shared objects.</td>
+<td>Project description and version 1.15.0 changelog, audited in the independent integrity report.</td>
+<td>b9-2-3-public-author-sources</td>
+<td>completed</td>
+</tr>
+<tr>
+<td>R-003</td>
+<td>P0</td>
+<td>Collision</td>
+<td>What object and dependency chain does the monster 8616 conflict affect under the frozen stack?</td>
+<td>The collision breaks the identity shared by DE&#39;s Ring, Amulet, and Blood Vial helpers and the Divinitus Crystal Priest.</td>
+<td>Exact source trace, upstream accepted repair, and pinned Inspector resolution in the independent integrity report.</td>
+<td>b9-20-4-independent-compatibility-publication</td>
+<td>completed</td>
+</tr>
+<tr>
+<td>R-004</td>
+<td>P0</td>
+<td>Automatic IDs</td>
+<td>What IDs do the 69 automatic Divinitus monsters and 26 automatic spells receive in the frozen load order?</td>
+<td>Stable website records and downstream references require versioned secondary identities.</td>
+<td>Exact-version structured Inspector register in the independent integrity report; engine confirmation remains separately labelled pending.</td>
+<td>b9-20-4-independent-compatibility-publication</td>
+<td>completed</td>
+</tr>
+<tr>
+<td>R-005</td>
+<td>P0</td>
+<td>Source integrity</td>
+<td>Which commands in the supplied mods fall outside complete current auxiliary-manual definitions?</td>
+<td>An unfamiliar command cannot be explained safely until documentation, parser recognition, annotation syntax, and likely errors are separated.</td>
+<td>Static command inventory against current official manuals, patch notes, and the pinned parser in the independent integrity report.</td>
+<td>b9-20-4-independent-compatibility-publication</td>
+<td>completed</td>
+</tr>
+<tr>
+<td>R-006</td>
+<td>P1</td>
+<td>Economy</td>
+<td>What are the current unmodded Growth and Death income percentages?</td>
+<td>Pretender and fort economics depend on the correct scale multiplier.</td>
+<td>Modding Manual 6.34 defines <code>#deathincome</code> default 2; no official announcement through 6.36 changes it.</td>
+<td>b2-growth-and-death-income</td>
+<td>completed</td>
+</tr>
+<tr>
+<td>R-007</td>
+<td>P1</td>
+<td>Economy</td>
+<td>What are the current unmodded Order and Turmoil resource percentages?</td>
+<td>Production planning and scale evaluation depend on the current value.</td>
+<td>Revision-2 main-manual 2% rule checked against the complete official patch ledger through 6.36.</td>
+<td>b2-order-and-turmoil-resources</td>
+<td>completed</td>
+</tr>
+<tr>
+<td>R-008</td>
+<td>P1</td>
+<td>Economy</td>
+<td>At which steps does the engine round income, resources, Recruitment Points, and fort draw?</td>
+<td>Close recruitment and fort calculations can change at integer boundaries.</td>
+<td>The canonical section now separates six rounding subsystems and their operational displays; complete closure still requires published 6.36 boundary reproductions or developer-confirmed formulas.</td>
+<td>b2-rounding-formula-display-and-treasury</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-009</td>
+<td>P1</td>
+<td>Recruitment</td>
+<td>What is the current Commander Point base and how do exceptional modifiers stack?</td>
+<td>Commander bottlenecks can determine fort and mage efficiency.</td>
+<td>Revision-2 fort bonuses, current 6.35 community base and accumulation reference, official <code>#slowrec</code> and <code>#rpcost</code> semantics, AI exclusions, and patch review through 6.36.</td>
+<td>b2-commander-points</td>
+<td>completed</td>
+</tr>
+<tr>
+<td>R-010</td>
+<td>P1</td>
+<td>Upkeep</td>
+<td>How are sacred slaves, mounted forms, and shapechanged units charged upkeep?</td>
+<td>Persistent roster costs affect long-war sustainability.</td>
+<td>The 6.33 observation and pinned 6.35 component fields resolve stacking and mounted decomposition; annual samples exclude a simple final floor, while shape classes and monthly aggregation remain open.</td>
+<td>b2-upkeep</td>
+<td>in-progress</td>
+</tr>
+<tr>
+<td>R-011</td>
+<td>P1</td>
+<td>Unrest</td>
+<td>Which current unrest thresholds reduce Recruitment Points and Commander Points?</td>
+<td>A province can appear affordable while being unable to recruit the planned roster.</td>
+<td>Official shutdown and current community reduction claims are preserved; the loss-floor reading now has explicit 1-, 2-, and 3-point candidate thresholds, still awaiting a versioned reproduction.</td>
+<td>b2-unrest-effects</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-012</td>
+<td>P1</td>
+<td>Supply</td>
+<td>What is the exact fort-supply distance arithmetic under current rules?</td>
+<td>Supply range determines operational reach and siege endurance.</td>
+<td>Range, maximum distance, and highest-fort selection are separated from the official <code>x6</code> versus <code>x4</code> multiplier conflict; a published 6.36 distance series remains required.</td>
+<td>b2-fort-supply-range</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-013</td>
+<td>P1</td>
+<td>Starvation</td>
+<td>Are commanders ever exempt from starvation, and which forms or abilities alter the result?</td>
+<td>Commander survival affects retreats, sieges, and remote expeditions.</td>
+<td>Need Not Eat, the 6.18 transformation correction, 6.35 object fields, and the 6.35 equipment-refresh fix resolve explicit immunity and display state; generic priority remains open.</td>
+<td>b2-starvation</td>
+<td>in-progress</td>
+</tr>
+<tr>
+<td>R-014</td>
+<td>P1</td>
+<td>Pretenders</td>
+<td>What is the current awakening-point distribution for dormant and imprisoned Pretenders?</td>
+<td>Opening timing determines whether a design solves expansion or only a later war.</td>
+<td>The June 2026 Dominions 6 page republishes Loggy&#39;s model, but source tracing reaches pre-Dominions 6 notes, no 6.x raw sample, and a one-turn range discrepancy. Current reproduction or developer confirmation is still required.</td>
+<td>b3-test-p1-awakening-distribution</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-015</td>
+<td>P1</td>
+<td>Dominion</td>
+<td>What are the current checks and order for ordinary dominion spread?</td>
+<td>Temple, priest, and candle investments depend on the actual spread model.</td>
+<td>Revision-2 official formulas and turn sequence, reconciled with the 6.13 random-preaching correction and later patch history.</td>
+<td>b3-sources-of-dominion-spread</td>
+<td>completed</td>
+</tr>
+<tr>
+<td>R-016</td>
+<td>P1</td>
+<td>Blessings</td>
+<td>Which blessing tags, values, and activation edge cases differ from the revision-2 manual?</td>
+<td>Small errors can invalidate a Pretender design or sacred package.</td>
+<td>6.35 structured bless data plus official rules and patches through 6.36 establish activation gates, automatic blessing, repeatability, overlap, weapon-trigger, item, and mount boundaries; adjacent transformation and cross-source stacking remain separate questions.</td>
+<td>b3-the-activation-state-machine</td>
+<td>completed</td>
+</tr>
+<tr>
+<td>R-017</td>
+<td>P1</td>
+<td>Pretender death</td>
+<td>What are the current Call God thresholds and contribution rules?</td>
+<td>Recovery planning after a god&#39;s death depends on time-to-return.</td>
+<td>Official Holy, Disciple-game, Elegist, Recall God, Trinity, and hosting rules are reconciled with published controlled research establishing a fixed 50-point base and per-priest effective-rating <code>-1/0/+1</code> variation; detailed routing and placement remain Current Community Reference.</td>
+<td>b3-r-017-decision</td>
+<td>completed</td>
+</tr>
+<tr>
+<td>R-018</td>
+<td>P1</td>
+<td>Victory</td>
+<td>How are same-turn Throne claim, province loss, and victory checks ordered in current play?</td>
+<td>The result can decide a game despite later movement or siege outcomes.</td>
+<td>Official steps 8 and 57, full and partial ownership rules, the current conquest rule, and a published same-turn report establish the claimant-death, unfortified-conquest, siege, and fort-storm branches. Exact simultaneous winning-total ties remain separate.</td>
+<td>b3-same-turn-claim-loss-and-victory</td>
+<td>completed</td>
+</tr>
+<tr>
+<td>R-019</td>
+<td>P1</td>
+<td>Combat</td>
+<td>What is the exact current survivor bonus in morale checks?</td>
+<td>Rout thresholds influence squad sizing, standards, and casualty tolerance.</td>
+<td>Current official correction or published statistical reproduction.</td>
+<td>b4-test-9-morale-survivor-bonus</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-020</td>
+<td>P1</td>
+<td>Combat</td>
+<td>How much fatigue do active units recover while conscious under ordinary conditions?</td>
+<td>Fatigue breakpoints shape armour, melee endurance, and spell-support value.</td>
+<td>Current official rule or frame-by-frame published reproduction.</td>
+<td>b4-test-12-ordinary-fatigue-recovery</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-021</td>
+<td>P1</td>
+<td>Combat</td>
+<td>What is the exact harassment accumulation and decay model?</td>
+<td>Defence collapse and swarm counters depend on more than the visible attack value.</td>
+<td>Current official statement or published instrumented reproduction.</td>
+<td>b4-test-2-harassment-decay</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-022</td>
+<td>P1</td>
+<td>Combat</td>
+<td>What are the complete current weapon cooldown and combat-speed constants?</td>
+<td>Attack rate changes damage delivery, repel exposure, and fatigue pressure.</td>
+<td>Current structured data and published timing reproduction.</td>
+<td>b4-test-3-cooldown-and-combat-speed</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-023</td>
+<td>P1</td>
+<td>Mounted combat</td>
+<td>What are the full current mounted carry, targeting, and movement calculations?</td>
+<td>Rider and mount statistics otherwise produce misleading army comparisons.</td>
+<td>Official manual corrections and current structured data.</td>
+<td>b4-test-7-mounted-targeting</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-024</td>
+<td>P1</td>
+<td>Magic</td>
+<td>What thresholds govern optional combat-gem use and refusal?</td>
+<td>A scripted spell package can fail because the caster conserves a gem.</td>
+<td>Official AI rule or published reproducible battle set.</td>
+<td>b5-test-3-combat-gem-spending</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-025</td>
+<td>P1</td>
+<td>Magic</td>
+<td>Where does rounding occur in spell fatigue, penetration, communion sharing, forging, and ritual contests?</td>
+<td>Boundary values can change caster safety and access ladders.</td>
+<td>Published current reproductions separated by subsystem.</td>
+<td>b5-part-xvi-controlled-test-programme</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-026</td>
+<td>P1</td>
+<td>Communions</td>
+<td>What current edge cases govern shared self-buffs, collapse, and automatic communion items?</td>
+<td>Communion failure can destroy the most valuable mage concentration in an army.</td>
+<td>Official corrections and published reproducible battle reports.</td>
+<td>b5-communion-audit</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-027</td>
+<td>P1</td>
+<td>Movement</td>
+<td>What is the exact interception probability and battle location when hostile forces swap provinces?</td>
+<td>Movement prediction determines reinforcement and retreat planning.</td>
+<td>Current official rule or published map-and-save reproduction.</td>
+<td>b6-movement-and-interception</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-028</td>
+<td>P1</td>
+<td>Patrol</td>
+<td>What are the current patrol-detection distributions across stealth and patrol modifiers?</td>
+<td>Counter-raiding and scout survival depend on risk rather than a binary threshold.</td>
+<td>Published current statistical reproduction.</td>
+<td>b6-patrol-and-stealth</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-029</td>
+<td>P1</td>
+<td>Raiding</td>
+<td>What are the current Raid and pillage output functions?</td>
+<td>Economic warfare cannot be compared honestly without expected return and population damage.</td>
+<td>Current official documentation or published repeated outcomes.</td>
+<td>b6-raid-order</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-030</td>
+<td>P1</td>
+<td>Diplomacy</td>
+<td>Which binding-NAP edge cases occur under every diplomacy setting?</td>
+<td>Interface-enforced treaties must not be described through informal multiplayer custom.</td>
+<td>Official setting documentation and published current reproduction.</td>
+<td>b6-binding-diplomacy</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-031</td>
+<td>P1</td>
+<td>Thrones</td>
+<td>What are the complete current Throne identities and object effects?</td>
+<td>Endgame plans require exact Ascension Points, defenders, and claimed bonuses.</td>
+<td>Pinned 6.35 structured site data, cross-checked against current official rules.</td>
+<td>b12-thrones-sites</td>
+<td>completed</td>
+</tr>
+<tr>
+<td>R-032</td>
+<td>P2</td>
+<td>Domes</td>
+<td>In what order are layered domes checked, and are their outcomes independent?</td>
+<td>Remote warfare portfolios depend on cumulative interception risk.</td>
+<td>Published current controlled reproduction.</td>
+<td>b5-layered-domes</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-033</td>
+<td>P2</td>
+<td>Wish</td>
+<td>What vocabulary, aliases, distributions, and restrictions does Wish currently accept?</td>
+<td>Late-game plans can waste rare Astral access on obsolete or ambiguous requests.</td>
+<td>Current official data or versioned published catalogue with reproduction.</td>
+<td>b5-wish</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-034</td>
+<td>P2</td>
+<td>Artifacts</td>
+<td>How are simultaneous artifact forges and global casts resolved at exact ties?</td>
+<td>Multiplayer races need a defensible risk model.</td>
+<td>Official hosting rule or published simultaneous-order reproduction.</td>
+<td>b5-test-16-artifact-race-and-yearning</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-035</td>
+<td>P2</td>
+<td>Assassination</td>
+<td>What are the exact bodyguard, Patience, surprise, and mounted-assassination distributions?</td>
+<td>Commander survival packages depend on more than nominal bodyguard count.</td>
+<td>Published current controlled reproduction.</td>
+<td>b6-assassination-defence</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-036</td>
+<td>P2</td>
+<td>Cataclysm</td>
+<td>What is the final current Cataclysm outcome wording and horror interaction?</td>
+<td>Endgame clocks and coalition decisions depend on the actual failure state.</td>
+<td>Current official object data and patch notes.</td>
+<td>b6-cataclysm</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-037</td>
+<td>P2</td>
+<td>Event systems</td>
+<td>In what order do several rarity-5 global state machines update the same state?</td>
+<td>Large overhaul compatibility can fail without any numeric collision.</td>
+<td>Author documentation or published deterministic harness.</td>
+<td>b8-event-execution-and-order</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-038</td>
+<td>P2</td>
+<td>Mod parser</td>
+<td>Which cross-mod name-reference categories resolve before or after later definitions?</td>
+<td>Name references can fail even when numeric IDs do not collide.</td>
+<td>Official parser documentation or minimal published loader reproduction.</td>
+<td>b8-cross-mod-reference-limits</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-039</td>
+<td>P2</td>
+<td>Object inheritance</td>
+<td>Which hidden copied attributes are absent from <code>ctrl+i</code> and ordinary inspector cards?</td>
+<td>A visible final card may omit inherited behaviour needed for compatibility.</td>
+<td>Exact-version source history plus structured engine export.</td>
+<td>b8-copied-objects-are-not-self-contained</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-040</td>
+<td>P2</td>
+<td>Transformations</td>
+<td>Which prophet, mount, heroic, item, and temporary states survive combined transformations?</td>
+<td>Shape chains can silently lose national or sacred roles.</td>
+<td>Published current transformation matrix.</td>
+<td>b8-shape-regression</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-041</td>
+<td>P3</td>
+<td>Events</td>
+<td>What are the current event-variable overflow and negative-value behaviours?</td>
+<td>Long event campaigns can corrupt state near numeric boundaries.</td>
+<td>Official limit documentation or minimal published harness.</td>
+<td>b8-variable-discipline</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-042</td>
+<td>P3</td>
+<td>Performance</td>
+<td>How does hosting time scale with large always-event libraries?</td>
+<td>Scenario design needs a practical performance budget.</td>
+<td>Published hardware, turn, province, and event-count benchmark.</td>
+<td>b8-performance-controls</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-043</td>
+<td>P3</td>
+<td>AI</td>
+<td>How often are AI templates selected and how reliably does the AI use multi-plane gates?</td>
+<td>Scenario claims should distinguish configured hints from observed behaviour.</td>
+<td>Published behavioural sample tied to version and map.</td>
+<td>b8-ai-testing-is-behavioural-sampling</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-044</td>
+<td>P3</td>
+<td>Save compatibility</td>
+<td>Which inserted automatic spell and item objects break existing saves?</td>
+<td>Release updates need a safe migration policy.</td>
+<td>Published version-to-version save matrix.</td>
+<td>b8-save-compatibility</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-045</td>
+<td>P3</td>
+<td>Networking</td>
+<td>Which filename and dependency mismatches are rejected or silently tolerated by the lobby?</td>
+<td>Public mod releases need predictable multiplayer installation behaviour.</td>
+<td>Official documentation or published clean-client matrix.</td>
+<td>b8-network-and-lobby-test</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-046</td>
+<td>P0</td>
+<td>Experience</td>
+<td>Does a current five-star unit receive a cumulative +2 or +3 Hit Points from experience?</td>
+<td>A public veteran calculator must not conceal the conflict between the official incremental table and current community reference.</td>
+<td>Current 6.36 controlled unit or engine export.</td>
+<td>b11-54-experience-thresholds</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-047</td>
+<td>P1</td>
+<td>Heroic abilities</td>
+<td>Which Hall-of-Fame scoring and heroic-growth formulas remain unchanged in 6.36?</td>
+<td>Old reverse engineering is useful but cannot be represented as current official law.</td>
+<td>Current reproducible tests or engine-backed reverse engineering.</td>
+<td>b11-57-what-is-officially-established</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-048</td>
+<td>P1</td>
+<td>Perception</td>
+<td>How do current perception abilities divide Glamour, Invisibility, Unseen, Illusion, and Spiritform targets?</td>
+<td>A false equivalence can invalidate targeting and counter design.</td>
+<td>Current controlled matrix with one perception and concealment effect at a time.</td>
+<td>b11-31-glamour-invisibility-unseen-and-illusion</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-049</td>
+<td>P1</td>
+<td>Ability stacking</td>
+<td>Which ability sources stack, use best-only, or replace one another across form, item, bless, and spell?</td>
+<td>Duplicate investment can waste gems, design points, and scripts.</td>
+<td>Targeted current tests plus live descriptions.</td>
+<td>b11-6-stacking-precedence-and-the-best-only-rule</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-050</td>
+<td>P2</td>
+<td>Experience</td>
+<td>Which current passive XP exceptions apply to Mindless units, sites, items, arenas, and events?</td>
+<td>Veteran timing and Hall-of-Fame plans depend on the actual gain sources.</td>
+<td>Controlled monthly observation and current data export.</td>
+<td>b11-53-how-experience-is-gained</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-051</td>
+<td>P2</td>
+<td>Unit classes</td>
+<td>Which condition immunities follow from a visible class and which require a separate hidden tag?</td>
+<td>Visual or taxonomic assumptions can produce false counters.</td>
+<td>Current object export plus controlled spell and condition matrix.</td>
+<td>b11-8-classes-can-overlap</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-052</td>
+<td>P2</td>
+<td>Mount state</td>
+<td>How do mount loss, Reclaim Mount, automatic return, and shape changes transfer experience and conditions?</td>
+<td>Mounted commanders can change body and function across the turn boundary.</td>
+<td>Controlled mounted-commander series under 6.36.</td>
+<td>b11-38-immortality-reformation-and-extra-lives</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-053</td>
+<td>P1</td>
+<td>Independents</td>
+<td>What are the complete 6.35 independent population types and their province recruitment rosters?</td>
+<td>Expansion, fort placement, and off-path recruitment depend on exact independent access.</td>
+<td>Exact-version engine or inspector export containing population-type membership.</td>
+<td>b12-mercenaries-independents</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-054</td>
+<td>P2</td>
+<td>Summons</td>
+<td>Which unit identities satisfy the 25 unresolved selection- or tag-based summon relations?</td>
+<td>A spell record is incomplete when it names a selector but not the possible summoned units.</td>
+<td>Exact-version engine export or published reproducible selector resolution.</td>
+<td>b12-summons</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-055</td>
+<td>P2</td>
+<td>Object labels</td>
+<td>What are the authoritative human labels for remaining source-native item and site property fields?</td>
+<td>Public filters should be readable without pretending that an inferred label is official.</td>
+<td>Current UI wording, official manuals, and exact-version object export compared field by field.</td>
+<td>b12-maintenance</td>
+<td>queued</td>
+</tr>
+<tr>
+<td>R-056</td>
+<td>P2</td>
+<td>Patch classification</td>
+<td>Which of the 250 review-recommended patch records need a different fine-grained class or more precise canonical destination?</td>
+<td>Source completeness is settled, but accurate filters improve website maintenance and command chronology.</td>
+<td>Human review of each official source bullet against the Book XIII classification key and canonical ownership map.</td>
+<td>b13-editorial-review</td>
+<td>in-progress</td>
+</tr>
+<tr>
+<td>R-057</td>
+<td>P2</td>
+<td>Command documentation</td>
+<td>Which of the 60 reference-only, nine mention-only, and five 6.36 patch-only tokens can receive verified semantics without inventing undocumented behaviour?</td>
+<td>Search is complete, but a token&#39;s official existence is not always a complete behavioural contract.</td>
+<td>Later official manuals or announcements, developer clarification, or a published minimal reproduction tied to an exact version and object context.</td>
+<td>b14-evidence</td>
+<td>queued</td>
+</tr>
+</tbody></table>
+<h2 id="guide-blocked-engine-questions">Blocked engine questions<a class="heading-link" href="#guide-blocked-engine-questions" aria-label="Link to Blocked engine questions">#</a></h2><p>The following subjects remain outside the active queue until a reliable reproduction, current inspector export, or local executable becomes available:</p>
+<ul>
+<li>unresolved same-turn effects whose official timing list does not define the internal branch;</li>
+<li>final cards produced by occupied-ID <code>#newmonster</code> behaviour without an engine export;</li>
+<li>undocumented target-selection weights with no published sample;</li>
+<li>all-AI strategic evaluation weights;</li>
+<li>nation-specific expansion ranges without a reproducible map and independent set;</li>
+<li>private multiplayer outcomes that cannot be independently checked.</li>
+</ul>
+<p>These are not requests for the player to perform labour. They are publication limits.</p>
+<h2 id="guide-research-order">Research order<a class="heading-link" href="#guide-research-order" aria-label="Link to Research order">#</a></h2><p>R-001 is resolved by Books XIII and XIV. R-002 through R-005 are resolved by the independent DE-Divinitus integrity publication and are cross-linked through Book IX without absorbing that publication into the encyclopedia. R-006, R-007, R-009, R-015 through R-018 are resolved in Books II and III at their stated evidence tiers. R-010 and R-013 are in progress; R-008, R-011, R-012, and R-014 remain queued behind reliable reproduction or better structured evidence. Edition 23 supplies their narrow test predicates and safe operational fallbacks. Edition 24 changes the voice of the reader corpus but does not change those research statuses. The remaining items no longer block the website publication pass. Combat, magic, and campaign questions R-019 through R-030 follow when evidence is available; R-031 is resolved in the 6.35 object register. R-053 should be taken as soon as an exact population-type export becomes available, while R-054, R-055, and R-057 can advance alongside object and documentation maintenance.</p>
+<h1 id="guide-part-vii-maintenance-rules">Part VII: Maintenance Rules<a class="heading-link" href="#guide-part-vii-maintenance-rules" aria-label="Link to Part VII: Maintenance Rules">#</a></h1><h2 id="guide-adding-a-section">Adding a section<a class="heading-link" href="#guide-adding-a-section" aria-label="Link to Adding a section">#</a></h2><p>When new material is written:</p>
+<ol>
+<li>place it in the book that owns the subject;</li>
+<li>reuse the existing heading destination if the subject is being revised;</li>
+<li>add aliases to the website index rather than creating duplicate glossary entries;</li>
+<li>attach ruleset, evidence, sources, and verification date;</li>
+<li>link related sections without copying their formulas or tables;</li>
+<li>add unresolved behaviour to the research register with a route and priority;</li>
+<li>rebuild and validate the PDF and website exports together.</li>
+</ol>
+<h2 id="guide-moving-or-replacing-a-section">Moving or replacing a section<a class="heading-link" href="#guide-moving-or-replacing-a-section" aria-label="Link to Moving or replacing a section">#</a></h2><p>A moved section should keep its destination ID where possible. If the subject has genuinely split, the old ID should become a redirect to a short landing section that explains the new authoritative homes. Silent deletion would break PDF annotations, website links, saved bookmarks, and citations in future dossiers.</p>
+<h2 id="guide-preventing-duplication-from-returning">Preventing duplication from returning<a class="heading-link" href="#guide-preventing-duplication-from-returning" aria-label="Link to Preventing duplication from returning">#</a></h2><p>Before adding a formula, table, full definition, or technical essay, search the content index by title, alias, and tag. If an authoritative version already exists, the new section should link to it and explain only the new context. Repetition is reserved for field references, worked applications, and deliberately self-contained print tools.</p>
+
+{% endraw %}
+    </article>
+    <aside class="sidebar library-toc">
+      <h2>In this book</h2>
+      <nav><a href="#guide-the-retrieval-layer">The retrieval layer</a>
+<a href="#guide-how-the-links-behave">How the links behave</a>
+<a href="#guide-path-a-the-first-complete-game">Path A: The first complete game</a>
+<a href="#guide-path-b-the-first-multiplayer-game">Path B: The first multiplayer game</a>
+<a href="#guide-path-c-returning-after-a-long-break">Path C: Returning after a long break</a>
+<a href="#guide-path-d-expert-rules-lookup">Path D: Expert rules lookup</a>
+<a href="#guide-path-e-diagnosing-a-failed-turn">Path E: Diagnosing a failed turn</a>
+<a href="#guide-path-f-modding-source-inspection-and-website-work">Path F: Modding, source inspection, and website work</a>
+<a href="#guide-game-operation-and-hosting">Game operation and hosting</a>
+<a href="#guide-units-abilities-experience-and-conditions">Units, abilities, experience, and conditions</a>
+<a href="#guide-base-game-object-lookup">Base-game object lookup</a>
+<a href="#guide-version-history-and-stale-guide-repair">Version history and stale-guide repair</a>
+<a href="#guide-economy-and-state">Economy and state</a>
+<a href="#guide-pretenders-dominion-scales-and-blessings">Pretenders, dominion, scales, and blessings</a>
+<a href="#guide-armies-and-battle">Armies and battle</a>
+<a href="#guide-magic">Magic</a>
+<a href="#guide-strategy-and-campaign">Strategy and campaign</a>
+<a href="#guide-nations-mods-and-combined-rulesets">Nations, mods, and combined rulesets</a>
+<a href="#guide-a">A</a>
+<a href="#guide-b">B</a>
+<a href="#guide-c">C</a>
+<a href="#guide-d">D</a>
+<a href="#guide-e">E</a>
+<a href="#guide-f">F</a>
+<a href="#guide-g">G</a>
+<a href="#guide-h">H</a>
+<a href="#guide-i">I</a>
+<a href="#guide-l">L</a>
+<a href="#guide-m">M</a>
+<a href="#guide-n">N</a>
+<a href="#guide-o">O</a>
+<a href="#guide-p">P</a>
+<a href="#guide-r">R</a>
+<a href="#guide-s">S</a>
+<a href="#guide-t">T</a>
+<a href="#guide-u">U</a>
+<a href="#guide-v">V</a>
+<a href="#guide-w">W</a>
+<a href="#guide-z">Z</a>
+<a href="#guide-the-unit-of-publication">The unit of publication</a>
+<a href="#guide-required-metadata">Required metadata</a>
+<a href="#guide-structured-object-records">Structured object records</a>
+<a href="#guide-structured-patch-records">Structured patch records</a>
+<a href="#guide-structured-command-records">Structured command records</a>
+<a href="#guide-content-block-types">Content block types</a>
+<a href="#guide-version-and-ruleset-behaviour">Version and ruleset behaviour</a>
+<a href="#guide-beginner-and-expert-presentation">Beginner and expert presentation</a>
+<a href="#guide-search-and-filtering">Search and filtering</a>
+<a href="#guide-scope-of-the-active-register">Scope of the active register</a>
+<a href="#guide-blocked-engine-questions">Blocked engine questions</a>
+<a href="#guide-research-order">Research order</a>
+<a href="#guide-adding-a-section">Adding a section</a>
+<a href="#guide-moving-or-replacing-a-section">Moving or replacing a section</a>
+<a href="#guide-preventing-duplication-from-returning">Preventing duplication from returning</a></nav>
+      <nav class="library-side-links">
+        <a href="/dominions/library/">Complete library</a>
+        <a href="/dominions/library/glossary/">Glossary</a>
+        <a href="/dominions/library/research/">Research register</a>
+        <a href="/downloads/dominions-6-knowledge-library-edition-24.pdf">Edition 24 PDF</a>
+      </nav>
+    </aside>
+  </div>
+  <nav class="library-pagination" aria-label="Adjacent books">
+    <span></span>
+    <a class="library-next" href="/dominions/library/books/book-i/"><small>Next</small>Foundation Book I</a>
+  </nav>
+</section>

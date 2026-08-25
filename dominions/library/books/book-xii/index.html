@@ -1,0 +1,1257 @@
+---
+title: "Foundation Book XII: Base-Game Objects and the Searchable Reference Layer"
+description: "A structured reference layer for spells, items, summons, sites, Thrones, mercenaries, Pretenders, and other base objects."
+nav_section: guides
+extra_css: /assets/dominions-library.css
+extra_js: /assets/dominions-library.js
+og_image: /assets/images/dominions-6-library-edition-24.png
+---
+
+<section class="page-hero library-page-hero">
+  <div class="shell">
+    <div class="breadcrumbs">
+      <a href="/dominions/">Dominions 6</a><span aria-hidden="true">/</span>
+      <a href="/dominions/library/">Knowledge Library</a><span aria-hidden="true">/</span>
+      <span>Foundation Book XII</span>
+    </div>
+    <p class="eyebrow">Progress Edition 24</p>
+    <h1>Foundation Book XII: Base-Game Objects and the Searchable Reference Layer</h1>
+    <p class="lead">A structured reference layer for spells, items, summons, sites, Thrones, mercenaries, Pretenders, and other base objects.</p>
+    <div class="meta-row">
+      <span class="status status--stable">Published reference</span>
+      <span class="meta-chip">Dominions 6.36</span>
+      <span class="meta-chip">8,462 words</span>
+      <span class="meta-chip">95 sections</span>
+    </div>
+  </div>
+</section>
+
+<section class="section shell library-section">
+  <details class="library-mobile-toc">
+    <summary>Table of contents</summary>
+    <nav><a href="#b12-ruleset-purpose-and-evidence-boundary">Ruleset, purpose, and evidence boundary</a>
+<a href="#b12-the-no-duplication-delta">The no-duplication delta</a>
+<a href="#b12-what-the-first-register-contains">What the first register contains</a>
+<a href="#b12-1-an-object-is-an-identity-not-merely-a-name">1. An object is an identity, not merely a name</a>
+<a href="#b12-2-ruleset-identity-belongs-inside-every-record">2. Ruleset identity belongs inside every record</a>
+<a href="#b12-3-evidence-status-belongs-beside-the-field">3. Evidence status belongs beside the field</a>
+<a href="#b12-4-record-hashes-make-silent-change-visible">4. Record hashes make silent change visible</a>
+<a href="#b12-5-raw-fields-and-interpreted-fields-serve-different-readers">5. Raw fields and interpreted fields serve different readers</a>
+<a href="#b12-6-a-ninety-second-lookup-routine">6. A ninety-second lookup routine</a>
+<a href="#b12-7-the-expert-audit-routine">7. The expert audit routine</a>
+<a href="#b12-8-spell-rows-and-player-facing-spells-are-not-the-same-thing">8. Spell rows and player-facing spells are not the same thing</a>
+<a href="#b12-9-school-and-research-level">9. School and research level</a>
+<a href="#b12-10-path-requirements-are-thresholds">10. Path requirements are thresholds</a>
+<a href="#b12-11-combat-spell-ritual-and-delivery-context">11. Combat spell, ritual, and delivery context</a>
+<a href="#b12-12-effects-roles-and-the-danger-of-one-label-summaries">12. Effects, roles, and the danger of one-label summaries</a>
+<a href="#b12-13-chained-spells">13. Chained spells</a>
+<a href="#b12-14-national-and-realm-restrictions">14. National and realm restrictions</a>
+<a href="#b12-15-cost-fields-are-not-an-efficiency-verdict">15. Cost fields are not an efficiency verdict</a>
+<a href="#b12-16-useful-spell-queries">16. Useful spell queries</a>
+<a href="#b12-17-item-identity-and-slot-type">17. Item identity and slot type</a>
+<a href="#b12-18-the-construction-ladder-and-special-records">18. The Construction ladder and special records</a>
+<a href="#b12-19-requirements-and-actual-forge-access">19. Requirements and actual forge access</a>
+<a href="#b12-20-mechanical-properties">20. Mechanical properties</a>
+<a href="#b12-21-boosters-as-access-edges">21. Boosters as access edges</a>
+<a href="#b12-22-artifacts-as-a-world-state-race">22. Artifacts as a world-state race</a>
+<a href="#b12-23-comparing-equipment-packages">23. Comparing equipment packages</a>
+<a href="#b12-24-a-summon-record-is-a-relationship">24. A summon record is a relationship</a>
+<a href="#b12-25-direct-unique-terrain-and-tag-based-summons">25. Direct, unique, terrain, and tag-based summons</a>
+<a href="#b12-26-quantity-and-scaling">26. Quantity and scaling</a>
+<a href="#b12-27-summoned-units-as-access-and-logistics">27. Summoned units as access and logistics</a>
+<a href="#b12-28-unique-summons-are-contested-resources">28. Unique summons are contested resources</a>
+<a href="#b12-29-shape-graphs-after-summoning">29. Shape graphs after summoning</a>
+<a href="#b12-30-form-records-and-design-records">30. Form records and design records</a>
+<a href="#b12-31-availability-is-a-relation-not-a-chassis-property">31. Availability is a relation, not a chassis property</a>
+<a href="#b12-32-starting-dominion-and-path-cost-are-only-the-opening-geometry">32. Starting dominion and path cost are only the opening geometry</a>
+<a href="#b12-33-innate-paths-purchased-paths-and-shape-changes">33. Innate paths, purchased paths, and shape changes</a>
+<a href="#b12-34-cheap-god-relations">34. Cheap-god relations</a>
+<a href="#b12-35-useful-pretender-queries">35. Useful Pretender queries</a>
+<a href="#b12-36-thrones-are-sites-with-victory-meaning">36. Thrones are sites with victory meaning</a>
+<a href="#b12-37-claimed-and-unclaimed-fields">37. Claimed and unclaimed fields</a>
+<a href="#b12-38-site-classes">38. Site classes</a>
+<a href="#b12-39-search-level-and-path">39. Search level and path</a>
+<a href="#b12-40-location-masks">40. Location masks</a>
+<a href="#b12-41-site-income-is-not-the-whole-site-value">41. Site income is not the whole site value</a>
+<a href="#b12-42-duplicate-names-and-site-identity">42. Duplicate names and site identity</a>
+<a href="#b12-43-throne-comparison-queries">43. Throne comparison queries</a>
+<a href="#b12-44-mercenary-company-records">44. Mercenary company records</a>
+<a href="#b12-45-mercenary-attrition-and-continuity">45. Mercenary attrition and continuity</a>
+<a href="#b12-46-why-independent-recruitment-remains-a-marked-gap">46. Why independent recruitment remains a marked gap</a>
+<a href="#b12-47-the-acceptable-route-to-a-current-independent-catalogue">47. The acceptable route to a current independent catalogue</a>
+<a href="#b12-48-evaluating-independent-access-without-a-complete-catalogue">48. Evaluating independent access without a complete catalogue</a>
+<a href="#b12-49-why-special-dominions-are-database-objects">49. Why special dominions are database objects</a>
+<a href="#b12-50-official-system-register">50. Official system register</a>
+<a href="#b12-51-local-strength-presence-and-maximum-dominion">51. Local strength, presence, and maximum dominion</a>
+<a href="#b12-52-beneficiaries-and-victims">52. Beneficiaries and victims</a>
+<a href="#b12-53-permanent-and-reversible-effects">53. Permanent and reversible effects</a>
+<a href="#b12-54-disciples-are-an-explicit-field-not-an-afterthought">54. Disciples are an explicit field, not an afterthought</a>
+<a href="#b12-55-the-publication-contract">55. The publication contract</a>
+<a href="#b12-56-default-search-views">56. Default search views</a>
+<a href="#b12-57-filters-that-should-exist-at-launch">57. Filters that should exist at launch</a>
+<a href="#b12-58-related-object-links">58. Related-object links</a>
+<a href="#b12-59-example-website-questions">59. Example website questions</a>
+<a href="#b12-60-nation-dossier-integration">60. Nation dossier integration</a>
+<a href="#b12-61-import-controls">61. Import controls</a>
+<a href="#b12-62-cross-source-verification">62. Cross-source verification</a>
+<a href="#b12-63-known-limitations-of-the-first-build">63. Known limitations of the first build</a>
+<a href="#b12-64-correction-workflow">64. Correction workflow</a>
+<a href="#b12-65-patch-refresh-workflow">65. Patch refresh workflow</a>
+<a href="#b12-66-mod-overlay-workflow">66. Mod overlay workflow</a>
+<a href="#b12-67-object-card-minimum-fields">67. Object-card minimum fields</a>
+<a href="#b12-68-beginner-lookup-checklist">68. Beginner lookup checklist</a>
+<a href="#b12-69-expert-comparison-checklist">69. Expert comparison checklist</a>
+<a href="#b12-70-editorial-no-duplication-checklist">70. Editorial no-duplication checklist</a>
+<a href="#b12-71-what-this-unlocks">71. What this unlocks</a>
+<a href="#b12-official-sources">Official sources</a>
+<a href="#b12-version-matched-extracted-source">Version-matched extracted source</a>
+<a href="#b12-project-artefacts">Project artefacts</a></nav>
+  </details>
+  <div class="library-reader-grid">
+    <article class="content library-prose">
+{% raw %}
+<h1 id="b12-foundation-book-xii-base-game-objects-and-the-searchable-reference-layer">Foundation Book XII: Base-Game Objects and the Searchable Reference Layer<a class="heading-link" href="#b12-foundation-book-xii-base-game-objects-and-the-searchable-reference-layer" aria-label="Link to Foundation Book XII: Base-Game Objects and the Searchable Reference Layer">#</a></h1><h2 id="b12-ruleset-purpose-and-evidence-boundary">Ruleset, purpose, and evidence boundary<a class="heading-link" href="#b12-ruleset-purpose-and-evidence-boundary" aria-label="Link to Ruleset, purpose, and evidence boundary">#</a></h2><p>Book XII contains the unmodded Dominions 6 structured object snapshot pinned to version 6.35. The live rules baseline is 6.36, with its official announcement overlaid in the canonical books and patch ledger. A 6.36 object export has not replaced the auditable Inspector commit used here. Dominions Enhanced 2.16 and Divinitus 1.15.3 DE are kept out of these records. Their exact source inventories remain in Book IX and can later be applied as overlays against the vanilla identities established here.</p>
+<p>Book XII fills a different gap from the earlier foundation books. Books II-VI explain economy, religion, armies, magic, and campaign judgement. Book XI explains how to read units and abilities. None of them should become a thousand-page inventory of object cards, so the work is divided clearly:</p>
+<ul>
+<li>Book XII explains how to interpret, compare, verify, and maintain object records;</li>
+<li><code>website/base-object-register.json</code> owns the filterable records;</li>
+<li><code>website/base-object-register.schema.json</code> defines the publication contract;</li>
+<li>the earlier books retain the full rules and strategic consequences;</li>
+<li>nation dossiers will import shared objects by stable identity instead of researching them again.</li>
+</ul>
+<p>The baseline data comes from the public Dominions 6 Data Inspector at commit <code>cfac4311bc0b58053b8dead7bffbc036ba9bd5dc</code>, dated 26 May 2026 and labelled by its maintainer as an update to 6.35. The Inspector is an extremely useful community extraction, but it is not an official rules document and its own documentation warns that errors may remain. A field drawn from it is labelled <strong>source-confirmed</strong>, not <strong>official</strong>. Statements from the official manuals receive the higher official label. Derived classifications, such as grouping a spell under remote attack or tagging a site as a Throne from its source rarity code, remain visibly derived even when the underlying values are source-confirmed.</p>
+<p>The register does not reproduce the game&#39;s long descriptions or artwork. It records names, identities, mechanical fields, relationships, provenance, evidence status, canonical links, and stable hashes. This makes it useful for search and comparison without turning the website into an unattributed mirror of the game text.</p>
+<h2 id="b12-the-no-duplication-delta">The no-duplication delta<a class="heading-link" href="#b12-the-no-duplication-delta" aria-label="Link to The no-duplication delta">#</a></h2><p>Book V already explains research, casting, rituals, global enchantments, forging, path access, gems, communions, and late-game magic. Book III owns Pretender design, dominion, scales, blessings, and divine continuity. Book VI owns strategic use of Thrones and mercenaries. Book XI owns the interpretation of unit abilities. The present volume does not replace any of those chapters.</p>
+<p>Its new contribution is retrieval. It establishes stable object identities, versioned source lineage, cross-object relationships, filter fields, incomplete-data markers, and maintenance rules. A reader looking up <em>what an object is</em> should arrive here or at the register. A reader asking <em>why and when it matters</em> should follow the canonical link to the earlier foundation book.</p>
+<span class="anchor-alias" id="b12-object-register" aria-hidden="true"></span><h2 id="b12-what-the-first-register-contains">What the first register contains<a class="heading-link" href="#b12-what-the-first-register-contains" aria-label="Link to What the first register contains">#</a></h2><table>
+<thead>
+<tr>
+<th>Record family</th>
+<th align="right">Current records</th>
+<th>What is represented</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Spells</td>
+<td align="right">1,474</td>
+<td>All extracted spell rows, including 1,233 researchable or Divine rows and 241 unresearchable or internal rows</td>
+</tr>
+<tr>
+<td>Magic items</td>
+<td align="right">529</td>
+<td>Ordinary forgeable items, Construction 9 artifacts, barding, and special or engine-managed items</td>
+</tr>
+<tr>
+<td>Summon relations</td>
+<td align="right">549</td>
+<td>Spell-to-unit or spell-to-selection-group relationships, including chained effects</td>
+</tr>
+<tr>
+<td>Pretender forms</td>
+<td align="right">298</td>
+<td>Base forms with national availability, body statistics, paths, discounts, and shape links</td>
+</tr>
+<tr>
+<td>Thrones</td>
+<td align="right">74</td>
+<td>Thirty-six level-one, twenty-six level-two, and twelve level-three Thrones</td>
+</tr>
+<tr>
+<td>Other magic sites</td>
+<td align="right">1,179</td>
+<td>Random, capital, national, event, and other non-Throne sites</td>
+</tr>
+<tr>
+<td>Mercenary companies</td>
+<td align="right">78</td>
+<td>Company, leader, troop, era, starting strength, minimum bid, experience, and recovery fields</td>
+</tr>
+<tr>
+<td>Independent recruitment</td>
+<td align="right">1 coverage marker</td>
+<td>The missing population-type relation is documented without inventing an exhaustive catalogue</td>
+</tr>
+<tr>
+<td>Special dominions</td>
+<td align="right">14</td>
+<td>Official system families from the manual, linked to every applicable nation and age</td>
+</tr>
+</tbody></table>
+<p>These 4,196 records are not all equally player-facing. Internal spell rows, engine-managed items, and unresolved selection groups are retained because removing them would make version comparisons unreliable. Website defaults should hide such records from a beginner search while keeping them available to researchers and modders.</p>
+<h1 id="b12-part-i-the-object-reference-method">Part I: The Object-Reference Method<a class="heading-link" href="#b12-part-i-the-object-reference-method" aria-label="Link to Part I: The Object-Reference Method">#</a></h1><h2 id="b12-1-an-object-is-an-identity-not-merely-a-name">1. An object is an identity, not merely a name<a class="heading-link" href="#b12-1-an-object-is-an-identity-not-merely-a-name" aria-label="Link to 1. An object is an identity, not merely a name">#</a></h2><p>Dominions contains many repeated names. Several forms may share a display name; different items may occupy the same apparent category; a spell may chain into a second hidden spell; a Pretender may transform into another monster record. Names are presentation fields, not primary keys.</p>
+<p>Every record begins with three different identities:</p>
+<ul>
+<li>a stable publication ID such as <code>spell-0200</code> or <code>pretender-0109</code>;</li>
+<li>the engine-facing numeric ID supplied by the extracted data;</li>
+<li>the current display name.</li>
+</ul>
+<p>The publication ID supplies durable website links. The engine ID allows comparison with mod commands, inspector entries, debug output, and later patch exports. The name remains essential for readers, but a rename does not have to break links or confuse a changed record with an entirely new one.</p>
+<p>For a national guide, this distinction is decisive. A dossier may say that a nation can choose Dagon, but the underlying reference should point to Pretender form 109. If a later patch changes the name or statistics of that form, one object record changes and every dossier importing it receives the corrected fact.</p>
+<h2 id="b12-2-ruleset-identity-belongs-inside-every-record">2. Ruleset identity belongs inside every record<a class="heading-link" href="#b12-2-ruleset-identity-belongs-inside-every-record" aria-label="Link to 2. Ruleset identity belongs inside every record">#</a></h2><p>A record without a ruleset is unsafe. The same visible object can have different requirements, statistics, or secondary effects under vanilla play, Dominions Enhanced, Divinitus, another balance mod, or a different load order.</p>
+<p>The first register uses one ruleset label throughout:</p>
+<pre><code class="language-text">vanilla-6.35
+</code></pre>
+<p>Modded records will not overwrite that layer. They should later be expressed as additions, replacements, or field-level deltas with their own load-order identity. This preserves a clean answer to three different questions:</p>
+<ol>
+<li>What does the object do in unmodded 6.35?</li>
+<li>What does a named mod change?</li>
+<li>What is the final value after the frozen mod order is applied?</li>
+</ol>
+<p>Conflating those questions is one of the fastest ways to make an encyclopedia sound certain while returning the wrong rule.</p>
+<h2 id="b12-3-evidence-status-belongs-beside-the-field">3. Evidence status belongs beside the field<a class="heading-link" href="#b12-3-evidence-status-belongs-beside-the-field" aria-label="Link to 3. Evidence status belongs beside the field">#</a></h2><p>The register currently uses four public evidence states.</p>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Proper use</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Official</td>
+<td>Directly supported by current official documentation</td>
+<td>Special-dominion rules and manual classifications</td>
+</tr>
+<tr>
+<td>Source-confirmed</td>
+<td>Present in the pinned 6.35 extracted game data</td>
+<td>IDs, names, requirements, statistics, site fields, and roster relations</td>
+</tr>
+<tr>
+<td>Source-confirmed with unresolved selection</td>
+<td>The effect is identified but the engine chooses from a group that is not completely resolved</td>
+<td>Certain negative-tag or engine-selected summons</td>
+</tr>
+<tr>
+<td>Test-pending</td>
+<td>Available sources cannot support a complete current-version claim</td>
+<td>Independent population-type recruitment</td>
+</tr>
+</tbody></table>
+<p>Source-confirmed does not mean infallible. It means that the value can be reproduced from a named source revision. A contentious value should still be checked against the 6.36 interface, a later official patch statement, or a second current extraction before it becomes the basis of a precise public claim.</p>
+<h2 id="b12-4-record-hashes-make-silent-change-visible">4. Record hashes make silent change visible<a class="heading-link" href="#b12-4-record-hashes-make-silent-change-visible" aria-label="Link to 4. Record hashes make silent change visible">#</a></h2><p>Each record receives a SHA-256 hash calculated from its normalized fields. The hash is not a gameplay fact. It is an editorial control.</p>
+<p>When a future source is imported, unchanged hashes identify stable records. Changed hashes identify objects requiring review. Added and removed IDs identify content changes. This permits a patch audit to concentrate on actual deltas instead of rereading thousands of cards.</p>
+<p>A good update report can answer:</p>
+<ul>
+<li>which records changed;</li>
+<li>which fields changed;</li>
+<li>whether the change is official, extracted, or merely a new interpretation;</li>
+<li>which book sections and nation dossiers depend on those records;</li>
+<li>whether a website cache or search index must be rebuilt.</li>
+</ul>
+<h2 id="b12-5-raw-fields-and-interpreted-fields-serve-different-readers">5. Raw fields and interpreted fields serve different readers<a class="heading-link" href="#b12-5-raw-fields-and-interpreted-fields-serve-different-readers" aria-label="Link to 5. Raw fields and interpreted fields serve different readers">#</a></h2><p>The register preserves selected source-native fields under names such as <code>mechanical_properties</code> and <code>extra_attributes</code>. These are valuable to researchers, but they are not always readable or fully decoded. The same record also carries interpreted fields such as <code>spell_kind</code>, <code>role_tags</code>, <code>throne_level</code>, <code>tier_class</code>, or a list of named national restrictions.</p>
+<p>The two layers must remain separate. A raw field records what the source said. An interpreted field records what the publication concluded. When an interpretation changes, the source record should not be rewritten to match the conclusion.</p>
+<h2 id="b12-6-a-ninety-second-lookup-routine">6. A ninety-second lookup routine<a class="heading-link" href="#b12-6-a-ninety-second-lookup-routine" aria-label="Link to 6. A ninety-second lookup routine">#</a></h2><p>A beginner need not read every field. Most practical lookups can follow the same order:</p>
+<ol>
+<li>Confirm the ruleset and version.</li>
+<li>Confirm the object type and engine ID.</li>
+<li>Read its access fields: school, path, Construction level, nation, site, or era.</li>
+<li>Read its cost and delivery fields.</li>
+<li>Read the principal effect or relationship.</li>
+<li>Open the canonical chapter for strategic consequences.</li>
+<li>Check evidence status before relying on an edge case.</li>
+</ol>
+<p>This order prevents two common mistakes: judging an object before confirming that the nation can access it, and treating a concise database field as though it contained the entire game rule.</p>
+<h2 id="b12-7-the-expert-audit-routine">7. The expert audit routine<a class="heading-link" href="#b12-7-the-expert-audit-routine" aria-label="Link to 7. The expert audit routine">#</a></h2><p>An expert or editor should add five checks:</p>
+<ol>
+<li>Inspect the engine ID and any chained or shaped identities.</li>
+<li>Review source revision and file hash.</li>
+<li>Distinguish explicit values from derived tags.</li>
+<li>Compare unresolved attributes against the Modding Manual and current UI.</li>
+<li>Record any correction as a new claim or revision, never as an undocumented overwrite.</li>
+</ol>
+<p>The result is slower than reading a tooltip but much faster than rebuilding the same evidence for every guide.</p>
+<span class="anchor-alias" id="b12-spells" aria-hidden="true"></span><h1 id="b12-part-ii-spells">Part II: Spells<a class="heading-link" href="#b12-part-ii-spells" aria-label="Link to Part II: Spells">#</a></h1><h2 id="b12-8-spell-rows-and-player-facing-spells-are-not-the-same-thing">8. Spell rows and player-facing spells are not the same thing<a class="heading-link" href="#b12-8-spell-rows-and-player-facing-spells-are-not-the-same-thing" aria-label="Link to 8. Spell rows and player-facing spells are not the same thing">#</a></h2><p>The source contains 1,474 spell rows. Of these, 1,233 belong to a research school or Divine magic and 241 are marked unresearchable or internal. Internal rows can represent helper effects, hidden chains, scenario functions, or other engine work. They should not appear in an ordinary player&#39;s search results unless an advanced filter requests them.</p>
+<p>The register gives every spell a <code>public_status</code>:</p>
+<ul>
+<li><code>researchable-or-divine</code> for schools zero through seven;</li>
+<li><code>unresearchable-or-internal</code> for school minus one.</li>
+</ul>
+<p>This is a visibility classification, not a guarantee that every public row is generically available to every nation. National restrictions, realm restrictions, unique casters, and special access still apply.</p>
+<h2 id="b12-9-school-and-research-level">9. School and research level<a class="heading-link" href="#b12-9-school-and-research-level" aria-label="Link to 9. School and research level">#</a></h2><p>School numbers are translated into the current names used by the game:</p>
+<table>
+<thead>
+<tr>
+<th align="right">Source code</th>
+<th>School</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">0</td>
+<td>Conjuration</td>
+</tr>
+<tr>
+<td align="right">1</td>
+<td>Alteration</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td>Evocation</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td>Construction</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td>Enchantment</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td>Thaumaturgy</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td>Blood</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td>Divine</td>
+</tr>
+<tr>
+<td align="right">-1</td>
+<td>Unresearchable</td>
+</tr>
+</tbody></table>
+<p>Research level is preserved separately. A level is not a complete access statement. The real access question combines school level, path requirements, cost, caster availability, national restriction, and sometimes a source or destination condition.</p>
+<p>Fifty-nine public rows are flagged at research level nine. The flag supports the game&#39;s legendary-spell research option and gives the website a direct filter for the final research tier. Book V remains the canonical home for late-game research planning.</p>
+<h2 id="b12-10-path-requirements-are-thresholds">10. Path requirements are thresholds<a class="heading-link" href="#b12-10-path-requirements-are-thresholds" aria-label="Link to 10. Path requirements are thresholds">#</a></h2><p>Each spell record contains zero, one, or two path requirements. A requirement such as Fire 3 means that the caster must reach that threshold at the moment of casting. It does not identify how the threshold is reached.</p>
+<p>The access chain may include:</p>
+<ul>
+<li>innate paths;</li>
+<li>communion or sabbath levels;</li>
+<li>path boosters;</li>
+<li>temporary gems;</li>
+<li>empowerment;</li>
+<li>a site bonus;</li>
+<li>a national or Pretender-only caster;</li>
+<li>a transformation or shape with different magic.</li>
+</ul>
+<p>Those mechanisms belong to Book V. The record supplies the threshold that the access analysis must meet.</p>
+<h2 id="b12-11-combat-spell-ritual-and-delivery-context">11. Combat spell, ritual, and delivery context<a class="heading-link" href="#b12-11-combat-spell-ritual-and-delivery-context" aria-label="Link to 11. Combat spell, ritual, and delivery context">#</a></h2><p>The spell kind is derived from the attached effect record. A ritual and a combat spell can share superficially similar purposes while competing for entirely different resources and timing windows.</p>
+<p>A spell record keeps:</p>
+<ul>
+<li>ritual status;</li>
+<li>fatigue cost as extracted;</li>
+<li>gem or slave cost as extracted;</li>
+<li>precision modifier;</li>
+<li>effect count;</li>
+<li>base and per-level range fields;</li>
+<li>base and per-level area fields;</li>
+<li>battlefield percentage where present;</li>
+<li>duration and modifier masks;</li>
+<li>province range attributes where exposed.</li>
+</ul>
+<p>Several of these are source-native values rather than finished player prose. A website card should render the common cases clearly but preserve the raw value in an advanced panel. It should not guess how an unfamiliar mask is displayed.</p>
+<h2 id="b12-12-effects-roles-and-the-danger-of-one-label-summaries">12. Effects, roles, and the danger of one-label summaries<a class="heading-link" href="#b12-12-effects-roles-and-the-danger-of-one-label-summaries" aria-label="Link to 12. Effects, roles, and the danger of one-label summaries">#</a></h2><p>An effect record supplies an effect number and an extracted effect name. The register also adds restrained role tags, including:</p>
+<ul>
+<li>summon;</li>
+<li>damage or disable;</li>
+<li>buff or restoration;</li>
+<li>control;</li>
+<li>dispel;</li>
+<li>remote attack;</li>
+<li>remote assassination;</li>
+<li>strategic movement;</li>
+<li>site search;</li>
+<li>fort construction;</li>
+<li>transformation;</li>
+<li>enchantment;</li>
+<li>province enchantment.</li>
+</ul>
+<p>These tags are search aids, not complete tactical judgments. A damaging spell may also create a cloud. A summon may be a battlefield screen, a path break, a raider, or a source of new recruitment. A global enchantment may primarily function as diplomacy rather than raw economy. The canonical chapter should receive the interpretive burden.</p>
+<h2 id="b12-13-chained-spells">13. Chained spells<a class="heading-link" href="#b12-13-chained-spells" aria-label="Link to 13. Chained spells">#</a></h2><p>Some visible spells lead to another spell row through <code>next_spell</code>. The second row may hold an additional effect, a terrain-specific branch, or a helper operation. Searching only the first row can miss a summon or secondary consequence.</p>
+<p>The importer follows each chain until it ends or repeats. Summon relationships are collected across the chain and attached to the visible root. The hidden rows remain independently addressable, making later patch comparisons possible.</p>
+<p>A chain should be read as a graph:</p>
+<pre><code class="language-text">visible spell -&gt; effect row -&gt; optional next spell -&gt; optional further effect
+</code></pre>
+<p>The graph also explains why name-based scraping is unreliable. The second row may have an internal name that is never shown to a player.</p>
+<h2 id="b12-14-national-and-realm-restrictions">14. National and realm restrictions<a class="heading-link" href="#b12-14-national-and-realm-restrictions" aria-label="Link to 14. National and realm restrictions">#</a></h2><p>The extracted spell-attribute table identifies explicit national restrictions. The register resolves those numeric values into nation name and age where possible. A public website should display the restriction near the spell name rather than burying it below the effect.</p>
+<p>Realm-based access is more difficult. The Inspector resolves some of it by comparing spell attributes with national home realms. The initial register preserves the extra attribute but does not claim that every realm rule has been translated into a complete national list. This is a deliberate conservative boundary.</p>
+<h2 id="b12-15-cost-fields-are-not-an-efficiency-verdict">15. Cost fields are not an efficiency verdict<a class="heading-link" href="#b12-15-cost-fields-are-not-an-efficiency-verdict" aria-label="Link to 15. Cost fields are not an efficiency verdict">#</a></h2><p>Gem or slave cost is recorded because it is an access fact. It is not enough to rank spells. Efficiency also depends on:</p>
+<ul>
+<li>mage-turn cost;</li>
+<li>research timing;</li>
+<li>caster scarcity;</li>
+<li>battlefield survival;</li>
+<li>expected targets;</li>
+<li>repeatability;</li>
+<li>opportunity cost against forging, empowerment, or another ritual;</li>
+<li>whether the effect creates a reusable asset;</li>
+<li>whether the spell reveals strategic information.</li>
+</ul>
+<p>Book V explains those conversions. The database should make them calculable without pretending that one universal score can replace the campaign state.</p>
+<h2 id="b12-16-useful-spell-queries">16. Useful spell queries<a class="heading-link" href="#b12-16-useful-spell-queries" aria-label="Link to 16. Useful spell queries">#</a></h2><p>Beginner searches should ask one concrete question at a time:</p>
+<ul>
+<li>all public spells in a chosen school and level;</li>
+<li>all spells requiring no more than a nation&#39;s current path ceiling;</li>
+<li>all battle buffs for a known army problem;</li>
+<li>all rituals that produce a commander;</li>
+<li>all site-search spells by path;</li>
+<li>all spells marked national for the selected nation.</li>
+</ul>
+<p>Expert searches can combine access and role:</p>
+<ul>
+<li>remote attacks that meet a precise province range;</li>
+<li>battlefield-wide effects with a gem cost;</li>
+<li>summons that produce commanders with new paths;</li>
+<li>level-nine spells changed since the previous source revision;</li>
+<li>spells whose effect number or modifier mask remains undecoded;</li>
+<li>visible spells whose hidden chain changed while the root row did not.</li>
+</ul>
+<span class="anchor-alias" id="b12-items" aria-hidden="true"></span><h1 id="b12-part-iii-magic-items-artifacts-and-barding">Part III: Magic Items, Artifacts, and Barding<a class="heading-link" href="#b12-part-iii-magic-items-artifacts-and-barding" aria-label="Link to Part III: Magic Items, Artifacts, and Barding">#</a></h1><h2 id="b12-17-item-identity-and-slot-type">17. Item identity and slot type<a class="heading-link" href="#b12-17-item-identity-and-slot-type" aria-label="Link to 17. Item identity and slot type">#</a></h2><p>The first register contains 529 item records. Each one has a numeric ID, current name, slot type, Construction level, path requirements, attached weapon or armour ID where applicable, and a sparse set of mechanical properties.</p>
+<p>Slot types include one-handed and two-handed weapons, missile weapons, shields, armour, helmets or crowns, boots, miscellaneous items, and barding. The slot is an equipment constraint, not a promise that every unit with an apparent body part can wear the object. Unit item slots, mount rules, minimum size, minimum strength, hand requirements, crown restrictions, and other item properties can still veto use.</p>
+<p>Book XI owns the body and equipment-reading method. Book V owns forging and booster planning.</p>
+<h2 id="b12-18-the-construction-ladder-and-special-records">18. The Construction ladder and special records<a class="heading-link" href="#b12-18-the-construction-ladder-and-special-records" aria-label="Link to 18. The Construction ladder and special records">#</a></h2><p>The source uses the visible odd-numbered Construction tiers. The current distribution is:</p>
+<table>
+<thead>
+<tr>
+<th align="right">Construction level</th>
+<th align="right">Records</th>
+<th>Register classification</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1, 3, 5, or 7</td>
+<td align="right">378</td>
+<td>Ordinary forgeable</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">118</td>
+<td>Unique artifact</td>
+</tr>
+<tr>
+<td align="right">11, 13, or 15</td>
+<td align="right">33</td>
+<td>Special or engine-managed</td>
+</tr>
+</tbody></table>
+<p>The official manual identifies Construction 9 items as artifacts. Values above the ordinary ladder are retained as source facts but are not presented as ordinary forgeable tiers. They include special prizes and engine-managed objects whose acquisition rules must be learned from the relevant event, spell, or scenario.</p>
+<h2 id="b12-19-requirements-and-actual-forge-access">19. Requirements and actual forge access<a class="heading-link" href="#b12-19-requirements-and-actual-forge-access" aria-label="Link to 19. Requirements and actual forge access">#</a></h2><p>An item may list one or two path requirements. Those are necessary thresholds, not a complete forge plan. A nation still needs:</p>
+<ul>
+<li>an eligible commander with appropriate item slots and magic;</li>
+<li>the required Construction research;</li>
+<li>sufficient gems;</li>
+<li>any national or unit restriction to be satisfied;</li>
+<li>freedom from an artifact uniqueness conflict;</li>
+<li>a mage-turn that is worth spending.</li>
+</ul>
+<p>The database intentionally does not fabricate forge costs from path levels. Explicit UI or engine-export costs should be added as their own fields when a reliable current source is available.</p>
+<h2 id="b12-20-mechanical-properties">20. Mechanical properties<a class="heading-link" href="#b12-20-mechanical-properties" aria-label="Link to 20. Mechanical properties">#</a></h2><p>Item properties are sparse: only non-empty source fields are retained. This prevents hundreds of meaningless zeroes while preserving unusual effects. Common fields include:</p>
+<ul>
+<li>resistances and reinvigoration;</li>
+<li>path boosts and path-range increases;</li>
+<li>temporary gems or gem generation;</li>
+<li>leadership, research, supply, patrol, siege, and forging bonuses;</li>
+<li>flight, sailing, water breathing, stealth, or map movement;</li>
+<li>regeneration, luck, etherealness, quickness, or defensive skins;</li>
+<li>start-of-battle spells, automatic spells, and item rituals;</li>
+<li>bearer restrictions and minimum body requirements;</li>
+<li>transformations, afflictions, curses, or insanity costs;</li>
+<li>national rebates and special acquisition rules.</li>
+</ul>
+<p>A raw property name is not automatically safe prose. Where Book XI or the Modding Manual supplies a dependable meaning, the site can render a human label and link to the canonical ability. Unknown or ambiguous properties should remain visible to expert users with a warning.</p>
+<h2 id="b12-21-boosters-as-access-edges">21. Boosters as access edges<a class="heading-link" href="#b12-21-boosters-as-access-edges" aria-label="Link to 21. Boosters as access edges">#</a></h2><p>The most strategically important item searches often concern path access rather than combat equipment. A booster can turn a caster into a node in a larger access graph:</p>
+<pre><code class="language-text">native path -&gt; first booster -&gt; higher booster or summon -&gt; ritual threshold
+</code></pre>
+<p>The item record provides the requirement and mechanical boost. A separate access calculator can then join it to national mage probabilities, summoned commanders, sites, and empowerment. That calculator should never assume that owning the gems is equivalent to owning the mage-turns or keeping the bearer alive.</p>
+<h2 id="b12-22-artifacts-as-a-world-state-race">22. Artifacts as a world-state race<a class="heading-link" href="#b12-22-artifacts-as-a-world-state-race" aria-label="Link to 22. Artifacts as a world-state race">#</a></h2><p>Artifacts are unique. Their value includes denial, timing, and information. A static item score cannot capture the fact that another nation may forge the object first, that a holder may be killed, or that an artifact may begin yearning under the game&#39;s artifact rules.</p>
+<p>The register marks artifact identity but leaves artifact-race doctrine in Book V. A future campaign tool can add availability state without modifying the underlying object record:</p>
+<ul>
+<li>uncreated;</li>
+<li>yearning;</li>
+<li>forged by a known nation;</li>
+<li>forged, holder unknown;</li>
+<li>recovered;</li>
+<li>destroyed or otherwise unavailable.</li>
+</ul>
+<p>That state belongs to a specific game, not to the base object.</p>
+<h2 id="b12-23-comparing-equipment-packages">23. Comparing equipment packages<a class="heading-link" href="#b12-23-comparing-equipment-packages" aria-label="Link to 23. Comparing equipment packages">#</a></h2><p>Items should rarely be compared in isolation. The relevant unit, opponent, and battlefield create the package.</p>
+<p>A reliable comparison asks:</p>
+<ol>
+<li>Can the intended bearer equip every piece?</li>
+<li>Which defence is weakest before equipment?</li>
+<li>Does the package solve fatigue as well as protection?</li>
+<li>Does it preserve movement and script reliability?</li>
+<li>Does it answer the expected damage types and control effects?</li>
+<li>What is lost if the bearer dies?</li>
+<li>Would the same gems produce more value as research access, summons, or army support?</li>
+</ol>
+<p>The database supplies the object fields. Book IV owns the combat derivation.</p>
+<span class="anchor-alias" id="b12-summons" aria-hidden="true"></span><h1 id="b12-part-iv-summons">Part IV: Summons<a class="heading-link" href="#b12-part-iv-summons" aria-label="Link to Part IV: Summons">#</a></h1><h2 id="b12-24-a-summon-record-is-a-relationship">24. A summon record is a relationship<a class="heading-link" href="#b12-24-a-summon-record-is-a-relationship" aria-label="Link to 24. A summon record is a relationship">#</a></h2><p>A summon is not adequately represented by a spell row or a unit row alone. It is the relationship between them.</p>
+<p>Each summon relation currently records:</p>
+<ul>
+<li>the root spell ID and name;</li>
+<li>every directly resolved target unit;</li>
+<li>named selection groups for random, unique, or terrain-dependent results;</li>
+<li>unresolved engine selections;</li>
+<li>the extracted effect count;</li>
+<li>evidence status and source revision.</li>
+</ul>
+<p>The target units continue to belong to the unit layer. Their abilities should be read through Book XI, and their battle performance through Book IV.</p>
+<h2 id="b12-25-direct-unique-terrain-and-tag-based-summons">25. Direct, unique, terrain, and tag-based summons<a class="heading-link" href="#b12-25-direct-unique-terrain-and-tag-based-summons" aria-label="Link to 25. Direct, unique, terrain, and tag-based summons">#</a></h2><p>The importer recognizes several broad forms.</p>
+<table>
+<thead>
+<tr>
+<th>Form</th>
+<th>Meaning</th>
+<th>Record treatment</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Direct unit</td>
+<td>Effect points to a positive unit ID</td>
+<td>Unit ID and name are resolved</td>
+</tr>
+<tr>
+<td>Direct commander</td>
+<td>Effect identifies a commander summon</td>
+<td>Commander ID and name are resolved</td>
+</tr>
+<tr>
+<td>Unique group</td>
+<td>One of a finite named group can answer</td>
+<td>Every known candidate is listed</td>
+</tr>
+<tr>
+<td>Terrain group</td>
+<td>Result depends on terrain-specific table</td>
+<td>Every known candidate is listed under the terrain group</td>
+</tr>
+<tr>
+<td>Chained summon</td>
+<td>A later spell row supplies an additional summon</td>
+<td>Relation is attached to the root and chain retained</td>
+</tr>
+<tr>
+<td>Negative monster tag</td>
+<td>Engine chooses from a tagged group</td>
+<td>Raw selector is retained and marked unresolved unless the current table is known</td>
+</tr>
+</tbody></table>
+<p>Twenty-five relations in the first build contain an unresolved selection note. They are not discarded. An incomplete relation with an honest warning is more useful than a neat but false list.</p>
+<h2 id="b12-26-quantity-and-scaling">26. Quantity and scaling<a class="heading-link" href="#b12-26-quantity-and-scaling" aria-label="Link to 26. Quantity and scaling">#</a></h2><p>The source carries an extracted effect count, but exact quantity can also depend on caster level, special effect rules, random selection, terrain, or a chained effect. The first register preserves the raw count and target relationship without converting every case into a prose formula.</p>
+<p>A later verified quantity layer should distinguish:</p>
+<ul>
+<li>fixed base quantity;</li>
+<li>additional units per full path level;</li>
+<li>fractional scaling and rounding;</li>
+<li>commander plus retinue;</li>
+<li>one result selected from a unique pool;</li>
+<li>a variable or random composition;</li>
+<li>temporary battlefield summons;</li>
+<li>permanent strategic summons.</li>
+</ul>
+<p>These are separate fields because a single number cannot describe them safely.</p>
+<h2 id="b12-27-summoned-units-as-access-and-logistics">27. Summoned units as access and logistics<a class="heading-link" href="#b12-27-summoned-units-as-access-and-logistics" aria-label="Link to 27. Summoned units as access and logistics">#</a></h2><p>Summon evaluation begins with role, not statistics alone. Common roles include:</p>
+<ul>
+<li>path extension;</li>
+<li>site searching;</li>
+<li>forging access;</li>
+<li>leadership for magic, undead, or animals;</li>
+<li>siege mass;</li>
+<li>patrol strength;</li>
+<li>raiding and remote presence;</li>
+<li>sacred or bless-compatible force generation;</li>
+<li>amphibious or flying logistics;</li>
+<li>battlefield disruption;</li>
+<li>durable line combat;</li>
+<li>expendable screening.</li>
+</ul>
+<p>The database can filter the result set by unit properties. The strategic conclusion still depends on a nation&#39;s shortages and timetable.</p>
+<h2 id="b12-28-unique-summons-are-contested-resources">28. Unique summons are contested resources<a class="heading-link" href="#b12-28-unique-summons-are-contested-resources" aria-label="Link to 28. Unique summons are contested resources">#</a></h2><p>Elemental royalty, Demon Lords, and other unique beings are not ordinary repeatable outputs. Their availability depends on what has already been summoned and, in some cases, what has died or returned.</p>
+<p>The base register lists the candidate pool. A live-game overlay should track availability as mutable state. The object record should never be altered merely because one campaign has already consumed the unique target.</p>
+<h2 id="b12-29-shape-graphs-after-summoning">29. Shape graphs after summoning<a class="heading-link" href="#b12-29-shape-graphs-after-summoning" aria-label="Link to 29. Shape graphs after summoning">#</a></h2><p>A summoned commander may transform on land, underwater, in battle, on death, or through an activated ability. Looking only at the first form can conceal magic paths, item slots, movement permissions, or vulnerabilities.</p>
+<p>The proper lookup follows shape links until the graph closes. Book XI explains shape-sensitive ability reading. The current Pretender records expose their major shape links; a later general unit graph should extend the same treatment to every summoned form.</p>
+<span class="anchor-alias" id="b12-pretenders" aria-hidden="true"></span><h1 id="b12-part-v-pretender-forms">Part V: Pretender Forms<a class="heading-link" href="#b12-part-v-pretender-forms" aria-label="Link to Part V: Pretender Forms">#</a></h1><h2 id="b12-30-form-records-and-design-records">30. Form records and design records<a class="heading-link" href="#b12-30-form-records-and-design-records" aria-label="Link to 30. Form records and design records">#</a></h2><p>The register contains 298 Pretender forms derived from national availability, home-realm membership, explicit additions, and explicit removals in the pinned data. A form record is not a finished Pretender build. It is the chassis before design choices are applied.</p>
+<p>The record includes:</p>
+<ul>
+<li>body statistics;</li>
+<li>starting dominion;</li>
+<li>cost for a new path where extracted;</li>
+<li>innate magic;</li>
+<li>random-magic source fields if present;</li>
+<li>equipment IDs and body properties;</li>
+<li>minimum imprisonment source field where present;</li>
+<li>availability by nation and age;</li>
+<li>nation-specific cheap-god adjustments;</li>
+<li>major shape relationships.</li>
+</ul>
+<p>Book III remains the authoritative guide to design points, awakening, scales, blessings, and role construction.</p>
+<h2 id="b12-31-availability-is-a-relation-not-a-chassis-property">31. Availability is a relation, not a chassis property<a class="heading-link" href="#b12-31-availability-is-a-relation-not-a-chassis-property" aria-label="Link to 31. Availability is a relation, not a chassis property">#</a></h2><p>Dagon is not an abstract underwater Pretender. It is available to a particular set of nations. Another chassis may be supplied by a home realm, removed from one nation, or discounted for a small family.</p>
+<p>The database stores availability as a list of nation records. This makes several questions directly searchable:</p>
+<ul>
+<li>every chassis available to a selected nation;</li>
+<li>every nation that can choose a selected chassis;</li>
+<li>chassis shared across all ages of one cultural line;</li>
+<li>chassis that disappear or appear between ages;</li>
+<li>national discounts on an otherwise shared form.</li>
+</ul>
+<p>This relation will prevent future dossiers from repeating a complete chassis inventory in prose.</p>
+<h2 id="b12-32-starting-dominion-and-path-cost-are-only-the-opening-geometry">32. Starting dominion and path cost are only the opening geometry<a class="heading-link" href="#b12-32-starting-dominion-and-path-cost-are-only-the-opening-geometry" aria-label="Link to 32. Starting dominion and path cost are only the opening geometry">#</a></h2><p>Starting dominion affects the design-point curve and the chassis&#39;s relationship with dominion strength. New-path cost affects the marginal price of diversification. Neither value determines the best build on its own.</p>
+<p>A complete design must still price:</p>
+<ul>
+<li>awakening state;</li>
+<li>desired blessing thresholds;</li>
+<li>scales and national economic interaction;</li>
+<li>expansion reliability;</li>
+<li>research and forging access;</li>
+<li>the risk of chassis death;</li>
+<li>whether the chassis must be mobile, stealthy, amphibious, or present on the battlefield;</li>
+<li>whether special dominion systems reward stronger candles.</li>
+</ul>
+<p>The record supplies the immutable chassis facts. Book III supplies the engineering method.</p>
+<h2 id="b12-33-innate-paths-purchased-paths-and-shape-changes">33. Innate paths, purchased paths, and shape changes<a class="heading-link" href="#b12-33-innate-paths-purchased-paths-and-shape-changes" aria-label="Link to 33. Innate paths, purchased paths, and shape changes">#</a></h2><p>Innate paths belong to the current form. Purchased paths belong to the designed god. Shape changes can alter the body and may change how paths or equipment are used. The reference keeps innate paths and shape links separate.</p>
+<p>When a chassis has multiple forms, the design audit should inspect:</p>
+<ul>
+<li>which form appears on the strategic map;</li>
+<li>which form fights;</li>
+<li>whether items remain equipped;</li>
+<li>whether a form is aquatic or land-capable;</li>
+<li>whether protection, regeneration, or movement changes;</li>
+<li>whether death or transformation is reversible.</li>
+</ul>
+<p>No single thumbnail can carry this information safely.</p>
+<h2 id="b12-34-cheap-god-relations">34. Cheap-god relations<a class="heading-link" href="#b12-34-cheap-god-relations" aria-label="Link to 34. Cheap-god relations">#</a></h2><p>Some nations receive a twenty- or forty-point adjustment for named chassis. These discounts are stored as nation relations on the chassis record, not baked into a universal chassis cost.</p>
+<p>This matters because the same form can be ordinary for one nation and economically distinctive for another. A website Pretender planner should apply the discount only after nation selection and should display its source rather than silently changing the price.</p>
+<h2 id="b12-35-useful-pretender-queries">35. Useful Pretender queries<a class="heading-link" href="#b12-35-useful-pretender-queries" aria-label="Link to 35. Useful Pretender queries">#</a></h2><p>Beginner filters:</p>
+<ul>
+<li>all chassis available to the selected nation;</li>
+<li>awake candidates with a desired body type;</li>
+<li>immobile candidates;</li>
+<li>chassis beginning with a required magic path;</li>
+<li>chassis capable of operating underwater.</li>
+</ul>
+<p>Expert filters:</p>
+<ul>
+<li>national discounts combined with path-cost breakpoints;</li>
+<li>chassis whose shape graph changes equipment access;</li>
+<li>chassis shared by likely opponents;</li>
+<li>forms with a special dominion interaction;</li>
+<li>version deltas in availability or innate paths;</li>
+<li>designs whose required path thresholds can be met by fewer purchased levels.</li>
+</ul>
+<span class="anchor-alias" id="b12-thrones-sites" aria-hidden="true"></span><h1 id="b12-part-vi-thrones-and-magic-sites">Part VI: Thrones and Magic Sites<a class="heading-link" href="#b12-part-vi-thrones-and-magic-sites" aria-label="Link to Part VI: Thrones and Magic Sites">#</a></h1><h2 id="b12-36-thrones-are-sites-with-victory-meaning">36. Thrones are sites with victory meaning<a class="heading-link" href="#b12-36-thrones-are-sites-with-victory-meaning" aria-label="Link to 36. Thrones are sites with victory meaning">#</a></h2><p>The extracted site table marks Thrones with rarity codes eleven, twelve, and thirteen. The register interprets these as Throne levels one, two, and three. The first build contains:</p>
+<ul>
+<li>36 level-one Thrones;</li>
+<li>26 level-two Thrones;</li>
+<li>12 level-three Thrones.</li>
+</ul>
+<p>They are removed from the ordinary site array and placed in their own Throne collection, so a website search does not double-count them. Their site identity remains intact.</p>
+<p>Book VI owns Throne strategy, claiming, endgame conversion, and Cataclysm. The register owns the exact Throne objects and their effects.</p>
+<h2 id="b12-37-claimed-and-unclaimed-fields">37. Claimed and unclaimed fields<a class="heading-link" href="#b12-37-claimed-and-unclaimed-fields" aria-label="Link to 37. Claimed and unclaimed fields">#</a></h2><p>Site data can distinguish ordinary gem income from income granted after a Throne is claimed. It can also contain recruitment, scales, dominion effects, ritual modifiers, strength or resistance effects, unrest, population, supply, and other province changes.</p>
+<p>A Throne card should visually separate:</p>
+<ul>
+<li>presence before claiming;</li>
+<li>effect after claiming;</li>
+<li>units or commanders available at the site;</li>
+<li>province or dominion changes;</li>
+<li>strategic risks created by the effect.</li>
+</ul>
+<p>The database preserves the source fields but does not infer ownership timing for every unusual attribute. Where the manual or UI is required, the card should carry a verification note.</p>
+<h2 id="b12-38-site-classes">38. Site classes<a class="heading-link" href="#b12-38-site-classes" aria-label="Link to 38. Site classes">#</a></h2><p>The non-Throne collection contains 1,179 sites. The first classification uses the source rarity code:</p>
+<ul>
+<li>codes zero, one, or two: random discoverable sites;</li>
+<li>code five: special, capital, national, or event-managed sites;</li>
+<li>any other non-Throne code: retained as other until verified.</li>
+</ul>
+<p>This classification helps search but should not be mistaken for a complete generation formula. Map terrain, site frequency, age, national starts, events, and scenario design can all shape actual presence.</p>
+<h2 id="b12-39-search-level-and-path">39. Search level and path<a class="heading-link" href="#b12-39-search-level-and-path" aria-label="Link to 39. Search level and path">#</a></h2><p>Random sites commonly expose a path and search difficulty. Those fields answer two separate questions:</p>
+<ul>
+<li>which path can find the site;</li>
+<li>what search strength is required.</li>
+</ul>
+<p>Site-search spells, remote search, and manual searching interact with those facts through rules explained in Book V. A site record should never imply that a nation can exploit it merely because the site exists. Access may still require a laboratory, a fort, a priest, a commander with suitable leadership, or control of the province.</p>
+<h2 id="b12-40-location-masks">40. Location masks<a class="heading-link" href="#b12-40-location-masks" aria-label="Link to 40. Location masks">#</a></h2><p>The register decodes known location bits into readable terrain labels:</p>
+<ul>
+<li>plain;</li>
+<li>forest;</li>
+<li>mountain;</li>
+<li>waste;</li>
+<li>farm;</li>
+<li>sea;</li>
+<li>coast;</li>
+<li>swamp;</li>
+<li>deep sea;</li>
+<li>cave;</li>
+<li>underwater mountain;</li>
+<li>underwater forest;</li>
+<li>underwater coastal;</li>
+<li>unique.</li>
+</ul>
+<p>The raw mask is retained beside the decoded list. If a later source adds a bit that is not yet understood, the raw value survives the import and the decoder can be extended without losing evidence.</p>
+<h2 id="b12-41-site-income-is-not-the-whole-site-value">41. Site income is not the whole site value<a class="heading-link" href="#b12-41-site-income-is-not-the-whole-site-value" aria-label="Link to 41. Site income is not the whole site value">#</a></h2><p>Gem income is the easiest site effect to compare, but it is often not the most important. Sites can provide:</p>
+<ul>
+<li>commanders or troops;</li>
+<li>path access;</li>
+<li>laboratories or forts;</li>
+<li>research or ritual modifiers;</li>
+<li>supply, resources, gold, or recruitment points;</li>
+<li>unrest, disease, horror, or population effects;</li>
+<li>province defence;</li>
+<li>dominion or scale changes;</li>
+<li>unique summons or adventures.</li>
+</ul>
+<p>The value of a site depends on who owns it and whether the nation can exploit the granted access. The database makes the fields visible; Book II and Book V explain the economic and magical conversions.</p>
+<h2 id="b12-42-duplicate-names-and-site-identity">42. Duplicate names and site identity<a class="heading-link" href="#b12-42-duplicate-names-and-site-identity" aria-label="Link to 42. Duplicate names and site identity">#</a></h2><p>Several sites share a display name. An Academy of Magic in one path or terrain is not safely identified by name alone. Engine ID, path, location mask, and mechanical properties distinguish the records.</p>
+<p>Website URLs should use stable IDs. Search results may group matching names for readability, but opening the card must reveal the numeric identity and distinguishing fields.</p>
+<h2 id="b12-43-throne-comparison-queries">43. Throne comparison queries<a class="heading-link" href="#b12-43-throne-comparison-queries" aria-label="Link to 43. Throne comparison queries">#</a></h2><p>Useful Throne searches include:</p>
+<ul>
+<li>all Thrones at the selected game level;</li>
+<li>claimed gem income by path;</li>
+<li>effects that change scales, unrest, population, or dominion;</li>
+<li>Thrones granting recruitable commanders;</li>
+<li>effects that alter ritual levels or Call God;</li>
+<li>Thrones whose effect can harm the owner as well as rivals;</li>
+<li>Throne records changed by a patch.</li>
+</ul>
+<p>The query result is an intelligence aid, not a prediction of which Thrones the map generator selected.</p>
+<span class="anchor-alias" id="b12-mercenaries-independents" aria-hidden="true"></span><h1 id="b12-part-vii-mercenaries-and-independent-recruitment">Part VII: Mercenaries and Independent Recruitment<a class="heading-link" href="#b12-part-vii-mercenaries-and-independent-recruitment" aria-label="Link to Part VII: Mercenaries and Independent Recruitment">#</a></h1><h2 id="b12-44-mercenary-company-records">44. Mercenary company records<a class="heading-link" href="#b12-44-mercenary-company-records" aria-label="Link to 44. Mercenary company records">#</a></h2><p>The register contains 78 mercenary companies. Each record joins the company to current unit identities and retains:</p>
+<ul>
+<li>company and commander name;</li>
+<li>commander unit;</li>
+<li>troop unit;</li>
+<li>starting troop count;</li>
+<li>minimum surviving strength;</li>
+<li>minimum bid;</li>
+<li>starting experience;</li>
+<li>random and fixed equipment fields;</li>
+<li>recruitment recovery rate;</li>
+<li>era mask resolved to Early, Middle, and Late Age availability.</li>
+</ul>
+<p>The minimum bid is not the expected winning bid. The strategic value depends on competition, timing, map position, morale, equipment, and the opportunity cost of gold. Book II owns the economic comparison and Book VI owns the tempo decision.</p>
+<h2 id="b12-45-mercenary-attrition-and-continuity">45. Mercenary attrition and continuity<a class="heading-link" href="#b12-45-mercenary-attrition-and-continuity" aria-label="Link to 45. Mercenary attrition and continuity">#</a></h2><p>A company is not equivalent to buying a permanent national production line. Losses, recovery rate, contract timing, and rebidding shape its value. The record preserves the source fields needed for that analysis.</p>
+<p>A practical mercenary card should answer:</p>
+<ol>
+<li>What does the company add immediately?</li>
+<li>Which roles does the national roster lack?</li>
+<li>How many casualties can the company sustain before it becomes strategically irrelevant?</li>
+<li>Does the commander add a useful path, leadership type, or item?</li>
+<li>Is the bid buying expansion tempo, emergency defence, siege mass, or denial?</li>
+</ol>
+<h2 id="b12-46-why-independent-recruitment-remains-a-marked-gap">46. Why independent recruitment remains a marked gap<a class="heading-link" href="#b12-46-why-independent-recruitment-remains-a-marked-gap" aria-label="Link to 46. Why independent recruitment remains a marked gap">#</a></h2><p>Independent province recruitment is strategically important, but the pinned 6.35 Inspector extract does not expose a population-type membership table. It contains current unit records but cannot prove which units and commanders each independent population type makes recruitable.</p>
+<p>Older community catalogues describe generic humans, tribes, Amazons, cave peoples, mages, and other independent families. Carrying those tables forward as though they were a complete 6.35 export would violate the project&#39;s evidence standard. The first register contains one coverage marker instead of a fabricated list.</p>
+<p>The marker records:</p>
+<ul>
+<li>what is missing;</li>
+<li>why the available source cannot prove it;</li>
+<li>what reliable evidence would close the gap;</li>
+<li>where current unit statistics can be joined once membership is known.</li>
+</ul>
+<p>This is unfinished work, but it is controlled unfinished work.</p>
+<h2 id="b12-47-the-acceptable-route-to-a-current-independent-catalogue">47. The acceptable route to a current independent catalogue<a class="heading-link" href="#b12-47-the-acceptable-route-to-a-current-independent-catalogue" aria-label="Link to 47. The acceptable route to a current independent catalogue">#</a></h2><p>The gap can be closed by either:</p>
+<ul>
+<li>a version-matched engine export of population types and recruit lists; or</li>
+<li>a published 6.35 reproduction giving population type, terrain and age conditions, unit IDs, commander IDs, and a repeatable method.</li>
+</ul>
+<p>Once available, the data should be stored as relationships:</p>
+<pre><code class="language-text">population type -&gt; terrain and age conditions -&gt; recruitable units and commanders
+</code></pre>
+<p>The units themselves should remain in the shared unit layer. Independent records should not copy their full statistics.</p>
+<h2 id="b12-48-evaluating-independent-access-without-a-complete-catalogue">48. Evaluating independent access without a complete catalogue<a class="heading-link" href="#b12-48-evaluating-independent-access-without-a-complete-catalogue" aria-label="Link to 48. Evaluating independent access without a complete catalogue">#</a></h2><p>Until the table is verified, campaign analysis can still evaluate a discovered province from the in-game recruitment panel. The useful questions are:</p>
+<ul>
+<li>Does the province repair a national weapon, armour, missile, leadership, or priest gap?</li>
+<li>Is the unit gold-, resource-, or recruitment-point efficient for that role?</li>
+<li>Does the province need a fort, temple, or laboratory before the key unit appears?</li>
+<li>Can production continue under likely unrest or siege pressure?</li>
+<li>Is the province strategically defensible enough to justify infrastructure?</li>
+</ul>
+<p>The observation belongs to the current game. It should not be generalized into a universal population-type record without evidence.</p>
+<span class="anchor-alias" id="b12-special-dominions" aria-hidden="true"></span><h1 id="b12-part-viii-special-dominion-systems">Part VIII: Special Dominion Systems<a class="heading-link" href="#b12-part-viii-special-dominion-systems" aria-label="Link to Part VIII: Special Dominion Systems">#</a></h1><h2 id="b12-49-why-special-dominions-are-database-objects">49. Why special dominions are database objects<a class="heading-link" href="#b12-49-why-special-dominions-are-database-objects" aria-label="Link to 49. Why special dominions are database objects">#</a></h2><p>Special dominions combine national identity with religious territory. They are neither ordinary unit abilities nor ordinary scale effects. The official manual gives them a dedicated section because they change what candles mean.</p>
+<p>The register stores fourteen system families. Each record contains:</p>
+<ul>
+<li>a stable system identity;</li>
+<li>every applicable nation and age;</li>
+<li>a concise mechanical list paraphrased from the manual;</li>
+<li>the disciple inheritance rule;</li>
+<li>the official source locator;</li>
+<li>a canonical link to this volume and Book III.</li>
+</ul>
+<p>Exact national strategy remains dossier work. The shared system should be written once.</p>
+<h2 id="b12-50-official-system-register">50. Official system register<a class="heading-link" href="#b12-50-official-system-register" aria-label="Link to 50. Official system register">#</a></h2><table>
+<thead>
+<tr>
+<th>System</th>
+<th>Nations or ages</th>
+<th>Core effect</th>
+<th>Disciple boundary</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Dominion scrying</td>
+<td>Arcoscephale, all ages</td>
+<td>Accurate reports inside dominion, including Glamour detection</td>
+<td>Information is shared with disciples</td>
+</tr>
+<tr>
+<td>Dying dominion</td>
+<td>EA and LA Mictlan</td>
+<td>Ordinary passive spread fails; blood sacrifice becomes central</td>
+<td>Dying dominion does not transfer</td>
+</tr>
+<tr>
+<td>Temple Oni</td>
+<td>EA Yomi</td>
+<td>Temples generate Oni according to Turmoil, terrain, and temperature</td>
+<td>Does not transfer</td>
+</tr>
+<tr>
+<td>Dreamlands</td>
+<td>LA R&#39;lyeh</td>
+<td>Insanity, madmen, and Void Dreamer development</td>
+<td>Extends into disciple lands with only partial protection</td>
+</tr>
+<tr>
+<td>Ashen Empire</td>
+<td>MA Ermor</td>
+<td>Population death, undead arising, and corpse awareness</td>
+<td>Applies to disciples</td>
+</tr>
+<tr>
+<td>Carrion Woods</td>
+<td>MA Asphodel</td>
+<td>Population death and Carrion animation</td>
+<td>Applies to disciples</td>
+</tr>
+<tr>
+<td>Miasma</td>
+<td>MA C&#39;tis</td>
+<td>Rain, disease, terrain change, and asymmetric income pressure</td>
+<td>Disciples are treated mostly as enemies; sacreds are immune</td>
+</tr>
+<tr>
+<td>Golem Cult</td>
+<td>MA Agartha</td>
+<td>Constructs gain Hit Points</td>
+<td>Helps allied and enemy constructs inside the dominion</td>
+</tr>
+<tr>
+<td>Additional blood sacrifice</td>
+<td>Seventeen named nation-age entries</td>
+<td>Blood sacrifice supplements ordinary dominion spread</td>
+<td>Does not transfer, but an innately capable disciple keeps the order</td>
+</tr>
+<tr>
+<td>Dark Ships</td>
+<td>MA Phaeacia</td>
+<td>Commanders sail when origin and destination have friendly dominion</td>
+<td>Does not transfer; disciple-led Phaeacia still uses it</td>
+</tr>
+<tr>
+<td>Spectral dominion</td>
+<td>EA Therodos</td>
+<td>Population decline and fort-generated ghosts</td>
+<td>Applies in disciple games</td>
+</tr>
+<tr>
+<td>Dominion conflict</td>
+<td>EA Mekone</td>
+<td>Maximum dominion counts one higher when suppressing enemy faith</td>
+<td>No transferred rule stated in the manual</td>
+</tr>
+<tr>
+<td>Dominion unrest</td>
+<td>MA and LA Phlegra</td>
+<td>Covered provinces gain unrest, increasing with local strength</td>
+<td>Operates through disciples only when Phlegra is the Pretender nation</td>
+</tr>
+<tr>
+<td>Concealed provinces</td>
+<td>Ubar, Na&#39;Ba, Ind, and Feminie</td>
+<td>Hides ownership and name behind a false independent appearance</td>
+<td>Disciples benefit</td>
+</tr>
+</tbody></table>
+<h2 id="b12-51-local-strength-presence-and-maximum-dominion">51. Local strength, presence, and maximum dominion<a class="heading-link" href="#b12-51-local-strength-presence-and-maximum-dominion" aria-label="Link to 51. Local strength, presence, and maximum dominion">#</a></h2><p>Special systems depend on different religious variables. They must not be described with the vague phrase “stronger dominion helps” unless the source actually says so.</p>
+<ul>
+<li>Yomi needs the presence of at least one candle for temple generation, but the number of candles does not increase that generation; Turmoil does.</li>
+<li>Phlegra&#39;s unrest rises more with higher local dominion strength.</li>
+<li>Mekone modifies effective maximum dominion in a conflict calculation.</li>
+<li>Dark Ships tests whether origin and destination lie in friendly dominion.</li>
+<li>Miasma acts on covered provinces but treats ownership, sacred status, terrain, and underwater location differently.</li>
+</ul>
+<p>The controlling variable must be an explicit record field in the next schema revision. Until then, it remains in the verified mechanic list.</p>
+<h2 id="b12-52-beneficiaries-and-victims">52. Beneficiaries and victims<a class="heading-link" href="#b12-52-beneficiaries-and-victims" aria-label="Link to 52. Beneficiaries and victims">#</a></h2><p>Special dominions often affect more than the owning nation. The manual explicitly describes cases involving disciples, enemies, allies, or every suitable object in the province.</p>
+<p>The Golem Cult illustrates the danger. Constructs gain Hit Points in the dominion even when they belong to an enemy. A rule that sounds like a national bonus is actually a territorial modifier. The difference changes invasion planning and counter-selection.</p>
+<p>Every future special-dominion record should expose four separate audiences:</p>
+<ul>
+<li>owner;</li>
+<li>disciple or ally;</li>
+<li>enemy;</li>
+<li>neutral or universal objects.</li>
+</ul>
+<h2 id="b12-53-permanent-and-reversible-effects">53. Permanent and reversible effects<a class="heading-link" href="#b12-53-permanent-and-reversible-effects" aria-label="Link to 53. Permanent and reversible effects">#</a></h2><p>Some systems change a province while it is covered. Others consume population, alter terrain, generate units, or accumulate insanity and unrest. Their consequences can outlast the candles that caused them.</p>
+<p>A national dossier should distinguish:</p>
+<ul>
+<li>immediate reversible modifiers;</li>
+<li>accumulating but recoverable pressure;</li>
+<li>permanent terrain change;</li>
+<li>population conversion or destruction;</li>
+<li>generated units that persist after dominion changes;</li>
+<li>information effects that end when concealment ends.</li>
+</ul>
+<p>This distinction belongs to the national application, not the shared one-line system record.</p>
+<h2 id="b12-54-disciples-are-an-explicit-field-not-an-afterthought">54. Disciples are an explicit field, not an afterthought<a class="heading-link" href="#b12-54-disciples-are-an-explicit-field-not-an-afterthought" aria-label="Link to 54. Disciples are an explicit field, not an afterthought">#</a></h2><p>The official manual repeatedly states whether a special dominion transfers, partially transfers, or affects disciple lands without becoming the disciple nation&#39;s own ability. The register preserves that statement separately.</p>
+<p>Team advice that ignores this field can recommend a pairing whose economy or armies are damaged by the master. MA Ermor, Asphodel, C&#39;tis, R&#39;lyeh, and Phlegra all require more than a generic “special dominion” warning.</p>
+<span class="anchor-alias" id="b12-website" aria-hidden="true"></span><h1 id="b12-part-ix-website-and-research-use">Part IX: Website and Research Use<a class="heading-link" href="#b12-part-ix-website-and-research-use" aria-label="Link to Part IX: Website and Research Use">#</a></h1><h2 id="b12-55-the-publication-contract">55. The publication contract<a class="heading-link" href="#b12-55-the-publication-contract" aria-label="Link to 55. The publication contract">#</a></h2><p><code>base-object-register.schema.json</code> defines the top-level contract. Every build must contain:</p>
+<ul>
+<li>schema version;</li>
+<li>edition and generation date;</li>
+<li>vanilla 6.35 structured-snapshot declaration with a visible 6.36 live-baseline overlay;</li>
+<li>evidence key;</li>
+<li>scope and deliberate exclusions;</li>
+<li>source manifest;</li>
+<li>per-category counts;</li>
+<li>the nine record collections.</li>
+</ul>
+<p>Core record fields include stable ID, object type, name where applicable, ruleset, evidence status, source IDs, canonical section, verification date, and record hash.</p>
+<p>The schema is intentionally strict at the collection level and permissive inside the specialist records. The source contains hundreds of rare fields. Prematurely forbidding an unfamiliar property would encourage data loss. Later schema revisions can tighten well-understood object families while retaining an escape hatch for raw source fields.</p>
+<h2 id="b12-56-default-search-views">56. Default search views<a class="heading-link" href="#b12-56-default-search-views" aria-label="Link to 56. Default search views">#</a></h2><p>A public site should provide at least three views.</p>
+<h3 id="b12-guide-view">Guide view<a class="heading-link" href="#b12-guide-view" aria-label="Link to Guide view">#</a></h3><p>Guide view hides internal spell rows, raw masks, unknown attributes, hashes, and source-file detail. It shows access, cost, principal effect, evidence badge, and a link to the canonical chapter.</p>
+<h3 id="b12-advanced-view">Advanced view<a class="heading-link" href="#b12-advanced-view" aria-label="Link to Advanced view">#</a></h3><p>Advanced view exposes engine IDs, effect numbers, chained records, raw selectors, unusual item properties, site masks, and record hashes. It is intended for expert play, modding, and research.</p>
+<h3 id="b12-change-view">Change view<a class="heading-link" href="#b12-change-view" aria-label="Link to Change view">#</a></h3><p>Change view compares two source revisions and lists added, removed, and changed records by field. It should also show which nation dossiers or canonical sections depend on the changed object.</p>
+<h2 id="b12-57-filters-that-should-exist-at-launch">57. Filters that should exist at launch<a class="heading-link" href="#b12-57-filters-that-should-exist-at-launch" aria-label="Link to 57. Filters that should exist at launch">#</a></h2><table>
+<thead>
+<tr>
+<th>Family</th>
+<th>Essential filters</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Spells</td>
+<td>Public status, school, level, paths, kind, role, cost, national restriction, legendary flag</td>
+</tr>
+<tr>
+<td>Items</td>
+<td>Slot, Construction level, artifact class, paths, path boost, movement, economy, restriction</td>
+</tr>
+<tr>
+<td>Summons</td>
+<td>Spell school, spell level, target type, unique group, resolved status, unit abilities</td>
+</tr>
+<tr>
+<td>Pretenders</td>
+<td>Nation, age, starting dominion, path cost, innate paths, discount, movement class, shape links</td>
+</tr>
+<tr>
+<td>Thrones</td>
+<td>Level, path income, claimed effect, recruitment, scales, dominion, population, unrest</td>
+</tr>
+<tr>
+<td>Sites</td>
+<td>Path, search level, terrain, rarity class, gem income, recruitment, ritual or research effect</td>
+</tr>
+<tr>
+<td>Mercenaries</td>
+<td>Age, troop type, commander, starting strength, minimum bid, experience</td>
+</tr>
+<tr>
+<td>Special dominions</td>
+<td>Nation, age, controlling variable, beneficiary, disciple transfer, permanent effect</td>
+</tr>
+</tbody></table>
+<h2 id="b12-58-related-object-links">58. Related-object links<a class="heading-link" href="#b12-58-related-object-links" aria-label="Link to 58. Related-object links">#</a></h2><p>The website should make object relationships visible without copying pages.</p>
+<ul>
+<li>A summon spell links to every possible unit.</li>
+<li>A summoned unit links back to every producing spell.</li>
+<li>A Pretender links to its available nations and shape forms.</li>
+<li>A site links to recruitable units and commanders.</li>
+<li>A mercenary links to its leader, troop, and fixed items.</li>
+<li>A special dominion links to each applicable nation dossier.</li>
+<li>A national spell links to the nation and its research branch.</li>
+</ul>
+<p>These links turn the library into a graph rather than a stack of articles.</p>
+<h2 id="b12-59-example-website-questions">59. Example website questions<a class="heading-link" href="#b12-59-example-website-questions" aria-label="Link to 59. Example website questions">#</a></h2><p>The object layer can answer questions that are awkward in prose:</p>
+<ul>
+<li>Which Nature rituals create commanders rather than troops?</li>
+<li>Which Construction 5 items increase path access?</li>
+<li>Which level-two Thrones grant commanders or research effects?</li>
+<li>Which Pretender chassis are shared by two selected nations?</li>
+<li>Which mercenary companies exist in the Middle Age and begin with experienced troops?</li>
+<li>Which sites can appear underwater and grant recruitable commanders?</li>
+<li>Which special dominions harm disciples or enemies as well as helping the owner?</li>
+<li>Which summon relations remain unresolved in the current evidence set?</li>
+</ul>
+<p>The answer can then link to strategy rather than embedding a generic recommendation in every object card.</p>
+<h2 id="b12-60-nation-dossier-integration">60. Nation dossier integration<a class="heading-link" href="#b12-60-nation-dossier-integration" aria-label="Link to 60. Nation dossier integration">#</a></h2><p>A dossier should not print a complete copy of every national spell, Pretender, summon, and site. It should select the records that matter to the nation&#39;s plans and add only national analysis.</p>
+<p>A clean dossier entry can contain:</p>
+<ul>
+<li>object ID and short name;</li>
+<li>why the nation can access it;</li>
+<li>the timing branch it enables;</li>
+<li>the national role it fills;</li>
+<li>likely counters or failure modes;</li>
+<li>links to the base record and canonical rule chapter;</li>
+<li>modded delta where relevant.</li>
+</ul>
+<p>This is the foundation that allows nation work to resume without creating hundreds of duplicate fact paragraphs.</p>
+<span class="anchor-alias" id="b12-maintenance" aria-hidden="true"></span><h1 id="b12-part-x-verification-and-maintenance">Part X: Verification and Maintenance<a class="heading-link" href="#b12-part-x-verification-and-maintenance" aria-label="Link to Part X: Verification and Maintenance">#</a></h1><h2 id="b12-61-import-controls">61. Import controls<a class="heading-link" href="#b12-61-import-controls" aria-label="Link to 61. Import controls">#</a></h2><p>The importer refuses an unexpected upstream commit unless an explicit refresh flag is supplied. This protects the frozen 6.35 baseline from a silent pull of later data.</p>
+<p>The source manifest records:</p>
+<ul>
+<li>repository URL;</li>
+<li>commit and date;</li>
+<li>commit subject;</li>
+<li>source licence note;</li>
+<li>SHA-256 hashes for every imported table;</li>
+<li>official manual identity and hash.</li>
+</ul>
+<p>The build also confirms category counts, stable ID uniqueness, required fields, record-hash length, and internal JSON validity.</p>
+<h2 id="b12-62-cross-source-verification">62. Cross-source verification<a class="heading-link" href="#b12-62-cross-source-verification" aria-label="Link to 62. Cross-source verification">#</a></h2><p>The source hierarchy for object work is:</p>
+<ol>
+<li>current official manual or patch statement;</li>
+<li>current in-game UI or exact engine export;</li>
+<li>pinned 6.35 extracted data;</li>
+<li>a published reproduction with method and version;</li>
+<li>community summary or strategic commentary.</li>
+</ol>
+<p>Lower layers can discover a question. They do not silently overrule a higher layer. When the manual and extraction disagree, both values should be recorded and the public field marked unresolved until the current UI or patch history settles it.</p>
+<h2 id="b12-63-known-limitations-of-the-first-build">63. Known limitations of the first build<a class="heading-link" href="#b12-63-known-limitations-of-the-first-build" aria-label="Link to 63. Known limitations of the first build">#</a></h2><p>The first build is deliberately incomplete in several places.</p>
+<ul>
+<li>Independent population-type membership is absent.</li>
+<li>Twenty-five summon relations contain an unresolved engine selection or monster-tag group.</li>
+<li>Some source-native item and site properties lack polished human labels.</li>
+<li>Realm-based spell access is preserved in attributes but not completely expanded into nation lists.</li>
+<li>Unit descriptions, spell descriptions, item descriptions, and artwork are excluded.</li>
+<li>The register does not yet contain every weapon, armour, unit, event, or nation record because those have separate ownership or future schemas.</li>
+<li>Source-confirmed values have not all received an independent UI check.</li>
+</ul>
+<p>These limitations are part of the publication, not hidden production notes.</p>
+<h2 id="b12-64-correction-workflow">64. Correction workflow<a class="heading-link" href="#b12-64-correction-workflow" aria-label="Link to 64. Correction workflow">#</a></h2><p>When an error is found:</p>
+<ol>
+<li>Record the object ID, field, current value, proposed value, and ruleset.</li>
+<li>Attach the strongest available source and exact locator.</li>
+<li>Decide whether the source extraction, importer, interpretation, or prose is wrong.</li>
+<li>Correct the narrowest authoritative layer.</li>
+<li>Regenerate hashes, search indexes, and dependent pages.</li>
+<li>Add a revision note when the public meaning changed.</li>
+<li>Preserve the earlier version for patch comparison.</li>
+</ol>
+<p>This workflow avoids the common failure in which a number is corrected in one article while copies remain wrong elsewhere.</p>
+<h2 id="b12-65-patch-refresh-workflow">65. Patch refresh workflow<a class="heading-link" href="#b12-65-patch-refresh-workflow" aria-label="Link to 65. Patch refresh workflow">#</a></h2><p>A later official patch should be processed as a controlled migration:</p>
+<ol>
+<li>archive the current manifest and register;</li>
+<li>import the new exact-version data into a separate build;</li>
+<li>compare record hashes;</li>
+<li>classify each delta as addition, removal, rename, mechanical change, or extraction change;</li>
+<li>compare the official patch note with the observed delta;</li>
+<li>update canonical prose only where the general rule changed;</li>
+<li>update nation dossiers only where national conclusions changed;</li>
+<li>publish a version digest and redirects for renamed objects.</li>
+</ol>
+<p>The full official patch ledger remains the next separate structured-data project after this object layer.</p>
+<h2 id="b12-66-mod-overlay-workflow">66. Mod overlay workflow<a class="heading-link" href="#b12-66-mod-overlay-workflow" aria-label="Link to 66. Mod overlay workflow">#</a></h2><p>Dominions Enhanced and Divinitus should be applied as versioned overlays, not folded into the vanilla records.</p>
+<p>An overlay record should identify:</p>
+<ul>
+<li>base object ID, if an existing object is selected;</li>
+<li>mod source file and line;</li>
+<li>load-order position;</li>
+<li>field additions, replacements, and clears;</li>
+<li>newly allocated ID where known;</li>
+<li>unresolved automatic allocation where not known;</li>
+<li>final combined value after every earlier mod is applied.</li>
+</ul>
+<p>Book IX already establishes the frozen mod order and collision discipline. The base object register now supplies the vanilla side of that comparison.</p>
+<h1 id="b12-essay-i-object-literacy-is-strategic-literacy">Essay I: Object Literacy Is Strategic Literacy<a class="heading-link" href="#b12-essay-i-object-literacy-is-strategic-literacy" aria-label="Link to Essay I: Object Literacy Is Strategic Literacy">#</a></h1><p>Dominions is often described as a game of hidden knowledge. The phrase is only partly true. Much of the knowledge is visible, but it is distributed across cards, paths, schools, shapes, national rosters, sites, rituals, and turn timing. The difficulty lies less in secrecy than in joining the pieces quickly enough to make a decision.</p>
+<p>An object database does not remove judgment. It removes avoidable retrieval cost. A player who can immediately find every ritual that produces a Death commander can spend time comparing risk, timing, and price. A player who cannot find the candidates must rely on memory, and memory tends to preserve famous options while losing narrow or recently changed ones.</p>
+<p>The same principle applies to counterplay. An unfamiliar item need not remain a mystery if its slot, resistances, automatic spells, movement changes, and bearer restrictions can be read in one place. The strategic question then becomes concrete: which part of the package creates the threat, and which part can be denied?</p>
+<p>Object literacy also improves restraint. Easy access to a catalogue makes it tempting to select the most impressive card. A well-designed reference pushes in the opposite direction by showing access costs and relationships. The object exists inside a conversion chain. Research, gems, mage-turns, infrastructure, position, and risk all stand between possibility and effect.</p>
+<p>The strongest use of the database is not encyclopaedic display. It is careful exclusion. Filters can remove options the nation cannot reach, afford, deliver, or exploit in time. The remaining set is small enough for genuine strategic reasoning.</p>
+<h1 id="b12-essay-ii-versioned-facts-and-reproducible-judgment">Essay II: Versioned Facts and Reproducible Judgment<a class="heading-link" href="#b12-essay-ii-versioned-facts-and-reproducible-judgment" aria-label="Link to Essay II: Versioned Facts and Reproducible Judgment">#</a></h1><p>A strategy library becomes unreliable when it treats facts as timeless. Dominions patches can change a requirement, cost, unit, site, or exception. Mods can replace the same object again. A remembered truth may remain broadly sensible while its numerical premise has expired.</p>
+<p>Versioned records solve only half of that problem. They can show what changed, but not whether the old recommendation still works. That requires reproducible judgment.</p>
+<p>A good recommendation names its premises. It identifies the ruleset, object IDs, national access, research timing, costs, expected opponent, and intended role. When a patch changes one premise, the conclusion can be retested without reconstructing the original argument from memory.</p>
+<p>This also improves disagreement. Two players may recommend different summons because they assume different map sizes, gem incomes, research rates, or enemy compositions. With explicit records and assumptions, the disagreement becomes informative rather than rhetorical.</p>
+<p>The library&#39;s long-term value will not come from claiming finality. It will come from making correction cheap, visible, and local. Stable identities, source manifests, evidence labels, and record hashes turn a correction from an editorial crisis into routine maintenance.</p>
+<h1 id="b12-part-xi-practical-reference-sheets">Part XI: Practical Reference Sheets<a class="heading-link" href="#b12-part-xi-practical-reference-sheets" aria-label="Link to Part XI: Practical Reference Sheets">#</a></h1><h2 id="b12-67-object-card-minimum-fields">67. Object-card minimum fields<a class="heading-link" href="#b12-67-object-card-minimum-fields" aria-label="Link to 67. Object-card minimum fields">#</a></h2><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Minimum public card</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Spell</td>
+<td>Name, ID, school, level, paths, combat or ritual, cost, role, restriction, evidence</td>
+</tr>
+<tr>
+<td>Item</td>
+<td>Name, ID, slot, Construction level, paths, principal properties, restrictions, artifact state, evidence</td>
+</tr>
+<tr>
+<td>Summon</td>
+<td>Producing spell, possible units, selection rule, quantity status, permanence, evidence</td>
+</tr>
+<tr>
+<td>Pretender</td>
+<td>Name, ID, nations, starting dominion, path cost, innate paths, body, forms, discounts, evidence</td>
+</tr>
+<tr>
+<td>Throne</td>
+<td>Name, ID, level, claimed effects, income, recruitment, risks, evidence</td>
+</tr>
+<tr>
+<td>Site</td>
+<td>Name, ID, path, search level, terrain, income, recruitment, other effects, evidence</td>
+</tr>
+<tr>
+<td>Mercenary</td>
+<td>Company, leader, troop, age, strength, minimum bid, experience, recovery, evidence</td>
+</tr>
+<tr>
+<td>Special dominion</td>
+<td>System, nations, controlling variable, beneficiaries, victims, disciple rule, evidence</td>
+</tr>
+</tbody></table>
+<h2 id="b12-68-beginner-lookup-checklist">68. Beginner lookup checklist<a class="heading-link" href="#b12-68-beginner-lookup-checklist" aria-label="Link to 68. Beginner lookup checklist">#</a></h2><ul>
+<li>Confirm vanilla or modded ruleset.</li>
+<li>Search by name, then confirm engine ID.</li>
+<li>Check access before effect.</li>
+<li>Check cost and timing before enthusiasm.</li>
+<li>Open linked rules when a field is unfamiliar.</li>
+<li>Treat source-confirmed and unresolved badges differently.</li>
+<li>Use the current game interface when a campaign decision turns on an edge case.</li>
+</ul>
+<h2 id="b12-69-expert-comparison-checklist">69. Expert comparison checklist<a class="heading-link" href="#b12-69-expert-comparison-checklist" aria-label="Link to 69. Expert comparison checklist">#</a></h2><ul>
+<li>Compare stable IDs and record hashes between versions.</li>
+<li>Inspect chained spells and shape graphs.</li>
+<li>Separate raw fields from publication-derived tags.</li>
+<li>Resolve national and realm restrictions.</li>
+<li>Join summons to current unit records.</li>
+<li>Join sites to terrain and ownership conditions.</li>
+<li>Model mutable campaign state outside the base record.</li>
+<li>Record uncertainty instead of normalizing it away.</li>
+</ul>
+<h2 id="b12-70-editorial-no-duplication-checklist">70. Editorial no-duplication checklist<a class="heading-link" href="#b12-70-editorial-no-duplication-checklist" aria-label="Link to 70. Editorial no-duplication checklist">#</a></h2><ul>
+<li>Search the Reader&#39;s Guide and object register before drafting.</li>
+<li>Link to Book II for economy, Book III for Pretenders and dominion, Book IV for combat, Book V for magic, Book VI for strategy, and Book XI for abilities.</li>
+<li>Add a new paragraph only when it explains an object-specific exception, application, correction, or evidence result.</li>
+<li>Keep complete inventories in data, not prose.</li>
+<li>Use one stable object ID across every dossier and essay.</li>
+<li>Update the source record once, then regenerate dependants.</li>
+</ul>
+<h2 id="b12-71-what-this-unlocks">71. What this unlocks<a class="heading-link" href="#b12-71-what-this-unlocks" aria-label="Link to 71. What this unlocks">#</a></h2><p>The base-game object layer is now substantial enough to support the next phases without returning to repeated manual research.</p>
+<p>It unlocks:</p>
+<ul>
+<li>object-aware nation dossiers;</li>
+<li>vanilla-versus-DE-versus-Divinitus comparison pages;</li>
+<li>spell, item, summon, Pretender, Throne, site, and mercenary filters;</li>
+<li>cross-object search and access graphs;</li>
+<li>patch-by-patch record comparison;</li>
+<li>automatic detection of changed national recommendations;</li>
+<li>a reliable boundary between verified facts and unresolved engine behaviour.</li>
+</ul>
+<p>The remaining G-03 work is narrow and explicit: resolve independent population types, close the twenty-five summon selection gaps, improve human labels for rare properties, and expand realm restrictions. None of those gaps prevents the current register from serving as the reusable foundation for the website and later dossiers.</p>
+<h1 id="b12-source-record">Source Record<a class="heading-link" href="#b12-source-record" aria-label="Link to Source Record">#</a></h1><h2 id="b12-official-sources">Official sources<a class="heading-link" href="#b12-official-sources" aria-label="Link to Official sources">#</a></h2><ul>
+<li>Illwinter Game Design, <em>Dominions 6 Manual</em>, revision 2, especially Magic Sites, Mercenaries, Pretenders, artifacts, and Special Dominions, pp. 28-36, 79-88, and 100-116.</li>
+<li>Illwinter Game Design, <em>Dominions 6 Modding Manual</em>, version 6.34, for object selection, IDs, properties, sites, population types, spells, items, and national relations.</li>
+<li><a href="https://www.illwinter.com/dom6/docs.html" target="_blank" rel="noreferrer">Illwinter Dominions 6 documentation</a>.</li>
+</ul>
+<h2 id="b12-version-matched-extracted-source">Version-matched extracted source<a class="heading-link" href="#b12-version-matched-extracted-source" aria-label="Link to Version-matched extracted source">#</a></h2><ul>
+<li><a href="https://github.com/larzm42/dom6inspector" target="_blank" rel="noreferrer">Dominions 6 Data Inspector repository</a>, commit <code>cfac4311bc0b58053b8dead7bffbc036ba9bd5dc</code>, “Update to 6.35,” 26 May 2026.</li>
+<li><a href="https://larzm42.github.io/dom6inspector/" target="_blank" rel="noreferrer">Dominions 6 Data Inspector</a>, used as a public cross-check for the extracted object families.</li>
+</ul>
+<h2 id="b12-project-artefacts">Project artefacts<a class="heading-link" href="#b12-project-artefacts" aria-label="Link to Project artefacts">#</a></h2><ul>
+<li><code>website/base-object-register.json</code> - 4,196 versioned records.</li>
+<li><code>website/base-object-register.schema.json</code> - publication contract.</li>
+<li><code>tools/build_base_object_register.py</code> - pinned, reproducible importer.</li>
+<li><code>18-foundation-coverage-gap-audit.md</code> - ownership and G-03 definition.</li>
+<li>Book III - canonical Pretender and special-dominion rules.</li>
+<li>Book V - canonical magic, research, ritual, and forging method.</li>
+<li>Book VI - canonical Throne, mercenary, and campaign strategy.</li>
+<li>Book XI - canonical unit and ability interpretation.</li>
+</ul>
+
+{% endraw %}
+    </article>
+    <aside class="sidebar library-toc">
+      <h2>In this book</h2>
+      <nav><a href="#b12-ruleset-purpose-and-evidence-boundary">Ruleset, purpose, and evidence boundary</a>
+<a href="#b12-the-no-duplication-delta">The no-duplication delta</a>
+<a href="#b12-what-the-first-register-contains">What the first register contains</a>
+<a href="#b12-1-an-object-is-an-identity-not-merely-a-name">1. An object is an identity, not merely a name</a>
+<a href="#b12-2-ruleset-identity-belongs-inside-every-record">2. Ruleset identity belongs inside every record</a>
+<a href="#b12-3-evidence-status-belongs-beside-the-field">3. Evidence status belongs beside the field</a>
+<a href="#b12-4-record-hashes-make-silent-change-visible">4. Record hashes make silent change visible</a>
+<a href="#b12-5-raw-fields-and-interpreted-fields-serve-different-readers">5. Raw fields and interpreted fields serve different readers</a>
+<a href="#b12-6-a-ninety-second-lookup-routine">6. A ninety-second lookup routine</a>
+<a href="#b12-7-the-expert-audit-routine">7. The expert audit routine</a>
+<a href="#b12-8-spell-rows-and-player-facing-spells-are-not-the-same-thing">8. Spell rows and player-facing spells are not the same thing</a>
+<a href="#b12-9-school-and-research-level">9. School and research level</a>
+<a href="#b12-10-path-requirements-are-thresholds">10. Path requirements are thresholds</a>
+<a href="#b12-11-combat-spell-ritual-and-delivery-context">11. Combat spell, ritual, and delivery context</a>
+<a href="#b12-12-effects-roles-and-the-danger-of-one-label-summaries">12. Effects, roles, and the danger of one-label summaries</a>
+<a href="#b12-13-chained-spells">13. Chained spells</a>
+<a href="#b12-14-national-and-realm-restrictions">14. National and realm restrictions</a>
+<a href="#b12-15-cost-fields-are-not-an-efficiency-verdict">15. Cost fields are not an efficiency verdict</a>
+<a href="#b12-16-useful-spell-queries">16. Useful spell queries</a>
+<a href="#b12-17-item-identity-and-slot-type">17. Item identity and slot type</a>
+<a href="#b12-18-the-construction-ladder-and-special-records">18. The Construction ladder and special records</a>
+<a href="#b12-19-requirements-and-actual-forge-access">19. Requirements and actual forge access</a>
+<a href="#b12-20-mechanical-properties">20. Mechanical properties</a>
+<a href="#b12-21-boosters-as-access-edges">21. Boosters as access edges</a>
+<a href="#b12-22-artifacts-as-a-world-state-race">22. Artifacts as a world-state race</a>
+<a href="#b12-23-comparing-equipment-packages">23. Comparing equipment packages</a>
+<a href="#b12-24-a-summon-record-is-a-relationship">24. A summon record is a relationship</a>
+<a href="#b12-25-direct-unique-terrain-and-tag-based-summons">25. Direct, unique, terrain, and tag-based summons</a>
+<a href="#b12-26-quantity-and-scaling">26. Quantity and scaling</a>
+<a href="#b12-27-summoned-units-as-access-and-logistics">27. Summoned units as access and logistics</a>
+<a href="#b12-28-unique-summons-are-contested-resources">28. Unique summons are contested resources</a>
+<a href="#b12-29-shape-graphs-after-summoning">29. Shape graphs after summoning</a>
+<a href="#b12-30-form-records-and-design-records">30. Form records and design records</a>
+<a href="#b12-31-availability-is-a-relation-not-a-chassis-property">31. Availability is a relation, not a chassis property</a>
+<a href="#b12-32-starting-dominion-and-path-cost-are-only-the-opening-geometry">32. Starting dominion and path cost are only the opening geometry</a>
+<a href="#b12-33-innate-paths-purchased-paths-and-shape-changes">33. Innate paths, purchased paths, and shape changes</a>
+<a href="#b12-34-cheap-god-relations">34. Cheap-god relations</a>
+<a href="#b12-35-useful-pretender-queries">35. Useful Pretender queries</a>
+<a href="#b12-36-thrones-are-sites-with-victory-meaning">36. Thrones are sites with victory meaning</a>
+<a href="#b12-37-claimed-and-unclaimed-fields">37. Claimed and unclaimed fields</a>
+<a href="#b12-38-site-classes">38. Site classes</a>
+<a href="#b12-39-search-level-and-path">39. Search level and path</a>
+<a href="#b12-40-location-masks">40. Location masks</a>
+<a href="#b12-41-site-income-is-not-the-whole-site-value">41. Site income is not the whole site value</a>
+<a href="#b12-42-duplicate-names-and-site-identity">42. Duplicate names and site identity</a>
+<a href="#b12-43-throne-comparison-queries">43. Throne comparison queries</a>
+<a href="#b12-44-mercenary-company-records">44. Mercenary company records</a>
+<a href="#b12-45-mercenary-attrition-and-continuity">45. Mercenary attrition and continuity</a>
+<a href="#b12-46-why-independent-recruitment-remains-a-marked-gap">46. Why independent recruitment remains a marked gap</a>
+<a href="#b12-47-the-acceptable-route-to-a-current-independent-catalogue">47. The acceptable route to a current independent catalogue</a>
+<a href="#b12-48-evaluating-independent-access-without-a-complete-catalogue">48. Evaluating independent access without a complete catalogue</a>
+<a href="#b12-49-why-special-dominions-are-database-objects">49. Why special dominions are database objects</a>
+<a href="#b12-50-official-system-register">50. Official system register</a>
+<a href="#b12-51-local-strength-presence-and-maximum-dominion">51. Local strength, presence, and maximum dominion</a>
+<a href="#b12-52-beneficiaries-and-victims">52. Beneficiaries and victims</a>
+<a href="#b12-53-permanent-and-reversible-effects">53. Permanent and reversible effects</a>
+<a href="#b12-54-disciples-are-an-explicit-field-not-an-afterthought">54. Disciples are an explicit field, not an afterthought</a>
+<a href="#b12-55-the-publication-contract">55. The publication contract</a>
+<a href="#b12-56-default-search-views">56. Default search views</a>
+<a href="#b12-57-filters-that-should-exist-at-launch">57. Filters that should exist at launch</a>
+<a href="#b12-58-related-object-links">58. Related-object links</a>
+<a href="#b12-59-example-website-questions">59. Example website questions</a>
+<a href="#b12-60-nation-dossier-integration">60. Nation dossier integration</a>
+<a href="#b12-61-import-controls">61. Import controls</a>
+<a href="#b12-62-cross-source-verification">62. Cross-source verification</a>
+<a href="#b12-63-known-limitations-of-the-first-build">63. Known limitations of the first build</a>
+<a href="#b12-64-correction-workflow">64. Correction workflow</a>
+<a href="#b12-65-patch-refresh-workflow">65. Patch refresh workflow</a>
+<a href="#b12-66-mod-overlay-workflow">66. Mod overlay workflow</a>
+<a href="#b12-67-object-card-minimum-fields">67. Object-card minimum fields</a>
+<a href="#b12-68-beginner-lookup-checklist">68. Beginner lookup checklist</a>
+<a href="#b12-69-expert-comparison-checklist">69. Expert comparison checklist</a>
+<a href="#b12-70-editorial-no-duplication-checklist">70. Editorial no-duplication checklist</a>
+<a href="#b12-71-what-this-unlocks">71. What this unlocks</a>
+<a href="#b12-official-sources">Official sources</a>
+<a href="#b12-version-matched-extracted-source">Version-matched extracted source</a>
+<a href="#b12-project-artefacts">Project artefacts</a></nav>
+      <nav class="library-side-links">
+        <a href="/dominions/library/">Complete library</a>
+        <a href="/dominions/library/glossary/">Glossary</a>
+        <a href="/dominions/library/research/">Research register</a>
+        <a href="/downloads/dominions-6-knowledge-library-edition-24.pdf">Edition 24 PDF</a>
+      </nav>
+    </aside>
+  </div>
+  <nav class="library-pagination" aria-label="Adjacent books">
+    <a href="/dominions/library/books/book-xi/"><small>Previous</small>Foundation Book XI</a>
+    <a class="library-next" href="/dominions/library/books/book-xiii/"><small>Next</small>Foundation Book XIII</a>
+  </nav>
+</section>

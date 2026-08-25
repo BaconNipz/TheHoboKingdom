@@ -1,0 +1,3891 @@
+---
+title: "Foundation Book III: Pretenders, Dominion, Scales, and Blessings"
+description: "Pretender design, dominion, scales, blessings, awakening, death, and the consequences of religious pressure."
+nav_section: guides
+extra_css: /assets/dominions-library.css
+extra_js: /assets/dominions-library.js
+og_image: /assets/images/dominions-6-library-edition-24.png
+---
+
+<section class="page-hero library-page-hero">
+  <div class="shell">
+    <div class="breadcrumbs">
+      <a href="/dominions/">Dominions 6</a><span aria-hidden="true">/</span>
+      <a href="/dominions/library/">Knowledge Library</a><span aria-hidden="true">/</span>
+      <span>Foundation Book III</span>
+    </div>
+    <p class="eyebrow">Progress Edition 24</p>
+    <h1>Foundation Book III: Pretenders, Dominion, Scales, and Blessings</h1>
+    <p class="lead">Pretender design, dominion, scales, blessings, awakening, death, and the consequences of religious pressure.</p>
+    <div class="meta-row">
+      <span class="status status--stable">Published reference</span>
+      <span class="meta-chip">Dominions 6.36</span>
+      <span class="meta-chip">16,596 words</span>
+      <span class="meta-chip">196 sections</span>
+    </div>
+  </div>
+</section>
+
+<section class="section shell library-section">
+  <details class="library-mobile-toc">
+    <summary>Table of contents</summary>
+    <nav><a href="#b3-the-design-problem">The design problem</a>
+<a href="#b3-edition-note">Edition note</a>
+<a href="#b3-finding-the-useful-layer">Finding the useful layer</a>
+<a href="#b3-the-design-in-one-model">The design in one model</a>
+<a href="#b3-begin-with-the-nation-not-the-god">Begin with the nation, not the god</a>
+<a href="#b3-chassis-roles">Chassis roles</a>
+<a href="#b3-chassis-comparison-sheet">Chassis comparison sheet</a>
+<a href="#b3-physical-form-cost">Physical-form cost</a>
+<a href="#b3-magic-path-costs">Magic-path costs</a>
+<a href="#b3-dominion-strength-costs">Dominion-strength costs</a>
+<a href="#b3-scale-point-costs">Scale-point costs</a>
+<a href="#b3-awakening-points">Awakening points</a>
+<a href="#b3-awake">Awake</a>
+<a href="#b3-dormant">Dormant</a>
+<a href="#b3-imprisoned">Imprisoned</a>
+<a href="#b3-timing-comparison">Timing comparison</a>
+<a href="#b3-arrival-preparation">Arrival preparation</a>
+<a href="#b3-dominion-in-plain-language">Dominion in plain language</a>
+<a href="#b3-sources-of-dominion-spread">Sources of dominion spread</a>
+<a href="#b3-maximum-dominion">Maximum dominion</a>
+<a href="#b3-temple-check-chance">Temple-check chance</a>
+<a href="#b3-resolving-a-successful-check">Resolving a successful check</a>
+<a href="#b3-dominion-as-a-network">Dominion as a network</a>
+<a href="#b3-preaching">Preaching</a>
+<a href="#b3-blood-sacrifice">Blood sacrifice</a>
+<a href="#b3-prophets">Prophets</a>
+<a href="#b3-thrones-of-ascension">Thrones of Ascension</a>
+<a href="#b3-dominion-effects-on-units">Dominion effects on units</a>
+<a href="#b3-scale-convergence-inside-dominion">Scale convergence inside dominion</a>
+<a href="#b3-dominion-elimination">Dominion elimination</a>
+<a href="#b3-scales-in-plain-language">Scales in plain language</a>
+<a href="#b3-ordinary-scale-effects">Ordinary scale effects</a>
+<a href="#b3-order-and-turmoil">Order and Turmoil</a>
+<a href="#b3-productivity-and-sloth">Productivity and Sloth</a>
+<a href="#b3-temperature">Temperature</a>
+<a href="#b3-growth-and-death">Growth and Death</a>
+<a href="#b3-fortune-and-misfortune">Fortune and Misfortune</a>
+<a href="#b3-magic-and-drain">Magic and Drain</a>
+<a href="#b3-extreme-scales">Extreme scales</a>
+<a href="#b3-scale-design-by-bottleneck">Scale design by bottleneck</a>
+<a href="#b3-how-blessings-work">How blessings work</a>
+<a href="#b3-bless-points">Bless points</a>
+<a href="#b3-ordinary-innate-and-incarnate">Ordinary, innate, and Incarnate</a>
+<a href="#b3-automatic-blessing">Automatic blessing</a>
+<a href="#b3-current-unmodded-blessing-reference">Current unmodded blessing reference</a>
+<a href="#b3-weapon-blessings-what-causes-the-rider-to-fire">Weapon blessings: what causes the rider to fire</a>
+<a href="#b3-blessing-from-items">Blessing from items</a>
+<a href="#b3-riders-mounts-and-separate-sacred-status">Riders, mounts, and separate sacred status</a>
+<a href="#b3-shape-change-and-effect-lifetime">Shape change and effect lifetime</a>
+<a href="#b3-display-tooltip-and-engine-state">Display, tooltip, and engine state</a>
+<a href="#b3-bless-design-by-function">Bless design by function</a>
+<a href="#b3-bless-throughput">Bless throughput</a>
+<a href="#b3-bless-access-and-scripting">Bless access and scripting</a>
+<a href="#b3-counter-audit">Counter-audit</a>
+<a href="#b3-divine-magic">Divine magic</a>
+<a href="#b3-ordinary-pretender-death">Ordinary Pretender death</a>
+<a href="#b3-why-death-compounds">Why death compounds</a>
+<a href="#b3-call-god">Call God</a>
+<a href="#b3-immortality">Immortality</a>
+<a href="#b3-safe-and-unsafe-risk">Safe and unsafe risk</a>
+<a href="#b3-why-special-dominions-deserve-their-own-audit">Why special dominions deserve their own audit</a>
+<a href="#b3-major-categories">Major categories</a>
+<a href="#b3-special-dominion-design-questions">Special-dominion design questions</a>
+<a href="#b3-shared-and-separate-systems">Shared and separate systems</a>
+<a href="#b3-disciple-design-audit">Disciple design audit</a>
+<a href="#b3-exact-definitions-belong-to-book-ix">Exact definitions belong to Book IX</a>
+<a href="#b3-modded-design-audit">Modded-design audit</a>
+<a href="#b3-step-1-define-the-national-plan">Step 1: Define the national plan</a>
+<a href="#b3-step-2-identify-mandatory-constraints">Step 2: Identify mandatory constraints</a>
+<a href="#b3-step-3-build-the-cheapest-functional-design">Step 3: Build the cheapest functional design</a>
+<a href="#b3-step-4-spend-the-remainder-on-leverage">Step 4: Spend the remainder on leverage</a>
+<a href="#b3-step-5-test-the-opening">Step 5: Test the opening</a>
+<a href="#b3-step-6-test-the-first-war">Step 6: Test the first war</a>
+<a href="#b3-step-7-test-the-economy">Step 7: Test the economy</a>
+<a href="#b3-step-8-state-the-failure-modes">Step 8: State the failure modes</a>
+<a href="#b3-new-player-design-audit">New-player design audit</a>
+<a href="#b3-expert-design-audit">Expert design audit</a>
+<a href="#b3-test-p1-awakening-distribution">Test P1: Awakening distribution</a>
+<a href="#b3-test-p2-dominion-spread">Test P2: Dominion spread</a>
+<a href="#b3-test-p3-preaching">Test P3: Preaching</a>
+<a href="#b3-test-p4-scale-convergence">Test P4: Scale convergence</a>
+<a href="#b3-test-p5-scale-regression-and-rounding">Test P5: Scale regression and rounding</a>
+<a href="#b3-test-p6-bless-tags-and-values">Test P6: Bless tags and values</a>
+<a href="#b3-test-p7-automatic-blessing">Test P7: Automatic blessing</a>
+<a href="#b3-test-p8-pretender-death">Test P8: Pretender death</a>
+<a href="#b3-test-p9-call-god">Test P9: Call God</a>
+<a href="#b3-test-p10-throne-checks">Test P10: Throne checks</a>
+<a href="#b3-test-p11-special-dominions">Test P11: Special dominions</a>
+<a href="#b3-test-p12-combined-mod-design-regression">Test P12: Combined-mod design regression</a>
+<a href="#b3-essay-i-pretender-design-as-national-engineering">Essay I: Pretender Design as National Engineering</a>
+<a href="#b3-essay-ii-dominion-is-territory-by-other-means">Essay II: Dominion Is Territory by Other Means</a>
+<a href="#b3-essay-iii-a-bless-is-a-roster-contract">Essay III: A Bless Is a Roster Contract</a>
+<a href="#b3-essay-iv-awake-power-and-deferred-power">Essay IV: Awake Power and Deferred Power</a>
+<a href="#b3-essay-v-the-religious-logistics-of-war">Essay V: The Religious Logistics of War</a>
+<a href="#b3-essay-vi-the-death-of-a-god">Essay VI: The Death of a God</a>
+<a href="#b3-one-page-pretender-worksheet">One-page Pretender worksheet</a>
+<a href="#b3-monthly-dominion-audit">Monthly dominion audit</a>
+<a href="#b3-bless-battle-audit">Bless battle audit</a>
+<a href="#b3-publication-checklist">Publication checklist</a>
+<a href="#b3-principal-sources">Principal sources</a>
+<a href="#b3-open-questions">Open questions</a></nav>
+  </details>
+  <div class="library-reader-grid">
+    <article class="content library-prose">
+{% raw %}
+<h1 id="b3-foundation-book-iii-pretenders-dominion-scales-and-blessings">Foundation Book III: Pretenders, Dominion, Scales, and Blessings<a class="heading-link" href="#b3-foundation-book-iii-pretenders-dominion-scales-and-blessings" aria-label="Link to Foundation Book III: Pretenders, Dominion, Scales, and Blessings">#</a></h1><h2 id="b3-the-design-problem">The design problem<a class="heading-link" href="#b3-the-design-problem" aria-label="Link to The design problem">#</a></h2><p>Pretender design is the first strategic decision in a game of Dominions 6 and one of the last decisions that can be judged in isolation. A design determines more than the strength of a god. It determines when that strength exists, which sacred units justify their cost, how quickly faith spreads, what kind of provinces the nation creates, which divine spells its priests know, and which magical paths are available when the national roster runs out of answers.</p>
+<p>The design screen asks a larger question than “Which Pretender is strongest?”</p>
+<blockquote>
+<p><strong>Foundation rule:</strong> A Pretender design is a contract between the nation’s roster, the map, the expected war schedule, and the intended route to victory.</p>
+</blockquote>
+<p>The chapters begin with the unmodded design screen, then follow the consequences through awakening, dominion, scales, blessings, priesthood, death, and team play. Exact arithmetic is included when it helps settle a choice.</p>
+<h2 id="b3-edition-note">Edition note<a class="heading-link" href="#b3-edition-note" aria-label="Link to Edition note">#</a></h2><p>Book I owns the common Dominions 6.36 baseline and evidence vocabulary. The revision-2 manual remains the main rules source here, but its printed blessing appendix predates several official balance changes. The structured object snapshot behind the current bless table is still pinned to the Inspector&#39;s 6.35 commit; the 6.36 announcement changes a Pretender-loading bug, not any listed bless cost or effect. Current values, historical values, and the one-version data lag are stated separately so they cannot be quietly blended together. Edition 22 reconciled Call God and same-turn Throne ownership. Edition 23 traces the newly republished awakening model back to its pre-Dominions 6 source and keeps it below current-version proof. Book IX is the authoritative source for DE 2.16 and Divinitus 1.15.3 DE changes.</p>
+<h2 id="b3-finding-the-useful-layer">Finding the useful layer<a class="heading-link" href="#b3-finding-the-useful-layer" aria-label="Link to Finding the useful layer">#</a></h2><p>A new player can move from the one-model design summary through awakening, dominion, scales, blessings, and the final audit. Detailed point curves, dominion checks, sacred throughput, special dominions, disciples, and god-death mechanics support more demanding designs. The test programme is mainly for cases where the interface and documentation do not settle the same question.</p>
+<span class="anchor-alias" id="b3-part-ii-chassis-paths-and-design-capabilities" aria-hidden="true"></span><h1 id="b3-part-i-pretender-design-as-a-national-system">Part I: Pretender Design as a National System<a class="heading-link" href="#b3-part-i-pretender-design-as-a-national-system" aria-label="Link to Part I: Pretender Design as a National System">#</a></h1><h2 id="b3-the-design-in-one-model">The design in one model<a class="heading-link" href="#b3-the-design-in-one-model" aria-label="Link to The design in one model">#</a></h2><p>The unmodded design begins with 450 points before paying for the physical form. Those points are allocated across four linked budgets:</p>
+<pre><code class="language-text">450 design points
+  - physical form
+  - purchased magic
+  - dominion strength and scales
+  + deferred-awakening points
+  = unspent remainder
+</code></pre>
+<p>The arithmetic is simple. The strategic valuation is not.</p>
+<table>
+<thead>
+<tr>
+<th>Budget</th>
+<th>Immediate result</th>
+<th>Long-term consequence</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Physical form</td>
+<td>Body, slots, statistics, abilities, starting paths, scale limits</td>
+<td>Determines personal roles, survivability, mobility, and path-buying efficiency</td>
+</tr>
+<tr>
+<td>Magic</td>
+<td>Personal paths and bless-point pool</td>
+<td>Determines research or ritual access, forging, divine spell family, and sacred enhancements</td>
+</tr>
+<tr>
+<td>Dominion and scales</td>
+<td>Candles, provincial tendencies, sacred recruitment capacity</td>
+<td>Shapes economy, faith conflict, terrain, events, population, research, and religious survival</td>
+</tr>
+<tr>
+<td>Awakening</td>
+<td>Availability date</td>
+<td>Trades immediate agency for design points and changes when Incarnate blessings operate</td>
+</tr>
+</tbody></table>
+<p>These budgets cannot be evaluated independently. An imprisoned god may buy a powerful Incarnate blessing that is unavailable during expansion. An awake monster may defeat independents but leave no useful magic or economy after its expansion role ends. Excellent scales may produce gold that a low-resource or Holy-limited roster cannot convert. High paths may purchase many bless points while satisfying none of the prerequisites needed by the sacred roster.</p>
+<h3 id="b3-the-five-obligations">The five obligations<a class="heading-link" href="#b3-the-five-obligations" aria-label="Link to The five obligations">#</a></h3><p>A complete design should state how it addresses five obligations:</p>
+<ol>
+<li><strong>Expansion:</strong> how provinces are taken reliably and at an acceptable loss rate.</li>
+<li><strong>Economy:</strong> which scales and dominion support the planned recruitment and research.</li>
+<li><strong>Sacred plan:</strong> whether sacred units are central, supplementary, or mostly irrelevant.</li>
+<li><strong>Magic access:</strong> which national weaknesses the Pretender repairs or which strengths it accelerates.</li>
+<li><strong>Timing:</strong> when the design becomes stronger than the alternatives whose points were spent elsewhere.</li>
+</ol>
+<p>A design need not solve every obligation through the Pretender. It must show where each solution comes from.</p>
+<h2 id="b3-begin-with-the-nation-not-the-god">Begin with the nation, not the god<a class="heading-link" href="#b3-begin-with-the-nation-not-the-god" aria-label="Link to Begin with the nation, not the god">#</a></h2><p>Before opening the Pretender screen, record:</p>
+<ul>
+<li>recruitable sacred troops and commanders;</li>
+<li>capital-only, fort-only, terrain-only, foreign, and summonable sacreds;</li>
+<li>Holy Point and Commander Point bottlenecks;</li>
+<li>ordinary expansion troops and commanders;</li>
+<li>national mage paths, randoms, and missing paths;</li>
+<li>early research packages;</li>
+<li>gold, resource, and Recruitment Point demand;</li>
+<li>temperature preference and scale limits;</li>
+<li>special dominion rules;</li>
+<li>expected map and lobby settings.</li>
+</ul>
+<p>The purpose is to identify problems before selecting an attractive solution.</p>
+<h3 id="b3-roster-questions">Roster questions<a class="heading-link" href="#b3-roster-questions" aria-label="Link to Roster questions">#</a></h3><table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Why it changes the design</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Are the principal sacreds massed or elite?</td>
+<td>Flat bonuses scale with body count; survival and percentage effects often gain value on expensive bodies</td>
+</tr>
+<tr>
+<td>Are sacreds capital-only?</td>
+<td>A powerful bless may apply to too few units to justify its design cost</td>
+</tr>
+<tr>
+<td>Are sacred commanders strategically important?</td>
+<td>Passive leadership, stealth, recuperation, or magic-related blessings may matter outside battle</td>
+</tr>
+<tr>
+<td>Can ordinary troops expand reliably?</td>
+<td>If yes, an awake expander is optional rather than compulsory</td>
+</tr>
+<tr>
+<td>Is the nation gold-, resource-, RP-, or Holy-limited?</td>
+<td>Scales should support the actual bottleneck</td>
+</tr>
+<tr>
+<td>Which magic paths are missing?</td>
+<td>Pretender paths may open boosters, summons, rituals, or counters unavailable nationally</td>
+</tr>
+<tr>
+<td>Does the nation need an early battlefield caster?</td>
+<td>Awakening time and chassis mobility become central</td>
+</tr>
+<tr>
+<td>Does the nation possess a special dominion?</td>
+<td>Candles and temples may become economic or military infrastructure</td>
+</tr>
+</tbody></table>
+<h3 id="b3-lobby-questions">Lobby questions<a class="heading-link" href="#b3-lobby-questions" aria-label="Link to Lobby questions">#</a></h3><p>Pretender value changes with:</p>
+<ul>
+<li>independent strength;</li>
+<li>map size and terrain;</li>
+<li>number of players;</li>
+<li>team or disciple rules;</li>
+<li>research speed;</li>
+<li>site frequency;</li>
+<li>magic-resource settings;</li>
+<li>throne distribution and points required;</li>
+<li>diplomacy rules;</li>
+<li>starting provinces;</li>
+<li>mods and load order.</li>
+</ul>
+<p>A design that is excellent on a crowded, high-independent-strength map may be wasteful in a spacious game with weak independents. An imprisoned research-and-access design may mature comfortably on a slow diplomatic map and arrive too late in a knife-fight.</p>
+<h2 id="b3-chassis-roles">Chassis roles<a class="heading-link" href="#b3-chassis-roles" aria-label="Link to Chassis roles">#</a></h2><p>Physical forms should be compared by the jobs they can perform, not by a single tier list.</p>
+<h3 id="b3-expansion-chassis">Expansion chassis<a class="heading-link" href="#b3-expansion-chassis" aria-label="Link to Expansion chassis">#</a></h3><p>An expansion chassis personally captures independent provinces during the opening.</p>
+<p>Requirements usually include:</p>
+<ul>
+<li>sufficient protection or avoidance;</li>
+<li>a way to prevent chip damage from accumulating;</li>
+<li>enough offence to end battles before fatigue or attrition wins;</li>
+<li>resistance to common independent threats;</li>
+<li>acceptable map movement;</li>
+<li>a script that works without unavailable research or equipment.</li>
+</ul>
+<p>An expander is an economic asset only while its conquest produces more value than the alternative use of its design points and commander-turns.</p>
+<h3 id="b3-bless-anchor">Bless anchor<a class="heading-link" href="#b3-bless-anchor" aria-label="Link to Bless anchor">#</a></h3><p>A bless anchor buys the paths and bless points required by the sacred plan. Its own combat performance may be secondary.</p>
+<p>The anchor must answer:</p>
+<ul>
+<li>which sacreds receive the benefit;</li>
+<li>how many can be recruited;</li>
+<li>when they can be blessed;</li>
+<li>whether the decisive effects are Incarnate;</li>
+<li>which counters remain;</li>
+<li>whether the same paths have a useful later role.</li>
+</ul>
+<h3 id="b3-scales-anchor">Scales anchor<a class="heading-link" href="#b3-scales-anchor" aria-label="Link to Scales anchor">#</a></h3><p>A scales anchor spends relatively little on personal power so that the nation can afford strong dominion and favourable scales. It is commonly dormant or imprisoned, but awakening and form are separate choices.</p>
+<p>The design succeeds when the nation can convert the improved economy into more useful power than a direct bless or awake form would have supplied.</p>
+<h3 id="b3-rainbow-and-access-chassis">Rainbow and access chassis<a class="heading-link" href="#b3-rainbow-and-access-chassis" aria-label="Link to Rainbow and access chassis">#</a></h3><p>A rainbow distributes points across several paths to:</p>
+<ul>
+<li>obtain efficient early path levels;</li>
+<li>expand the bless-point pool;</li>
+<li>search for sites;</li>
+<li>forge cross-path items;</li>
+<li>provide ritual access;</li>
+<li>open booster chains;</li>
+<li>diversify divine spells.</li>
+</ul>
+<p>The danger is diffuse capability without a timetable. “Can eventually cast many things” is not a plan until the required research, gems, boosters, laboratories, and safe commander-turns are named.</p>
+<h3 id="b3-ritual-platform">Ritual platform<a class="heading-link" href="#b3-ritual-platform" aria-label="Link to Ritual platform">#</a></h3><p>A ritual platform buys one or more high paths for a defined strategic package:</p>
+<ul>
+<li>global enchantments;</li>
+<li>remote attacks;</li>
+<li>large summons;</li>
+<li>mobility rituals;</li>
+<li>high-path forging;</li>
+<li>late-game access.</li>
+</ul>
+<p>Its value depends on the earliest realistic casting date, not only the final path display.</p>
+<h3 id="b3-battlefield-caster">Battlefield caster<a class="heading-link" href="#b3-battlefield-caster" aria-label="Link to Battlefield caster">#</a></h3><p>A battlefield caster supplies spells the national roster cannot cast at the required time. It needs:</p>
+<ul>
+<li>arrival before the relevant war;</li>
+<li>sufficient combat speed or cast time;</li>
+<li>fatigue management;</li>
+<li>gems and research;</li>
+<li>protection from assassination, seeking arrows, remote attacks, and battlefield counters;</li>
+<li>a retreat or immortality plan.</li>
+</ul>
+<h3 id="b3-thug-or-supercombatant-platform">Thug or supercombatant platform<a class="heading-link" href="#b3-thug-or-supercombatant-platform" aria-label="Link to Thug or supercombatant platform">#</a></h3><p>A thug or supercombatant design intends to fight armies, raid, hold positions, or force specialised counters. Personal statistics alone are insufficient. The design must cover:</p>
+<ul>
+<li>damage types and attack volume;</li>
+<li>fatigue;</li>
+<li>mundane and magical defence;</li>
+<li>elemental and physical resistances;</li>
+<li>magic resistance;</li>
+<li>control effects;</li>
+<li>anti-undead or anti-demon tools where relevant;</li>
+<li>mobility;</li>
+<li>recovery from afflictions;</li>
+<li>escape and death consequences.</li>
+</ul>
+<h3 id="b3-immobile-oracle">Immobile oracle<a class="heading-link" href="#b3-immobile-oracle" aria-label="Link to Immobile oracle">#</a></h3><p>Immobile forms often purchase magic efficiently and may have strong dominion or special sites. They trade away conventional movement.</p>
+<p>Some can move by teleportation, while others are too large for particular transport effects. Mobility must be checked for the exact form.</p>
+<h3 id="b3-shape-changer">Shape-changer<a class="heading-link" href="#b3-shape-changer" aria-label="Link to Shape-changer">#</a></h3><p>Dragons and other shape-changers can separate casting and combat forms. The manual notes that a dragon may appear as a humanoid wizard until changing shape or being wounded.</p>
+<p>The two forms should be audited separately:</p>
+<ul>
+<li>paths and casting convenience;</li>
+<li>slots;</li>
+<li>movement;</li>
+<li>protection and attacks;</li>
+<li>regeneration or recuperation;</li>
+<li>transformation conditions;</li>
+<li>whether an affliction or shape loss changes the planned role.</li>
+</ul>
+<h3 id="b3-trinity">Trinity<a class="heading-link" href="#b3-trinity" aria-label="Link to Trinity">#</a></h3><p>A Trinity consists of three entities. According to the manual:</p>
+<ul>
+<li>the members share part of their magical power;</li>
+<li>separated members lose some magic;</li>
+<li>a lone member loses more;</li>
+<li>exact penalties vary by Trinity;</li>
+<li>each member can research, though at reduced ability;</li>
+<li>a dead member can be Called God in half the ordinary time.</li>
+</ul>
+<p>Trinities create parallel commander-turns and map presence at the price of coordination and reduced separated power. Every proposed Trinity design needs exact-form testing; the category does not guarantee identical behaviour.</p>
+<h3 id="b3-immortal-and-dominion-immortal-forms">Immortal and dominion-immortal forms<a class="heading-link" href="#b3-immortal-and-dominion-immortal-forms" aria-label="Link to Immortal and dominion-immortal forms">#</a></h3><p>These forms alter the cost of personal risk.</p>
+<ul>
+<li><strong>Immortal:</strong> normally reforms regardless of ordinary-plane dominion.</li>
+<li><strong>Dominion Immortal:</strong> normally reforms after death in friendly dominion.</li>
+<li><strong>Neither:</strong> requires Call God after death unless another special rule applies.</li>
+</ul>
+<p>Soul destruction and death on a remote plane can bypass ordinary reform. Immortality reduces some consequences of death; it does not make every battle strategically free.</p>
+<h2 id="b3-chassis-comparison-sheet">Chassis comparison sheet<a class="heading-link" href="#b3-chassis-comparison-sheet" aria-label="Link to Chassis comparison sheet">#</a></h2><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Record</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Form and nation</td>
+<td>Exact form, age, nation, and ruleset</td>
+</tr>
+<tr>
+<td>Base point cost</td>
+<td>Points removed before all other purchases</td>
+</tr>
+<tr>
+<td>Starting paths</td>
+<td>Innate path levels in each form</td>
+</tr>
+<tr>
+<td>New Path Cost</td>
+<td>Cost of opening an absent path</td>
+</tr>
+<tr>
+<td>Starting dominion</td>
+<td>Base candle value</td>
+</tr>
+<tr>
+<td>Scale-limit changes</td>
+<td>Direction and amount</td>
+</tr>
+<tr>
+<td>Awakening restrictions</td>
+<td>Ordinary, minimum prison, maximum prison, or other</td>
+</tr>
+<tr>
+<td>Movement</td>
+<td>Map Move, terrain survival, sailing, teleport eligibility</td>
+</tr>
+<tr>
+<td>Combat shell</td>
+<td>HP, protection, defence, MR, resistances, recuperation, regeneration</td>
+</tr>
+<tr>
+<td>Slots</td>
+<td>Hands, head, body, feet, misc, special restrictions</td>
+</tr>
+<tr>
+<td>Special mechanics</td>
+<td>Shape change, Trinity, immortality, freespawn, sites, dominion effects</td>
+</tr>
+<tr>
+<td>Opening job</td>
+<td>Expansion, research, site search, forging, ritual, deterrence</td>
+</tr>
+<tr>
+<td>Middle-game job</td>
+<td>Named repeatable use</td>
+</tr>
+<tr>
+<td>Failure condition</td>
+<td>What makes the investment non-functional</td>
+</tr>
+</tbody></table>
+<h1 id="b3-part-ii-exact-design-point-arithmetic">Part II: Exact Design-Point Arithmetic<a class="heading-link" href="#b3-part-ii-exact-design-point-arithmetic" aria-label="Link to Part II: Exact Design-Point Arithmetic">#</a></h1><h2 id="b3-physical-form-cost">Physical-form cost<a class="heading-link" href="#b3-physical-form-cost" aria-label="Link to Physical-form cost">#</a></h2><p>Every form has an inherent point cost. The cost is paid from the initial 450.</p>
+<pre><code class="language-text">points after form = 450 - form cost
+</code></pre>
+<p>A Phoenix costing 110, for example, leaves 340 before magic, dominion, scales, and awakening are applied.</p>
+<p>Form cost cannot be judged without its embedded value:</p>
+<ul>
+<li>starting magic;</li>
+<li>cheaper or more expensive new paths;</li>
+<li>starting dominion;</li>
+<li>scale-limit adjustments;</li>
+<li>combat statistics;</li>
+<li>slots;</li>
+<li>mobility;</li>
+<li>special abilities;</li>
+<li>national availability.</li>
+</ul>
+<h2 id="b3-magic-path-costs">Magic-path costs<a class="heading-link" href="#b3-magic-path-costs" aria-label="Link to Magic-path costs">#</a></h2><p>The official cost for each path level added by the player is:</p>
+<table>
+<thead>
+<tr>
+<th align="right">Added level number</th>
+<th align="right">Marginal cost</th>
+<th align="right">Cumulative cost</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1st</td>
+<td align="right">8</td>
+<td align="right">8</td>
+</tr>
+<tr>
+<td align="right">2nd</td>
+<td align="right">16</td>
+<td align="right">24</td>
+</tr>
+<tr>
+<td align="right">3rd</td>
+<td align="right">24</td>
+<td align="right">48</td>
+</tr>
+<tr>
+<td align="right">4th</td>
+<td align="right">32</td>
+<td align="right">80</td>
+</tr>
+<tr>
+<td align="right">5th</td>
+<td align="right">40</td>
+<td align="right">120</td>
+</tr>
+<tr>
+<td align="right">6th</td>
+<td align="right">48</td>
+<td align="right">168</td>
+</tr>
+<tr>
+<td align="right">7th</td>
+<td align="right">56</td>
+<td align="right">224</td>
+</tr>
+<tr>
+<td align="right">8th</td>
+<td align="right">64</td>
+<td align="right">288</td>
+</tr>
+<tr>
+<td align="right">9th</td>
+<td align="right">72</td>
+<td align="right">360</td>
+</tr>
+<tr>
+<td align="right">10th</td>
+<td align="right">80</td>
+<td align="right">440</td>
+</tr>
+</tbody></table>
+<p>These are levels <strong>added by the design</strong>, not the displayed final path.</p>
+<p>If a form begins with Nature 2, raising it to Nature 3 is the first purchased level in that path and costs 8. Raising it from Nature 2 to Nature 6 adds four levels and costs:</p>
+<pre><code class="language-text">8 + 16 + 24 + 32 = 80
+</code></pre>
+<h3 id="b3-opening-a-new-path">Opening a new path<a class="heading-link" href="#b3-opening-a-new-path" aria-label="Link to Opening a new path">#</a></h3><p>If the form begins with no level in a path:</p>
+<ol>
+<li>the first level costs the form’s <strong>New Path Cost</strong>;</li>
+<li>the second added level costs 16;</li>
+<li>the third costs 24;</li>
+<li>the sequence then continues normally.</li>
+</ol>
+<p>The New Path Cost replaces the ordinary 8-point first purchase. It does not replace the entire path curve.</p>
+<h3 id="b3-official-worked-example">Official worked example<a class="heading-link" href="#b3-official-worked-example" aria-label="Link to Official worked example">#</a></h3><p>The Carrion Dragon begins with Death 1 and Nature 1. Raising it to Death 4 and Nature 4 adds three levels in each:</p>
+<pre><code class="language-text">Death: 8 + 16 + 24 = 48
+Nature: 8 + 16 + 24 = 48
+</code></pre>
+<p>Opening Fire at a New Path Cost of 80 and raising it to Fire 2 adds:</p>
+<pre><code class="language-text">Fire: 80 + 16 = 96
+</code></pre>
+<p>Total:</p>
+<pre><code class="language-text">48 + 48 + 96 = 192 design points
+</code></pre>
+<h3 id="b3-magic-purchase-audit">Magic-purchase audit<a class="heading-link" href="#b3-magic-purchase-audit" aria-label="Link to Magic-purchase audit">#</a></h3><p>For every path, record:</p>
+<table>
+<thead>
+<tr>
+<th>Path</th>
+<th align="right">Innate</th>
+<th align="right">Purchased</th>
+<th align="right">Final</th>
+<th align="right">Cost</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Fire</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td></td>
+</tr>
+<tr>
+<td>Air</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td></td>
+</tr>
+<tr>
+<td>Water</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td></td>
+</tr>
+<tr>
+<td>Earth</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td></td>
+</tr>
+<tr>
+<td>Astral</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td></td>
+</tr>
+<tr>
+<td>Death</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td></td>
+</tr>
+<tr>
+<td>Nature</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td></td>
+</tr>
+<tr>
+<td>Glamour</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td></td>
+</tr>
+<tr>
+<td>Blood</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>“Purpose” should be specific: a blessing prerequisite, a named booster chain, a site-search threshold, a combat spell, a ritual, or a divine-spell family. A path bought only because it looks flexible is a candidate for removal.</p>
+<h2 id="b3-dominion-strength-costs">Dominion-strength costs<a class="heading-link" href="#b3-dominion-strength-costs" aria-label="Link to Dominion-strength costs">#</a></h2><p>Every form begins with at least Dominion 1 and may be raised to Dominion 10. Each candle added above the form’s base costs progressively more:</p>
+<table>
+<thead>
+<tr>
+<th align="right">Added candle number</th>
+<th align="right">Marginal cost</th>
+<th align="right">Cumulative cost</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1st</td>
+<td align="right">7</td>
+<td align="right">7</td>
+</tr>
+<tr>
+<td align="right">2nd</td>
+<td align="right">14</td>
+<td align="right">21</td>
+</tr>
+<tr>
+<td align="right">3rd</td>
+<td align="right">21</td>
+<td align="right">42</td>
+</tr>
+<tr>
+<td align="right">4th</td>
+<td align="right">28</td>
+<td align="right">70</td>
+</tr>
+<tr>
+<td align="right">5th</td>
+<td align="right">35</td>
+<td align="right">105</td>
+</tr>
+<tr>
+<td align="right">6th</td>
+<td align="right">42</td>
+<td align="right">147</td>
+</tr>
+<tr>
+<td align="right">7th</td>
+<td align="right">49</td>
+<td align="right">196</td>
+</tr>
+<tr>
+<td align="right">8th</td>
+<td align="right">56</td>
+<td align="right">252</td>
+</tr>
+<tr>
+<td align="right">9th</td>
+<td align="right">63</td>
+<td align="right">315</td>
+</tr>
+</tbody></table>
+<p>For <code>n</code> added candles:</p>
+<pre><code class="language-text">cumulative cost = 7n(n + 1) / 2
+</code></pre>
+<p>The accelerating curve matters. Raising an already high starting dominion is often much cheaper than buying the same final score on a low-dominion form.</p>
+<h3 id="b3-what-initial-dominion-changes">What initial dominion changes<a class="heading-link" href="#b3-what-initial-dominion-changes" aria-label="Link to What initial dominion changes">#</a></h3><p>Initial dominion contributes to:</p>
+<ul>
+<li>the maximum dominion ceiling;</li>
+<li>the chance that temple checks succeed;</li>
+<li>capital-only sacred recruitment through Holy Points;</li>
+<li>Pretender and Prophet statistics in friendly or hostile dominion;</li>
+<li>the speed at which scales tend to establish;</li>
+<li>resistance to hostile faith;</li>
+<li>survival against a dominion kill;</li>
+<li>several special national mechanics.</li>
+</ul>
+<p>High dominion means more than “more candles.” It improves several connected parts of the nation while consuming a steep share of the design budget.</p>
+<h2 id="b3-scale-point-costs">Scale-point costs<a class="heading-link" href="#b3-scale-point-costs" aria-label="Link to Scale-point costs">#</a></h2><p>Each favourable scale step costs 40 points. Each unfavourable step grants 40.</p>
+<pre><code class="language-text">scale-point change = -40 x favourable steps + 40 x unfavourable steps
+</code></pre>
+<p>Temperature is measured relative to national preference during design. Only the first three clicks away from that preference grant points.</p>
+<p>The ordinary design window is -2 to +2. National and Pretender scale-limit adjustments can pull that window in one direction. Province scales can reach -5 to +5 during play.</p>
+<h3 id="b3-scale-limit-movement">Scale-limit movement<a class="heading-link" href="#b3-scale-limit-movement" aria-label="Link to Scale-limit movement">#</a></h3><p>A <code>+1 Growth Limit</code> does more than add one Growth option. It shifts the whole design window:</p>
+<ul>
+<li>Growth maximum rises by one;</li>
+<li>Death maximum in the opposite direction falls by one.</li>
+</ul>
+<p>National and Pretender adjustments in the same direction overlap rather than automatically stacking without limit. Exact nation-form combinations should be checked in the design screen.</p>
+<h2 id="b3-awakening-points">Awakening points<a class="heading-link" href="#b3-awakening-points" aria-label="Link to Awakening points">#</a></h2><table>
+<thead>
+<tr>
+<th>State</th>
+<th align="right">Point change</th>
+<th>Ordinary arrival</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Awake</td>
+<td align="right">+0</td>
+<td>Present from the beginning</td>
+</tr>
+<tr>
+<td>Dormant</td>
+<td align="right">+150</td>
+<td>Approximately turns 10-13</td>
+</tr>
+<tr>
+<td>Imprisoned</td>
+<td align="right">+350</td>
+<td>Approximately turns 28-42</td>
+</tr>
+</tbody></table>
+<p>The official manual intentionally gives ranges rather than a guaranteed turn. It also says that Disciples awaken in about half the time of their Pretender. That wording does not define an exact Disciple range or a rounding rule.</p>
+<h3 id="b3-planning-with-an-unknown-distribution">Planning with an unknown distribution<a class="heading-link" href="#b3-planning-with-an-unknown-distribution" aria-label="Link to Planning with an unknown distribution">#</a></h3><p>The range is enough to build a robust opening, but not enough to calculate an expected arrival.</p>
+<table>
+<thead>
+<tr>
+<th>Design</th>
+<th>Safe planning assumption</th>
+<th>What must work before arrival</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Awake</td>
+<td>The god is available immediately</td>
+<td>Its first several orders, expansion targets, and acceptable risks</td>
+</tr>
+<tr>
+<td>Dormant</td>
+<td>The nation may wait until the late end of turns 10-13</td>
+<td>Expansion, research, and sacred use through the whole dormant window</td>
+</tr>
+<tr>
+<td>Imprisoned</td>
+<td>The nation may wait until the late end of turns 28-42</td>
+<td>The first expansion cycle and a substantial part of the first war without the chassis or Incarnate effects</td>
+</tr>
+<tr>
+<td>Disciple</td>
+<td>Roughly half the Pretender delay, with no published exact rounding</td>
+<td>The disciple nation must not depend on a single inferred half-turn</td>
+</tr>
+</tbody></table>
+<p>Do not substitute the midpoint for an average. The official range does not say that every turn is equally likely, and an arrival process with repeated rolls can be heavily weighted without changing its visible minimum and maximum. For practical design work:</p>
+<ol>
+<li>budget the army and research plan to survive the latest official arrival;</li>
+<li>prepare a useful first order for every plausible arrival turn;</li>
+<li>treat an early arrival as extra tempo rather than as a requirement;</li>
+<li>evaluate an Incarnate blessing as two armies: the pre-awakening army and the post-awakening army.</li>
+</ol>
+<p>Older reverse-engineering notes propose repeated exploding-die checks rather than a uniform draw. A Dominions 6 community Pretender page, revised on 16 June 2026, now republishes the same model and attributes it to Loggy: <code>9 + d4!</code> for Dormant, <code>27 + d20!</code> for Imprisoned, and bases of 4 and 13 for the corresponding Disciple rolls. It says a new exploding roll is made each month and the result is compared with the current turn.</p>
+<p>The newer page label does not create a new current-version test. The wording and constants can be traced to Loggy&#39;s older miscellaneous reverse-engineering notes and to copies published years before Dominions 6. The current page supplies neither raw 6.x outcomes nor an executable trace, and its usual displayed ranges of turns 11-14 and 29-42 are shifted from the revision-2 manual&#39;s approximate 10-13 and 28-42 wording. That may be a turn-label convention, an editorial carry-over, or a real version difference; the available sources do not decide which.</p>
+<p>The exploding-die model remains a <strong>current community research hypothesis with historical provenance</strong> and is not promoted to a Dominions 6.36 rule. It is more specific than assuming a uniform draw and helps define a decisive reproduction, but it is not safe input for an exact probability calculator. R-014 stays queued until a sufficiently large current sample, a current engine-backed trace, or developer confirmation establishes both the distribution and the displayed-turn convention.</p>
+<h3 id="b3-total-budget-worksheet">Total-budget worksheet<a class="heading-link" href="#b3-total-budget-worksheet" aria-label="Link to Total-budget worksheet">#</a></h3><pre><code class="language-text">450
+- form cost
+- purchased magic
+- added dominion
+- favourable scales
++ unfavourable scales
++ awakening grant
+= remainder
+</code></pre>
+<p>The final screen should be checked against the worksheet. Form-specific restrictions, national scale limits, bonus bless points, and mod changes can make a generic calculator incomplete.</p>
+<h1 id="b3-part-iii-awakening-time-and-the-opening">Part III: Awakening, Time, and the Opening<a class="heading-link" href="#b3-part-iii-awakening-time-and-the-opening" aria-label="Link to Part III: Awakening, Time, and the Opening">#</a></h1><h2 id="b3-awake">Awake<a class="heading-link" href="#b3-awake" aria-label="Link to Awake">#</a></h2><p>An awake Pretender can contribute from turn one.</p>
+<p>Possible opening jobs:</p>
+<ul>
+<li>expand personally;</li>
+<li>research;</li>
+<li>search;</li>
+<li>forge once research permits;</li>
+<li>cast early rituals;</li>
+<li>lead or bless an army;</li>
+<li>deter an early attack;</li>
+<li>establish a special site or dominion effect.</li>
+</ul>
+<p>The opportunity cost is the 150 or 350 points not obtained from delay.</p>
+<p>An awake design should specify its monthly orders. “Available” is not the same as “productive.”</p>
+<h3 id="b3-awake-expander-ledger">Awake-expander ledger<a class="heading-link" href="#b3-awake-expander-ledger" aria-label="Link to Awake-expander ledger">#</a></h3><p>Record:</p>
+<ul>
+<li>provinces taken;</li>
+<li>turns saved relative to an ordinary expansion party;</li>
+<li>gold and commander-turns freed;</li>
+<li>wounds and afflictions;</li>
+<li>additional gear or research required;</li>
+<li>enemy counters revealed;</li>
+<li>time spent returning, healing, or waiting.</li>
+</ul>
+<p>The correct comparison is not the expander’s kill count. It is the territory and tempo created after subtracting its design cost and risk.</p>
+<h2 id="b3-dormant">Dormant<a class="heading-link" href="#b3-dormant" aria-label="Link to Dormant">#</a></h2><p>Dormant grants 150 points and usually arrives near the end of the initial expansion phase.</p>
+<p>Common uses:</p>
+<ul>
+<li>moderate Incarnate bless arriving before the first planned war;</li>
+<li>mid-game combat or ritual chassis;</li>
+<li>strong scales with a still-relevant physical god;</li>
+<li>path access not needed during the first ten turns.</li>
+</ul>
+<p>Risks:</p>
+<ul>
+<li>an early war begins before arrival;</li>
+<li>the sacred plan requires Incarnate effects for expansion;</li>
+<li>the nation cannot exploit the purchased paths immediately on awakening;</li>
+<li>the arrival location or laboratory network is poorly prepared.</li>
+</ul>
+<h2 id="b3-imprisoned">Imprisoned<a class="heading-link" href="#b3-imprisoned" aria-label="Link to Imprisoned">#</a></h2><p>Imprisoned grants 350 points and may remain absent until turns 28-42.</p>
+<p>Common uses:</p>
+<ul>
+<li>high scales;</li>
+<li>broad or deep magic;</li>
+<li>large bless-point pools;</li>
+<li>late-game path access;</li>
+<li>a powerful Incarnate package deliberately deferred.</li>
+</ul>
+<p>The design transfers power from the opening to the economy, blessing, or later magic. That transfer is only favourable if the nation survives and converts the points before the game’s decisive wars.</p>
+<h3 id="b3-the-incarnate-trap">The Incarnate trap<a class="heading-link" href="#b3-the-incarnate-trap" aria-label="Link to The Incarnate trap">#</a></h3><p>An imprisoned god can buy an Incarnate blessing, but the effect remains inactive while the god is imprisoned or dead. The sacred roster may fight for several dozen turns with only the non-Incarnate portion.</p>
+<p>The design audit should split the bless into:</p>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Available effects</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Before awakening</td>
+<td>Innate and ordinary non-Incarnate effects</td>
+</tr>
+<tr>
+<td>God alive and present</td>
+<td>Full bless, including Incarnate effects</td>
+</tr>
+<tr>
+<td>God dead or absent under the effect’s rule</td>
+<td>Incarnate portion disabled</td>
+</tr>
+</tbody></table>
+<h2 id="b3-timing-comparison">Timing comparison<a class="heading-link" href="#b3-timing-comparison" aria-label="Link to Timing comparison">#</a></h2><table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Awake</th>
+<th>Dormant</th>
+<th>Imprisoned</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Helps turn-one expansion?</td>
+<td>Yes, if capable</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Incarnate bless active?</td>
+<td>Yes while alive/present</td>
+<td>Delayed</td>
+<td>Heavily delayed</td>
+</tr>
+<tr>
+<td>Extra design points</td>
+<td>0</td>
+<td>150</td>
+<td>350</td>
+</tr>
+<tr>
+<td>Early personal research</td>
+<td>Possible</td>
+<td>None</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Early personal risk</td>
+<td>Highest</td>
+<td>Deferred</td>
+<td>Deferred longest</td>
+</tr>
+<tr>
+<td>Best justification</td>
+<td>Immediate actions worth more than 150 points</td>
+<td>Mid-game arrival matches plan</td>
+<td>Nation can carry the opening and exploit the large point grant</td>
+</tr>
+</tbody></table>
+<h2 id="b3-arrival-preparation">Arrival preparation<a class="heading-link" href="#b3-arrival-preparation" aria-label="Link to Arrival preparation">#</a></h2><p>Before a delayed god awakens:</p>
+<ol>
+<li>preserve a suitable laboratory;</li>
+<li>reserve the needed gems;</li>
+<li>complete required research;</li>
+<li>forge planned equipment;</li>
+<li>choose a safe operating province;</li>
+<li>prepare priests and sacred armies if Incarnate effects matter;</li>
+<li>identify the first three commander-turns after arrival.</li>
+</ol>
+<p>An arrival without orders is delayed power followed by idle power.</p>
+<span class="anchor-alias" id="b3-part-iv-dominion-and-religious-territory" aria-hidden="true"></span><h1 id="b3-part-iv-dominion">Part IV: Dominion<a class="heading-link" href="#b3-part-iv-dominion" aria-label="Link to Part IV: Dominion">#</a></h1><h2 id="b3-dominion-in-plain-language">Dominion in plain language<a class="heading-link" href="#b3-dominion-in-plain-language" aria-label="Link to Dominion in plain language">#</a></h2><p>Dominion is religious control. Province ownership is military and administrative control. The two layers are independent.</p>
+<p>A nation can:</p>
+<ul>
+<li>own a province under enemy dominion;</li>
+<li>spread dominion through provinces it does not own;</li>
+<li>conquer a continent without spreading its faith;</li>
+<li>lose by losing every friendly candle even while retaining forts and armies.</li>
+</ul>
+<p>Friendly dominion is displayed as positive candles. Enemy dominion is effectively negative from the observing nation’s perspective.</p>
+<blockquote>
+<p><strong>Foundation rule:</strong> Armies take provinces. Religious infrastructure makes those provinces part of the god’s world.</p>
+</blockquote>
+<h2 id="b3-sources-of-dominion-spread">Sources of dominion spread<a class="heading-link" href="#b3-sources-of-dominion-spread" aria-label="Link to Sources of dominion spread">#</a></h2><p>The manual gives the following sources:</p>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th align="right">Checks</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Pretender</td>
+<td align="right">One automatic increase plus two temple checks</td>
+</tr>
+<tr>
+<td>Home province</td>
+<td align="right">One temple check</td>
+</tr>
+<tr>
+<td>Prophet</td>
+<td align="right">One temple check</td>
+</tr>
+<tr>
+<td>Temple</td>
+<td align="right">One temple check</td>
+</tr>
+<tr>
+<td>Disciple</td>
+<td align="right">One temple check</td>
+</tr>
+<tr>
+<td>Claimed Throne</td>
+<td align="right">One to seven checks, depending on Throne</td>
+</tr>
+</tbody></table>
+<p>A check does not guarantee a candle. It attempts to create, increase, propagate, or contest dominion according to the local state.</p>
+<h3 id="b3-religious-hosting-order">Religious hosting order<a class="heading-link" href="#b3-religious-hosting-order" aria-label="Link to Religious hosting order">#</a></h3><p>The official turn sequence separates direct priest orders from ordinary passive spread:</p>
+<table>
+<thead>
+<tr>
+<th align="right">Step</th>
+<th>Religious operation</th>
+<th>Consequence</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">6</td>
+<td>Preaching</td>
+<td>Priest orders adjust local dominion. Since version 6.13, commanders performing this order resolve in random order.</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td>Heretic preaching</td>
+<td>Heretics, insane commanders, and shattered-soul commanders reduce dominion.</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td>Claim Thrones</td>
+<td>Valid Throne claims resolve before movement and battle.</td>
+</tr>
+<tr>
+<td align="right">42</td>
+<td>Dominion spread</td>
+<td>Pretender, capital, Prophet, temple, Disciple, Throne, and sacrifice-generated spread resolves.</td>
+</tr>
+<tr>
+<td align="right">43</td>
+<td>Dominion effects</td>
+<td>Population death, insanity, temperature spread, and similar effects use the resulting religious state.</td>
+</tr>
+<tr>
+<td align="right">56</td>
+<td>Elimination</td>
+<td>A nation without provinces or dominion is removed.</td>
+</tr>
+<tr>
+<td align="right">57</td>
+<td>Victory</td>
+<td>The game checks whether a victory condition has been fulfilled.</td>
+</tr>
+</tbody></table>
+<p>This closes the ordinary R-015 model at the official-rules tier: the sources, check probabilities, local resolution rules, cross-water reroll, and hosting stage are all stated officially. The manual does not publish the random-number stream or the internal iteration order among simultaneous passive sources, so neither is inferred.</p>
+<h2 id="b3-maximum-dominion">Maximum dominion<a class="heading-link" href="#b3-maximum-dominion" aria-label="Link to Maximum dominion">#</a></h2><p>The maximum is:</p>
+<pre><code class="language-text">maximum dominion =
+  initial Pretender dominion
+  + floor(temples / (5 x players on team))
+</code></pre>
+<p>For a solo nation, every five temples raise the maximum by one. For a two-player team, every ten team temples do so.</p>
+<p>Example:</p>
+<pre><code class="language-text">initial dominion 3
+12 temples
+2 players on team
+
+maximum = 3 + floor(12 / 10) = 4
+</code></pre>
+<p>The ceiling matters because it affects:</p>
+<ul>
+<li>maximum candle strength reached by ordinary temple spread;</li>
+<li>temple-check success chance;</li>
+<li>resistance in dominion conflict;</li>
+<li>the relay behaviour of strong friendly provinces.</li>
+</ul>
+<p>Preaching uses a separate local cap and can exceed what a weak maximum would ordinarily establish.</p>
+<h2 id="b3-temple-check-chance">Temple-check chance<a class="heading-link" href="#b3-temple-check-chance" aria-label="Link to Temple-check chance">#</a></h2><p>The official chance that a temple check succeeds is:</p>
+<pre><code class="language-text">50% + 5% x maximum dominion
+</code></pre>
+<table>
+<thead>
+<tr>
+<th align="right">Maximum dominion</th>
+<th align="right">Check chance</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1</td>
+<td align="right">55%</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">65%</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">75%</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">85%</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">95%</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">100%</td>
+</tr>
+</tbody></table>
+<p>Temples have two network effects:</p>
+<ol>
+<li>each adds another check;</li>
+<li>each threshold of five per team member can raise the maximum, improving every ordinary check.</li>
+</ol>
+<p>The value of a temple network is not linear around the threshold.</p>
+<h2 id="b3-resolving-a-successful-check">Resolving a successful check<a class="heading-link" href="#b3-resolving-a-successful-check" aria-label="Link to Resolving a successful check">#</a></h2><h3 id="b3-neutral-province">Neutral province<a class="heading-link" href="#b3-neutral-province" aria-label="Link to Neutral province">#</a></h3><p>A successful check adds one friendly candle.</p>
+<h3 id="b3-province-with-friendly-dominion">Province with friendly dominion<a class="heading-link" href="#b3-province-with-friendly-dominion" aria-label="Link to Province with friendly dominion">#</a></h3><p>At <code>U</code> friendly candles, the chance to add another candle locally is:</p>
+<pre><code class="language-text">30% - 3% x U
+</code></pre>
+<p>If the local increase fails, the check propagates to a random neighbouring province.</p>
+<p>High-candle provinces tend to relay pressure outward instead of endlessly concentrating it.</p>
+<table>
+<thead>
+<tr>
+<th align="right">Friendly candles</th>
+<th align="right">Local increase chance</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1</td>
+<td align="right">27%</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">21%</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">15%</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">9%</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">3%</td>
+</tr>
+</tbody></table>
+<h3 id="b3-province-with-enemy-dominion">Province with enemy dominion<a class="heading-link" href="#b3-province-with-enemy-dominion" aria-label="Link to Province with enemy dominion">#</a></h3><p>At <code>E</code> enemy candles:</p>
+<pre><code class="language-text">chance to reduce enemy dominion =
+  50% + 5% x maximum dominion - 5% x E
+</code></pre>
+<table>
+<thead>
+<tr>
+<th align="right">Maximum dominion</th>
+<th align="right">Enemy candles</th>
+<th align="right">Reduction chance</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">5</td>
+<td align="right">1</td>
+<td align="right">70%</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">5</td>
+<td align="right">50%</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">5</td>
+<td align="right">60%</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">8</td>
+<td align="right">55%</td>
+</tr>
+</tbody></table>
+<p>Dense hostile candles form a religious wall. High maximum dominion pushes against it more effectively.</p>
+<h3 id="b3-land-and-sea">Land and sea<a class="heading-link" href="#b3-land-and-sea" aria-label="Link to Land and sea">#</a></h3><p>When propagation randomly selects a neighbouring province across a land-sea boundary, the manual gives a 50% chance to reroll the destination. Faith crosses the boundary less readily than it spreads within the same environment.</p>
+<h2 id="b3-dominion-as-a-network">Dominion as a network<a class="heading-link" href="#b3-dominion-as-a-network" aria-label="Link to Dominion as a network">#</a></h2><p>Dominion spread has three behaviours:</p>
+<ol>
+<li><strong>creation</strong> in neutral provinces;</li>
+<li><strong>consolidation</strong> in weak friendly provinces;</li>
+<li><strong>propagation</strong> from strong friendly provinces.</li>
+</ol>
+<p>This means a rear temple can influence a frontier through a chain of strong provinces, while a single weak or hostile province can absorb repeated checks.</p>
+<p>Useful religious infrastructure is shaped by:</p>
+<ul>
+<li>temple count;</li>
+<li>maximum-dominion thresholds;</li>
+<li>adjacency;</li>
+<li>sea boundaries;</li>
+<li>hostile candle depth;</li>
+<li>local preaching;</li>
+<li>special dominion effects;</li>
+<li>vulnerability of temples to raids.</li>
+</ul>
+<h2 id="b3-preaching">Preaching<a class="heading-link" href="#b3-preaching" aria-label="Link to Preaching">#</a></h2><p>Preaching acts only in the priest’s province and does not use the ordinary maximum-dominion ceiling.</p>
+<p>In neutral or friendly dominion:</p>
+<pre><code class="language-text">success chance = 30% x effective Holy level
+</code></pre>
+<p>Against <code>E</code> enemy candles:</p>
+<pre><code class="language-text">success chance =
+  30% x effective Holy level - 5% x E
+
+minimum = 5%
+</code></pre>
+<p>A temple in the province adds 0.5 to effective Holy level for the chance and cap.</p>
+<p>The maximum local dominion that preaching can establish is:</p>
+<pre><code class="language-text">preaching cap = 2 x effective Holy level
+</code></pre>
+<h3 id="b3-preaching-examples">Preaching examples<a class="heading-link" href="#b3-preaching-examples" aria-label="Link to Preaching examples">#</a></h3><table>
+<thead>
+<tr>
+<th>Priest</th>
+<th>Temple?</th>
+<th align="right">Effective H</th>
+<th align="right">Neutral chance</th>
+<th align="right">Cap</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>H1</td>
+<td>No</td>
+<td align="right">1.0</td>
+<td align="right">30%</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>H1</td>
+<td>Yes</td>
+<td align="right">1.5</td>
+<td align="right">45%</td>
+<td align="right">3</td>
+</tr>
+<tr>
+<td>H2</td>
+<td>No</td>
+<td align="right">2.0</td>
+<td align="right">60%</td>
+<td align="right">4</td>
+</tr>
+<tr>
+<td>H2</td>
+<td>Yes</td>
+<td align="right">2.5</td>
+<td align="right">75%</td>
+<td align="right">5</td>
+</tr>
+<tr>
+<td>H3</td>
+<td>Yes</td>
+<td align="right">3.5</td>
+<td align="right">105%</td>
+<td align="right">7</td>
+</tr>
+</tbody></table>
+<p>Values above 100% should be treated as automatic for ordinary practical use, but exact engine handling remains a candidate for reproduction.</p>
+<h3 id="b3-inquisitors">Inquisitors<a class="heading-link" href="#b3-inquisitors" aria-label="Link to Inquisitors">#</a></h3><p>An Inquisitor counts double Holy level when preaching in enemy dominion. In neutral or friendly dominion, ordinary Holy level is used.</p>
+<p>An H2 Inquisitor in enemy dominion preaches as effective H4 before a possible temple bonus.</p>
+<h3 id="b3-heretics">Heretics<a class="heading-link" href="#b3-heretics" aria-label="Link to Heretics">#</a></h3><p>A Heretic reduces dominion locally rather than establishing a rival faith.</p>
+<pre><code class="language-text">chance to reduce = Heretic value x 20%
+</code></pre>
+<p>Heretics can erode friendly candles as well as enemy candles. Their position and allegiance require careful handling.</p>
+<h2 id="b3-blood-sacrifice">Blood sacrifice<a class="heading-link" href="#b3-blood-sacrifice" aria-label="Link to Blood sacrifice">#</a></h2><p>An eligible priest in a temple may sacrifice blood slaves.</p>
+<ul>
+<li>maximum slaves sacrificed equals Holy level;</li>
+<li>each slave creates one temple check;</li>
+<li>the priest must have the national ability to sacrifice;</li>
+<li>the order consumes a priest-turn and slaves.</li>
+</ul>
+<p>Blood sacrifice converts the blood economy directly into religious pressure. Its value rises when:</p>
+<ul>
+<li>the nation already hunts efficiently;</li>
+<li>dominion survival is threatened;</li>
+<li>a throne or special dominion effect depends on local candles;</li>
+<li>the temple network can project the additional checks;</li>
+<li>the sacrificed slaves are worth less than the military or ritual consequences prevented.</li>
+</ul>
+<h3 id="b3-dying-dominion">Dying dominion<a class="heading-link" href="#b3-dying-dominion" aria-label="Link to Dying dominion">#</a></h3><p>Early and Late Age Mictlan use a special dying-dominion system.</p>
+<p>According to the manual:</p>
+<ul>
+<li>home-province, Prophet, and temple spread do not operate normally;</li>
+<li>Pretender checks are only half as effective;</li>
+<li>blood sacrifice is the essential spread mechanism.</li>
+</ul>
+<p>This changes temple construction from passive religious infrastructure into sacrifice stations. A Mictlan design that ignores blood-sacrifice logistics is structurally incomplete.</p>
+<h2 id="b3-prophets">Prophets<a class="heading-link" href="#b3-prophets" aria-label="Link to Prophets">#</a></h2><p>A Prophet:</p>
+<ul>
+<li>becomes H3, or raises an already H3-or-higher commander by one;</li>
+<li>spreads dominion like a temple;</li>
+<li>gains +2 Attack, Defence, and Precision;</li>
+<li>receives dominion-dependent statistic changes.</li>
+</ul>
+<p>Current community references also describe Prophets as automatically blessed, sacred, Morale 30, and upkeep-free, with a replacement delay after death. These details should be checked in 6.36 before being promoted to Official in this library.</p>
+<h3 id="b3-prophet-roles">Prophet roles<a class="heading-link" href="#b3-prophet-roles" aria-label="Link to Prophet roles">#</a></h3><ul>
+<li>battlefield-wide Divine Blessing if H3;</li>
+<li>mobile preaching;</li>
+<li>dominion source;</li>
+<li>Holy access beyond the ordinary roster;</li>
+<li>throne claiming when the other conditions are met;</li>
+<li>combat leadership or thug role on a suitable chassis.</li>
+</ul>
+<p>Prophetising a fragile scout can gain cheap mobile H3. Prophetising a robust sacred commander can create a battle piece. The correct choice depends on whether Holy access, survivability, movement, stealth, or equipment matters most.</p>
+<h2 id="b3-thrones-of-ascension">Thrones of Ascension<a class="heading-link" href="#b3-thrones-of-ascension" aria-label="Link to Thrones of Ascension">#</a></h2><p>A claimed Throne:</p>
+<ul>
+<li>contributes dominion checks;</li>
+<li>may grant scales, blessings, sites, paths, gems, units, or other effects;</li>
+<li>contributes Ascension Points;</li>
+<li>changes the strategic value of its province.</li>
+</ul>
+<p>The revision-2 manual says claimed Thrones spread one to seven checks depending on the Throne. Current community data commonly describes a claimed Throne as generating a number of guaranteed checks equal to its level. That exact success behaviour remains Test Pending.</p>
+<p>Claiming normally requires:</p>
+<ul>
+<li>ownership of the province;</li>
+<li>a Pretender or Disciple, a Prophet, or an H3-or-higher priest;</li>
+<li>the Claim Throne order;</li>
+<li>a legal claimant when the order resolves at hosting step 8.</li>
+</ul>
+<p>If a fort is present, a besieger cannot claim through its walls. The besieged owner may still claim. A Throne becomes unclaimed when another nation conquers its province and, where present, its fort.</p>
+<h3 id="b3-same-turn-claim-loss-and-victory">Same-turn claim, loss, and victory<a class="heading-link" href="#b3-same-turn-claim-loss-and-victory" aria-label="Link to Same-turn claim, loss, and victory">#</a></h3><p>The official hosting sequence and the current ownership rule answer the central R-018 cases when read together. The claim is processed early, but victory is tested against the state that survives to the end of hosting.</p>
+<table>
+<thead>
+<tr>
+<th align="right">Hosting point</th>
+<th>Relevant change</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">8</td>
+<td>A legal Claim Throne order establishes the claim.</td>
+</tr>
+<tr>
+<td align="right">10-27</td>
+<td>Ritual attacks, assassinations, movement battles, and castle storming can kill the claimant or change control.</td>
+</tr>
+<tr>
+<td align="right">53</td>
+<td>An unbesieged fort may reclaim its province under the official partial-ownership rule.</td>
+</tr>
+<tr>
+<td align="right">56</td>
+<td>Elimination is checked.</td>
+</tr>
+<tr>
+<td align="right">57</td>
+<td>The game checks the victory conditions.</td>
+</tr>
+</tbody></table>
+<p>The resulting state matrix is more useful than the vague instruction to “hold until hosting.”</p>
+<table>
+<thead>
+<tr>
+<th>Same-turn result after a successful step-8 claim</th>
+<th>State at the victory check</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Claimant is killed later, but the nation retains the Throne</td>
+<td>The claim remains; a claimant does not need to survive after the claim has resolved.</td>
+</tr>
+<tr>
+<td>An unfortified Throne province is conquered</td>
+<td>The Throne becomes unclaimed and its Ascension Points do not survive to step 57.</td>
+</tr>
+<tr>
+<td>A fortified Throne is merely placed under siege</td>
+<td>The defender still owns the fort and the Throne remains claimed.</td>
+</tr>
+<tr>
+<td>The fortified Throne is stormed and conquered</td>
+<td>The Throne becomes unclaimed before victory is checked.</td>
+</tr>
+</tbody></table>
+<p>This is a mixed <strong>Official plus Community-tested</strong> conclusion. The manual establishes steps 8 and 57 and the rules for full and partial province ownership. The current community Throne reference states that conquest of the province and fort, if present, unclaims the Throne. A published same-turn report independently records the claimant-death and province-loss branches. No official update through 6.36 changes that sequence.</p>
+<p>R-018 is complete at that evidence tier. It does not settle every adjacent victory question. In particular, an exact simultaneous tie between different nations at the winning Ascension total still needs a current controlled reproduction before any tie-break rule is published as law.</p>
+<h2 id="b3-dominion-effects-on-units">Dominion effects on units<a class="heading-link" href="#b3-dominion-effects-on-units" aria-label="Link to Dominion effects on units">#</a></h2><h3 id="b3-ordinary-troops">Ordinary troops<a class="heading-link" href="#b3-ordinary-troops" aria-label="Link to Ordinary troops">#</a></h3><p>All units receive:</p>
+<ul>
+<li>+1 Morale in friendly dominion;</li>
+<li>-1 Morale in enemy dominion.</li>
+</ul>
+<h3 id="b3-pretender-and-prophet">Pretender and Prophet<a class="heading-link" href="#b3-pretender-and-prophet" aria-label="Link to Pretender and Prophet">#</a></h3><p>For each friendly candle, the Pretender and Prophet receive:</p>
+<ul>
+<li>+1 Strength;</li>
+<li>+0.5 Magic Resistance;</li>
+<li>+10% Hit Points.</li>
+</ul>
+<p>Enemy candles reverse these changes. Hit Points do not fall below 10% through this effect.</p>
+<p>Dominion changes whether a god or Prophet can safely take a fight. A combat report from Dominion 8 cannot be transferred unchanged to Dominion -4.</p>
+<h2 id="b3-scale-convergence-inside-dominion">Scale convergence inside dominion<a class="heading-link" href="#b3-scale-convergence-inside-dominion" aria-label="Link to Scale convergence inside dominion">#</a></h2><p>For each scale in a province, the official chance to move one step toward the god’s selected scales is:</p>
+<pre><code class="language-text">5% x local candles
++ 10% x absolute difference
+</code></pre>
+<p>Example:</p>
+<pre><code class="language-text">local dominion = 6
+current Order = -1
+target Order = +2
+difference = 3
+
+chance = 5 x 6 + 10 x 3 = 60%
+</code></pre>
+<p>Current community documentation reports that a chance above 100% can move the scale two steps. The manual describes a one-step movement. The additional step requires controlled reproduction.</p>
+<h2 id="b3-dominion-elimination">Dominion elimination<a class="heading-link" href="#b3-dominion-elimination" aria-label="Link to Dominion elimination">#</a></h2><p>If a Pretender has no friendly dominion anywhere, the nation is eliminated.</p>
+<p>The nation may still possess:</p>
+<ul>
+<li>provinces;</li>
+<li>armies;</li>
+<li>forts;</li>
+<li>a treasury;</li>
+<li>a living Pretender.</li>
+</ul>
+<p>None prevents religious extinction.</p>
+<h3 id="b3-dominion-kill-warning-indicators">Dominion-kill warning indicators<a class="heading-link" href="#b3-dominion-kill-warning-indicators" aria-label="Link to Dominion-kill warning indicators">#</a></h3><ul>
+<li>no safe rear candle core;</li>
+<li>capital under deep enemy dominion;</li>
+<li>low maximum dominion;</li>
+<li>few temples;</li>
+<li>temple thresholds just below the next maximum increase;</li>
+<li>priests absent from threatened provinces;</li>
+<li>land-sea spread barriers;</li>
+<li>enemy blood sacrifice or Inquisitors;</li>
+<li>Pretender deaths that reduce dominion strength;</li>
+<li>simultaneous temple raids.</li>
+</ul>
+<h1 id="b3-part-v-scales">Part V: Scales<a class="heading-link" href="#b3-part-v-scales" aria-label="Link to Part V: Scales">#</a></h1><h2 id="b3-scales-in-plain-language">Scales in plain language<a class="heading-link" href="#b3-scales-in-plain-language" aria-label="Link to Scales in plain language">#</a></h2><p>Scales describe the material and metaphysical tendencies of a god’s dominion.</p>
+<p>The six pairs are:</p>
+<table>
+<thead>
+<tr>
+<th>Positive end</th>
+<th>Negative end</th>
+<th>Principal systems</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Order</td>
+<td>Turmoil</td>
+<td>Income, resources, recruitment, unrest recovery, events</td>
+</tr>
+<tr>
+<td>Productivity</td>
+<td>Sloth</td>
+<td>Resources and income</td>
+</tr>
+<tr>
+<td>Heat</td>
+<td>Cold</td>
+<td>Climate, income, supply, movement, fatigue environment</td>
+</tr>
+<tr>
+<td>Growth</td>
+<td>Death</td>
+<td>Population, income, supply, aging, terrain at extremes</td>
+</tr>
+<tr>
+<td>Fortune</td>
+<td>Misfortune</td>
+<td>Event quality, frequency, heroes</td>
+</tr>
+<tr>
+<td>Magic</td>
+<td>Drain</td>
+<td>Research, MR, spell fatigue, starting research</td>
+</tr>
+</tbody></table>
+<p>“Positive” does not mean universally beneficial. Extreme positive scales carry penalties, and some nations exploit nominally negative scales.</p>
+<h2 id="b3-ordinary-scale-effects">Ordinary scale effects<a class="heading-link" href="#b3-ordinary-scale-effects" aria-label="Link to Ordinary scale effects">#</a></h2><p>The following values are the current unmodded 6.36 publication baseline. The Growth/Death income row uses the newer official Modding Manual default.</p>
+<table>
+<thead>
+<tr>
+<th>Scale step</th>
+<th>Ordinary effect per step</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Order</td>
+<td>+3% income, +2% resources, +10% Recruitment Points, stronger unrest reduction, fewer events</td>
+</tr>
+<tr>
+<td>Turmoil</td>
+<td>Reverses Order’s economic and recruitment effects; more events</td>
+</tr>
+<tr>
+<td>Productivity</td>
+<td>+3% income, +15% resources</td>
+</tr>
+<tr>
+<td>Sloth</td>
+<td>-3% income, -15% resources</td>
+</tr>
+<tr>
+<td>Temperature away from preference</td>
+<td>-5% income and -10% supplies per step</td>
+</tr>
+<tr>
+<td>Growth</td>
+<td>+0.2% monthly population, +10% supplies, +2% income</td>
+</tr>
+<tr>
+<td>Death</td>
+<td>Reverses Growth’s ordinary effects</td>
+</tr>
+<tr>
+<td>Fortune</td>
+<td>+10 percentage points to good-event chance, +0.5% monthly hero chance, more events</td>
+</tr>
+<tr>
+<td>Misfortune</td>
+<td>-10 percentage points to good-event chance, -0.5% monthly hero chance, more events</td>
+</tr>
+<tr>
+<td>Magic</td>
+<td>Friendly mages +1 Research Ability, all units -0.5 MR rounded toward zero, -10% spell fatigue, +50 starting research</td>
+</tr>
+<tr>
+<td>Drain</td>
+<td>Reverse research, MR, fatigue, and starting-research effects</td>
+</tr>
+</tbody></table>
+<p>Default starting research is 150. Default monthly hero chance is 3%.</p>
+<h3 id="b3-resolved-and-remaining-documentation-conflicts">Resolved and remaining documentation conflicts<a class="heading-link" href="#b3-resolved-and-remaining-documentation-conflicts" aria-label="Link to Resolved and remaining documentation conflicts">#</a></h3><table>
+<thead>
+<tr>
+<th>Rule</th>
+<th align="right">Revision-2 manual</th>
+<th align="right">Other current evidence</th>
+<th>Publication treatment</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Growth/Death income</td>
+<td align="right">1% per step</td>
+<td align="right">Modding Manual 6.34 default <code>#deathincome 2</code>; no official change through 6.36</td>
+<td>Use 2%; resolved at official-documentation tier</td>
+</tr>
+<tr>
+<td>Order/Turmoil resources</td>
+<td align="right">2% per step</td>
+<td align="right">No later official change; some unsupported older tables say 3%</td>
+<td>Use 2%; resolved at official-documentation tier</td>
+</tr>
+<tr>
+<td>Order/Turmoil events</td>
+<td align="right">Manual commonly states 2% in its scale table</td>
+<td align="right">Current community table says 3%</td>
+<td>Reproduce</td>
+</tr>
+<tr>
+<td>Fortune/Misfortune frequency</td>
+<td align="right">5% more events for either direction</td>
+<td align="right">Current community table agrees</td>
+<td>Provisionally stable</td>
+</tr>
+</tbody></table>
+<p>The two resolved rows may be used in current calculators, while their integer rounding remains subject to R-008. The event-frequency discrepancy still requires better evidence.</p>
+<h2 id="b3-order-and-turmoil">Order and Turmoil<a class="heading-link" href="#b3-order-and-turmoil" aria-label="Link to Order and Turmoil">#</a></h2><p>Order improves economic predictability, recruitment throughput, and unrest recovery while reducing events.</p>
+<p>It gains value when:</p>
+<ul>
+<li>Recruitment Points bind troop production;</li>
+<li>the roster converts gold efficiently;</li>
+<li>populous provinces can be held;</li>
+<li>blood hunting or pillage creates recurring unrest;</li>
+<li>a stable economy matters more than event volume.</li>
+</ul>
+<p>Turmoil grants design points and increases event frequency. It can be part of a coherent design when:</p>
+<ul>
+<li>the nation has Turmoil-dependent recruitment or freespawn;</li>
+<li>events are deliberately valued;</li>
+<li>the roster is not RP-limited;</li>
+<li>special dominion mechanics reward unrest or chaos;</li>
+<li>early direct power outweighs long-term economic loss.</li>
+</ul>
+<h2 id="b3-productivity-and-sloth">Productivity and Sloth<a class="heading-link" href="#b3-productivity-and-sloth" aria-label="Link to Productivity and Sloth">#</a></h2><p>Productivity is the clearest answer to resource-heavy recruitment.</p>
+<p>It gains value with:</p>
+<ul>
+<li>heavy armour;</li>
+<li>high-resource sacreds;</li>
+<li>fort networks drawing from strong terrain;</li>
+<li>enough gold and RP to use the additional resources.</li>
+</ul>
+<p>Sloth is less painful when:</p>
+<ul>
+<li>important troops have low resource cost;</li>
+<li>the nation relies on summons;</li>
+<li>gold, RP, Holy Points, or Commander Points bind first;</li>
+<li>forts cannot access enough potential resources for Productivity to matter.</li>
+</ul>
+<p>The correct test is a queue, not an impression:</p>
+<pre><code class="language-text">desired monthly recruit package
+vs
+gold, resources, RP, CP, and Holy Points
+</code></pre>
+<span class="anchor-alias" id="b3-heat-and-cold" aria-hidden="true"></span><h2 id="b3-temperature">Temperature<a class="heading-link" href="#b3-temperature" aria-label="Link to Temperature">#</a></h2><p>Temperature choice is anchored to national preference, but actual provincial temperature also shifts with seasons, events, rituals, and competing dominion.</p>
+<p>Official seasonal behaviour:</p>
+<ul>
+<li>summer usually adds one Heat;</li>
+<li>winter usually adds one Cold;</li>
+<li>caves and outer planes are unaffected;</li>
+<li>deep sea remains neutral;</li>
+<li>ordinary sea is limited to Heat or Cold 1;</li>
+<li>sea seasons apply differently from land.</li>
+</ul>
+<p>Temperature affects:</p>
+<ul>
+<li>income and supply relative to national preference;</li>
+<li>snow, rain, river, and passability conditions;</li>
+<li>base encumbrance in severe climates;</li>
+<li>fire and cold battlefield interactions;</li>
+<li>extreme-scale population death.</li>
+</ul>
+<p>The right design temperature may reflect an economic preference, a battlefield environment, a national mechanic, or a compromise between them.</p>
+<h2 id="b3-growth-and-death">Growth and Death<a class="heading-link" href="#b3-growth-and-death" aria-label="Link to Growth and Death">#</a></h2><p>Growth compounds population, improves supply, and modifies income. It also reduces aging pressure.</p>
+<p>It gains value when:</p>
+<ul>
+<li>the game is expected to last;</li>
+<li>provinces are populous;</li>
+<li>armies are supply-intensive;</li>
+<li>the roster uses local Recruitment Points;</li>
+<li>the nation does not destroy its own population.</li>
+</ul>
+<p>Death grants design points and may support:</p>
+<ul>
+<li>undead or population-indifferent nations;</li>
+<li>a compressed early timing;</li>
+<li>national mechanics tied to death or corpses;</li>
+<li>maps where long-term civilian economy is unlikely to decide the game.</li>
+</ul>
+<p>Death is not free merely because the capital roster is undead. Provinces may still supply gold, resources, tax trace, fort locations, and enemy denial.</p>
+<h2 id="b3-fortune-and-misfortune">Fortune and Misfortune<a class="heading-link" href="#b3-fortune-and-misfortune" aria-label="Link to Fortune and Misfortune">#</a></h2><p>Fortune changes event quality and hero arrival chance. Both Fortune and Misfortune increase event frequency under the manual’s ordinary rule.</p>
+<p>The scale is sensitive to:</p>
+<ul>
+<li>event settings;</li>
+<li>map size and number of provinces held;</li>
+<li>national event lists;</li>
+<li>Turmoil;</li>
+<li>capital dependence;</li>
+<li>the value of heroes;</li>
+<li>tolerance for variance.</li>
+</ul>
+<p>Fortune should not be valued only through expected gold. Events also provide or remove gems, population, scales, sites, commanders, troops, unrest, and strategic options.</p>
+<h2 id="b3-magic-and-drain">Magic and Drain<a class="heading-link" href="#b3-magic-and-drain" aria-label="Link to Magic and Drain">#</a></h2><p>Magic accelerates research and reduces spell fatigue while lowering MR. Drain does the reverse.</p>
+<p>Magic gains value when:</p>
+<ul>
+<li>many national mages receive the research bonus;</li>
+<li>early breakpoints matter;</li>
+<li>battlefield casting is fatigue-sensitive;</li>
+<li>the nation can exploit lower enemy MR more than it suffers from its own.</li>
+</ul>
+<p>Drain gains value when:</p>
+<ul>
+<li>design points fund a stronger immediate package;</li>
+<li>national researchers are efficient despite the penalty;</li>
+<li>high MR is unusually valuable;</li>
+<li>research speed or early magic matters less;</li>
+<li>the nation has researchers unaffected by the scale.</li>
+</ul>
+<p>The spell-fatigue modifier applies locally. An army crossing into different scales may find the same script more or less sustainable.</p>
+<h2 id="b3-extreme-scales">Extreme scales<a class="heading-link" href="#b3-extreme-scales" aria-label="Link to Extreme scales">#</a></h2><p>Scales at 4 or 5 carry additional effects.</p>
+<table>
+<thead>
+<tr>
+<th>Extreme</th>
+<th>Additional effect</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Order 4</td>
+<td>-2 Research Ability</td>
+</tr>
+<tr>
+<td>Order 5</td>
+<td>-4 Research Ability</td>
+</tr>
+<tr>
+<td>Productivity 4</td>
+<td>+1d5 unrest per month</td>
+</tr>
+<tr>
+<td>Productivity 5</td>
+<td>+1d15 unrest per month</td>
+</tr>
+<tr>
+<td>Heat or Cold 4</td>
+<td>-0.4% population per month</td>
+</tr>
+<tr>
+<td>Heat or Cold 5</td>
+<td>-1% population per month</td>
+</tr>
+<tr>
+<td>Death 4+</td>
+<td>Forests and farms slowly become plains; plains slowly become wastes</td>
+</tr>
+<tr>
+<td>Growth 4+</td>
+<td>Plains slowly become forests or farms; sea may become kelp</td>
+</tr>
+<tr>
+<td>Growth 5</td>
+<td>Farms can slowly become forests</td>
+</tr>
+<tr>
+<td>Fortune 4</td>
+<td>-5% income and resources</td>
+</tr>
+<tr>
+<td>Fortune 5</td>
+<td>-15% income and resources</td>
+</tr>
+<tr>
+<td>Magic 4</td>
+<td>Horror marks and +1d5 unrest per month</td>
+</tr>
+<tr>
+<td>Magic 5</td>
+<td>Horror marks and +1d15 unrest per month</td>
+</tr>
+</tbody></table>
+<p>Farms from extreme Growth require Order. Extreme scales can spread to neighbouring provinces even beyond the god’s ordinary dominion.</p>
+<h3 id="b3-extreme-scale-audit">Extreme-scale audit<a class="heading-link" href="#b3-extreme-scale-audit" aria-label="Link to Extreme-scale audit">#</a></h3><p>An extreme scale should be evaluated as a package:</p>
+<pre><code class="language-text">ordinary scale benefit
++ national or form synergy
++ neighbouring pressure
+- extreme penalty
+- opportunity cost of reaching the scale limit
+</code></pre>
+<p>Calling an extreme scale “positive” hides the final two terms.</p>
+<h2 id="b3-scale-design-by-bottleneck">Scale design by bottleneck<a class="heading-link" href="#b3-scale-design-by-bottleneck" aria-label="Link to Scale design by bottleneck">#</a></h2><table>
+<thead>
+<tr>
+<th>National problem</th>
+<th>Scale question</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Cannot afford desired recruits</td>
+<td>Are Order, Productivity, Growth, and temperature fixing the correct income constraint?</td>
+</tr>
+<tr>
+<td>Gold remains unused</td>
+<td>Is the fort resource- or RP-limited instead?</td>
+</tr>
+<tr>
+<td>Resource pool remains unused</td>
+<td>Is Sloth tolerable because another gate binds?</td>
+</tr>
+<tr>
+<td>Research arrives late</td>
+<td>Would Magic create a meaningful breakpoint, or merely more unfocused RP?</td>
+</tr>
+<tr>
+<td>Armies starve</td>
+<td>Would Growth or temperature matter more than supply items and fort position?</td>
+</tr>
+<tr>
+<td>Unrest persists</td>
+<td>Does Order improve the state enough to justify its cost?</td>
+</tr>
+<tr>
+<td>Special dominion kills population</td>
+<td>Are Growth points being purchased for an economy the nation itself removes?</td>
+</tr>
+</tbody></table>
+<h1 id="b3-part-vi-blessings">Part VI: Blessings<a class="heading-link" href="#b3-part-vi-blessings" aria-label="Link to Part VI: Blessings">#</a></h1><h2 id="b3-how-blessings-work">How blessings work<a class="heading-link" href="#b3-how-blessings-work" aria-label="Link to How blessings work">#</a></h2><p>A blessing is a package selected during Pretender design and applied to Sacred units and commanders.</p>
+<p>Most effects require a sacred to become blessed in battle. Some effects are innate and operate without battle blessing.</p>
+<p>Blessing a sacred unit grants:</p>
+<ul>
+<li>+1 Morale;</li>
+<li>the nation’s selected bless effects;</li>
+<li>blessing effects from claimed Thrones held by the nation or its disciple partners.</li>
+</ul>
+<p>The H1 spell <strong>Blessing</strong> affects a limited area. H3 <strong>Divine Blessing</strong> affects the battlefield. Access and script timing matter as much as the written bless.</p>
+<h2 id="b3-bless-points">Bless points<a class="heading-link" href="#b3-bless-points" aria-label="Link to Bless points">#</a></h2><p>Each Pretender magic-path level above the first grants one bless point.</p>
+<pre><code class="language-text">bless points from a path = max(path level - 1, 0)
+</code></pre>
+<p>Example:</p>
+<pre><code class="language-text">Air 2  -&gt; 1 point
+Death 4 -&gt; 3 points
+Nature 6 -&gt; 5 points
+
+total = 9 bless points
+</code></pre>
+<p>Some nations or forms grant bonus bless points.</p>
+<p>The cost of an effect is normally the sum of its magic requirements. Scale requirements add no bless-point cost.</p>
+<p>A shared pool does not remove path prerequisites. A Pretender may own enough total points yet be unable to buy an effect because its required path is too low.</p>
+<span class="anchor-alias" id="b3-incarnate-effects" aria-hidden="true"></span><h2 id="b3-ordinary-innate-and-incarnate">Ordinary, innate, and Incarnate<a class="heading-link" href="#b3-ordinary-innate-and-incarnate" aria-label="Link to Ordinary, innate, and Incarnate">#</a></h2><table>
+<thead>
+<tr>
+<th>Tag</th>
+<th>Operation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ordinary</td>
+<td>Active after the unit is blessed in battle</td>
+</tr>
+<tr>
+<td>Innate or passive</td>
+<td>Active without battle blessing, including strategic-map effects where applicable</td>
+</tr>
+<tr>
+<td>Incarnate</td>
+<td>Active only while the Pretender is awake/present under the rule and alive</td>
+</tr>
+<tr>
+<td>Innate + Incarnate</td>
+<td>No battle blessing needed, but still disabled while the god is absent or dead</td>
+</tr>
+<tr>
+<td>Stackable</td>
+<td>May be selected repeatedly; stated bonuses accumulate</td>
+</tr>
+</tbody></table>
+<p>The revision-2 manual uses an asterisk for passive effects and bold type for Incarnate effects. Current data should be checked because individual tags can change through patches or mods.</p>
+<h3 id="b3-the-activation-state-machine">The activation state machine<a class="heading-link" href="#b3-the-activation-state-machine" aria-label="Link to The activation state machine">#</a></h3><p>The tags answer different questions. “Blessed” describes the recipient&#39;s battlefield state. “Innate” removes the need for that state. “Incarnate” asks whether the Pretender currently exists as an active, living god on the map. An effect can pass one gate and fail another.</p>
+<table>
+<thead>
+<tr>
+<th>Effect state</th>
+<th align="right">Unit blessed?</th>
+<th align="right">Pretender active and alive?</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ordinary, not Incarnate</td>
+<td align="right">No</td>
+<td align="right">Either</td>
+<td>Inactive</td>
+</tr>
+<tr>
+<td>Ordinary, not Incarnate</td>
+<td align="right">Yes</td>
+<td align="right">Either</td>
+<td>Active</td>
+</tr>
+<tr>
+<td>Ordinary, Incarnate</td>
+<td align="right">No</td>
+<td align="right">Yes</td>
+<td>Inactive</td>
+</tr>
+<tr>
+<td>Ordinary, Incarnate</td>
+<td align="right">Yes</td>
+<td align="right">No</td>
+<td>Inactive</td>
+</tr>
+<tr>
+<td>Ordinary, Incarnate</td>
+<td align="right">Yes</td>
+<td align="right">Yes</td>
+<td>Active</td>
+</tr>
+<tr>
+<td>Innate, not Incarnate</td>
+<td align="right">Either</td>
+<td align="right">Either</td>
+<td>Active on a valid recipient</td>
+</tr>
+<tr>
+<td>Innate, Incarnate</td>
+<td align="right">Either</td>
+<td align="right">No</td>
+<td>Inactive</td>
+</tr>
+<tr>
+<td>Innate, Incarnate</td>
+<td align="right">Either</td>
+<td align="right">Yes</td>
+<td>Active on a valid recipient</td>
+</tr>
+</tbody></table>
+<p>For this purpose, an imprisoned or dormant Pretender has not yet become active, and a dead Pretender is absent until recalled or reformed. Incarnate effects do not require the god to stand in the same province, enter the same battle, or project friendly dominion into the recipient&#39;s location. The god&#39;s active-and-alive state is the gate.</p>
+<p>The 6.36 update corrected a design-loading error in which cancelling a loaded Pretender could leave that design&#39;s bless effects loaded. This was a setup-state defect, not a new activation rule, but it matters when old designs are inspected or compared.</p>
+<h2 id="b3-automatic-blessing">Automatic blessing<a class="heading-link" href="#b3-automatic-blessing" aria-label="Link to Automatic blessing">#</a></h2><p>Official rules:</p>
+<ul>
+<li>the Pretender is automatically blessed in friendly dominion and cannot ordinarily be blessed outside it;</li>
+<li>a Disciple follows the same personal rule;</li>
+<li>Sacred troops fighting alongside the Pretender are automatically blessed only when the battle occurs in friendly dominion.</li>
+</ul>
+<p>Automatic blessing is conditional. A sacred army fighting without sufficient Holy support can lose its package even when the nation paid heavily for it.</p>
+<p>The main manual does not extend the troop-wide automatic blessing rule to troops merely fighting beside a Disciple. A current community reference uses broader wording, but that disagreement is not enough to replace the official rule. Unless a reproducible current test or later official text establishes otherwise, plan Disciple-led armies around ordinary priests and Divine Blessing.</p>
+<h3 id="b3-repeatable-effects-and-effects-that-overlap">Repeatable effects and effects that overlap<a class="heading-link" href="#b3-repeatable-effects-and-effects-that-overlap" aria-label="Link to Repeatable effects and effects that overlap">#</a></h3><p>“Stackable” in the bless table means that the same blessing can be bought repeatedly and its stated increment accumulates. In the 6.35 structured snapshot, the repeatable entries are:</p>
+<table>
+<thead>
+<tr>
+<th>Path</th>
+<th>Repeatable blessings</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Fire</td>
+<td>Superior Morale, Fire Resistance, Attack Skill, Inspirational Presence</td>
+</tr>
+<tr>
+<td>Air</td>
+<td>Precision, Shock Resistance, Farshot, Awareness, Swiftness</td>
+</tr>
+<tr>
+<td>Water</td>
+<td>Cold Resistance, Defence Skill</td>
+</tr>
+<tr>
+<td>Earth</td>
+<td>Reinvigoration, Strength</td>
+</tr>
+<tr>
+<td>Astral</td>
+<td>Arcane Command, Magic Resistance</td>
+</tr>
+<tr>
+<td>Death</td>
+<td>Undying, Undead Command</td>
+</tr>
+<tr>
+<td>Nature</td>
+<td>Hit Points, Poison Resistance</td>
+</tr>
+<tr>
+<td>Glamour</td>
+<td>Heroism, Quiet Stride</td>
+</tr>
+<tr>
+<td>Blood</td>
+<td>Hit Points, Strength</td>
+</tr>
+</tbody></table>
+<p>This permission does not imply that every different effect or external source stacks. Official patches establish two important exceptions:</p>
+<ul>
+<li>Fear and Dread do not stack with one another.</li>
+<li>Displacement supersedes Blur; since 6.24, invisibility also no longer stacks with Blur or Displacement.</li>
+</ul>
+<p>Bless-plus-spell, bless-plus-item, multiple aura, regeneration-source, and form-inheritance questions belong to the cross-source stacking and transformation registers in Books IV and XI. They are not inferred from the stackable marker.</p>
+<h2 id="b3-current-unmodded-blessing-reference">Current unmodded blessing reference<a class="heading-link" href="#b3-current-unmodded-blessing-reference" aria-label="Link to Current unmodded blessing reference">#</a></h2><p>The following tables represent the 6.35 structured data snapshot checked for this edition, overlaid with official changes through 6.36. No 6.36 announcement changes a listed cost, requirement, tag, or numerical effect. Because the main manual&#39;s printed list is older and the Inspector snapshot is one executable version behind, these tables remain <strong>Current Data Reference</strong>, not a claim of direct runtime reproduction.</p>
+<p>Abbreviations:</p>
+<ul>
+<li><strong>I:</strong> Incarnate;</li>
+<li><strong>N:</strong> innate;</li>
+<li><strong>S:</strong> stackable;</li>
+<li><strong>MR:</strong> Magic Resistance negates;</li>
+<li><strong>AP:</strong> armour-piercing;</li>
+<li><strong>AN:</strong> armour-negating.</li>
+</ul>
+<h3 id="b3-revision-2-divergence-register">Revision-2 divergence register<a class="heading-link" href="#b3-revision-2-divergence-register" aria-label="Link to Revision-2 divergence register">#</a></h3><p>The current table is not a literal reprint of the revision-2 manual. The following differences are already material enough to flag before any roster calculation:</p>
+<table>
+<thead>
+<tr>
+<th>Subject</th>
+<th>Revision-2 manual</th>
+<th>Current 6.35 data / 6.36 official overlay</th>
+<th>Evidence boundary</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Inspirational Presence</td>
+<td>Fire 4</td>
+<td>Fire 3</td>
+<td>Current structured reference</td>
+</tr>
+<tr>
+<td>Resilience of the Earth</td>
+<td>Earth 5</td>
+<td>Earth 6</td>
+<td>Current structured reference</td>
+</tr>
+<tr>
+<td>Fortitude</td>
+<td>Earth 7</td>
+<td>Earth 8</td>
+<td>Current structured reference</td>
+</tr>
+<tr>
+<td>Reconstruction</td>
+<td>Printed older tag state</td>
+<td>Incarnate, not passive</td>
+<td>Official 6.04 correction plus current reference</td>
+</tr>
+<tr>
+<td>Fear blessing</td>
+<td>Death 8</td>
+<td>Death 9 and Turmoil 1</td>
+<td>Current structured reference; Fear/Dread costs and interaction were revised again in 6.23</td>
+</tr>
+<tr>
+<td>Heroism</td>
+<td>+50% experience</td>
+<td>+35% experience</td>
+<td>Official 6.08 change</td>
+</tr>
+<tr>
+<td>Fear and Dread together</td>
+<td>Older guides may stack them</td>
+<td>They do not stack with one another</td>
+<td>Official 6.08 change</td>
+</tr>
+<tr>
+<td>Enchanted Blood</td>
+<td>Blood 4</td>
+<td>Blood 3</td>
+<td>Current structured reference</td>
+</tr>
+<tr>
+<td>Passive Pretender effects outside friendly dominion</td>
+<td>Older faulty behaviour could remove them</td>
+<td>Passive blessings remain active</td>
+<td>Official 6.08 correction</td>
+</tr>
+<tr>
+<td>Cancelled loaded Pretender</td>
+<td>Could leave the loaded design&#39;s bless effects selected</td>
+<td>Cancel now clears the unwanted loaded bless</td>
+<td>Official 6.36 correction</td>
+</tr>
+</tbody></table>
+<p>Frost Mist Weapons retains its printed Water 7 and Cold 1 requirement. An earlier edition removed the Cold scale requirement on the strength of an unsupported transcription; the manual and current reference agree, so that change has been reversed.</p>
+<h3 id="b3-fire">Fire<a class="heading-link" href="#b3-fire" aria-label="Link to Fire">#</a></h3><table>
+<thead>
+<tr>
+<th>Requirement</th>
+<th>Name</th>
+<th>Effect</th>
+<th>Tags</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>F1</td>
+<td>Superior Morale</td>
+<td>+1 Morale</td>
+<td>S</td>
+</tr>
+<tr>
+<td>F1 D1</td>
+<td>Wasteland Survival</td>
+<td>Wasteland Survival</td>
+<td>N</td>
+</tr>
+<tr>
+<td>F2</td>
+<td>Fire Resistance</td>
+<td>+5 Fire Resistance</td>
+<td>S</td>
+</tr>
+<tr>
+<td>F2</td>
+<td>Attack Skill</td>
+<td>+1 Attack</td>
+<td>S</td>
+</tr>
+<tr>
+<td>F3</td>
+<td>Inspirational Presence</td>
+<td>Inspirational +1 and +50 leadership</td>
+<td>N, S</td>
+</tr>
+<tr>
+<td>F4</td>
+<td>Righteous Wrath</td>
+<td>Nearby sacred death triggers temporary +3 Attack, +3 Strength, +6 Morale</td>
+<td></td>
+</tr>
+<tr>
+<td>F5</td>
+<td>Death Explosion</td>
+<td>On death: 10 AP fire damage, area 4 plus Size</td>
+<td>I</td>
+</tr>
+<tr>
+<td>F5</td>
+<td>Heat Aura</td>
+<td>Heat Aura and +10 Fire Resistance</td>
+<td>I</td>
+</tr>
+<tr>
+<td>F6</td>
+<td>Fire Shield</td>
+<td>Fire Shield 7</td>
+<td>I</td>
+</tr>
+<tr>
+<td>F7</td>
+<td>Flaming Weapons</td>
+<td>8 AP fire damage on hit</td>
+<td>I</td>
+</tr>
+<tr>
+<td>F8 S4</td>
+<td>Unbearable Splendour</td>
+<td>Sight Vengeance; attacker may be blinded, MR negates</td>
+<td>I</td>
+</tr>
+</tbody></table>
+<p>The manual printed Inspirational Presence at F4. Current data places it at F3. The current non-Incarnate, innate treatment should be used for the 6.35 snapshot and 6.36 official overlay.</p>
+<h3 id="b3-air">Air<a class="heading-link" href="#b3-air" aria-label="Link to Air">#</a></h3><table>
+<thead>
+<tr>
+<th>Requirement</th>
+<th>Name</th>
+<th>Effect</th>
+<th>Tags</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A1</td>
+<td>Precision</td>
+<td>+1 Precision</td>
+<td>S</td>
+</tr>
+<tr>
+<td>A2</td>
+<td>Shock Resistance</td>
+<td>+5 Shock Resistance</td>
+<td>S</td>
+</tr>
+<tr>
+<td>A2</td>
+<td>Farshot</td>
+<td>+30% mundane weapon range</td>
+<td>S</td>
+</tr>
+<tr>
+<td>A3</td>
+<td>Awareness</td>
+<td>Unsurroundable 2</td>
+<td>S</td>
+</tr>
+<tr>
+<td>A4</td>
+<td>Swiftness</td>
+<td>Swiftness 30 and +1 Defence</td>
+<td>S</td>
+</tr>
+<tr>
+<td>A4</td>
+<td>Storm Flight</td>
+<td>Storm Immunity for flight</td>
+<td></td>
+</tr>
+<tr>
+<td>A5</td>
+<td>Wind Walker</td>
+<td>+6 Map Move</td>
+<td>N, I</td>
+</tr>
+<tr>
+<td>A5 E1</td>
+<td>Weightlessness</td>
+<td>Floating and halved armour encumbrance</td>
+<td>I</td>
+</tr>
+<tr>
+<td>A6</td>
+<td>Air Shield</td>
+<td>Air Shield 80</td>
+<td>I</td>
+</tr>
+<tr>
+<td>A7</td>
+<td>Thunder Weapons</td>
+<td>Capped shock damage and shock fatigue on hit</td>
+<td>I</td>
+</tr>
+<tr>
+<td>A8</td>
+<td>Charged Bodies</td>
+<td>Overcharged 20 and +5 Shock Resistance</td>
+<td>I</td>
+</tr>
+<tr>
+<td>A9</td>
+<td>Flight</td>
+<td>Flight</td>
+<td>I</td>
+</tr>
+</tbody></table>
+<p>Farshot changes weapon range, not spell range. Wind Walker matters on the strategic map but remains Incarnate in the unmodded current table.</p>
+<h3 id="b3-water">Water<a class="heading-link" href="#b3-water" aria-label="Link to Water">#</a></h3><table>
+<thead>
+<tr>
+<th>Requirement</th>
+<th>Name</th>
+<th>Effect</th>
+<th>Tags</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>W1, Cold 1</td>
+<td>Winter’s Gift</td>
+<td>Snow Move</td>
+<td>N</td>
+</tr>
+<tr>
+<td>W1 N1</td>
+<td>Swamp Survival</td>
+<td>Swamp Survival</td>
+<td>N</td>
+</tr>
+<tr>
+<td>W2</td>
+<td>Cold Resistance</td>
+<td>+5 Cold Resistance</td>
+<td>S</td>
+</tr>
+<tr>
+<td>W2</td>
+<td>Swimming</td>
+<td>Swimming</td>
+<td>N</td>
+</tr>
+<tr>
+<td>W2</td>
+<td>Defence Skill</td>
+<td>+1 Defence</td>
+<td>S</td>
+</tr>
+<tr>
+<td>W5</td>
+<td>Chill Aura</td>
+<td>Chill Aura and +10 Cold Resistance</td>
+<td>I</td>
+</tr>
+<tr>
+<td>W5</td>
+<td>Slowing Weapons</td>
+<td>Damaging hit may slow; MR negates</td>
+<td>I</td>
+</tr>
+<tr>
+<td>W6 F2</td>
+<td>Vitriol Weapons</td>
+<td>7 AP acid damage on hit</td>
+<td>I</td>
+</tr>
+<tr>
+<td>W6</td>
+<td>Water Breathing</td>
+<td>Water Breathing</td>
+<td>N, I</td>
+</tr>
+<tr>
+<td>W7, Cold 1</td>
+<td>Frost Mist Weapons</td>
+<td>Cold clouds created by attacks</td>
+<td>I</td>
+</tr>
+<tr>
+<td>W9, Magic 1</td>
+<td>Quickness</td>
+<td>Quickness</td>
+<td>I</td>
+</tr>
+</tbody></table>
+<p>Quickness changes action economy and fatigue exposure as well as offence. It should be evaluated with the sacred’s attacks, encumbrance, survivability, and vulnerability to fatigue counters.</p>
+<h3 id="b3-earth">Earth<a class="heading-link" href="#b3-earth" aria-label="Link to Earth">#</a></h3><table>
+<thead>
+<tr>
+<th>Requirement</th>
+<th>Name</th>
+<th>Effect</th>
+<th>Tags</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>E1</td>
+<td>Mountain Survival</td>
+<td>Mountain Survival</td>
+<td>N</td>
+</tr>
+<tr>
+<td>E2</td>
+<td>Reinvigoration</td>
+<td>+1 Reinvigoration</td>
+<td>S</td>
+</tr>
+<tr>
+<td>E2</td>
+<td>Strength</td>
+<td>+1 Strength</td>
+<td>S</td>
+</tr>
+<tr>
+<td>E4</td>
+<td>Unbreakable</td>
+<td>Affliction Resistance 3</td>
+<td></td>
+</tr>
+<tr>
+<td>E4 N3</td>
+<td>Larger</td>
+<td>Permanent increase in Size</td>
+<td>N</td>
+</tr>
+<tr>
+<td>E5</td>
+<td>Reconstruction</td>
+<td>Regeneration for Inanimates</td>
+<td>I</td>
+</tr>
+<tr>
+<td>E6</td>
+<td>Resilience of the Earth</td>
+<td>+10 Fire and Shock Resistance</td>
+<td>I</td>
+</tr>
+<tr>
+<td>E6</td>
+<td>Hard Skin</td>
+<td>+5 natural protection</td>
+<td>I</td>
+</tr>
+<tr>
+<td>E8</td>
+<td>Fortitude</td>
+<td>Broad physical resistances</td>
+<td>I</td>
+</tr>
+</tbody></table>
+<p>Larger changes more than Hit Points. Size can affect square density, repel interactions, trampling relationships, and target profile. It should be tested on the exact sacred roster.</p>
+<h3 id="b3-astral">Astral<a class="heading-link" href="#b3-astral" aria-label="Link to Astral">#</a></h3><table>
+<thead>
+<tr>
+<th>Requirement</th>
+<th>Name</th>
+<th>Effect</th>
+<th>Tags</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>S1</td>
+<td>Arcane Command</td>
+<td>Grants or improves magic leadership</td>
+<td>N, S</td>
+</tr>
+<tr>
+<td>S2</td>
+<td>Magic Resistance</td>
+<td>+1 MR</td>
+<td>S</td>
+</tr>
+<tr>
+<td>S3 D1</td>
+<td>Spirit Sight</td>
+<td>Spirit Sight</td>
+<td></td>
+</tr>
+<tr>
+<td>S3 F1</td>
+<td>Solar Weapons</td>
+<td>4 AP holy fire damage on hit</td>
+<td></td>
+</tr>
+<tr>
+<td>S4</td>
+<td>Far Caster</td>
+<td>+1 spell-range multiplier level</td>
+<td></td>
+</tr>
+<tr>
+<td>S4</td>
+<td>Arcane Finesse</td>
+<td>+1 spell penetration</td>
+<td></td>
+</tr>
+<tr>
+<td>S5</td>
+<td>Magic Weapons</td>
+<td>Mundane weapons become magical</td>
+<td>I</td>
+</tr>
+<tr>
+<td>S6</td>
+<td>Twist Fate</td>
+<td>Negates the first damaging hit under its rule</td>
+<td>I</td>
+</tr>
+<tr>
+<td>S7, Misfortune 1</td>
+<td>Fateweaving</td>
+<td>Attackers may suffer misfortune; MR negates</td>
+<td>I</td>
+</tr>
+<tr>
+<td>S8, Magic 2</td>
+<td>Etherealness</td>
+<td>Ethereal</td>
+<td>I</td>
+</tr>
+</tbody></table>
+<p>Astral blessings can support sacred mages and commanders rather than only melee troops. Far Caster and Arcane Finesse should be valued by the actual sacred spell roster.</p>
+<h3 id="b3-death">Death<a class="heading-link" href="#b3-death" aria-label="Link to Death">#</a></h3><table>
+<thead>
+<tr>
+<th>Requirement</th>
+<th>Name</th>
+<th>Effect</th>
+<th>Tags</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>D1</td>
+<td>Undying</td>
+<td>-2 minimum Hit Points before death</td>
+<td>S</td>
+</tr>
+<tr>
+<td>D1</td>
+<td>Undead Command</td>
+<td>Grants or improves undead leadership</td>
+<td>N, S</td>
+</tr>
+<tr>
+<td>D2, Death 2</td>
+<td>Half Dead</td>
+<td>Need not eat and strong disease resistance</td>
+<td>N</td>
+</tr>
+<tr>
+<td>D3</td>
+<td>Mending Bones</td>
+<td>Recuperation for undead</td>
+<td>N</td>
+</tr>
+<tr>
+<td>D4</td>
+<td>Withering Weapons</td>
+<td>Damaging hit may cause Decay; MR negates</td>
+<td></td>
+</tr>
+<tr>
+<td>D5</td>
+<td>Stygian Flesh</td>
+<td>Invulnerability 10</td>
+<td>I</td>
+</tr>
+<tr>
+<td>D6</td>
+<td>Reforming Flesh</td>
+<td>10% regeneration for undead</td>
+<td>I</td>
+</tr>
+<tr>
+<td>D7</td>
+<td>Reanimators</td>
+<td>Many attacks deal unlife damage; additional undead leadership</td>
+<td>I</td>
+</tr>
+<tr>
+<td>D8</td>
+<td>Death Weapons</td>
+<td>Armour-negating death damage and disease checks</td>
+<td>I</td>
+</tr>
+<tr>
+<td>D9, Turmoil 1</td>
+<td>Fear</td>
+<td>Fear 5</td>
+<td>I</td>
+</tr>
+</tbody></table>
+<p>Undying does not prevent routing, fatigue collapse, soul destruction, or every form of battlefield removal. Its value depends on whether the sacred can still act while surviving below ordinary zero Hit Points and whether recovery is possible afterward.</p>
+<h3 id="b3-nature">Nature<a class="heading-link" href="#b3-nature" aria-label="Link to Nature">#</a></h3><table>
+<thead>
+<tr>
+<th>Requirement</th>
+<th>Name</th>
+<th>Effect</th>
+<th>Tags</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>N1</td>
+<td>Hit Points</td>
+<td>+1 Hit Point</td>
+<td>S</td>
+</tr>
+<tr>
+<td>N1</td>
+<td>Low Light Vision</td>
+<td>Darkvision 50</td>
+<td></td>
+</tr>
+<tr>
+<td>N2</td>
+<td>Poison Resistance</td>
+<td>+5 Poison Resistance</td>
+<td>S</td>
+</tr>
+<tr>
+<td>N2</td>
+<td>Forest Survival</td>
+<td>Forest Survival</td>
+<td>N</td>
+</tr>
+<tr>
+<td>N3, Magic 1</td>
+<td>Unaging</td>
+<td>Slower aging and younger sacred recruitment</td>
+<td>N</td>
+</tr>
+<tr>
+<td>N4 D1</td>
+<td>Poison Weapons</td>
+<td>Poison damage on damaging hit</td>
+<td></td>
+</tr>
+<tr>
+<td>N5</td>
+<td>Recuperation</td>
+<td>Living units recover afflictions</td>
+<td>N, I</td>
+</tr>
+<tr>
+<td>N5</td>
+<td>Berserker</td>
+<td>Berserker +2</td>
+<td>I</td>
+</tr>
+<tr>
+<td>N6</td>
+<td>Barkskin</td>
+<td>Barkskin protection package</td>
+<td>I</td>
+</tr>
+<tr>
+<td>N7</td>
+<td>Regeneration</td>
+<td>10% regeneration for compatible units</td>
+<td>I</td>
+</tr>
+</tbody></table>
+<p>Regeneration is percentage-based, so it scales with Hit Points. Its full value also depends on incoming burst damage, poison, decay, fatigue, disease, and whether the unit survives long enough to receive repeated healing.</p>
+<h3 id="b3-glamour">Glamour<a class="heading-link" href="#b3-glamour" aria-label="Link to Glamour">#</a></h3><table>
+<thead>
+<tr>
+<th>Requirement</th>
+<th>Name</th>
+<th>Effect</th>
+<th>Tags</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>G1</td>
+<td>Undreaming</td>
+<td>Unsleeping 4</td>
+<td></td>
+</tr>
+<tr>
+<td>G1</td>
+<td>Heroism</td>
+<td>+35% experience gain</td>
+<td>S</td>
+</tr>
+<tr>
+<td>G2</td>
+<td>Quiet Stride</td>
+<td>+20 Stealth if already stealthy</td>
+<td>N, S</td>
+</tr>
+<tr>
+<td>G3</td>
+<td>True Sight</td>
+<td>True Sight</td>
+<td></td>
+</tr>
+<tr>
+<td>G3</td>
+<td>Blur</td>
+<td>Attackers suffer -2 Attack under the sight rules</td>
+<td></td>
+</tr>
+<tr>
+<td>G6</td>
+<td>Obfuscate</td>
+<td>Grants Stealth 40 or adds 40 to existing Stealth</td>
+<td>N, I</td>
+</tr>
+<tr>
+<td>G6 F2</td>
+<td>Awe</td>
+<td>Awe 3</td>
+<td>I</td>
+</tr>
+<tr>
+<td>G7</td>
+<td>Displacement</td>
+<td>Attackers suffer -5 Attack; replaces Blur</td>
+<td>I</td>
+</tr>
+<tr>
+<td>G7</td>
+<td>Dread</td>
+<td>Dread 5 under the sight rules</td>
+<td>I</td>
+</tr>
+<tr>
+<td>G8</td>
+<td>Luck</td>
+<td>Luck</td>
+<td>I</td>
+</tr>
+</tbody></table>
+<p>Official update 6.08 reduced Heroism from +50% to +35% experience. Older guides and the printed revision-2 manual may retain the former value.</p>
+<h3 id="b3-blood">Blood<a class="heading-link" href="#b3-blood" aria-label="Link to Blood">#</a></h3><table>
+<thead>
+<tr>
+<th>Requirement</th>
+<th>Name</th>
+<th>Effect</th>
+<th>Tags</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>B1</td>
+<td>Hit Points</td>
+<td>+1 Hit Point</td>
+<td>S</td>
+</tr>
+<tr>
+<td>B2</td>
+<td>Strength</td>
+<td>+1 Strength</td>
+<td>S</td>
+</tr>
+<tr>
+<td>B3</td>
+<td>Strong Blood</td>
+<td>+5 Poison Resistance and strong disease resistance</td>
+<td>N</td>
+</tr>
+<tr>
+<td>B3</td>
+<td>Enchanted Blood</td>
+<td>Slow regeneration, +1 MR, and bleeding immunity</td>
+<td></td>
+</tr>
+<tr>
+<td>B4</td>
+<td>Blood Surge</td>
+<td>A kill triggers temporary +3 Attack, +3 Strength, +1 Defence, +1 Reinvigoration</td>
+<td></td>
+</tr>
+<tr>
+<td>B5</td>
+<td>Blood Bond</td>
+<td>Distributes part of damage among nearby bonded units</td>
+<td>I</td>
+</tr>
+<tr>
+<td>B6</td>
+<td>Unholy Weapons</td>
+<td>15 AP damage against sacred or blessed targets</td>
+<td>I</td>
+</tr>
+<tr>
+<td>B7</td>
+<td>Blood Vengeance</td>
+<td>Attacker may suffer the inflicted damage; MR resists</td>
+<td>I</td>
+</tr>
+<tr>
+<td>B8 D4</td>
+<td>Vampiric Weapons</td>
+<td>3 AN life-drain damage on damaging hit</td>
+<td>I</td>
+</tr>
+</tbody></table>
+<p>Blood Bond changes damage distribution rather than removing damage. Formation, unit spacing, regeneration, area damage, and unequal protection can change whether distribution helps or accelerates collapse.</p>
+<h2 id="b3-weapon-blessings-what-causes-the-rider-to-fire">Weapon blessings: what causes the rider to fire<a class="heading-link" href="#b3-weapon-blessings-what-causes-the-rider-to-fire" aria-label="Link to Weapon blessings: what causes the rider to fire">#</a></h2><p>The phrase “weapon blessing” covers several different mechanisms. Treating them as interchangeable produces bad counter advice, especially when armour, shields, zero-damage hits, spells, natural weapons, and ranged attacks enter the same battle.</p>
+<table>
+<thead>
+<tr>
+<th>Trigger family</th>
+<th>Blessings</th>
+<th>Present rule</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Weapon property</td>
+<td>Magic Weapons</td>
+<td>Changes an otherwise mundane parent weapon into a magical weapon; it does not add a second damage packet. Since 6.25 the property also works correctly for repel attacks.</td>
+</tr>
+<tr>
+<td>On hit</td>
+<td>Flaming Weapons, Thunder Weapons, Slowing Weapons, Vitriol Weapons, Solar Weapons, Death Weapons, Unholy Weapons</td>
+<td>The rider is tied to a successful weapon hit under its own damage, resistance, target, and MR rules. A parent hit need not always inflict ordinary HP damage unless the individual blessing says otherwise.</td>
+</tr>
+<tr>
+<td>On damaging hit</td>
+<td>Withering Weapons, Poison Weapons, Vampiric Weapons</td>
+<td>The parent attack must first cause damage. A shield, protection, immunity, or other prevention that leaves no qualifying damage can therefore suppress this class.</td>
+</tr>
+<tr>
+<td>Attack-generated field</td>
+<td>Frost Mist Weapons</td>
+<td>Attacks create cold mist rather than attaching an ordinary direct-damage rider. Official fixes make ranged misses create the cloud and make the cloud appear even when the target is killed.</td>
+</tr>
+<tr>
+<td>Probabilistic attack conversion</td>
+<td>Reanimators</td>
+<td>The current reference assigns a 50% chance for hits, including spell hits, to deal Unlife Damage; the bless also grants undead leadership. This is a special rule, not a model for other weapon blessings.</td>
+</tr>
+</tbody></table>
+<h3 id="b3-patch-established-boundaries">Patch-established boundaries<a class="heading-link" href="#b3-patch-established-boundaries" aria-label="Link to Patch-established boundaries">#</a></h3><ul>
+<li>The 6.12 update stopped some breath weapons from incorrectly receiving weapon blessings and stopped Flaming Weapons from affecting melee ice weapons.</li>
+<li>The 6.19 update repaired weapon-blessing interaction with mirror images.</li>
+<li>The 6.23 update made friendly units immune to Unholy Weapons and allowed Vampiric Weapons to drain a little life when the target dies from the attack.</li>
+<li>The 6.29 update stopped Phoenix Pyre from triggering weapon blessings.</li>
+<li>The 6.34 update made shields protect correctly against weapon blessings that are not armour-negating.</li>
+</ul>
+<p>The shield correction proves that shield protection participates in resolving applicable riders. It does not, by itself, prove that every blocked attack is treated as a hit or a miss for every blessing. When that distinction decides a build, the battle log and a reproducible current test are still the correct evidence.</p>
+<h3 id="b3-counter-analysis-by-trigger">Counter-analysis by trigger<a class="heading-link" href="#b3-counter-analysis-by-trigger" aria-label="Link to Counter-analysis by trigger">#</a></h3><table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Did the parent attack hit?</td>
+<td>All ordinary weapon riders begin with a qualifying attack connection.</td>
+</tr>
+<tr>
+<td>Did the parent attack cause damage?</td>
+<td>Withering, Poison, and Vampiric Weapons require this additional gate.</td>
+</tr>
+<tr>
+<td>Is the rider AP or AN?</td>
+<td>Armour and shield protection interact differently with the added packet.</td>
+</tr>
+<tr>
+<td>Does MR negate the rider?</td>
+<td>Slowing and Withering can fail after the physical attack succeeds.</td>
+</tr>
+<tr>
+<td>Is the target in the required class?</td>
+<td>Unholy Weapons is specialised against sacred or blessed targets and excludes friendlies.</td>
+</tr>
+<tr>
+<td>Is the attack an excluded breath, ice, or triggered effect?</td>
+<td>The patch history contains explicit exclusions; visual resemblance to a normal weapon is insufficient.</td>
+</tr>
+<tr>
+<td>Does the effect create an area rather than damage the struck target?</td>
+<td>Frost Mist can matter after a miss or a killing blow because its cloud is the product.</td>
+</tr>
+</tbody></table>
+<h2 id="b3-blessing-from-items">Blessing from items<a class="heading-link" href="#b3-blessing-from-items" aria-label="Link to Blessing from items">#</a></h2><p>The Modding Manual distinguishes two item mechanisms:</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Model</th>
+<th>Consequence</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>#bless</code></td>
+<td>Shroud of the Battle Saint</td>
+<td>Applies the Bless spell to the bearer automatically. The item is itself the source of the blessed state.</td>
+</tr>
+<tr>
+<td><code>#autobless</code></td>
+<td>Flask of Holy Water</td>
+<td>Automatically blesses the bearer only if the bearer is Sacred.</td>
+</tr>
+<tr>
+<td><code>#bestowtomount</code></td>
+<td>Mount propagation modifier</td>
+<td>Causes a supported effect defined after the command to be bestowed on the mount as well. It must be read with the specific item effect, not as a universal rider-to-mount rule.</td>
+</tr>
+</tbody></table>
+<p>The current 6.35 item snapshot identifies the Shroud of the Battle Saint, Immaculate Shield, Armor of Virtue, and Sun Sword as item-granted blessing sources. The Flask of Holy Water uses the sacred-only route. These items can make a unit blessed without a priest, but they do not erase the ordinary Incarnate gate: an Incarnate effect still switches off while the Pretender is absent or dead.</p>
+<p>Official update 6.34 established one unusually important lifetime rule: a magic-item blessing persists when Life after Death changes the bearer. That is firm for this case and should not be generalised to every shape-change mechanism.</p>
+<h2 id="b3-riders-mounts-and-separate-sacred-status">Riders, mounts, and separate sacred status<a class="heading-link" href="#b3-riders-mounts-and-separate-sacred-status" aria-label="Link to Riders, mounts, and separate sacred status">#</a></h2><p>A mounted unit is not one undifferentiated sacred object. The rider form and mount have their own records and can have different Sacred flags. Current examples show both matched and unmatched pairs: the Knight of the Chalice and its Destrier are Sacred, the Wind Rider and Armored Pegasus are Sacred, while the Triton Knight and its mount are not. The 6.02 correction that gave Triton Knights their proper mount state is further evidence that mount data are resolved separately.</p>
+<p>This produces four practical rules:</p>
+<ol>
+<li>Do not infer the mount&#39;s Sacred status from the rider&#39;s title or icon.</li>
+<li>Do not infer that an item effect reaches the mount unless the effect supports the mount-bestow mechanism or a current rule says so.</li>
+<li>Do not infer that a dismounted or transformed body retains the original body&#39;s sacred and blessed state; inspect the resulting form and the source that created the state.</li>
+<li>Keep movement abilities separate from blessing. For example, 6.36 makes a swimming mount sufficient for river crossing, but that does not make the rider or mount Sacred.</li>
+</ol>
+<p>Exact transfer when a mount dies, a rider dismounts, or one component changes form remains part of the mount and transformation research in Book XI. The blessing chapter records the independent-object rule without inventing an unverified transfer sequence.</p>
+<h2 id="b3-shape-change-and-effect-lifetime">Shape change and effect lifetime<a class="heading-link" href="#b3-shape-change-and-effect-lifetime" aria-label="Link to Shape change and effect lifetime">#</a></h2><p>Three questions should be asked separately whenever a blessed unit changes body:</p>
+<ol>
+<li>Is the resulting body still Sacred?</li>
+<li>Does the unit still possess the blessed state from the original source?</li>
+<li>If the state remains, which Innate or Incarnate effects are currently eligible?</li>
+</ol>
+<p>Only the item-blessing Life after Death case has a direct official ruling in the present evidence set. Ordinary shape change, secondshape, mount loss, transformation, death-shape, and new-body interactions remain governed by their specific form rules and the transformation register. A single successful case is not evidence for a universal inheritance rule.</p>
+<h2 id="b3-display-tooltip-and-engine-state">Display, tooltip, and engine state<a class="heading-link" href="#b3-display-tooltip-and-engine-state" aria-label="Link to Display, tooltip, and engine state">#</a></h2><p>The blessing interface has accumulated several corrections: 6.04 repaired Incarnate information for known blessings, 6.08 repaired Throne-granted Awe display, 6.13 made Obfuscate appear in bless information, 6.23 corrected Half Dead display, and 6.35 printed Enchanted Blood&#39;s Magic Resistance bonus. These changes make the current interface more useful, but they also demonstrate why an icon or tooltip is not conclusive evidence of activation in every edge case.</p>
+<p>For a disputed interaction, record all three layers:</p>
+<ul>
+<li>the design-screen or unit-panel description;</li>
+<li>the battle log and observed state;</li>
+<li>the official rule or patch record that explains the result.</li>
+</ul>
+<h3 id="b3-r-016-research-decision">R-016 research decision<a class="heading-link" href="#b3-r-016-research-decision" aria-label="Link to R-016 research decision">#</a></h3><p>R-016 is complete for the present unmodded scope: current tags and requirements, battlefield and Incarnate gates, automatic blessing boundaries, repeatable effects, documented overlap exceptions, weapon-trigger families, item-granted blessing, and the independent status of riders and mounts. Cross-source stacking remains R-049; transformation and effect lifetime remain R-040 and R-052. This division closes the blessing question without pretending that adjacent engine-state questions have also been solved.</p>
+<h2 id="b3-bless-design-by-function">Bless design by function<a class="heading-link" href="#b3-bless-design-by-function" aria-label="Link to Bless design by function">#</a></h2><h3 id="b3-expansion-reliability">Expansion reliability<a class="heading-link" href="#b3-expansion-reliability" aria-label="Link to Expansion reliability">#</a></h3><p>An expansion bless should solve a measured failure.</p>
+<p>Common failures:</p>
+<ul>
+<li>attacks do not connect;</li>
+<li>hits fail to penetrate protection;</li>
+<li>sacreds are surrounded;</li>
+<li>chip damage accumulates;</li>
+<li>morale fails after casualties;</li>
+<li>fatigue produces critical hits;</li>
+<li>elemental independents bypass defence;</li>
+<li>too many sacreds die for the expansion to be economical.</li>
+</ul>
+<p>The best blessing is not the one with the largest description. It is the cheapest package that changes the relevant battle result with an acceptable margin.</p>
+<h3 id="b3-offence">Offence<a class="heading-link" href="#b3-offence" aria-label="Link to Offence">#</a></h3><p>Offensive blessings fall into several families:</p>
+<table>
+<thead>
+<tr>
+<th>Family</th>
+<th>Examples</th>
+<th>Best against</th>
+<th>Weakness</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Accuracy</td>
+<td>Attack Skill, Righteous Wrath</td>
+<td>High defence</td>
+<td>Does not solve low damage</td>
+</tr>
+<tr>
+<td>Damage</td>
+<td>Strength, Blood Surge</td>
+<td>Protection and high HP</td>
+<td>Requires hits and often kills</td>
+</tr>
+<tr>
+<td>On-hit riders</td>
+<td>Flaming, Solar, poison, death, vampiric weapons</td>
+<td>Targets vulnerable to the added type</td>
+<td>May require damaging hit or face resistance</td>
+</tr>
+<tr>
+<td>Tempo</td>
+<td>Quickness</td>
+<td>Targets overwhelmed by action volume</td>
+<td>Doubles fatigue exposure and incoming opportunity</td>
+</tr>
+<tr>
+<td>Attrition</td>
+<td>Withering, slowing, fear, dread</td>
+<td>Long fights or morale-sensitive armies</td>
+<td>MR, immunity, sight, or fast killing can counter</td>
+</tr>
+</tbody></table>
+<h3 id="b3-defence">Defence<a class="heading-link" href="#b3-defence" aria-label="Link to Defence">#</a></h3><p>Defensive blessings should be separated by threat:</p>
+<ul>
+<li>mundane weapon avoidance;</li>
+<li>natural or armour protection;</li>
+<li>physical resistance;</li>
+<li>elemental resistance;</li>
+<li>Magic Resistance;</li>
+<li>affliction recovery;</li>
+<li>regeneration;</li>
+<li>first-hit insurance;</li>
+<li>luck or ethereal avoidance;</li>
+<li>formation and unsurrroundability;</li>
+<li>morale.</li>
+</ul>
+<p>Stacking one layer creates a specialist. Layering different defences creates breadth but may buy too little of each to change a breakpoint.</p>
+<h3 id="b3-mobility-and-logistics">Mobility and logistics<a class="heading-link" href="#b3-mobility-and-logistics" aria-label="Link to Mobility and logistics">#</a></h3><p>Strategic mobility effects can be worth more than battlefield statistics when they allow:</p>
+<ul>
+<li>faster reinforcement;</li>
+<li>unexpected routes;</li>
+<li>forest, swamp, mountain, snow, or wasteland movement;</li>
+<li>underwater operations;</li>
+<li>stealth armies;</li>
+<li>regrouping with the main force.</li>
+</ul>
+<p>The effect must apply to every necessary member of the force. A commander with mobility but troops without it, or sacred troops without a matching commander, may not produce the expected movement.</p>
+<h3 id="b3-sacred-commanders-and-mages">Sacred commanders and mages<a class="heading-link" href="#b3-sacred-commanders-and-mages" aria-label="Link to Sacred commanders and mages">#</a></h3><p>Bless value is not confined to line troops.</p>
+<p>Sacred commanders may exploit:</p>
+<ul>
+<li>leadership blessings;</li>
+<li>undead or magic command;</li>
+<li>map movement;</li>
+<li>stealth;</li>
+<li>recuperation;</li>
+<li>Unaging;</li>
+<li>Far Caster;</li>
+<li>Arcane Finesse;</li>
+<li>reinvigoration;</li>
+<li>resistances;</li>
+<li>defensive effects for thugging.</li>
+</ul>
+<p>When sacred mages are numerous, a small caster-oriented bless can affect hundreds of mage-turns and battles.</p>
+<span class="anchor-alias" id="b3-sacred-capacity" aria-hidden="true"></span><h3 id="b3-mass-sacreds-versus-elite-sacreds">Mass sacreds versus elite sacreds<a class="heading-link" href="#b3-mass-sacreds-versus-elite-sacreds" aria-label="Link to Mass sacreds versus elite sacreds">#</a></h3><p>Mass sacreds often value:</p>
+<ul>
+<li>cheap stackable statistics;</li>
+<li>morale;</li>
+<li>resistances against common area damage;</li>
+<li>on-hit effects multiplied by many attacks;</li>
+<li>effects triggered by sacred deaths.</li>
+</ul>
+<p>Elite sacreds often value:</p>
+<ul>
+<li>percentage regeneration;</li>
+<li>layered resistance;</li>
+<li>protection of an expensive body;</li>
+<li>affliction recovery;</li>
+<li>mobility;</li>
+<li>effects that preserve veteran experience;</li>
+<li>tools against specific counters.</li>
+</ul>
+<p>This is a tendency, not a law. Attack count, HP, slots, recruit limit, cost, and battlefield role are more important than the labels “mass” and “elite.”</p>
+<h2 id="b3-bless-throughput">Bless throughput<a class="heading-link" href="#b3-bless-throughput" aria-label="Link to Bless throughput">#</a></h2><p>The value of a blessing depends on how many useful recipients can be fielded.</p>
+<pre><code class="language-text">monthly sacred throughput =
+  minimum of:
+    gold capacity
+    resource capacity
+    Recruitment Points
+    Holy Points
+    recruitment limit
+    fort availability
+    commander and leadership capacity
+</code></pre>
+<p>A 200-point blessing affecting six capital-only sacreds per month is a different investment from the same blessing affecting sacreds at every fort.</p>
+<h3 id="b3-practical-bless-value">Practical bless value<a class="heading-link" href="#b3-practical-bless-value" aria-label="Link to Practical bless value">#</a></h3><pre><code class="language-text">practical bless value =
+  effect per relevant sacred
+  x relevant sacreds fielded
+  x battles in which blessing is active
+  x probability the effect changes the result
+</code></pre>
+<p>The expression is conceptual, not an engine formula. It forces the design to include throughput, activation, and relevance.</p>
+<h2 id="b3-bless-access-and-scripting">Bless access and scripting<a class="heading-link" href="#b3-bless-access-and-scripting" aria-label="Link to Bless access and scripting">#</a></h2><p>Audit:</p>
+<ul>
+<li>number and Holy level of priests;</li>
+<li>whether H3 Divine Blessing is available;</li>
+<li>priest movement relative to sacred armies;</li>
+<li>priest survivability;</li>
+<li>the round on which blessing lands;</li>
+<li>whether sacreds engage before being blessed;</li>
+<li>battlefield size and formation;</li>
+<li>whether a Prophet is required;</li>
+<li>whether automatic blessing conditions apply;</li>
+<li>what happens when the priest is assassinated or delayed.</li>
+</ul>
+<p>An unblessed sacred is missing more than a bonus. It may be an expensive unit designed around statistics it does not currently possess.</p>
+<h2 id="b3-counter-audit">Counter-audit<a class="heading-link" href="#b3-counter-audit" aria-label="Link to Counter-audit">#</a></h2><p>For every major blessing, name:</p>
+<ol>
+<li>the damage type or control effect it does not resist;</li>
+<li>the relevant immunity or resistance;</li>
+<li>the MR check, if any;</li>
+<li>the sight rule, if any;</li>
+<li>whether the effect requires a damaging hit;</li>
+<li>whether it is Incarnate;</li>
+<li>whether it depends on formation or nearby sacreds;</li>
+<li>whether fatigue defeats it;</li>
+<li>whether routing defeats it;</li>
+<li>how the opponent can avoid fighting the blessed army at all.</li>
+</ol>
+<p>No blessing removes the need for scouting.</p>
+<h1 id="b3-part-vii-divine-magic-and-priest-identity">Part VII: Divine Magic and Priest Identity<a class="heading-link" href="#b3-part-vii-divine-magic-and-priest-identity" aria-label="Link to Part VII: Divine Magic and Priest Identity">#</a></h1><h2 id="b3-divine-magic">Divine magic<a class="heading-link" href="#b3-divine-magic" aria-label="Link to Divine magic">#</a></h2><p>Divine spells:</p>
+<ul>
+<li>require Holy skill rather than ordinary paths;</li>
+<li>require no research;</li>
+<li>are available from the beginning;</li>
+<li>include spells such as Blessing, Banishment, Smite, and Divine Blessing.</li>
+</ul>
+<p>The Pretender’s magic can replace the nation’s ordinary Banishment and Smite with path-themed versions.</p>
+<p>If the Pretender has no path at level 4 or higher, priests retain ordinary Banishment and Smite.</p>
+<p>If one or more paths reach the threshold:</p>
+<ul>
+<li>the highest path determines the replacement family;</li>
+<li>ties use the manual’s priority order;</li>
+<li>Banishment and Smite each receive the corresponding replacement;</li>
+<li>Blood has no Banishment replacement.</li>
+</ul>
+<h3 id="b3-divine-spell-families">Divine spell families<a class="heading-link" href="#b3-divine-spell-families" aria-label="Link to Divine spell families">#</a></h3><table>
+<thead>
+<tr>
+<th>Path</th>
+<th>Banishment replacement</th>
+<th>Smite replacement</th>
+<th>Character</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Fire</td>
+<td>Ashes to Ashes</td>
+<td>Heavenly Fire</td>
+<td>Burning and armour-negating fire</td>
+</tr>
+<tr>
+<td>Air</td>
+<td>Wind of Memories</td>
+<td>Heavenly Strike</td>
+<td>Range, area, and shock</td>
+</tr>
+<tr>
+<td>Water</td>
+<td>Purifying Water</td>
+<td>Watery Death</td>
+<td>Area, drowning, and anti-unarmoured secondary damage</td>
+</tr>
+<tr>
+<td>Earth</td>
+<td>Pull from the Grave</td>
+<td>Word of Stone</td>
+<td>Grip and petrification</td>
+</tr>
+<tr>
+<td>Astral</td>
+<td>Stellar Decree</td>
+<td>Word of Power</td>
+<td>Range, stun, and paralysis</td>
+</tr>
+<tr>
+<td>Death</td>
+<td>Decree of the Underworld</td>
+<td>Syllable of Death</td>
+<td>Bewilderment, exhaustion, or death</td>
+</tr>
+<tr>
+<td>Nature</td>
+<td>Final Rest</td>
+<td>Word of Thorns</td>
+<td>Kill attempt, entanglement, and bleeding</td>
+</tr>
+<tr>
+<td>Glamour</td>
+<td>Return of the Past</td>
+<td>Word of Bewilderment</td>
+<td>Anti-minded undead and confusion</td>
+</tr>
+<tr>
+<td>Blood</td>
+<td>No replacement</td>
+<td>Claim Life</td>
+<td>Anti-living damage and Chest Wound</td>
+</tr>
+</tbody></table>
+<p>Pretender paths alter the national priest toolkit even when those paths are never used for a ritual.</p>
+<h3 id="b3-design-implication">Design implication<a class="heading-link" href="#b3-design-implication" aria-label="Link to Design implication">#</a></h3><p>A high path may simultaneously buy:</p>
+<ul>
+<li>personal casting;</li>
+<li>bless points;</li>
+<li>a bless prerequisite;</li>
+<li>a new priestly Banishment;</li>
+<li>a new priestly Smite;</li>
+<li>site-search or forging access.</li>
+</ul>
+<p>That bundle is strategically meaningful. It should still be compared with the cost curve required to reach level 4 or higher.</p>
+<span class="anchor-alias" id="b3-part-vii-pretender-death-recall-and-divine-continuity" aria-hidden="true"></span><h1 id="b3-part-viii-death-of-a-god">Part VIII: Death of a God<a class="heading-link" href="#b3-part-viii-death-of-a-god" aria-label="Link to Part VIII: Death of a God">#</a></h1><h2 id="b3-ordinary-pretender-death">Ordinary Pretender death<a class="heading-link" href="#b3-ordinary-pretender-death" aria-label="Link to Ordinary Pretender death">#</a></h2><p>Each ordinary Pretender death causes either:</p>
+<ul>
+<li>loss of one magic-path level; or</li>
+<li>loss of one dominion-strength point.</li>
+</ul>
+<p>The chance to lose magic is:</p>
+<pre><code class="language-text">50% + 10% x Nature level at death
+</code></pre>
+<p>If no path level is lost, or no magic is available to lose, dominion falls by one. Dominion cannot fall below 1 through this rule.</p>
+<p>Nature makes magic loss more likely. The path selected for loss is weighted, with Nature more exposed and Death less exposed. The manual also notes small chances to gain Death and still smaller chances to gain Astral or Blood. Exact weights belong in the controlled-test register unless directly extracted from current data.</p>
+<h2 id="b3-why-death-compounds">Why death compounds<a class="heading-link" href="#b3-why-death-compounds" aria-label="Link to Why death compounds">#</a></h2><p>A death can remove:</p>
+<ul>
+<li>the Pretender’s commander-turns;</li>
+<li>Incarnate blessing effects;</li>
+<li>personal expansion or battle presence;</li>
+<li>ritual access;</li>
+<li>item access while the body is absent;</li>
+<li>a magic path or dominion strength on return;</li>
+<li>candles through the reduced maximum and check chance;</li>
+<li>confidence in a throne or war timetable.</li>
+</ul>
+<p>The casualty affects the whole nation, not only the dead commander.</p>
+<h2 id="b3-call-god">Call God<a class="heading-link" href="#b3-call-god" aria-label="Link to Call God">#</a></h2><p>Priests may use the Call God order after an ordinary Pretender death.</p>
+<p>The revision-2 manual gives the player-facing model: every assigned Holy level generates one point per month, the Pretender returns to the home province after “around 50,” and recalling the main Pretender in a Disciple game requires 50% more. It deliberately says that the total is not exactly 50 so that the arrival is uncertain. Its example assigns three H1 priests and one H2 and predicts about ten months.</p>
+<p>The Modding Manual adds two official modifiers:</p>
+<ul>
+<li><strong>Elegist:</strong> the unit&#39;s Elegist value is added to its priest level while calling a god or Disciple;</li>
+<li><strong>Recall God:</strong> an applicable nation or claimed-Throne <code>#recallgod</code> value is added to the priest level of everyone performing Call God.</li>
+</ul>
+<p>The main manual also gives the special Trinity rule: a dead member of a Trinity can be called back in half the normal time. The official text defines the time result, not the internal threshold calculation.</p>
+<h3 id="b3-reconciled-current-model">Reconciled current model<a class="heading-link" href="#b3-reconciled-current-model" aria-label="Link to Reconciled current model">#</a></h3><p>Published controlled research resolves the manual&#39;s apparent uncertainty by moving the randomness from the target into each priest&#39;s monthly contribution. The tested base threshold is 50 points. An ordinary priest contributes its effective recall rating, plus or minus one, each month. The small published sample found the three outcomes equally or nearly equally weighted; that weighting remains a community-tested estimate rather than an official probability table.</p>
+<p>For ordinary positive ratings:</p>
+<pre><code class="language-text">effective recall rating =
+  Holy level
+  + Elegist value
+  + applicable Recall God modifier
+
+monthly contribution per priest =
+  effective recall rating - 1, effective recall rating,
+  or effective recall rating + 1
+</code></pre>
+<p>An ordinary H1 contributes 0-2 points in a month, H2 contributes 1-3, and H3 contributes 2-4. Elegist changes the rating before that variation: an H1 Elegist (2) calls at the same ordinary rate as an H3. Elegist alone does not grant the order; the unit must still be a priest.</p>
+<table>
+<thead>
+<tr>
+<th>Caller</th>
+<th align="right">Monthly range</th>
+<th align="right">Approximate average</th>
+<th align="right">Approximate solo time from an empty pool</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>One H1</td>
+<td align="right">0-2</td>
+<td align="right">1</td>
+<td align="right">50 months</td>
+</tr>
+<tr>
+<td>Five H1</td>
+<td align="right">0-10</td>
+<td align="right">5</td>
+<td align="right">10 months</td>
+</tr>
+<tr>
+<td>One H2</td>
+<td align="right">1-3</td>
+<td align="right">2</td>
+<td align="right">25 months</td>
+</tr>
+<tr>
+<td>One H3</td>
+<td align="right">2-4</td>
+<td align="right">3</td>
+<td align="right">17 months</td>
+</tr>
+<tr>
+<td>Three H3</td>
+<td align="right">6-12</td>
+<td align="right">9</td>
+<td align="right">6 months</td>
+</tr>
+<tr>
+<td>One H1 Elegist (2)</td>
+<td align="right">2-4</td>
+<td align="right">3</td>
+<td align="right">17 months</td>
+</tr>
+</tbody></table>
+<p>These are capacity estimates, not deadlines. With roughly symmetric <code>-1/0/+1</code> variation, a useful planning approximation is:</p>
+<pre><code class="language-text">expected months for an ordinary Pretender =
+  ceiling(50 / sum of effective recall ratings)
+
+expected months for the main Pretender in a Disciple game =
+  ceiling(75 / sum of effective recall ratings)
+</code></pre>
+<p>The 75-point figure follows from the tested 50-point base and the manual&#39;s official 50% increase. The formula predicts the centre of the workload, not the exact return month. A small priest corps has proportionally wider timing risk; many callers average the monthly variation more effectively.</p>
+<h3 id="b3-who-can-contribute-in-a-disciple-game">Who can contribute in a Disciple game<a class="heading-link" href="#b3-who-can-contribute-in-a-disciple-game" aria-label="Link to Who can contribute in a Disciple game">#</a></h3><p>Current community documentation reports that:</p>
+<ul>
+<li>a Disciple nation&#39;s priests may help recall the main Pretender;</li>
+<li>the Pretender nation&#39;s priests may help recall any dead Disciple on the team;</li>
+<li>a Disciple nation&#39;s priests may recall their own Disciple, but not another nation&#39;s Disciple.</li>
+</ul>
+<p>Those cross-team routing rules are <strong>Current Community Reference</strong>, not wording supplied by the revision-2 manual. A legacy community mechanics page reports 25 points for one dead Trinity member, consistent with the official half-time rule, but the library retains the official result rather than presenting that implementation detail as directly reproduced under 6.36.</p>
+<h3 id="b3-order-interruption-and-return">Order, interruption, and return<a class="heading-link" href="#b3-order-interruption-and-return" aria-label="Link to Order, interruption, and return">#</a></h3><p>Call God resolves at hosting step 16. A caller removed by an earlier ritual or magic battle cannot be assumed to contribute. Once step 16 has passed, a later assassination or ordinary battle cannot retroactively remove that month&#39;s points. This timing conclusion follows directly from the official hosting order.</p>
+<p>The manual places the returning Pretender in the nation&#39;s home province. Current community documentation refines this to the capital province: inside the fort when the nation still owns it, even under siege, and outside the walls if the capital has been lost. A hostile return can cause an immediate fight. These placement details remain <strong>Current Community Reference</strong> until a 6.36 return-state reproduction or later official wording is preserved.</p>
+<p>Version 6.28 repaired Call God when the order was issued without its keyboard shortcut. That was an order-interface defect, not a change to the contribution model. No later official update through 6.36 changes Call God.</p>
+<h3 id="b3-r-017-decision">R-017 decision<a class="heading-link" href="#b3-r-017-decision" aria-label="Link to R-017 decision">#</a></h3><p>R-017 is complete at a mixed evidence tier:</p>
+<ul>
+<li><strong>Official:</strong> the order, ordinary Holy contribution model, Disciple-game 50% increase, home-province return, Elegist and Recall God modifiers, Trinity half-time rule, and hosting step;</li>
+<li><strong>Community-tested:</strong> fixed 50-point ordinary threshold and per-priest effective-rating <code>-1/0/+1</code> variation;</li>
+<li><strong>Current Community Reference:</strong> detailed Disciple routing and capital/fort placement.</li>
+</ul>
+<p>Future direct runtime testing would upgrade the last two layers, but the present evidence is sufficient for planning as long as the labels remain attached.</p>
+<h3 id="b3-recall-opportunity-cost">Recall opportunity cost<a class="heading-link" href="#b3-recall-opportunity-cost" aria-label="Link to Recall opportunity cost">#</a></h3><p>Every calling priest is not:</p>
+<ul>
+<li>blessing an army;</li>
+<li>preaching;</li>
+<li>blood sacrificing;</li>
+<li>claiming a Throne;</li>
+<li>researching if also a mage;</li>
+<li>moving with a force;</li>
+<li>performing another special order.</li>
+</ul>
+<p>A recall plan should identify the priests before the god takes a high-risk battle.</p>
+<h2 id="b3-immortality">Immortality<a class="heading-link" href="#b3-immortality" aria-label="Link to Immortality">#</a></h2><h3 id="b3-dominion-immortal">Dominion Immortal<a class="heading-link" href="#b3-dominion-immortal" aria-label="Link to Dominion Immortal">#</a></h3><p>A dominion-immortal Pretender normally reforms if killed in friendly dominion. Death outside friendly dominion requires Call God.</p>
+<h3 id="b3-immortal">Immortal<a class="heading-link" href="#b3-immortal" aria-label="Link to Immortal">#</a></h3><p>An Immortal normally reforms regardless of friendly dominion on the ordinary plane.</p>
+<h3 id="b3-limits">Limits<a class="heading-link" href="#b3-limits" aria-label="Link to Limits">#</a></h3><ul>
+<li>Soul Slay or equivalent soul destruction can prevent ordinary reform and require Call God.</li>
+<li>Death on a remote plane can prevent immortality.</li>
+<li>Reform time is often about three months but varies by form.</li>
+<li>Reform removes most afflictions.</li>
+<li>Immortality alone does not improve ordinary affliction recovery while alive.</li>
+</ul>
+<p>Dominion-immortal combat planning should always include the candle state at the battle location and the possibility that dominion changes before combat resolves.</p>
+<h2 id="b3-safe-and-unsafe-risk">Safe and unsafe risk<a class="heading-link" href="#b3-safe-and-unsafe-risk" aria-label="Link to Safe and unsafe risk">#</a></h2><table>
+<thead>
+<tr>
+<th>Situation</th>
+<th>Principal risk</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Immortal god in ordinary plane</td>
+<td>Temporary absence, items, operational gap, soul attacks</td>
+</tr>
+<tr>
+<td>Dominion Immortal in strong friendly candles</td>
+<td>Same, plus candle reversal before battle</td>
+</tr>
+<tr>
+<td>Dominion Immortal on frontier</td>
+<td>Failure to reform if dominion becomes hostile</td>
+</tr>
+<tr>
+<td>Any god on remote plane</td>
+<td>Immortality may not operate</td>
+</tr>
+<tr>
+<td>Any god facing soul destruction</td>
+<td>Call God and permanent-loss consequences</td>
+</tr>
+<tr>
+<td>Non-immortal god in battle</td>
+<td>Full recall delay, path or dominion loss, disabled Incarnate bless</td>
+</tr>
+</tbody></table>
+<span class="anchor-alias" id="b3-special-dominions" aria-hidden="true"></span><h1 id="b3-part-ix-special-dominions">Part IX: Special Dominions<a class="heading-link" href="#b3-part-ix-special-dominions" aria-label="Link to Part IX: Special Dominions">#</a></h1><h2 id="b3-why-special-dominions-deserve-their-own-audit">Why special dominions deserve their own audit<a class="heading-link" href="#b3-why-special-dominions-deserve-their-own-audit" aria-label="Link to Why special dominions deserve their own audit">#</a></h2><p>Some nations transform candles into effects far beyond ordinary scales and morale. Special dominions may:</p>
+<ul>
+<li>kill population;</li>
+<li>create units;</li>
+<li>spread disease or insanity;</li>
+<li>change terrain;</li>
+<li>alter unrest;</li>
+<li>hide information;</li>
+<li>empower constructs;</li>
+<li>enable movement;</li>
+<li>modify religious conflict.</li>
+</ul>
+<p>The design question becomes:</p>
+<pre><code class="language-text">value of another candle =
+  ordinary dominion value
+  + special national effect
+  + scale convergence
+  + survival value
+</code></pre>
+<h2 id="b3-major-categories">Major categories<a class="heading-link" href="#b3-major-categories" aria-label="Link to Major categories">#</a></h2><table>
+<thead>
+<tr>
+<th>Nation or family</th>
+<th>Special dominion effect</th>
+<th>Strategic consequence</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Arcoscephale, all ages</td>
+<td>Accurate scrying throughout dominion, including Glamour detection</td>
+<td>Candles become an intelligence network</td>
+</tr>
+<tr>
+<td>EA and LA Mictlan</td>
+<td>Dying dominion and blood-sacrifice dependence</td>
+<td>Blood economy and temples are core religious logistics</td>
+</tr>
+<tr>
+<td>Yomi</td>
+<td>Oni arise from temples according to turmoil, terrain, and temperature</td>
+<td>Scales, temples, and terrain form a freespawn system</td>
+</tr>
+<tr>
+<td>MA Ermor</td>
+<td>Population death and undead arising</td>
+<td>Civilian economy is converted into an undead dominion</td>
+</tr>
+<tr>
+<td>MA Asphodel</td>
+<td>Population death and Manikin generation</td>
+<td>Growth, forests, corpses, and dominion interact unusually</td>
+</tr>
+<tr>
+<td>MA C&#39;tis</td>
+<td>Miasma, disease, rain, wetness, and terrain effects</td>
+<td>Friendly and hostile forces experience different economic and disease pressure</td>
+</tr>
+<tr>
+<td>MA Agartha</td>
+<td>Golem Cult improves constructs&#39; Hit Points</td>
+<td>Candles can strengthen friendly, allied, and enemy constructs</td>
+</tr>
+<tr>
+<td>LA R&#39;lyeh</td>
+<td>Dreamlands spread insanity and related effects</td>
+<td>Dominion is psychological warfare as well as faith</td>
+</tr>
+<tr>
+<td>EA Therodos</td>
+<td>Population death and fort-related ghost generation</td>
+<td>Forts and dominion convert population into spectral power</td>
+</tr>
+<tr>
+<td>Phaeacia</td>
+<td>Dark-ship sailing linked to friendly dominion</td>
+<td>Candles become movement infrastructure</td>
+</tr>
+<tr>
+<td>EA Mekone</td>
+<td>Improved effective maximum in dominion conflict</td>
+<td>Religious contests behave better than the printed initial score suggests</td>
+</tr>
+<tr>
+<td>MA and LA Phlegra</td>
+<td>Dominion-linked unrest</td>
+<td>More candles can carry an internal economic cost</td>
+</tr>
+<tr>
+<td>Ubar, Na&#39;Ba, Ind, Feminie</td>
+<td>Province information can be hidden</td>
+<td>Dominion creates strategic uncertainty</td>
+</tr>
+</tbody></table>
+<p>This table identifies system categories, not complete nation guides. Exact inheritance by Disciples and exact scale formulas belong in the later nation dossiers.</p>
+<h2 id="b3-special-dominion-design-questions">Special-dominion design questions<a class="heading-link" href="#b3-special-dominion-design-questions" aria-label="Link to Special-dominion design questions">#</a></h2><ol>
+<li>Does the effect scale with local candles, maximum dominion, temples, or merely presence?</li>
+<li>Does it affect allies, Disciples, enemies, or everyone?</li>
+<li>Does it operate underwater, in caves, or on remote planes?</li>
+<li>Does it change population, terrain, unrest, or recruitment permanently?</li>
+<li>Can an enemy exploit the effect?</li>
+<li>Does high dominion improve the effect enough to justify its point curve?</li>
+<li>What happens if the special dominion overruns a valuable captured economy?</li>
+</ol>
+<h1 id="b3-part-x-teams-and-disciples">Part X: Teams and Disciples<a class="heading-link" href="#b3-part-x-teams-and-disciples" aria-label="Link to Part X: Teams and Disciples">#</a></h1><h2 id="b3-shared-and-separate-systems">Shared and separate systems<a class="heading-link" href="#b3-shared-and-separate-systems" aria-label="Link to Shared and separate systems">#</a></h2><p>In a disciple game:</p>
+<ul>
+<li>the team has one Pretender and one or more Disciples;</li>
+<li>disciples awaken in about half the Pretender’s delayed time;</li>
+<li>team size increases the number of temples required to raise maximum dominion;</li>
+<li>Call God requires 50% more progress;</li>
+<li>claimed-Throne blessings can be shared within the team;</li>
+<li>ordinary team play has no Prophets because Disciples fill the religious role.</li>
+</ul>
+<p>The team needs one religious network, not a collection of independent personal builds.</p>
+<h2 id="b3-disciple-design-audit">Disciple design audit<a class="heading-link" href="#b3-disciple-design-audit" aria-label="Link to Disciple design audit">#</a></h2><p>Record:</p>
+<ul>
+<li>which Pretender blessings the Disciple and sacreds receive;</li>
+<li>which Incarnate effects depend on the Pretender’s state;</li>
+<li>which special dominion effects transfer to the Disciple;</li>
+<li>temple responsibility by geography;</li>
+<li>preaching and blood-sacrifice responsibility;</li>
+<li>Call God priest reserve;</li>
+<li>Throne-claiming access;</li>
+<li>land-sea religious boundaries;</li>
+<li>whether the Disciple’s personal paths and body create an independent battlefield role.</li>
+</ul>
+<p>Some special dominions transfer fully, some partially, and some not at all. This must be checked nation by nation.</p>
+<h1 id="b3-part-xi-the-frozen-modded-ruleset">Part XI: The Frozen Modded Ruleset<a class="heading-link" href="#b3-part-xi-the-frozen-modded-ruleset" aria-label="Link to Part XI: The Frozen Modded Ruleset">#</a></h1><h2 id="b3-exact-definitions-belong-to-book-ix">Exact definitions belong to Book IX<a class="heading-link" href="#b3-exact-definitions-belong-to-book-ix" aria-label="Link to Exact definitions belong to Book IX">#</a></h2><p>The former edition repeated DE&#39;s global scale table, the complete blessing delta, broad command counts, and Divinitus chassis counts here. Book IX now provides the corrected source inventory and is the only authoritative home for those figures.</p>
+<p>Book III keeps the design consequences:</p>
+<ul>
+<li>DE changes the economic weight of several scales;</li>
+<li>many blessings become cheaper, cross-path, or independent of an awake Incarnate chassis;</li>
+<li>DE broadly rewrites Pretender availability, starting dominion, path cost, and national god lists;</li>
+<li>Divinitus then adds a second chassis layer whose sites, events, items, summons, scale limits, and delayed powers may matter more than the visible card;</li>
+<li>the final design must be calculated after both files load.</li>
+</ul>
+<p>This division matters. Book IX answers, &quot;What did the files define?&quot; Book III answers, &quot;How should a player reason about the resulting design?&quot;</p>
+<h2 id="b3-modded-design-audit">Modded-design audit<a class="heading-link" href="#b3-modded-design-audit" aria-label="Link to Modded-design audit">#</a></h2><p>For every combined design:</p>
+<ol>
+<li>name the exact nation and form ID;</li>
+<li>confirm final form availability after load order;</li>
+<li>record final starting paths and New Path Cost;</li>
+<li>record final starting dominion;</li>
+<li>record final scale limits;</li>
+<li>record prison restrictions;</li>
+<li>calculate blessing costs from Book IX&#39;s current table;</li>
+<li>identify non-Incarnate and cross-path conversions;</li>
+<li>check national bless-point bonuses;</li>
+<li>test displayed totals in the actual design screen.</li>
+</ol>
+<h1 id="b3-part-xii-complete-design-method">Part XII: Complete Design Method<a class="heading-link" href="#b3-part-xii-complete-design-method" aria-label="Link to Part XII: Complete Design Method">#</a></h1><h2 id="b3-step-1-define-the-national-plan">Step 1: Define the national plan<a class="heading-link" href="#b3-step-1-define-the-national-plan" aria-label="Link to Step 1: Define the national plan">#</a></h2><p>Write one sentence:</p>
+<blockquote>
+<p>The nation intends to reach <strong>this first military state</strong>, using <strong>these units and spells</strong>, by <strong>this turn range</strong>, while preserving <strong>this economy or late-game route</strong>.</p>
+</blockquote>
+<p>If the sentence cannot be written, Pretender selection is premature.</p>
+<h2 id="b3-step-2-identify-mandatory-constraints">Step 2: Identify mandatory constraints<a class="heading-link" href="#b3-step-2-identify-mandatory-constraints" aria-label="Link to Step 2: Identify mandatory constraints">#</a></h2><p>Examples:</p>
+<ul>
+<li>sacreds require Fire Resistance to survive the nation’s own battlefield plan;</li>
+<li>ordinary expansion fails without a personal expander;</li>
+<li>the roster has no feasible path into a required ritual;</li>
+<li>capital sacred throughput requires Dominion 8;</li>
+<li>the special dominion needs rapid temple expansion;</li>
+<li>the first war is expected before a dormant god can arrive.</li>
+</ul>
+<p>Mandatory constraints eliminate designs before subjective preference begins.</p>
+<h2 id="b3-step-3-build-the-cheapest-functional-design">Step 3: Build the cheapest functional design<a class="heading-link" href="#b3-step-3-build-the-cheapest-functional-design" aria-label="Link to Step 3: Build the cheapest functional design">#</a></h2><p>Purchase only the elements needed to make the plan work:</p>
+<ul>
+<li>minimum reliable expansion package;</li>
+<li>minimum bless breakpoint;</li>
+<li>minimum dominion for sacred throughput and faith;</li>
+<li>minimum magic access;</li>
+<li>acceptable scales;</li>
+<li>correct awakening.</li>
+</ul>
+<p>This creates a baseline against which luxuries can be priced.</p>
+<h2 id="b3-step-4-spend-the-remainder-on-leverage">Step 4: Spend the remainder on leverage<a class="heading-link" href="#b3-step-4-spend-the-remainder-on-leverage" aria-label="Link to Step 4: Spend the remainder on leverage">#</a></h2><p>Possible leverage:</p>
+<ul>
+<li>one more dominion candle;</li>
+<li>a scale threshold;</li>
+<li>a second resistance;</li>
+<li>a new path;</li>
+<li>a better chassis;</li>
+<li>earlier awakening;</li>
+<li>an Incarnate blessing;</li>
+<li>broader divine magic;</li>
+<li>more robust expansion.</li>
+</ul>
+<p>Each addition should have a named use.</p>
+<h2 id="b3-step-5-test-the-opening">Step 5: Test the opening<a class="heading-link" href="#b3-step-5-test-the-opening" aria-label="Link to Step 5: Test the opening">#</a></h2><p>Run repeated expansion tests against:</p>
+<ul>
+<li>heavy infantry;</li>
+<li>cavalry;</li>
+<li>archers;</li>
+<li>barbarians;</li>
+<li>undead;</li>
+<li>poison;</li>
+<li>high defence;</li>
+<li>high protection;</li>
+<li>unusual terrain;</li>
+<li>the strongest common independent province under the lobby settings.</li>
+</ul>
+<p>Record losses and failure conditions, not only wins.</p>
+<h2 id="b3-step-6-test-the-first-war">Step 6: Test the first war<a class="heading-link" href="#b3-step-6-test-the-first-war" aria-label="Link to Step 6: Test the first war">#</a></h2><p>Construct a representative enemy answer:</p>
+<ul>
+<li>armour;</li>
+<li>evocations;</li>
+<li>poison;</li>
+<li>fatigue;</li>
+<li>magic weapons;</li>
+<li>MR-negates control;</li>
+<li>flyers or flankers;</li>
+<li>sacred counters;</li>
+<li>anti-thug tools.</li>
+</ul>
+<p>The purpose is not to prove invincibility. It is to identify what scouting must detect and which research branch answers it.</p>
+<h2 id="b3-step-7-test-the-economy">Step 7: Test the economy<a class="heading-link" href="#b3-step-7-test-the-economy" aria-label="Link to Step 7: Test the economy">#</a></h2><p>Simulate at least twelve turns of:</p>
+<ul>
+<li>capital recruitment;</li>
+<li>expansion parties;</li>
+<li>first fort and laboratory;</li>
+<li>mage recruitment;</li>
+<li>upkeep;</li>
+<li>Holy Point use;</li>
+<li>resource and RP bottlenecks;</li>
+<li>temple schedule.</li>
+</ul>
+<p>Strong paper scales can still fail to fund the intended sequence.</p>
+<h2 id="b3-step-8-state-the-failure-modes">Step 8: State the failure modes<a class="heading-link" href="#b3-step-8-state-the-failure-modes" aria-label="Link to Step 8: State the failure modes">#</a></h2><p>A publishable design should name:</p>
+<ul>
+<li>its worst independent matchup;</li>
+<li>its first-war counter;</li>
+<li>its economic bottleneck;</li>
+<li>its Incarnate dependency;</li>
+<li>its god-death consequence;</li>
+<li>its map weakness;</li>
+<li>the latest safe arrival;</li>
+<li>the research branch it cannot afford early.</li>
+</ul>
+<h1 id="b3-part-xiii-new-player-and-expert-audits">Part XIII: New-Player and Expert Audits<a class="heading-link" href="#b3-part-xiii-new-player-and-expert-audits" aria-label="Link to Part XIII: New-Player and Expert Audits">#</a></h1><h2 id="b3-new-player-design-audit">New-player design audit<a class="heading-link" href="#b3-new-player-design-audit" aria-label="Link to New-player design audit">#</a></h2><p>Before confirming:</p>
+<ul>
+<li>Does the total equal the design screen?</li>
+<li>Can the nation expand without assuming perfect battles?</li>
+<li>Who blesses the sacreds?</li>
+<li>Are the important effects Incarnate?</li>
+<li>When does the god arrive?</li>
+<li>Do the scales support the troops actually being recruited?</li>
+<li>Is temperature set relative to national preference?</li>
+<li>Is dominion high enough for the intended sacred output?</li>
+<li>What does the god do after expansion?</li>
+<li>Which path solves a national magic gap?</li>
+<li>What happens if the god dies?</li>
+<li>Is any number copied from an unmodded guide into a modded game?</li>
+</ul>
+<span class="anchor-alias" id="b3-pretender-design-audit" aria-hidden="true"></span><h2 id="b3-expert-design-audit">Expert design audit<a class="heading-link" href="#b3-expert-design-audit" aria-label="Link to Expert design audit">#</a></h2><h3 id="b3-budget">Budget<a class="heading-link" href="#b3-budget" aria-label="Link to Budget">#</a></h3><ul>
+<li>marginal point cost of every path;</li>
+<li>marginal point cost of every candle;</li>
+<li>scale-limit opportunity cost;</li>
+<li>point value of awakening delay;</li>
+<li>unused point remainder.</li>
+</ul>
+<h3 id="b3-timing">Timing<a class="heading-link" href="#b3-timing" aria-label="Link to Timing">#</a></h3><ul>
+<li>expansion turn targets;</li>
+<li>first fort and lab;</li>
+<li>research breakpoints;</li>
+<li>awakening range;</li>
+<li>first Incarnate-bless battle;</li>
+<li>first ritual or forge use;</li>
+<li>first expected enemy timing.</li>
+</ul>
+<h3 id="b3-religion">Religion<a class="heading-link" href="#b3-religion" aria-label="Link to Religion">#</a></h3><ul>
+<li>starting maximum dominion;</li>
+<li>temple thresholds;</li>
+<li>checks per month;</li>
+<li>front-line preaching;</li>
+<li>blood-sacrifice capacity;</li>
+<li>land-sea barriers;</li>
+<li>special-dominion effects;</li>
+<li>dominion-kill recovery.</li>
+</ul>
+<h3 id="b3-bless">Bless<a class="heading-link" href="#b3-bless" aria-label="Link to Bless">#</a></h3><ul>
+<li>recipients per month;</li>
+<li>activation method;</li>
+<li>effect by combat role;</li>
+<li>effect while god absent;</li>
+<li>counters;</li>
+<li>scale and side requirements;</li>
+<li>commander and mage beneficiaries.</li>
+</ul>
+<h3 id="b3-god-risk">God risk<a class="heading-link" href="#b3-god-risk" aria-label="Link to God risk">#</a></h3><ul>
+<li>safe dominion for combat;</li>
+<li>immortality limits;</li>
+<li>soul-destruction exposure;</li>
+<li>remote-plane exposure;</li>
+<li>recall priest-months;</li>
+<li>item loss;</li>
+<li>path or dominion loss;</li>
+<li>turns without Incarnate effects.</li>
+</ul>
+<h3 id="b3-mod-integrity">Mod integrity<a class="heading-link" href="#b3-mod-integrity" aria-label="Link to Mod integrity">#</a></h3><ul>
+<li>exact patch;</li>
+<li>exact <code>.dm</code> files;</li>
+<li>hashes;</li>
+<li>load order;</li>
+<li>final design-screen values;</li>
+<li>whether a later mod overwrites the form or nation.</li>
+</ul>
+<h1 id="b3-part-xiv-controlled-test-programme">Part XIV: Controlled-Test Programme<a class="heading-link" href="#b3-part-xiv-controlled-test-programme" aria-label="Link to Part XIV: Controlled-Test Programme">#</a></h1><h2 id="b3-test-p1-awakening-distribution">Test P1: Awakening distribution<a class="heading-link" href="#b3-test-p1-awakening-distribution" aria-label="Link to Test P1: Awakening distribution">#</a></h2><p>For awake, dormant, and imprisoned forms:</p>
+<ol>
+<li>use identical nation, map, seed policy, and game settings;</li>
+<li>use at least 200 independent seeds per delayed state rather than repeatedly re-hosting one save;</li>
+<li>record the first turn on which the god is present and the corresponding announcement state;</li>
+<li>repeat for Disciples and Trinity forms;</li>
+<li>publish every raw result, the game version, seed method, minimum, maximum, median, mean, frequency table, and confidence intervals;</li>
+<li>compare the current sample against the older <code>9 + exploding d4</code> and <code>27 + exploding d20</code> hypotheses without assuming that either survived into Dominions 6.</li>
+</ol>
+<p>Purpose: determine the current distribution rather than merely rediscovering the official range.</p>
+<h2 id="b3-test-p2-dominion-spread">Test P2: Dominion spread<a class="heading-link" href="#b3-test-p2-dominion-spread" aria-label="Link to Test P2: Dominion spread">#</a></h2><p>Create controlled maps with:</p>
+<ul>
+<li>fixed adjacency;</li>
+<li>no competing sources;</li>
+<li>exact temple counts;</li>
+<li>maximum dominion 1 through 10;</li>
+<li>neutral, friendly, and hostile target candles;</li>
+<li>land and sea boundaries.</li>
+</ul>
+<p>Record at least several hundred check opportunities per condition.</p>
+<p>Purpose: reproduce trigger chance, propagation, contest chance, and land-sea rerolls.</p>
+<h2 id="b3-test-p3-preaching">Test P3: Preaching<a class="heading-link" href="#b3-test-p3-preaching" aria-label="Link to Test P3: Preaching">#</a></h2><p>Test H1-H5:</p>
+<ul>
+<li>with and without temple;</li>
+<li>neutral, friendly, and enemy dominion;</li>
+<li>ordinary and Inquisitor;</li>
+<li>at and above the predicted cap.</li>
+</ul>
+<p>Purpose: verify fractional Holy handling, minimum chance, and cap rounding.</p>
+<h2 id="b3-test-p4-scale-convergence">Test P4: Scale convergence<a class="heading-link" href="#b3-test-p4-scale-convergence" aria-label="Link to Test P4: Scale convergence">#</a></h2><p>For candle strengths 1-10 and differences 1-10:</p>
+<ol>
+<li>lock out events and rituals where possible;</li>
+<li>record monthly scale changes;</li>
+<li>include cases above 100% predicted chance;</li>
+<li>test whether two-step movement occurs;</li>
+<li>repeat under extreme neighbouring scales.</li>
+</ol>
+<h2 id="b3-test-p5-scale-regression-and-rounding">Test P5: Scale regression and rounding<a class="heading-link" href="#b3-test-p5-scale-regression-and-rounding" aria-label="Link to Test P5: Scale regression and rounding">#</a></h2><p>Use controlled identical provinces to confirm version stability and settle:</p>
+<ul>
+<li>the published 2% Growth/Death income baseline;</li>
+<li>the published 2% Order/Turmoil resource baseline;</li>
+<li>Order/Turmoil event-frequency effect;</li>
+<li>rounding order;</li>
+<li>hostile-dominion application;</li>
+<li>Magic and Drain rounding.</li>
+</ul>
+<h2 id="b3-test-p6-bless-tags-and-values">Test P6: Bless tags and values<a class="heading-link" href="#b3-test-p6-bless-tags-and-values" aria-label="Link to Test P6: Bless tags and values">#</a></h2><p>For every blessing:</p>
+<ul>
+<li>inspect the design-screen prerequisite and cost;</li>
+<li>inspect unit abilities before blessing;</li>
+<li>bless in battle;</li>
+<li>remove or kill the Pretender;</li>
+<li>test innate and Incarnate states;</li>
+<li>test stacking;</li>
+<li>record damage, MR, resistance, sight, and “damaging hit” conditions.</li>
+</ul>
+<p>Repeat unmodded, DE only, and DE plus Divinitus.</p>
+<h2 id="b3-test-p7-automatic-blessing">Test P7: Automatic blessing<a class="heading-link" href="#b3-test-p7-automatic-blessing" aria-label="Link to Test P7: Automatic blessing">#</a></h2><p>Cross:</p>
+<ul>
+<li>Pretender present or absent;</li>
+<li>Disciple present or absent;</li>
+<li>friendly, neutral, and enemy dominion;</li>
+<li>sacred troop and sacred commander;</li>
+<li>god alive, dead, and imprisoned.</li>
+</ul>
+<p>Purpose: define exactly which units begin blessed under each condition.</p>
+<h2 id="b3-test-p8-pretender-death">Test P8: Pretender death<a class="heading-link" href="#b3-test-p8-pretender-death" aria-label="Link to Test P8: Pretender death">#</a></h2><p>For controlled path arrays:</p>
+<ul>
+<li>ordinary death;</li>
+<li>dominion-immortal death in friendly and enemy dominion;</li>
+<li>immortal death;</li>
+<li>Soul Slay;</li>
+<li>remote-plane death;</li>
+<li>repeated deaths.</li>
+</ul>
+<p>Record:</p>
+<ul>
+<li>path lost or gained;</li>
+<li>dominion lost;</li>
+<li>reform time;</li>
+<li>afflictions;</li>
+<li>Incarnate blessing state;</li>
+<li>Call God requirement.</li>
+</ul>
+<h2 id="b3-test-p9-call-god">Test P9: Call God<a class="heading-link" href="#b3-test-p9-call-god" aria-label="Link to Test P9: Call God">#</a></h2><p>Regression-test the published model with:</p>
+<ul>
+<li>H1-H5 priests;</li>
+<li>mixed groups;</li>
+<li>Trinity member;</li>
+<li>ordinary Pretender, main Pretender in a Disciple game, and dead Disciple;</li>
+<li>nations with <code>#recallgod</code>;</li>
+<li>Elegists and combined Elegist/Recall God cases;</li>
+<li>pre-step-16 and post-step-16 priest deaths;</li>
+<li>friendly, besieged, and hostile capital states.</li>
+</ul>
+<p>Purpose: upgrade the community-tested threshold, contribution distribution, routing, and placement rules to a direct current-version reproduction and detect later regressions.</p>
+<h2 id="b3-test-p10-throne-checks">Test P10: Throne checks<a class="heading-link" href="#b3-test-p10-throne-checks" aria-label="Link to Test P10: Throne checks">#</a></h2><p>Claim level-one, level-two, and level-three Thrones in controlled maps.</p>
+<p>Record:</p>
+<ul>
+<li>checks per month;</li>
+<li>whether each check is guaranteed;</li>
+<li>target selection;</li>
+<li>interaction with maximum dominion;</li>
+<li>claimant death after step 8;</li>
+<li>unfortified conquest after step 8;</li>
+<li>siege without storming;</li>
+<li>successful storming and recapture;</li>
+<li>Ascension Point state immediately before the step-57 victory check;</li>
+<li>disciple sharing.</li>
+</ul>
+<p>The claim-loss matrix is already resolved at the stated mixed evidence tier. These cases are retained as regression tests. The separate unresolved branch is the result of simultaneous winning totals, especially an exact tie in Ascension Points.</p>
+<h2 id="b3-test-p11-special-dominions">Test P11: Special dominions<a class="heading-link" href="#b3-test-p11-special-dominions" aria-label="Link to Test P11: Special dominions">#</a></h2><p>Each special dominion receives a nation-specific harness measuring:</p>
+<ul>
+<li>candle dependence;</li>
+<li>ally and Disciple treatment;</li>
+<li>underwater and remote-plane operation;</li>
+<li>unit generation;</li>
+<li>population and unrest change;</li>
+<li>terrain transformation;</li>
+<li>information hiding;</li>
+<li>enemy exploitation.</li>
+</ul>
+<h2 id="b3-test-p12-combined-mod-design-regression">Test P12: Combined-mod design regression<a class="heading-link" href="#b3-test-p12-combined-mod-design-regression" aria-label="Link to Test P12: Combined-mod design regression">#</a></h2><p>For every published combined design:</p>
+<ol>
+<li>save the design file;</li>
+<li>record displayed cost, paths, scales, dominion, and blessing;</li>
+<li>update one mod at a time;</li>
+<li>reload and compare;</li>
+<li>flag any changed prerequisite, cost, availability, or form statistic.</li>
+</ol>
+<h1 id="b3-part-xv-strategic-essays">Part XV: Strategic Essays<a class="heading-link" href="#b3-part-xv-strategic-essays" aria-label="Link to Part XV: Strategic Essays">#</a></h1><h2 id="b3-essay-i-pretender-design-as-national-engineering">Essay I: Pretender Design as National Engineering<a class="heading-link" href="#b3-essay-i-pretender-design-as-national-engineering" aria-label="Link to Essay I: Pretender Design as National Engineering">#</a></h2><p>A Pretender is often described through an archetype: expander, rainbow, titan, scales chassis, bless chassis. These labels are useful only if they lead back to the nation. Engineering begins with a requirement, not a component catalogue.</p>
+<p>The nation possesses a machine already. Its troops convert gold, resources, Recruitment Points, and Holy Points into armies. Its mages convert gold and commander-turns into research, gems into spells, and research into timing windows. Its dominion converts temples and priests into candles, then candles into scales, morale, survival, and national effects. The Pretender changes the machine’s inputs and supplies missing parts.</p>
+<p>A good design has internal causality.</p>
+<p>Productivity is bought because the planned queue exhausts resources. Dominion is bought because sacred throughput, religious conflict, or a special dominion uses it. A path is bought because it opens a blessing, booster, ritual, or divine spell that matters on a timetable. Awake status is bought because the god’s early commander-turns are worth more than the points surrendered.</p>
+<p>Bad designs often contain individually powerful elements with no causal chain. Strong scales produce more gold, but the capital is Holy-limited. A deep blessing improves sacreds, but they are capital-only and too expensive to mass. A rainbow reaches many paths, but the nation cannot research or fund the promised rituals before the game is decided. An awake titan expands, but ordinary troops could have done the same while the 150-point difference funded the whole economy.</p>
+<p>Engineering does not demand one correct answer. It demands that alternatives be compared against the same requirements.</p>
+<p>One design may solve expansion with an awake monster and accept average scales. Another may solve it with an inexpensive blessing on national sacreds. A third may use ordinary troops, imprison the god, and turn the saved points into production and research. The correct comparison measures territory, losses, fort timing, research, vulnerability, and future path access—not aesthetic preference.</p>
+<p>The final test is replaceability. Remove one purchase and ask what fails. If nothing important fails, the purchase is luxury. Replace the chassis and ask which jobs disappear. If none do, the form is overpriced. Move the first war ten turns earlier and ask whether the design remains coherent. If it collapses, its timing assumptions belong in the guide.</p>
+<p>Pretender design becomes clearer when treated as national engineering because every point must enter a machine that can use it.</p>
+<h2 id="b3-essay-ii-dominion-is-territory-by-other-means">Essay II: Dominion Is Territory by Other Means<a class="heading-link" href="#b3-essay-ii-dominion-is-territory-by-other-means" aria-label="Link to Essay II: Dominion Is Territory by Other Means">#</a></h2><p>Military maps invite a simple reading: coloured provinces are power. Dominion adds a second map beneath the first. It is a map of belief, morale, climate, legitimacy, and metaphysical survival.</p>
+<p>The two maps spread differently. An army moves along a route and fights for a province. Dominion begins with sources, attempts checks, consolidates weak provinces, relays through strong ones, and grinds against enemy candles. A nation can win the military battle and inherit hostile scales. It can hold a fortress while its god weakens outside. It can raid a temple and reduce pressure across an entire religious front.</p>
+<p>Dominion is a network because the value of a source depends on the state around it. A temple behind strong candles may relay checks to the frontier. The same temple behind a hostile wall may spend months reducing a single province. Five temples can be worth more than four plus one because the fifth raises maximum dominion, improving every check. In a team, that threshold moves with the number of players and changes who should build where.</p>
+<p>Preaching is different. It is local, labour-intensive, and independent of the ordinary maximum. This makes priests tactical religious units. They can prepare a throne, hold a capital, weaken an immortal god’s safe ground, or reclaim a province faster than distant temples can reach it. Inquisitors are specialists in this conflict. Blood sacrifice turns a stored magical resource into additional checks and can overwhelm an ordinary temple economy when properly supplied.</p>
+<p>Special dominions make the second map still more concrete. Candles can kill population, raise undead, create Manikins, scry enemies, hide ownership, spread disease, generate unrest, empower constructs, or enable sailing. In these nations, religious infrastructure is part of the military and economic production system.</p>
+<p>Dominion death reveals the final importance of faith. A nation without friendly candles dies even if its armies remain undefeated. Religious survival is not flavour attached to conquest. It is a separate victory and defeat condition with its own network and logistics.</p>
+<p>Territory supplies the state. Dominion determines whose reality governs it.</p>
+<h2 id="b3-essay-iii-a-bless-is-a-roster-contract">Essay III: A Bless Is a Roster Contract<a class="heading-link" href="#b3-essay-iii-a-bless-is-a-roster-contract" aria-label="Link to Essay III: A Bless Is a Roster Contract">#</a></h2><p>A blessing has no independent battlefield value. It has recipients, activation conditions, counters, and a price paid before the map exists.</p>
+<p>The recipient is the beginning. A point of Attack applied to hundreds of inexpensive sacred attacks is not the same purchase as a point of Attack on a handful of already accurate giants. Regeneration on high-Hit-Point elites is not the same as regeneration on units killed by a single decisive hit. Leadership on sacred commanders can matter in every army while an offensive weapon blessing matters only when sacred troops reach melee and connect.</p>
+<p>Throughput is the second condition. Capital-only sacreds, Holy Points, gold, resources, and Commander Points all restrict how much of the blessing enters the world. A huge design investment can end up enhancing a small fraction of the army. Conversely, a modest passive effect on recruit-everywhere sacred mages or commanders can alter a large part of the national economy.</p>
+<p>Activation is the third condition. Ordinary sacreds need priests, scripts, time, and battlefield geometry. Incarnate effects need the god awake and alive. An imprisoned Incarnate design may exist on the Pretender screen while remaining absent from the first thirty turns. A god’s death can remove the centre of a sacred strategy without killing a single sacred.</p>
+<p>Counterplay is the fourth condition. A weapon rider can face resistance. A control effect can face MR. Glamour defences can face special sight. Protection can face armour-negating damage. Regeneration can face burst damage, decay, poison, fatigue, or battlefield removal. A massed sacred army can be avoided, raided around, or starved of priests.</p>
+<p>A blessing is a contract. The nation pays design points and accepts the opportunity cost. In return, the roster must field enough suitable sacreds, bless them in the battles that matter, and create matchups where the effects can change the result.</p>
+<p>When those promises are explicit, bless design becomes testable. When they are not, “strong bless” is only an adjective.</p>
+<h2 id="b3-essay-iv-awake-power-and-deferred-power">Essay IV: Awake Power and Deferred Power<a class="heading-link" href="#b3-essay-iv-awake-power-and-deferred-power" aria-label="Link to Essay IV: Awake Power and Deferred Power">#</a></h2><p>Awakening is a trade across time. Awake status purchases commander-turns now by refusing future design points. Dormancy and imprisonment purchase permanent design advantages by surrendering early agency.</p>
+<p>The apparent comparison—zero, 150, or 350 points—is incomplete. Time changes what each point can become.</p>
+<p>An awake expander may take provinces before a dormant god exists. Those provinces generate income, resources, sites, recruitment locations, and strategic position. The expander may also free gold and commanders that ordinary expansion parties would have consumed. Early power can compound.</p>
+<p>Deferred power compounds too. Stronger scales affect every held province. A better blessing affects every sacred recruited. Additional paths can unlock rituals and forging for the rest of the game. If the nation can expand and deter attack without the god, the point grant may exceed the value of early commander-turns.</p>
+<p>The uncertainty of arrival matters. A dormant plan must survive the late end of the arrival range, not only the average. An imprisoned Incarnate blessing must be evaluated as two different armies: the army before awakening and the army after. A strategy that functions only if the god appears on the first legal turn has converted uncertainty into an unpriced risk.</p>
+<p>The useful question is not “Is awake or imprisoned stronger?” It is:</p>
+<blockquote>
+<p>At what turn does each design overtake the other, and what must remain true for that crossover to occur?</p>
+</blockquote>
+<p>If the game’s first decisive war happens before the crossover, deferred power may never be collected. If the awake god cannot produce territory, research, or deterrence worth its opportunity cost, immediate availability is being wasted.</p>
+<p>Time is not another statistic on the design. It is the dimension in which every statistic is realised.</p>
+<h2 id="b3-essay-v-the-religious-logistics-of-war">Essay V: The Religious Logistics of War<a class="heading-link" href="#b3-essay-v-the-religious-logistics-of-war" aria-label="Link to Essay V: The Religious Logistics of War">#</a></h2><p>Armies require supply, commanders, reinforcement routes, and retreat provinces. Sacred armies require a parallel chain: temples, priests, candles, and an active god where Incarnate effects matter.</p>
+<p>The chain begins in recruitment. Holy Points determine how many sacreds leave the queue. Dominion and temple thresholds shape that capacity. Priests must then accompany the army or meet it before battle. Their map movement must match the force. Their scripting must bless the right squads before contact. Their survival must be protected against assassination, arrows, flyers, and battlefield spells.</p>
+<p>Dominion determines the environment in which the force operates. Friendly candles provide morale and may automatically bless sacreds alongside the Pretender. They strengthen the god and Prophet. They carry selected scales and special national effects. Enemy candles reverse some of those advantages and may turn a dominion-immortal advance into a permanent death risk.</p>
+<p>Temples are logistical nodes. A forward temple does more than increase a global religious score: it adds checks, supports preaching, permits blood sacrifice where eligible, contributes to maximum-dominion thresholds, and may accelerate sacred recruitment or special effects. Like a laboratory or fort, it has a position and a vulnerability.</p>
+<p>Religious logistics can be attacked. Priests can be assassinated. Temples can be raided. Candle chains can be contested. A throne can be unclaimed by capture. A god can be killed to disable Incarnate effects. An army designed around automatic or battlefield blessing can be forced into a fight before its religious support arrives.</p>
+<p>An expert sacred army is more than a roster with a blessing. It is a supported formation whose religious supply line has been planned as carefully as its food and reinforcements.</p>
+<h2 id="b3-essay-vi-the-death-of-a-god">Essay VI: The Death of a God<a class="heading-link" href="#b3-essay-vi-the-death-of-a-god" aria-label="Link to Essay VI: The Death of a God">#</a></h2><p>Dominions makes gods powerful by making their death national.</p>
+<p>An ordinary commander’s death removes a body, equipment, leadership, and perhaps magic. A Pretender’s death can additionally remove an Incarnate blessing, path access, dominion strength, ritual timing, expansion capacity, and the nation’s central strategic threat. Priests must abandon other work to call the god back. The returned god may be weaker.</p>
+<p>This creates a risk budget. A combat Pretender should not be asked merely whether it wins a battle. The correct question is whether the probability and consequence of failure are acceptable relative to the battle’s strategic value.</p>
+<p>Immortality changes the budget but does not erase it. A dominion-immortal god needs friendly candles at death. An Immortal can still face soul destruction or remote-plane failure. Reform takes time. Equipment and operational tempo remain exposed. A supposedly safe attack can become unsafe when enemy preaching or temple checks reverse the province before combat.</p>
+<p>Call God turns priest-months into recovery. The cost can be enormous. The same priests might bless armies, preach a threatened capital, sacrifice blood, or claim a throne. A nation with few priests may own a theoretically recoverable god and lack the practical capacity to recover it before the war ends.</p>
+<p>Pretender risk is justified when it creates disproportionate value: a decisive throne, the destruction of an irreplaceable army, the relief of a capital, or a timing window no ordinary force can exploit. It is poorly justified when the god fights a battle that mundane troops could win or raids a province worth less than the risk imposed on the entire national plan.</p>
+<p>A god is not preserved by refusing every battle. A god is preserved by spending divine risk only where divine power is necessary.</p>
+<h1 id="b3-part-xvi-reference-checklists">Part XVI: Reference Checklists<a class="heading-link" href="#b3-part-xvi-reference-checklists" aria-label="Link to Part XVI: Reference Checklists">#</a></h1><h2 id="b3-one-page-pretender-worksheet">One-page Pretender worksheet<a class="heading-link" href="#b3-one-page-pretender-worksheet" aria-label="Link to One-page Pretender worksheet">#</a></h2><table>
+<thead>
+<tr>
+<th>Section</th>
+<th>Decision</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Nation and ruleset</td>
+<td></td>
+</tr>
+<tr>
+<td>Lobby assumptions</td>
+<td></td>
+</tr>
+<tr>
+<td>First military state</td>
+<td></td>
+</tr>
+<tr>
+<td>Expansion method</td>
+<td></td>
+</tr>
+<tr>
+<td>Chassis and role</td>
+<td></td>
+</tr>
+<tr>
+<td>Awakening</td>
+<td></td>
+</tr>
+<tr>
+<td>Initial and maximum dominion plan</td>
+<td></td>
+</tr>
+<tr>
+<td>Scale package</td>
+<td></td>
+</tr>
+<tr>
+<td>Paths and exact purposes</td>
+<td></td>
+</tr>
+<tr>
+<td>Bless package</td>
+<td></td>
+</tr>
+<tr>
+<td>Sacred recipients per month</td>
+<td></td>
+</tr>
+<tr>
+<td>Blessing access</td>
+<td></td>
+</tr>
+<tr>
+<td>First research breakpoints</td>
+<td></td>
+</tr>
+<tr>
+<td>First three god orders</td>
+<td></td>
+</tr>
+<tr>
+<td>Temple schedule</td>
+<td></td>
+</tr>
+<tr>
+<td>God-death and recall plan</td>
+<td></td>
+</tr>
+<tr>
+<td>Principal counters</td>
+<td></td>
+</tr>
+<tr>
+<td>Test results</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="b3-monthly-dominion-audit">Monthly dominion audit<a class="heading-link" href="#b3-monthly-dominion-audit" aria-label="Link to Monthly dominion audit">#</a></h2><ul>
+<li>Current maximum dominion.</li>
+<li>Temples until next threshold.</li>
+<li>Friendly-candle core.</li>
+<li>Enemy candle fronts.</li>
+<li>Capitals or Thrones at religious risk.</li>
+<li>Preachers and Inquisitors assigned.</li>
+<li>Blood-sacrifice sites and slave budget.</li>
+<li>Special-dominion damage or benefit.</li>
+<li>Incarnate blessing active or inactive.</li>
+<li>Dominion-immortal safe operating area.</li>
+</ul>
+<h2 id="b3-bless-battle-audit">Bless battle audit<a class="heading-link" href="#b3-bless-battle-audit" aria-label="Link to Bless battle audit">#</a></h2><ul>
+<li>Sacred units began blessed?</li>
+<li>Which round did Blessing or Divine Blessing resolve?</li>
+<li>Which effects were innate?</li>
+<li>Which effects were Incarnate?</li>
+<li>Was the Pretender alive and present as required?</li>
+<li>Did damage riders require a damaging hit?</li>
+<li>Which effects faced MR?</li>
+<li>Which resistances or sight abilities countered the package?</li>
+<li>Did fatigue, morale, or formation fail first?</li>
+<li>Were the casualties economically replaceable?</li>
+</ul>
+<h2 id="b3-publication-checklist">Publication checklist<a class="heading-link" href="#b3-publication-checklist" aria-label="Link to Publication checklist">#</a></h2><ul>
+<li>State base patch and manual revision.</li>
+<li>State mods and load order.</li>
+<li>Separate manual, current-data, and modded values.</li>
+<li>Name every current-value conflict.</li>
+<li>State awakening assumptions as ranges.</li>
+<li>State sacred throughput.</li>
+<li>State Incarnate dependence.</li>
+<li>State priest and blessing access.</li>
+<li>State god-death consequences.</li>
+<li>Link tests when an edge case decides the recommendation.</li>
+</ul>
+<h1 id="b3-sources-and-open-questions">Sources and Open Questions<a class="heading-link" href="#b3-sources-and-open-questions" aria-label="Link to Sources and Open Questions">#</a></h1><h2 id="b3-principal-sources">Principal sources<a class="heading-link" href="#b3-principal-sources" aria-label="Link to Principal sources">#</a></h2><ul>
+<li>Dominions 6 Manual, revision 2, especially Pretender design, Dominion, Divine Magic, Bless Effects, scale effects, Thrones, and Call God.</li>
+<li><a href="https://www.illwinter.com/dom6/docs.html" target="_blank" rel="noreferrer">Illwinter Dominions 6 documentation</a>.</li>
+<li><a href="https://www.illwinter.com/dom6/changes.html" target="_blank" rel="noreferrer">Illwinter Dominions 6 changes</a>.</li>
+<li><a href="https://www.illwinter.com/" target="_blank" rel="noreferrer">Illwinter current release record</a>.</li>
+<li><a href="https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5679673637648186096" target="_blank" rel="noreferrer">Official 6.08 Steam announcement</a>.</li>
+<li><a href="https://steamcommunity.com/games/2511500/announcements/detail/693143486970465344" target="_blank" rel="noreferrer">Official Dominions 6.36 announcement</a>.</li>
+<li><a href="https://illwiki.com/dom5/dom6/bless" target="_blank" rel="noreferrer">Current Dominions 6 blessing reference</a>.</li>
+<li><a href="https://illwiki.com/dom5/dom6/scales" target="_blank" rel="noreferrer">Current Dominions 6 scales reference</a>.</li>
+<li><a href="https://illwiki.com/dom5/dom6/pretender-god" target="_blank" rel="noreferrer">Current Dominions 6 Pretender reference</a>.</li>
+<li><a href="https://illwiki.com/dom5/dom6/pretenders" target="_blank" rel="noreferrer">Current Dominions 6 Pretender-design reference</a>, including the 16 June 2026 republication of the awakening model.</li>
+<li><a href="https://illwiki.com/dom5/user/loggy/misc" target="_blank" rel="noreferrer">Loggy&#39;s miscellaneous reverse-engineering notes</a>, used to trace the awakening formula&#39;s pre-Dominions 6 provenance.</li>
+<li><a href="https://illwiki.com/dom5/dom6/elegist" target="_blank" rel="noreferrer">Current Dominions 6 Elegist reference</a>.</li>
+<li><a href="https://illwiki.com/dom5/user/loggy/callgod" target="_blank" rel="noreferrer">Published Call God research notes</a>.</li>
+<li><a href="https://illwiki.com/dom5/dom6/thrones" target="_blank" rel="noreferrer">Current Dominions 6 Throne reference</a>.</li>
+<li><a href="https://www.reddit.com/r/Dominions5/comments/pu0l7c/noob_questions_on_claiming_thrones/" target="_blank" rel="noreferrer">Published same-turn Throne claim report</a>.</li>
+<li><a href="https://illwiki.com/dom5/pretenders" target="_blank" rel="noreferrer">Legacy Pretender and awakening mechanics page</a>, retained only as a historical test hypothesis where it identifies an older game baseline.</li>
+<li>Dominions 6 Modding Manual 6.34.</li>
+<li>Dominions 6 Inspector, 6.35 data commit <code>cfac4311bc0b58053b8dead7bffbc036ba9bd5dc</code>.</li>
+<li>Supplied <code>DomEnhanced2_16.dm</code>.</li>
+<li>Supplied <code>Divinitus_1.15.3_DE.dm</code>.</li>
+</ul>
+<h2 id="b3-open-questions">Open questions<a class="heading-link" href="#b3-open-questions" aria-label="Link to Open questions">#</a></h2><p>Cross-source stacking, shape inheritance, mount-transfer lifetime, Order/Turmoil event frequency, economic rounding, awakening distributions, simultaneous-victory ties, and special-dominion inheritance remain assigned to their research registers or controlled tests. Same-turn Throne ownership and the practical Call God model are resolved at their stated mixed evidence tiers. Modded blessing costs and chassis definitions should be taken from Book IX rather than from older copies of this chapter.</p>
+
+{% endraw %}
+    </article>
+    <aside class="sidebar library-toc">
+      <h2>In this book</h2>
+      <nav><a href="#b3-the-design-problem">The design problem</a>
+<a href="#b3-edition-note">Edition note</a>
+<a href="#b3-finding-the-useful-layer">Finding the useful layer</a>
+<a href="#b3-the-design-in-one-model">The design in one model</a>
+<a href="#b3-begin-with-the-nation-not-the-god">Begin with the nation, not the god</a>
+<a href="#b3-chassis-roles">Chassis roles</a>
+<a href="#b3-chassis-comparison-sheet">Chassis comparison sheet</a>
+<a href="#b3-physical-form-cost">Physical-form cost</a>
+<a href="#b3-magic-path-costs">Magic-path costs</a>
+<a href="#b3-dominion-strength-costs">Dominion-strength costs</a>
+<a href="#b3-scale-point-costs">Scale-point costs</a>
+<a href="#b3-awakening-points">Awakening points</a>
+<a href="#b3-awake">Awake</a>
+<a href="#b3-dormant">Dormant</a>
+<a href="#b3-imprisoned">Imprisoned</a>
+<a href="#b3-timing-comparison">Timing comparison</a>
+<a href="#b3-arrival-preparation">Arrival preparation</a>
+<a href="#b3-dominion-in-plain-language">Dominion in plain language</a>
+<a href="#b3-sources-of-dominion-spread">Sources of dominion spread</a>
+<a href="#b3-maximum-dominion">Maximum dominion</a>
+<a href="#b3-temple-check-chance">Temple-check chance</a>
+<a href="#b3-resolving-a-successful-check">Resolving a successful check</a>
+<a href="#b3-dominion-as-a-network">Dominion as a network</a>
+<a href="#b3-preaching">Preaching</a>
+<a href="#b3-blood-sacrifice">Blood sacrifice</a>
+<a href="#b3-prophets">Prophets</a>
+<a href="#b3-thrones-of-ascension">Thrones of Ascension</a>
+<a href="#b3-dominion-effects-on-units">Dominion effects on units</a>
+<a href="#b3-scale-convergence-inside-dominion">Scale convergence inside dominion</a>
+<a href="#b3-dominion-elimination">Dominion elimination</a>
+<a href="#b3-scales-in-plain-language">Scales in plain language</a>
+<a href="#b3-ordinary-scale-effects">Ordinary scale effects</a>
+<a href="#b3-order-and-turmoil">Order and Turmoil</a>
+<a href="#b3-productivity-and-sloth">Productivity and Sloth</a>
+<a href="#b3-temperature">Temperature</a>
+<a href="#b3-growth-and-death">Growth and Death</a>
+<a href="#b3-fortune-and-misfortune">Fortune and Misfortune</a>
+<a href="#b3-magic-and-drain">Magic and Drain</a>
+<a href="#b3-extreme-scales">Extreme scales</a>
+<a href="#b3-scale-design-by-bottleneck">Scale design by bottleneck</a>
+<a href="#b3-how-blessings-work">How blessings work</a>
+<a href="#b3-bless-points">Bless points</a>
+<a href="#b3-ordinary-innate-and-incarnate">Ordinary, innate, and Incarnate</a>
+<a href="#b3-automatic-blessing">Automatic blessing</a>
+<a href="#b3-current-unmodded-blessing-reference">Current unmodded blessing reference</a>
+<a href="#b3-weapon-blessings-what-causes-the-rider-to-fire">Weapon blessings: what causes the rider to fire</a>
+<a href="#b3-blessing-from-items">Blessing from items</a>
+<a href="#b3-riders-mounts-and-separate-sacred-status">Riders, mounts, and separate sacred status</a>
+<a href="#b3-shape-change-and-effect-lifetime">Shape change and effect lifetime</a>
+<a href="#b3-display-tooltip-and-engine-state">Display, tooltip, and engine state</a>
+<a href="#b3-bless-design-by-function">Bless design by function</a>
+<a href="#b3-bless-throughput">Bless throughput</a>
+<a href="#b3-bless-access-and-scripting">Bless access and scripting</a>
+<a href="#b3-counter-audit">Counter-audit</a>
+<a href="#b3-divine-magic">Divine magic</a>
+<a href="#b3-ordinary-pretender-death">Ordinary Pretender death</a>
+<a href="#b3-why-death-compounds">Why death compounds</a>
+<a href="#b3-call-god">Call God</a>
+<a href="#b3-immortality">Immortality</a>
+<a href="#b3-safe-and-unsafe-risk">Safe and unsafe risk</a>
+<a href="#b3-why-special-dominions-deserve-their-own-audit">Why special dominions deserve their own audit</a>
+<a href="#b3-major-categories">Major categories</a>
+<a href="#b3-special-dominion-design-questions">Special-dominion design questions</a>
+<a href="#b3-shared-and-separate-systems">Shared and separate systems</a>
+<a href="#b3-disciple-design-audit">Disciple design audit</a>
+<a href="#b3-exact-definitions-belong-to-book-ix">Exact definitions belong to Book IX</a>
+<a href="#b3-modded-design-audit">Modded-design audit</a>
+<a href="#b3-step-1-define-the-national-plan">Step 1: Define the national plan</a>
+<a href="#b3-step-2-identify-mandatory-constraints">Step 2: Identify mandatory constraints</a>
+<a href="#b3-step-3-build-the-cheapest-functional-design">Step 3: Build the cheapest functional design</a>
+<a href="#b3-step-4-spend-the-remainder-on-leverage">Step 4: Spend the remainder on leverage</a>
+<a href="#b3-step-5-test-the-opening">Step 5: Test the opening</a>
+<a href="#b3-step-6-test-the-first-war">Step 6: Test the first war</a>
+<a href="#b3-step-7-test-the-economy">Step 7: Test the economy</a>
+<a href="#b3-step-8-state-the-failure-modes">Step 8: State the failure modes</a>
+<a href="#b3-new-player-design-audit">New-player design audit</a>
+<a href="#b3-expert-design-audit">Expert design audit</a>
+<a href="#b3-test-p1-awakening-distribution">Test P1: Awakening distribution</a>
+<a href="#b3-test-p2-dominion-spread">Test P2: Dominion spread</a>
+<a href="#b3-test-p3-preaching">Test P3: Preaching</a>
+<a href="#b3-test-p4-scale-convergence">Test P4: Scale convergence</a>
+<a href="#b3-test-p5-scale-regression-and-rounding">Test P5: Scale regression and rounding</a>
+<a href="#b3-test-p6-bless-tags-and-values">Test P6: Bless tags and values</a>
+<a href="#b3-test-p7-automatic-blessing">Test P7: Automatic blessing</a>
+<a href="#b3-test-p8-pretender-death">Test P8: Pretender death</a>
+<a href="#b3-test-p9-call-god">Test P9: Call God</a>
+<a href="#b3-test-p10-throne-checks">Test P10: Throne checks</a>
+<a href="#b3-test-p11-special-dominions">Test P11: Special dominions</a>
+<a href="#b3-test-p12-combined-mod-design-regression">Test P12: Combined-mod design regression</a>
+<a href="#b3-essay-i-pretender-design-as-national-engineering">Essay I: Pretender Design as National Engineering</a>
+<a href="#b3-essay-ii-dominion-is-territory-by-other-means">Essay II: Dominion Is Territory by Other Means</a>
+<a href="#b3-essay-iii-a-bless-is-a-roster-contract">Essay III: A Bless Is a Roster Contract</a>
+<a href="#b3-essay-iv-awake-power-and-deferred-power">Essay IV: Awake Power and Deferred Power</a>
+<a href="#b3-essay-v-the-religious-logistics-of-war">Essay V: The Religious Logistics of War</a>
+<a href="#b3-essay-vi-the-death-of-a-god">Essay VI: The Death of a God</a>
+<a href="#b3-one-page-pretender-worksheet">One-page Pretender worksheet</a>
+<a href="#b3-monthly-dominion-audit">Monthly dominion audit</a>
+<a href="#b3-bless-battle-audit">Bless battle audit</a>
+<a href="#b3-publication-checklist">Publication checklist</a>
+<a href="#b3-principal-sources">Principal sources</a>
+<a href="#b3-open-questions">Open questions</a></nav>
+      <nav class="library-side-links">
+        <a href="/dominions/library/">Complete library</a>
+        <a href="/dominions/library/glossary/">Glossary</a>
+        <a href="/dominions/library/research/">Research register</a>
+        <a href="/downloads/dominions-6-knowledge-library-edition-24.pdf">Edition 24 PDF</a>
+      </nav>
+    </aside>
+  </div>
+  <nav class="library-pagination" aria-label="Adjacent books">
+    <a href="/dominions/library/books/book-ii/"><small>Previous</small>Foundation Book II</a>
+    <a class="library-next" href="/dominions/library/books/book-iv/"><small>Next</small>Foundation Book IV</a>
+  </nav>
+</section>

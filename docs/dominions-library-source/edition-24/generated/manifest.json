@@ -1,0 +1,145 @@
+{
+  "edition": {
+    "name": "Progress Edition 24",
+    "published_on": "2026-08-25",
+    "game_baseline": "Dominions 6.36",
+    "mod_baselines": [
+      "Dominions Enhanced 2.16",
+      "Divinitus 1.15.3 DE"
+    ],
+    "combined_load_order": [
+      "Dominions Enhanced 2.16",
+      "Divinitus 1.15.3 DE"
+    ]
+  },
+  "documents": [
+    {
+      "id": "guide",
+      "slug": "guide",
+      "title": "Reader's Guide and Concordance",
+      "shortTitle": "Reader's Guide and Concordance",
+      "sectionCount": 62,
+      "wordCount": 11192
+    },
+    {
+      "id": "b1",
+      "slug": "book-i",
+      "title": "Foundation Book I: Rulesets, Language, and the Anatomy of a Turn",
+      "shortTitle": "Foundation Book I",
+      "sectionCount": 150,
+      "wordCount": 11000
+    },
+    {
+      "id": "field",
+      "slug": "field-reference",
+      "title": "Turn and Economy Quick Reference",
+      "shortTitle": "Turn and Economy Quick Reference",
+      "sectionCount": 30,
+      "wordCount": 3208
+    },
+    {
+      "id": "b2",
+      "slug": "book-ii",
+      "title": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+      "shortTitle": "Foundation Book II",
+      "sectionCount": 179,
+      "wordCount": 14406
+    },
+    {
+      "id": "b3",
+      "slug": "book-iii",
+      "title": "Foundation Book III: Pretenders, Dominion, Scales, and Blessings",
+      "shortTitle": "Foundation Book III",
+      "sectionCount": 196,
+      "wordCount": 16596
+    },
+    {
+      "id": "b4",
+      "slug": "book-iv",
+      "title": "Foundation Book IV: Armies and Battle",
+      "shortTitle": "Foundation Book IV",
+      "sectionCount": 178,
+      "wordCount": 13001
+    },
+    {
+      "id": "b5",
+      "slug": "book-v",
+      "title": "Foundation Book V: Magic",
+      "shortTitle": "Foundation Book V",
+      "sectionCount": 198,
+      "wordCount": 15306
+    },
+    {
+      "id": "b6",
+      "slug": "book-vi",
+      "title": "Foundation Book VI: Strategy and Campaign Conduct",
+      "shortTitle": "Foundation Book VI",
+      "sectionCount": 188,
+      "wordCount": 18427
+    },
+    {
+      "id": "b7",
+      "slug": "book-vii",
+      "title": "Foundation Book VII: Nations",
+      "shortTitle": "Foundation Book VII",
+      "sectionCount": 323,
+      "wordCount": 19814
+    },
+    {
+      "id": "b8",
+      "slug": "book-viii",
+      "title": "Foundation Book VIII: Modding and Scenario Design",
+      "shortTitle": "Foundation Book VIII",
+      "sectionCount": 244,
+      "wordCount": 15297
+    },
+    {
+      "id": "b9",
+      "slug": "book-ix",
+      "title": "Foundation Book IX - Dominions Enhanced and Divinitus",
+      "shortTitle": "Foundation Book IX",
+      "sectionCount": 136,
+      "wordCount": 11245
+    },
+    {
+      "id": "b10",
+      "slug": "book-x",
+      "title": "Foundation Book X - Playing and Hosting Dominions 6",
+      "shortTitle": "Foundation Book X",
+      "sectionCount": 179,
+      "wordCount": 13326
+    },
+    {
+      "id": "b11",
+      "slug": "book-xi",
+      "title": "Foundation Book XI - Units, Abilities, Experience, and Conditions",
+      "shortTitle": "Foundation Book XI",
+      "sectionCount": 107,
+      "wordCount": 13124
+    },
+    {
+      "id": "b12",
+      "slug": "book-xii",
+      "title": "Foundation Book XII: Base-Game Objects and the Searchable Reference Layer",
+      "shortTitle": "Foundation Book XII",
+      "sectionCount": 95,
+      "wordCount": 8462
+    },
+    {
+      "id": "b13",
+      "slug": "book-xiii",
+      "title": "Foundation Book XIII: Version History and the Official Patch Ledger",
+      "shortTitle": "Foundation Book XIII",
+      "sectionCount": 87,
+      "wordCount": 8852
+    },
+    {
+      "id": "b14",
+      "slug": "book-xiv",
+      "title": "Foundation Book XIV: The Command and Terminology Lexicon",
+      "shortTitle": "Foundation Book XIV",
+      "sectionCount": 114,
+      "wordCount": 25082
+    }
+  ]
+}

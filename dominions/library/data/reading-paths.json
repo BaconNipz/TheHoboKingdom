@@ -1,0 +1,588 @@
+{
+  "schema_version": "1.0.0",
+  "edition": "Progress Edition 24",
+  "paths": [
+    {
+      "id": "path-a",
+      "title": "Path A: The first complete game",
+      "summary": "This route supplies enough structure to play a full game without demanding mastery of every spell, special ability, or diplomatic edge case. The order is intentional: timing and economy come before Pretender theory because a design cannot be judged without knowing what a turn and a province can actually produce.",
+      "steps": [
+        {
+          "label": "Book X - ruleset and local continuity",
+          "section_id": "b10-part-i-ruleset-installation-and-local-continuity"
+        },
+        {
+          "label": "creating the world",
+          "section_id": "b10-part-ii-creating-the-world"
+        },
+        {
+          "label": "the main interface",
+          "section_id": "b10-part-iv-the-main-interface"
+        },
+        {
+          "label": "Book I - baseline and evidence",
+          "section_id": "b1-the-baseline-used-by-this-edition"
+        },
+        {
+          "label": "Book I - six-phase hosting model",
+          "section_id": "b1-a-six-phase-model-of-hosting"
+        },
+        {
+          "label": "the complete 63-step sequence",
+          "section_id": "b1-the-complete-63-step-hosting-sequence"
+        },
+        {
+          "label": "Book II - the economic model",
+          "section_id": "b2-part-i-the-economic-model"
+        },
+        {
+          "label": "income",
+          "section_id": "b2-income-formula"
+        },
+        {
+          "label": "recruitment constraints",
+          "section_id": "b2-part-iv-resources-and-recruitment"
+        },
+        {
+          "label": "Book XI - unit-reading method",
+          "section_id": "b11-unit-reading"
+        },
+        {
+          "label": "unit classes",
+          "section_id": "b11-unit-classes"
+        },
+        {
+          "label": "ability register",
+          "section_id": "b11-ability-register"
+        },
+        {
+          "label": "Book IV - what a battle decides",
+          "section_id": "b4-part-i-what-a-battle-decides"
+        },
+        {
+          "label": "unit roles",
+          "section_id": "b4-part-ii-reading-a-unit"
+        },
+        {
+          "label": "orders and scripts",
+          "section_id": "b4-part-vi-orders-scripts-and-the-spellcasting-ai"
+        },
+        {
+          "label": "Book III - Pretender design as a national system",
+          "section_id": "b3-part-i-pretender-design-as-a-national-system"
+        },
+        {
+          "label": "scales",
+          "section_id": "b3-part-v-scales"
+        },
+        {
+          "label": "blessings",
+          "section_id": "b3-part-vi-blessings"
+        },
+        {
+          "label": "Book V - research as strategic planning",
+          "section_id": "b5-part-iii-research-as-strategic-planning"
+        },
+        {
+          "label": "battlefield magic by function",
+          "section_id": "b5-part-vi-battlefield-magic-by-function"
+        },
+        {
+          "label": "Book VI - expansion and first contact",
+          "section_id": "b6-part-ii-expansion-and-first-contact"
+        },
+        {
+          "label": "borders and infrastructure",
+          "section_id": "b6-part-iv-map-structure-borders-and-infrastructure"
+        },
+        {
+          "label": "recovery",
+          "section_id": "b6-part-xiv-recovery-replacement-and-war-continuation"
+        },
+        {
+          "label": "Book X - guided first campaign",
+          "section_id": "b10-first-campaign"
+        },
+        {
+          "label": "turn audit",
+          "section_id": "b10-the-end-of-turn-audit"
+        },
+        {
+          "label": "Turn and Economy Quick Reference",
+          "section_id": "field-turn-and-economy-quick-reference"
+        },
+        {
+          "label": "Book XII's object register",
+          "section_id": "b12-object-register"
+        },
+        {
+          "label": "Book XIII's patch ledger",
+          "section_id": "b13-official-patch-ledger"
+        },
+        {
+          "label": "Book XIV's command lexicon",
+          "section_id": "b14-command-lexicon"
+        }
+      ]
+    },
+    {
+      "id": "path-b",
+      "title": "Path B: The first multiplayer game",
+      "summary": "Single-player fundamentals still matter, but multiplayer adds hidden intentions, negotiated borders, reputation, timing attacks, and the possibility that an apparently efficient action creates a coalition.",
+      "steps": [
+        {
+          "label": "joining and hosting",
+          "section_id": "b10-part-iii-starting-joining-and-hosting"
+        },
+        {
+          "label": "submission protocol",
+          "section_id": "b10-turn-submission-and-revision"
+        },
+        {
+          "label": "scouting, intelligence, and uncertainty",
+          "section_id": "b6-part-iii-scouting-intelligence-and-uncertainty"
+        },
+        {
+          "label": "raiding and counter-raiding",
+          "section_id": "b6-part-vii-raiding-and-counter-raiding"
+        },
+        {
+          "label": "timing attacks and power spikes",
+          "section_id": "b6-part-x-timing-attacks-power-spikes-and-deterrence"
+        },
+        {
+          "label": "diplomacy, treaties, and reputation",
+          "section_id": "b6-part-xi-diplomacy-treaties-and-reputation"
+        },
+        {
+          "label": "Thrones, Cataclysm, and endgame conversion",
+          "section_id": "b6-part-xii-thrones-cataclysm-and-endgame-conversion"
+        },
+        {
+          "label": "campaign decision framework",
+          "section_id": "b6-part-xvi-campaign-decision-framework"
+        }
+      ]
+    },
+    {
+      "id": "path-c",
+      "title": "Path C: Returning after a long break",
+      "summary": "This route is for a player who remembers the game but not the current version or the exact order of operations.",
+      "steps": [
+        {
+          "label": "Book I's current baseline",
+          "section_id": "b1-the-baseline-used-by-this-edition"
+        },
+        {
+          "label": "Book XIII's release spine",
+          "section_id": "b13-release-timeline"
+        },
+        {
+          "label": "player-facing changes",
+          "section_id": "b13-player-facing-changes"
+        },
+        {
+          "label": "Book X's current operational additions",
+          "section_id": "b10-current-operational-additions-worth-learning"
+        },
+        {
+          "label": "current-version corrections in battle",
+          "section_id": "b4-current-version-corrections-that-matter"
+        },
+        {
+          "label": "magic",
+          "section_id": "b5-current-version-corrections-that-matter"
+        },
+        {
+          "label": "strategy",
+          "section_id": "b6-current-version-corrections-and-additions-that-matter"
+        },
+        {
+          "label": "Book XI's ability-facing patch notes",
+          "section_id": "b11-73-current-ability-facing-patch-notes"
+        },
+        {
+          "label": "master register",
+          "section_id": "b11-ability-register"
+        },
+        {
+          "label": "Book XII's versioned object layer",
+          "section_id": "b12-object-register"
+        },
+        {
+          "label": "hosting spine",
+          "section_id": "field-the-hosting-spine"
+        },
+        {
+          "label": "provincial gold",
+          "section_id": "field-provincial-gold"
+        },
+        {
+          "label": "recruitment gates",
+          "section_id": "field-recruitment-gates"
+        },
+        {
+          "label": "siege calculation",
+          "section_id": "field-siege-calculation"
+        },
+        {
+          "label": "frozen combined baseline",
+          "section_id": "b9-2-frozen-baseline-and-evidence"
+        }
+      ]
+    },
+    {
+      "id": "path-d",
+      "title": "Path D: Expert rules lookup",
+      "summary": "The expert route begins by finding the chapter that owns the answer.",
+      "steps": [
+        {
+          "label": "Book X - creating the world",
+          "section_id": "b10-game-setup"
+        },
+        {
+          "label": "Book X - joining and hosting",
+          "section_id": "b10-hosting"
+        },
+        {
+          "label": "Book X - main interface",
+          "section_id": "b10-interface"
+        },
+        {
+          "label": "Book X - current additions",
+          "section_id": "b10-current-operational-additions-worth-learning"
+        },
+        {
+          "label": "Book X - order reference",
+          "section_id": "b10-orders"
+        },
+        {
+          "label": "Book X - turn submission",
+          "section_id": "b10-turn-submission"
+        },
+        {
+          "label": "Book X - hosting runbook",
+          "section_id": "b10-hosting-runbook"
+        },
+        {
+          "label": "Book X - troubleshooting",
+          "section_id": "b10-troubleshooting"
+        },
+        {
+          "label": "Path E",
+          "section_id": "guide-path-e-diagnosing-a-failed-turn"
+        },
+        {
+          "label": "Book XI - unit classes",
+          "section_id": "b11-unit-classes"
+        },
+        {
+          "label": "Book IV - command and squads",
+          "section_id": "b4-part-iii-command-squads-and-army-construction"
+        },
+        {
+          "label": "Book XI - master register",
+          "section_id": "b11-ability-register"
+        },
+        {
+          "label": "Book XI - unit-reading method",
+          "section_id": "b11-unit-reading"
+        },
+        {
+          "label": "Book XI - experience",
+          "section_id": "b11-experience"
+        },
+        {
+          "label": "Book XI - Hall of Fame",
+          "section_id": "b11-heroic-abilities"
+        },
+        {
+          "label": "Book XI - conditions",
+          "section_id": "b11-conditions"
+        },
+        {
+          "label": "Book IV - affliction resolution",
+          "section_id": "b4-part-xiii-afflictions-regeneration-and-lasting-loss"
+        },
+        {
+          "label": "Book XII - spells",
+          "section_id": "b12-spells"
+        },
+        {
+          "label": "items and artifacts",
+          "section_id": "b12-items"
+        },
+        {
+          "label": "Book V - strategic magic",
+          "section_id": "b5-foundation-book-v-magic"
+        },
+        {
+          "label": "Book XII - summons",
+          "section_id": "b12-summons"
+        },
+        {
+          "label": "Book V - summoning",
+          "section_id": "b5-summoning"
+        },
+        {
+          "label": "Book XII - Pretender forms",
+          "section_id": "b12-pretenders"
+        },
+        {
+          "label": "Book III - national design system",
+          "section_id": "b3-part-i-pretender-design-as-a-national-system"
+        },
+        {
+          "label": "Book XII - Thrones and sites",
+          "section_id": "b12-thrones-sites"
+        },
+        {
+          "label": "mercenaries and independents",
+          "section_id": "b12-mercenaries-independents"
+        },
+        {
+          "label": "special dominions",
+          "section_id": "b12-special-dominions"
+        },
+        {
+          "label": "Book XIII - official patch ledger",
+          "section_id": "b13-official-patch-ledger"
+        },
+        {
+          "label": "Book XIII - stale-guide repair",
+          "section_id": "b13-stale-guide-repair"
+        },
+        {
+          "label": "Book XIII - classification model",
+          "section_id": "b13-classification-model"
+        },
+        {
+          "label": "Book XIII - command chronology",
+          "section_id": "b13-command-chronology"
+        },
+        {
+          "label": "Book XIV - patch reconciliation",
+          "section_id": "b14-patch-reconciliation"
+        },
+        {
+          "label": "Book XIV - command lexicon",
+          "section_id": "b14-command-lexicon"
+        },
+        {
+          "label": "Book VIII - object and parser method",
+          "section_id": "b8-part-i-the-object-and-parser-model"
+        },
+        {
+          "label": "Book I - complete hosting sequence",
+          "section_id": "b1-the-complete-63-step-hosting-sequence"
+        },
+        {
+          "label": "Field hosting spine",
+          "section_id": "field-the-hosting-spine"
+        },
+        {
+          "label": "Book II - gold, income, and upkeep",
+          "section_id": "b2-part-iii-gold-income-and-upkeep"
+        },
+        {
+          "label": "Field provincial gold",
+          "section_id": "field-provincial-gold"
+        },
+        {
+          "label": "Book II - resources and recruitment",
+          "section_id": "b2-part-iv-resources-and-recruitment"
+        },
+        {
+          "label": "Field recruitment gates",
+          "section_id": "field-recruitment-gates"
+        },
+        {
+          "label": "Book VII - Pretender families in a dossier",
+          "section_id": "b7-part-viii-pretender-families"
+        },
+        {
+          "label": "Book III - blessings",
+          "section_id": "b3-part-vi-blessings"
+        },
+        {
+          "label": "Book IX - exact DE blessing layer",
+          "section_id": "b9-8-de-blessing-revision"
+        },
+        {
+          "label": "Book IV - melee resolution",
+          "section_id": "b4-part-vii-melee-resolution"
+        },
+        {
+          "label": "Book IV - protection and damage",
+          "section_id": "b4-part-ix-protection-damage-and-survival"
+        },
+        {
+          "label": "Book IV - morale, rout, and retreat",
+          "section_id": "b4-part-xi-morale-fear-rout-and-retreat"
+        },
+        {
+          "label": "Book VI - army preservation",
+          "section_id": "b6-part-xiii-army-preservation-and-force-regeneration"
+        },
+        {
+          "label": "Book IV - battlefield magic",
+          "section_id": "b4-part-xiv-battlefield-magic"
+        },
+        {
+          "label": "Book V - spell package design",
+          "section_id": "b5-part-vi-battlefield-magic-by-function"
+        },
+        {
+          "label": "Book V - research planning",
+          "section_id": "b5-part-iii-research-as-strategic-planning"
+        },
+        {
+          "label": "Book VI - strategic response tree",
+          "section_id": "b6-part-v-research-as-a-strategic-response-tree"
+        },
+        {
+          "label": "Book V - communions",
+          "section_id": "b5-part-vii-communions-sabbaths-choruses-and-grand-communions"
+        },
+        {
+          "label": "Book IV - fatigue",
+          "section_id": "b4-part-x-fatigue-recovery-and-collapse"
+        },
+        {
+          "label": "Book V - rituals",
+          "section_id": "b5-part-viii-rituals-and-strategic-magic"
+        },
+        {
+          "label": "domes",
+          "section_id": "b5-part-ix-domes-remote-attacks-and-magic-movement"
+        },
+        {
+          "label": "globals",
+          "section_id": "b5-part-x-global-enchantments-and-dispel-wars"
+        },
+        {
+          "label": "Book VI - campaign conduct",
+          "section_id": "b6-foundation-book-vi-strategy-and-campaign-conduct"
+        },
+        {
+          "label": "Book II - economic state",
+          "section_id": "b2-foundation-book-ii-economy-provinces-and-the-machinery-of-state"
+        },
+        {
+          "label": "Book VII - dossier method",
+          "section_id": "b7-part-i-the-nation-dossier-method"
+        },
+        {
+          "label": "Book VII - MA Arcoscephale pilot",
+          "section_id": "b7-part-ii-middle-age-arcoscephale-the-old-kingdom"
+        },
+        {
+          "label": "Book XIV - syntax and lookup",
+          "section_id": "b14-syntax"
+        },
+        {
+          "label": "Book VIII - parser model, testing, and release engineering",
+          "section_id": "b8-part-xii-testing-validation-and-release-engineering"
+        },
+        {
+          "label": "Book IX - technical encyclopaedia",
+          "section_id": "b9-foundation-book-ix-dominions-enhanced-and-divinitus"
+        },
+        {
+          "label": "Book IX - source inventory",
+          "section_id": "b9-6-exact-source-inventory"
+        },
+        {
+          "label": "Book IX - collision matrix",
+          "section_id": "b9-19-combined-load-order-and-collision-matrix"
+        },
+        {
+          "label": "Book VIII - compatibility engineering",
+          "section_id": "b8-part-xi-compatibility-engineering"
+        }
+      ]
+    },
+    {
+      "id": "path-e",
+      "title": "Path E: Diagnosing a failed turn",
+      "summary": "When a turn fails, trace the causes in order instead of starting with the most frustrating result.",
+      "steps": [
+        {
+          "label": "Book I's baseline rules",
+          "section_id": "b1-rulesets-must-never-be-silently-merged"
+        },
+        {
+          "label": "the hosting sequence",
+          "section_id": "b1-the-complete-63-step-hosting-sequence"
+        },
+        {
+          "label": "Book X's troubleshooting route",
+          "section_id": "b10-troubleshooting"
+        },
+        {
+          "label": "Book II's constraint model",
+          "section_id": "b2-the-binding-constraint"
+        },
+        {
+          "label": "Book IV's resolution order",
+          "section_id": "b4-melee-resolution-order"
+        },
+        {
+          "label": "scripting",
+          "section_id": "b4-part-vi-orders-scripts-and-the-spellcasting-ai"
+        },
+        {
+          "label": "Book VI's campaign decision framework",
+          "section_id": "b6-part-xvi-campaign-decision-framework"
+        }
+      ]
+    },
+    {
+      "id": "path-f",
+      "title": "Path F: Modding, source inspection, and website work",
+      "summary": "1. Read [the object-and-parser model](#b8-part-i-the-object-and-parser-model).\n2. Read [identifier allocation and collision safety](#b8-part-ii-identifiers-allocation-and-collision-safety).\n3. Read [Book XII's object identity, provenance, and hashing method](#b12-part-i-the-object-reference-method).\n4. Read [Book XIII's command chronology](#b13-command-chronology) and [safe treatment of post-manual commands](#b13-27-safe-treatment-of-post-manual-commands).\n5. Use [Book XIV's complete command locator](#b14-complete-locator), [evidence ladder](#b14-evidence), and [patch reconciliation](#b14-patch-reconciliation) before treating a token as complete syntax.\n6. Choose the relevant object chapter in Books VIII, IX, or XII.\n7. Apply [compatibility engineering](#b8-part-xi-compatibility-engineering) before combining releases.\n8. Apply [testing, validation, and release engineering](#b8-part-xii-testing-validation-and-release-engineering).\n9. Use the website schema described later in this guide rather than scraping prose into unversioned pages.",
+      "steps": [
+        {
+          "label": "the object-and-parser model",
+          "section_id": "b8-part-i-the-object-and-parser-model"
+        },
+        {
+          "label": "identifier allocation and collision safety",
+          "section_id": "b8-part-ii-identifiers-allocation-and-collision-safety"
+        },
+        {
+          "label": "Book XII's object identity, provenance, and hashing method",
+          "section_id": "b12-part-i-the-object-reference-method"
+        },
+        {
+          "label": "Book XIII's command chronology",
+          "section_id": "b13-command-chronology"
+        },
+        {
+          "label": "safe treatment of post-manual commands",
+          "section_id": "b13-27-safe-treatment-of-post-manual-commands"
+        },
+        {
+          "label": "Book XIV's complete command locator",
+          "section_id": "b14-complete-locator"
+        },
+        {
+          "label": "evidence ladder",
+          "section_id": "b14-evidence"
+        },
+        {
+          "label": "patch reconciliation",
+          "section_id": "b14-patch-reconciliation"
+        },
+        {
+          "label": "compatibility engineering",
+          "section_id": "b8-part-xi-compatibility-engineering"
+        },
+        {
+          "label": "testing, validation, and release engineering",
+          "section_id": "b8-part-xii-testing-validation-and-release-engineering"
+        }
+      ]
+    }
+  ]
+}

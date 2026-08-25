@@ -1,0 +1,1751 @@
+---
+title: "Foundation Book IX - Dominions Enhanced and Divinitus"
+description: "A separate rules and compatibility reference for Dominions Enhanced 2.16 and Divinitus 1.15.3 DE."
+nav_section: guides
+extra_css: /assets/dominions-library.css
+extra_js: /assets/dominions-library.js
+og_image: /assets/images/dominions-6-library-edition-24.png
+---
+
+<section class="page-hero library-page-hero">
+  <div class="shell">
+    <div class="breadcrumbs">
+      <a href="/dominions/">Dominions 6</a><span aria-hidden="true">/</span>
+      <a href="/dominions/library/">Knowledge Library</a><span aria-hidden="true">/</span>
+      <span>Foundation Book IX</span>
+    </div>
+    <p class="eyebrow">Progress Edition 24</p>
+    <h1>Foundation Book IX - Dominions Enhanced and Divinitus</h1>
+    <p class="lead">A separate rules and compatibility reference for Dominions Enhanced 2.16 and Divinitus 1.15.3 DE.</p>
+    <div class="meta-row">
+      <span class="status status--stable">Published reference</span>
+      <span class="meta-chip">Dominions 6.36</span>
+      <span class="meta-chip">11,245 words</span>
+      <span class="meta-chip">136 sections</span>
+    </div>
+  </div>
+</section>
+
+<section class="section shell library-section">
+  <details class="library-mobile-toc">
+    <summary>Table of contents</summary>
+    <nav><a href="#b9-the-technical-encyclopaedia-of-the-frozen-combined-ruleset">The Technical Encyclopaedia of the Frozen Combined Ruleset</a>
+<a href="#b9-1-purpose">1. Purpose</a>
+<a href="#b9-2-frozen-baseline-and-evidence">2. Frozen Baseline and Evidence</a>
+<a href="#b9-3-finding-what-is-needed">3. Finding What Is Needed</a>
+<a href="#b9-4-what-the-combined-modpack-changes">4. What the Combined Modpack Changes</a>
+<a href="#b9-5-how-the-dominions-loader-must-be-read">5. How the Dominions Loader Must Be Read</a>
+<a href="#b9-6-exact-source-inventory">6. Exact Source Inventory</a>
+<a href="#b9-7-the-six-global-de-rules">7. The Six Global DE Rules</a>
+<a href="#b9-8-complete-de-blessing-revision">8. Complete DE Blessing Revision</a>
+<a href="#b9-9-dominions-enhanced-as-an-object-ecosystem">9. Dominions Enhanced as an Object Ecosystem</a>
+<a href="#b9-10-the-de-design-programme">10. The DE Design Programme</a>
+<a href="#b9-11-dominions-enhanced-pretender-analysis">11. Dominions Enhanced Pretender Analysis</a>
+<a href="#b9-12-de-magic-items-and-national-power">12. DE Magic, Items, and National Power</a>
+<a href="#b9-13-de-nations-without-nation-dossiers">13. DE Nations Without Nation Dossiers</a>
+<a href="#b9-14-divinitus-design-philosophy-and-scope">14. Divinitus: Design Philosophy and Scope</a>
+<a href="#b9-15-the-divinitus-event-engine">15. The Divinitus Event Engine</a>
+<a href="#b9-16-divinitus-power-families">16. Divinitus Power Families</a>
+<a href="#b9-17-representative-divinitus-systems">17. Representative Divinitus Systems</a>
+<a href="#b9-18-divinitus-support-objects">18. Divinitus Support Objects</a>
+<a href="#b9-19-combined-load-order-and-collision-matrix">19. Combined Load Order and Collision Matrix</a>
+<a href="#b9-20-the-8616-collision">20. The 8616 Collision</a>
+<a href="#b9-21-combined-pretender-resolution">21. Combined Pretender Resolution</a>
+<a href="#b9-22-strategic-doctrine-for-the-combined-ruleset">22. Strategic Doctrine for the Combined Ruleset</a>
+<a href="#b9-23-website-architecture">23. Website Architecture</a>
+<a href="#b9-24-verification-protocol">24. Verification Protocol</a>
+<a href="#b9-25-open-and-resolved-compatibility-register">25. Open and Resolved Compatibility Register</a>
+<a href="#b9-26-operational-checklists">26. Operational Checklists</a>
+<a href="#b9-27-essays">27. Essays</a>
+<a href="#b9-appendix-a-source-lint-findings">Appendix A - Source-Lint Findings</a>
+<a href="#b9-appendix-b-data-schema-warning">Appendix B - Data Schema Warning</a></nav>
+  </details>
+  <div class="library-reader-grid">
+    <article class="content library-prose">
+{% raw %}
+<h1 id="b9-foundation-book-ix-dominions-enhanced-and-divinitus">Foundation Book IX - Dominions Enhanced and Divinitus<a class="heading-link" href="#b9-foundation-book-ix-dominions-enhanced-and-divinitus" aria-label="Link to Foundation Book IX - Dominions Enhanced and Divinitus">#</a></h1><h2 id="b9-the-technical-encyclopaedia-of-the-frozen-combined-ruleset">The Technical Encyclopaedia of the Frozen Combined Ruleset<a class="heading-link" href="#b9-the-technical-encyclopaedia-of-the-frozen-combined-ruleset" aria-label="Link to The Technical Encyclopaedia of the Frozen Combined Ruleset">#</a></h2><p>Dominions 6.35<br>Dominions Enhanced 2.16<br>Divinitus 1.15.3 DE edition<br>Frozen load order: Dominions Enhanced first, Divinitus second<br>Research edition: 31 July 2026</p>
+<p>This is a frozen source-defined ruleset built against the recorded 6.35 baseline. The live unmodded game is now 6.36; combined runtime compatibility remains unverified and is not implied by the source analysis.</p>
+<h2 id="b9-1-purpose">1. Purpose<a class="heading-link" href="#b9-1-purpose" aria-label="Link to 1. Purpose">#</a></h2><p>Dominions Enhanced and Divinitus reach into almost every major system in Dominions 6: Pretender design, scales, battle gems, blessings, recruitment, research, underwater play, items, spells, sites, events, and dominion. Together they behave less like a pair of optional add-ons and more like a distinct edition of the game.</p>
+<p>Book IX turns 238,821 lines of source into something that can be consulted during play and reused in later nation dossiers. It does this by following a few strict boundaries:</p>
+<ul>
+<li>the two mods are described separately before their combined result;</li>
+<li>every rule is tied to the exact supplied release;</li>
+<li>explicit definitions are distinguished from inherited vanilla fields;</li>
+<li>the loader and load order are treated as part of the ruleset;</li>
+<li>support spells, sites, items, and event variables are separated from ordinary player-facing content;</li>
+<li>source collisions and unresolved runtime questions remain visible;</li>
+<li>strategic consequences are stated as doctrine rather than disguised as facts;</li>
+<li>machine-readable indices support later website search and exact object pages.</li>
+</ul>
+<p>The summaries and checklists provide the practical route. Command inventories, ID registries, event structure, collision analysis, and provenance records are there for deeper investigation.</p>
+<h2 id="b9-2-frozen-baseline-and-evidence">2. Frozen Baseline and Evidence<a class="heading-link" href="#b9-2-frozen-baseline-and-evidence" aria-label="Link to 2. Frozen Baseline and Evidence">#</a></h2><h3 id="b9-2-1-exact-files">2.1 Exact files<a class="heading-link" href="#b9-2-1-exact-files" aria-label="Link to 2.1 Exact files">#</a></h3><table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Exact file</th>
+<th align="right">Declared version</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>First mod</td>
+<td><code>DomEnhanced2_16.dm</code></td>
+<td align="right">2.16</td>
+</tr>
+<tr>
+<td>Second mod</td>
+<td><code>Divinitus_1.15.3_DE.dm</code></td>
+<td align="right">1.15.3</td>
+</tr>
+</tbody></table>
+<p>The file fingerprints are:</p>
+<ul>
+<li>Dominions Enhanced: <code>72558697f8dae3a1fccf8fb57b3faccde56c7fe6c05dac6403cefe153faf6c1b</code></li>
+<li>Divinitus DE: <code>cf7f21900a3812b66edddd831df779743eaf33080aef983f9bdea8ec47642809</code></li>
+</ul>
+<p>These hashes define the ruleset more precisely than a Workshop title. A guide written for another DE or Divinitus release is historical evidence, not automatic evidence for this game.</p>
+<h3 id="b9-2-2-authority-order">2.2 Authority order<a class="heading-link" href="#b9-2-2-authority-order" aria-label="Link to 2.2 Authority order">#</a></h3><p>Claims in Book IX use the following practical hierarchy:</p>
+<ol>
+<li>the exact supplied source files for what the mods command;</li>
+<li>Illwinter&#39;s official manuals for what those commands mean;</li>
+<li>the active load order for which later command has the final opportunity to change a field;</li>
+<li>the mod authors&#39; repositories and release descriptions for stated design intention;</li>
+<li>current reproducible public tests where engine behaviour is not completely documented;</li>
+<li>strategic derivation from confirmed inputs.</li>
+</ol>
+<p>Source code proves that a command is present. It does not always prove the final in-game card. A selected object inherits every vanilla or earlier-mod field that is not cleared or replaced. A repeated <code>#newmonster</code> on an occupied ID is especially important: the official manual warns that two mods should not modify the same object because the result can be unpredictable. The correct label for such a case is source collision until a reliable resolved card or live reproduction exists.</p>
+<h3 id="b9-2-3-public-author-sources">2.3 Public author sources<a class="heading-link" href="#b9-2-3-public-author-sources" aria-label="Link to 2.3 Public author sources">#</a></h3><p>The principal public project pages are:</p>
+<ul>
+<li>Dominions Enhanced repository: <a href="https://github.com/BlueFeuer/DominionsEnhanced6" target="_blank" rel="noreferrer">https://github.com/BlueFeuer/DominionsEnhanced6</a></li>
+<li>Divinitus repository: <a href="https://github.com/RonhulMaggot/Divinitus" target="_blank" rel="noreferrer">https://github.com/RonhulMaggot/Divinitus</a></li>
+<li>Illwinter documentation index: <a href="https://illwinter.com/dom6/docs.html" target="_blank" rel="noreferrer">https://illwinter.com/dom6/docs.html</a></li>
+</ul>
+<p>The current DE repository describes the project as a DLC-sized overhaul with thousands of spells, items, and monsters; new nations; changes to almost every vanilla nation; cheaper and expanded Pretender design; broad cavalry and underwater revisions; and a large national-magic programme. The supplied file confirms that scope at command level.</p>
+<p>Public load-order wording has not been perfectly consistent. The public Divinitus 1.15.2 DE file contains the words &quot;Load first,&quot; while the project description and version 1.15.0 changelog instruct players to enable the DE edition after Dominions Enhanced. The supplied 1.15.3 DE header no longer states either instruction. The later project-level wording settles the intended order for this ruleset: DE first, Divinitus second. The older contradictory header remains in the historical record because it can still mislead anyone using an archived file without the release context.</p>
+<h2 id="b9-3-finding-what-is-needed">3. Finding What Is Needed<a class="heading-link" href="#b9-3-finding-what-is-needed" aria-label="Link to 3. Finding What Is Needed">#</a></h2><h3 id="b9-3-1-first-game-with-both-mods">3.1 First game with both mods<a class="heading-link" href="#b9-3-1-first-game-with-both-mods" aria-label="Link to 3.1 First game with both mods">#</a></h3><p>For a first game, read Sections 4, 7, 8, 14-16, and 22, then use the pregame checklist in Section 26. That covers the rules that change ordinary decisions without requiring a full reading of the source structure.</p>
+<h3 id="b9-3-2-pretender-design">3.2 Pretender design<a class="heading-link" href="#b9-3-2-pretender-design" aria-label="Link to 3.2 Pretender design">#</a></h3><p>Read Sections 8, 11, 14–18, 21–22, and Essay II. A chassis may now act as an economic institution, temple network, seasonal engine, recruitment programme, or global-risk mechanism. The visible card is only the beginning.</p>
+<h3 id="b9-3-3-mod-compatibility-or-debugging">3.3 Mod compatibility or debugging<a class="heading-link" href="#b9-3-3-mod-compatibility-or-debugging" aria-label="Link to 3.3 Mod compatibility or debugging">#</a></h3><p>Read Sections 5, 6, 19-21, 24, and 25. Consult the machine-readable summary and object catalogue before drawing a conclusion from a name search.</p>
+<h3 id="b9-3-4-website-construction">3.4 Website construction<a class="heading-link" href="#b9-3-4-website-construction" aria-label="Link to 3.4 Website construction">#</a></h3><p>Read Sections 23-25 and Appendix B. The website should preserve separate vanilla, DE, Divinitus, and combined layers. It should never flatten them into one unversioned card.</p>
+<h2 id="b9-4-what-the-combined-modpack-changes">4. What the Combined Modpack Changes<a class="heading-link" href="#b9-4-what-the-combined-modpack-changes" aria-label="Link to 4. What the Combined Modpack Changes">#</a></h2><h3 id="b9-4-1-dominions-enhanced-is-the-broad-ruleset">4.1 Dominions Enhanced is the broad ruleset<a class="heading-link" href="#b9-4-1-dominions-enhanced-is-the-broad-ruleset" aria-label="Link to 4.1 Dominions Enhanced is the broad ruleset">#</a></h3><p>DE is the foundation layer. It changes global economic constants, blessings, units, mounts, weapons, armour, Pretenders, sites, nations, spells, items, poptypes, name lists, and events. It also supplies extensive national content and several new nations.</p>
+<p>Its strategic effect goes beyond adding more content. It changes the density of useful options:</p>
+<ul>
+<li>more national research branches compete for early research;</li>
+<li>more summons convert gems into nation-specific force;</li>
+<li>low-path mages gain more battlefield and ritual jobs;</li>
+<li>underwater entry and underwater warfare become less isolated;</li>
+<li>cavalry and mounts become more credible;</li>
+<li>new and revised Pretenders enlarge design space;</li>
+<li>hidden future sites reveal national summons and heroes;</li>
+<li>informative site-search events reduce uncertainty;</li>
+<li>scale choices carry altered economic and event consequences.</li>
+</ul>
+<h3 id="b9-4-2-divinitus-is-the-divine-system-layer">4.2 Divinitus is the divine-system layer<a class="heading-link" href="#b9-4-2-divinitus-is-the-divine-system-layer" aria-label="Link to 4.2 Divinitus is the divine-system layer">#</a></h3><p>Divinitus concentrates on Pretender identity. It modifies or rebuilds hundreds of chassis and supplies the machinery needed to make their descriptions operational:</p>
+<ul>
+<li>pregame starting armies and capital sites;</li>
+<li>automatic items;</li>
+<li>temple-generated units, commanders, gems, gold, and sites;</li>
+<li>dominion-scaled effects;</li>
+<li>seasonal and terrain-dependent effects;</li>
+<li>order-dependent abilities;</li>
+<li>national priesthood changes;</li>
+<li>battlefield spells and summoned escorts;</li>
+<li>global event chains;</li>
+<li>ownership-state variables;</li>
+<li>punishments when an immobile god leaves its appointed place;</li>
+<li>relationships with global enchantments, heroes, or unique units.</li>
+</ul>
+<p>Divinitus changes what “the Pretender” means. A god may become a distributed part of the state whose effects continue across dozens of provinces. The physical chassis may be only the control key for that larger presence.</p>
+<h3 id="b9-4-3-combined-result">4.3 Combined result<a class="heading-link" href="#b9-4-3-combined-result" aria-label="Link to 4.3 Combined result">#</a></h3><p>Under the frozen order, DE establishes the world and Divinitus has the later word on the fields it changes. This produces three classes of final object:</p>
+<ol>
+<li><strong>DE-only object:</strong> created or selected by DE and untouched by Divinitus.</li>
+<li><strong>Divinitus-only object:</strong> introduced or changed only by Divinitus.</li>
+<li><strong>Combined object:</strong> inherited from vanilla, changed by DE, then changed or rebuilt by Divinitus.</li>
+</ol>
+<p>The Grand Hierophant is the clearest example of the third class. DE supplies its revised foundation. Divinitus later changes cost, magic, event protection, description, and monthly event systems. Neither source alone describes the combined god.</p>
+<h2 id="b9-5-how-the-dominions-loader-must-be-read">5. How the Dominions Loader Must Be Read<a class="heading-link" href="#b9-5-how-the-dominions-loader-must-be-read" aria-label="Link to 5. How the Dominions Loader Must Be Read">#</a></h2><p>Book VIII owns the general loader explanation: whole mods load separately, command categories have an internal parser order, selected objects inherit unstated fields, numeric identities matter across files, and descriptions are not executable specifications. Four consequences matter here:</p>
+<ol>
+<li>DE is the first object layer and Divinitus the second.</li>
+<li>A Divinitus block may inherit vanilla and DE fields that it never restates.</li>
+<li>Source adjacency does not override parser-category order.</li>
+<li>A divine description may summarize an event family without listing every gate, delay, or cleanup step.</li>
+</ol>
+<p>A complete divine system is traced as:</p>
+<p><code>chassis -&gt; support item/site/spell -&gt; event requirement -&gt; event effect -&gt; delay or variable -&gt; cleanup event</code></p>
+<h3 id="b9-5-1-allocation-profile">5.1 Allocation profile<a class="heading-link" href="#b9-5-1-allocation-profile" aria-label="Link to 5.1 Allocation profile">#</a></h3><p>Fixed IDs improve stability inside a coordinated project but create collision risk between projects. Automatic IDs depend on the engine&#39;s occupied range and cannot be resolved from these two text files alone.</p>
+<p>The supplied DE file uses fixed IDs for every new weapon, armour, monster, and site. Divinitus uses a mixture:</p>
+<ul>
+<li>all 34 new-weapon blocks use a fixed number, though ID 3034 appears twice;</li>
+<li>both new armour blocks use fixed IDs;</li>
+<li>277 of 346 new-monster blocks use fixed IDs and 69 use automatic allocation;</li>
+<li>all 112 new sites use fixed IDs;</li>
+<li>4 of 26 new spells use fixed IDs and 22 use automatic allocation;</li>
+<li>its one new item uses fixed ID 1072.</li>
+</ul>
+<p>This mix is a source fact, not a defect by itself. It simply marks which identities can be checked statically and which require a resolved game state.</p>
+<h2 id="b9-6-exact-source-inventory">6. Exact Source Inventory<a class="heading-link" href="#b9-6-exact-source-inventory" aria-label="Link to 6. Exact Source Inventory">#</a></h2><h3 id="b9-6-1-file-scale">6.1 File scale<a class="heading-link" href="#b9-6-1-file-scale" aria-label="Link to 6.1 File scale">#</a></h3><table>
+<thead>
+<tr>
+<th>File</th>
+<th align="right">Lines</th>
+<th align="right">Bytes</th>
+<th align="right">Active commands</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>DE 2.16</td>
+<td align="right">194,385</td>
+<td align="right">5,675,140</td>
+<td align="right">173,499</td>
+</tr>
+<tr>
+<td>Divinitus 1.15.3 DE</td>
+<td align="right">44,436</td>
+<td align="right">1,348,538</td>
+<td align="right">38,834</td>
+</tr>
+</tbody></table>
+<h3 id="b9-6-2-object-block-inventory">6.2 Object-block inventory<a class="heading-link" href="#b9-6-2-object-block-inventory" aria-label="Link to 6.2 Object-block inventory">#</a></h3><table>
+<thead>
+<tr>
+<th>Object action</th>
+<th align="right">DE blocks</th>
+<th align="right">Divinitus blocks</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>New weapon</td>
+<td align="right">389</td>
+<td align="right">34</td>
+</tr>
+<tr>
+<td>Selected weapon</td>
+<td align="right">142</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>New armour</td>
+<td align="right">81</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>Selected armour</td>
+<td align="right">39</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>New monster</td>
+<td align="right">3,553</td>
+<td align="right">346</td>
+</tr>
+<tr>
+<td>Selected monster</td>
+<td align="right">4,227</td>
+<td align="right">373</td>
+</tr>
+<tr>
+<td>New site</td>
+<td align="right">504</td>
+<td align="right">112</td>
+</tr>
+<tr>
+<td>Selected site</td>
+<td align="right">684</td>
+<td align="right">5</td>
+</tr>
+<tr>
+<td>New spell</td>
+<td align="right">0</td>
+<td align="right">26</td>
+</tr>
+<tr>
+<td>Selected spell</td>
+<td align="right">2,816</td>
+<td align="right">17</td>
+</tr>
+<tr>
+<td>New item</td>
+<td align="right">0</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td>Selected item</td>
+<td align="right">631</td>
+<td align="right">75</td>
+</tr>
+<tr>
+<td>Selected nation</td>
+<td align="right">132</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>Selected blessing</td>
+<td align="right">46</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>New event</td>
+<td align="right">1,564</td>
+<td align="right">1,514</td>
+</tr>
+</tbody></table>
+<p>These are active block occurrences, not unique final identities. DE selects 3,185 distinct monster identities, 2,737 distinct spell identities, 629 distinct item identities, 572 distinct site identities, and 128 distinct nations. Repeated blocks are common and often intentional.</p>
+<h3 id="b9-6-3-fixed-ranges">6.3 Fixed ranges<a class="heading-link" href="#b9-6-3-fixed-ranges" aria-label="Link to 6.3 Fixed ranges">#</a></h3><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>DE fixed range</th>
+<th>Divinitus fixed range</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Weapon</td>
+<td>1501-1925</td>
+<td>3001-3035</td>
+</tr>
+<tr>
+<td>Armour</td>
+<td>501-581</td>
+<td>998-999</td>
+</tr>
+<tr>
+<td>Monster</td>
+<td>6510-13571</td>
+<td>5018-10001</td>
+</tr>
+<tr>
+<td>Site</td>
+<td>2101-2917</td>
+<td>1885-2005</td>
+</tr>
+<tr>
+<td>Spell</td>
+<td>selected IDs 1-4365</td>
+<td>fixed new IDs 183, 197-199</td>
+</tr>
+<tr>
+<td>Item</td>
+<td>selected IDs 1-899</td>
+<td>new ID 1072</td>
+</tr>
+</tbody></table>
+<p>Ranges are bounds, not proof that every number inside is used.</p>
+<h3 id="b9-6-4-important-implementation-facts">6.4 Important implementation facts<a class="heading-link" href="#b9-6-4-important-implementation-facts" aria-label="Link to 6.4 Important implementation facts">#</a></h3><ul>
+<li>DE contains no active <code>#newspell</code> block. It builds its spell layer through 2,816 <code>#selectspell</code> blocks, including high numbered slots.</li>
+<li>DE contains no active <code>#newitem</code> block. It builds its item layer through selected slots.</li>
+<li>DE explicit monster IDs exceed the 5000-8999 recommendation printed in the 6.34 Modding Manual, reaching 13,571. The source proves that the active game accepts or at least parses a wider contemporary space than that older recommendation describes.</li>
+<li>Divinitus uses 1,492 rarity-5 events, 12 rarity-13 events, and 9 rarity-0 events. One event lacks an explicit rarity.</li>
+<li>DE and Divinitus each contain a small number of adjacent event blocks without an intervening <code>#end</code>. The next <code>#newevent</code> implicitly begins a new block in source analysis, but this remains a lint finding.</li>
+<li>Divinitus defines weapon ID 3034 twice. The later definition copies Stellar Bolt and is the effective intended source for the Stellar Staff references. The earlier Gaze of Death definition does not survive as an independent fixed identity.</li>
+</ul>
+<span class="anchor-alias" id="b9-7-de-global-rules" aria-hidden="true"></span><h2 id="b9-7-the-six-global-de-rules">7. The Six Global DE Rules<a class="heading-link" href="#b9-7-the-six-global-de-rules" aria-label="Link to 7. The Six Global DE Rules">#</a></h2><p>DE issues six active general commands outside object blocks.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th align="right">DE value</th>
+<th>Official meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>#gemlongevity</code></td>
+<td align="right">2</td>
+<td>battle gems last for the entire month</td>
+</tr>
+<tr>
+<td><code>#slothincome</code></td>
+<td align="right">4</td>
+<td>each Productivity/Sloth step changes income by 4%</td>
+</tr>
+<tr>
+<td><code>#turmoilincome</code></td>
+<td align="right">4</td>
+<td>each Order/Turmoil step changes income by 4%</td>
+</tr>
+<tr>
+<td><code>#deathincome</code></td>
+<td align="right">2</td>
+<td>each Growth/Death step changes income by 2%</td>
+</tr>
+<tr>
+<td><code>#deathdeath</code></td>
+<td align="right">25</td>
+<td>Growth/Death population effect uses 0.25% units</td>
+</tr>
+<tr>
+<td><code>#luckevents</code></td>
+<td align="right">7</td>
+<td>Luck/Misfortune changes event frequency by 7% per step</td>
+</tr>
+</tbody></table>
+<p>The official defaults printed in the Modding Manual are 3 for Sloth income, 3 for Turmoil income, 2 for Death income, 20 for the population constant, and 5 for Luck event frequency. <code>#deathincome 2</code> pins the existing default; it does not change it.</p>
+<h3 id="b9-7-1-gem-longevity">7.1 Gem longevity<a class="heading-link" href="#b9-7-1-gem-longevity" aria-label="Link to 7.1 Gem longevity">#</a></h3><p>This is the most operationally important global change. Under level 2, combat gems last for the entire month rather than only their ordinary single use. The practical value of a gem-bearing mage now depends on the number of battles the mage can survive and enter during that month.</p>
+<p>Consequences include:</p>
+<ul>
+<li>a single gem allocation can support several engagements;</li>
+<li>counter-raiding and sequential defence become more gem-efficient;</li>
+<li>teleporters and other multi-battle pieces gain endurance;</li>
+<li>killing or routing the mage before later battles becomes more important;</li>
+<li>battle-gem accounting must be conducted by mage-month, not only by battle;</li>
+<li>scripts that assume a gem was consumed in an earlier battle require revision.</li>
+</ul>
+<p>This rule does not eliminate the need for reserve policy. A mage without the necessary gems at the beginning of the month still lacks them, and a dead, routed, or isolated mage cannot exploit persistence.</p>
+<h3 id="b9-7-2-order-and-productivity">7.2 Order and Productivity<a class="heading-link" href="#b9-7-2-order-and-productivity" aria-label="Link to 7.2 Order and Productivity">#</a></h3><p>Order and Productivity each move income by 4% per step instead of 3%. Their combined influence on income is stronger before national modifiers and rounding. The scales keep their other effects, so the change does not reduce them to simple gold choices.</p>
+<p>At symmetric extremes, the direct trace differs substantially:</p>
+<ul>
+<li>Order 3 contributes a nominal +12% instead of +9%;</li>
+<li>Turmoil 3 contributes a nominal -12% instead of -9%;</li>
+<li>Productivity 3 contributes a nominal +12% instead of +9%;</li>
+<li>Sloth 3 contributes a nominal -12% instead of -9%.</li>
+</ul>
+<p>These percentages are inputs to the engine&#39;s provincial economy, not guarantees of an exact treasury difference in every province. Population, terrain, unrest, national rules, taxation, rounding, and special income modifiers remain relevant.</p>
+<h3 id="b9-7-3-growth-and-death">7.3 Growth and Death<a class="heading-link" href="#b9-7-3-growth-and-death" aria-label="Link to 7.3 Growth and Death">#</a></h3><p>The gold-income constant remains 2%, while the population-change constant rises from 20 to 25 hundredths of a percent. Death destroys the tax base more quickly and Growth compounds it more quickly, subject to the engine&#39;s sign and rounding implementation.</p>
+<p>The strategic lesson is temporal:</p>
+<blockquote>
+<p>Growth and Death do more than alter current income. They change the future base to which many other modifiers apply.</p>
+</blockquote>
+<h3 id="b9-7-4-luck-and-misfortune">7.4 Luck and Misfortune<a class="heading-link" href="#b9-7-4-luck-and-misfortune" aria-label="Link to 7.4 Luck and Misfortune">#</a></h3><p>The event-frequency influence rises from 5% to 7% per scale step. This does not guarantee a particular event result. It changes the number of opportunities, while event quality, rarity, national event sets, and special event mechanics determine what those opportunities become.</p>
+<p>Luck becomes more valuable to nations and Pretenders that add strong good-event pools. Misfortune becomes more dangerous where a modded nation or divine system adds harmful events or already has fragile infrastructure.</p>
+<span class="anchor-alias" id="b9-8-de-blessing-revision" aria-hidden="true"></span><h2 id="b9-8-complete-de-blessing-revision">8. Complete DE Blessing Revision<a class="heading-link" href="#b9-8-complete-de-blessing-revision" aria-label="Link to 8. Complete DE Blessing Revision">#</a></h2><p>DE modifies 38 distinct blessings through 46 blocks. Eight blessings are selected twice because one block changes path or scale requirements and another changes cost.</p>
+<p>Path letters are F Fire, A Air, W Water, E Earth, S Astral, D Death, N Nature, G Glamour, and B Blood.</p>
+<table>
+<thead>
+<tr>
+<th>Blessing</th>
+<th align="right">DE cost</th>
+<th>Additional change</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Wasteland Survival</td>
+<td align="right">1</td>
+<td>reduced from 2</td>
+</tr>
+<tr>
+<td>Death Explosion</td>
+<td align="right">F4+D2</td>
+<td>crosspath; non-Incarnate structure</td>
+</tr>
+<tr>
+<td>Fire Shield</td>
+<td align="right">F5</td>
+<td>reduced from 6</td>
+</tr>
+<tr>
+<td>Flaming Weapons</td>
+<td align="right">F4</td>
+<td>Heat 1 required; non-Incarnate</td>
+</tr>
+<tr>
+<td>Farshot</td>
+<td align="right">1</td>
+<td>reduced from 2</td>
+</tr>
+<tr>
+<td>Awareness</td>
+<td align="right">2</td>
+<td>reduced from 3</td>
+</tr>
+<tr>
+<td>Swiftness</td>
+<td align="right">3</td>
+<td>reduced from 4</td>
+</tr>
+<tr>
+<td>Storm Flight</td>
+<td align="right">3</td>
+<td>reduced from 4</td>
+</tr>
+<tr>
+<td>Wind Walker</td>
+<td align="right">A4+S2</td>
+<td>crosspath; non-Incarnate</td>
+</tr>
+<tr>
+<td>Weightlessness</td>
+<td align="right">4</td>
+<td>reduced from 6; primary requirement becomes 3</td>
+</tr>
+<tr>
+<td>Air Shield</td>
+<td align="right">5</td>
+<td>reduced from 6</td>
+</tr>
+<tr>
+<td>Charged Bodies</td>
+<td align="right">7</td>
+<td>reduced from 8</td>
+</tr>
+<tr>
+<td>Flight</td>
+<td align="right">6</td>
+<td>reduced from 9</td>
+</tr>
+<tr>
+<td>Swamp Survival</td>
+<td align="right">1</td>
+<td>reduced from 2</td>
+</tr>
+<tr>
+<td>Swimming</td>
+<td align="right">1</td>
+<td>reduced from 2</td>
+</tr>
+<tr>
+<td>Slowing Weapons</td>
+<td align="right">W4+G2</td>
+<td>crosspath; non-Incarnate</td>
+</tr>
+<tr>
+<td>Vitriol Weapons</td>
+<td align="right">6</td>
+<td>reduced from 8; primary requirement becomes 4</td>
+</tr>
+<tr>
+<td>Water Breathing</td>
+<td align="right">2</td>
+<td>non-Incarnate</td>
+</tr>
+<tr>
+<td>Frost Mist Weapons</td>
+<td align="right">W4+A1</td>
+<td>crosspath; non-Incarnate</td>
+</tr>
+<tr>
+<td>Unbreakable</td>
+<td align="right">3</td>
+<td>reduced from 4</td>
+</tr>
+<tr>
+<td>Resilience of the Earth</td>
+<td align="right">5</td>
+<td>reduced from 6</td>
+</tr>
+<tr>
+<td>Solar Weapons</td>
+<td align="right">3</td>
+<td>reduced from 4; primary requirement becomes 2</td>
+</tr>
+<tr>
+<td>Twist Fate</td>
+<td align="right">5</td>
+<td>reduced from 6</td>
+</tr>
+<tr>
+<td>Fateweaving</td>
+<td align="right">6</td>
+<td>reduced from 7</td>
+</tr>
+<tr>
+<td>Withering Weapons</td>
+<td align="right">3</td>
+<td>reduced from 4</td>
+</tr>
+<tr>
+<td>Reanimators</td>
+<td align="right">D4+E2</td>
+<td>crosspath; non-Incarnate</td>
+</tr>
+<tr>
+<td>Death Weapons</td>
+<td align="right">5</td>
+<td>reduced from 8</td>
+</tr>
+<tr>
+<td>Fear</td>
+<td align="right">8</td>
+<td>reduced from 9</td>
+</tr>
+<tr>
+<td>Forest Survival</td>
+<td align="right">1</td>
+<td>reduced from 2</td>
+</tr>
+<tr>
+<td>Poison Weapons</td>
+<td align="right">3</td>
+<td>reduced from 4</td>
+</tr>
+<tr>
+<td>Recuperation</td>
+<td align="right">4</td>
+<td>non-Incarnate</td>
+</tr>
+<tr>
+<td>Berserker</td>
+<td align="right">N4+B1</td>
+<td>crosspath; non-Incarnate</td>
+</tr>
+<tr>
+<td>Barkskin</td>
+<td align="right">N4+N2</td>
+<td>Growth 1 required; non-Incarnate structure</td>
+</tr>
+<tr>
+<td>Obfuscate</td>
+<td align="right">5</td>
+<td>reduced from 6</td>
+</tr>
+<tr>
+<td>Awe</td>
+<td align="right">7</td>
+<td>reduced from 8; primary requirement becomes 5</td>
+</tr>
+<tr>
+<td>Displacement</td>
+<td align="right">6</td>
+<td>reduced from 7</td>
+</tr>
+<tr>
+<td>Dread</td>
+<td align="right">7</td>
+<td>reduced from 8</td>
+</tr>
+<tr>
+<td>Vampiric Weapons</td>
+<td align="right">6+3</td>
+<td>two-path total 9, reduced from 12</td>
+</tr>
+</tbody></table>
+<h3 id="b9-8-1-how-to-read-the-cost-fields">8.1 How to read the cost fields<a class="heading-link" href="#b9-8-1-how-to-read-the-cost-fields" aria-label="Link to 8.1 How to read the cost fields">#</a></h3><p>The modding commands store primary and optional secondary path requirements. The minimum path skill and blessing-point cost use the same numbers. Thus <code>#cost0 4</code> and <code>#cost1 2</code> produce a six-point crosspath blessing requiring the stated levels in both paths.</p>
+<p>Some source comments describe a blessing as &quot;no longer Incarnate&quot; without a separate <code>#incarnate</code> command. The new path-cost structure places the requirements below the threshold that made the older single-path version Incarnate. The effect follows the rewritten requirements rather than a standalone toggle.</p>
+<h3 id="b9-8-2-strategic-families">8.2 Strategic families<a class="heading-link" href="#b9-8-2-strategic-families" aria-label="Link to 8.2 Strategic families">#</a></h3><p>The revisions create five broad families.</p>
+<p><strong>Cheap mobility and survival.</strong> Terrain survival, Swimming, Water Breathing, Farshot, Awareness, Swiftness, and Weightlessness become easier to add to a broader design.</p>
+<p><strong>Accessible weapon blessings.</strong> Flaming, Slowing, Frost Mist, Solar, Withering, Death, Poison, and Vitriol effects become cheaper or crosspath. A design can purchase a functional weapon effect without committing its entire budget to one extreme path.</p>
+<p><strong>Lower Incarnate dependence.</strong> Several effects remain available while the Pretender is dormant, imprisoned, dead, or otherwise absent. This increases the viability of delayed chassis and reduces the all-or-nothing cost of divine death.</p>
+<p><strong>Crosspath identity.</strong> Death Explosion, Wind Walker, Slowing Weapons, Frost Mist Weapons, Reanimators, Berserker, Barkskin, and Vampiric Weapons require a more specific magical identity. Their nominal cost is only part of the design cost; path entry and opportunity cost matter.</p>
+<p><strong>Scale contracts.</strong> Flaming Weapons requires Heat 1 and Barkskin requires Growth 1. The blessing is tied to national scales and cannot be purchased in isolation.</p>
+<h3 id="b9-8-3-bless-evaluation-method">8.3 Bless evaluation method<a class="heading-link" href="#b9-8-3-bless-evaluation-method" aria-label="Link to 8.3 Bless evaluation method">#</a></h3><p>A blessing should be valued against five quantities:</p>
+<ol>
+<li>the number of sacred bodies affected;</li>
+<li>the number and importance of sacred attacks;</li>
+<li>the turns on which sacred recruitment is constrained;</li>
+<li>the probability that the effect changes an actual matchup;</li>
+<li>the design points and paths displaced.</li>
+</ol>
+<p>A cheap blessing is not automatically efficient. A one-point terrain blessing may be decisive for a mobility plan and worthless in another. A nine-point Vampiric Weapons package may be extraordinary on durable multi-attacking sacreds and extravagant on fragile, recruitment-limited elites.</p>
+<h2 id="b9-9-dominions-enhanced-as-an-object-ecosystem">9. Dominions Enhanced as an Object Ecosystem<a class="heading-link" href="#b9-9-dominions-enhanced-as-an-object-ecosystem" aria-label="Link to 9. Dominions Enhanced as an Object Ecosystem">#</a></h2><h3 id="b9-9-1-weapons-armour-mounts-and-units">9.1 Weapons, armour, mounts, and units<a class="heading-link" href="#b9-9-1-weapons-armour-mounts-and-units" aria-label="Link to 9.1 Weapons, armour, mounts, and units">#</a></h3><p>DE adds 389 fixed-ID weapons and modifies 142 existing weapons. It adds 81 armours and modifies 39 armour blocks. It creates 3,553 monster blocks and selects 4,227 more.</p>
+<p>This density supports connected programmes, not isolated novelties:</p>
+<ul>
+<li>bows gain damage and precision and use 24 ammunition in the stated DE design;</li>
+<li>slings use full strength, gain damage at ordinary human strength, and use 30 ammunition;</li>
+<li>javelins receive underwater rules;</li>
+<li>horse Magic Resistance rises on average;</li>
+<li>weak barding improves and formerly unbarded horses gain barding;</li>
+<li>Skilled Rider increases across riders;</li>
+<li>forgeable barding becomes cheaper and broader;</li>
+<li>many units gain DE-specific shapes, mounts, equipment, or supporting spells.</li>
+</ul>
+<p>A unit must be read through its relationships. A rider card belongs with its mount. A weapon belongs with its secondary effects and ammunition. A unit belongs with its national recruitment site, spell support, and cost commands.</p>
+<h3 id="b9-9-2-sites">9.2 Sites<a class="heading-link" href="#b9-9-2-sites" aria-label="Link to 9.2 Sites">#</a></h3><p>DE creates 504 sites and selects 684 site blocks. Sites perform several different jobs:</p>
+<ul>
+<li>national capital and terrain recruitment;</li>
+<li>future-site documentation;</li>
+<li>summon and hero previews;</li>
+<li>hidden national mechanics;</li>
+<li>event and ritual anchors;</li>
+<li>gem, gold, resource, and supply production;</li>
+<li>fort and defence units;</li>
+<li>divine or scripted transformation infrastructure.</li>
+</ul>
+<p>A source count of &quot;504 new sites&quot; does not mean 504 ordinary searchable magic sites. Many are rarity 5, level 0, national, hidden, or event-managed support objects.</p>
+<h3 id="b9-9-3-spells">9.3 Spells<a class="heading-link" href="#b9-9-3-spells" aria-label="Link to 9.3 Spells">#</a></h3><p>DE&#39;s 2,816 selected spell blocks cover IDs from 1 to 4,365. They include:</p>
+<ul>
+<li>ordinary researchable spells;</li>
+<li>national rituals and summons;</li>
+<li>hidden effect spells;</li>
+<li>item-granted spells;</li>
+<li>transformation chains;</li>
+<li>battlefield wrappers;</li>
+<li>temporary buffs and helper effects;</li>
+<li>prayer families;</li>
+<li>underwater access and water-breathing systems;</li>
+<li>fort damage and siege support;</li>
+<li>national late-game capstones.</li>
+</ul>
+<p>The source uses high selected slots instead of active <code>#newspell</code> commands. A catalogue must classify each spell by its final school, research level, path, restriction, and visibility. Whether the source keyword says &quot;new&quot; does not settle the question.</p>
+<h3 id="b9-9-4-items">9.4 Items<a class="heading-link" href="#b9-9-4-items" aria-label="Link to 9.4 Items">#</a></h3><p>DE selects 631 item blocks covering 629 distinct identities. The programme includes repricing, path changes, national rebates, underwater tools, barding, temporary gem effects, auto-spells, restricted items, and new high-slot definitions.</p>
+<p>Item value changes twice:</p>
+<ol>
+<li>the forge cost and path gate may change;</li>
+<li>the environment contains more reasons to want the item.</li>
+</ol>
+<p>Cheaper water-breathing equipment matters more because underwater entry is a central DE project. Cheaper barding matters more because mounts are stronger. Siege items matter more where magical fort pressure is deliberately expanded.</p>
+<h3 id="b9-9-5-nations">9.5 Nations<a class="heading-link" href="#b9-9-5-nations" aria-label="Link to 9.5 Nations">#</a></h3><p>DE selects 128 distinct nations in 132 blocks. Its changes go well beyond recruit costs. Nation blocks can:</p>
+<ul>
+<li>clear and rebuild recruitment;</li>
+<li>change terrain recruitment;</li>
+<li>change capital and starting armies;</li>
+<li>add or remove Pretenders;</li>
+<li>replace heroes and multiheroes;</li>
+<li>set scale preferences or forced modifiers;</li>
+<li>change fort, temple, or dominion rules;</li>
+<li>add future sites;</li>
+<li>add AI hints;</li>
+<li>replace an entire nation in a reserved slot.</li>
+</ul>
+<p>The current DE project summary identifies major or mild changes across all ages and several new nations. The supplied source includes complete custom nation definitions in slots 181-207 alongside extensive changes to vanilla nation IDs.</p>
+<h2 id="b9-10-the-de-design-programme">10. The DE Design Programme<a class="heading-link" href="#b9-10-the-de-design-programme" aria-label="Link to 10. The DE Design Programme">#</a></h2><h3 id="b9-10-1-pretenders">10.1 Pretenders<a class="heading-link" href="#b9-10-1-pretenders" aria-label="Link to 10.1 Pretenders">#</a></h3><p>The principal DE Pretender source region spans approximately lines 72,487-90,112 and contains 591 monster blocks:</p>
+<ul>
+<li>266 new-monster blocks;</li>
+<li>325 selected-monster blocks;</li>
+<li>268 blocks with a <code>#startdom</code> command;</li>
+<li>561 blocks with a <code>#pathcost</code> command.</li>
+</ul>
+<p>The wider file also defines shapes, summons, divine servants, and later corrections. The region is a useful authorial boundary, not a complete resolved Pretender database.</p>
+<p>The public project description states the main design direction:</p>
+<ul>
+<li>Pretenders are repriced from the ground up and are generally cheaper;</li>
+<li>Titans receive two more paths;</li>
+<li>monsters and rainbows receive one more path;</li>
+<li>monsters are broadly stronger;</li>
+<li>more scale modifiers appear;</li>
+<li>the roster of Pretenders is larger, especially underwater and in Polynesian realms;</li>
+<li>Pretenders can heal in the capital or while preaching outside it under the stated holy-level chance.</li>
+</ul>
+<p>These changes mean that vanilla design heuristics cannot simply be carried across. Path-entry costs, chassis costs, built-in scales, and jobs must be read from DE data.</p>
+<h3 id="b9-10-2-magic">10.2 Magic<a class="heading-link" href="#b9-10-2-magic" aria-label="Link to 10.2 Magic">#</a></h3><p>DE expands summons and national magic, shifts some effects into Glamour or crosspaths, enlarges many battlefield areas, improves the jobs available to level-one mages, and adds siege tools. The hostile battlefield-wide spell policy limits effects such as Wind of Death to one cast per round per side.</p>
+<p>The strategic result is portfolio pressure. More viable spells make a fixed queue less reliable, not more. A nation should maintain:</p>
+<ul>
+<li>an expansion and first-war branch;</li>
+<li>an anti-armour branch;</li>
+<li>an anti-mass branch;</li>
+<li>a defensive and counter-raid branch;</li>
+<li>a path-access and forging branch;</li>
+<li>a national-summon branch;</li>
+<li>a water-access branch where geography requires it;</li>
+<li>a late-game transition.</li>
+</ul>
+<span class="anchor-alias" id="b9-12-underwater-and-cross-terrain-systems" aria-hidden="true"></span><h3 id="b9-10-3-underwater-play">10.3 Underwater play<a class="heading-link" href="#b9-10-3-underwater-play" aria-label="Link to 10.3 Underwater play">#</a></h3><p>DE treats the sea as a connected theatre:</p>
+<ul>
+<li>Gift of Water Breathing becomes cheaper and earlier;</li>
+<li>more items and spells grant water access;</li>
+<li>more monsters carry water-breathing support;</li>
+<li>underwater population rises;</li>
+<li>coastal and underwater independent mages improve;</li>
+<li>more spells work underwater;</li>
+<li>underwater-only spells expand;</li>
+<li>javelins function underwater under modified range and damage;</li>
+<li>many aquatic nations receive specific overhauls.</li>
+</ul>
+<p>This reduces the old binary distinction between land and sea. It does not make amphibious war free. Command capacity, breathing capacity, hostile currents, poor amphibians, laboratory networks, fort access, and return routes remain logistical constraints.</p>
+<h3 id="b9-10-4-information">10.4 Information<a class="heading-link" href="#b9-10-4-information" aria-label="Link to 10.4 Information">#</a></h3><p>DE&#39;s informative site-search events report when a searching mage detects traces of a stronger hidden site in a path but lacks the level to reveal it. All nations also receive future sites in their overview to display summons and heroes.</p>
+<p>These systems reduce memory and inspection burden, but they do not remove it. The player still needs to distinguish:</p>
+<ul>
+<li>a site that has been found;</li>
+<li>a clue that a stronger site remains;</li>
+<li>a future-site documentation entry;</li>
+<li>an event-managed support site;</li>
+<li>a national site that is present only under a specific ruleset.</li>
+</ul>
+<h2 id="b9-11-dominions-enhanced-pretender-analysis">11. Dominions Enhanced Pretender Analysis<a class="heading-link" href="#b9-11-dominions-enhanced-pretender-analysis" aria-label="Link to 11. Dominions Enhanced Pretender Analysis">#</a></h2><h3 id="b9-11-1-design-cards-must-be-rebuilt">11.1 Design cards must be rebuilt<a class="heading-link" href="#b9-11-1-design-cards-must-be-rebuilt" aria-label="Link to 11.1 Design cards must be rebuilt">#</a></h3><p>The ordinary design screen remains useful, but a serious DE design record needs more fields:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Chassis price</td>
+<td>What does the exact DE card cost?</td>
+</tr>
+<tr>
+<td>Path entry</td>
+<td>Which paths are built in, and what is each new level&#39;s marginal price?</td>
+</tr>
+<tr>
+<td>Dominion</td>
+<td>What is the starting dominion and cost of increasing it?</td>
+</tr>
+<tr>
+<td>Scales</td>
+<td>Which forced or bonus scales change the national plan?</td>
+</tr>
+<tr>
+<td>Mobility</td>
+<td>Can the god expand, raid, teleport, sail, or cross water?</td>
+</tr>
+<tr>
+<td>Survival</td>
+<td>Which threats defeat the chassis before research support?</td>
+</tr>
+<tr>
+<td>Divine job</td>
+<td>Is its main purpose expansion, blessing, access, research, ritual, combat, or scales?</td>
+</tr>
+<tr>
+<td>National availability</td>
+<td>Which nations or realms can choose it after DE&#39;s <code>#addgod</code> and <code>#delgod</code> changes?</td>
+</tr>
+<tr>
+<td>Divinitus layer</td>
+<td>Does the second mod add an economy, event, priesthood, site, or battle system?</td>
+</tr>
+</tbody></table>
+<p>The last two fields are mandatory under the combined ruleset. A strong generic chassis may not be legal for a nation. A mediocre-looking chassis may be the key to a powerful Divinitus infrastructure.</p>
+<h3 id="b9-11-2-chassis-families">11.2 Chassis families<a class="heading-link" href="#b9-11-2-chassis-families" aria-label="Link to 11.2 Chassis families">#</a></h3><p>DE&#39;s large roster is best understood by job family.</p>
+<p><strong>Immobile monuments.</strong> These often exchange movement for high dominion, low design cost, strong paths, exceptional durability, or national effects. Divinitus frequently turns them into site and temple engines.</p>
+<p><strong>Monsters.</strong> DE&#39;s broad buffs make monsters more credible expanders and combatants. Their value still depends on attack density, protection, regeneration, resistances, item slots, affliction risk, and the first counter an opponent can deploy.</p>
+<p><strong>Titans.</strong> Additional paths and lower design prices make Titans more flexible. They can combine expansion with a serious blessing or late ritual access, but their size and investment make death costly.</p>
+<p><strong>Rainbows and sages.</strong> Cheaper designs and expanded paths improve access packages. Divinitus often adds libraries, apprentices, ritual range, items, or research-linked production.</p>
+<p><strong>Aquatic and amphibious gods.</strong> DE expands this roster and the strategic value of water access. A water god must still be assessed against the nation&#39;s starting theatre and ability to operate on land.</p>
+<p><strong>Transforming gods.</strong> Shape chains can separate map form, battle form, dominion form, death form, and ritual form. Every shape must be resolved; a source block for one form is not the complete god.</p>
+<h3 id="b9-11-3-expansion-is-an-assignment-not-a-label">11.3 Expansion is an assignment, not a label<a class="heading-link" href="#b9-11-3-expansion-is-an-assignment-not-a-label" aria-label="Link to 11.3 Expansion is an assignment, not a label">#</a></h3><p>A chassis should be called an expander only after a repeatable test against the actual independent settings and terrain mix. DE changes weapons, mounts, and units as well as the Pretender, so a vanilla test result is not portable.</p>
+<p>A minimum record includes:</p>
+<ul>
+<li>design and awakening;</li>
+<li>target province and defenders;</li>
+<li>script;</li>
+<li>hit points and afflictions after battle;</li>
+<li>fatigue at decisive moments;</li>
+<li>rout or morale incidents;</li>
+<li>number of provinces taken before support was required;</li>
+<li>first available counter;</li>
+<li>cost of losing one expansion turn.</li>
+</ul>
+<h3 id="b9-11-4-healing-doctrine">11.4 Healing doctrine<a class="heading-link" href="#b9-11-4-healing-doctrine" aria-label="Link to 11.4 Healing doctrine">#</a></h3><p>The stated DE programme allows Pretenders to heal in the capital or to receive a 10% chance per Holy level while actively preaching outside the capital. This creates three recovery modes:</p>
+<ol>
+<li>capital convalescence;</li>
+<li>field preaching with probabilistic recovery;</li>
+<li>magical or item-based healing.</li>
+</ol>
+<p>The second is not free. Preaching consumes the monthly order and places the god in a predictable province. A wounded god that could forge, research, claim a Throne, cast a ritual, or fight is paying an opportunity cost to heal.</p>
+<h2 id="b9-12-de-magic-items-and-national-power">12. DE Magic, Items, and National Power<a class="heading-link" href="#b9-12-de-magic-items-and-national-power" aria-label="Link to 12. DE Magic, Items, and National Power">#</a></h2><h3 id="b9-12-1-a-spell-is-a-delivery-system">12.1 A spell is a delivery system<a class="heading-link" href="#b9-12-1-a-spell-is-a-delivery-system" aria-label="Link to 12.1 A spell is a delivery system">#</a></h3><p>The expanded spell list should be indexed by function rather than memorized as one long sequence.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Examples of the question to ask</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Access</td>
+<td>Does the spell raise paths, create a mage, or unlock a form?</td>
+</tr>
+<tr>
+<td>Army creation</td>
+<td>What body, commander, upkeep, and leadership does a summon provide?</td>
+</tr>
+<tr>
+<td>Force multiplication</td>
+<td>Which troops receive the buff, at what area, fatigue, and research?</td>
+</tr>
+<tr>
+<td>Control</td>
+<td>Does it disable by MR, defence, size, morale, or terrain?</td>
+</tr>
+<tr>
+<td>Damage</td>
+<td>What protection layer, resistance, and density does it attack?</td>
+</tr>
+<tr>
+<td>Mobility</td>
+<td>Does it solve land, water, plane, range, or fort access?</td>
+</tr>
+<tr>
+<td>Siege</td>
+<td>Does it damage walls, defenders, infrastructure, or relief timing?</td>
+</tr>
+<tr>
+<td>Economy</td>
+<td>Does it convert gems, gold, population, blood slaves, or mage-turns?</td>
+</tr>
+<tr>
+<td>Transformation</td>
+<td>Is the result reversible, unique, cursed, or tied to another object?</td>
+</tr>
+</tbody></table>
+<p>The same spell may occupy several rows. A summon can be path access, siege mass, and a combat package. An underwater ritual can be mobility and recruitment access.</p>
+<h3 id="b9-12-2-national-summons">12.2 National summons<a class="heading-link" href="#b9-12-2-national-summons" aria-label="Link to 12.2 National summons">#</a></h3><p>DE generally raises the efficiency of national summons and updates older designs to Dominions 6 scale. A summon should be evaluated by:</p>
+<p><code>total cost = gems + caster-turn + research delay + laboratory position + command burden</code></p>
+<p>The result should be evaluated by:</p>
+<p><code>total return = body value + magic access + strategic movement + siege value + future turns</code></p>
+<p>A cheap body that requires a rare cap-only caster may be expensive. A moderate summon that creates a reusable mage can be an access breakthrough.</p>
+<h3 id="b9-12-3-items-as-logistics">12.3 Items as logistics<a class="heading-link" href="#b9-12-3-items-as-logistics" aria-label="Link to 12.3 Items as logistics">#</a></h3><p>The repriced item list changes the minimum infrastructure needed to execute a plan. The relevant categories are:</p>
+<ul>
+<li>path boosters and ritual access;</li>
+<li>reinvigoration and fatigue control;</li>
+<li>resistance packages;</li>
+<li>thug and supercombatant protection;</li>
+<li>underwater transport and breathing;</li>
+<li>mount and rider equipment;</li>
+<li>siege and wall pressure;</li>
+<li>temporary gems;</li>
+<li>battlefield auto-spells;</li>
+<li>restricted national or divine items.</li>
+</ul>
+<p>An item catalogue should state the exact mod layer because the same named item may have different paths, costs, effects, or national rebates in vanilla and DE.</p>
+<h3 id="b9-12-4-future-sites-as-an-interface">12.4 Future sites as an interface<a class="heading-link" href="#b9-12-4-future-sites-as-an-interface" aria-label="Link to 12.4 Future sites as an interface">#</a></h3><p>Future sites are documentation objects embedded in the nation overview. They make national summons and heroes discoverable without revealing every tactical conclusion. For a website, these should be represented as overview records, not ordinary province sites.</p>
+<h2 id="b9-13-de-nations-without-nation-dossiers">13. DE Nations Without Nation Dossiers<a class="heading-link" href="#b9-13-de-nations-without-nation-dossiers" aria-label="Link to 13. DE Nations Without Nation Dossiers">#</a></h2><p>Book IX does not replace the nation monographs. It establishes the questions each one must answer.</p>
+<h3 id="b9-13-1-recruitment-reconstruction">13.1 Recruitment reconstruction<a class="heading-link" href="#b9-13-1-recruitment-reconstruction" aria-label="Link to 13.1 Recruitment reconstruction">#</a></h3><p>DE can clear and rebuild a nation roster. A vanilla unit list may be only a historical starting point. The resolved recruitment table needs:</p>
+<ul>
+<li>capital, fort, unforted, coastal, underwater, cave, forest, mountain, swamp, waste, farm, and foreign recruitment;</li>
+<li>recruitment limits;</li>
+<li>command-point and resource gates;</li>
+<li>paired or event-created recruits;</li>
+<li>site-dependent commanders and troops;</li>
+<li>starting commander and army;</li>
+<li>province defence, walls, and fort defenders.</li>
+</ul>
+<h3 id="b9-13-2-magic-reconstruction">13.2 Magic reconstruction<a class="heading-link" href="#b9-13-2-magic-reconstruction" aria-label="Link to 13.2 Magic reconstruction">#</a></h3><p>The mage table needs:</p>
+<ul>
+<li>deterministic paths;</li>
+<li>random masks and probability distributions;</li>
+<li>temporary gems;</li>
+<li>path boosts and shape effects;</li>
+<li>cap-only and terrain limits;</li>
+<li>national spells and item rebates;</li>
+<li>communion, chorus, or other network roles;</li>
+<li>the cost of consuming a commander recruitment turn.</li>
+</ul>
+<h3 id="b9-13-3-national-strategic-reconstruction">13.3 National strategic reconstruction<a class="heading-link" href="#b9-13-3-national-strategic-reconstruction" aria-label="Link to 13.3 National strategic reconstruction">#</a></h3><p>The public DE summary indicates four degrees of change:</p>
+<ol>
+<li><strong>light balance correction</strong> - costs, statistics, hero updates, or one new spell;</li>
+<li><strong>mild overhaul</strong> - roster or magic identity changes while the national concept remains;</li>
+<li><strong>systemic overhaul</strong> - new economy, recruitment, or dominion mechanics;</li>
+<li><strong>new or DEified nation</strong> - custom roster and full support package.</li>
+</ol>
+<p>Advice should state the degree. A &quot;mild overhaul&quot; can still invalidate an opening if the old cap unit, random distribution, or sacred is gone.</p>
+<h3 id="b9-13-4-new-nations-in-the-supplied-source">13.4 New nations in the supplied source<a class="heading-link" href="#b9-13-4-new-nations-in-the-supplied-source" aria-label="Link to 13.4 New nations in the supplied source">#</a></h3><p>The source contains full named nation blocks in reserved IDs 181-207, including Chaco, Ongtupqa, Sitecah, Albion, Zion, Bhöd, and later DE additions such as Bantay Tubig, Dirgen, and Houssa. Some public notes mark particular nations unfinished, removed, or pending. A source definition proves presence in the file; it does not prove current balance or recommended multiplayer inclusion.</p>
+<h2 id="b9-14-divinitus-design-philosophy-and-scope">14. Divinitus: Design Philosophy and Scope<a class="heading-link" href="#b9-14-divinitus-design-philosophy-and-scope" aria-label="Link to 14. Divinitus: Design Philosophy and Scope">#</a></h2><h3 id="b9-14-1-the-card-becomes-a-constitution">14.1 The card becomes a constitution<a class="heading-link" href="#b9-14-1-the-card-becomes-a-constitution" aria-label="Link to 14.1 The card becomes a constitution">#</a></h3><p>Divinitus describes its purpose as making Pretender Gods more unique and lore-consistent without presumed excessive power creep. Its implementation gives a chassis rules that can affect the entire state.</p>
+<p>The dominant patterns are:</p>
+<ul>
+<li><strong>starting covenant:</strong> a capital site, item, army, commander, or scale package;</li>
+<li><strong>living dominion:</strong> effects scale with candles or require positive dominion;</li>
+<li><strong>temple network:</strong> each temple becomes a production or transformation node;</li>
+<li><strong>priesthood:</strong> certain national mages or units gain Holy levels;</li>
+<li><strong>divine presence:</strong> an effect requires the god alive, awake, present, preaching, searching, or performing another order;</li>
+<li><strong>seasonal office:</strong> winter, summer, or another calendar condition changes production;</li>
+<li><strong>terrain office:</strong> caves, forests, coasts, wastes, mountains, or water enable an effect;</li>
+<li><strong>relationship state:</strong> control of a named unit or global enchantment unlocks a benefit;</li>
+<li><strong>cosmic consequence:</strong> moving or losing a monument triggers a world event;</li>
+<li><strong>battle manifestation:</strong> a spell, escort, blessing-site effect, or divine shape appears in combat.</li>
+</ul>
+<h3 id="b9-14-2-the-four-source-tiers">14.2 The four source tiers<a class="heading-link" href="#b9-14-2-the-four-source-tiers" aria-label="Link to 14.2 The four source tiers">#</a></h3><p>The main Pretender body is divided by starting dominion headings.</p>
+<table>
+<thead>
+<tr>
+<th>Source tier</th>
+<th align="right">Object blocks</th>
+<th align="right">Events</th>
+<th align="right">Monster blocks</th>
+<th align="right">Sites</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Dominion 4</td>
+<td align="right">542</td>
+<td align="right">385</td>
+<td align="right">134</td>
+<td align="right">21</td>
+</tr>
+<tr>
+<td>Dominion 3</td>
+<td align="right">768</td>
+<td align="right">510</td>
+<td align="right">217</td>
+<td align="right">40</td>
+</tr>
+<tr>
+<td>Dominion 2</td>
+<td align="right">633</td>
+<td align="right">383</td>
+<td align="right">216</td>
+<td align="right">34</td>
+</tr>
+<tr>
+<td>Dominion 1</td>
+<td align="right">401</td>
+<td align="right">236</td>
+<td align="right">143</td>
+<td align="right">22</td>
+</tr>
+</tbody></table>
+<p>Monster blocks combine selected and new definitions. Site totals include new and selected sites. The file then applies eight small DE-tail monster selections, principally home-realm compatibility.</p>
+<p>These headings organize authorial work. The final starting dominion should still be read from the active object&#39;s fields because a selected block may not restate it and a shape may not be a selectable root.</p>
+<h3 id="b9-14-3-chassis-scale">14.3 Chassis scale<a class="heading-link" href="#b9-14-3-chassis-scale" aria-label="Link to 14.3 Chassis scale">#</a></h3><p>Among 320 Divinitus monster blocks carrying at least one Pretender-like field:</p>
+<ul>
+<li>305 carry descriptions;</li>
+<li>297 state a gold or design cost;</li>
+<li>258 state a path cost;</li>
+<li>201 state starting dominion;</li>
+<li>181 state a home realm;</li>
+<li>132 use <code>#magicboost</code>;</li>
+<li>167 use healing;</li>
+<li>66 use ordinary <code>#domsummon</code>;</li>
+<li>many add one-battle spells, start items, scale modifiers, or shape relationships.</li>
+</ul>
+<p>This does not mean exactly 320 independently selectable gods. The set includes forms and support definitions. It proves the density of divine reconstruction.</p>
+<span class="anchor-alias" id="b9-14-divinitus-event-architecture" aria-hidden="true"></span><h2 id="b9-15-the-divinitus-event-engine">15. The Divinitus Event Engine<a class="heading-link" href="#b9-15-the-divinitus-event-engine" aria-label="Link to 15. The Divinitus Event Engine">#</a></h2><h3 id="b9-15-1-why-1-514-events-exist">15.1 Why 1,514 events exist<a class="heading-link" href="#b9-15-1-why-1-514-events-exist" aria-label="Link to 15.1 Why 1,514 events exist">#</a></h3><p>Dominions has no single command meaning &quot;every temple in friendly dominion has a candle-scaled chance to recruit a special priest while the god is awake.&quot; Such a power is assembled from small declarative events.</p>
+<p>A typical system needs:</p>
+<ol>
+<li>an event identifying the correct Pretender;</li>
+<li>a province, terrain, site, temple, fort, dominion, or order requirement;</li>
+<li>a probability gate;</li>
+<li>an effect;</li>
+<li>sometimes a variable or event code;</li>
+<li>sometimes a delayed cleanup;</li>
+<li>often a silent message configuration.</li>
+</ol>
+<p>The large event count is working infrastructure, not 1,514 ordinary random narratives.</p>
+<h3 id="b9-15-2-event-profile">15.2 Event profile<a class="heading-link" href="#b9-15-2-event-profile" aria-label="Link to 15.2 Event profile">#</a></h3><table>
+<thead>
+<tr>
+<th>Command or pattern</th>
+<th align="right">Occurrences</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>New events</td>
+<td align="right">1,514</td>
+</tr>
+<tr>
+<td><code>#req_godismnr</code></td>
+<td align="right">1,641</td>
+</tr>
+<tr>
+<td>Province-owner events (<code>#nation -2</code>)</td>
+<td align="right">1,504</td>
+</tr>
+<tr>
+<td>Silent log suppression (<code>#nolog</code>)</td>
+<td align="right">1,446</td>
+</tr>
+<tr>
+<td>Population-zero permitted</td>
+<td align="right">1,183</td>
+</tr>
+<tr>
+<td>No displayed text</td>
+<td align="right">1,023</td>
+</tr>
+<tr>
+<td>Dominion minimum</td>
+<td align="right">602</td>
+</tr>
+<tr>
+<td>Candle-scaled chance</td>
+<td align="right">557</td>
+</tr>
+<tr>
+<td>Land requirement</td>
+<td align="right">543</td>
+</tr>
+<tr>
+<td>Target monster</td>
+<td align="right">434</td>
+</tr>
+<tr>
+<td>Own capital</td>
+<td align="right">370</td>
+</tr>
+<tr>
+<td>Temple</td>
+<td align="right">311</td>
+</tr>
+<tr>
+<td>Pregame only</td>
+<td align="right">179</td>
+</tr>
+<tr>
+<td>Fort</td>
+<td align="right">173</td>
+</tr>
+<tr>
+<td>Free site slots</td>
+<td align="right">157</td>
+</tr>
+<tr>
+<td>Site required</td>
+<td align="right">148</td>
+</tr>
+</tbody></table>
+<p>The multiple <code>#req_godismnr</code> commands in one event are alternatives: several related gods can share one effect.</p>
+<h3 id="b9-15-3-rarity-5">15.3 Rarity 5<a class="heading-link" href="#b9-15-3-rarity-5" aria-label="Link to 15.3 Rarity 5">#</a></h3><p>The official Event Manual states that rarity 5 is an unlimited always-event class: any number can occur in one province in the same month. It is suitable for global-enchantment and special-dominion machinery.</p>
+<p>Divinitus uses rarity 5 for 1,492 events. This permits many independent divine checks to run without consuming an ordinary random-event slot.</p>
+<h3 id="b9-15-4-candle-scaled-probability">15.4 Candle-scaled probability<a class="heading-link" href="#b9-15-4-candle-scaled-probability" aria-label="Link to 15.4 Candle-scaled probability">#</a></h3><p>The official meaning of <code>#req_domchance X</code> is:</p>
+<p><code>chance = absolute dominion strength x X percent</code></p>
+<p>The event must already satisfy its other requirements. The command itself does not care who owns the dominion, so correct systems combine it with ownership or Pretender requirements where friendly dominion is intended.</p>
+<p>Examples:</p>
+<ul>
+<li><code>#req_domchance 1</code> gives 1% per candle;</li>
+<li><code>#req_domchance 5</code> gives 5% per candle;</li>
+<li><code>#req_domchance 10</code> gives 10% per candle.</li>
+</ul>
+<p>At ten candles these become 10%, 50%, and 100% respectively before other gates. A description that says “candles x 5%” has a direct mechanical basis.</p>
+<h3 id="b9-15-5-event-probability-is-conditional">15.5 Event probability is conditional<a class="heading-link" href="#b9-15-5-event-probability-is-conditional" aria-label="Link to 15.5 Event probability is conditional">#</a></h3><p>A 50% candle check is not a 50% monthly yield if the event also requires:</p>
+<ul>
+<li>the god to be awake;</li>
+<li>the god or target to be in the province;</li>
+<li>a temple or fort;</li>
+<li>a free site slot;</li>
+<li>a season;</li>
+<li>a particular order;</li>
+<li>a path threshold;</li>
+<li>a unique event not already used;</li>
+<li>a variable in the correct state.</li>
+</ul>
+<p>Expected value should multiply the conditional probabilities or explicitly state that it is conditioned on every non-random gate being true.</p>
+<h3 id="b9-15-6-pregame-events">15.6 Pregame events<a class="heading-link" href="#b9-15-6-pregame-events" aria-label="Link to 15.6 Pregame events">#</a></h3><p>The official manual states that <code>#req_pregame</code> events happen during game creation and appear in the first turn&#39;s messages. Divinitus uses 179 such events for starting armies, sites, items, commanders, and initial state.</p>
+<p>Pregame content is part of Pretender design value even though it does not appear in the chassis statistics. Losing or duplicating one of these events can alter an opening materially.</p>
+<h2 id="b9-16-divinitus-power-families">16. Divinitus Power Families<a class="heading-link" href="#b9-16-divinitus-power-families" aria-label="Link to 16. Divinitus Power Families">#</a></h2><span class="anchor-alias" id="b9-15-capital-institutions-temple-networks-and-priesthoods" aria-hidden="true"></span><h3 id="b9-16-1-capital-institutions">16.1 Capital institutions<a class="heading-link" href="#b9-16-1-capital-institutions" aria-label="Link to 16.1 Capital institutions">#</a></h3><p>Many gods create a capital site or add one when awakening. Common returns include:</p>
+<ul>
+<li>gem income;</li>
+<li>gold and resources;</li>
+<li>recruitable mages;</li>
+<li>apprentices;</li>
+<li>divine servants;</li>
+<li>ritual discounts;</li>
+<li>a special bless effect;</li>
+<li>national path access.</li>
+</ul>
+<p>A capital institution should be valued as a stream:</p>
+<p><code>present value = starting grant + monthly income + recruitment options + strategic access - site-slot and opportunity costs</code></p>
+<p>The exact duration matters. A site present from game creation is more valuable than one appearing only when a dormant god awakens.</p>
+<h3 id="b9-16-2-temple-networks">16.2 Temple networks<a class="heading-link" href="#b9-16-2-temple-networks" aria-label="Link to 16.2 Temple networks">#</a></h3><p>Temple events turn religious infrastructure into production infrastructure. A temple may:</p>
+<ul>
+<li>create units or commanders;</li>
+<li>produce gems, blood slaves, or gold;</li>
+<li>apply a blessing site;</li>
+<li>change scales or dominion;</li>
+<li>grant recruitment;</li>
+<li>transform or ordain priests;</li>
+<li>host a terrain-specific resource.</li>
+</ul>
+<p>The value of one more temple becomes:</p>
+<p><code>ordinary temple value + expected divine output + dominion projection + local strategic value</code></p>
+<p>This can justify earlier and wider temple construction, but only if the expected output exceeds construction cost, opportunity cost, and capture risk.</p>
+<h3 id="b9-16-3-priesthood-transformations">16.3 Priesthood transformations<a class="heading-link" href="#b9-16-3-priesthood-transformations" aria-label="Link to 16.3 Priesthood transformations">#</a></h3><p>Divinitus uses 203 <code>#holyboost</code> effects and many target gates to ordain national mages, commanders, or thematic servants. A mage who becomes H1 or H3 changes:</p>
+<ul>
+<li>preaching;</li>
+<li>banishment;</li>
+<li>blessing access;</li>
+<li>temple construction eligibility;</li>
+<li>leadership in sacred armies;</li>
+<li>communion or spell interactions where Holy matters;</li>
+<li>upkeep and recruitment opportunity only indirectly.</li>
+</ul>
+<p>The event may occur immediately after recruitment, require a temple, or depend on the god. The exact gate must be recorded.</p>
+<h3 id="b9-16-4-dominion-summons">16.4 Dominion summons<a class="heading-link" href="#b9-16-4-dominion-summons" aria-label="Link to 16.4 Dominion summons">#</a></h3><p>Built-in <code>#domsummon</code>, <code>#domsummon2</code>, <code>#domsummon20</code>, and rare dominion summons produce followers around the god. Event-based temple summons distribute production across the map.</p>
+<p>The distinction matters:</p>
+<ul>
+<li>chassis dominion summons usually require the god&#39;s physical presence;</li>
+<li>temple events require qualifying provinces;</li>
+<li>capital events concentrate output;</li>
+<li>some systems require the god awake or alive;</li>
+<li>some descriptions cap production by candle count.</li>
+</ul>
+<h3 id="b9-16-5-scale-ceilings-and-extreme-scales">16.5 Scale ceilings and extreme scales<a class="heading-link" href="#b9-16-5-scale-ceilings-and-extreme-scales" aria-label="Link to 16.5 Scale ceilings and extreme scales">#</a></h3><p>Some gods carry <code>#moreorder</code>, <code>#moreprod</code>, <code>#moregrowth</code>, <code>#moreluck</code>, <code>#moremagic</code>, or temperature modifiers. Divinitus descriptions sometimes attach additional effects to scales beyond the ordinary limit, such as income, unrest reduction, or special events.</p>
+<p>The design value has two parts:</p>
+<ol>
+<li>design-point and national-scale consequences;</li>
+<li>event or province consequences once the higher scale exists.</li>
+</ol>
+<h3 id="b9-16-6-built-in-battlefield-policy">16.6 Built-in battlefield policy<a class="heading-link" href="#b9-16-6-built-in-battlefield-policy" aria-label="Link to 16.6 Built-in battlefield policy">#</a></h3><p>Divinitus uses one-battle spells and hidden support spells for effects such as:</p>
+<ul>
+<li>army blessing by creature type;</li>
+<li>battlefield-wide path boosts;</li>
+<li>Solar Brilliance;</li>
+<li>Relief;</li>
+<li>Wind Guide;</li>
+<li>animal blessing;</li>
+<li>mass regeneration;</li>
+<li>control or serenity effects;</li>
+<li>divine earthquakes;</li>
+<li>special summons.</li>
+</ul>
+<p>These spells often use school -1 and research level 0. They are internal tools, not ordinary research targets.</p>
+<h3 id="b9-16-7-orders-as-divine-labour">16.7 Orders as divine labour<a class="heading-link" href="#b9-16-7-orders-as-divine-labour" aria-label="Link to 16.7 Orders as divine labour">#</a></h3><p>Some powers require the Pretender to:</p>
+<ul>
+<li>preach;</li>
+<li>search for sites;</li>
+<li>research;</li>
+<li>remain in the capital;</li>
+<li>occupy a fort;</li>
+<li>stand on a Throne;</li>
+<li>perform another target order.</li>
+</ul>
+<p>The god&#39;s monthly order is a scarce resource. A power that pays 150 gold when site searching is not free income; it competes with every other use of the god.</p>
+<h2 id="b9-17-representative-divinitus-systems">17. Representative Divinitus Systems<a class="heading-link" href="#b9-17-representative-divinitus-systems" aria-label="Link to 17. Representative Divinitus Systems">#</a></h2><h3 id="b9-17-1-golden-pillar-geographic-catastrophe">17.1 Golden Pillar: geographic catastrophe<a class="heading-link" href="#b9-17-1-golden-pillar-geographic-catastrophe" aria-label="Link to 17.1 Golden Pillar: geographic catastrophe">#</a></h3><p>The Golden Pillar gains strong Earth magic, dominion summons, additional scale reach, and cave-temple production. The exceptional mechanic is triggered when the Pillar is absent from its own capital.</p>
+<p>The source chain:</p>
+<ol>
+<li>an immediate global rarity-13 event requires the Golden Pillar Pretender, its own capital, and the Pillar&#39;s absence;</li>
+<li>a unique gate prevents repetition;</li>
+<li>event code <code>-3333</code> is set;</li>
+<li>world unrest rises by 15;</li>
+<li>surface provinces receive follow-up earthquake checks;</li>
+<li>population, temples, and laboratories can suffer;</li>
+<li>troglodyte attacks and a capital force can appear;</li>
+<li>a later global event resets the code to zero.</li>
+</ol>
+<p>This is a strategic constraint, not flavour. Moving, teleporting, or otherwise displacing the god can impose worldwide costs.</p>
+<h3 id="b9-17-2-father-of-winters-seasonal-global-state">17.2 Father of Winters: seasonal global state<a class="heading-link" href="#b9-17-2-father-of-winters-seasonal-global-state" aria-label="Link to 17.2 Father of Winters: seasonal global state">#</a></h3><p>The Father of Winters uses variables 329, 330, and 331 to track successive winter-month effects. Monthly events increment and decrement the correct variable, while follow-up events can kill population and worsen Cold outside the protected ownership state.</p>
+<p>The design lesson is that a seasonal power may be implemented as several synchronized state machines. Reading only one event produces a false picture.</p>
+<h3 id="b9-17-3-kami-of-storms-ownership-relationship">17.3 Kami of Storms: ownership relationship<a class="heading-link" href="#b9-17-3-kami-of-storms-ownership-relationship" aria-label="Link to 17.3 Kami of Storms: ownership relationship">#</a></h3><p>The Kami of Storms checks whether the nation controls Aella, Queen of Storms. Event variable 325 records that state.</p>
+<ul>
+<li>control sets the variable;</li>
+<li>loss or defection clears it;</li>
+<li>while the variable is positive, temples in qualifying dominion can spawn large Air Elementals;</li>
+<li>a separate capital site grants the innate Air Shield blessing effect.</li>
+</ul>
+<p>This power rewards a specific world-state rather than a fixed chassis statistic.</p>
+<h3 id="b9-17-4-divine-feathered-serpent-delayed-global-offensive">17.4 Divine Feathered Serpent: delayed global offensive<a class="heading-link" href="#b9-17-4-divine-feathered-serpent-delayed-global-offensive" aria-label="Link to 17.4 Divine Feathered Serpent: delayed global offensive">#</a></h3><p>The Divine Feathered Serpent can initiate a hurricane state using variable 326. The source:</p>
+<ul>
+<li>makes a capital, dominion-scaled check;</li>
+<li>sets a global state in an immediate event;</li>
+<li>permits up to three enemy-fort hurricane events per month;</li>
+<li>applies population loss and unrest;</li>
+<li>ends and clears the state through later events.</li>
+</ul>
+<p>This is strategic remote pressure. Its actual target distribution and engine event ordering still deserve live verification before exact expected-damage claims.</p>
+<h3 id="b9-17-5-great-stag-global-enchantment-relationship">17.5 Great Stag: global enchantment relationship<a class="heading-link" href="#b9-17-5-great-stag-global-enchantment-relationship" aria-label="Link to 17.5 Great Stag: global enchantment relationship">#</a></h3><p>The Great Stag interacts with The Wild Hunt:</p>
+<ul>
+<li>the active friendly enchantment can bring a Horned One;</li>
+<li>variable 328 tracks whether the state is active;</li>
+<li>the Horned One receives path and priest boosts;</li>
+<li>temple events produce Cu Sidhe;</li>
+<li>cleanup events kill the Horned One and clear the variable when the enchantment is absent.</li>
+</ul>
+<p>The power has a research and global-enchantment dependency. It is not fully online at game creation.</p>
+<h3 id="b9-17-6-once-and-future-king-province-quest-chain">17.6 Once and Future King: province quest chain<a class="heading-link" href="#b9-17-6-once-and-future-king-province-quest-chain" aria-label="Link to 17.6 Once and Future King: province quest chain">#</a></h3><p>The Once and Future King uses event code <code>-513</code>:</p>
+<ol>
+<li>a qualifying province receives rumours;</li>
+<li>the province is flagged;</li>
+<li>a Holy Knight can resolve the quest;</li>
+<li>outcomes include combat, gold, gems, or a magic item;</li>
+<li>successful resolution resets the code to zero.</li>
+</ol>
+<p>The event code is province-local. A world or nation may have several quest provinces, subject to the event gates.</p>
+<h3 id="b9-17-7-grand-hierophant-divine-labour-and-mage-development">17.7 Grand Hierophant: divine labour and mage development<a class="heading-link" href="#b9-17-7-grand-hierophant-divine-labour-and-mage-development" aria-label="Link to 17.7 Grand Hierophant: divine labour and mage development">#</a></h3><p>The combined Grand Hierophant:</p>
+<ul>
+<li>begins from DE&#39;s revised monster 3053;</li>
+<li>receives Divinitus cost 150;</li>
+<li>gains +1 to all non-priest magic paths through <code>#magicboost 53 1</code>;</li>
+<li>has 75 bad-event protection and disease resistance 100;</li>
+<li>can anoint a Mystic or Erytheian Mystic into a Mystic Prophet;</li>
+<li>can teach the transformed mage;</li>
+<li>can gain 150 gold and elemental gems while site searching under a candle-scaled event.</li>
+</ul>
+<p>The site-search reward uses <code>#1d6vis 51</code>. Path group 51 is Elemental, so a successful event grants 1d6 each of Fire, Air, Water, and Earth gems: an expected 14 total elemental gems on success.</p>
+<p>With <code>#req_domchance 5</code>, the conditional success chance at <code>c</code> candles is <code>0.05c</code>. Conditional expected output per eligible month is:</p>
+<ul>
+<li>gold: <code>150 x 0.05c = 7.5c</code>;</li>
+<li>total elemental gems: <code>14 x 0.05c = 0.7c</code>.</li>
+</ul>
+<p>These values assume every other gate is satisfied and do not subtract the opportunity cost of the Site Search order.</p>
+<p>The teaching event visibly gates the target&#39;s Astral threshold while increasing Astral, Fire, Water, and Earth. The broad description states a maximum of three. Whether an elemental path can pass the stated cap under all Mystic randoms remains unresolved without a reliable engine reproduction.</p>
+<h2 id="b9-18-divinitus-support-objects">18. Divinitus Support Objects<a class="heading-link" href="#b9-18-divinitus-support-objects" aria-label="Link to 18. Divinitus Support Objects">#</a></h2><h3 id="b9-18-1-hidden-spells">18.1 Hidden spells<a class="heading-link" href="#b9-18-1-hidden-spells" aria-label="Link to 18.1 Hidden spells">#</a></h3><p>Divinitus contains 26 new-spell blocks and 17 selected-spell blocks. Almost all set school -1 and research level 0, showing that they are components of divine powers and not additions to the ordinary research tree.</p>
+<p>Major families include:</p>
+<table>
+<thead>
+<tr>
+<th>Family</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Permanent gifts</td>
+<td>Gift of Rebirth, Forge Skill, Healing Power, Demonic Ascendance</td>
+</tr>
+<tr>
+<td>Training rituals</td>
+<td>Teachings of the Cyclops, Imbue with Medicine, Lore of Dreams</td>
+</tr>
+<tr>
+<td>Divine control</td>
+<td>Master Enslave Sacreds, Void Enslave, Demon Enslave</td>
+</tr>
+<tr>
+<td>Army blessing</td>
+<td>Master Magic Blessing, Master Demon Blessing, Master Beast Blessing</td>
+</tr>
+<tr>
+<td>Battlefield policy</td>
+<td>God Quake, Boar Frenzy, Desert Guidance, Honed Steel</td>
+</tr>
+<tr>
+<td>Path and enchantment</td>
+<td>Guidance of the Spheres, Power of the Northern Star, Star Power</td>
+</tr>
+<tr>
+<td>Mind and creation</td>
+<td>Divine Spark, Spark of Intellect, Imbue Astral Power</td>
+</tr>
+<tr>
+<td>Item or chassis effects</td>
+<td>Plague Arrow, Inhabit Grove, Judge of Life and Death</td>
+</tr>
+</tbody></table>
+<p>The 43 blocks include helper effects such as Major Insanity and Caster Confusion. A website should mark these as hidden or granted mechanics unless the resolved school and restrictions make them ordinarily accessible.</p>
+<h3 id="b9-18-2-divine-items">18.2 Divine items<a class="heading-link" href="#b9-18-2-divine-items" aria-label="Link to 18.2 Divine items">#</a></h3><p>Divinitus selects item slots 1000-1073 and creates item 1072. Most use Construction level 11. The official manual defines level 11 as unforgeable. Level 13 means an unforgeable unique artifact.</p>
+<p>These items are commonly:</p>
+<ul>
+<li>start items carried by a specific god;</li>
+<li>event-created priesthood tools;</li>
+<li>cursed and non-transferable signatures;</li>
+<li>spell containers;</li>
+<li>unique expressions of divine lore;</li>
+<li>mechanisms for granting an ability that the chassis command set cannot express directly.</li>
+</ul>
+<p>The family includes Void Pearl, Orb of the Nerid, Calathos, Kusanagi-no-Tsurugi, Feather of the Phoenix, Hammer of the Cyclops, Bowl of Blood, Medicine Bag, Fate Charm, Tome of Lore, Bow of Plagues, Golden Arm, Staff of Beasts, Windborne Sail, Rain Stick, Horn of Vanhalla, Staff of the Geyser, Mirror of Dreams, The Last Wish, and Fish Scale Mail.</p>
+<p>The source also modifies Soul Contract and Lifelong Protection with <code>#undcommand 15</code>, supporting an Infernal Spirit priesthood system.</p>
+<h3 id="b9-18-3-divine-sites">18.3 Divine sites<a class="heading-link" href="#b9-18-3-divine-sites" aria-label="Link to 18.3 Divine sites">#</a></h3><p>Divinitus adds 112 sites and selects 5 existing sites. They are predominantly level-0, rarity-5 support sites managed by events.</p>
+<p>Functional groups include:</p>
+<ul>
+<li>blessing sites such as Blessing of Winter, Wind, Earth, Vitality, and Brilliance;</li>
+<li>temple sites such as Temple of the Warrior, Solar Temple, Temple of Storms, and Temple of the Sacred Band;</li>
+<li>recruitment sites such as Apprentice Quarters, Grove of Enchantment, Library of Lore, and Grand College;</li>
+<li>economic sites such as Riches of the Underworld, Jewelled Cavern, and The Crystal Cavern;</li>
+<li>state markers such as Ritual Aftermath, Empty Plinth, Empty Vault, and Unusual Crystal Formation;</li>
+<li>terrain institutions such as Coral Barracks, Deep Forest Clearing, Frozen Barrow, and Bottomless Lake.</li>
+</ul>
+<p>A site can be player-facing, a hidden marker, a recruitment interface, or all three. The catalogue must record how it enters and leaves play.</p>
+<h3 id="b9-18-4-weapons-and-armour">18.4 Weapons and armour<a class="heading-link" href="#b9-18-4-weapons-and-armour" aria-label="Link to 18.4 Weapons and armour">#</a></h3><p>Divinitus adds special weapons numbered 3001-3035 and two armours. These principally serve gods and their items. Examples include Kusanagi-no-Tsurugi, Magic Lariat, Caduceus, Golden Bow, Burning Ray, Lightning Blade, and Perfect Fist.</p>
+<p>Weapon 3034 is defined twice. The later definition copies Stellar Bolt and is referenced as Stellar Bolt by the Stellar Staff and related units. Source references establish the later practical role.</p>
+<h2 id="b9-19-combined-load-order-and-collision-matrix">19. Combined Load Order and Collision Matrix<a class="heading-link" href="#b9-19-combined-load-order-and-collision-matrix" aria-label="Link to 19. Combined Load Order and Collision Matrix">#</a></h2><h3 id="b9-19-1-direct-selected-object-overlap">19.1 Direct selected-object overlap<a class="heading-link" href="#b9-19-1-direct-selected-object-overlap" aria-label="Link to 19.1 Direct selected-object overlap">#</a></h3><table>
+<thead>
+<tr>
+<th>Type</th>
+<th align="right">DE distinct selected</th>
+<th align="right">Divinitus distinct selected</th>
+<th align="right">Shared</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Monster</td>
+<td align="right">3,185</td>
+<td align="right">373</td>
+<td align="right">357</td>
+</tr>
+<tr>
+<td>Item</td>
+<td align="right">629</td>
+<td align="right">75</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>Spell</td>
+<td align="right">2,737</td>
+<td align="right">17</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>Site</td>
+<td align="right">572</td>
+<td align="right">5</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>Nation</td>
+<td align="right">128</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>Weapon</td>
+<td align="right">142</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>Armour</td>
+<td align="right">38</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+</tbody></table>
+<p>The two shared selected items are Soul Contract 348 and Lifelong Protection 396.</p>
+<h3 id="b9-19-2-cross-action-monster-overlap">19.2 Cross-action monster overlap<a class="heading-link" href="#b9-19-2-cross-action-monster-overlap" aria-label="Link to 19.2 Cross-action monster overlap">#</a></h3><p>The earlier direct-selector table understated the integration because Divinitus frequently uses <code>#newmonster</code> on a fixed ID that DE also created or selected.</p>
+<table>
+<thead>
+<tr>
+<th>Relationship</th>
+<th align="right">Shared numeric IDs</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>DE new / Divinitus new</td>
+<td align="right">235</td>
+</tr>
+<tr>
+<td>DE new / Divinitus selected</td>
+<td align="right">10</td>
+</tr>
+<tr>
+<td>DE selected / Divinitus new</td>
+<td align="right">114</td>
+</tr>
+<tr>
+<td>DE selected / Divinitus selected</td>
+<td align="right">357</td>
+</tr>
+</tbody></table>
+<p>These groups overlap with one another because DE may both create and later select the same monster. Divinitus touches 650 distinct fixed monster identities; 600 of them also appear in a DE monster action. In addition, Divinitus creates 69 automatically numbered monsters.</p>
+<p>This proves that the DE edition is deeply integrated. It also creates a large compatibility surface.</p>
+<h3 id="b9-19-3-event-codes-and-variables">19.3 Event codes and variables<a class="heading-link" href="#b9-19-3-event-codes-and-variables" aria-label="Link to 19.3 Event codes and variables">#</a></h3><table>
+<thead>
+<tr>
+<th>Registry</th>
+<th>DE</th>
+<th>Divinitus</th>
+<th>Shared</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Event codes</td>
+<td>-540, -312 to -308, -302 to -300, 0</td>
+<td>-3333, -513, 0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Event variables</td>
+<td>6001-6007, 6011</td>
+<td>325, 326, 328-331</td>
+<td>none</td>
+</tr>
+</tbody></table>
+<p>Code 0 is the official default and reset state, so its use in both mods is expected. No nonzero event-code collision and no variable collision were found.</p>
+<span class="anchor-alias" id="b9-19-4-automatic-id-collision-risk" aria-hidden="true"></span><h3 id="b9-19-4-automatic-allocation">19.4 Automatic allocation<a class="heading-link" href="#b9-19-4-automatic-allocation" aria-label="Link to 19.4 Automatic allocation">#</a></h3><p>Automatic events are ordinary because <code>#newevent</code> has no fixed event ID in the same sense as a monster. Automatic monsters and spells are a different concern. Divinitus contains:</p>
+<ul>
+<li>69 numberless new monsters;</li>
+<li>26 automatically allocated new spells under the current official <code>#newspell</code> syntax.</li>
+</ul>
+<p>Their final IDs depend on the occupied space after earlier mods. The supplied text proves definition order and content but not resolved numeric identities. The independent integrity publication records one exact-version Data Inspector resolution for all 69 monsters and 26 spells; those numbers remain versioned secondary keys rather than permanent object identities.</p>
+<h2 id="b9-20-the-8616-collision">20. The 8616 Collision<a class="heading-link" href="#b9-20-the-8616-collision" aria-label="Link to 20. The 8616 Collision">#</a></h2><h3 id="b9-20-1-exact-source-facts">20.1 Exact source facts<a class="heading-link" href="#b9-20-1-exact-source-facts" aria-label="Link to 20.1 Exact source facts">#</a></h3><p>DE creates monster 8616 as a hidden &quot;Bulk crafting land depositer.&quot; It has a deliberately generic <code>inventory.</code> name, zero gold cost, two miscellaneous slots, extreme stealth, land damage 99, and DE water-overhaul graphics.</p>
+<p>Divinitus later creates monster 8616 as &quot;Crystal Priest,&quot; copying Crystal Mage 340, adding E2G2H2, commander-master status, and recruitment cost fields. The Crystal Cavern then recruits monster 8616.</p>
+<p>This collision is not a parser inference. Both exact blocks explicitly claim the same fixed ID. The public Divinitus 1.15.2 DE source also used 8616 for Crystal Priest, so the pattern predates the supplied 1.15.3 file.</p>
+<h3 id="b9-20-2-likely-consequence">20.2 Likely consequence<a class="heading-link" href="#b9-20-2-likely-consequence" aria-label="Link to 20.2 Likely consequence">#</a></h3><p>Under the frozen order, the later Divinitus definition has the final opportunity to occupy or alter 8616. DE references intended to create or manipulate the hidden bulk-crafting depositer may resolve to the Crystal Priest or to an engine-dependent merged state.</p>
+<p>The official manual warns that two mods changing the same object can behave unpredictably. Without a reliable in-engine reproduction, the library does not assert an exact runtime card. It classifies this as:</p>
+<p><strong>Source-confirmed high-risk compatibility collision; runtime resolution pending.</strong></p>
+<h3 id="b9-20-3-practical-policy">20.3 Practical policy<a class="heading-link" href="#b9-20-3-practical-policy" aria-label="Link to 20.3 Practical policy">#</a></h3><p>For the unmodified supplied files:</p>
+<ul>
+<li>do not assume DE bulk crafting that depends on monster 8616 is safe;</li>
+<li>do not remove or renumber the Divinitus Crystal Priest casually, because its site and events reference it;</li>
+<li>treat any unexpected land bulk-crafting inventory, Crystal Priest, or item-deposit behaviour as related evidence;</li>
+<li>preserve the exact two files when reproducing;</li>
+<li>record which mod the game actually loaded first.</li>
+</ul>
+<h3 id="b9-20-4-independent-compatibility-publication">20.4 Independent compatibility publication<a class="heading-link" href="#b9-20-4-independent-compatibility-publication" aria-label="Link to 20.4 Independent compatibility publication">#</a></h3><p>After Progress Edition 17, the collision was taken into a separate technical publication rather than expanded into another encyclopedia chapter. <em>The DE-Divinitus Compatibility and Integrity Report</em> confirms the intended order, traces the complete 8616 dependency chain, records the 69 automatic monsters and 26 automatic spells under the pinned Data Inspector build, and classifies every active command token against the official manuals, patch history, and current parser.</p>
+<p>A separate repaired edition, <code>Divinitus_1.15.3_DE_compat_8616.dm</code>, removes Crystal Priest&#39;s fixed claim on 8616 and changes The Crystal Cavern to recruit it by name. The two uploaded originals remain unchanged. The repair passed its static and Inspector validation suite, but live-engine acceptance remains pending and a new game is required.</p>
+<p>That work is deliberately independent. Book IX continues to describe the original frozen files and points outward for the remediation record; it does not silently replace the original Divinitus layer or absorb the repair package as Foundation Book XV.</p>
+<h2 id="b9-21-combined-pretender-resolution">21. Combined Pretender Resolution<a class="heading-link" href="#b9-21-combined-pretender-resolution" aria-label="Link to 21. Combined Pretender Resolution">#</a></h2><h3 id="b9-21-1-field-by-field-method">21.1 Field-by-field method<a class="heading-link" href="#b9-21-1-field-by-field-method" aria-label="Link to 21.1 Field-by-field method">#</a></h3><p>For a selected chassis:</p>
+<ol>
+<li>extract the vanilla card;</li>
+<li>apply every DE block for that identity in DE parse-category order;</li>
+<li>follow shapes and copied statistics;</li>
+<li>apply every Divinitus block;</li>
+<li>attach Divinitus items, sites, spells, and events;</li>
+<li>attach national legality from the DE nation blocks;</li>
+<li>classify unresolved inherited or engine-dependent fields.</li>
+</ol>
+<p>For a fixed new ID shared by both mods, add a collision warning before assuming a simple overwrite.</p>
+<h3 id="b9-21-2-final-card-schema">21.2 Final-card schema<a class="heading-link" href="#b9-21-2-final-card-schema" aria-label="Link to 21.2 Final-card schema">#</a></h3><p>Every combined Pretender page should contain:</p>
+<ul>
+<li>identity and all forms;</li>
+<li>ruleset and hashes;</li>
+<li>nations and realms;</li>
+<li>design cost, path cost, starting dominion, and awakening limits;</li>
+<li>paths and path boosts;</li>
+<li>forced scales;</li>
+<li>physical and leadership statistics;</li>
+<li>item slots and starting items;</li>
+<li>battle spells and escorts;</li>
+<li>dominion summons;</li>
+<li>pregame grants;</li>
+<li>temple, fort, terrain, season, and order powers;</li>
+<li>event codes and variables;</li>
+<li>failure and cleanup conditions;</li>
+<li>source provenance by layer;</li>
+<li>unresolved runtime questions;</li>
+<li>strategic jobs and counters.</li>
+</ul>
+<h3 id="b9-21-3-do-not-sum-every-line">21.3 Do not sum every line<a class="heading-link" href="#b9-21-3-do-not-sum-every-line" aria-label="Link to 21.3 Do not sum every line">#</a></h3><p>Not every repeated numeric field is additive. A later <code>#gcost</code> replaces the prior value. A <code>#magicboost</code> adds or subtracts paths under its own semantics. A clear command erases inherited fields. A copied object imports a base before later edits. An event effect occurs conditionally in play rather than changing the design card.</p>
+<p>Resolution is typed, not arithmetic.</p>
+<h2 id="b9-22-strategic-doctrine-for-the-combined-ruleset">22. Strategic Doctrine for the Combined Ruleset<a class="heading-link" href="#b9-22-strategic-doctrine-for-the-combined-ruleset" aria-label="Link to 22. Strategic Doctrine for the Combined Ruleset">#</a></h2><h3 id="b9-22-1-pretender-value-has-four-ledgers">22.1 Pretender value has four ledgers<a class="heading-link" href="#b9-22-1-pretender-value-has-four-ledgers" aria-label="Link to 22.1 Pretender value has four ledgers">#</a></h3><p><strong>Design ledger.</strong> Points, paths, dominion, awakening, and scales.</p>
+<p><strong>Body ledger.</strong> Expansion, combat, movement, survival, slots, and healing.</p>
+<p><strong>State ledger.</strong> Sites, units, commanders, gems, gold, priesthood, and temple output.</p>
+<p><strong>Risk ledger.</strong> Catastrophic triggers, dependence on divine life or location, event exposure, and counters.</p>
+<p>A god that is mediocre in the body ledger can dominate the state ledger. A powerful expander can be a poor design if death disables a national engine.</p>
+<h3 id="b9-22-2-dominion-is-productive-capacity">22.2 Dominion is productive capacity<a class="heading-link" href="#b9-22-2-dominion-is-productive-capacity" aria-label="Link to 22.2 Dominion is productive capacity">#</a></h3><p>Divinitus turns candles into probabilities and thresholds. Dominion now influences:</p>
+<ul>
+<li>ordinary religious survival;</li>
+<li>blessing projection;</li>
+<li>temple-event frequency;</li>
+<li>commander and unit production;</li>
+<li>economic events;</li>
+<li>terrain conversion or settlement;</li>
+<li>global attacks;</li>
+<li>scale changes;</li>
+<li>divine relationships.</li>
+</ul>
+<p>Dominion investment should be assessed by marginal output as well as religious security.</p>
+<h3 id="b9-22-3-temples-are-an-industrial-network">22.3 Temples are an industrial network<a class="heading-link" href="#b9-22-3-temples-are-an-industrial-network" aria-label="Link to 22.3 Temples are an industrial network">#</a></h3><p>Where a god has temple powers, the optimal temple count may rise sharply. The calculation should use:</p>
+<p><code>monthly expected output per temple x expected safe months</code></p>
+<p>against:</p>
+<p><code>temple gold + priest turn + defence cost + capture risk + alternative investment</code></p>
+<p>The network also has geometry. A border temple may project dominion and produce troops but be easy to capture. An interior cave temple may be safer and satisfy terrain gates.</p>
+<h3 id="b9-22-4-awakening-changes-institution-timing">22.4 Awakening changes institution timing<a class="heading-link" href="#b9-22-4-awakening-changes-institution-timing" aria-label="Link to 22.4 Awakening changes institution timing">#</a></h3><p>An imprisoned god may provide a non-Incarnate blessing immediately but delay a Divinitus capital site, priesthood, or temple network. An awake god may start the institution early but consume design points and face battlefield risk.</p>
+<p>The correct question is:</p>
+<blockquote>
+<p>On which turn does each part of the design begin paying?</p>
+</blockquote>
+<h3 id="b9-22-5-gems-are-monthly-endurance">22.5 Gems are monthly endurance<a class="heading-link" href="#b9-22-5-gems-are-monthly-endurance" aria-label="Link to 22.5 Gems are monthly endurance">#</a></h3><p>DE gem longevity changes battle planning. A gem stock on a mage is a reusable monthly combat allowance. This favours:</p>
+<ul>
+<li>mobile defensive casters;</li>
+<li>sequential fort relief;</li>
+<li>several small battles with the same mage;</li>
+<li>survival gear and retreat planning;</li>
+<li>intelligence about later battles in the same month.</li>
+</ul>
+<p>It also rewards the opponent for forcing a poor early battle, routing the mage, blocking movement, or killing the gem carrier.</p>
+<h3 id="b9-22-6-research-has-more-branches">22.6 Research has more branches<a class="heading-link" href="#b9-22-6-research-has-more-branches" aria-label="Link to 22.6 Research has more branches">#</a></h3><p>DE expands viable national spells, summons, underwater tools, and siege options. Divinitus adds hidden chassis effects but usually not ordinary research goals. The queue should be built around national DE breakpoints and the Pretender&#39;s requirements, not the Divinitus helper-spell list.</p>
+<h3 id="b9-22-7-counter-the-system-not-only-the-body">22.7 Counter the system, not only the body<a class="heading-link" href="#b9-22-7-counter-the-system-not-only-the-body" aria-label="Link to 22.7 Counter the system, not only the body">#</a></h3><p>Possible counters include:</p>
+<ul>
+<li>killing or imprisoning the god;</li>
+<li>forcing it away from a required capital or terrain;</li>
+<li>raiding temple provinces;</li>
+<li>denying a key global enchantment or unique unit;</li>
+<li>occupying the site that grants recruitment;</li>
+<li>exhausting site slots;</li>
+<li>disrupting a specific monthly order;</li>
+<li>capturing high-dominion provinces;</li>
+<li>attacking before an awakening-gated institution appears;</li>
+<li>exploiting a catastrophic movement trigger.</li>
+</ul>
+<span class="anchor-alias" id="b9-24-website-and-inspector-schema" aria-hidden="true"></span><h2 id="b9-23-website-architecture">23. Website Architecture<a class="heading-link" href="#b9-23-website-architecture" aria-label="Link to 23. Website Architecture">#</a></h2><h3 id="b9-23-1-core-entities">23.1 Core entities<a class="heading-link" href="#b9-23-1-core-entities" aria-label="Link to 23.1 Core entities">#</a></h3><p>The website should use typed entities rather than one undifferentiated text index:</p>
+<ul>
+<li>ruleset;</li>
+<li>source file;</li>
+<li>object block;</li>
+<li>resolved object;</li>
+<li>monster form;</li>
+<li>nation;</li>
+<li>spell;</li>
+<li>item;</li>
+<li>site;</li>
+<li>blessing;</li>
+<li>event;</li>
+<li>event code;</li>
+<li>event variable;</li>
+<li>relationship;</li>
+<li>claim;</li>
+<li>test;</li>
+<li>article.</li>
+</ul>
+<h3 id="b9-23-2-layered-object-identity">23.2 Layered object identity<a class="heading-link" href="#b9-23-2-layered-object-identity" aria-label="Link to 23.2 Layered object identity">#</a></h3><p>One visible object page should offer tabs:</p>
+<ol>
+<li>vanilla 6.35;</li>
+<li>DE 2.16;</li>
+<li>Divinitus 1.15.3 on vanilla, where meaningful;</li>
+<li>DE 2.16 plus Divinitus 1.15.3;</li>
+<li>historical versions.</li>
+</ol>
+<p>Each field needs provenance. A cost may come from Divinitus while item slots come from DE and base protection remains vanilla.</p>
+<h3 id="b9-23-3-event-relationships">23.3 Event relationships<a class="heading-link" href="#b9-23-3-event-relationships" aria-label="Link to 23.3 Event relationships">#</a></h3><p>Events should not be displayed as 1,514 isolated cards. They should be grouped into systems:</p>
+<p><code>Pretender -&gt; event family -&gt; gate -&gt; effect -&gt; state -&gt; cleanup</code></p>
+<p>The Once and Future King quest chain, Golden Pillar earthquake, Father of Winters calendar, and Great Stag Wild Hunt relationship are ideal graph views.</p>
+<h3 id="b9-23-4-search-facets">23.4 Search facets<a class="heading-link" href="#b9-23-4-search-facets" aria-label="Link to 23.4 Search facets">#</a></h3><p>Useful filters include:</p>
+<ul>
+<li>source layer and version;</li>
+<li>object type and ID;</li>
+<li>nation and age;</li>
+<li>path and school;</li>
+<li>research level;</li>
+<li>terrain;</li>
+<li>temple, fort, capital, and dominion requirements;</li>
+<li>awakening dependency;</li>
+<li>order dependency;</li>
+<li>starting dominion tier;</li>
+<li>scale modification;</li>
+<li>event code or variable;</li>
+<li>direct source, derived, or pending status;</li>
+<li>known collision.</li>
+</ul>
+<h3 id="b9-23-5-data-already-produced">23.5 Data already produced<a class="heading-link" href="#b9-23-5-data-already-produced" aria-label="Link to 23.5 Data already produced">#</a></h3><p>This research edition includes:</p>
+<ul>
+<li><code>mod-index-summary.json</code> - hashes, counts, ranges, overlaps, event registries, and warnings;</li>
+<li><code>mod-object-catalogue.tsv</code> - one row per active source block;</li>
+<li><code>mod-object-blocks.jsonl</code> - full command streams and source lines;</li>
+<li><code>extract_mod_index.py</code> - reproducible extractor.</li>
+</ul>
+<p>The JSONL is a source index, not a resolved database. That distinction should appear in the website interface.</p>
+<h2 id="b9-24-verification-protocol">24. Verification Protocol<a class="heading-link" href="#b9-24-verification-protocol" aria-label="Link to 24. Verification Protocol">#</a></h2><p>Book VIII contains the reusable validation ladder. Applied to this ruleset, every source claim must capture the complete object history across vanilla, DE, and Divinitus, then follow support items, sites, spells, shapes, and events before a final card is asserted.</p>
+<p>A collision-sensitive card is reliable only when it comes from the exact files and order through a current inspector, controlled game, or documented engine export. An unversioned screenshot is useful as a clue, not as resolution.</p>
+<p>Divinitus event tests must also preserve the Pretender, nation, turn, season, terrain, dominion, sites, order, target, relevant code or variable state, eligible province-months, and delayed effects. Candle-scaled probability should be compared with eligible trials rather than with anecdotal successes.</p>
+<h2 id="b9-25-open-and-resolved-compatibility-register">25. Open and Resolved Compatibility Register<a class="heading-link" href="#b9-25-open-and-resolved-compatibility-register" aria-label="Link to 25. Open and Resolved Compatibility Register">#</a></h2><h3 id="b9-25-1-resolved-from-source">25.1 Resolved from source<a class="heading-link" href="#b9-25-1-resolved-from-source" aria-label="Link to 25.1 Resolved from source">#</a></h3><ul>
+<li>The exact file hashes and versions are fixed.</li>
+<li>DE&#39;s six global commands are known.</li>
+<li>The complete DE blessing change set is known.</li>
+<li>Event-code registries have no nonzero cross-mod collision.</li>
+<li>Event-variable registries do not collide.</li>
+<li>Shared selected items are IDs 348 and 396.</li>
+<li>DE and Divinitus share 235 fixed new-monster IDs.</li>
+<li>Divinitus touches 600 fixed monster identities also touched by DE.</li>
+<li>Divinitus weapon 3034 is assigned twice, with the later Stellar Bolt definition used by later references.</li>
+<li>Monster 8616 is claimed by incompatible-looking DE and Divinitus definitions.</li>
+<li>Later author-facing project wording establishes DE first and Divinitus second as the intended order.</li>
+<li>The source contains 69 automatic monster declarations and 26 automatic spell declarations under current documented syntax.</li>
+<li>The pinned Inspector resolves every original automatic monster and spell for the exact frozen order; those numbers remain structured-tool evidence rather than engine exports.</li>
+<li>The independent command audit separates officially documented tokens, later parser-recognised tokens, Inspector annotations, likely spelling errors, and genuinely unresolved commands.</li>
+<li>A separate compatibility edition removes the 8616 collision without altering either uploaded original.</li>
+</ul>
+<h3 id="b9-25-2-pending-reliable-resolution">25.2 Pending reliable resolution<a class="heading-link" href="#b9-25-2-pending-reliable-resolution" aria-label="Link to 25.2 Pending reliable resolution">#</a></h3><ul>
+<li>exact engine behaviour when a later mod issues <code>#newmonster</code> on an occupied fixed ID;</li>
+<li>engine confirmation of the Inspector-resolved 8616 behaviour in the unmodified stack;</li>
+<li>live-engine acceptance of Crystal Cavern recruitment and DE&#39;s Ring, Amulet, and Blood Vial helper chains under the repaired edition;</li>
+<li>engine confirmation of the Inspector-resolved automatic identities;</li>
+<li>the Mystic Prophet elemental-path cap edge case;</li>
+<li>exact event scheduling order for several global state machines;</li>
+<li>whether all broad description claims match every rare gate and cleanup path;</li>
+<li>runtime semantics for the small set of commands left unresolved by the independent command audit.</li>
+</ul>
+<h3 id="b9-25-3-deliberately-not-requested-from-the-player">25.3 Deliberately not requested from the player<a class="heading-link" href="#b9-25-3-deliberately-not-requested-from-the-player" aria-label="Link to 25.3 Deliberately not requested from the player">#</a></h3><p>This project does not require the player to perform these tests. They remain pending until a reliable published reproduction, exact inspector export, or local Dominions executable is available.</p>
+<h2 id="b9-26-operational-checklists">26. Operational Checklists<a class="heading-link" href="#b9-26-operational-checklists" aria-label="Link to 26. Operational Checklists">#</a></h2><h3 id="b9-26-1-before-creating-a-game">26.1 Before creating a game<a class="heading-link" href="#b9-26-1-before-creating-a-game" aria-label="Link to 26.1 Before creating a game">#</a></h3><ul>
+<li>Verify Dominions 6.35 or record the actual patch.</li>
+<li>Verify both exact mod filenames.</li>
+<li>Verify hashes where multiplayer reproducibility matters.</li>
+<li>Enable DE before Divinitus under this library&#39;s frozen ruleset.</li>
+<li>Do not add another overhaul without a collision screen.</li>
+<li>Record map, age, thrones, research, independents, event frequency, and diplomacy rules.</li>
+<li>Design Pretenders under the active mods, not vanilla.</li>
+</ul>
+<h3 id="b9-26-2-before-finalizing-a-pretender">26.2 Before finalizing a Pretender<a class="heading-link" href="#b9-26-2-before-finalizing-a-pretender" aria-label="Link to 26.2 Before finalizing a Pretender">#</a></h3><ul>
+<li>Confirm the chassis is legal for the nation after DE.</li>
+<li>Record every forced scale and path cost.</li>
+<li>Read every form.</li>
+<li>Read the full Divinitus description.</li>
+<li>Identify starting items, sites, armies, and commanders.</li>
+<li>Identify awakening gates.</li>
+<li>Identify temple, terrain, season, and order gates.</li>
+<li>Identify any catastrophe or cleanup condition.</li>
+<li>Recalculate blessing activation under DE.</li>
+<li>Check whether the design depends on a collision-marked object.</li>
+</ul>
+<h3 id="b9-26-3-first-twelve-turns">26.3 First twelve turns<a class="heading-link" href="#b9-26-3-first-twelve-turns" aria-label="Link to 26.3 First twelve turns">#</a></h3><ul>
+<li>Confirm pregame grants arrived.</li>
+<li>Inspect capital sites and recruitment.</li>
+<li>Check starting items and commanders.</li>
+<li>Note which powers require the god awake.</li>
+<li>Build temples only after valuing their divine output.</li>
+<li>Track gem-bearing mages by month under gem longevity.</li>
+<li>Use DE&#39;s site-search clues.</li>
+<li>Record unexpected units, sites, or events with province and turn.</li>
+</ul>
+<h3 id="b9-26-4-multiplayer-host">26.4 Multiplayer host<a class="heading-link" href="#b9-26-4-multiplayer-host" aria-label="Link to 26.4 Multiplayer host">#</a></h3><ul>
+<li>Distribute exact versions, not only Workshop names.</li>
+<li>Publish load order.</li>
+<li>Prohibit silent midgame mod updates.</li>
+<li>Archive the <code>.dm</code> files.</li>
+<li>State whether known collisions are accepted.</li>
+<li>Record any house ruling for an exploit or broken divine chain.</li>
+</ul>
+<h2 id="b9-27-essays">27. Essays<a class="heading-link" href="#b9-27-essays" aria-label="Link to 27. Essays">#</a></h2><h3 id="b9-essay-i-dominions-enhanced-is-a-ruleset-not-a-content-pack">Essay I - Dominions Enhanced Is a Ruleset, Not a Content Pack<a class="heading-link" href="#b9-essay-i-dominions-enhanced-is-a-ruleset-not-a-content-pack" aria-label="Link to Essay I - Dominions Enhanced Is a Ruleset, Not a Content Pack">#</a></h3><p>Calling Dominions Enhanced a content mod understates it. Content can be added while the surrounding grammar remains stable; DE changes the grammar.</p>
+<p>A stronger bow is not only another weapon. It changes how light infantry trade with armour, how shields are valued, how much battlefield space missile troops deserve, and when arrow protection becomes urgent. Better mounts do not only improve cavalry. They change charge exchanges, magical vulnerability, rider survival, and the value of barding. Cheaper water breathing does not only add convenience. It changes which borders are real.</p>
+<p>The six global commands demonstrate the same point at the highest level. Order, Productivity, population change, Luck event frequency, and battle-gem persistence alter calculations that every nation makes. Even a nation with no special DE roster change lives under these laws.</p>
+<p>The magic programme expands the number of credible research branches. That reduces the reliability of memorized queues. A player who knew the vanilla breakpoint for an opponent now faces additional summons, battlefield effects, transformations, and siege tools. Information becomes more valuable because the option tree is wider.</p>
+<p>The nation programme confirms the scale. Some nations receive corrections; others receive new rosters, economies, dominion rules, or successors. New nations occupy the same world and participate in the same Pretender and spell ecosystem.</p>
+<p>The useful way to read the combined game is:</p>
+<blockquote>
+<p>DE is an alternate edition of Dominions 6 built through the modding language.</p>
+</blockquote>
+<p>That model produces better habits. Version numbers appear on guides. Vanilla and DE advice remain separate. Object pages show provenance. Multiplayer hosts freeze files. Strategy begins with the active rules rather than with memory.</p>
+<h3 id="b9-essay-ii-the-pretender-as-a-distributed-institution">Essay II - The Pretender as a Distributed Institution<a class="heading-link" href="#b9-essay-ii-the-pretender-as-a-distributed-institution" aria-label="Link to Essay II - The Pretender as a Distributed Institution">#</a></h3><p>In ordinary analysis, a Pretender has a body, paths, dominion, scales, and a blessing. Divinitus adds a fifth category: institutions.</p>
+<p>A library that recruits sages is not part of the god&#39;s hit-point total, but it may generate more research than another path level. A temple that creates sacred units is not printed in attack density, but it can transform the nation&#39;s force structure. A priesthood event can give existing national mages a second strategic role. A seasonal engine can reshape population and scales across many provinces.</p>
+<p>This changes the meaning of divine death. If a power requires only the chosen chassis identity and continues while the god is dead, the institution may be resilient. If every event requires <code>#req_pretawake</code>, physical presence, or a target order, death shuts down the state.</p>
+<p>It changes the meaning of dominion. Candles become production multipliers. It changes the meaning of temples. They become factories and access nodes. It changes the meaning of awakening. Delayed arrival may postpone an entire economy.</p>
+<p>A distributed institution can also be countered indirectly. Raiders can burn temples. A unique relationship unit can be killed. A global enchantment can be dispelled. A required terrain can be denied. A site can be captured. The god need not be defeated in battle to dismantle the system.</p>
+<p>The best design analysis draws a network:</p>
+<p><code>god -&gt; dominion -&gt; temples/sites -&gt; output -&gt; army/research/economy</code></p>
+<p>and then marks every dependency. A body card shows power. A dependency graph shows resilience.</p>
+<h3 id="b9-essay-iii-monthly-gem-persistence-changes-operational-art">Essay III - Monthly Gem Persistence Changes Operational Art<a class="heading-link" href="#b9-essay-iii-monthly-gem-persistence-changes-operational-art" aria-label="Link to Essay III - Monthly Gem Persistence Changes Operational Art">#</a></h3><p>In a one-battle accounting model, a combat gem is spent at the moment of use. Under DE&#39;s monthly longevity rule, the gem is better understood as a license to cast during all eligible battles that month.</p>
+<p>This changes the unit of planning from battle to itinerary.</p>
+<p>A mage defending a fort, teleporting to a second battle, and participating in a third interception may reuse the same initial allocation. Survival and position become part of gem efficiency. A two-gem script on a fragile mage is no longer only a two-gem risk; it is the potential loss of several battles of access.</p>
+<p>The rule also changes how an opponent should apply pressure. Several battles do not necessarily exhaust the gem carrier. The effective counters are to kill, rout, immobilize, isolate, or force the wrong early script. Intelligence about movement order and likely sequential battles gains value.</p>
+<p>Economically, the marginal value of a battle gem rises with the number of useful battles per month. Strategically, this favours interior lines and mobile casters. Tactically, it rewards scripts that remain useful across varied fights, or careful rescripting when the game permits it before hosting.</p>
+<p>The rule does not make gems infinite. Ritual expenditure, forging, global enchantments, and treasury allocation remain real. It makes battlefield allocation persistent within a calendar boundary. That boundary belongs in every operational plan.</p>
+<span class="anchor-alias" id="b9-essay-iv-versioned-knowledge-is-part-of-the-ruleset" aria-hidden="true"></span><h3 id="b9-essay-iv-versioned-knowledge-is-the-real-encyclopaedia">Essay IV - Versioned Knowledge Is the Real Encyclopaedia<a class="heading-link" href="#b9-essay-iv-versioned-knowledge-is-the-real-encyclopaedia" aria-label="Link to Essay IV - Versioned Knowledge Is the Real Encyclopaedia">#</a></h3><p>An encyclopaedia is often imagined as one perfected description. Dominions does not permit that simplicity.</p>
+<p>Patches change spells and units. DE changes the patch again. Divinitus changes DE. Load order changes the combination. A later release may repair an ID collision while adding a new event gate. A correct article can become wrong without any sentence changing.</p>
+<p>The solution is not constant rewriting without history. It is versioned knowledge.</p>
+<p>Each claim needs:</p>
+<ul>
+<li>a ruleset;</li>
+<li>a source date;</li>
+<li>an evidence label;</li>
+<li>object provenance;</li>
+<li>an optional supersession link.</li>
+</ul>
+<p>The public article can remain easy to read. The complexity belongs in its metadata and source panel. A visitor choosing &quot;DE 2.16 + Divinitus 1.15.3&quot; should see the correct Grand Hierophant. A visitor choosing vanilla should not.</p>
+<p>Versioned knowledge also improves strategy. Old tournament advice can remain valuable when its assumptions are visible. A build that failed under one blessing cost can be reconsidered under another. A nation overhaul can be studied as design history rather than erased.</p>
+<p>The real encyclopaedia cannot be a book of static answers. It needs to answer:</p>
+<blockquote>
+<p>Correct under which world?</p>
+</blockquote>
+<h3 id="b9-related-essays-kept-in-their-original-homes">Related essays kept in their original homes<a class="heading-link" href="#b9-related-essays-kept-in-their-original-homes" aria-label="Link to Related essays kept in their original homes">#</a></h3><p>Book III&#39;s &quot;A Bless Is a Roster Contract&quot; owns the blessing argument. Book VIII&#39;s essays on load order, event systems, and compatibility own the general modding arguments. Book IX applies those ideas to the exact DE/Divinitus ruleset without printing a second version of the same essay.</p>
+<h2 id="b9-appendix-a-source-lint-findings">Appendix A - Source-Lint Findings<a class="heading-link" href="#b9-appendix-a-source-lint-findings" aria-label="Link to Appendix A - Source-Lint Findings">#</a></h2><ol>
+<li>DE contains one extra <code>#rarity 5</code> and <code>#end</code> after site 2372 outside an active object block.</li>
+<li>DE contains one adjacent event start without an intervening <code>#end</code>.</li>
+<li>Divinitus contains four adjacent event starts without intervening <code>#end</code> commands in the Annunaki population chain.</li>
+<li>Divinitus defines weapon 3034 twice.</li>
+<li>Divinitus contains one event without an explicit rarity.</li>
+<li>DE and Divinitus both create 235 of the same fixed monster IDs.</li>
+<li>Monster 8616 has an especially divergent cross-mod purpose.</li>
+</ol>
+<p>These are source observations. They do not by themselves prove a user-visible defect.</p>
+<h2 id="b9-appendix-b-data-schema-warning">Appendix B - Data Schema Warning<a class="heading-link" href="#b9-appendix-b-data-schema-warning" aria-label="Link to Appendix B - Data Schema Warning">#</a></h2><p>The generated object catalogue stores source blocks. It does not:</p>
+<ul>
+<li>import vanilla object cards;</li>
+<li>execute clear and copy semantics into a final card;</li>
+<li>allocate numberless objects;</li>
+<li>simulate category parsing;</li>
+<li>evaluate event probability;</li>
+<li>follow every name reference;</li>
+<li>reproduce the engine.</li>
+</ul>
+<p>It is a provenance and discovery layer. A resolved website database should be built on top of it, never silently substitute it for final game data. The source summary remains in Section 2, the compatibility checklist in Section 26, and the library-wide evidence key in Book I.</p>
+
+{% endraw %}
+    </article>
+    <aside class="sidebar library-toc">
+      <h2>In this book</h2>
+      <nav><a href="#b9-the-technical-encyclopaedia-of-the-frozen-combined-ruleset">The Technical Encyclopaedia of the Frozen Combined Ruleset</a>
+<a href="#b9-1-purpose">1. Purpose</a>
+<a href="#b9-2-frozen-baseline-and-evidence">2. Frozen Baseline and Evidence</a>
+<a href="#b9-3-finding-what-is-needed">3. Finding What Is Needed</a>
+<a href="#b9-4-what-the-combined-modpack-changes">4. What the Combined Modpack Changes</a>
+<a href="#b9-5-how-the-dominions-loader-must-be-read">5. How the Dominions Loader Must Be Read</a>
+<a href="#b9-6-exact-source-inventory">6. Exact Source Inventory</a>
+<a href="#b9-7-the-six-global-de-rules">7. The Six Global DE Rules</a>
+<a href="#b9-8-complete-de-blessing-revision">8. Complete DE Blessing Revision</a>
+<a href="#b9-9-dominions-enhanced-as-an-object-ecosystem">9. Dominions Enhanced as an Object Ecosystem</a>
+<a href="#b9-10-the-de-design-programme">10. The DE Design Programme</a>
+<a href="#b9-11-dominions-enhanced-pretender-analysis">11. Dominions Enhanced Pretender Analysis</a>
+<a href="#b9-12-de-magic-items-and-national-power">12. DE Magic, Items, and National Power</a>
+<a href="#b9-13-de-nations-without-nation-dossiers">13. DE Nations Without Nation Dossiers</a>
+<a href="#b9-14-divinitus-design-philosophy-and-scope">14. Divinitus: Design Philosophy and Scope</a>
+<a href="#b9-15-the-divinitus-event-engine">15. The Divinitus Event Engine</a>
+<a href="#b9-16-divinitus-power-families">16. Divinitus Power Families</a>
+<a href="#b9-17-representative-divinitus-systems">17. Representative Divinitus Systems</a>
+<a href="#b9-18-divinitus-support-objects">18. Divinitus Support Objects</a>
+<a href="#b9-19-combined-load-order-and-collision-matrix">19. Combined Load Order and Collision Matrix</a>
+<a href="#b9-20-the-8616-collision">20. The 8616 Collision</a>
+<a href="#b9-21-combined-pretender-resolution">21. Combined Pretender Resolution</a>
+<a href="#b9-22-strategic-doctrine-for-the-combined-ruleset">22. Strategic Doctrine for the Combined Ruleset</a>
+<a href="#b9-23-website-architecture">23. Website Architecture</a>
+<a href="#b9-24-verification-protocol">24. Verification Protocol</a>
+<a href="#b9-25-open-and-resolved-compatibility-register">25. Open and Resolved Compatibility Register</a>
+<a href="#b9-26-operational-checklists">26. Operational Checklists</a>
+<a href="#b9-27-essays">27. Essays</a>
+<a href="#b9-appendix-a-source-lint-findings">Appendix A - Source-Lint Findings</a>
+<a href="#b9-appendix-b-data-schema-warning">Appendix B - Data Schema Warning</a></nav>
+      <nav class="library-side-links">
+        <a href="/dominions/library/">Complete library</a>
+        <a href="/dominions/library/glossary/">Glossary</a>
+        <a href="/dominions/library/research/">Research register</a>
+        <a href="/downloads/dominions-6-knowledge-library-edition-24.pdf">Edition 24 PDF</a>
+      </nav>
+    </aside>
+  </div>
+  <nav class="library-pagination" aria-label="Adjacent books">
+    <a href="/dominions/library/books/book-viii/"><small>Previous</small>Foundation Book VIII</a>
+    <a class="library-next" href="/dominions/library/books/book-x/"><small>Next</small>Foundation Book X</a>
+  </nav>
+</section>

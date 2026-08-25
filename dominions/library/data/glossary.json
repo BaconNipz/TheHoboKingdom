@@ -1,0 +1,974 @@
+{
+  "schema_version": "1.0.0",
+  "edition": "Progress Edition 24",
+  "entries": [
+    {
+      "term": "Administration",
+      "definition": "A fort percentage used in income and adjacent resource draw calculations.",
+      "primary_section_id": "b2-part-vi-infrastructure-and-administration",
+      "related_section_ids": [
+        "b2-fort-resource-draw",
+        "field-base-and-final-income"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Affliction",
+      "definition": "A persistent injury or impairment usually gained through damage, age, disease, or special effects.",
+      "primary_section_id": "b11-61-afflictions",
+      "related_section_ids": [
+        "b4-part-xiii-afflictions-regeneration-and-lasting-loss",
+        "b11-37-recuperation-and-healers"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Army",
+      "definition": "A convenient name for commanders and assigned troops operating together; not always one indivisible rules object.",
+      "primary_section_id": "b1-army",
+      "related_section_ids": [
+        "b4-part-iii-commanders-squads-leadership-and-army-organisation"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Army rout",
+      "definition": "The battle-wide morale collapse that can force remaining units to retreat even when individual squads have not already routed.",
+      "primary_section_id": "b4-army-rout",
+      "related_section_ids": [
+        "b4-part-xi-morale-fear-rout-and-retreat"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Artifact",
+      "definition": "A unique magic item that only one copy can normally exist at a time.",
+      "primary_section_id": "b12-22-artifacts-as-a-world-state-race",
+      "related_section_ids": [
+        "b5-artifacts",
+        "b5-artifact-races"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Ascension Point",
+      "definition": "A victory point supplied by a claimed Throne of Ascension.",
+      "primary_section_id": "b6-throne-arithmetic",
+      "related_section_ids": [
+        "b1-throne-of-ascension"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Assassin",
+      "definition": "A commander or effect that initiates a restricted battle against a target commander.",
+      "primary_section_id": "b6-part-ix-thugs-supercombatants-assassins-and-remote-force",
+      "related_section_ids": [
+        "b1-assassinations-resolve-before-conventional-movement"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Automatic ID",
+      "definition": "An object identity assigned by the loader when a mod creates an object without a fixed numeric ID.",
+      "primary_section_id": "b8-automatic-allocation",
+      "related_section_ids": [
+        "b9-19-4-automatic-id-collision-risk"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Awakening",
+      "definition": "The process and timing by which a dormant or imprisoned Pretender becomes active.",
+      "primary_section_id": "b3-part-iii-awakening-time-and-the-opening",
+      "related_section_ids": [
+        "b3-awakening-points"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Battle group",
+      "definition": "A force that enters and resolves one tactical battle together; several forces in a province may not always form one group.",
+      "primary_section_id": "b4-battle-groups",
+      "related_section_ids": [
+        "b1-retreats-belong-to-battle-groups"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Battle magic",
+      "definition": "Spells cast during tactical battle under scripting, range, targeting, gem, fatigue, and AI constraints.",
+      "primary_section_id": "b4-part-xiv-battlefield-magic",
+      "related_section_ids": [
+        "b5-part-vi-battlefield-magic-by-function"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Bless",
+      "definition": "The collection of effects granted to a blessed sacred unit or commander.",
+      "primary_section_id": "b3-part-vi-blessings",
+      "related_section_ids": [
+        "b9-8-de-blessing-revision"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Blood slave",
+      "definition": "A Blood-magic resource with unit-like and logistical properties distinct from ordinary gems.",
+      "primary_section_id": "b5-blood-slaves",
+      "related_section_ids": [
+        "b2-blood-hunting"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Bodyguard",
+      "definition": "A unit assigned to protect a commander in an assassination battle, subject to bodyguard limits and arrival rules.",
+      "primary_section_id": "b11-28-bodyguards-and-warning",
+      "related_section_ids": [
+        "b6-assassination-defence"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Booster",
+      "definition": "An item, spell, shape, site, or effect that increases effective magic-path access.",
+      "primary_section_id": "b5-booster-reference",
+      "related_section_ids": [
+        "b5-hidden-and-indirect-access"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Breakpoint",
+      "definition": "A research level or access threshold at which a usable strategic or battlefield package becomes available.",
+      "primary_section_id": "b5-research-breakpoints",
+      "related_section_ids": [
+        "b6-part-v-research-as-a-strategic-response-tree"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Call God",
+      "definition": "The priestly process used to return a dead Pretender, governed by rules distinct from ordinary resurrection.",
+      "primary_section_id": "b3-call-god",
+      "related_section_ids": [
+        "b3-part-vii-pretender-death-recall-and-divine-continuity"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Capital-only",
+      "definition": "A restriction tying recruitment or another feature to a nation's original capital.",
+      "primary_section_id": "b1-capital-only",
+      "related_section_ids": [
+        "b2-recruitment-restrictions"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Cataclysm",
+      "definition": "An endgame mechanism that increases late-game pressure and horror activity under relevant game settings.",
+      "primary_section_id": "b6-cataclysm",
+      "related_section_ids": [
+        "b6-part-xii-thrones-cataclysm-and-endgame-conversion"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Chassis",
+      "definition": "The Pretender's physical form, including cost, paths, slots, statistics, movement, and special abilities.",
+      "primary_section_id": "b3-chassis-roles",
+      "related_section_ids": [
+        "b3-part-ii-chassis-paths-and-design-capabilities",
+        "b12-pretenders"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Collision",
+      "definition": "A conflict in which mods claim or alter the same identifier, code, variable, name reference, or dependent object incompatibly.",
+      "primary_section_id": "b8-part-xi-compatibility-engineering",
+      "related_section_ids": [
+        "b9-19-combined-load-order-and-collision-matrix"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Command",
+      "definition": "A single-hash instruction whose practical meaning depends on its object language, arguments, selector state, and manual context.",
+      "primary_section_id": "b14-syntax",
+      "related_section_ids": [
+        "b14-context",
+        "b8-part-i-the-object-and-parser-model"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Command template",
+      "definition": "An official grammar such as `(terrain)` or a numeric range that generates literal command spellings under stated restrictions.",
+      "primary_section_id": "b14-syntax",
+      "related_section_ids": [
+        "b14-complete-locator"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Commander",
+      "definition": "A unit that can receive strategic orders and may lead troops, cast spells, preach, patrol, build, or perform other commander actions.",
+      "primary_section_id": "b1-commander",
+      "related_section_ids": [
+        "b4-part-iii-commanders-squads-leadership-and-army-organisation"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Commander Point",
+      "definition": "A local recruitment capacity used by commanders, separate from gold, resources, and ordinary Recruitment Points.",
+      "primary_section_id": "b2-commander-points-and-holy-points",
+      "related_section_ids": [
+        "field-commander-points"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Condition",
+      "definition": "A temporary or persistent unit state that changes action, statistics, targeting, recovery, loyalty, or future risk.",
+      "primary_section_id": "b11-60-conditions-are-state-not-flavour-text",
+      "related_section_ids": [
+        "b11-part-xi-conditions-and-lasting-state"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Documentation status",
+      "definition": "The evidence class distinguishing a full official definition, reference-only entry, prose mention, derived template alias, or patch reconciliation.",
+      "primary_section_id": "b14-evidence",
+      "related_section_ids": [
+        "b1-evidence-standard",
+        "b13-classification-model"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Communion",
+      "definition": "A battlefield magical network in which masters gain paths while slaves receive distributed fatigue and certain master-cast personal effects.",
+      "primary_section_id": "b5-part-vii-communions-sabbaths-choruses-and-grand-communions",
+      "related_section_ids": [
+        "b5-designing-a-safe-communion"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Counter",
+      "definition": "A capability that attacks a necessary layer of an enemy plan rather than merely naming a theoretically favourable unit or spell.",
+      "primary_section_id": "b4-part-xv-counter-construction-and-battle-analysis",
+      "related_section_ids": [
+        "b6-counter-portfolios"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Critical hit",
+      "definition": "A fatigue-influenced combat result that can reduce the protection applied against damage.",
+      "primary_section_id": "b4-critical-hits",
+      "related_section_ids": [
+        "b4-part-ix-protection-damage-and-survival"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Dominion",
+      "definition": "A Pretender's religious territorial influence, carrying scales and interacting with gods, provinces, units, events, and elimination.",
+      "primary_section_id": "b3-part-iv-dominion-and-religious-territory",
+      "related_section_ids": [
+        "b6-dominion-as-campaign-pressure"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Dome",
+      "definition": "A province-centred magical defence that may intercept or interfere with remote spells and attacks.",
+      "primary_section_id": "b5-part-ix-domes-remote-attacks-and-magic-movement",
+      "related_section_ids": [
+        "b5-layered-domes"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "DRN",
+      "definition": "The open-ended Dominions Random Number roll used in many opposed checks and damage calculations.",
+      "primary_section_id": "b4-the-open-ended-random-roll",
+      "related_section_ids": [
+        "b1-randomness-and-the-dominions-random-number"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Event",
+      "definition": "A hosting-time occurrence selected from conditions, rarity, state, targets, codes, variables, and effects.",
+      "primary_section_id": "b1-event",
+      "related_section_ids": [
+        "b8-part-vii-event-modding-as-a-state-machine"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Event code",
+      "definition": "An identifier used to coordinate, restrict, or connect event logic; collisions can corrupt chains across mods.",
+      "primary_section_id": "b8-codes-and-variables",
+      "related_section_ids": [
+        "b9-19-combined-load-order-and-collision-matrix"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Event variable",
+      "definition": "Stored event state used by modded event systems to remember counters, flags, or progression.",
+      "primary_section_id": "b8-codes-and-variables",
+      "related_section_ids": [
+        "b8-event-chains"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Experience",
+      "definition": "Unit-specific development gained over time and through battle, producing star bonuses at defined thresholds.",
+      "primary_section_id": "b11-54-experience-thresholds",
+      "related_section_ids": [
+        "b11-56-veteran-preservation"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Expansion party",
+      "definition": "A commander and troop package intended to capture independent provinces at an acceptable cost and tempo.",
+      "primary_section_id": "b6-expansion-party-roles",
+      "related_section_ids": [
+        "b6-expansion-testing"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Fatigue",
+      "definition": "An accumulating combat burden that reduces performance, increases vulnerability to critical hits, and can cause unconsciousness.",
+      "primary_section_id": "b4-part-x-fatigue-recovery-and-collapse",
+      "related_section_ids": [
+        "b4-fatigue-as-offence"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Fear",
+      "definition": "An effect that pressures enemy morale and can accelerate rout without directly killing every target.",
+      "primary_section_id": "b4-fear",
+      "related_section_ids": [
+        "b4-part-xi-morale-fear-rout-and-retreat"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Fort",
+      "definition": "A fortified location that changes recruitment, administration, resource draw, supply, ownership, siege, and retreat behaviour.",
+      "primary_section_id": "b2-part-vi-infrastructure-and-administration",
+      "related_section_ids": [
+        "b2-part-viii-siege-and-fort-control"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Formation",
+      "definition": "A squad arrangement that changes density, frontage, contact time, exposure, and movement through the battlefield.",
+      "primary_section_id": "b4-part-v-formations-placement-and-contact",
+      "related_section_ids": [
+        "b4-formation-fighter"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Gem",
+      "definition": "A magical resource associated with a non-Blood path and used for rituals, forging, empowerment, and some battle spells.",
+      "primary_section_id": "b1-gem",
+      "related_section_ids": [
+        "b5-part-iv-gems-slaves-and-magical-logistics"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Global enchantment",
+      "definition": "A persistent ritual effect with broad world impact and political consequences.",
+      "primary_section_id": "b5-part-x-global-enchantments-and-dispel-wars",
+      "related_section_ids": [
+        "b1-global-enchantment"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Grand Communion",
+      "definition": "A special strategic or large-scale communion system with rules distinct from an ordinary battlefield communion.",
+      "primary_section_id": "b5-grand-communions-are-different",
+      "related_section_ids": [
+        "b5-part-vii-communions-sabbaths-choruses-and-grand-communions"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Harassment",
+      "definition": "A melee pressure mechanic in which repeated attackers can degrade a defender's effective defence.",
+      "primary_section_id": "b4-harassment",
+      "related_section_ids": [
+        "b4-part-vii-melee-resolution"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Holy Point",
+      "definition": "A local recruitment capacity used by some sacred or holy commanders and units.",
+      "primary_section_id": "b2-commander-points-and-holy-points",
+      "related_section_ids": [
+        "field-holy-points"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Heroic ability",
+      "definition": "A growing special trait received by an eligible non-Pretender commander while in the Hall of Fame.",
+      "primary_section_id": "b11-57-what-is-officially-established",
+      "related_section_ids": [
+        "b11-58-community-derived-heroic-families"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Horror Mark",
+      "definition": "A persistent, stackable hidden mark that creates a monthly risk of a horror attack and makes the bearer a preferred target.",
+      "primary_section_id": "b11-63-curse-and-horror-mark",
+      "related_section_ids": [
+        "b11-42-damage-reversal-blood-vengeance-curses-and-horror-marks"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Host",
+      "definition": "To resolve submitted turns; also the computer or service performing that resolution.",
+      "primary_section_id": "b1-host",
+      "related_section_ids": [
+        "b1-the-complete-63-step-hosting-sequence"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Incarnate",
+      "definition": "A blessing condition generally requiring the Pretender to be active for the marked effect to function.",
+      "primary_section_id": "b3-incarnate-effects",
+      "related_section_ids": [
+        "b3-how-blessings-work"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Inspector",
+      "definition": "A structured data viewer used to inspect game or mod objects; its version and load order determine what it can prove.",
+      "primary_section_id": "b12-part-i-the-object-reference-method",
+      "related_section_ids": [
+        "b9-24-website-and-inspector-schema",
+        "b12-maintenance"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Laboratory",
+      "definition": "Infrastructure required for research and most rituals and forging; construction finishes too late for earlier same-turn uses.",
+      "primary_section_id": "b2-laboratories",
+      "related_section_ids": [
+        "b1-building-construction"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Leadership",
+      "definition": "Commander capacity and type governing troop assignment, morale effects, and special troop compatibility.",
+      "primary_section_id": "b11-24-three-leadership-pools",
+      "related_section_ids": [
+        "b4-special-leadership"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Load order",
+      "definition": "The order in which enabled mods are applied, determining which later definitions overwrite or extend earlier ones.",
+      "primary_section_id": "b8-load-order",
+      "related_section_ids": [
+        "b9-19-combined-load-order-and-collision-matrix"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Mage-turn",
+      "definition": "One mage's opportunity to research, forge, cast, move, search, patrol, or perform another mutually exclusive order.",
+      "primary_section_id": "b5-mage-turn-opportunity-cost",
+      "related_section_ids": [
+        "b2-gem-income-and-mage-turn-economy"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Mercenary company",
+      "definition": "A named, time-limited force bid for during hosting, represented by a commander, troops, price, availability, and continuity fields.",
+      "primary_section_id": "b12-44-mercenary-company-records",
+      "related_section_ids": [
+        "b2-mercenaries"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Magic phase",
+      "definition": "Community shorthand for the early hosting steps containing rituals, magical movement, remote attacks, and associated battles.",
+      "primary_section_id": "b1-magic-phase",
+      "related_section_ids": [
+        "b1-phase-ii-magic-and-special-threats"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Magic Being",
+      "definition": "A unit class requiring magic leadership unless an overlapping undead or demon tag makes undead leadership take precedence.",
+      "primary_section_id": "b11-11-magic-being",
+      "related_section_ids": [
+        "b11-8-classes-can-overlap"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Magic Resistance",
+      "definition": "A defence statistic used in opposed checks against many spells and supernatural effects.",
+      "primary_section_id": "b4-magic-resistance-contests",
+      "related_section_ids": [
+        "b4-penetration"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Message substitution",
+      "definition": "A case-sensitive double-hash token inserted inside supported event or enchantment text rather than issued as a mod command.",
+      "primary_section_id": "b14-syntax",
+      "related_section_ids": [
+        "b8-messages-can-carry-required-object-names"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Mindless",
+      "definition": "A leadership and morale category with special command, routing, and survival behaviour.",
+      "primary_section_id": "b11-12-mindless",
+      "related_section_ids": [
+        "b4-mindless-troops"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Mod",
+      "definition": "A loaded modification, usually defined through `.dm` commands, that can add or alter data within engine-defined limits.",
+      "primary_section_id": "b1-mod",
+      "related_section_ids": [
+        "b8-part-i-the-object-and-parser-model"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Movement phase",
+      "definition": "Community shorthand for the hosting steps resolving friendly movement, other movement, movement battles, and storming.",
+      "primary_section_id": "b1-movement-phase",
+      "related_section_ids": [
+        "b1-movement-and-conquest"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "NAP",
+      "definition": "A non-aggression pact whose exact meaning depends on explicit player convention unless the game setting makes it binding.",
+      "primary_section_id": "b6-non-aggression-pacts",
+      "related_section_ids": [
+        "b6-binding-diplomacy"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Object ID",
+      "definition": "A numeric or automatic identity used by the engine, data layer, or mod loader to distinguish and reference an object.",
+      "primary_section_id": "b12-1-an-object-is-an-identity-not-merely-a-name",
+      "related_section_ids": [
+        "b8-part-ii-identifiers-allocation-and-collision-safety",
+        "b8-object-lifecycle"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Patch record",
+      "definition": "One source-linked entry representing an official update bullet together with derived classification, domains, commands, canonical destinations, and stable hashes.",
+      "primary_section_id": "b13-11-one-official-bullet-becomes-one-patch-record",
+      "related_section_ids": [
+        "b13-classification-model",
+        "b13-domain-map"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Path",
+      "definition": "A level of magical skill in Fire, Air, Water, Earth, Astral, Death, Nature, Glamour, Blood, or Holy.",
+      "primary_section_id": "b1-path",
+      "related_section_ids": [
+        "b5-part-ii-paths-schools-and-access"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Penetration",
+      "definition": "A bonus applied to the attacking side of relevant Magic Resistance contests.",
+      "primary_section_id": "b4-penetration",
+      "related_section_ids": [
+        "b4-magic-resistance-contests"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Pillage",
+      "definition": "A strategic order that converts population and order into immediate damage, unrest, and sometimes resources or gold.",
+      "primary_section_id": "b2-pillaging-and-raiding",
+      "related_section_ids": [
+        "b6-pillage-as-a-campaign-tool"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Plane",
+      "definition": "A distinct strategic map layer such as the surface, caves, or another connected world.",
+      "primary_section_id": "b1-plane",
+      "related_section_ids": [
+        "b8-gates-and-multiple-planes"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Population",
+      "definition": "A province value influencing income, supplies, recruitment capacity, events, and the effects of pillaging or Blood Hunting.",
+      "primary_section_id": "b2-population",
+      "related_section_ids": [
+        "b2-part-vii-population-unrest-pillage-patrol-and-blood-hunting"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Pretender",
+      "definition": "The designed god of a nation or team, providing dominion, scales, blessings, paths, and a physical chassis.",
+      "primary_section_id": "b1-pretender",
+      "related_section_ids": [
+        "b3-part-i-pretender-design-as-a-national-system",
+        "b12-pretenders"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Province Defence",
+      "definition": "Locally purchased automatic defence that appears when a province is attacked and cannot move as a normal army.",
+      "primary_section_id": "b2-part-ix-province-defence",
+      "related_section_ids": [
+        "b6-province-defence-as-delay-and-information"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Recruitment Point",
+      "definition": "A local capacity that limits ordinary troop recruitment independently of gold and resources.",
+      "primary_section_id": "b2-recruitment-points",
+      "related_section_ids": [
+        "field-recruitment-points"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Regeneration",
+      "definition": "Exact-percentage recovery of hit points during battle, with body-class, affliction, and damage-tempo interactions.",
+      "primary_section_id": "b11-35-regeneration-families",
+      "related_section_ids": [
+        "b4-regeneration"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Remote attack",
+      "definition": "A ritual or effect that attacks a distant province or commander without conventional movement.",
+      "primary_section_id": "b5-part-ix-domes-remote-attacks-and-magic-movement",
+      "related_section_ids": [
+        "b1-remote-attacks-and-magic-battles"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Repel",
+      "definition": "A weapon-length interaction allowing a defender to threaten or deter an incoming shorter-reach melee attack.",
+      "primary_section_id": "b4-repel",
+      "related_section_ids": [
+        "b4-part-vii-melee-resolution"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Research point",
+      "definition": "A contribution toward progress in a school; research resolves very early during hosting.",
+      "primary_section_id": "b1-research-point",
+      "related_section_ids": [
+        "b5-the-research-formula"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Ritual",
+      "definition": "A strategic spell cast outside tactical battle.",
+      "primary_section_id": "b1-ritual",
+      "related_section_ids": [
+        "b5-part-viii-rituals-and-strategic-magic"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Rout",
+      "definition": "A unit or squad state in which it attempts to leave battle because morale has failed.",
+      "primary_section_id": "b1-rout",
+      "related_section_ids": [
+        "b4-part-xi-morale-fear-rout-and-retreat"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Sacred",
+      "definition": "A unit eligible to receive a blessing and often affected by special recruitment or upkeep rules.",
+      "primary_section_id": "b1-sacred",
+      "related_section_ids": [
+        "b3-sacred-capacity"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Scale",
+      "definition": "One value in the dominion pairs governing Order, Production, temperature, Growth, Fortune, and Magic.",
+      "primary_section_id": "b1-scale",
+      "related_section_ids": [
+        "b3-part-v-scales"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "School",
+      "definition": "A research category that unlocks spells at successive levels.",
+      "primary_section_id": "b5-research-schools",
+      "related_section_ids": [
+        "b5-part-iii-research-as-strategic-planning"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Siege strength",
+      "definition": "The attacking contribution used against a fort's walls during siege resolution.",
+      "primary_section_id": "field-siege-calculation",
+      "related_section_ids": [
+        "b2-part-viii-siege-and-fort-control"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Site",
+      "definition": "A province feature that can provide gems, gold, recruitment, discounts, rituals, unrest, disease, or other effects.",
+      "primary_section_id": "b12-part-vi-thrones-and-magic-sites",
+      "related_section_ids": [
+        "b1-site",
+        "b2-part-x-sites-gems-and-magical-capital"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Size point",
+      "definition": "A unit of battlefield-square occupancy used by unit size and formation density.",
+      "primary_section_id": "b1-size-point",
+      "related_section_ids": [
+        "b4-square-capacity"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Special dominion",
+      "definition": "A national or Pretender rule that changes what dominion does beyond ordinary candle and scale effects.",
+      "primary_section_id": "b12-part-viii-special-dominion-systems",
+      "related_section_ids": [
+        "b3-special-dominions",
+        "b3-test-p11-special-dominions"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Spell fatigue",
+      "definition": "Fatigue generated by spellcasting after spell cost, caster skill, gems, and other modifiers.",
+      "primary_section_id": "b4-spell-fatigue",
+      "related_section_ids": [
+        "b5-fatigue-and-overcasting"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Squad",
+      "definition": "A tactical troop group assigned to a commander and given one formation and order set.",
+      "primary_section_id": "b1-squad",
+      "related_section_ids": [
+        "b4-squads"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Starvation",
+      "definition": "The post-battle condition caused by insufficient supplies, producing disease, morale, and attritional consequences.",
+      "primary_section_id": "b2-starvation",
+      "related_section_ids": [
+        "b1-starvation-is-late"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Stealth",
+      "definition": "The ability to move or remain hidden in hostile territory, opposed by patrol and detection effects.",
+      "primary_section_id": "b6-patrol-and-stealth",
+      "related_section_ids": [
+        "b1-sneaking-discovery-can-cause-a-late-battle"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Summon relation",
+      "definition": "A versioned link from a summoning spell to the unit, unit group, or selection rule that produces its result.",
+      "primary_section_id": "b12-24-a-summon-record-is-a-relationship",
+      "related_section_ids": [
+        "b5-summoning"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Supply",
+      "definition": "Provincial and army logistical capacity used to feed units and modified by terrain, forts, dominion, seasons, and abilities.",
+      "primary_section_id": "b2-part-v-supplies-logistics-and-starvation",
+      "related_section_ids": [
+        "b6-part-vi-logistics-supply-and-operational-reach"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Taskmaster",
+      "definition": "A leadership ability that manages slave units and changes their morale handling.",
+      "primary_section_id": "b11-26-taskmaster-beast-master-and-special-followers",
+      "related_section_ids": [
+        "b4-taskmasters"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Tempo",
+      "definition": "The rate at which a position turns present resources and opportunities into initiative before opponents can answer.",
+      "primary_section_id": "b6-tempo",
+      "related_section_ids": [
+        "b6-initiative"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Throne of Ascension",
+      "definition": "A claimable special site providing Ascension Points and other effects toward the configured victory condition.",
+      "primary_section_id": "b12-36-thrones-are-sites-with-victory-meaning",
+      "related_section_ids": [
+        "b1-throne-of-ascension",
+        "b6-part-xii-thrones-cataclysm-and-endgame-conversion"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Thug",
+      "definition": "A relatively cheap, equipped commander designed for a bounded independent combat or raiding role.",
+      "primary_section_id": "b6-part-ix-thugs-supercombatants-assassins-and-remote-force",
+      "related_section_ids": [
+        "b6-thug-roles"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Trample",
+      "definition": "A size-based attack produced by moving through smaller units, with displacement, damage, and fatigue consequences.",
+      "primary_section_id": "b11-45-trample",
+      "related_section_ids": [
+        "b4-trampling"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Unit class",
+      "definition": "One of several overlapping type tags that can determine leadership, targeting, supplies, healing, morale, immunity, or movement.",
+      "primary_section_id": "b11-8-classes-can-overlap",
+      "related_section_ids": [
+        "b11-part-ii-unit-classes-and-status-tags"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Unrest",
+      "definition": "A province condition that reduces income and administration and interacts with recruitment, events, patrol, pillage, and Blood Hunting.",
+      "primary_section_id": "b1-unrest",
+      "related_section_ids": [
+        "b2-part-vii-population-unrest-pillage-patrol-and-blood-hunting"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Upkeep",
+      "definition": "The recurring gold cost of maintaining units and commanders, paid after income during hosting.",
+      "primary_section_id": "b1-upkeep",
+      "related_section_ids": [
+        "b2-upkeep"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Version delta",
+      "definition": "An official or verified change between two named ruleset versions, kept separate from the current rule it modifies.",
+      "primary_section_id": "b13-3-patch-notes-are-deltas-not-replacement-manuals",
+      "related_section_ids": [
+        "b13-release-timeline",
+        "b13-stale-guide-repair"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Wall integrity",
+      "definition": "The remaining defensive strength of a fort during siege, reduced by besiegers and restored by defenders.",
+      "primary_section_id": "b2-part-viii-siege-and-fort-control",
+      "related_section_ids": [
+        "field-siege-calculation"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Wish",
+      "definition": "A high-level Astral spell offering a defined but partly version-sensitive set of requested outcomes.",
+      "primary_section_id": "b5-wish",
+      "related_section_ids": [
+        "b5-test-18-wish"
+      ],
+      "aliases": []
+    },
+    {
+      "term": "Zone of control",
+      "definition": "A battlefield movement constraint created by nearby hostile units.",
+      "primary_section_id": "b4-zones-of-control",
+      "related_section_ids": [
+        "b4-part-v-formations-placement-and-contact"
+      ],
+      "aliases": []
+    }
+  ]
+}
