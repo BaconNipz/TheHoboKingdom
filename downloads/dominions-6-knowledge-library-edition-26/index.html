@@ -1,0 +1,80 @@
+---
+title: Dominions 6 Knowledge Library — Edition 26 PDF
+description: Download the complete 793-page Progress Edition 26 PDF.
+nav_section: downloads
+---
+
+<section class="page-hero">
+  <div class="shell">
+    <div class="breadcrumbs">
+      <a href="{{ '/downloads/' | relative_url }}">Downloads</a>
+      <span aria-hidden="true">/</span>
+      <span>Dominions 6 Knowledge Library</span>
+    </div>
+    <p class="eyebrow">Progress Edition 26</p>
+    <h1>Download the complete Knowledge Library.</h1>
+    <p class="lead">The 793-page reader's edition, prepared for offline reading, archiving, printing, or sharing.</p>
+    <div class="meta-row">
+      <span class="status status--stable">Verified release</span>
+      <span class="meta-chip">3.48 MB PDF</span>
+      <span class="meta-chip">26 August 2026</span>
+    </div>
+  </div>
+</section>
+
+<section class="section shell">
+  <div class="content-grid">
+    <div class="content">
+      <h2>Progress Edition 26</h2>
+      <p>This release completes the core patrol-detection curve and strengthens the evidence boundaries around survivor morale, fatigue recovery, harassment, mounted targeting, combat gems, communions, hostile movement, Raid, pillage, and binding NAPs. It retains all sixteen books, the glossary, reading paths, research register, and linked navigation.</p>
+      <button class="button" type="button" data-pdf-download>Download Edition 26 PDF</button>
+      <p data-pdf-status aria-live="polite">Ready to download.</p>
+      <div class="notice">
+        <p><strong>Integrity:</strong> SHA-256 <code>8ca17b3a452b876b0950cd5dcc12290dc07e778b0ef5685f0a754e9235c7a10c</code>.</p>
+      </div>
+    </div>
+    <aside class="sidebar">
+      <h2>Continue reading online</h2>
+      <nav>
+        <a href="{{ '/dominions/library/' | relative_url }}">Knowledge Library</a>
+        <a href="{{ '/dominions/library/books/book-xii/' | relative_url }}">Book XII object reference</a>
+        <a href="{{ '/dominions/library/research/' | relative_url }}">Research register</a>
+      </nav>
+    </aside>
+  </div>
+</section>
+
+<script>
+(() => {
+  const button = document.querySelector("[data-pdf-download]");
+  const status = document.querySelector("[data-pdf-status]");
+  const parts = ["part-000.bin", "part-001.bin", "part-002.bin", "part-003.bin", "part-004.bin", "part-005.bin"];
+  const expectedHash = "8ca17b3a452b876b0950cd5dcc12290dc07e778b0ef5685f0a754e9235c7a10c";
+  const hex = (buffer) => [...new Uint8Array(buffer)].map((byte) => byte.toString(16).padStart(2, "0")).join("");
+
+  button.addEventListener("click", async () => {
+    button.disabled = true;
+    status.textContent = "Preparing the PDF…";
+    try {
+      const responses = await Promise.all(parts.map((part) => fetch(part)));
+      if (responses.some((response) => !response.ok)) throw new Error("A PDF segment could not be loaded.");
+      const chunks = await Promise.all(responses.map((response) => response.arrayBuffer()));
+      const pdf = new Blob(chunks, { type: "application/pdf" });
+      const digest = hex(await crypto.subtle.digest("SHA-256", await pdf.arrayBuffer()));
+      if (digest !== expectedHash) throw new Error("The PDF integrity check failed.");
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(pdf);
+      link.download = "dominions-6-knowledge-library-progress-edition-26.pdf";
+      document.body.append(link);
+      link.click();
+      link.remove();
+      window.setTimeout(() => URL.revokeObjectURL(link.href), 1000);
+      status.textContent = "Download ready. The integrity check passed.";
+    } catch (error) {
+      status.textContent = error.message || "The PDF could not be prepared. Please try again.";
+    } finally {
+      button.disabled = false;
+    }
+  });
+})();
+</script>
