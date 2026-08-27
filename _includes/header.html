@@ -17,6 +17,9 @@
       <a href="{{ '/downloads/' | relative_url }}"{% if page.nav_section == "downloads" %} aria-current="page"{% endif %}>Downloads</a>
       <a href="{{ '/about/' | relative_url }}"{% if page.nav_section == "about" %} aria-current="page"{% endif %}>About</a>
     </nav>
+    <a class="nav-search" href="{{ '/search/' | relative_url }}"{% if page.nav_section == "search" %} aria-current="page"{% endif %}>
+      <span aria-hidden="true">⌕</span>
+      <span>Search</span>
+    </a>
   </div>
 </header>
-

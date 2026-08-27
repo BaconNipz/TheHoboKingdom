@@ -1,21 +1,55 @@
 - id: dominions
   title: Dominions 6
   url: /dominions/
+  mark: D6
   status: active
   status_label: Active
-  updated: 26 August 2026
+  updated: 27 August 2026
   description: The Edition 26 Knowledge Library, official-manual nation references, game guides, modding records, and the diplomacy overhaul.
+  phase: Reference expansion
+  next: Research tools and nation dossiers
   tags:
     - Guides
     - Modding
 
+- id: aura
+  title: AURA
+  url: /aura/
+  mark: AU
+  status: active
+  status_label: Active
+  updated: 27 August 2026
+  description: A working self-development RPG prototype built around real goals, skills, quests, classes, rewards, and long-term mastery.
+  phase: Working prototype
+  next: Substantial v3 development pass
+  tags:
+    - Application
+    - Progression
+
+- id: vintage-story
+  title: Vintage Story
+  url: /vintage-story/
+  mark: VS
+  status: active
+  status_label: Active
+  updated: 27 August 2026
+  description: A versioned record of the three-player survival world, roles, mod stack, early progression, server setup, and fixes.
+  phase: Multiplayer trial
+  next: Stable mod manifest and joining guide
+  tags:
+    - Modpacks
+    - Survival
+
 - id: stalker
   title: S.T.A.L.K.E.R.
   url: /stalker/
+  mark: SZ
   status: active
   status_label: Active
-  updated: 23 July 2026
-  description: StalkerNet development, stable builds, Zone references, and modding notes.
+  updated: 27 August 2026
+  description: StalkerNet development, stable builds, Zone references, modding notes, and short fiction.
+  phase: Archive expansion
+  next: Complete StalkerNet changelog
   tags:
     - StalkerNet
     - Tools
@@ -23,10 +57,13 @@
 - id: minecraft
   title: Minecraft
   url: /minecraft/
+  mark: MC
   status: active
   status_label: Active
-  updated: 23 July 2026
+  updated: 27 August 2026
   description: Friend-group modpacks, installation notes, progression changes, and version records.
+  phase: Building and testing
+  next: Confirmed version and mod manifest
   tags:
     - Modpacks
     - Forge
@@ -34,10 +71,13 @@
 - id: dnd
   title: Dungeons & Dragons
   url: /dnd/
+  mark: D20
   status: active
   status_label: Active
-  updated: 23 July 2026
+  updated: 27 August 2026
   description: Campaign records, characters, handouts, homebrew, and quick references.
+  phase: Public archive pass
+  next: Player-safe campaign chronicles
   tags:
     - Campaigns
     - Homebrew
@@ -45,10 +85,13 @@
 - id: tabletop
   title: Tabletop Projects
   url: /tabletop/
+  mark: TT
   status: active
   status_label: Active
-  updated: 23 July 2026
+  updated: 27 August 2026
   description: "Z-Land material and The Last of Us: Escape the Dark expansion work."
+  phase: Playtest material
+  next: Versioned project records and printables
   tags:
     - Printables
     - Design
@@ -56,9 +99,26 @@
 - id: bg3
   title: Baldur's Gate 3
   url: /bg3/
+  mark: BG3
   status: planned
   status_label: Planned
   updated: 23 July 2026
   description: A future home for mod collections, party builds, and co-op notes.
+  phase: Held for later
+  next: First confirmed collection
   tags:
     - Future
+
+- id: armoury
+  title: Armoury & History
+  url: /armoury/
+  mark: AH
+  status: planned
+  status_label: Planned
+  updated: 27 August 2026
+  description: Companion articles, transcripts, sources, and research notes for the historical arms and armour video project.
+  phase: First article planned
+  next: Sten video companion
+  tags:
+    - History
+    - Video

@@ -8,7 +8,7 @@ nav_section: about
   <div class="shell">
     <p class="eyebrow">About the site</p>
     <h1>A practical archive for projects that refuse to stay small.</h1>
-    <p class="lead">TheHoboKingdom began as a place to keep game notes and has grown into a home for guides, mods, applications, campaign material, and shared projects.</p>
+    <p class="lead">TheHoboKingdom began as a place to keep game notes and grew into the home for projects that became too large to leave scattered through folders and old conversations.</p>
   </div>
 </section>
 
@@ -21,6 +21,27 @@ nav_section: about
       <h2>How material is organised</h2>
       <p>Projects are grouped by game. Guides have stable addresses and clear update dates. Downloads are kept separate from drafts so an unfinished experiment cannot be mistaken for a reliable release.</p>
 
+      <h2 id="labels">What the labels mean</h2>
+      <div class="content-badges" aria-label="Content status labels">
+        <span class="content-badge content-badge--official">Official rule</span>
+        <span class="content-badge content-badge--tested">Tested result</span>
+        <span class="content-badge content-badge--strategy">Strategy</span>
+        <span class="content-badge content-badge--modded">Modded</span>
+        <span class="content-badge content-badge--research">Open research</span>
+        <span class="content-badge content-badge--playtest">Playtest</span>
+      </div>
+      <ul>
+        <li><strong>Official rule:</strong> based directly on the relevant official manual or documentation.</li>
+        <li><strong>Tested result:</strong> reproduced or otherwise checked in the stated version.</li>
+        <li><strong>Strategy:</strong> an interpretation or recommendation rather than an official rule.</li>
+        <li><strong>Modded:</strong> belongs to a named mod and should not be carried into an unmodded game without checking.</li>
+        <li><strong>Open research:</strong> useful evidence exists, but the claim is not being treated as closed.</li>
+        <li><strong>Playtest:</strong> usable work that is still expected to change.</li>
+      </ul>
+
+      <h2>Writing voice</h2>
+      <p>The site uses first person when explaining why a project exists, “we” for shared games and plans, and neutral terms such as “players” or “nations” inside reference material. Technical writing should remain direct and readable without flattening uncertain evidence into false confidence.</p>
+
       <h2>Built in the open</h2>
       <p>The website is hosted through GitHub Pages. Its source and history are available in the <a href="https://github.com/BaconNipz/TheHoboKingdom">TheHoboKingdom repository</a>.</p>
     </div>
@@ -31,6 +52,8 @@ nav_section: about
         <a href="{{ '/projects/' | relative_url }}">Project directory</a>
         <a href="{{ '/guides/' | relative_url }}">Guide library</a>
         <a href="{{ '/downloads/' | relative_url }}">Downloads</a>
+        <a href="{{ '/search/' | relative_url }}">Search</a>
+        <a href="#labels">Content labels</a>
       </nav>
     </aside>
   </div>

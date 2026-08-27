@@ -1,0 +1,59 @@
+---
+title: Minecraft modpack common fixes
+description: A careful troubleshooting record for keybind conflicts, inventory behaviour, dependencies, crashes, and joining problems.
+nav_section: guides
+---
+
+<section class="page-hero">
+  <div class="shell">
+    <div class="breadcrumbs"><a href="{{ '/guides/' | relative_url }}">Guides</a><span>/</span><a href="{{ '/minecraft/' | relative_url }}">Minecraft</a><span>/</span><span>Common fixes</span></div>
+    <p class="eyebrow">Troubleshooting record</p>
+    <h1>Fix the profile without destroying the evidence.</h1>
+    <p class="lead">Start with the smallest reversible test, keep the original instance intact, and record the exact change that makes the problem disappear.</p>
+    <div class="content-badges"><span class="content-badge content-badge--tested">Safe checks</span><span class="content-badge content-badge--research">Diagnosis required</span></div>
+  </div>
+</section>
+
+<section class="section shell">
+  <div class="content-grid">
+    <article class="content">
+      <h2 id="inventory">Inventory clicks and hotbar keys behaving strangely</h2>
+      <p>This covers the symptom where clicking an inventory item immediately moves it to another slot while the number keys no longer select the hotbar normally.</p>
+      <ol>
+        <li>Tap and release Shift, Ctrl, and Alt once. A stuck modifier can make an ordinary click behave like a transfer shortcut.</li>
+        <li>Open Controls and search the bindings used by the inventory-management, sorting, mouse-tweaks, or hotbar mods in the pack. Red conflicts deserve attention first.</li>
+        <li>Check whether the number keys fail while walking in the world or only while an inventory is open. Failure everywhere points toward the hotbar bindings; inventory-only behaviour points toward an inventory mode or shortcut.</li>
+        <li>Open the relevant client's mod settings and look for a transfer, sorting, lock, or alternate mouse mode that may have been toggled.</li>
+        <li>Restart the client before changing files. If the behaviour remains, copy the profile and disable only the most likely client-side inventory mod in the copy.</li>
+      </ol>
+      <div class="notice"><p><strong>Do not begin by deleting the whole configuration folder.</strong> That removes the information needed to identify which setting changed and can erase unrelated keybinds that were working properly.</p></div>
+
+      <h2 id="dependencies">Missing dependencies</h2>
+      <ol>
+        <li>Read the first missing-mod or minimum-version line in the loader message.</li>
+        <li>Confirm that the dependency matches the exact Minecraft version and mod loader.</li>
+        <li>Install one required dependency at a time and launch again.</li>
+        <li>Record automatic dependencies in the versioned manifest so the next player does not repeat the same search.</li>
+      </ol>
+
+      <h2 id="crashes">Crashes after adding or updating a mod</h2>
+      <ol>
+        <li>Preserve the last profile that launched successfully.</li>
+        <li>Read the crash report for the first named mod, mixin, missing class, or dependency rather than the final generic exit code.</li>
+        <li>Reproduce the crash in a copied profile with the same world removed from the test.</li>
+        <li>Undo the most recent change. If the copied profile launches, restore changes one at a time until the fault returns.</li>
+        <li>Never open an important world with a deliberately incomplete mod set unless its backup has already been checked.</li>
+      </ol>
+
+      <h2 id="joining">One player cannot join</h2>
+      <ul>
+        <li>Compare the exported profile or manifest rather than relying on mod counts alone.</li>
+        <li>Confirm game version, loader version, mod versions, configuration files, and any world-required datapacks.</li>
+        <li>Separate network reachability from a mod mismatch: a timeout, rejected handshake, and missing registry entry are different problems.</li>
+        <li>Record the first successful joining method as the baseline before changing networking software again.</li>
+      </ul>
+    </article>
+
+    <aside class="sidebar"><h2>On this page</h2><nav><a href="#inventory">Inventory and hotbar</a><a href="#dependencies">Dependencies</a><a href="#crashes">Crashes</a><a href="#joining">Joining</a><a href="{{ '/minecraft/' | relative_url }}">Minecraft hub</a></nav></aside>
+  </div>
+</section>

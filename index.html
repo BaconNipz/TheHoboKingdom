@@ -1,15 +1,16 @@
 ---
 title: Home
-description: TheHoboKingdom is a home for ongoing game projects, practical guides, modpacks, tools, and tabletop material.
+description: TheHoboKingdom keeps long-running game projects, applications, guides, modpacks, tools, and tabletop material together.
 nav_section: home
+og_image: /assets/images/dominions-6-library-edition-26.png
 ---
 
 <section class="hero hero--home">
   <div class="shell hero-grid">
     <div class="hero-copy">
       <p class="eyebrow">Projects • Guides • Archives</p>
-      <h1>A home for game projects that keep growing.</h1>
-      <p class="lead">TheHoboKingdom collects ongoing modding work, campaign material, practical guides, and stable project records in one place.</p>
+      <h1>The projects that refused to stay small.</h1>
+      <p class="lead">TheHoboKingdom is where I keep the projects that have grown too large to leave buried in folders, old chats, and half-finished notes.</p>
       <div class="button-row">
         <a class="button button--primary" href="{{ '/projects/' | relative_url }}">Browse projects</a>
         <a class="button button--quiet" href="{{ '/guides/' | relative_url }}">Read the guides</a>
@@ -18,9 +19,9 @@ nav_section: home
     <aside class="hero-panel" aria-label="Current focus">
       <p class="panel-label">Current focus</p>
       <ol class="focus-list">
-        <li><span>01</span><strong>Dominions 6</strong><small>Knowledge Library and verified guides</small></li>
-        <li><span>02</span><strong>StalkerNet</strong><small>Stable app foundation and future releases</small></li>
-        <li><span>03</span><strong>Minecraft</strong><small>Forge modpack progression</small></li>
+        <li><span>01</span><strong>Dominions 6</strong><small>Edition {{ site.data.dominions_library.edition }} library, verified guides, and tools</small></li>
+        <li><span>02</span><strong>AURA</strong><small>Working self-development RPG prototype</small></li>
+        <li><span>03</span><strong>Vintage Story</strong><small>Multiplayer progression and mod records</small></li>
       </ol>
     </aside>
   </div>
@@ -35,9 +36,29 @@ nav_section: home
   </div>
 
   <div class="project-grid">
-    {% for project in site.data.projects limit: 4 %}
+    {% for project in site.data.projects limit: 6 %}
       {% include project-card.html project=project %}
     {% endfor %}
+  </div>
+</section>
+
+<section class="section shell release-spotlight">
+  <div class="release-cover">
+    <img src="{{ site.data.dominions_library.cover_image | relative_url }}" alt="Cover of The Dominions 6 Knowledge Library, Progress Edition {{ site.data.dominions_library.edition }}" width="1191" height="1684" loading="lazy">
+  </div>
+  <div class="release-copy">
+    <p class="eyebrow">Current public release</p>
+    <h2>The Dominions 6 Knowledge Library</h2>
+    <p>Progress Edition {{ site.data.dominions_library.edition }} brings the complete reader's edition to {{ site.data.dominions_library.pdf_page_count }} pages. The website keeps {{ site.data.dominions_library.website_section_count }} sections searchable while the PDF remains available for offline reading and archiving.</p>
+    <div class="meta-row">
+      <span class="status status--stable">Verified release</span>
+      <span class="meta-chip">Dominions {{ site.data.dominions_library.game_version }}</span>
+      <span class="meta-chip">{{ site.data.dominions_library.published }}</span>
+    </div>
+    <div class="button-row">
+      <a class="button button--primary" href="{{ '/dominions/library/' | relative_url }}">Search the library</a>
+      <a class="button button--quiet" href="{{ site.data.dominions_library.download_url | relative_url }}">Download the PDF</a>
+    </div>
   </div>
 </section>
 
@@ -51,7 +72,7 @@ nav_section: home
     </div>
 
     <div class="updates-list">
-      {% for update in site.data.updates %}
+      {% for update in site.data.updates limit: 8 %}
         <a class="update-row" href="{{ update.url | relative_url }}">
           <span class="update-type">{{ update.type }}</span>
           <span class="update-main">
@@ -70,18 +91,18 @@ nav_section: home
   <div class="feature-grid">
     <article>
       <span class="feature-number">01</span>
-      <h2>Projects stay understandable</h2>
-      <p>Each hub records what the project is, its current state, what works, and where it is heading next.</p>
+      <h2>A clear record of what works</h2>
+      <p>Each project keeps its current state, stable version, next milestone, and the decisions that would otherwise be forgotten.</p>
     </article>
     <article>
       <span class="feature-number">02</span>
-      <h2>Guides stay findable</h2>
-      <p>Strategy notes and setup instructions live in consistent game sections instead of disappearing into old conversations.</p>
+      <h2>Useful material stays findable</h2>
+      <p>Guides, campaign material, and reference work live at stable addresses instead of disappearing into old conversations.</p>
     </article>
     <article>
       <span class="feature-number">03</span>
-      <h2>Downloads stay traceable</h2>
-      <p>Stable releases, printable material, and version notes will be linked without turning the website into a file dump.</p>
+      <h2>Finished and unfinished stay separate</h2>
+      <p>Stable releases are clearly marked. Experiments, playtests, and unresolved claims remain visible without pretending they are complete.</p>
     </article>
   </div>
 </section>

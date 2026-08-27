@@ -1,0 +1,64 @@
+---
+title: Search
+description: Search TheHoboKingdom projects, guides, tools, downloads, and the complete Dominions 6 Knowledge Library.
+nav_section: search
+extra_js: /assets/site-search.js
+---
+
+<section class="page-hero page-hero--search">
+  <div class="shell">
+    <p class="eyebrow">Search the archive</p>
+    <h1>Find the project, guide, or exact rule.</h1>
+    <p class="lead">One search covers the main site and the {{ site.data.dominions_library.website_section_count }} indexed sections inside the Dominions 6 Knowledge Library.</p>
+  </div>
+</section>
+
+<section class="section shell" data-site-search data-library-index-url="{{ '/dominions/library/data/search-index.json.gz' | relative_url }}">
+  <div class="search-controls">
+    <label class="search-query">
+      <span>Search words</span>
+      <input type="search" data-site-search-query placeholder="Try AURA, fatigue, modpack, StalkerNet…" autocomplete="off">
+    </label>
+    <label>
+      <span>Project</span>
+      <select data-site-search-project>
+        <option value="all">All projects</option>
+        {% assign projects = site.data.search | map: 'project' | uniq | sort %}
+        {% for project in projects %}<option value="{{ project | escape }}">{{ project }}</option>{% endfor %}
+      </select>
+    </label>
+    <label>
+      <span>Type</span>
+      <select data-site-search-type>
+        <option value="all">All types</option>
+        {% assign types = site.data.search | map: 'type' | uniq | sort %}
+        {% for type in types %}<option value="{{ type | escape }}">{{ type }}</option>{% endfor %}
+      </select>
+    </label>
+  </div>
+
+  <p class="search-count" data-site-search-count aria-live="polite">Showing the main site index.</p>
+
+  <div class="search-section-heading">
+    <h2>Main site</h2>
+    <p>Projects, guides, tools, collections, and release records.</p>
+  </div>
+  <div class="search-result-list" data-site-results>
+    {% for entry in site.data.search %}
+    <article class="search-result" data-site-entry data-project="{{ entry.project | escape }}" data-type="{{ entry.type | escape }}" data-search="{{ entry.title | append: ' ' | append: entry.description | append: ' ' | append: entry.keywords | downcase | escape }}">
+      <div class="search-result-meta"><span>{{ entry.project }}</span><span>{{ entry.type }}</span></div>
+      <h3><a href="{{ entry.url | relative_url }}">{{ entry.title }}</a></h3>
+      <p>{{ entry.description }}</p>
+    </article>
+    {% endfor %}
+  </div>
+
+  <div class="search-section-heading search-section-heading--library">
+    <h2>Dominions 6 library sections</h2>
+    <p>These results are loaded only when a search is entered.</p>
+  </div>
+  <p class="search-library-status" data-library-search-status aria-live="polite">Enter at least two characters to search the full library.</p>
+  <div class="search-result-list" data-library-search-results></div>
+
+  <noscript><div class="notice"><p>Site search needs JavaScript. The <a href="{{ '/guides/' | relative_url }}">guide index</a>, <a href="{{ '/projects/' | relative_url }}">project directory</a>, and <a href="{{ '/dominions/library/' | relative_url }}">Dominions library</a> remain available without it.</p></div></noscript>
+</section>
