@@ -26,7 +26,7 @@ Individual games live in the project directory rather than expanding the permane
 
 Every project hub should include:
 
-1. Overview and honest status
+1. Overview and current status
 2. Start-here links
 3. Active work
 4. Published guides

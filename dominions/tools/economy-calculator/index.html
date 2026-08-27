@@ -9,8 +9,8 @@ extra_js: /assets/dominions-tools.js
   <div class="shell">
     <div class="breadcrumbs"><a href="{{ '/guides/' | relative_url }}">Guides</a><span>/</span><a href="{{ '/dominions/tools/' | relative_url }}">Dominions tools</a><span>/</span><span>Province economy</span></div>
     <p class="eyebrow">Gold, resources, and unrest</p>
-    <h1>Read the province as a working economy.</h1>
-    <p class="lead">Apply the official income and unrest formulas without pretending that hidden intermediate rounding can be recovered exactly.</p>
+    <h1>Check what the province can produce.</h1>
+    <p class="lead">Apply the official income and unrest formulas. The game does not expose every rounding step, so the final figures are estimates.</p>
     <div class="content-badges"><span class="content-badge content-badge--official">Official formula</span><span class="content-badge content-badge--research">Rounding estimate</span></div>
   </div>
 </section>
@@ -34,8 +34,8 @@ extra_js: /assets/dominions-tools.js
       <h2>Province estimate</h2>
       <div class="tool-output" data-economy-output aria-live="polite"></div>
 
-      <h2>Formula boundary</h2>
-      <p>The scale field expects the combined multiplier already chosen in the game. Fort resource draw from neighbouring provinces is deliberately excluded because adjacency, ownership, forts, and land-water boundaries decide what can be drawn. The displayed game value remains final when one point matters.</p>
+      <h2>What the calculation leaves out</h2>
+      <p>Enter the combined scale multiplier shown for the game. Neighbouring resource draw is not included because it depends on adjacency, ownership, forts, and land-water borders. If a single point matters, use the value shown in-game.</p>
     </article>
     <aside class="sidebar"><h2>Economy reference</h2><nav><a href="{{ '/dominions/library/books/field-reference/#field-provincial-gold' | relative_url }}">Provincial gold</a><a href="{{ '/dominions/library/books/field-reference/#field-provincial-resources' | relative_url }}">Provincial resources</a><a href="{{ '/dominions/library/books/book-ii/#b2-income-formula' | relative_url }}">Full income chapter</a><a href="{{ '/dominions/tools/recruitment-planner/' | relative_url }}">Recruitment planner</a><a href="{{ '/dominions/tools/' | relative_url }}">All tools</a></nav></aside>
   </div>

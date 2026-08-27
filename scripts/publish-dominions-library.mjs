@@ -169,13 +169,13 @@ const bookCards = documents.map((document, index) => `<article class="library-bo
   <a class="library-open" href="/dominions/library/books/${document.slug}/">Open →</a>
 </article>`).join("\n");
 
-const landing = `${frontMatter("Dominions 6 Knowledge Library", "A versioned, searchable reference to Dominions 6 rules, strategy, modding, and research.")}
+const landing = `${frontMatter("Dominions 6 Knowledge Library", "My searchable, versioned reference to Dominions 6 rules, strategy, modding, and research.")}
 <section class="page-hero library-page-hero library-landing-hero">
   <div class="shell">
     <div class="breadcrumbs"><a href="/dominions/">Dominions 6</a><span aria-hidden="true">/</span><span>Knowledge Library</span></div>
     <p class="eyebrow">${editionLabel} · Dominions ${gameVersion}</p>
     <h1>The Dominions 6 Knowledge Library</h1>
-    <p class="lead">A working reference for learning the game, checking an exact rule, planning a campaign, or tracing the evidence behind a difficult claim.</p>
+    <p class="lead">I built the Library for learning the game, checking an exact rule, planning a campaign, and following the evidence behind a difficult claim.</p>
     <div class="meta-row">
       <span class="status status--stable">Current edition</span>
       <span class="meta-chip">16 books and guides</span>
@@ -189,8 +189,8 @@ const landing = `${frontMatter("Dominions 6 Knowledge Library", "A versioned, se
   <div class="library-search-panel" data-library-search data-index-url="/dominions/library/data/search-index.json.gz">
     <div>
       <p class="eyebrow">Search the full collection</p>
-      <h2>Start with the question.</h2>
-      <p>Results lead directly to the permanent section that owns the explanation. Search by rule, mechanic, command, object, or common term.</p>
+      <h2>Search for the rule you need.</h2>
+      <p>Each result opens the section where that subject is explained. Search by rule, mechanic, command, object, or common name.</p>
     </div>
     <div class="library-search-controls">
       <label><span>Search all ${formatNumber(totalSections)} sections</span><input type="search" data-search-query placeholder="Try fatigue, blood hunting, siege, #newmonster…" autocomplete="off"></label>
@@ -207,13 +207,13 @@ const landing = `${frontMatter("Dominions 6 Knowledge Library", "A versioned, se
 
   <div class="library-heading" id="reading-paths">
     <div><p class="eyebrow">Guided routes</p><h2>Choose a reading path</h2></div>
-    <div class="library-heading-action"><p>The collection is meant to be consulted, not endured in order. These routes gather the sections needed for a particular job.</p><a class="button button--quiet" href="/dominions/tools/library-reading/">Track personal progress</a></div>
+    <div class="library-heading-action"><p>You do not need to read all sixteen books in order. These routes collect the sections needed for a particular job.</p><a class="button button--quiet" href="/dominions/tools/library-reading/">Track personal progress</a></div>
   </div>
   <div class="library-card-grid">${pathCards}</div>
 
   <div class="library-heading" id="reference-tools">
     <div><p class="eyebrow">Reference tools</p><h2>Look up a term or inspect the evidence</h2></div>
-    <p>The glossary supplies quick definitions. The research register keeps completed work, open questions, and testing requirements distinct.</p>
+    <p>The glossary gives short definitions. The research register shows which questions are closed, still open, or waiting for a test.</p>
   </div>
   <div class="library-tool-grid">
     <article class="library-tool-card"><h3>Glossary</h3><p>106 rules, interface terms, abbreviations, and pieces of community language, each linked to its full explanation.</p><a class="button button--quiet" href="/dominions/library/glossary/">Open the glossary</a></article>
@@ -239,26 +239,26 @@ const researchItems = research.items.map((item) => `<article class="library-regi
   <a class="text-link" href="${sectionHref(item.primary_section_id)}">Read the canonical section →</a>
 </article>`).join("\n");
 
-const researchPage = `${frontMatter("Dominions 6 Research Register", "The completed, open, and in-progress verification work behind the Dominions 6 Knowledge Library.")}
-<section class="page-hero library-page-hero"><div class="shell"><div class="breadcrumbs"><a href="/dominions/">Dominions 6</a><span>/</span><a href="/dominions/library/">Knowledge Library</a><span>/</span><span>Research Register</span></div><p class="eyebrow">Evidence and verification</p><h1>Research Register</h1><p class="lead">Every difficult claim deserves a clear status. The register records what has been settled, what remains open, and the evidence needed to close each question properly.</p><div class="meta-row"><span class="meta-chip">${research.items.length} questions</span><span class="meta-chip">${research.items.filter((item) => item.status === "completed").length} completed</span><span class="meta-chip">Dominions ${gameVersion} baseline</span></div></div></section>
+const researchPage = `${frontMatter("Dominions 6 Research Register", "The completed, open, and in-progress checks behind the Dominions 6 Knowledge Library.")}
+<section class="page-hero library-page-hero"><div class="shell"><div class="breadcrumbs"><a href="/dominions/">Dominions 6</a><span>/</span><a href="/dominions/library/">Knowledge Library</a><span>/</span><span>Research Register</span></div><p class="eyebrow">Evidence and verification</p><h1>Research Register</h1><p class="lead">This is where I keep the questions behind the Library. Each one is marked as completed, in progress, or waiting, with the evidence still needed to settle it.</p><div class="meta-row"><span class="meta-chip">${research.items.length} questions</span><span class="meta-chip">${research.items.filter((item) => item.status === "completed").length} completed</span><span class="meta-chip">Dominions ${gameVersion} baseline</span></div></div></section>
 <section class="section shell library-section" data-register>
   <div class="library-filter-row"><label><span>Search questions and domains</span><input type="search" data-register-query placeholder="Try communions, rounding, parser…"></label><label><span>Status</span><select data-register-status><option value="all">All statuses</option><option value="completed">Completed</option><option value="in-progress">In progress</option><option value="queued">Queued</option></select></label><label><span>Priority</span><select data-register-priority><option value="all">All priorities</option><option value="P0">P0 — foundation</option><option value="P1">P1 — high</option><option value="P2">P2 — medium</option><option value="P3">P3 — later</option></select></label></div>
   <p class="library-filter-count" data-register-count aria-live="polite"></p>
   <div class="library-register-list">${researchItems}</div>
-</section>`;
+</section>\n`;
 fs.mkdirSync(path.join(libraryRoot, "research"), { recursive: true });
 fs.writeFileSync(path.join(libraryRoot, "research", "index.html"), researchPage);
 
 const glossaryEntries = glossary.entries.map((entry) => `<div class="library-glossary-entry" data-glossary-item data-letter="${escapeHtml(entry.term.charAt(0).toUpperCase())}" data-search="${escapeHtml(`${entry.term} ${entry.definition} ${(entry.aliases ?? []).join(" ")}`.toLowerCase())}"><dt>${escapeHtml(entry.term)}</dt><dd><p>${escapeHtml(entry.definition)}</p>${entry.aliases?.length ? `<p class="library-aliases">Also known as: ${escapeHtml(entry.aliases.join(", "))}</p>` : ""}<a class="text-link" href="${sectionHref(entry.primary_section_id)}">Open the main explanation →</a></dd></div>`).join("\n");
 const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").map((letter) => `<button type="button" data-glossary-letter="${letter}">${letter}</button>`).join("");
 const glossaryPage = `${frontMatter("Dominions 6 Glossary", "A searchable glossary of Dominions 6 rules, interface terms, abbreviations, and strategic language.")}
-<section class="page-hero library-page-hero"><div class="shell"><div class="breadcrumbs"><a href="/dominions/">Dominions 6</a><span>/</span><a href="/dominions/library/">Knowledge Library</a><span>/</span><span>Glossary</span></div><p class="eyebrow">Plain language, exact destination</p><h1>Dominions 6 Glossary</h1><p class="lead">Short definitions for the game's rules, abbreviations, and community language, with a direct route to the full explanation whenever more detail is needed.</p><div class="meta-row"><span class="meta-chip">${glossary.entries.length} terms</span><span class="meta-chip">Dominions ${gameVersion} baseline</span></div></div></section>
+<section class="page-hero library-page-hero"><div class="shell"><div class="breadcrumbs"><a href="/dominions/">Dominions 6</a><span>/</span><a href="/dominions/library/">Knowledge Library</a><span>/</span><span>Glossary</span></div><p class="eyebrow">Terms and abbreviations</p><h1>Dominions 6 Glossary</h1><p class="lead">Short definitions for rules, interface terms, abbreviations, and community language. Every entry links to the longer explanation.</p><div class="meta-row"><span class="meta-chip">${glossary.entries.length} terms</span><span class="meta-chip">Dominions ${gameVersion} baseline</span></div></div></section>
 <section class="section shell library-section" data-glossary>
   <label class="library-glossary-search"><span>Search terms, definitions, and aliases</span><input type="search" data-glossary-query placeholder="Try glamour, MR, upkeep…"></label>
   <div class="library-alphabet"><button class="is-active" type="button" data-glossary-letter="all">All</button>${alphabet}</div>
   <p class="library-filter-count" data-glossary-count aria-live="polite"></p>
   <dl class="library-glossary-list">${glossaryEntries}</dl>
-</section>`;
+</section>\n`;
 fs.mkdirSync(path.join(libraryRoot, "glossary"), { recursive: true });
 fs.writeFileSync(path.join(libraryRoot, "glossary", "index.html"), glossaryPage);
 

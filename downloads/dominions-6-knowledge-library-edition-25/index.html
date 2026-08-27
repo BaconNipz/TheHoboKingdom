@@ -12,8 +12,8 @@ nav_section: downloads
       <span>Dominions 6 Knowledge Library</span>
     </div>
     <p class="eyebrow">Progress Edition 25</p>
-    <h1>Download the complete Knowledge Library.</h1>
-    <p class="lead">The 789-page reader's edition, prepared for offline reading, archiving, printing, or sharing.</p>
+    <h1>Download Progress Edition 25.</h1>
+    <p class="lead">The complete 789-page reader's edition, kept here as the previous release.</p>
     <div class="meta-row">
       <span class="status status--stable">Verified release</span>
       <span class="meta-chip">3.44 MB PDF</span>
@@ -28,7 +28,7 @@ nav_section: downloads
       <h2>Progress Edition 25</h2>
       <p>This release adds the Edition 25 object-layer maintenance pass while retaining all sixteen books, 2,466 indexed sections, the glossary, reading paths, research register, and linked navigation.</p>
       <button class="button" type="button" data-pdf-download>Download Edition 25 PDF</button>
-      <p data-pdf-status aria-live="polite">Ready to download.</p>
+      <p data-pdf-status aria-live="polite">Ready.</p>
       <div class="notice">
         <p><strong>Integrity:</strong> SHA-256 <code>bf7075d7898cd45715673274f64aec79926bca3a0d5cc35260d0334e75d53245</code>.</p>
       </div>
@@ -54,7 +54,7 @@ nav_section: downloads
 
   button.addEventListener("click", async () => {
     button.disabled = true;
-    status.textContent = "Preparing the PDF…";
+    status.textContent = "Putting the PDF together…";
     try {
       const responses = await Promise.all(parts.map((part) => fetch(part)));
       if (responses.some((response) => !response.ok)) throw new Error("A PDF segment could not be loaded.");
@@ -69,9 +69,9 @@ nav_section: downloads
       link.click();
       link.remove();
       window.setTimeout(() => URL.revokeObjectURL(link.href), 1000);
-      status.textContent = "Download ready. The integrity check passed.";
+      status.textContent = "Download started. The file passed its integrity check.";
     } catch (error) {
-      status.textContent = error.message || "The PDF could not be prepared. Please try again.";
+      status.textContent = error.message || "The PDF could not be prepared. Try again.";
     } finally {
       button.disabled = false;
     }

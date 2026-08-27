@@ -1,15 +1,15 @@
 ---
 title: Search
-description: Search TheHoboKingdom projects, guides, tools, downloads, and the complete Dominions 6 Knowledge Library.
+description: Search TheHoboKingdom projects, guides, tools, downloads, and every indexed section of the Dominions 6 Knowledge Library.
 nav_section: search
 extra_js: /assets/site-search.js
 ---
 
 <section class="page-hero page-hero--search">
   <div class="shell">
-    <p class="eyebrow">Search the archive</p>
-    <h1>Find the project, guide, or exact rule.</h1>
-    <p class="lead">One search covers the main site and the {{ site.data.dominions_library.website_section_count }} indexed sections inside the Dominions 6 Knowledge Library.</p>
+    <p class="eyebrow">Search the site</p>
+    <h1>Find the page without digging through the menus.</h1>
+    <p class="lead">This searches the main site and all {{ site.data.dominions_library.website_section_count }} indexed sections in the Dominions 6 Knowledge Library.</p>
   </div>
 </section>
 
@@ -37,11 +37,11 @@ extra_js: /assets/site-search.js
     </label>
   </div>
 
-  <p class="search-count" data-site-search-count aria-live="polite">Showing the main site index.</p>
+  <p class="search-count" data-site-search-count aria-live="polite">Showing every main-site entry.</p>
 
   <div class="search-section-heading">
     <h2>Main site</h2>
-    <p>Projects, guides, tools, collections, and release records.</p>
+    <p>Projects, guides, tools, collections, and releases.</p>
   </div>
   <div class="search-result-list" data-site-results>
     {% for entry in site.data.search %}
@@ -55,7 +55,7 @@ extra_js: /assets/site-search.js
 
   <div class="search-section-heading search-section-heading--library">
     <h2>Dominions 6 library sections</h2>
-    <p>These results are loaded only when a search is entered.</p>
+    <p>Library results appear after at least two characters are entered.</p>
   </div>
   <p class="search-library-status" data-library-search-status aria-live="polite">Enter at least two characters to search the full library.</p>
   <div class="search-result-list" data-library-search-results></div>

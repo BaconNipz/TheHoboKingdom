@@ -1,6 +1,6 @@
 ---
 title: Minecraft modpack common fixes
-description: A careful troubleshooting record for keybind conflicts, inventory behaviour, dependencies, crashes, and joining problems.
+description: Checks for Minecraft modpack keybind conflicts, inventory problems, missing dependencies, crashes, and joining failures.
 nav_section: guides
 ---
 
@@ -8,8 +8,8 @@ nav_section: guides
   <div class="shell">
     <div class="breadcrumbs"><a href="{{ '/guides/' | relative_url }}">Guides</a><span>/</span><a href="{{ '/minecraft/' | relative_url }}">Minecraft</a><span>/</span><span>Common fixes</span></div>
     <p class="eyebrow">Troubleshooting record</p>
-    <h1>Fix the profile without destroying the evidence.</h1>
-    <p class="lead">Start with the smallest reversible test, keep the original instance intact, and record the exact change that makes the problem disappear.</p>
+    <h1>Change one thing at a time.</h1>
+    <p class="lead">Keep the original profile intact, start with the smallest reversible test, and write down the change that actually fixes the problem.</p>
     <div class="content-badges"><span class="content-badge content-badge--tested">Safe checks</span><span class="content-badge content-badge--research">Diagnosis required</span></div>
   </div>
 </section>
@@ -42,7 +42,7 @@ nav_section: guides
         <li>Read the crash report for the first named mod, mixin, missing class, or dependency rather than the final generic exit code.</li>
         <li>Reproduce the crash in a copied profile with the same world removed from the test.</li>
         <li>Undo the most recent change. If the copied profile launches, restore changes one at a time until the fault returns.</li>
-        <li>Never open an important world with a deliberately incomplete mod set unless its backup has already been checked.</li>
+        <li>Never open an important world with a mod set you know is incomplete unless its backup has already been checked.</li>
       </ol>
 
       <h2 id="joining">One player cannot join</h2>

@@ -1,6 +1,6 @@
 ---
 title: Shared multiplayer session record
-description: Keep a local, exportable record of multiplayer versions, players, roles, connection details, objectives, decisions, problems, backups, and next steps.
+description: Record a multiplayer session's versions, players, roles, connection details, decisions, problems, backup, and next jobs.
 nav_section: tools
 extra_js: /assets/toolkit.js
 ---
@@ -9,8 +9,8 @@ extra_js: /assets/toolkit.js
   <div class="shell">
     <div class="breadcrumbs"><a href="{{ '/tools/' | relative_url }}">Tools</a><span>/</span><span>Multiplayer session</span></div>
     <p class="eyebrow">Cross-project campaign record</p>
-    <h1>End the session with enough information to resume it.</h1>
-    <p class="lead">Keep the exact setup, people, roles, decisions, progress, problems, backups, and next checkpoint together for any cooperative or competitive game.</p>
+    <h1>Write down where we stopped.</h1>
+    <p class="lead">Keep the setup, players, roles, decisions, progress, problems, backup, and next jobs together for any multiplayer game.</p>
     <div class="content-badges"><span class="content-badge content-badge--strategy">Local session record</span></div>
   </div>
 </section>
@@ -53,7 +53,7 @@ extra_js: /assets/toolkit.js
 
         <div class="tool-actions"><button class="button button--primary" type="submit">Build session record</button><button class="button button--quiet" type="button" data-record-copy>Copy record</button><button class="button button--quiet" type="button" data-record-export>Export JSON</button><label class="button button--quiet tool-file-button">Import JSON<input type="file" accept="application/json,.json" data-record-import></label><button class="button button--quiet" type="button" data-record-clear>Clear saved session</button></div>
       </form>
-      <h2>Session handover</h2><div class="tool-output" data-record-output aria-live="polite"></div><p class="search-count" data-record-status>The working session is saved only in this browser.</p>
+      <h2>Session handover</h2><div class="tool-output" data-record-output aria-live="polite"></div><p class="search-count" data-record-status>This session record is saved in this browser.</p>
     </article>
     <aside class="sidebar"><h2>Project records</h2><nav><a href="{{ '/tools/mod-manifest/' | relative_url }}">Mod manifest</a><a href="{{ '/vintage-story/' | relative_url }}">Vintage Story</a><a href="{{ '/minecraft/' | relative_url }}">Minecraft</a><a href="{{ '/dnd/' | relative_url }}">Dungeons &amp; Dragons</a><a href="{{ '/tools/' | relative_url }}">All tools</a></nav></aside>
   </div>

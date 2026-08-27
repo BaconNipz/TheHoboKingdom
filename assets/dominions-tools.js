@@ -1,14 +1,14 @@
 const copyOutput = async (output, status) => {
   const text = output?.textContent.trim();
   if (!text) {
-    if (status) status.textContent = "Build the record before copying it.";
+    if (status) status.textContent = "Create the record first.";
     return;
   }
   try {
     await navigator.clipboard.writeText(text);
-    if (status) status.textContent = "Copied to the clipboard.";
+    if (status) status.textContent = "Copied.";
   } catch {
-    if (status) status.textContent = "Copying was blocked by the browser. Select the text manually.";
+    if (status) status.textContent = "The browser blocked clipboard access. Select and copy the text instead.";
   }
 };
 
@@ -308,7 +308,7 @@ if (economyCalculator) {
       `Estimated local resource pool: ${formatToolNumber(finalResources)}`,
       "",
       recruitmentStatus,
-      "The game interface remains final where intermediate rounding matters.",
+      "Use the value shown in-game when intermediate rounding changes the result.",
     ].join("\n");
   };
 
@@ -414,7 +414,7 @@ if (gemBudget) {
       ...lines,
       "",
       reserveGaps.length ? `Reserve gaps: ${reserveGaps.join(", ")}` : "Every path remains at or above the entered reserve.",
-      "No automatic allowance has been made for alchemy, events, newly found sites, lost sites, or interrupted Blood hunting.",
+      "Add alchemy, events, new or lost sites, and interrupted Blood hunting yourself.",
     ].join("\n");
     status.textContent = reserveGaps.length
       ? `${reserveGaps.length} path${reserveGaps.length === 1 ? " is" : "s are"} below reserve.`
@@ -585,7 +585,7 @@ if (siteSearch) {
       "",
       `Coverage targets met: ${complete} of ${rows.length}`,
       `Notes: ${notes || "None recorded."}`,
-      "Targets are planning choices. Exact site presence, terrain weighting, and mod changes are not inferred.",
+      "The target levels are your choices. The tool cannot know which sites are present or how a mod changes them.",
     ].join("\n");
     status.textContent = `${complete} of ${rows.length} path targets are met. Saved in this browser.`;
   };
@@ -836,7 +836,7 @@ if (throneTracker) {
       "",
       currentState,
       `Notes: ${notes || "None recorded."}`,
-      "Occupation, legal claimers, movement, siege state, dominion, and survival through hosting still decide whether these points are real.",
+      "The points only count if a legal claimer can reach the Throne, issue the order, and survive hosting.",
     ].join("\n");
     status.textContent = currentState;
   };

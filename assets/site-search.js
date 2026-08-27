@@ -96,7 +96,7 @@ if (siteSearch) {
     const projectAllowsLibrary = projectSelect.value === "all" || projectSelect.value === "Dominions 6";
     const typeAllowsLibrary = typeSelect.value === "all" || typeSelect.value === "Library";
     if (!projectAllowsLibrary || !typeAllowsLibrary) {
-      libraryStatus.textContent = "The current filters exclude the Dominions 6 library.";
+      libraryStatus.textContent = "Those filters leave out the Dominions 6 Library.";
       return;
     }
     if (query.length < 2) {
@@ -118,9 +118,9 @@ if (siteSearch) {
       matches.forEach(addLibraryResult);
       libraryStatus.textContent = matches.length
         ? `${matches.length}${matches.length === 20 ? "+" : ""} matching library sections.`
-        : "No library sections matched. Try a broader term or the rule's formal name.";
+        : "No Library sections matched. Try a broader term or the rule's proper name.";
     } catch {
-      libraryStatus.textContent = "The library search could not be loaded. Its books can still be opened from the Dominions hub.";
+      libraryStatus.textContent = "Library search could not be loaded. The books are still available from the Dominions page.";
     }
   };
 

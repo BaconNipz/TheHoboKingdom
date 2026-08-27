@@ -5,7 +5,7 @@
   status: active
   status_label: Active
   updated: 27 August 2026
-  description: The Edition 26 Knowledge Library, official-manual nation references, game guides, modding records, and the diplomacy overhaul.
+  description: My Edition 26 Knowledge Library, official-manual nation catalogue, game guides, modding notes, and diplomacy-overhaul research.
   phase: Reference expansion
   next: Nation dossiers and research closure
   tags:
@@ -19,7 +19,7 @@
   status: active
   status_label: Active
   updated: 27 August 2026
-  description: A working self-development RPG prototype built around real goals, skills, quests, classes, rewards, and long-term mastery.
+  description: My working self-development RPG, where real goals become skills, quests, classes, rewards, and long-term mastery.
   phase: Working prototype
   next: Substantial v3 development pass
   tags:
@@ -33,7 +33,7 @@
   status: active
   status_label: Active
   updated: 27 August 2026
-  description: A versioned record of the three-player survival world, roles, mod stack, early progression, server setup, and fixes.
+  description: "The record of our three-player world: roles, mods, early progress, server setup, and the fixes we still need."
   phase: Multiplayer trial
   next: Stable mod manifest and joining guide
   tags:
@@ -47,9 +47,9 @@
   status: active
   status_label: Active
   updated: 27 August 2026
-  description: StalkerNet development, stable builds, Zone references, modding notes, and short fiction.
+  description: My StalkerNet application, its working recovery builds, Zone references, modding notes, and short fiction.
   phase: Archive expansion
-  next: Complete StalkerNet changelog
+  next: Fill the remaining changelog gaps
   tags:
     - StalkerNet
     - Tools
@@ -61,7 +61,7 @@
   status: active
   status_label: Active
   updated: 27 August 2026
-  description: Friend-group modpacks, installation notes, progression changes, and version records.
+  description: The modpacks I build for our group, with installation notes, progression changes, and exact version records.
   phase: Building and testing
   next: Confirmed version and mod manifest
   tags:
@@ -75,7 +75,7 @@
   status: active
   status_label: Active
   updated: 27 August 2026
-  description: Campaign records, characters, handouts, homebrew, and quick references.
+  description: Our campaign records, characters, handouts, homebrew, and the references we use at the table.
   phase: Public archive pass
   next: Player-safe campaign chronicles
   tags:
@@ -89,7 +89,7 @@
   status: active
   status_label: Active
   updated: 27 August 2026
-  description: "Z-Land material and The Last of Us: Escape the Dark expansion work."
+  description: "My Z-Land material and The Last of Us: Escape the Dark fan expansion."
   phase: Playtest material
   next: Versioned project records and printables
   tags:
@@ -103,7 +103,7 @@
   status: planned
   status_label: Planned
   updated: 23 July 2026
-  description: A future home for mod collections, party builds, and co-op notes.
+  description: A space I have kept for future mod collections, party builds, and co-op notes.
   phase: Held for later
   next: First confirmed collection
   tags:
@@ -116,7 +116,7 @@
   status: planned
   status_label: Planned
   updated: 27 August 2026
-  description: Companion articles, transcripts, sources, and research notes for the historical arms and armour video project.
+  description: The articles, transcripts, sources, and research notes that will sit beside my historical arms and armour videos.
   phase: First article planned
   next: Sten video companion
   tags:

@@ -80,7 +80,7 @@ if (referenceRoot) {
     const summaryText = document.createElement("div");
     summaryText.className = "reference-record-title";
     appendText(summaryText, "h3", record.name);
-    appendText(summaryText, "p", record.summary || "No compact summary is available for this record.");
+    appendText(summaryText, "p", record.summary || "No short summary is recorded for this entry.");
     summary.append(summaryText, makeMeta(record));
     card.append(summary);
 
@@ -122,7 +122,7 @@ if (referenceRoot) {
     const link = document.createElement("a");
     link.className = "text-link";
     link.href = record.libraryUrl;
-    link.textContent = "Open the owning Library section →";
+    link.textContent = "Open the matching Library section →";
     body.append(boundary, link);
     card.append(body);
     return card;
@@ -134,8 +134,8 @@ if (referenceRoot) {
     shown.forEach((record) => results.append(makeRecord(record)));
     heading.textContent = `${filtered.length.toLocaleString("en-AU")} ${plural(filtered.length, "record")}`;
     status.textContent = filtered.length
-      ? `Showing ${shown.length.toLocaleString("en-AU")} of ${filtered.length.toLocaleString("en-AU")} matching ${plural(filtered.length, "record")}. Open a row for the full pinned detail.`
-      : "No records match every active filter.";
+      ? `Showing ${shown.length.toLocaleString("en-AU")} of ${filtered.length.toLocaleString("en-AU")} matching ${plural(filtered.length, "record")}. Open a row for the full entry.`
+      : "No records match those filters.";
     more.hidden = shown.length >= filtered.length;
     more.textContent = `Show ${Math.min(batchSize, filtered.length - shown.length).toLocaleString("en-AU")} more records`;
   };
@@ -197,8 +197,8 @@ if (referenceRoot) {
       filter();
     })
     .catch((error) => {
-      heading.textContent = "Catalogue unavailable";
-      status.textContent = `The pinned reference data could not be loaded: ${error.message}`;
+      heading.textContent = "Catalogue could not be loaded";
+      status.textContent = `The reference file could not be opened: ${error.message}`;
       more.hidden = true;
     });
 }

@@ -8,9 +8,9 @@ extra_js: /assets/dominions-tools.js
 <section class="page-hero">
   <div class="shell">
     <div class="breadcrumbs"><a href="{{ '/guides/' | relative_url }}">Guides</a><span>/</span><a href="{{ '/dominions/tools/' | relative_url }}">Dominions tools</a><span>/</span><span>Recruitment and upkeep</span></div>
-    <p class="eyebrow">Queue and force-cost accounting</p>
-    <h1>Find the gate that actually stops recruitment.</h1>
-    <p class="lead">Build a mixed queue, compare it with local capacity, and estimate the monthly burden that remains after the troops leave the fort.</p>
+    <p class="eyebrow">Recruitment and upkeep</p>
+    <h1>See which limit stops the queue.</h1>
+    <p class="lead">Add the units and commanders, compare the totals with local capacity, and estimate the upkeep added after they leave the fort.</p>
     <div class="content-badges"><span class="content-badge content-badge--official">Official upkeep divisors</span><span class="content-badge content-badge--strategy">Queue estimate</span></div>
   </div>
 </section>
@@ -60,7 +60,7 @@ extra_js: /assets/dominions-tools.js
       <div class="tool-output" data-recruitment-output aria-live="polite"></div>
       <p class="search-count" data-recruitment-status>Enter per-unit values from the current recruitment screen.</p>
 
-      <h2>Limits of the estimate</h2>
+      <h2>Upkeep limits</h2>
       <p>Ordinary upkeep is gold cost divided by 15 per month. Sacred or Slave units use 30; the Sacred-and-Slave divisor of 60 is community-tested under 6.33 and remains current through 6.36 by patch review. Mounted cards can contain separate rider and mount upkeep bases, and some summoned units are exceptions. Use the detailed unit interface when exact upkeep is available.</p>
     </article>
     <aside class="sidebar"><h2>Recruitment reference</h2><nav><a href="{{ '/dominions/library/books/field-reference/#field-recruitment-capacity' | relative_url }}">Recruitment capacity</a><a href="{{ '/dominions/library/books/field-reference/#field-upkeep' | relative_url }}">Upkeep quick reference</a><a href="{{ '/dominions/library/books/book-ii/#b2-upkeep' | relative_url }}">Full upkeep chapter</a><a href="{{ '/dominions/tools/economy-calculator/' | relative_url }}">Province economy</a><a href="{{ '/dominions/tools/' | relative_url }}">All tools</a></nav></aside>

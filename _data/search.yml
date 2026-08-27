@@ -13,7 +13,7 @@
   keywords: edition 26 pdf current release offline sha256
 
 - title: Dominions 6 Knowledge Library — Progress Edition 25 PDF
-  description: The previous complete reader's edition, retained as a stable rollback copy.
+  description: The previous complete reader's edition, kept as the rollback copy.
   url: /downloads/dominions-6-knowledge-library-edition-25/
   project: Dominions 6
   type: Download
@@ -41,7 +41,7 @@
   keywords: magic research school breakpoint arcoscephale communion
 
 - title: Dominions 6 tools
-  description: Eighteen browser-based tools for pinned base-game records, nations, Pretenders, economy, recruitment, gems, magic, battle plans, turns, research, diplomacy, reading, multiplayer, and Throne victory planning.
+  description: Eighteen browser tools for base-game records, nations, Pretenders, economy, recruitment, gems, magic, battles, turns, research, diplomacy, reading, multiplayer, and Thrones.
   url: /dominions/tools/
   project: Dominions 6
   type: Tool
@@ -132,14 +132,14 @@
   keywords: battle script commander orders gems equipment positioning retreat test combat
 
 - title: Battle-planning worksheet
-  description: Record army groups, commanders, scripts, terrain, intelligence, threats, readiness checks, objectives, and outcome branches without silent simulation.
+  description: Record army groups, commanders, scripts, terrain, intelligence, threats, readiness checks, objectives, and fallback branches. The sheet does not simulate the battle.
   url: /dominions/tools/battle-plan/
   project: Dominions 6
   type: Tool
   keywords: battle army plan worksheet force formation commander mage script terrain intelligence threat retreat outcome evidence
 
 - title: Turn planner and audit
-  description: Work through reports, economy, research, magic, movement, provinces, diplomacy, and submission without losing turn state.
+  description: Work through reports, economy, research, magic, movement, provinces, diplomacy, and submission from a checklist saved in the browser.
   url: /dominions/tools/turn-planner/
   project: Dominions 6
   type: Tool
@@ -153,7 +153,7 @@
   keywords: throne ascension points ap claim claimant province controller victory endgame target evidence intel tracker cataclysm
 
 - title: Pretender design sheet
-  description: Record a chosen chassis, awakening, paths, dominion, scales, bless, sacred roster, timing, tests, and failure branch without automatic scoring.
+  description: Record a chosen chassis, awakening, paths, dominion, scales, bless, sacred roster, timing, tests, and fallback. The sheet does not score the design.
   url: /dominions/tools/pretender-design/
   project: Dominions 6
   type: Tool
@@ -167,98 +167,98 @@
   keywords: diplomacy agreement nap alliance relationship evidence expiry notice trade multiplayer
 
 - title: Knowledge Library reading tracker
-  description: Track completed sections across the current sixteen-book shelf, set personal priorities, and export a recoverable next-reading plan.
+  description: Track completed sections across the sixteen books, set priorities, note where to continue, and export a JSON backup.
   url: /dominions/tools/library-reading/
   project: Dominions 6
   type: Tool
   keywords: library reading progress study books sections plan export edition 26
 
 - title: TheHoboKingdom tools
-  description: Local-only planning, campaign, mod, and reference tools from across TheHoboKingdom projects.
+  description: Planning, campaign, mod, and reference tools that save their working data in the current browser.
   url: /tools/
   project: TheHoboKingdom
   type: Tool
   keywords: tools local private export json recovery planning records
 
 - title: Mod manifest and freeze tool
-  description: Record exact game, loader, mod, file, dependency, side, load-order, test-status, and recovery-baseline information.
+  description: Record the exact game, loader, mod files, dependencies, side, load order, test state, and last working copy.
   url: /tools/mod-manifest/
   project: TheHoboKingdom
   type: Tool
   keywords: mod manifest profile version dependency load order compatibility freeze rollback minecraft vintage story dominions
 
 - title: Shared multiplayer session record
-  description: Keep players, roles, connection details, objectives, decisions, problems, backups, and the next checkpoint in one exportable sheet.
+  description: Keep the players, roles, connection details, decisions, problems, backup, and next jobs in one exportable sheet.
   url: /tools/session-record/
   project: TheHoboKingdom
   type: Tool
   keywords: multiplayer coop session players roles server connection progress backup handover
 
 - title: AURA
-  description: The working Adaptive Utility for Real-world Advancement prototype and its progression design.
+  description: My working Adaptive Utility for Real-world Advancement prototype and its progression systems.
   url: /aura/
   project: AURA
   type: Project
   keywords: app quests skills attributes classes gold titles mastery level 100
 
 - title: Vintage Story
-  description: Multiplayer world record, role split, early progression, mod stack, server setup, and troubleshooting.
+  description: "Notes from our multiplayer world: roles, early progress, mod stack, server setup, and fixes."
   url: /vintage-story/
   project: Vintage Story
   type: Project
   keywords: smith farmer blackguard copper cellar pottery mods server
 
 - title: Minecraft
-  description: Friend-group Forge modpacks, installation notes, progression changes, and version records.
+  description: The Forge modpacks I build for our group, with installation notes, progression changes, and exact versions.
   url: /minecraft/
   project: Minecraft
   type: Project
   keywords: forge curseforge modpack recipes progression
 
 - title: Minecraft 2 project record
-  description: The active vanilla-friendly progression pack, its design rules, release checklist, and planned systems.
+  description: My current vanilla-friendly progression pack, its design rules, planned systems, and release checks.
   url: /minecraft/minecraft-2/
   project: Minecraft
   type: Reference
   keywords: backpack pouch bundle food farming fishing wildlife worldgen
 
 - title: Minecraft common fixes
-  description: A careful troubleshooting record for keybind conflicts, inventory behaviour, dependencies, crashes, and joining problems.
+  description: Checks for keybind conflicts, inventory problems, missing dependencies, crashes, and joining failures.
   url: /minecraft/common-fixes/
   project: Minecraft
   type: Guide
   keywords: inventory hotbar keybind crash dependency server fix
 
 - title: S.T.A.L.K.E.R.
-  description: StalkerNet development, Zone references, mod records, troubleshooting, and short fiction.
+  description: My StalkerNet project, Zone references, mod notes, troubleshooting, and short fiction.
   url: /stalker/
   project: S.T.A.L.K.E.R.
   type: Project
   keywords: zone anomaly mutant faction modpack fiction
 
 - title: StalkerNet
-  description: Stable v4.3.6 baseline, features, recovery record, and development priorities for the PDA application.
+  description: The v4.3.6 working fallback, current features, recovery history, and next jobs for my PDA application.
   url: /stalker/stalkernet/
   project: S.T.A.L.K.E.R.
   type: Project
   keywords: app pda map comms archive jobs firebase
 
 - title: StalkerNet changelog
-  description: The accepted recovery chain from v4.3.0 to the stable v4.3.6 baseline.
+  description: The tested recovery chain from v4.3.0 to the current v4.3.6 fallback.
   url: /stalker/stalkernet/changelog/
   project: S.T.A.L.K.E.R.
   type: Changelog
   keywords: version release recovery stable fallback
 
 - title: Stalkers' Ends
-  description: A short-fiction collection following different stalkers through their final journeys in the Zone.
+  description: My short-fiction collection, with each story following a different stalker to their end in the Zone.
   url: /stalker/stalkers-ends/
   project: S.T.A.L.K.E.R.
   type: Collection
   keywords: anthology fiction death anomaly mutant memorial
 
 - title: Dungeons & Dragons
-  description: Public campaign records, characters, handouts, homebrew, and quick references.
+  description: Our public campaign records, characters, handouts, homebrew, and table references.
   url: /dnd/
   project: Dungeons & Dragons
   type: Project
@@ -272,21 +272,21 @@
   keywords: sharruth dragon orcus bahamut grong pubezaki
 
 - title: D&D player resources
-  description: The public structure for character journals, quick references, handouts, and table-ready material.
+  description: Character journals, quick references, handouts, and finished material for our table.
   url: /dnd/resources/
   project: Dungeons & Dragons
   type: Collection
   keywords: printable character journal reference player handout
 
 - title: Tabletop projects
-  description: Original expansions, quick-start material, printable references, and projects outside the D&D archive.
+  description: My expansions, quick-start material, printable references, and tabletop work outside the D&D archive.
   url: /tabletop/
   project: Tabletop
   type: Project
   keywords: board game ttrpg printables design
 
 - title: Z-Land quick-start project
-  description: Playtest narration, infection overview, character material, handouts, and future session additions.
+  description: My playtest narration, infection overview, characters, handouts, and plans for the first sessions.
   url: /tabletop/z-land/
   project: Tabletop
   type: Playtest
@@ -300,14 +300,14 @@
   keywords: joel ellie bill cards board game booster fan expansion
 
 - title: Armoury & History
-  description: Planned companion articles, transcripts, sources, and research notes for historical arms and armour videos.
+  description: My planned companion articles, transcripts, sources, and research notes for historical arms and armour videos.
   url: /armoury/
   project: Armoury & History
   type: Project
   keywords: weapon armour history sten video transcript sources
 
 - title: Baldur's Gate 3
-  description: A held project route for future mod collections, party builds, and co-op notes.
+  description: A space I have kept for future mod collections, party builds, and co-op notes.
   url: /bg3/
   project: Baldur's Gate 3
   type: Project

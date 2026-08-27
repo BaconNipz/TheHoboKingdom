@@ -4,14 +4,14 @@ const toolkitSchemaVersion = 1;
 const toolkitCopy = async (output, status) => {
   const text = output?.textContent.trim();
   if (!text) {
-    status.textContent = "Build the record before copying it.";
+    status.textContent = "Create the record first.";
     return;
   }
   try {
     await navigator.clipboard.writeText(text);
-    status.textContent = "Copied to the clipboard.";
+    status.textContent = "Copied.";
   } catch {
-    status.textContent = "Copying was blocked by the browser. Select the text manually.";
+    status.textContent = "The browser blocked clipboard access. Select and copy the text instead.";
   }
 };
 
@@ -112,7 +112,7 @@ const toolkitWireRecord = ({
   root.querySelector("[data-record-export]").addEventListener("click", () => {
     const data = getData();
     toolkitDownload(`${toolkitFilename(filename(data), tool)}.json`, toolkitEnvelope(tool, data));
-    status.textContent = "A JSON recovery file was exported.";
+    status.textContent = "JSON backup downloaded.";
   });
   importInput.addEventListener("change", async () => {
     const file = importInput.files?.[0];
@@ -126,7 +126,7 @@ const toolkitWireRecord = ({
       await setData(record.data);
       toolkitStorageSave(storageKey, getData(), status);
       await build();
-      status.textContent = "The exported record was restored and saved in this browser.";
+      status.textContent = "Backup restored and saved here.";
     } catch (error) {
       status.textContent = `Import failed: ${error.message}`;
     } finally {
@@ -139,7 +139,7 @@ const toolkitWireRecord = ({
     await reset();
     await build();
     output.textContent = "";
-    status.textContent = "The saved record was cleared.";
+    status.textContent = "Saved record cleared.";
   });
 };
 
@@ -188,7 +188,7 @@ if (pretenderDesign) {
       `TEST RECORD\n${toolkitValue(values.tests)}`,
       `OTHER NOTES\n${toolkitValue(values.notes)}`,
       "",
-      "This is a player-chosen design record. It does not calculate design points or score strategic quality.",
+      "This is a record of the design entered above. Use the game for design points; this sheet does not rate the strategy.",
     ].join("\n\n");
   };
 
@@ -339,7 +339,7 @@ if (diplomacyLog) {
       `OBSERVED BEHAVIOUR\n${toolkitValue(values.observations)}`,
       `PRIVATE STRATEGIC NOTES\n${toolkitValue(values.notes)}`,
       "",
-      "Evidence labels describe the record source, not whether another player is trustworthy.",
+      "The evidence label says where the note came from. It says nothing about whether the other player is trustworthy.",
     ].join("\n\n");
   };
 
@@ -428,7 +428,7 @@ if (modManifest) {
       `RECOVERY BASELINE\n${toolkitValue(values.recovery)}`,
       `UPDATE PROCEDURE\n${toolkitValue(values.updates)}`,
       "",
-      "This manifest records entered versions and tests. It does not certify compatibility outside this exact profile.",
+      "Compatibility only applies to the versions and tests recorded above.",
     ].join("\n\n");
   };
 
@@ -709,7 +709,7 @@ if (battlePlan) {
       `RETREAT, RALLY, AND RECOVERY\n${toolkitValue(values.retreat)}`,
       `TEST RECORD AND REQUIRED REVISION\n${toolkitValue(values.tests)}`,
       "",
-      "This worksheet records player-entered assumptions. It does not simulate the battle or infer an outcome from unknown mechanics.",
+      "This sheet only records what was entered above. It does not simulate the battle or guess the result.",
     ].join("\n\n");
   };
 
@@ -857,7 +857,7 @@ if (thronePlan) {
       `DEFENCE AND REINFORCEMENT PLAN\n${toolkitValue(values.defence)}`,
       `DIPLOMACY AND INFORMATION BOUNDARY\n${toolkitValue(values.diplomacy)}`,
       "",
-      "The totals follow the entered levels and states. They do not prove legal claims, movement, control after battle, or survival through hosting.",
+      "The totals use the levels and states entered above. They cannot prove a legal claim, successful movement, control after battle, or survival through hosting.",
     ].join("\n\n");
   };
 

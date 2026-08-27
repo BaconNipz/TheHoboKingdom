@@ -129,9 +129,9 @@ if (searchPanel) {
         const empty = document.createElement("div");
         empty.className = "library-search-empty";
         const heading = document.createElement("h3");
-        heading.textContent = "No sections found";
+        heading.textContent = "No matching sections";
         const copy = document.createElement("p");
-        copy.textContent = "Try a broader term, remove the subject filter, or search for the rule rather than its nickname.";
+        copy.textContent = "Try a broader term, remove the subject filter, or use the rule's proper name.";
         empty.append(heading, copy);
         resultsRoot.append(empty);
       }
@@ -288,7 +288,7 @@ if (recentPanel) {
       link.textContent = entry.title;
       heading.append(link);
       const copy = document.createElement("p");
-      copy.textContent = "Continue from the book most recently opened on this device.";
+      copy.textContent = "Continue from a book opened recently on this device.";
       article.append(heading, copy);
       list.append(article);
     }
