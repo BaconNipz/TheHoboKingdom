@@ -607,3 +607,280 @@ if (libraryReading) {
       status.textContent = `Could not load the library manifest: ${error.message}`;
     });
 }
+
+const battlePlan = document.querySelector("[data-battle-plan]");
+
+if (battlePlan) {
+  const storageKey = "thk-dominions-battle-plan-v1";
+  const fields = [...battlePlan.querySelectorAll("[data-battle-field]")];
+  const checks = [...battlePlan.querySelectorAll("[data-battle-check]")];
+  const groupsHost = battlePlan.querySelector("[data-battle-groups]");
+  const commandersHost = battlePlan.querySelector("[data-battle-commanders]");
+  const groupTemplate = document.querySelector("[data-battle-group-template]");
+  const commanderTemplate = document.querySelector("[data-battle-commander-template]");
+  const output = document.querySelector("[data-record-output]");
+  const status = document.querySelector("[data-record-status]");
+
+  const renumber = (host, rowSelector, fieldSelector, label) => host.querySelectorAll(rowSelector).forEach((row, index) => {
+    const number = index + 1;
+    row.querySelector("[data-row-number]").textContent = number;
+    row.querySelectorAll(fieldSelector).forEach((field) => field.setAttribute("aria-label", `${label} ${number} ${field.dataset[label === "Army group" ? "battleGroup" : "battleCommander"]}`));
+    row.querySelector("[data-row-remove]").setAttribute("aria-label", `Remove ${label.toLowerCase()} ${number}`);
+  });
+  const readRows = (host, rowSelector, fieldSelector, key) => [...host.querySelectorAll(rowSelector)].map((row) => Object.fromEntries([...row.querySelectorAll(fieldSelector)].map((field) => [field.dataset[key], field.value])));
+  const groupData = () => readRows(groupsHost, "[data-battle-group-row]", "[data-battle-group]", "battleGroup");
+  const commanderData = () => readRows(commandersHost, "[data-battle-commander-row]", "[data-battle-commander]", "battleCommander");
+  const getData = () => ({
+    fields: toolkitFieldValues(fields),
+    groups: groupData(),
+    commanders: commanderData(),
+    checked: checks.filter((check) => check.checked).map((check) => check.value),
+  });
+
+  const attachRemoval = (row, host, fallback, rowSelector, fieldSelector, label) => {
+    row.querySelector("[data-row-remove]").addEventListener("click", () => {
+      row.remove();
+      if (!host.children.length) fallback();
+      renumber(host, rowSelector, fieldSelector, label);
+      toolkitStorageSave(storageKey, getData(), status);
+      build();
+    });
+  };
+  const addGroup = (values = {}) => {
+    const row = groupTemplate.content.firstElementChild.cloneNode(true);
+    row.querySelectorAll("[data-battle-group]").forEach((field) => { field.value = values[field.dataset.battleGroup] || ""; });
+    attachRemoval(row, groupsHost, addGroup, "[data-battle-group-row]", "[data-battle-group]", "Army group");
+    groupsHost.append(row);
+    renumber(groupsHost, "[data-battle-group-row]", "[data-battle-group]", "Army group");
+  };
+  const addCommander = (values = {}) => {
+    const row = commanderTemplate.content.firstElementChild.cloneNode(true);
+    row.querySelectorAll("[data-battle-commander]").forEach((field) => { field.value = values[field.dataset.battleCommander] || ""; });
+    attachRemoval(row, commandersHost, addCommander, "[data-battle-commander-row]", "[data-battle-commander]", "Commander");
+    commandersHost.append(row);
+    renumber(commandersHost, "[data-battle-commander-row]", "[data-battle-commander]", "Commander");
+  };
+  const setData = (data) => {
+    toolkitApplyFields(fields, data.fields);
+    const checked = new Set(data.checked || []);
+    checks.forEach((check) => { check.checked = checked.has(check.value); });
+    groupsHost.replaceChildren();
+    commandersHost.replaceChildren();
+    const groups = Array.isArray(data.groups) && data.groups.length ? data.groups : Array.from({ length: 6 }, () => ({}));
+    const commanders = Array.isArray(data.commanders) && data.commanders.length ? data.commanders : Array.from({ length: 4 }, () => ({}));
+    groups.forEach(addGroup);
+    commanders.forEach(addCommander);
+  };
+  const build = () => {
+    const values = toolkitFieldValues(fields);
+    const groups = groupData().filter((group) => Object.values(group).some((value) => value.trim()));
+    const commanders = commanderData().filter((commander) => Object.values(commander).some((value) => value.trim()));
+    const complete = checks.filter((check) => check.checked).map((check) => check.value);
+    const outstanding = checks.filter((check) => !check.checked).map((check) => check.value);
+    output.textContent = [
+      `BATTLE PLAN — TURN ${toolkitValue(values.turn, "?")} — ${toolkitValue(values.plan, "Unnamed battle")}`,
+      `Game and nation: ${toolkitValue(values.game)}`,
+      `Opponent: ${toolkitValue(values.opponent)}`,
+      `Province: ${toolkitValue(values.province)}`,
+      `Position: ${toolkitValue(values.side)}`,
+      `Primary objective: ${toolkitValue(values.objective)}`,
+      `Minimum acceptable result: ${toolkitValue(values.minimum)}`,
+      `Loss limit or preservation priority: ${toolkitValue(values.lossLimit)}`,
+      "",
+      `BATTLEFIELD CONDITIONS\n${toolkitValue(values.conditions)}`,
+      `GLOBALS AND BATTLEFIELD EFFECTS\n${toolkitValue(values.effects)}`,
+      `ENEMY FORCE AND SCRIPTS OBSERVED\n${toolkitValue(values.enemy)}`,
+      `EVIDENCE AND LAST OBSERVATION\n${toolkitValue(values.evidence)}`,
+      `IMPORTANT UNKNOWNS\n${toolkitValue(values.unknowns)}`,
+      `REINFORCEMENTS AND MOVEMENT\n${toolkitValue(values.movement)}`,
+      "",
+      "ARMY GROUPS",
+      ...(groups.length ? groups.map((group, index) => `${index + 1}. ${toolkitValue(group.unit, "Unnamed group")} — count ${toolkitValue(group.count, "?")} — ${toolkitValue(group.role, "role not recorded")}\n   Position: ${toolkitValue(group.position)}; orders: ${toolkitValue(group.orders)}; protection/weakness: ${toolkitValue(group.notes)}`) : ["- No army groups recorded."]),
+      "",
+      "COMMANDERS AND MAGES",
+      ...(commanders.length ? commanders.map((commander, index) => `${index + 1}. ${toolkitValue(commander.commander, "Unnamed commander")}\n   Paths/stats: ${toolkitValue(commander.paths)}\n   Items/gems: ${toolkitValue(commander.equipment)}\n   Script: ${toolkitValue(commander.script)}\n   Protection/fallback: ${toolkitValue(commander.protection)}`) : ["- No commanders recorded."]),
+      "",
+      `READINESS AUDIT\nComplete: ${complete.length} of ${checks.length}\n${outstanding.length ? outstanding.map((item) => `- Outstanding: ${item}`).join("\n") : "- No checklist items remain."}`,
+      "",
+      `THREAT AND RESPONSE LEDGER\n${toolkitValue(values.threats)}`,
+      `EXPECTED BATTLE SEQUENCE\n${toolkitValue(values.sequence)}`,
+      `FAVOURABLE BRANCH\n${toolkitValue(values.favourable)}`,
+      `FAILURE BRANCH\n${toolkitValue(values.failure)}`,
+      `RETREAT, RALLY, AND RECOVERY\n${toolkitValue(values.retreat)}`,
+      `TEST RECORD AND REQUIRED REVISION\n${toolkitValue(values.tests)}`,
+      "",
+      "This worksheet records player-entered assumptions. It does not simulate the battle or infer an outcome from unknown mechanics.",
+    ].join("\n\n");
+  };
+
+  battlePlan.querySelector("[data-battle-add-group]").addEventListener("click", () => {
+    addGroup();
+    toolkitStorageSave(storageKey, getData(), status);
+    build();
+  });
+  battlePlan.querySelector("[data-battle-add-commander]").addEventListener("click", () => {
+    addCommander();
+    toolkitStorageSave(storageKey, getData(), status);
+    build();
+  });
+  const saved = toolkitStorageLoad(storageKey);
+  setData(saved || { fields: {}, groups: Array.from({ length: 6 }, () => ({})), commanders: Array.from({ length: 4 }, () => ({})), checked: [] });
+  toolkitWireRecord({
+    root: battlePlan,
+    tool: "dominions-battle-plan",
+    storageKey,
+    getData,
+    setData,
+    build,
+    reset: () => {
+      battlePlan.reset();
+      setData({ fields: toolkitFieldValues(fields), groups: Array.from({ length: 6 }, () => ({})), commanders: Array.from({ length: 4 }, () => ({})), checked: [] });
+    },
+    filename: (data) => `${data.fields.game || "dominions"}-turn-${data.fields.turn || "1"}-${data.fields.plan || "battle-plan"}`,
+  });
+  build();
+  if (saved) status.textContent = "The saved battle plan was restored from this browser.";
+}
+
+const thronePlan = document.querySelector("[data-throne-plan]");
+
+if (thronePlan) {
+  const storageKey = "thk-dominions-throne-plan-v2";
+  const fields = [...thronePlan.querySelectorAll("[data-throne-field]")];
+  const rowsHost = thronePlan.querySelector("[data-throne-rows]");
+  const template = document.querySelector("[data-throne-row-template]");
+  const output = document.querySelector("[data-record-output]");
+  const status = document.querySelector("[data-record-status]");
+  const friendlyStates = new Set(["Controlled, unclaimed", "Ready to claim", "Claimed by us"]);
+
+  const renumber = () => rowsHost.querySelectorAll("[data-throne-row]").forEach((row, index) => {
+    const number = index + 1;
+    row.querySelector("[data-row-number]").textContent = number;
+    row.querySelectorAll("[data-throne-col]").forEach((field) => field.setAttribute("aria-label", `Throne ${number} ${field.dataset.throneCol}`));
+    row.querySelector("[data-throne-target]").setAttribute("aria-label", `Include Throne ${number} as a victory target`);
+    row.querySelector("[data-row-remove]").setAttribute("aria-label", `Remove Throne ${number}`);
+  });
+  const throneData = () => [...rowsHost.querySelectorAll("[data-throne-row]")].map((row) => ({
+    ...Object.fromEntries([...row.querySelectorAll("[data-throne-col]")].map((field) => [field.dataset.throneCol, field.value])),
+    target: row.querySelector("[data-throne-target]").checked,
+  }));
+  const getData = () => ({ fields: toolkitFieldValues(fields), thrones: throneData() });
+  const addRow = (values = {}) => {
+    const row = template.content.firstElementChild.cloneNode(true);
+    row.querySelectorAll("[data-throne-col]").forEach((field) => {
+      const key = field.dataset.throneCol;
+      if (Object.hasOwn(values, key)) field.value = values[key];
+    });
+    row.querySelector("[data-throne-target]").checked = Boolean(values.target);
+    row.querySelector("[data-row-remove]").addEventListener("click", () => {
+      row.remove();
+      if (!rowsHost.children.length) addRow();
+      renumber();
+      toolkitStorageSave(storageKey, getData(), status);
+      build();
+    });
+    rowsHost.append(row);
+    renumber();
+  };
+  const setData = (data) => {
+    toolkitApplyFields(fields, data.fields);
+    rowsHost.replaceChildren();
+    const thrones = Array.isArray(data.thrones) && data.thrones.length ? data.thrones : Array.from({ length: 8 }, () => ({}));
+    thrones.forEach(addRow);
+  };
+  const build = () => {
+    const values = toolkitFieldValues(fields);
+    const turn = Math.max(1, Math.floor(Number(values.turn) || 1));
+    const required = Math.max(1, Math.floor(Number(values.required) || 1));
+    const outsideClaimed = Math.max(0, Math.floor(Number(values.outsideClaimed) || 0));
+    const thrones = throneData().filter((throne) => throne.name.trim() || throne.state !== "Unknown" || throne.target);
+    const points = (rows) => rows.reduce((sum, throne) => sum + Math.max(1, Math.min(3, Math.floor(Number(throne.level) || 1))), 0);
+    const claimedRows = thrones.filter((throne) => throne.state === "Claimed by us");
+    const readyRows = thrones.filter((throne) => throne.state === "Ready to claim");
+    const controlledRows = thrones.filter((throne) => throne.state === "Controlled, unclaimed");
+    const targetRows = thrones.filter((throne) => throne.target && !friendlyStates.has(throne.state));
+    const claimed = outsideClaimed + points(claimedRows);
+    const readyPoints = points(readyRows);
+    const controlledPoints = points(controlledRows);
+    const targetPoints = points(targetRows);
+    const afterReady = claimed + readyPoints;
+    const controlledPotential = afterReady + controlledPoints;
+    const namedPotential = controlledPotential + targetPoints;
+    const remaining = Math.max(0, required - claimed);
+    const remainingAfterReady = Math.max(0, required - afterReady);
+    const stale = thrones.filter((throne) => {
+      const verified = Math.max(0, Math.floor(Number(throne.verified) || 0));
+      return verified > 0 && turn - verified > 3 && throne.state !== "Claimed by us";
+    });
+    const currentState = claimed >= required
+      ? "The entered claimed total meets the Ascension requirement."
+      : afterReady >= required
+        ? "The ready claim orders reach the requirement if every listed order remains legal and survives hosting."
+        : controlledPotential >= required
+          ? "Friendly controlled Thrones contain enough points, but more claim orders or hosting cycles are required."
+          : namedPotential >= required
+            ? "The friendly position is short; the marked target pool can reach the requirement if captured, held, and claimed."
+            : "The entered friendly and marked target pools do not yet contain enough points.";
+    const throneLines = thrones.map((throne, index) => {
+      const verified = throne.verified ? `turn ${throne.verified}` : "turn not recorded";
+      return `${index + 1}. ${toolkitValue(throne.name, "Unnamed Throne")} — ${throne.level} AP — ${throne.state}${throne.target ? " — VICTORY TARGET" : ""}\n   Controller: ${toolkitValue(throne.controller)}; claimant/action: ${toolkitValue(throne.claimant)}\n   Evidence: ${throne.evidence}; last verified: ${verified}; notes: ${toolkitValue(throne.notes)}`;
+    });
+    output.textContent = [
+      `THRONE AND VICTORY POSITION — TURN ${turn}`,
+      `Game: ${toolkitValue(values.game)}; nation: ${toolkitValue(values.nation)}`,
+      `Victory requirement: ${required} AP`,
+      `Claimed AP: ${claimed} (${outsideClaimed} not itemised; ${points(claimedRows)} from listed friendly claims)`,
+      `Remaining now: ${remaining} AP`,
+      "",
+      `Ready to claim: ${readyRows.length} Throne${readyRows.length === 1 ? "" : "s"}, ${readyPoints} AP`,
+      `Projected after ready orders: ${afterReady} AP; ${remainingAfterReady} AP remaining`,
+      `Controlled but not ready: ${controlledRows.length} Throne${controlledRows.length === 1 ? "" : "s"}, ${controlledPoints} AP`,
+      `Potential after every friendly controlled Throne is claimed: ${controlledPotential} AP`,
+      `Marked targets outside friendly control: ${targetRows.length}, ${targetPoints} AP`,
+      `Potential including marked targets: ${namedPotential} AP`,
+      "",
+      currentState,
+      "",
+      "READY CLAIM ORDERS",
+      ...(readyRows.length ? readyRows.map((throne) => `- ${toolkitValue(throne.name, "Unnamed Throne")} — ${throne.level} AP — ${toolkitValue(throne.claimant, "claimant not recorded")}`) : ["- None recorded."]),
+      "",
+      "INTELLIGENCE OLDER THAN THREE TURNS",
+      ...(stale.length ? stale.map((throne) => `- ${toolkitValue(throne.name, "Unnamed Throne")} — last verified turn ${throne.verified}`) : ["- None among the entered dated records."]),
+      "",
+      "THRONE REGISTER",
+      ...(throneLines.length ? throneLines : ["- No named Thrones recorded."]),
+      "",
+      `TABLE RULE OR VICTORY NOTE\n${toolkitValue(values.rules)}`,
+      `CATACLYSM OR ENDGAME TIMING\n${toolkitValue(values.cataclysm)}`,
+      `CLAIM SEQUENCE AND HOSTING RISK\n${toolkitValue(values.sequence)}`,
+      `ENEMY VICTORY WARNING\n${toolkitValue(values.enemy)}`,
+      `DEFENCE AND REINFORCEMENT PLAN\n${toolkitValue(values.defence)}`,
+      `DIPLOMACY AND INFORMATION BOUNDARY\n${toolkitValue(values.diplomacy)}`,
+      "",
+      "The totals follow the entered levels and states. They do not prove legal claims, movement, control after battle, or survival through hosting.",
+    ].join("\n\n");
+  };
+
+  thronePlan.querySelector("[data-throne-add]").addEventListener("click", () => {
+    addRow();
+    toolkitStorageSave(storageKey, getData(), status);
+    build();
+  });
+  const saved = toolkitStorageLoad(storageKey);
+  setData(saved || { fields: {}, thrones: Array.from({ length: 8 }, () => ({})) });
+  toolkitWireRecord({
+    root: thronePlan,
+    tool: "dominions-throne-plan",
+    storageKey,
+    getData,
+    setData,
+    build,
+    reset: () => {
+      thronePlan.reset();
+      setData({ fields: toolkitFieldValues(fields), thrones: Array.from({ length: 8 }, () => ({})) });
+    },
+    filename: (data) => `${data.fields.game || "dominions"}-turn-${data.fields.turn || "1"}-throne-position`,
+  });
+  build();
+  if (saved) status.textContent = "The saved Throne register was restored from this browser.";
+}

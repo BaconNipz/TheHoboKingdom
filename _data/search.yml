@@ -41,11 +41,11 @@
   keywords: magic research school breakpoint arcoscephale communion
 
 - title: Dominions 6 tools
-  description: Sixteen browser-based tools for nations, Pretenders, economy, recruitment, gems, magic, battle scripts, turns, research, diplomacy, reading, multiplayer, and Throne victory planning.
+  description: Eighteen browser-based tools for pinned base-game records, nations, Pretenders, economy, recruitment, gems, magic, battle plans, turns, research, diplomacy, reading, multiplayer, and Throne victory planning.
   url: /dominions/tools/
   project: Dominions 6
   type: Tool
-  keywords: calculator planner worksheet generator comparison pretender economy recruitment gems communion battle turn diplomacy reading throne multiplayer
+  keywords: catalogue reference calculator planner worksheet generator comparison pretender economy recruitment gems communion battle turn diplomacy reading throne multiplayer
 
 - title: Nation finder and comparison
   description: Search the 102 official nation summaries and compare up to three entries across the three ages.
@@ -53,6 +53,13 @@
   project: Dominions 6
   type: Tool
   keywords: choose compare early middle late nation
+
+- title: Dominions 6 base-game reference catalogue
+  description: Search 5,340 pinned records covering spells, magic items, referenced units, Pretender forms, summons, magic sites, Thrones, and mercenary companies.
+  url: /dominions/tools/reference/
+  project: Dominions 6
+  type: Tool
+  keywords: catalogue lookup spell item unit pretender summon magic site throne mercenary path school construction evidence engine id vanilla 6.35
 
 - title: Research breakpoint planner
   description: Estimate a target's completion turn after temporary researcher losses are counted.
@@ -124,6 +131,13 @@
   type: Tool
   keywords: battle script commander orders gems equipment positioning retreat test combat
 
+- title: Battle-planning worksheet
+  description: Record army groups, commanders, scripts, terrain, intelligence, threats, readiness checks, objectives, and outcome branches without silent simulation.
+  url: /dominions/tools/battle-plan/
+  project: Dominions 6
+  type: Tool
+  keywords: battle army plan worksheet force formation commander mage script terrain intelligence threat retreat outcome evidence
+
 - title: Turn planner and audit
   description: Work through reports, economy, research, magic, movement, provinces, diplomacy, and submission without losing turn state.
   url: /dominions/tools/turn-planner/
@@ -132,11 +146,11 @@
   keywords: turn checklist audit reports recruitment research movement diplomacy stale submit
 
 - title: Throne victory tracker
-  description: Count claimed Ascension Points, controlled Thrones, ready claim orders, named targets, and the remaining victory path.
+  description: Track named Thrones, provinces, levels, controllers, claim state, evidence age, marked targets, Ascension Points, and the remaining victory path.
   url: /dominions/tools/throne-tracker/
   project: Dominions 6
   type: Tool
-  keywords: throne ascension points ap claim victory endgame target tracker
+  keywords: throne ascension points ap claim claimant province controller victory endgame target evidence intel tracker cataclysm
 
 - title: Pretender design sheet
   description: Record a chosen chassis, awakening, paths, dominion, scales, bless, sacred roster, timing, tests, and failure branch without automatic scoring.

@@ -1,0 +1,114 @@
+---
+title: Dominions 6 battle-planning worksheet
+description: Build a recoverable Dominions 6 battle plan from player-entered armies, commanders, scripts, terrain, intelligence, threats, objectives, and outcome branches.
+nav_section: guides
+extra_js: /assets/toolkit.js
+---
+
+<section class="page-hero">
+  <div class="shell">
+    <div class="breadcrumbs"><a href="{{ '/guides/' | relative_url }}">Guides</a><span>/</span><a href="{{ '/dominions/tools/' | relative_url }}">Dominions tools</a><span>/</span><span>Battle plan</span></div>
+    <p class="eyebrow">Army and engagement worksheet</p>
+    <h1>Plan the battle without pretending the unknowns are solved.</h1>
+    <p class="lead">Record the forces, commanders, scripts, terrain, known threats, evidence, objective, expected sequence, and failure branch using only information entered here.</p>
+    <div class="content-badges"><span class="content-badge content-badge--strategy">Player-entered plan</span><span class="content-badge content-badge--research">Evidence visible</span></div>
+  </div>
+</section>
+
+<section class="section shell">
+  <div class="content-grid">
+    <article class="content">
+      <form class="tool-form" data-battle-plan>
+        <fieldset class="tool-fieldset">
+          <legend>Battle identity and purpose</legend>
+          <div class="tool-form-grid tool-form-grid--three">
+            <label><span>Plan name</span><input name="plan" data-battle-field maxlength="100" placeholder="Northern fort relief"></label>
+            <label><span>Game and nation</span><input name="game" data-battle-field maxlength="120" placeholder="Game — Nation"></label>
+            <label><span>Turn</span><input name="turn" data-battle-field type="number" min="1" value="1"></label>
+            <label><span>Opponent</span><input name="opponent" data-battle-field maxlength="120" placeholder="Nation, independent force, or unknown"></label>
+            <label><span>Province and terrain</span><input name="province" data-battle-field maxlength="160" placeholder="Province number, name, terrain, fort"></label>
+            <label><span>Battle position</span><select name="side" data-battle-field><option>Attacking</option><option>Defending</option><option>Storming</option><option>Defending a fort</option><option>Intercept or uncertain</option></select></label>
+            <label><span>Primary objective</span><input name="objective" data-battle-field maxlength="180" placeholder="Take the fort, break the siege, trade efficiently…"></label>
+            <label><span>Minimum acceptable result</span><input name="minimum" data-battle-field maxlength="180" placeholder="Hold one turn, kill key mages, preserve the army…"></label>
+            <label><span>Loss limit or preservation priority</span><input name="lossLimit" data-battle-field maxlength="180" placeholder="Units, commanders, gems, or positions that cannot be traded"></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="tool-fieldset">
+          <legend>Battlefield and intelligence</legend>
+          <div class="tool-form-grid tool-form-grid--two">
+            <label><span>Dominion, scales, weather, darkness, and terrain effects</span><textarea name="conditions" data-battle-field placeholder="Only enter confirmed conditions or label the uncertainty"></textarea></label>
+            <label><span>Global and battlefield effects expected</span><textarea name="effects" data-battle-field placeholder="Existing globals, battlefield enchantments, fort effects, special dominion"></textarea></label>
+            <label><span>Enemy force and scripts observed</span><textarea name="enemy" data-battle-field placeholder="Numbers, unit types, commanders, paths, items, gems, formation, prior scripts"></textarea></label>
+            <label><span>Evidence and last observation</span><textarea name="evidence" data-battle-field placeholder="Scout report on turn 34, battle replay, message, assumption, or open question"></textarea></label>
+            <label><span>Important unknowns</span><textarea name="unknowns" data-battle-field placeholder="Hidden army, new research, teleporters, globals, reinforcements, scripted change"></textarea></label>
+            <label><span>Reinforcements and movement timing</span><textarea name="movement" data-battle-field placeholder="Friendly arrivals, enemy routes, magic movement, siege timing, movement conflicts"></textarea></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="tool-fieldset">
+          <legend>Army groups</legend>
+          <div class="tool-table-wrap">
+            <table class="tool-table battle-group-table">
+              <thead><tr><th>#</th><th>Group and unit</th><th>Count</th><th>Role</th><th>Position</th><th>Orders</th><th>Protection, weakness, or note</th><th></th></tr></thead>
+              <tbody data-battle-groups></tbody>
+            </table>
+          </div>
+          <button class="button button--quiet" type="button" data-battle-add-group>Add army group</button>
+        </fieldset>
+
+        <fieldset class="tool-fieldset">
+          <legend>Commanders and mages</legend>
+          <div class="tool-table-wrap">
+            <table class="tool-table battle-commander-table">
+              <thead><tr><th>#</th><th>Commander and role</th><th>Paths and stats</th><th>Items and gems</th><th>Five-round script</th><th>Protection and fallback</th><th></th></tr></thead>
+              <tbody data-battle-commanders></tbody>
+            </table>
+          </div>
+          <button class="button button--quiet" type="button" data-battle-add-commander>Add commander</button>
+        </fieldset>
+
+        <fieldset class="tool-fieldset">
+          <legend>Readiness audit</legend>
+          <div class="checklist-grid battle-readiness-grid">
+            <label class="checklist-item"><input type="checkbox" data-battle-check value="Leadership and squad limits checked"><span>Leadership and squad limits checked.</span></label>
+            <label class="checklist-item"><input type="checkbox" data-battle-check value="Gems and item assignments checked"><span>Gems and item assignments checked.</span></label>
+            <label class="checklist-item"><input type="checkbox" data-battle-check value="Five-round scripts checked"><span>Five-round scripts checked.</span></label>
+            <label class="checklist-item"><input type="checkbox" data-battle-check value="Formation and friendly-fire risks checked"><span>Formation and friendly-fire risks checked.</span></label>
+            <label class="checklist-item"><input type="checkbox" data-battle-check value="Bodyguards and commander protection checked"><span>Bodyguards and commander protection checked.</span></label>
+            <label class="checklist-item"><input type="checkbox" data-battle-check value="Supply, disease, and fatigue state checked"><span>Supply, disease, and fatigue state checked.</span></label>
+            <label class="checklist-item"><input type="checkbox" data-battle-check value="Retreat routes and province ownership checked"><span>Retreat routes and province ownership checked.</span></label>
+            <label class="checklist-item"><input type="checkbox" data-battle-check value="Turn-order and movement conflicts checked"><span>Turn-order and movement conflicts checked.</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="tool-fieldset">
+          <legend>Threats, sequence, and branches</legend>
+          <div class="tool-form-grid tool-form-grid--two">
+            <label><span>Threat and response ledger</span><textarea name="threats" data-battle-field placeholder="Threat → evidence → intended response → remaining weakness"></textarea></label>
+            <label><span>Expected battle sequence</span><textarea name="sequence" data-battle-field placeholder="Opening buffs, first contact, damage phase, rout pressure, pursuit"></textarea></label>
+            <label><span>Favourable branch</span><textarea name="favourable" data-battle-field placeholder="What success should look like and the order that follows"></textarea></label>
+            <label><span>Failure branch</span><textarea name="failure" data-battle-field placeholder="What breaks the plan and the earliest sign it is happening"></textarea></label>
+            <label><span>Retreat, rally, and recovery</span><textarea name="retreat" data-battle-field placeholder="Safe provinces, commanders to preserve, replacement path, next-turn recovery"></textarea></label>
+            <label><span>Test record and required revision</span><textarea name="tests" data-battle-field placeholder="Ruleset, test opponent, result, mismatch, and change required"></textarea></label>
+          </div>
+        </fieldset>
+
+        <div class="tool-actions"><button class="button button--primary" type="submit">Build battle plan</button><button class="button button--quiet" type="button" data-record-copy>Copy plan</button><button class="button button--quiet" type="button" data-record-export>Export JSON</button><label class="button button--quiet tool-file-button">Import JSON<input type="file" accept="application/json,.json" data-record-import></label><button class="button button--quiet" type="button" data-record-clear>Clear saved plan</button></div>
+      </form>
+
+      <h2>Battle record</h2>
+      <div class="tool-output" data-record-output aria-live="polite"></div>
+      <p class="search-count" data-record-status>The plan is saved only in this browser. No combat result or probability is calculated.</p>
+    </article>
+    <aside class="sidebar"><h2>Battle reference</h2><nav><a href="{{ '/dominions/tools/battle-script/' | relative_url }}">Commander script builder</a><a href="{{ '/dominions/tools/reference/' | relative_url }}">Base-game catalogue</a><a href="{{ '/dominions/library/books/book-iv/' | relative_url }}">Foundation Book IV: Armies and Battle</a><a href="{{ '/dominions/tools/turn-planner/' | relative_url }}">Turn planner</a><a href="{{ '/dominions/tools/' | relative_url }}">All Dominions tools</a></nav><div class="notice"><p>This worksheet organises entered information. It does not simulate the battle, infer hidden enemy orders, or turn uncertain reports into facts.</p></div></aside>
+  </div>
+</section>
+
+<template data-battle-group-template>
+  <tr data-battle-group-row><th data-row-number>1</th><td><input data-battle-group="unit" placeholder="Infantry line"></td><td><input data-battle-group="count" type="number" min="0" placeholder="0"></td><td><input data-battle-group="role" placeholder="Hold, flank, screen"></td><td><input data-battle-group="position" placeholder="Rear centre"></td><td><input data-battle-group="orders" placeholder="Hold and Attack…"></td><td><input data-battle-group="notes" placeholder="Buffs, resistance, weakness"></td><td><button class="table-row-remove" type="button" data-row-remove aria-label="Remove army group">×</button></td></tr>
+</template>
+
+<template data-battle-commander-template>
+  <tr data-battle-commander-row><th data-row-number>1</th><td><input data-battle-commander="commander" placeholder="Name — role"></td><td><input data-battle-commander="paths" placeholder="Paths, HP, MR, fatigue"></td><td><input data-battle-commander="equipment" placeholder="Items and gem limits"></td><td><input data-battle-commander="script" placeholder="1–5, then fallback"></td><td><input data-battle-commander="protection" placeholder="Bodyguards, position, retreat"></td><td><button class="table-row-remove" type="button" data-row-remove aria-label="Remove commander">×</button></td></tr>
+</template>

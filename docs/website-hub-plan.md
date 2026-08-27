@@ -78,7 +78,7 @@ Completed on 27 August 2026:
 - Added the player-safe Stormwreck Isle chronicle and D&D resource structure.
 - Added permanent project routes for Z-Land and The Last of Us: Escape the Dark fan expansion.
 - Added the planned Armoury & History hub.
-- Expanded the Dominions field toolkit to sixteen tools covering nations, Pretenders, economy, recruitment, gems, magic, battles, research, turns, diplomacy, reading progress, multiplayer settings, and Throne victory.
+- Expanded the Dominions field toolkit to eighteen tools covering pinned base-game records, nations, Pretenders, economy, recruitment, gems, magic, commander scripts, full battle plans, research, turns, diplomacy, reading progress, multiplayer settings, and a recoverable named-Throne victory register.
 - Added a site-wide Tools hub with exportable mod-manifest and multiplayer-session records.
 - Added JSON export and restoration to the newest private local records so they can be moved between browsers without sending their contents to the site.
 
