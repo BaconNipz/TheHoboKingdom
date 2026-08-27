@@ -39,6 +39,11 @@
   color: var(--muted);
 }
 
+.library-heading-action p {
+  margin: 0 0 0.85rem;
+  color: var(--muted);
+}
+
 .library-search-controls,
 .library-filter-row {
   display: grid;

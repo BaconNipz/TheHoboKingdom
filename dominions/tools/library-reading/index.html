@@ -1,0 +1,32 @@
+---
+title: Dominions 6 Knowledge Library reading tracker
+description: Track local reading progress across all sixteen Dominions 6 Knowledge Library books and references and build a personal next-reading list.
+nav_section: guides
+extra_js: /assets/toolkit.js
+---
+
+<section class="page-hero">
+  <div class="shell">
+    <div class="breadcrumbs"><a href="{{ '/dominions/library/' | relative_url }}">Knowledge Library</a><span>/</span><a href="{{ '/dominions/tools/' | relative_url }}">Tools</a><span>/</span><span>Reading tracker</span></div>
+    <p class="eyebrow">Personal study record</p>
+    <h1>Read by purpose and keep the next section visible.</h1>
+    <p class="lead">Track completed sections across the current sixteen-book shelf, choose personal priorities, record the next location, and export the progress file before changing devices.</p>
+    <div class="content-badges"><span class="content-badge content-badge--strategy">Local reading record</span><span class="content-badge content-badge--official">Current library manifest</span></div>
+  </div>
+</section>
+
+<section class="section shell" data-library-reading data-manifest-url="{{ '/dominions/library/data/manifest.json' | relative_url }}">
+  <div class="content-grid">
+    <article class="content">
+      <form class="tool-form" data-reading-form>
+        <div class="tool-form-grid tool-form-grid--two"><label><span>Plan name</span><input name="plan" data-reading-field value="My Edition {{ site.data.dominions_library.edition }} reading plan" maxlength="100"></label><label><span>Current purpose</span><input name="purpose" data-reading-field maxlength="140" placeholder="Learn multiplayer hosting, review communions, study modding…"></label></div>
+        <div class="turn-progress"><progress data-reading-progress max="100" value="0"></progress><strong data-reading-progress-label>Loading the library manifest…</strong></div>
+        <div class="stat-grid reading-stat-grid"><article class="stat-card"><strong data-reading-sections>0</strong><span>sections completed</span></article><article class="stat-card"><strong data-reading-books>0</strong><span>books or references completed</span></article><article class="stat-card"><strong data-reading-percent>0%</strong><span>section coverage</span></article></div>
+        <div class="tool-table-wrap"><table class="tool-table reading-table"><thead><tr><th>Book or reference</th><th>Sections completed</th><th>Priority</th><th>Next section or note</th><th>Open</th></tr></thead><tbody data-reading-rows><tr><td colspan="5">Loading the current shelf…</td></tr></tbody></table></div>
+        <div class="tool-actions"><button class="button button--primary" type="submit">Build next-reading list</button><button class="button button--quiet" type="button" data-record-copy>Copy next list</button><button class="button button--quiet" type="button" data-record-export>Export JSON</button><label class="button button--quiet tool-file-button">Import JSON<input type="file" accept="application/json,.json" data-record-import></label><button class="button button--quiet" type="button" data-record-clear>Clear saved progress</button></div>
+      </form>
+      <h2>Next-reading list</h2><div class="tool-output" data-record-output aria-live="polite"></div><p class="search-count" data-record-status>Progress is saved only in this browser.</p>
+    </article>
+    <aside class="sidebar"><h2>Library routes</h2><nav><a href="{{ '/dominions/library/#reading-paths' | relative_url }}">Guided reading paths</a><a href="{{ '/dominions/library/books/guide/' | relative_url }}">Reader's Guide</a><a href="{{ '/dominions/library/books/field-reference/' | relative_url }}">Turn and Economy reference</a><a href="{{ '/dominions/library/glossary/' | relative_url }}">Glossary</a><a href="{{ '/dominions/tools/' | relative_url }}">All Dominions tools</a></nav><div class="notice"><p>The tracker uses the current public manifest for book titles and section totals. Imported progress is matched by stable book ID so a later edition can preserve what still corresponds.</p></div></aside>
+  </div>
+</section>

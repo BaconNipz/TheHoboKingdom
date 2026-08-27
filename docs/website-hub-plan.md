@@ -16,8 +16,9 @@ The permanent navigation is:
 1. Home
 2. Projects
 3. Guides
-4. Downloads
-5. About
+4. Tools
+5. Downloads
+6. About
 
 Individual games live in the project directory rather than expanding the permanent navigation.
 
@@ -77,7 +78,9 @@ Completed on 27 August 2026:
 - Added the player-safe Stormwreck Isle chronicle and D&D resource structure.
 - Added permanent project routes for Z-Land and The Last of Us: Escape the Dark fan expansion.
 - Added the planned Armoury & History hub.
-- Added the Dominions nation finder, research planner, build sheet, and multiplayer settings record.
+- Expanded the Dominions field toolkit to sixteen tools covering nations, Pretenders, economy, recruitment, gems, magic, battles, research, turns, diplomacy, reading progress, multiplayer settings, and Throne victory.
+- Added a site-wide Tools hub with exportable mod-manifest and multiplayer-session records.
+- Added JSON export and restoration to the newest private local records so they can be moved between browsers without sending their contents to the site.
 
 Still dependent on future project work:
 

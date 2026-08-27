@@ -41,11 +41,11 @@
   keywords: magic research school breakpoint arcoscephale communion
 
 - title: Dominions 6 tools
-  description: Thirteen browser-based tools for nations, economy, recruitment, gems, magic, battle scripts, turns, research, multiplayer, and Throne victory planning.
+  description: Sixteen browser-based tools for nations, Pretenders, economy, recruitment, gems, magic, battle scripts, turns, research, diplomacy, reading, multiplayer, and Throne victory planning.
   url: /dominions/tools/
   project: Dominions 6
   type: Tool
-  keywords: calculator planner worksheet generator comparison economy recruitment gems communion battle turn throne multiplayer
+  keywords: calculator planner worksheet generator comparison pretender economy recruitment gems communion battle turn diplomacy reading throne multiplayer
 
 - title: Nation finder and comparison
   description: Search the 102 official nation summaries and compare up to three entries across the three ages.
@@ -137,6 +137,48 @@
   project: Dominions 6
   type: Tool
   keywords: throne ascension points ap claim victory endgame target tracker
+
+- title: Pretender design sheet
+  description: Record a chosen chassis, awakening, paths, dominion, scales, bless, sacred roster, timing, tests, and failure branch without automatic scoring.
+  url: /dominions/tools/pretender-design/
+  project: Dominions 6
+  type: Tool
+  keywords: pretender chassis awake dormant imprisoned magic paths scales bless sacred design
+
+- title: Diplomacy and agreement log
+  description: Keep a private local record of relationships, evidence, written terms, expiry turns, obligations, observations, and next actions.
+  url: /dominions/tools/diplomacy-log/
+  project: Dominions 6
+  type: Tool
+  keywords: diplomacy agreement nap alliance relationship evidence expiry notice trade multiplayer
+
+- title: Knowledge Library reading tracker
+  description: Track completed sections across the current sixteen-book shelf, set personal priorities, and export a recoverable next-reading plan.
+  url: /dominions/tools/library-reading/
+  project: Dominions 6
+  type: Tool
+  keywords: library reading progress study books sections plan export edition 26
+
+- title: TheHoboKingdom tools
+  description: Local-only planning, campaign, mod, and reference tools from across TheHoboKingdom projects.
+  url: /tools/
+  project: TheHoboKingdom
+  type: Tool
+  keywords: tools local private export json recovery planning records
+
+- title: Mod manifest and freeze tool
+  description: Record exact game, loader, mod, file, dependency, side, load-order, test-status, and recovery-baseline information.
+  url: /tools/mod-manifest/
+  project: TheHoboKingdom
+  type: Tool
+  keywords: mod manifest profile version dependency load order compatibility freeze rollback minecraft vintage story dominions
+
+- title: Shared multiplayer session record
+  description: Keep players, roles, connection details, objectives, decisions, problems, backups, and the next checkpoint in one exportable sheet.
+  url: /tools/session-record/
+  project: TheHoboKingdom
+  type: Tool
+  keywords: multiplayer coop session players roles server connection progress backup handover
 
 - title: AURA
   description: The working Adaptive Utility for Real-world Advancement prototype and its progression design.

@@ -1,0 +1,43 @@
+---
+title: Dominions 6 diplomacy and agreement log
+description: Keep a private local record of Dominions 6 relationships, agreements, evidence type, start and expiry turns, obligations, warnings, and next actions.
+nav_section: guides
+extra_js: /assets/toolkit.js
+---
+
+<section class="page-hero">
+  <div class="shell">
+    <div class="breadcrumbs"><a href="{{ '/dominions/tools/' | relative_url }}">Dominions tools</a><span>/</span><span>Diplomacy log</span></div>
+    <p class="eyebrow">Private multiplayer record</p>
+    <h1>Keep the exact agreement, not the memory of it.</h1>
+    <p class="lead">Record relationships, evidence, obligations, notice periods, expiry turns, warnings, and next actions without treating suspicion or informal language as a settled fact.</p>
+    <div class="content-badges"><span class="content-badge content-badge--strategy">Player record</span><span class="content-badge content-badge--research">Evidence type visible</span></div>
+  </div>
+</section>
+
+<section class="section shell">
+  <div class="content-grid">
+    <article class="content">
+      <form class="tool-form" data-diplomacy-log>
+        <div class="tool-form-grid tool-form-grid--three">
+          <label><span>Game and nation</span><input name="game" data-diplomacy-field maxlength="100" required></label>
+          <label><span>Current turn</span><input name="turn" data-diplomacy-field type="number" min="1" value="1"></label>
+          <label><span>Ruleset or table agreement</span><input name="ruleset" data-diplomacy-field maxlength="140" placeholder="Binding status, notice wording, diplomacy limits…"></label>
+        </div>
+
+        <fieldset class="tool-fieldset"><legend>Relationships and agreements</legend><div class="tool-table-wrap"><table class="tool-table diplomacy-table"><thead><tr><th>Player or nation</th><th>Stance</th><th>Evidence</th><th>Agreement or observation</th><th>Starts</th><th>Expires</th><th>Next action or warning</th></tr></thead><tbody>{% for row in (1..8) %}<tr data-diplomacy-row><td><input data-diplomacy-col="party" aria-label="Row {{ row }} player or nation"></td><td><select data-diplomacy-col="stance" aria-label="Row {{ row }} stance"><option>Unknown</option><option>Neutral</option><option>Friendly</option><option>Allied</option><option>Tense</option><option>Hostile</option><option>War</option></select></td><td><select data-diplomacy-col="evidence" aria-label="Row {{ row }} evidence"><option>Unverified</option><option>Private note</option><option>Verbal agreement</option><option>Written agreement</option><option>Observed result</option><option>Public declaration</option></select></td><td><input data-diplomacy-col="terms" aria-label="Row {{ row }} agreement or observation"></td><td><input data-diplomacy-col="starts" aria-label="Row {{ row }} start turn" type="number" min="0"></td><td><input data-diplomacy-col="expires" aria-label="Row {{ row }} expiry turn" type="number" min="0"></td><td><input data-diplomacy-col="action" aria-label="Row {{ row }} next action or warning"></td></tr>{% endfor %}</tbody></table></div></fieldset>
+
+        <div class="tool-form-grid tool-form-grid--two">
+          <label><span>Messages or offers awaiting reply</span><textarea name="pending" data-diplomacy-field></textarea></label>
+          <label><span>Trades, transfers, and obligations</span><textarea name="obligations" data-diplomacy-field></textarea></label>
+          <label><span>Observed behaviour</span><textarea name="observations" data-diplomacy-field placeholder="Keep observed results separate from inferred intent"></textarea></label>
+          <label><span>Private strategic notes</span><textarea name="notes" data-diplomacy-field></textarea></label>
+        </div>
+
+        <div class="tool-actions"><button class="button button--primary" type="submit">Build diplomacy record</button><button class="button button--quiet" type="button" data-record-copy>Copy record</button><button class="button button--quiet" type="button" data-record-export>Export JSON</button><label class="button button--quiet tool-file-button">Import JSON<input type="file" accept="application/json,.json" data-record-import></label><button class="button button--quiet" type="button" data-record-clear>Clear saved log</button></div>
+      </form>
+      <h2>Current diplomatic position</h2><div class="tool-output" data-record-output aria-live="polite"></div><p class="search-count" data-record-status>The diplomacy log is saved only in this browser.</p>
+    </article>
+    <aside class="sidebar"><h2>Campaign context</h2><nav><a href="{{ '/dominions/tools/game-settings/' | relative_url }}">Multiplayer settings record</a><a href="{{ '/dominions/tools/turn-planner/' | relative_url }}">Turn planner</a><a href="{{ '/dominions/tools/throne-tracker/' | relative_url }}">Throne tracker</a><a href="{{ '/dominions/library/books/book-vi/' | relative_url }}">Campaign conduct</a><a href="{{ '/dominions/tools/' | relative_url }}">All Dominions tools</a></nav><div class="notice"><p>Private notes can contain sensitive campaign information. Exported files should be stored deliberately and never placed in the public website repository.</p></div></aside>
+  </div>
+</section>

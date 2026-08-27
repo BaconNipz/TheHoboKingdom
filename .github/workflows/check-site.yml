@@ -22,8 +22,11 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
-      - name: Check Dominions tools JavaScript
-        run: node --check assets/dominions-tools.js
+      - name: Check tool JavaScript
+        run: |
+          node --check assets/dominions-tools.js
+          node --check assets/toolkit.js
+          node scripts/check-toolkit.mjs
 
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1

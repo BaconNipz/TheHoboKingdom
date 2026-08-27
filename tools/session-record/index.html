@@ -1,0 +1,62 @@
+---
+title: Shared multiplayer session record
+description: Keep a local, exportable record of multiplayer versions, players, roles, connection details, objectives, decisions, problems, backups, and next steps.
+nav_section: tools
+extra_js: /assets/toolkit.js
+---
+
+<section class="page-hero">
+  <div class="shell">
+    <div class="breadcrumbs"><a href="{{ '/tools/' | relative_url }}">Tools</a><span>/</span><span>Multiplayer session</span></div>
+    <p class="eyebrow">Cross-project campaign record</p>
+    <h1>End the session with enough information to resume it.</h1>
+    <p class="lead">Keep the exact setup, people, roles, decisions, progress, problems, backups, and next checkpoint together for any cooperative or competitive game.</p>
+    <div class="content-badges"><span class="content-badge content-badge--strategy">Local session record</span></div>
+  </div>
+</section>
+
+<section class="section shell">
+  <div class="content-grid">
+    <article class="content">
+      <form class="tool-form" data-session-record>
+        <fieldset class="tool-fieldset"><legend>Session identity</legend>
+          <div class="tool-form-grid tool-form-grid--three">
+            <label><span>Game</span><input name="game" data-session-field maxlength="80" placeholder="Vintage Story, Minecraft, Dominions 6…" required></label>
+            <label><span>World, campaign, or server</span><input name="campaign" data-session-field maxlength="100" required></label>
+            <label><span>Session number</span><input name="session" data-session-field type="number" min="1" value="1"></label>
+            <label><span>Date</span><input name="date" data-session-field type="date"></label>
+            <label><span>Game version</span><input name="version" data-session-field maxlength="60"></label>
+            <label><span>Session status</span><select name="status" data-session-field><option>Planned</option><option selected>Active</option><option>Completed</option><option>Cancelled</option></select></label>
+            <label><span>Host and connection method</span><input name="connection" data-session-field maxlength="140" placeholder="Host, address reference, lobby, or joining method"></label>
+            <label><span>Mod profile or manifest</span><input name="manifest" data-session-field maxlength="140" placeholder="Profile name, version, or exported manifest"></label>
+            <label><span>Save or backup reference</span><input name="backup" data-session-field maxlength="140" placeholder="Save name, backup date, folder, or custodian"></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="tool-fieldset"><legend>Players and responsibilities</legend>
+          <div class="tool-table-wrap"><table class="tool-table session-player-table"><thead><tr><th>Player</th><th>Character, nation, or role</th><th>Responsibility</th><th>Current objective</th><th></th></tr></thead><tbody data-session-players></tbody></table></div>
+          <button class="button button--quiet" type="button" data-session-add-player>Add player row</button>
+        </fieldset>
+
+        <fieldset class="tool-fieldset"><legend>Progress and handover</legend>
+          <div class="tool-form-grid tool-form-grid--two">
+            <label><span>Starting state</span><textarea name="start" data-session-field placeholder="Where the save began and what was already in progress"></textarea></label>
+            <label><span>Session goals</span><textarea name="goals" data-session-field placeholder="What the group intended to complete"></textarea></label>
+            <label><span>Progress and checkpoints reached</span><textarea name="progress" data-session-field placeholder="What changed, was built, captured, discovered, or completed"></textarea></label>
+            <label><span>Decisions and agreements</span><textarea name="decisions" data-session-field placeholder="Role changes, rules, priorities, claims, or shared plans"></textarea></label>
+            <label><span>Problems, crashes, and fixes</span><textarea name="issues" data-session-field placeholder="What failed, exact symptoms, attempted fixes, and accepted recovery"></textarea></label>
+            <label><span>Next session</span><textarea name="next" data-session-field placeholder="Immediate jobs, required preparation, and unresolved choices"></textarea></label>
+            <label><span>Files, handouts, or screenshots</span><textarea name="files" data-session-field placeholder="Stable addresses or filenames needed later"></textarea></label>
+            <label><span>Other notes</span><textarea name="notes" data-session-field></textarea></label>
+          </div>
+        </fieldset>
+
+        <div class="tool-actions"><button class="button button--primary" type="submit">Build session record</button><button class="button button--quiet" type="button" data-record-copy>Copy record</button><button class="button button--quiet" type="button" data-record-export>Export JSON</button><label class="button button--quiet tool-file-button">Import JSON<input type="file" accept="application/json,.json" data-record-import></label><button class="button button--quiet" type="button" data-record-clear>Clear saved session</button></div>
+      </form>
+      <h2>Session handover</h2><div class="tool-output" data-record-output aria-live="polite"></div><p class="search-count" data-record-status>The working session is saved only in this browser.</p>
+    </article>
+    <aside class="sidebar"><h2>Project records</h2><nav><a href="{{ '/tools/mod-manifest/' | relative_url }}">Mod manifest</a><a href="{{ '/vintage-story/' | relative_url }}">Vintage Story</a><a href="{{ '/minecraft/' | relative_url }}">Minecraft</a><a href="{{ '/dnd/' | relative_url }}">Dungeons &amp; Dragons</a><a href="{{ '/tools/' | relative_url }}">All tools</a></nav></aside>
+  </div>
+</section>
+
+<template data-session-player-template><tr data-session-player-row><td><input data-session-player="player"></td><td><input data-session-player="role"></td><td><input data-session-player="responsibility"></td><td><input data-session-player="objective"></td><td><button class="table-row-remove" type="button" data-row-remove>×</button></td></tr></template>
