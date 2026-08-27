@@ -1,6 +1,6 @@
 ---
 title: Dominions 6 Throne and victory tracker
-description: Keep a recoverable local register of named Thrones, provinces, levels, controllers, claim status, evidence, targets, Ascension Points, and the remaining victory path.
+description: Record named Thrones, provinces, levels, controllers, claim state, evidence age, targets, Ascension Points, and the remaining route to victory.
 nav_section: guides
 extra_js: /assets/toolkit.js
 ---
@@ -8,9 +8,9 @@ extra_js: /assets/toolkit.js
 <section class="page-hero">
   <div class="shell">
     <div class="breadcrumbs"><a href="{{ '/guides/' | relative_url }}">Guides</a><span>/</span><a href="{{ '/dominions/tools/' | relative_url }}">Dominions tools</a><span>/</span><span>Thrones and victory</span></div>
-    <p class="eyebrow">Named Throne and Ascension Point register</p>
-    <h1>Separate a verified claim from an occupied province and a hoped-for target.</h1>
-    <p class="lead">Record each known Throne, its province, level, controller, claim state, intended claimant, evidence age, and place in the victory route.</p>
+    <p class="eyebrow">Throne and Ascension Point register</p>
+    <h1>Know which Thrones are claimed, held, or only targets.</h1>
+    <p class="lead">Record each known Throne, its province, level, controller, claim state, intended claimant, last verified turn, and place in the route to victory.</p>
     <div class="content-badges"><span class="content-badge content-badge--strategy">Victory accounting</span><span class="content-badge content-badge--research">Intel age visible</span></div>
   </div>
 </section>
@@ -41,7 +41,7 @@ extra_js: /assets/toolkit.js
             </table>
           </div>
           <button class="button button--quiet" type="button" data-throne-add>Add Throne</button>
-          <p class="search-count">“Ready to claim” should be used only when an eligible Pretender, Prophet, or Disciple is already able to issue the order. Marking a row as a victory target adds it to the named target pool but does not assert that it can be captured or held.</p>
+          <p class="search-count">Use “Ready to claim” only when an eligible Pretender, Prophet, or Disciple can issue the order now. A victory target is only a target; the tool does not assume it can be taken or held.</p>
         </fieldset>
 
         <fieldset class="tool-fieldset">
@@ -59,9 +59,9 @@ extra_js: /assets/toolkit.js
 
       <h2>Victory position</h2>
       <div class="tool-output" data-record-output aria-live="polite"></div>
-      <p class="search-count" data-record-status>The tracker is saved only in this browser. Its arithmetic follows the levels and states entered above.</p>
+      <p class="search-count" data-record-status>This tracker is saved in this browser. The totals use the levels and states entered above.</p>
     </article>
-    <aside class="sidebar"><h2>Endgame reference</h2><nav><a href="{{ '/dominions/tools/reference/?category=throne' | relative_url }}">Search the pinned Throne catalogue</a><a href="{{ '/dominions/library/books/book-vi/#b6-part-xii-thrones-cataclysm-and-endgame-conversion' | relative_url }}">Thrones and endgame conversion</a><a href="{{ '/dominions/library/books/field-reference/#field-the-hosting-spine' | relative_url }}">Hosting spine</a><a href="{{ '/dominions/tools/diplomacy-log/' | relative_url }}">Diplomacy log</a><a href="{{ '/dominions/tools/turn-planner/' | relative_url }}">Turn planner</a><a href="{{ '/dominions/tools/' | relative_url }}">All Dominions tools</a></nav><div class="notice"><p>Arithmetic alone cannot confirm a win. Legal claimers, movement, siege state, dominion, simultaneous orders, hostile magic, and survival through hosting still decide whether the entered points become real.</p></div></aside>
+    <aside class="sidebar"><h2>Endgame reference</h2><nav><a href="{{ '/dominions/tools/reference/?category=throne' | relative_url }}">Search the pinned Throne catalogue</a><a href="{{ '/dominions/library/books/book-vi/#b6-part-xii-thrones-cataclysm-and-endgame-conversion' | relative_url }}">Thrones and endgame conversion</a><a href="{{ '/dominions/library/books/field-reference/#field-the-hosting-spine' | relative_url }}">Hosting spine</a><a href="{{ '/dominions/tools/diplomacy-log/' | relative_url }}">Diplomacy log</a><a href="{{ '/dominions/tools/turn-planner/' | relative_url }}">Turn planner</a><a href="{{ '/dominions/tools/' | relative_url }}">All Dominions tools</a></nav><div class="notice"><p>The total cannot confirm a win. A legal claimer still has to reach the Throne, issue the order, and survive the hosting cycle through sieges, dominion, hostile magic, and simultaneous orders.</p></div></aside>
   </div>
 </section>
 

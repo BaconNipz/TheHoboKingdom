@@ -1,6 +1,6 @@
 # TheHoboKingdom
 
-TheHoboKingdom is a GitHub Pages hub for ongoing game projects, applications, guides, modpacks, tools, campaign material, writing, and stable project records.
+TheHoboKingdom is where I keep the game projects, applications, guides, modpacks, tools, campaign material, and writing that became too large for folders and old notes. GitHub Pages builds the public site from this repository.
 
 ## Structure
 
@@ -21,4 +21,4 @@ GitHub Pages builds the site with Jekyll. Legacy root-level pages remain as redi
 
 ## Current milestone
 
-**Hub Foundation v2** and the first consolidation and discovery pass are complete. Active work now covers the Edition 26 Dominions library, eighteen Dominions tools, shared mod and session records, AURA, Vintage Story, Minecraft, StalkerNet, public D&D records, tabletop projects, and the planned historical armoury. Scope and recovery references are recorded in [`docs/website-hub-plan.md`](docs/website-hub-plan.md).
+**Hub Foundation v2** and the first consolidation and discovery pass are complete. Current work covers the Edition 26 Dominions library, eighteen Dominions tools, shared mod and session records, AURA, Vintage Story, Minecraft, StalkerNet, public D&D records, tabletop projects, and the planned historical armoury. Scope and recovery references are in [`docs/website-hub-plan.md`](docs/website-hub-plan.md). The public writing follows [`docs/site-writing-voice.md`](docs/site-writing-voice.md).

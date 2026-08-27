@@ -8,9 +8,9 @@ extra_js: /assets/dominions-tools.js
 <section class="page-hero">
   <div class="shell">
     <div class="breadcrumbs"><a href="{{ '/guides/' | relative_url }}">Guides</a><span>/</span><a href="{{ '/dominions/tools/' | relative_url }}">Dominions tools</a><span>/</span><span>Communion planner</span></div>
-    <p class="eyebrow">Threshold and fatigue audit</p>
-    <h1>Count the slaves before trusting the script.</h1>
-    <p class="lead">Check the current path bonus, the effect of expected losses, participants in one spell, and the fatigue pressure placed on each slave.</p>
+    <p class="eyebrow">Communion thresholds and fatigue</p>
+    <h1>Check the slave count before trusting the script.</h1>
+    <p class="lead">See the current path bonus, what expected losses do to it, how many units share one spell, and the estimated fatigue on each slave.</p>
     <div class="content-badges"><span class="content-badge content-badge--official">Official threshold structure</span><span class="content-badge content-badge--research">Rounding estimate</span></div>
   </div>
 </section>
@@ -35,8 +35,8 @@ extra_js: /assets/dominions-tools.js
       <h2>Communion estimate</h2>
       <div class="tool-output" data-communion-output aria-live="polite"></div>
 
-      <h2>What this does not model</h2>
-      <p>The fatigue entry must already reflect the caster's paths, encumbrance, spell requirements, gems, and other modifiers. Shared self-buffs, reinvigoration, unconscious slaves, type-specific effects, and backlash are not simulated. Exact rounding remains assigned to controlled testing.</p>
+      <h2>What the estimate leaves out</h2>
+      <p>The fatigue entered above must already include the caster's paths, encumbrance, spell requirements, gems, and other modifiers. The tool does not model shared self-buffs, reinvigoration, unconscious slaves, type-specific effects, or backlash. Exact rounding still needs an in-game test.</p>
     </article>
     <aside class="sidebar"><h2>Communion reference</h2><nav><a href="{{ '/dominions/library/books/book-v/#b5-the-level-bonus' | relative_url }}">Level thresholds</a><a href="{{ '/dominions/library/books/book-v/#b5-base-fatigue-distribution' | relative_url }}">Fatigue distribution</a><a href="{{ '/dominions/library/books/book-v/#b5-common-communion-failures' | relative_url }}">Common failures</a><a href="{{ '/dominions/tools/battle-script/' | relative_url }}">Battle script builder</a><a href="{{ '/dominions/tools/' | relative_url }}">All tools</a></nav></aside>
   </div>

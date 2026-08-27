@@ -8,9 +8,9 @@ extra_js: /assets/dominions-reference.js
 <section class="page-hero tool-index-hero">
   <div class="shell">
     <div class="breadcrumbs"><a href="{{ '/guides/' | relative_url }}">Guides</a><span>/</span><a href="{{ '/dominions/tools/' | relative_url }}">Dominions tools</a><span>/</span><span>Base-game catalogue</span></div>
-    <p class="eyebrow">Pinned searchable reference</p>
-    <h1>Find the record, then keep its evidence boundary visible.</h1>
-    <p class="lead">Search spells, items, referenced units, Pretender forms, summon relations, sites, Thrones, and mercenary companies without mixing base-game data with mods.</p>
+    <p class="eyebrow">Searchable base-game reference</p>
+    <h1>Search the base-game records.</h1>
+    <p class="lead">Look up spells, items, referenced units, Pretender forms, summon links, sites, Thrones, and mercenary companies. Mod data is not included.</p>
     <div class="meta-row">
       <span class="status status--active" data-reference-total>5,340 records</span>
       <span class="meta-chip">Vanilla 6.35 register</span>
@@ -21,7 +21,7 @@ extra_js: /assets/dominions-reference.js
 </section>
 
 <section class="section shell reference-catalogue" data-reference-catalogue data-source-url="{{ '/dominions/tools/reference/data/catalogue.json.gz' | relative_url }}">
-  <div class="notice reference-scope"><p><strong>Coverage boundary:</strong> spell, item, site, Throne, Pretender, summon, and mercenary records come from the pinned 6.35 base-game register. “Referenced units” contains units named by those records. It is useful for finding summon, site, and mercenary relationships, but it is not presented as a complete national troop and commander catalogue. The current Knowledge Library baseline is 6.36, so changed values should be checked against the game interface and current patch notes.</p></div>
+  <div class="notice reference-scope"><p><strong>What is covered:</strong> spells, items, sites, Thrones, Pretenders, summons, and mercenaries come from the pinned 6.35 base-game register. “Referenced units” only includes units named by those records, so it is not a complete national troop and commander list. The current Knowledge Library uses 6.36; check changed values in-game and against the current patch notes.</p></div>
 
   <form class="tool-form reference-filter-form" data-reference-filters>
     <div class="reference-controls">
@@ -37,9 +37,9 @@ extra_js: /assets/dominions-reference.js
 
   <div class="reference-result-heading">
     <div><p class="eyebrow">Matching records</p><h2 data-reference-heading>Loading the catalogue…</h2></div>
-    <p data-reference-status aria-live="polite">Preparing the pinned base-game register.</p>
+    <p data-reference-status aria-live="polite">Loading the base-game records.</p>
   </div>
   <div class="reference-record-list" data-reference-results></div>
   <div class="reference-load-more"><button class="button button--quiet" type="button" data-reference-more hidden>Show more records</button></div>
-  <noscript><div class="notice"><p>This catalogue requires JavaScript because its 5,340 records are filtered in the browser. Foundation Book XII remains available without JavaScript.</p></div></noscript>
+  <noscript><div class="notice"><p>JavaScript is needed to filter these 5,340 records. Foundation Book XII can still be opened without it.</p></div></noscript>
 </section>

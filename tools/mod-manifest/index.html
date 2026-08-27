@@ -1,6 +1,6 @@
 ---
 title: Mod manifest and freeze tool
-description: Build a local, versioned mod manifest with exact files, dependencies, load order, test status, known interactions, and recovery notes.
+description: Record exact mod files, dependencies, load order, test results, known conflicts, and the last working profile.
 nav_section: tools
 extra_js: /assets/toolkit.js
 ---
@@ -9,8 +9,8 @@ extra_js: /assets/toolkit.js
   <div class="shell">
     <div class="breadcrumbs"><a href="{{ '/tools/' | relative_url }}">Tools</a><span>/</span><span>Mod manifest</span></div>
     <p class="eyebrow">Version and recovery record</p>
-    <h1>Freeze the setup that actually worked.</h1>
-    <p class="lead">Record exact versions, files, sides, dependencies, order, tests, problems, and the last recoverable baseline without claiming that an untested combination is safe.</p>
+    <h1>Record the setup that worked.</h1>
+    <p class="lead">List the exact versions, files, sides, dependencies, load order, tests, known problems, and last working copy.</p>
     <div class="content-badges"><span class="content-badge content-badge--strategy">Cross-project tool</span><span class="content-badge content-badge--research">Test status required</span></div>
   </div>
 </section>
@@ -56,9 +56,9 @@ extra_js: /assets/toolkit.js
       </form>
       <h2>Frozen manifest</h2>
       <div class="tool-output" data-record-output aria-live="polite"></div>
-      <p class="search-count" data-record-status>The working manifest is saved only in this browser.</p>
+      <p class="search-count" data-record-status>This draft is saved in this browser.</p>
     </article>
-    <aside class="sidebar"><h2>Related records</h2><nav><a href="{{ '/tools/session-record/' | relative_url }}">Multiplayer session record</a><a href="{{ '/vintage-story/' | relative_url }}">Vintage Story project</a><a href="{{ '/minecraft/' | relative_url }}">Minecraft project</a><a href="{{ '/dominions/tools/game-settings/' | relative_url }}">Dominions settings record</a><a href="{{ '/tools/' | relative_url }}">All tools</a></nav><div class="notice"><p><strong>Compatibility boundary:</strong> “Stable” records a completed test under the entered versions. It is not a promise that later updates, different load orders, or different client and server files will work.</p></div></aside>
+    <aside class="sidebar"><h2>Related records</h2><nav><a href="{{ '/tools/session-record/' | relative_url }}">Multiplayer session record</a><a href="{{ '/vintage-story/' | relative_url }}">Vintage Story project</a><a href="{{ '/minecraft/' | relative_url }}">Minecraft project</a><a href="{{ '/dominions/tools/game-settings/' | relative_url }}">Dominions settings record</a><a href="{{ '/tools/' | relative_url }}">All tools</a></nav><div class="notice"><p><strong>What “Stable” means here:</strong> this exact set of versions passed the recorded test. It says nothing about later updates, another load order, or different client and server files.</p></div></aside>
   </div>
 </section>
 

@@ -1,42 +1,48 @@
 - date: 27 August 2026
-  title: Searchable base-game records and deeper battle planning
-  description: A 5,340-record Dominions catalogue, recoverable army battle plan, and named Throne victory register now expose sources, assumptions, stale intelligence, and failure branches.
+  title: A full website writing pass
+  description: Rewrote the public pages, tool instructions, status messages, and search entries in a plainer house voice. The Knowledge Library books themselves were left untouched.
+  url: /about/
+  type: Site
+
+- date: 27 August 2026
+  title: Base-game catalogue and battle-planning tools
+  description: Added a 5,340-record Dominions catalogue, a full army worksheet, and a named Throne register with sources, assumptions, intelligence age, and failure notes.
   url: /dominions/tools/
   type: Tools
 
 - date: 27 August 2026
-  title: Recoverable tool records and library progress
-  description: Pretender design, diplomacy, mod manifests, multiplayer sessions, and Knowledge Library progress can now be saved locally and moved between browsers with JSON exports.
+  title: Tool records that can be backed up
+  description: Pretender designs, diplomacy notes, mod manifests, multiplayer sessions, and Library progress can now be saved in the browser and exported as JSON.
   url: /tools/
   type: Tools
 
 - date: 27 August 2026
-  title: TheHoboKingdom consolidation and expansion
-  description: Edition 26 metadata, full-site search, clearer status labels, stronger project records, and a refreshed homepage.
+  title: TheHoboKingdom brought up to date
+  description: Updated Edition 26 details, added full-site search, revised the status labels and project pages, and refreshed the homepage.
   url: /projects/
   type: Site
 
 - date: 27 August 2026
-  title: Dominions 6 field toolkit expanded
-  description: Thirteen tools now cover nation selection, economy, recruitment, gems, magic, battle scripts, turn audits, research, multiplayer records, and Throne victory planning.
+  title: Dominions 6 toolkit expanded
+  description: Thirteen tools covered nation choice, economy, recruitment, gems, magic, battle scripts, turn checks, research, multiplayer settings, and Throne planning at this stage.
   url: /dominions/tools/
   type: Tools
 
 - date: 27 August 2026
-  title: AURA and Vintage Story project hubs
-  description: The working AURA prototype and the three-player Vintage Story record now have permanent public development pages.
+  title: AURA and Vintage Story pages
+  description: Gave the working AURA prototype and our three-player Vintage Story notes their own permanent pages.
   url: /aura/
   type: Projects
 
 - date: 27 August 2026
-  title: Campaign, tabletop, and Zone archives expanded
-  description: Stormwreck Isle, Z-Land, The Last of Us fan expansion, StalkerNet history, and Stalkers' Ends now have stable routes.
+  title: More campaign, tabletop, and Zone pages
+  description: Added permanent pages for Stormwreck Isle, Z-Land, The Last of Us fan expansion, StalkerNet history, and Stalkers' Ends.
   url: /dnd/campaign-chronicles/stormwreck-isle/
   type: Archive
 
 - date: 26 August 2026
   title: Dominions 6 Knowledge Library — Edition 26
-  description: The complete 793-page PDF, with the core patrol-detection curve and stronger evidence boundaries for battle, movement, magic, and diplomacy rules.
+  description: The complete 793-page PDF, with the core patrol-detection curve and firmer source notes for battle, movement, magic, and diplomacy rules.
   url: /dominions/library/
   type: Library
 
@@ -65,13 +71,13 @@
   type: Guide
 
 - date: 23 July 2026
-  title: TheHoboKingdom hub foundation
-  description: Unified navigation, project directory, guide index, and reliable folder-based routes.
+  title: The first full site structure
+  description: Added shared navigation, the project directory, the guide index, and permanent folder-based addresses.
   url: /projects/
   type: Site
 
 - date: 23 July 2026
   title: StalkerNet project record
-  description: The stable v4.3.6 baseline and current feature set now have a permanent home.
+  description: Recorded the v4.3.6 working fallback and its current feature set on a permanent page.
   url: /stalker/stalkernet/
   type: Project
