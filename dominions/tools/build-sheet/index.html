@@ -1,0 +1,39 @@
+---
+title: Dominions 6 research build sheet
+description: A reusable local worksheet for recording a Dominions 6 ruleset, nation, research route, delivery package, timing, branch, and end state.
+nav_section: guides
+extra_js: /assets/dominions-tools.js
+---
+
+<section class="page-hero">
+  <div class="shell">
+    <div class="breadcrumbs"><a href="{{ '/guides/' | relative_url }}">Guides</a><span>/</span><a href="{{ '/dominions/tools/' | relative_url }}">Dominions tools</a><span>/</span><span>Build sheet</span></div>
+    <p class="eyebrow">Reusable planning worksheet</p>
+    <h1>Write down the plan before the war changes it.</h1>
+    <p class="lead">The sheet follows the eight-part build method used in the research guide and turns it into text that can be kept with a save or sent to another player.</p>
+  </div>
+</section>
+
+<section class="section shell">
+  <div class="content-grid">
+    <article class="content">
+      <form class="tool-form" data-build-sheet>
+        <div class="tool-form-grid tool-form-grid--two">
+          <label><span>Ruleset, versions, and load order</span><textarea name="ruleset" data-build-field placeholder="Dominions 6.36, unmodded — or list every mod in load order"></textarea></label>
+          <label><span>Nation and mage pool</span><textarea name="nation" data-build-field placeholder="Nation, reliable paths, randoms, capital mages, recruitment limits, research"></textarea></label>
+          <label><span>Immediate problem</span><textarea name="problem" data-build-field placeholder="What must the next breakpoint defeat or enable?"></textarea></label>
+          <label><span>Research route</span><textarea name="route" data-build-field placeholder="Each stop and the usable package gained there"></textarea></label>
+          <label><span>Delivery package</span><textarea name="delivery" data-build-field placeholder="Caster, boosts, script, gems, troops, and expected fatigue"></textarea></label>
+          <label><span>Timing</span><textarea name="timing" data-build-field placeholder="Points remaining, realistic monthly output, expected completion turn"></textarea></label>
+          <label><span>Branch condition</span><textarea name="branch" data-build-field placeholder="The exact event that changes the route"></textarea></label>
+          <label><span>Intended end state</span><textarea name="endstate" data-build-field placeholder="Global, ritual economy, army enchantment, battlefield package, or mobility tool"></textarea></label>
+        </div>
+        <div class="tool-actions"><button class="button button--primary" type="submit">Build the record</button><button class="button button--quiet" type="button" data-tool-copy>Copy text</button><button class="button button--quiet" type="button" data-build-clear>Clear saved sheet</button></div>
+      </form>
+      <h2>Build record</h2>
+      <div class="tool-output" data-build-output aria-live="polite"></div>
+      <p class="search-count" data-build-status>The sheet is saved only in this browser.</p>
+    </article>
+    <aside class="sidebar"><h2>Research planning</h2><nav><a href="{{ '/dominions/guides/middle-age-research-builds/' | relative_url }}">Research-build guide</a><a href="{{ '/dominions/tools/research-planner/' | relative_url }}">Breakpoint planner</a><a href="{{ '/dominions/tools/' | relative_url }}">All tools</a></nav></aside>
+  </div>
+</section>

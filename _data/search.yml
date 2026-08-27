@@ -1,0 +1,195 @@
+- title: Dominions 6 Knowledge Library
+  description: Sixteen linked books, searchable reference sections, guided paths, glossary, research register, and the current PDF.
+  url: /dominions/library/
+  project: Dominions 6
+  type: Library
+  keywords: rules strategy modding evidence books glossary
+
+- title: Dominions 6 Knowledge Library — Progress Edition 26 PDF
+  description: The current complete 793-page reader's edition for offline reading, archiving, printing, or sharing.
+  url: /downloads/dominions-6-knowledge-library-edition-26/
+  project: Dominions 6
+  type: Download
+  keywords: edition 26 pdf current release offline sha256
+
+- title: Dominions 6 Knowledge Library — Progress Edition 25 PDF
+  description: The previous complete reader's edition, retained as a stable rollback copy.
+  url: /downloads/dominions-6-knowledge-library-edition-25/
+  project: Dominions 6
+  type: Download
+  keywords: edition 25 pdf archive rollback previous release
+
+- title: Dominions 6 nations by age
+  description: All 102 official-manual nations across the Early, Middle, and Late Ages.
+  url: /dominions/nations/
+  project: Dominions 6
+  type: Reference
+  keywords: nation catalogue early middle late age manual
+
+- title: Starting a Dominions 6 game
+  description: World creation, participants, settings, the official lobby, first-turn controls, and hosting.
+  url: /dominions/guides/first-game-and-hosting/
+  project: Dominions 6
+  type: Guide
+  keywords: multiplayer lobby host setup turn pretender
+
+- title: Middle Age research builds
+  description: Breakpoint planning, build families, mage-turn accounting, MA Arcoscephale, and mod adaptation.
+  url: /dominions/guides/middle-age-research-builds/
+  project: Dominions 6
+  type: Guide
+  keywords: magic research school breakpoint arcoscephale communion
+
+- title: Dominions 6 tools
+  description: Nation finder, research planner, build sheet, and multiplayer settings record.
+  url: /dominions/tools/
+  project: Dominions 6
+  type: Tool
+  keywords: calculator planner worksheet generator comparison
+
+- title: Nation finder and comparison
+  description: Search the 102 official nation summaries and compare up to three entries across the three ages.
+  url: /dominions/tools/nation-finder/
+  project: Dominions 6
+  type: Tool
+  keywords: choose compare early middle late nation
+
+- title: Research breakpoint planner
+  description: Estimate a target's completion turn after temporary researcher losses are counted.
+  url: /dominions/tools/research-planner/
+  project: Dominions 6
+  type: Tool
+  keywords: research points month target mage turns calculate
+
+- title: Research build sheet
+  description: Record a ruleset, nation, mage pool, research route, delivery plan, timing, branch, and end state.
+  url: /dominions/tools/build-sheet/
+  project: Dominions 6
+  type: Tool
+  keywords: worksheet build route copy export planning
+
+- title: Multiplayer settings record
+  description: Build a plain-text record of player count, map size, mods, Thrones, hosting, and campaign rules.
+  url: /dominions/tools/game-settings/
+  project: Dominions 6
+  type: Tool
+  keywords: game setup host provinces players thrones mods checklist
+
+- title: AURA
+  description: The working Adaptive Utility for Real-world Advancement prototype and its progression design.
+  url: /aura/
+  project: AURA
+  type: Project
+  keywords: app quests skills attributes classes gold titles mastery level 100
+
+- title: Vintage Story
+  description: Multiplayer world record, role split, early progression, mod stack, server setup, and troubleshooting.
+  url: /vintage-story/
+  project: Vintage Story
+  type: Project
+  keywords: smith farmer blackguard copper cellar pottery mods server
+
+- title: Minecraft
+  description: Friend-group Forge modpacks, installation notes, progression changes, and version records.
+  url: /minecraft/
+  project: Minecraft
+  type: Project
+  keywords: forge curseforge modpack recipes progression
+
+- title: Minecraft 2 project record
+  description: The active vanilla-friendly progression pack, its design rules, release checklist, and planned systems.
+  url: /minecraft/minecraft-2/
+  project: Minecraft
+  type: Reference
+  keywords: backpack pouch bundle food farming fishing wildlife worldgen
+
+- title: Minecraft common fixes
+  description: A careful troubleshooting record for keybind conflicts, inventory behaviour, dependencies, crashes, and joining problems.
+  url: /minecraft/common-fixes/
+  project: Minecraft
+  type: Guide
+  keywords: inventory hotbar keybind crash dependency server fix
+
+- title: S.T.A.L.K.E.R.
+  description: StalkerNet development, Zone references, mod records, troubleshooting, and short fiction.
+  url: /stalker/
+  project: S.T.A.L.K.E.R.
+  type: Project
+  keywords: zone anomaly mutant faction modpack fiction
+
+- title: StalkerNet
+  description: Stable v4.3.6 baseline, features, recovery record, and development priorities for the PDA application.
+  url: /stalker/stalkernet/
+  project: S.T.A.L.K.E.R.
+  type: Project
+  keywords: app pda map comms archive jobs firebase
+
+- title: StalkerNet changelog
+  description: The accepted recovery chain from v4.3.0 to the stable v4.3.6 baseline.
+  url: /stalker/stalkernet/changelog/
+  project: S.T.A.L.K.E.R.
+  type: Changelog
+  keywords: version release recovery stable fallback
+
+- title: Stalkers' Ends
+  description: A short-fiction collection following different stalkers through their final journeys in the Zone.
+  url: /stalker/stalkers-ends/
+  project: S.T.A.L.K.E.R.
+  type: Collection
+  keywords: anthology fiction death anomaly mutant memorial
+
+- title: Dungeons & Dragons
+  description: Public campaign records, characters, handouts, homebrew, and quick references.
+  url: /dnd/
+  project: Dungeons & Dragons
+  type: Project
+  keywords: campaign character one-shot homebrew handout
+
+- title: Stormwreck campaign chronicle
+  description: A player-safe record of the completed Stormwreck Isle arc and its surviving consequences.
+  url: /dnd/campaign-chronicles/stormwreck-isle/
+  project: Dungeons & Dragons
+  type: Chronicle
+  keywords: sharruth dragon orcus bahamut grong pubezaki
+
+- title: D&D player resources
+  description: The public structure for character journals, quick references, handouts, and table-ready material.
+  url: /dnd/resources/
+  project: Dungeons & Dragons
+  type: Collection
+  keywords: printable character journal reference player handout
+
+- title: Tabletop projects
+  description: Original expansions, quick-start material, printable references, and projects outside the D&D archive.
+  url: /tabletop/
+  project: Tabletop
+  type: Project
+  keywords: board game ttrpg printables design
+
+- title: Z-Land quick-start project
+  description: Playtest narration, infection overview, character material, handouts, and future session additions.
+  url: /tabletop/z-land/
+  project: Tabletop
+  type: Playtest
+  keywords: zombie infection narration quick start campaign
+
+- title: The Last of Us — Escape the Dark fan expansion
+  description: Character overhauls, crafting work, equipment, chapter cards, and versioned printable plans.
+  url: /tabletop/the-last-of-us-escape-the-dark/
+  project: Tabletop
+  type: Playtest
+  keywords: joel ellie bill cards board game booster fan expansion
+
+- title: Armoury & History
+  description: Planned companion articles, transcripts, sources, and research notes for historical arms and armour videos.
+  url: /armoury/
+  project: Armoury & History
+  type: Project
+  keywords: weapon armour history sten video transcript sources
+
+- title: Baldur's Gate 3
+  description: A held project route for future mod collections, party builds, and co-op notes.
+  url: /bg3/
+  project: Baldur's Gate 3
+  type: Project
+  keywords: mods builds co-op planned

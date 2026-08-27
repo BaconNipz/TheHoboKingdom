@@ -9,6 +9,7 @@ nav_section: guides
     <p class="eyebrow">Guide library</p>
     <h1>Useful notes, written to be found again.</h1>
     <p class="lead">Practical instructions and reference pages, organised by project and marked with their scope and last meaningful update.</p>
+    <div class="button-row"><a class="button button--primary" href="{{ '/search/' | relative_url }}">Search every guide</a></div>
   </div>
 </section>
 
@@ -19,7 +20,7 @@ nav_section: guides
       <div class="link-list">
         <a class="link-card" href="{{ '/dominions/library/' | relative_url }}">
           <span>
-            <strong>Dominions 6 — Knowledge Library, Edition 24</strong>
+            <strong>Dominions 6 — Knowledge Library, Edition {{ site.data.dominions_library.edition }}</strong>
             <small>A searchable collection of sixteen books and field references for new players, experienced players, modders, and rules research.</small>
           </span>
           <span aria-hidden="true">→</span>
@@ -45,11 +46,25 @@ nav_section: guides
           </span>
           <span aria-hidden="true">→</span>
         </a>
+        <a class="link-card" href="{{ '/dominions/tools/' | relative_url }}">
+          <span>
+            <strong>Dominions 6 — Planning tools</strong>
+            <small>Find and compare nations, estimate a research breakpoint, prepare a build sheet, or record multiplayer settings.</small>
+          </span>
+          <span aria-hidden="true">→</span>
+        </a>
+        <a class="link-card" href="{{ '/minecraft/common-fixes/' | relative_url }}">
+          <span>
+            <strong>Minecraft — Common modpack fixes</strong>
+            <small>Keybind conflicts, inventory behaviour, missing dependencies, crashes, and joining problems.</small>
+          </span>
+          <span aria-hidden="true">→</span>
+        </a>
       </div>
 
-      <h2>Collections being prepared</h2>
+      <h2>Collections taking shape</h2>
       <div class="notice">
-        <p><strong>Planned collections:</strong> Minecraft modpack installation and progression, StalkerNet version notes, D&amp;D campaign material, and printable tabletop references.</p>
+        <p>AURA, Vintage Story, StalkerNet, D&amp;D, Z-Land, and The Last of Us project records now have permanent homes. Downloads remain withheld until each file is ready to be treated as a stable release.</p>
       </div>
     </div>
 
@@ -58,9 +73,12 @@ nav_section: guides
       <nav>
         <a href="{{ '/dominions/' | relative_url }}">Dominions 6</a>
         <a href="{{ '/stalker/' | relative_url }}">S.T.A.L.K.E.R.</a>
+        <a href="{{ '/aura/' | relative_url }}">AURA</a>
+        <a href="{{ '/vintage-story/' | relative_url }}">Vintage Story</a>
         <a href="{{ '/minecraft/' | relative_url }}">Minecraft</a>
         <a href="{{ '/dnd/' | relative_url }}">Dungeons & Dragons</a>
         <a href="{{ '/tabletop/' | relative_url }}">Tabletop projects</a>
+        <a href="{{ '/armoury/' | relative_url }}">Armoury &amp; History</a>
       </nav>
     </aside>
   </div>

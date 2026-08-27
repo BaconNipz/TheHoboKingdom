@@ -1,0 +1,22 @@
+---
+layout: null
+permalink: /feed.xml
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ site.title | xml_escape }} updates</title>
+  <link href="{{ '/feed.xml' | absolute_url }}" rel="self"/>
+  <link href="{{ '/' | absolute_url }}"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>{{ '/' | absolute_url }}</id>
+  {% for update in site.data.updates limit: 20 %}
+  <entry>
+    <title>{{ update.title | xml_escape }}</title>
+    <link href="{{ update.url | absolute_url }}"/>
+    <id>{{ update.url | absolute_url }}</id>
+    <updated>{{ update.date | date_to_xmlschema }}</updated>
+    <summary>{{ update.description | xml_escape }}</summary>
+    <category term="{{ update.type | xml_escape }}"/>
+  </entry>
+  {% endfor %}
+</feed>

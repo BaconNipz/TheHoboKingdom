@@ -49,19 +49,42 @@ Every guide should include its scope, supported version or mod context, update d
 
 ### Content pass
 
-1. Maintain and expand the Dominions reference. The three-age catalogue and starting-game guide were added on 2 August 2026; Edition 24 of the complete Knowledge Library followed on 25 August 2026.
-2. Publish the complete StalkerNet release history.
-3. Record the Minecraft Forge modpack and installation process.
-4. Add safe public D&D campaign and character material.
-5. Add versioned tabletop project pages and printables.
+1. Maintain and expand the Dominions reference. The three-age catalogue and starting-game guide were added on 2 August 2026; Edition 26 of the complete Knowledge Library followed on 26 August 2026.
+2. Publish the complete StalkerNet release history. The confirmed v4.3.0-v4.3.6 chain now has a public changelog; older milestones remain to be recovered.
+3. Record the Minecraft Forge modpack and installation process. The design and troubleshooting records are public; the exact pack manifest remains pending.
+4. Add safe public D&D campaign and character material. The completed Stormwreck Isle arc and public resource structure are now available.
+5. Add versioned tabletop project pages and printables. Project records are available; stable printable bundles remain pending.
 
 ### Discovery pass
 
-- Extend the library's client-side search into the wider guide index when the other project sections have enough material to justify it.
-- Add related-guide links.
-- Add release records and changelogs.
-- Add social-sharing imagery and project screenshots.
-- Add update feeds if the volume of published work justifies them.
+Completed on 27 August 2026:
+
+- Extended search across the main site and the Dominions library index.
+- Added related project and guide routes throughout the active hubs.
+- Added the StalkerNet changelog and clearer release records.
+- Updated the current Dominions cover and social-sharing image to Edition 26.
+- Added an Atom update feed and sitemap.
+- Added consistent official, tested, strategy, modded, research, and playtest labels.
+- Added browser-local reading history, section-link copying, and reading progress to the Dominions library.
+
+### Expansion pass
+
+Completed on 27 August 2026:
+
+- Added AURA and Vintage Story as active project hubs.
+- Expanded Minecraft with its active pack record and a common-fixes guide.
+- Added Stalkers' Ends and the accepted StalkerNet recovery chain.
+- Added the player-safe Stormwreck Isle chronicle and D&D resource structure.
+- Added permanent project routes for Z-Land and The Last of Us: Escape the Dark fan expansion.
+- Added the planned Armoury & History hub.
+- Added the Dominions nation finder, research planner, build sheet, and multiplayer settings record.
+
+Still dependent on future project work:
+
+- Real application screenshots and stable downloadable AURA or StalkerNet builds.
+- A frozen Minecraft or Vintage Story pack manifest and tested public profile.
+- Finished, versioned tabletop printable bundles.
+- The completed Sten video and its researched companion article.
 
 ## Publishing principles
 

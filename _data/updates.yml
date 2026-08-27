@@ -1,3 +1,27 @@
+- date: 27 August 2026
+  title: TheHoboKingdom consolidation and expansion
+  description: Edition 26 metadata, full-site search, clearer status labels, stronger project records, and a refreshed homepage.
+  url: /projects/
+  type: Site
+
+- date: 27 August 2026
+  title: Dominions planning tools
+  description: Nation comparison, research timing, reusable build sheets, and multiplayer settings records now run directly in the site.
+  url: /dominions/tools/
+  type: Tools
+
+- date: 27 August 2026
+  title: AURA and Vintage Story project hubs
+  description: The working AURA prototype and the three-player Vintage Story record now have permanent public development pages.
+  url: /aura/
+  type: Projects
+
+- date: 27 August 2026
+  title: Campaign, tabletop, and Zone archives expanded
+  description: Stormwreck Isle, Z-Land, The Last of Us fan expansion, StalkerNet history, and Stalkers' Ends now have stable routes.
+  url: /dnd/campaign-chronicles/stormwreck-isle/
+  type: Archive
+
 - date: 26 August 2026
   title: Dominions 6 Knowledge Library — Edition 26
   description: The complete 793-page PDF, with the core patrol-detection curve and stronger evidence boundaries for battle, movement, magic, and diplomacy rules.

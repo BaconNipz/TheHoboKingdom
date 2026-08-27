@@ -1,0 +1,12 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% for node in site.pages %}
+    {% unless node.url == '/404.html' or node.url contains '.xml' %}
+  <url><loc>{{ node.url | absolute_url | xml_escape }}</loc></url>
+    {% endunless %}
+  {% endfor %}
+</urlset>

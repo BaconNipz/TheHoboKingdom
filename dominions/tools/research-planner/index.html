@@ -1,0 +1,40 @@
+---
+title: Dominions 6 research breakpoint planner
+description: Estimate when a Dominions 6 research target finishes after temporary researcher losses are included.
+nav_section: guides
+extra_js: /assets/dominions-tools.js
+---
+
+<section class="page-hero">
+  <div class="shell">
+    <div class="breadcrumbs"><a href="{{ '/guides/' | relative_url }}">Guides</a><span>/</span><a href="{{ '/dominions/tools/' | relative_url }}">Dominions tools</a><span>/</span><span>Research planner</span></div>
+    <p class="eyebrow">Mage-turn accounting</p>
+    <h1>Research the turn that will actually happen.</h1>
+    <p class="lead">Estimate the completion hosting cycle after researchers leave the laboratory to search, forge, move, cast rituals, or join a battle.</p>
+    <div class="content-badges"><span class="content-badge content-badge--strategy">Planning estimate</span></div>
+  </div>
+</section>
+
+<section class="section shell">
+  <div class="content-grid">
+    <article class="content">
+      <form class="tool-form" data-research-planner>
+        <div class="tool-form-grid tool-form-grid--two">
+          <label><span>Target name</span><input name="target" value="Next breakpoint" maxlength="80"></label>
+          <label><span>Current turn</span><input name="turn" type="number" min="1" value="1" required></label>
+          <label><span>Research points remaining</span><input name="remaining" type="number" min="1" value="500" required></label>
+          <label><span>Normal research per month</span><input name="monthly" type="number" min="1" value="100" required></label>
+          <label><span>Research lost per disrupted month</span><input name="lost" type="number" min="0" value="0" required></label>
+          <label><span>Number of disrupted months</span><input name="disrupted" type="number" min="0" value="0" required></label>
+        </div>
+        <div class="tool-actions"><button class="button button--primary" type="submit">Calculate completion</button><button class="button button--quiet" type="reset">Reset</button></div>
+      </form>
+      <h2>Estimate</h2>
+      <div class="tool-output" data-research-output aria-live="polite"></div>
+
+      <h2>Limits of the estimate</h2>
+      <p>The planner uses the research points displayed in the game. It does not calculate a mage's research ability, school cost, site discount, event, or mod change. If the monthly total changes again, recalculate from the new remaining points.</p>
+    </article>
+    <aside class="sidebar"><h2>Research planning</h2><nav><a href="{{ '/dominions/guides/middle-age-research-builds/' | relative_url }}">Research-build guide</a><a href="{{ '/dominions/tools/build-sheet/' | relative_url }}">Build sheet</a><a href="{{ '/dominions/tools/' | relative_url }}">All tools</a></nav></aside>
+  </div>
+</section>
