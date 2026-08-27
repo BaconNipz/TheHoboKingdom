@@ -1,4 +1,10 @@
 - date: 27 August 2026
+  title: Searchable base-game records and deeper battle planning
+  description: A 5,340-record Dominions catalogue, recoverable army battle plan, and named Throne victory register now expose sources, assumptions, stale intelligence, and failure branches.
+  url: /dominions/tools/
+  type: Tools
+
+- date: 27 August 2026
   title: Recoverable tool records and library progress
   description: Pretender design, diplomacy, mod manifests, multiplayer sessions, and Knowledge Library progress can now be saved locally and moved between browsers with JSON exports.
   url: /tools/

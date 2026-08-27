@@ -1,0 +1,45 @@
+---
+title: Dominions 6 base-game reference catalogue
+description: Search a pinned Dominions 6 base-game register of spells, magic items, referenced units, Pretender forms, summons, magic sites, Thrones, and mercenaries.
+nav_section: guides
+extra_js: /assets/dominions-reference.js
+---
+
+<section class="page-hero tool-index-hero">
+  <div class="shell">
+    <div class="breadcrumbs"><a href="{{ '/guides/' | relative_url }}">Guides</a><span>/</span><a href="{{ '/dominions/tools/' | relative_url }}">Dominions tools</a><span>/</span><span>Base-game catalogue</span></div>
+    <p class="eyebrow">Pinned searchable reference</p>
+    <h1>Find the record, then keep its evidence boundary visible.</h1>
+    <p class="lead">Search spells, items, referenced units, Pretender forms, summon relations, sites, Thrones, and mercenary companies without mixing base-game data with mods.</p>
+    <div class="meta-row">
+      <span class="status status--active" data-reference-total>5,340 records</span>
+      <span class="meta-chip">Vanilla 6.35 register</span>
+      <span class="meta-chip">Library baseline 6.36</span>
+      <span class="meta-chip">No account required</span>
+    </div>
+  </div>
+</section>
+
+<section class="section shell reference-catalogue" data-reference-catalogue data-source-url="{{ '/dominions/tools/reference/data/catalogue.json.gz' | relative_url }}">
+  <div class="notice reference-scope"><p><strong>Coverage boundary:</strong> spell, item, site, Throne, Pretender, summon, and mercenary records come from the pinned 6.35 base-game register. “Referenced units” contains units named by those records. It is useful for finding summon, site, and mercenary relationships, but it is not presented as a complete national troop and commander catalogue. The current Knowledge Library baseline is 6.36, so changed values should be checked against the game interface and current patch notes.</p></div>
+
+  <form class="tool-form reference-filter-form" data-reference-filters>
+    <div class="reference-controls">
+      <label class="reference-search-field"><span>Search names, IDs, properties, paths, effects, nations, and relationships</span><input type="search" name="query" autocomplete="off" placeholder="Try Fireball, Construction 6, Dagon, cave, flying, or Magma Child" data-reference-query></label>
+      <label><span>Record type</span><select name="category" data-reference-category><option value="">All record types</option><option value="spell">Spells</option><option value="item">Magic items</option><option value="unit">Referenced units</option><option value="pretender">Pretender forms</option><option value="summon">Summon relations</option><option value="site">Magic sites</option><option value="throne">Thrones</option><option value="mercenary">Mercenary companies</option></select></label>
+      <label><span>Magic path</span><select name="path" data-reference-path><option value="">All paths</option><option value="F">Fire</option><option value="A">Air</option><option value="W">Water</option><option value="E">Earth</option><option value="S">Astral</option><option value="D">Death</option><option value="N">Nature</option><option value="G">Glamour</option><option value="B">Blood</option><option value="H">Holy</option></select></label>
+      <label><span>Era availability</span><select name="era" data-reference-era><option value="">All or not era-bound</option><option value="EA">Early Age</option><option value="MA">Middle Age</option><option value="LA">Late Age</option></select></label>
+      <label><span data-reference-level-label>Recorded level</span><select name="level" data-reference-level><option value="">All levels</option><option value="0">Level 0</option><option value="1">Level 1</option><option value="2">Level 2</option><option value="3">Level 3</option><option value="4">Level 4</option><option value="5">Level 5</option><option value="6">Level 6</option><option value="7">Level 7</option><option value="8">Level 8</option><option value="9">Level 9</option></select></label>
+      <label><span>Evidence status</span><select name="evidence" data-reference-evidence><option value="">All evidence states</option></select></label>
+    </div>
+    <div class="tool-actions"><button class="button button--quiet" type="reset">Clear filters</button><a class="button button--quiet" href="{{ '/dominions/library/books/book-xii/' | relative_url }}">Open Foundation Book XII</a></div>
+  </form>
+
+  <div class="reference-result-heading">
+    <div><p class="eyebrow">Matching records</p><h2 data-reference-heading>Loading the catalogue…</h2></div>
+    <p data-reference-status aria-live="polite">Preparing the pinned base-game register.</p>
+  </div>
+  <div class="reference-record-list" data-reference-results></div>
+  <div class="reference-load-more"><button class="button button--quiet" type="button" data-reference-more hidden>Show more records</button></div>
+  <noscript><div class="notice"><p>This catalogue requires JavaScript because its 5,340 records are filtered in the browser. Foundation Book XII remains available without JavaScript.</p></div></noscript>
+</section>

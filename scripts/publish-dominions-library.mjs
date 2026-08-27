@@ -218,7 +218,7 @@ const landing = `${frontMatter("Dominions 6 Knowledge Library", "A versioned, se
   <div class="library-tool-grid">
     <article class="library-tool-card"><h3>Glossary</h3><p>106 rules, interface terms, abbreviations, and pieces of community language, each linked to its full explanation.</p><a class="button button--quiet" href="/dominions/library/glossary/">Open the glossary</a></article>
     <article class="library-tool-card"><h3>Research register</h3><p>57 verification questions with priorities, status, importance, and the most reliable route to an answer.</p><a class="button button--quiet" href="/dominions/library/research/">Open the register</a></article>
-    <article class="library-tool-card"><h3>Field toolkit</h3><p>Sixteen tools cover nations, Pretenders, economy, recruitment, magic, battles, turns, diplomacy, research, reading progress, multiplayer records, and Throne victories.</p><a class="button button--quiet" href="/dominions/tools/">Open the tools</a></article>
+    <article class="library-tool-card"><h3>Field toolkit</h3><p>Eighteen tools cover pinned base-game records, nations, Pretenders, economy, recruitment, magic, battle plans, turns, diplomacy, research, reading progress, multiplayer records, and Throne victories.</p><a class="button button--quiet" href="/dominions/tools/">Open the tools</a></article>
     <article class="library-tool-card"><h3>Edition ${editionNumber} PDF</h3><p>The complete ${pdfPageCount}-page library for offline reading, archiving, printing, or sharing outside the website.</p><a class="button button--quiet" href="${pdfDownload}">Download the PDF</a></article>
   </div>
 
