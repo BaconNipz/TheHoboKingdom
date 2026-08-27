@@ -631,13 +631,16 @@ h3 {
 
 .release-spotlight {
   display: grid;
-  grid-template-columns: minmax(190px, 300px) minmax(0, 1fr);
+  grid-template-columns: minmax(230px, 340px) minmax(0, 1fr);
   align-items: center;
   gap: clamp(2.5rem, 7vw, 7rem);
 }
 
 .release-cover {
   position: relative;
+  width: 100%;
+  max-width: 340px;
+  justify-self: center;
 }
 
 .release-cover::before {
@@ -651,6 +654,8 @@ h3 {
 
 .release-cover img {
   display: block;
+  width: 100%;
+  height: auto;
   border: 1px solid var(--line);
   border-radius: 0.35rem;
   box-shadow: var(--shadow);
@@ -1471,7 +1476,7 @@ textarea:focus {
   }
 
   .release-cover {
-    width: min(70vw, 280px);
+    width: min(76vw, 320px);
   }
 }
 
