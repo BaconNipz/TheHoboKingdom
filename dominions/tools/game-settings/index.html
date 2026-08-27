@@ -21,7 +21,7 @@ extra_js: /assets/dominions-tools.js
       <form class="tool-form" data-game-settings>
         <div class="tool-form-grid tool-form-grid--two">
           <label><span>Game name</span><input name="name" data-settings-field placeholder="Campaign name"></label>
-          <label><span>Dominions version</span><input name="version" data-settings-field value="6.36"></label>
+          <label><span>Dominions version</span><input name="version" data-settings-field value="{{ site.data.dominions_library.game_version }}"></label>
           <label><span>Age</span><select name="age" data-settings-field><option>Early Age</option><option selected>Middle Age</option><option>Late Age</option></select></label>
           <label><span>Human players</span><input name="players" data-settings-field type="number" min="1" value="5"></label>
           <label><span>Target provinces per player</span><input name="provinces" data-settings-field type="number" min="1" value="20"></label>

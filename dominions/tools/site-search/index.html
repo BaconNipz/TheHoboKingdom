@@ -1,0 +1,52 @@
+---
+title: Dominions 6 magic-site coverage planner
+description: Record the highest Dominions 6 magic-site search level completed in one province across all nine paths and identify remaining coverage gaps.
+nav_section: guides
+extra_js: /assets/dominions-tools.js
+---
+
+<section class="page-hero">
+  <div class="shell">
+    <div class="breadcrumbs"><a href="{{ '/guides/' | relative_url }}">Guides</a><span>/</span><a href="{{ '/dominions/tools/' | relative_url }}">Dominions tools</a><span>/</span><span>Site-search coverage</span></div>
+    <p class="eyebrow">Provincial magic audit</p>
+    <h1>Record what has actually been searched.</h1>
+    <p class="lead">Keep one plain record of the highest completed search level in each path, the intended coverage target, and the mage or ritual assigned to close each gap.</p>
+    <div class="content-badges"><span class="content-badge content-badge--strategy">Coverage record</span></div>
+  </div>
+</section>
+
+<section class="section shell">
+  <div class="content-grid">
+    <article class="content">
+      <form class="tool-form" data-site-search>
+        <div class="tool-form-grid tool-form-grid--two">
+          <label><span>Province</span><input name="province" maxlength="80" placeholder="Province name or number"></label>
+          <label><span>Ruleset</span><input name="ruleset" maxlength="120" value="Dominions {{ site.data.dominions_library.game_version }}, unmodded"></label>
+        </div>
+        <div class="tool-table-wrap">
+          <table class="tool-table site-search-table">
+            <thead><tr><th>Path</th><th>Highest completed level</th><th>Target level</th><th>Planned searcher or ritual</th></tr></thead>
+            <tbody>
+              <tr data-site-row data-path="Fire" data-code="F"><th>F · Fire</th><td><input data-site-value="current" aria-label="Fire level already searched" type="number" min="0" max="9" value="0"></td><td><input data-site-value="target" aria-label="Fire target level" type="number" min="0" max="9" value="2"></td><td><input data-site-value="plan" aria-label="Planned Fire searcher or ritual"></td></tr>
+              <tr data-site-row data-path="Air" data-code="A"><th>A · Air</th><td><input data-site-value="current" aria-label="Air level already searched" type="number" min="0" max="9" value="0"></td><td><input data-site-value="target" aria-label="Air target level" type="number" min="0" max="9" value="2"></td><td><input data-site-value="plan" aria-label="Planned Air searcher or ritual"></td></tr>
+              <tr data-site-row data-path="Water" data-code="W"><th>W · Water</th><td><input data-site-value="current" aria-label="Water level already searched" type="number" min="0" max="9" value="0"></td><td><input data-site-value="target" aria-label="Water target level" type="number" min="0" max="9" value="2"></td><td><input data-site-value="plan" aria-label="Planned Water searcher or ritual"></td></tr>
+              <tr data-site-row data-path="Earth" data-code="E"><th>E · Earth</th><td><input data-site-value="current" aria-label="Earth level already searched" type="number" min="0" max="9" value="0"></td><td><input data-site-value="target" aria-label="Earth target level" type="number" min="0" max="9" value="2"></td><td><input data-site-value="plan" aria-label="Planned Earth searcher or ritual"></td></tr>
+              <tr data-site-row data-path="Astral" data-code="S"><th>S · Astral</th><td><input data-site-value="current" aria-label="Astral level already searched" type="number" min="0" max="9" value="0"></td><td><input data-site-value="target" aria-label="Astral target level" type="number" min="0" max="9" value="2"></td><td><input data-site-value="plan" aria-label="Planned Astral searcher or ritual"></td></tr>
+              <tr data-site-row data-path="Death" data-code="D"><th>D · Death</th><td><input data-site-value="current" aria-label="Death level already searched" type="number" min="0" max="9" value="0"></td><td><input data-site-value="target" aria-label="Death target level" type="number" min="0" max="9" value="2"></td><td><input data-site-value="plan" aria-label="Planned Death searcher or ritual"></td></tr>
+              <tr data-site-row data-path="Nature" data-code="N"><th>N · Nature</th><td><input data-site-value="current" aria-label="Nature level already searched" type="number" min="0" max="9" value="0"></td><td><input data-site-value="target" aria-label="Nature target level" type="number" min="0" max="9" value="2"></td><td><input data-site-value="plan" aria-label="Planned Nature searcher or ritual"></td></tr>
+              <tr data-site-row data-path="Glamour" data-code="G"><th>G · Glamour</th><td><input data-site-value="current" aria-label="Glamour level already searched" type="number" min="0" max="9" value="0"></td><td><input data-site-value="target" aria-label="Glamour target level" type="number" min="0" max="9" value="2"></td><td><input data-site-value="plan" aria-label="Planned Glamour searcher or ritual"></td></tr>
+              <tr data-site-row data-path="Blood" data-code="B"><th>B · Blood</th><td><input data-site-value="current" aria-label="Blood level already searched" type="number" min="0" max="9" value="0"></td><td><input data-site-value="target" aria-label="Blood target level" type="number" min="0" max="9" value="2"></td><td><input data-site-value="plan" aria-label="Planned Blood searcher or ritual"></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <label><span>Notes</span><textarea name="notes" placeholder="Terrain, discovered sites, ownership risk, mage-turn cost, or reason for stopping at a lower target"></textarea></label>
+        <div class="tool-actions"><button class="button button--primary" type="submit">Build coverage record</button><button class="button button--quiet" type="button" data-tool-copy>Copy record</button><button class="button button--quiet" type="reset">Reset</button></div>
+      </form>
+
+      <h2>Coverage record</h2>
+      <div class="tool-output" data-site-output aria-live="polite"></div>
+      <p class="search-count" data-site-status>Target level 2 is a starting planning value, not a claim that every important site is level 2 or lower.</p>
+    </article>
+    <aside class="sidebar"><h2>Site reference</h2><nav><a href="{{ '/dominions/library/books/book-ii/#b2-site-frequency-and-terrain' | relative_url }}">Site frequency and terrain</a><a href="{{ '/dominions/library/books/book-ii/#b2-search-difficulty' | relative_url }}">Search difficulty</a><a href="{{ '/dominions/library/books/field-reference/#field-magic-sites-and-gems' | relative_url }}">Sites and gems quick reference</a><a href="{{ '/dominions/tools/gem-budget/' | relative_url }}">Gem treasury planner</a><a href="{{ '/dominions/tools/' | relative_url }}">All tools</a></nav></aside>
+  </div>
+</section>

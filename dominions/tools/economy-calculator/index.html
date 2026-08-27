@@ -1,0 +1,42 @@
+---
+title: Dominions 6 province economy calculator
+description: Estimate Dominions 6 provincial income, resource retention, and recruitment shutdown from population, scale modifiers, Administration, fortification, and unrest.
+nav_section: guides
+extra_js: /assets/dominions-tools.js
+---
+
+<section class="page-hero">
+  <div class="shell">
+    <div class="breadcrumbs"><a href="{{ '/guides/' | relative_url }}">Guides</a><span>/</span><a href="{{ '/dominions/tools/' | relative_url }}">Dominions tools</a><span>/</span><span>Province economy</span></div>
+    <p class="eyebrow">Gold, resources, and unrest</p>
+    <h1>Read the province as a working economy.</h1>
+    <p class="lead">Apply the official income and unrest formulas without pretending that hidden intermediate rounding can be recovered exactly.</p>
+    <div class="content-badges"><span class="content-badge content-badge--official">Official formula</span><span class="content-badge content-badge--research">Rounding estimate</span></div>
+  </div>
+</section>
+
+<section class="section shell">
+  <div class="content-grid">
+    <article class="content">
+      <form class="tool-form" data-economy-calculator>
+        <div class="tool-form-grid tool-form-grid--two">
+          <label><span>Population</span><input name="population" type="number" min="0" step="1" value="10000" required></label>
+          <label><span>Combined dominion-scale income multiplier</span><input name="scale" type="number" min="0" step="0.1" value="100" required><small>Enter 100 for no change, 110 for +10%, or 90 for −10%.</small></label>
+          <label><span>Fort Administration</span><input name="administration" type="number" min="0" step="1" value="0" required></label>
+          <label><span>Unrest</span><input name="unrest" type="number" min="0" step="1" value="0" required></label>
+          <label><span>Potential local resources before fort and unrest</span><input name="resources" type="number" min="0" step="1" value="100" required></label>
+          <label><span>Local resource access</span><select name="resource-access"><option value="0.5">Unfortified — half local potential</option><option value="1">Fortified — full local potential</option></select></label>
+        </div>
+        <label class="inline-check"><input name="tax-trace" type="checkbox" checked><span>The province has a valid tax trace to a friendly fort</span></label>
+        <div class="tool-actions"><button class="button button--primary" type="submit">Calculate province</button><button class="button button--quiet" type="reset">Reset</button></div>
+      </form>
+
+      <h2>Province estimate</h2>
+      <div class="tool-output" data-economy-output aria-live="polite"></div>
+
+      <h2>Formula boundary</h2>
+      <p>The scale field expects the combined multiplier already chosen in the game. Fort resource draw from neighbouring provinces is deliberately excluded because adjacency, ownership, forts, and land-water boundaries decide what can be drawn. The displayed game value remains final when one point matters.</p>
+    </article>
+    <aside class="sidebar"><h2>Economy reference</h2><nav><a href="{{ '/dominions/library/books/field-reference/#field-provincial-gold' | relative_url }}">Provincial gold</a><a href="{{ '/dominions/library/books/field-reference/#field-provincial-resources' | relative_url }}">Provincial resources</a><a href="{{ '/dominions/library/books/book-ii/#b2-income-formula' | relative_url }}">Full income chapter</a><a href="{{ '/dominions/tools/recruitment-planner/' | relative_url }}">Recruitment planner</a><a href="{{ '/dominions/tools/' | relative_url }}">All tools</a></nav></aside>
+  </div>
+</section>

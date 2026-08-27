@@ -1,0 +1,50 @@
+---
+title: Dominions 6 Throne victory tracker
+description: Track claimed Ascension Points, controlled Thrones, ready claim orders, target Thrones, and the remaining path to victory in Dominions 6.
+nav_section: guides
+extra_js: /assets/dominions-tools.js
+---
+
+<section class="page-hero">
+  <div class="shell">
+    <div class="breadcrumbs"><a href="{{ '/guides/' | relative_url }}">Guides</a><span>/</span><a href="{{ '/dominions/tools/' | relative_url }}">Dominions tools</a><span>/</span><span>Throne victory</span></div>
+    <p class="eyebrow">Ascension Point accounting</p>
+    <h1>Separate claimed power from merely occupied ground.</h1>
+    <p class="lead">Count current Ascension Points, controlled but unclaimed Thrones, eligible claim orders ready this turn, and the points available from named targets.</p>
+    <div class="content-badges"><span class="content-badge content-badge--strategy">Victory tracker</span></div>
+  </div>
+</section>
+
+<section class="section shell">
+  <div class="content-grid">
+    <article class="content">
+      <form class="tool-form" data-throne-tracker>
+        <div class="tool-form-grid tool-form-grid--two">
+          <label><span>Game and nation</span><input name="label" maxlength="100" placeholder="Game — Nation"></label>
+          <label><span>Current turn</span><input name="turn" type="number" min="1" value="1"></label>
+          <label><span>Ascension Points required</span><input name="required" type="number" min="1" value="12" required></label>
+          <label><span>Ascension Points already claimed</span><input name="claimed" type="number" min="0" value="0" required></label>
+          <label><span>Notes</span><input name="notes" maxlength="180" placeholder="Pretender location, Prophet, Disciple, enemy movement…"></label>
+        </div>
+
+        <div class="tool-table-wrap">
+          <table class="tool-table throne-table">
+            <thead><tr><th>Throne level</th><th>Controlled but unclaimed</th><th>Ready claim orders this turn</th><th>Named targets or realistic captures</th></tr></thead>
+            <tbody>
+              <tr data-throne-row data-level="1"><th>Level 1 · 1 AP</th><td><input data-throne-value="controlled" aria-label="Controlled unclaimed level 1 Thrones" type="number" min="0" value="0"></td><td><input data-throne-value="ready" aria-label="Ready claim orders on level 1 Thrones" type="number" min="0" value="0"></td><td><input data-throne-value="targets" aria-label="Target level 1 Thrones" type="number" min="0" value="0"></td></tr>
+              <tr data-throne-row data-level="2"><th>Level 2 · 2 AP</th><td><input data-throne-value="controlled" aria-label="Controlled unclaimed level 2 Thrones" type="number" min="0" value="0"></td><td><input data-throne-value="ready" aria-label="Ready claim orders on level 2 Thrones" type="number" min="0" value="0"></td><td><input data-throne-value="targets" aria-label="Target level 2 Thrones" type="number" min="0" value="0"></td></tr>
+              <tr data-throne-row data-level="3"><th>Level 3 · 3 AP</th><td><input data-throne-value="controlled" aria-label="Controlled unclaimed level 3 Thrones" type="number" min="0" value="0"></td><td><input data-throne-value="ready" aria-label="Ready claim orders on level 3 Thrones" type="number" min="0" value="0"></td><td><input data-throne-value="targets" aria-label="Target level 3 Thrones" type="number" min="0" value="0"></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="search-count">Count only eligible commanders already able to issue Claim Throne. Ready orders are capped at the controlled Thrones entered for each level.</p>
+        <div class="tool-actions"><button class="button button--primary" type="submit">Calculate victory position</button><button class="button button--quiet" type="button" data-tool-copy>Copy position</button><button class="button button--quiet" type="reset">Reset</button></div>
+      </form>
+
+      <h2>Victory position</h2>
+      <div class="tool-output" data-throne-output aria-live="polite"></div>
+      <p class="search-count" data-throne-status>The tracker counts points and ready orders; it does not decide whether a target can be held through hosting.</p>
+    </article>
+    <aside class="sidebar"><h2>Endgame reference</h2><nav><a href="{{ '/dominions/library/books/book-vi/#b6-part-xii-thrones-cataclysm-and-endgame-conversion' | relative_url }}">Thrones and endgame conversion</a><a href="{{ '/dominions/library/books/field-reference/#field-the-hosting-spine' | relative_url }}">Hosting spine</a><a href="{{ '/dominions/tools/game-settings/' | relative_url }}">Multiplayer settings</a><a href="{{ '/dominions/tools/turn-planner/' | relative_url }}">Turn planner</a><a href="{{ '/dominions/tools/' | relative_url }}">All tools</a></nav></aside>
+  </div>
+</section>

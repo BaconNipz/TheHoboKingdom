@@ -1164,6 +1164,141 @@ textarea:focus {
   margin-top: 1.5rem;
 }
 
+.tool-index-hero {
+  background:
+    linear-gradient(115deg, rgba(214, 167, 86, 0.055), transparent 48%),
+    repeating-linear-gradient(90deg, transparent 0, transparent 79px, rgba(214, 167, 86, 0.025) 80px);
+}
+
+.tool-jump-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: clamp(3rem, 7vw, 6rem);
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.tool-jump-nav a {
+  padding: 0.5rem 0.78rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 750;
+}
+
+.tool-jump-nav a:hover {
+  border-color: rgba(214, 167, 86, 0.52);
+  color: var(--gold-bright);
+}
+
+.tool-category {
+  margin-top: clamp(4rem, 9vw, 7rem);
+  scroll-margin-top: 110px;
+}
+
+.tool-category:first-of-type {
+  margin-top: 0;
+}
+
+.tool-category-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(260px, 0.9fr);
+  align-items: end;
+  gap: clamp(2rem, 7vw, 6rem);
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.tool-category-heading .eyebrow {
+  margin-bottom: 0.55rem;
+}
+
+.tool-category-heading h2 {
+  font-size: clamp(1.9rem, 4vw, 3rem);
+}
+
+.tool-category-heading > p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.tool-index .tool-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.tool-card {
+  transition: transform 160ms ease, border-color 160ms ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(214, 167, 86, 0.48);
+}
+
+.tool-card-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.15rem;
+}
+
+.tool-card-code {
+  color: var(--gold-bright);
+  font: 600 1.15rem/1 Georgia, "Times New Roman", serif;
+}
+
+.reference-key-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.reference-key {
+  padding: 1.3rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+}
+
+.reference-key h3 {
+  margin-bottom: 1rem;
+}
+
+.reference-key dl {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0;
+}
+
+.reference-key dl div {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  gap: 0.75rem;
+  padding-top: 0.45rem;
+  border-top: 1px solid var(--line-soft);
+}
+
+.reference-key dt {
+  color: var(--gold-bright);
+  font-weight: 850;
+}
+
+.reference-key dd {
+  margin: 0;
+  color: var(--muted);
+}
+
+.tool-reference-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
 .tool-notice {
   margin-top: 2rem;
 }
@@ -1272,6 +1407,101 @@ textarea:focus {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.tool-form-grid--five {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.tool-form label small {
+  color: var(--quiet);
+  font-size: 0.72rem;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.tool-form .inline-check {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  width: fit-content;
+}
+
+.tool-table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--bg-deep);
+}
+
+.tool-table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.tool-table th,
+.tool-table td {
+  padding: 0.62rem;
+  border-bottom: 1px solid var(--line-soft);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.tool-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--surface-raised);
+  color: var(--muted);
+  font-size: 0.7rem;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.tool-table tbody tr:last-child th,
+.tool-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.tool-table tbody th {
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.tool-table input,
+.tool-table select {
+  min-width: 78px;
+  min-height: 40px;
+  padding: 0.5rem 0.58rem;
+  font-size: 0.82rem;
+}
+
+.recruitment-table {
+  min-width: 940px;
+}
+
+.recruitment-table td:first-child input {
+  min-width: 165px;
+}
+
+.recruitment-table td:last-child select {
+  min-width: 180px;
+}
+
+.gem-table,
+.site-search-table {
+  min-width: 780px;
+}
+
+.site-search-table td:last-child input {
+  min-width: 220px;
+}
+
+.throne-table {
+  min-width: 600px;
+}
+
 .tool-fieldset {
   display: grid;
   gap: 0.9rem;
@@ -1305,6 +1535,84 @@ textarea:focus {
 .tool-output:empty::before {
   color: var(--quiet);
   content: "The result will appear here.";
+}
+
+.turn-progress {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.turn-progress progress {
+  width: 100%;
+  height: 0.7rem;
+  overflow: hidden;
+  border: 0;
+  border-radius: 999px;
+  background: var(--bg-deep);
+}
+
+.turn-progress progress::-webkit-progress-bar {
+  background: var(--bg-deep);
+}
+
+.turn-progress progress::-webkit-progress-value {
+  background: linear-gradient(90deg, var(--rust), var(--gold));
+}
+
+.turn-progress progress::-moz-progress-bar {
+  background: linear-gradient(90deg, var(--rust), var(--gold));
+}
+
+.checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.checklist-group {
+  display: grid;
+  align-content: start;
+  gap: 0;
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--bg-deep);
+}
+
+.checklist-group legend {
+  padding-inline: 0.35rem;
+  color: var(--gold-bright);
+  font: 600 1rem/1.2 Georgia, "Times New Roman", serif;
+}
+
+.tool-form .checklist-item {
+  display: grid;
+  grid-template-columns: 1rem minmax(0, 1fr);
+  align-items: start;
+  gap: 0.65rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--line-soft);
+  color: var(--muted);
+  font-weight: 550;
+  line-height: 1.45;
+}
+
+.tool-form .checklist-item:last-child {
+  border-bottom: 0;
+}
+
+.checklist-item input {
+  margin-top: 0.22rem;
+}
+
+.checklist-item:has(input:checked) span {
+  color: var(--quiet);
+  text-decoration: line-through;
 }
 
 .stat-grid {
@@ -1523,8 +1831,17 @@ textarea:focus {
   .release-spotlight,
   .search-controls,
   .tool-form-grid,
-  .tool-form-grid--two {
+  .tool-form-grid--two,
+  .tool-category-heading,
+  .reference-key-grid,
+  .tool-reference-links,
+  .checklist-grid {
     grid-template-columns: 1fr;
+  }
+
+  .tool-category-heading {
+    align-items: start;
+    gap: 1rem;
   }
 
   .nation-compare-grid {
@@ -1533,6 +1850,10 @@ textarea:focus {
 
   .release-cover {
     width: min(76vw, 320px);
+  }
+
+  .turn-progress {
+    grid-template-columns: 1fr;
   }
 }
 

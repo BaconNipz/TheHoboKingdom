@@ -41,11 +41,11 @@
   keywords: magic research school breakpoint arcoscephale communion
 
 - title: Dominions 6 tools
-  description: Nation finder, research planner, build sheet, and multiplayer settings record.
+  description: Thirteen browser-based tools for nations, economy, recruitment, gems, magic, battle scripts, turns, research, multiplayer, and Throne victory planning.
   url: /dominions/tools/
   project: Dominions 6
   type: Tool
-  keywords: calculator planner worksheet generator comparison
+  keywords: calculator planner worksheet generator comparison economy recruitment gems communion battle turn throne multiplayer
 
 - title: Nation finder and comparison
   description: Search the 102 official nation summaries and compare up to three entries across the three ages.
@@ -74,6 +74,69 @@
   project: Dominions 6
   type: Tool
   keywords: game setup host provinces players thrones mods checklist
+
+- title: Province economy calculator
+  description: Estimate province income, unrest retention, local resources, and recruitment shutdown from the official economy formulas.
+  url: /dominions/tools/economy-calculator/
+  project: Dominions 6
+  type: Tool
+  keywords: income population scales administration unrest resources tax fort calculator
+
+- title: Recruitment and upkeep planner
+  description: Total a recruitment queue's gold, resources, recruitment capacity, and estimated monthly and annual upkeep.
+  url: /dominions/tools/recruitment-planner/
+  project: Dominions 6
+  type: Tool
+  keywords: recruit army gold resources rp cp hp upkeep sacred slave commander
+
+- title: Gem treasury planner
+  description: Project each gem path and Blood slave stock after income, one-off spending, recurring use, and reserves.
+  url: /dominions/tools/gem-budget/
+  project: Dominions 6
+  type: Tool
+  keywords: gems blood slaves treasury income budget reserve fire air water earth astral death nature glamour
+
+- title: Communion planner
+  description: Check path bonuses, participant counts, threshold resilience, and approximate slave fatigue for Communions, Sabbaths, and Choruses.
+  url: /dominions/tools/communion-planner/
+  project: Dominions 6
+  type: Tool
+  keywords: communion sabbath chorus master slave path bonus fatigue threshold magic
+
+- title: Random magic odds
+  description: Estimate uniform independent random-path odds for one mage or a longer recruitment run.
+  url: /dominions/tools/random-magic/
+  project: Dominions 6
+  type: Tool
+  keywords: random magic path probability mage recruit odds chance
+
+- title: Magic-site coverage planner
+  description: Record site-search levels across all nine paths for one province and identify planned coverage gaps.
+  url: /dominions/tools/site-search/
+  project: Dominions 6
+  type: Tool
+  keywords: magic site search province fire air water earth astral death nature glamour blood
+
+- title: Battle script builder
+  description: Prepare a commander's five orders, equipment, gems, positioning, protection, fallback, and retreat policy.
+  url: /dominions/tools/battle-script/
+  project: Dominions 6
+  type: Tool
+  keywords: battle script commander orders gems equipment positioning retreat test combat
+
+- title: Turn planner and audit
+  description: Work through reports, economy, research, magic, movement, provinces, diplomacy, and submission without losing turn state.
+  url: /dominions/tools/turn-planner/
+  project: Dominions 6
+  type: Tool
+  keywords: turn checklist audit reports recruitment research movement diplomacy stale submit
+
+- title: Throne victory tracker
+  description: Count claimed Ascension Points, controlled Thrones, ready claim orders, named targets, and the remaining victory path.
+  url: /dominions/tools/throne-tracker/
+  project: Dominions 6
+  type: Tool
+  keywords: throne ascension points ap claim victory endgame target tracker
 
 - title: AURA
   description: The working Adaptive Utility for Real-world Advancement prototype and its progression design.

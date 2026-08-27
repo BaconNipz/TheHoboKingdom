@@ -1,0 +1,68 @@
+---
+title: Dominions 6 recruitment and upkeep planner
+description: Total the gold, resources, Recruitment Points, Commander Points, Holy Points, and estimated upkeep of a Dominions 6 recruitment queue.
+nav_section: guides
+extra_js: /assets/dominions-tools.js
+---
+
+<section class="page-hero">
+  <div class="shell">
+    <div class="breadcrumbs"><a href="{{ '/guides/' | relative_url }}">Guides</a><span>/</span><a href="{{ '/dominions/tools/' | relative_url }}">Dominions tools</a><span>/</span><span>Recruitment and upkeep</span></div>
+    <p class="eyebrow">Queue and force-cost accounting</p>
+    <h1>Find the gate that actually stops recruitment.</h1>
+    <p class="lead">Build a mixed queue, compare it with local capacity, and estimate the monthly burden that remains after the troops leave the fort.</p>
+    <div class="content-badges"><span class="content-badge content-badge--official">Official upkeep divisors</span><span class="content-badge content-badge--strategy">Queue estimate</span></div>
+  </div>
+</section>
+
+<section class="section shell">
+  <div class="content-grid">
+    <article class="content">
+      <form class="tool-form" data-recruitment-planner>
+        <fieldset class="tool-fieldset">
+          <legend>Available local capacity</legend>
+          <div class="tool-form-grid tool-form-grid--five">
+            <label><span>Gold</span><input data-recruit-capacity="gold" type="number" min="0" value="1000"></label>
+            <label><span>Resources</span><input data-recruit-capacity="resources" type="number" min="0" value="200"></label>
+            <label><span>Recruitment Points</span><input data-recruit-capacity="rp" type="number" min="0" value="200"></label>
+            <label><span>Commander Points</span><input data-recruit-capacity="cp" type="number" min="0" value="2"></label>
+            <label><span>Holy Points</span><input data-recruit-capacity="hp" type="number" min="0" value="3"></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="tool-fieldset">
+          <legend>Recruitment queue</legend>
+          <div class="tool-table-wrap">
+            <table class="tool-table recruitment-table">
+              <thead><tr><th>Unit or commander</th><th>Qty</th><th>Gold</th><th>Res</th><th>RP</th><th>CP</th><th>HP</th><th>Upkeep class</th></tr></thead>
+              <tbody>
+                {% for row in (1..6) %}
+                <tr data-recruit-row>
+                  <td><input data-recruit-name aria-label="Row {{ row }} unit or commander" placeholder="Entry {{ row }}"></td>
+                  <td><input data-recruit-value="quantity" aria-label="Row {{ row }} quantity" type="number" min="0" value="0"></td>
+                  <td><input data-recruit-value="gold" aria-label="Row {{ row }} gold per unit" type="number" min="0" value="0"></td>
+                  <td><input data-recruit-value="resources" aria-label="Row {{ row }} resources per unit" type="number" min="0" value="0"></td>
+                  <td><input data-recruit-value="rp" aria-label="Row {{ row }} Recruitment Points per unit" type="number" min="0" value="0"></td>
+                  <td><input data-recruit-value="cp" aria-label="Row {{ row }} Commander Points per unit" type="number" min="0" value="0"></td>
+                  <td><input data-recruit-value="hp" aria-label="Row {{ row }} Holy Points per unit" type="number" min="0" value="0"></td>
+                  <td><select data-recruit-upkeep aria-label="Row {{ row }} upkeep class"><option value="15">Ordinary ÷15</option><option value="30">Sacred or Slave ÷30</option><option value="60">Sacred Slave ÷60</option><option value="0">No ordinary upkeep</option></select></td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </fieldset>
+
+        <div class="tool-actions"><button class="button button--primary" type="submit">Calculate queue</button><button class="button button--quiet" type="button" data-tool-copy>Copy summary</button><button class="button button--quiet" type="reset">Clear queue</button></div>
+      </form>
+
+      <h2>Queue summary</h2>
+      <div class="tool-output" data-recruitment-output aria-live="polite"></div>
+      <p class="search-count" data-recruitment-status>Enter per-unit values from the current recruitment screen.</p>
+
+      <h2>Limits of the estimate</h2>
+      <p>Ordinary upkeep is gold cost divided by 15 per month. Sacred or Slave units use 30; the Sacred-and-Slave divisor of 60 is community-tested under 6.33 and remains current through 6.36 by patch review. Mounted cards can contain separate rider and mount upkeep bases, and some summoned units are exceptions. Use the detailed unit interface when exact upkeep is available.</p>
+    </article>
+    <aside class="sidebar"><h2>Recruitment reference</h2><nav><a href="{{ '/dominions/library/books/field-reference/#field-recruitment-capacity' | relative_url }}">Recruitment capacity</a><a href="{{ '/dominions/library/books/field-reference/#field-upkeep' | relative_url }}">Upkeep quick reference</a><a href="{{ '/dominions/library/books/book-ii/#b2-upkeep' | relative_url }}">Full upkeep chapter</a><a href="{{ '/dominions/tools/economy-calculator/' | relative_url }}">Province economy</a><a href="{{ '/dominions/tools/' | relative_url }}">All tools</a></nav></aside>
+  </div>
+</section>
