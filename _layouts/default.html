@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="{{ site.lang | default: 'en-AU' }}">
 <head>
+  {% assign social_image = page.og_image | default: site.brand_image %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
@@ -10,14 +11,15 @@
   <meta property="og:title" content="{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}">
   <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
-  {% if page.og_image %}<meta property="og:image" content="{{ page.og_image | absolute_url }}">{% endif %}
+  {% if social_image %}<meta property="og:image" content="{{ social_image | absolute_url }}">{% endif %}
   <meta name="twitter:card" content="{% if page.og_image %}summary_large_image{% else %}summary{% endif %}">
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}">
   <meta name="twitter:description" content="{{ page.description | default: site.description | escape }}">
-  {% if page.og_image %}<meta name="twitter:image" content="{{ page.og_image | absolute_url }}">{% endif %}
+  {% if social_image %}<meta name="twitter:image" content="{{ social_image | absolute_url }}">{% endif %}
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   <link rel="alternate" type="application/atom+xml" title="TheHoboKingdom updates" href="{{ '/feed.xml' | absolute_url }}">
-  <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="icon" href="{{ site.brand_image | relative_url }}" type="image/jpeg">
+  <link rel="apple-touch-icon" href="{{ site.brand_image | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
   {% if page.extra_css %}<link rel="stylesheet" href="{{ page.extra_css | relative_url }}">{% endif %}
   <script>document.documentElement.classList.add('js');</script>
