@@ -1407,6 +1407,10 @@ textarea:focus {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.tool-form-grid--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .tool-form-grid--five {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
@@ -1502,6 +1506,119 @@ textarea:focus {
   min-width: 600px;
 }
 
+.manifest-table {
+  min-width: 1480px;
+}
+
+.manifest-table td:nth-child(2) input,
+.manifest-table td:nth-child(4) input {
+  min-width: 180px;
+}
+
+.manifest-table td:nth-child(7) input,
+.manifest-table td:nth-child(8) input {
+  min-width: 220px;
+}
+
+.session-player-table {
+  min-width: 900px;
+}
+
+.session-player-table input {
+  min-width: 190px;
+}
+
+.path-design-table {
+  min-width: 650px;
+  table-layout: fixed;
+}
+
+.path-design-table th,
+.path-design-table td {
+  text-align: center;
+}
+
+.path-design-table input {
+  min-width: 54px;
+  text-align: center;
+}
+
+.diplomacy-table {
+  min-width: 1300px;
+}
+
+.diplomacy-table td:first-child input,
+.diplomacy-table td:nth-child(4) input,
+.diplomacy-table td:last-child input {
+  min-width: 210px;
+}
+
+.reading-table {
+  min-width: 940px;
+}
+
+.reading-table th {
+  min-width: 280px;
+  white-space: normal;
+}
+
+.reading-table th small {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--quiet);
+  font-weight: 500;
+}
+
+.reading-table td:nth-child(2) input {
+  max-width: 120px;
+}
+
+.reading-count-control {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.reading-mark-complete {
+  min-height: 40px;
+  padding: 0.45rem 0.58rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 750;
+}
+
+.reading-mark-complete:hover {
+  border-color: var(--gold);
+  color: var(--gold-bright);
+}
+
+.reading-table td:nth-child(4) input {
+  min-width: 260px;
+}
+
+.table-row-remove {
+  display: inline-grid;
+  width: 34px;
+  min-height: 34px;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--quiet);
+  cursor: pointer;
+  font-size: 1.05rem;
+}
+
+.table-row-remove:hover {
+  border-color: var(--rust-bright);
+  color: var(--text);
+}
+
 .tool-fieldset {
   display: grid;
   gap: 0.9rem;
@@ -1519,6 +1636,32 @@ textarea:focus {
   display: flex;
   flex-wrap: wrap;
   gap: 0.7rem;
+}
+
+.tool-form .tool-file-button {
+  position: relative;
+  display: inline-flex;
+  width: auto;
+  cursor: pointer;
+}
+
+.tool-file-button input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.tool-file-button:focus-within {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+.tool-principles {
+  margin-top: 1.5rem;
 }
 
 .tool-output {

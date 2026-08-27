@@ -1,0 +1,59 @@
+---
+title: Dominions 6 Pretender design sheet
+description: Record a Dominions 6 Pretender chassis, awakening, paths, dominion, scales, bless, sacred roster, strategic purpose, and failure branch without automatic scoring.
+nav_section: guides
+extra_js: /assets/toolkit.js
+---
+
+<section class="page-hero">
+  <div class="shell">
+    <div class="breadcrumbs"><a href="{{ '/dominions/tools/' | relative_url }}">Dominions tools</a><span>/</span><span>Pretender design</span></div>
+    <p class="eyebrow">Design record, not generator</p>
+    <h1>Write down what every design point is meant to accomplish.</h1>
+    <p class="lead">Record the chosen chassis, awakening, magic, dominion, scales, bless package, sacred roster, timing, and failure branch without scoring the design or inventing a recommended Pretender.</p>
+    <div class="content-badges"><span class="content-badge content-badge--strategy">Player-chosen strategy</span></div>
+  </div>
+</section>
+
+<section class="section shell">
+  <div class="content-grid">
+    <article class="content">
+      <form class="tool-form" data-pretender-design>
+        <fieldset class="tool-fieldset"><legend>Design identity</legend><div class="tool-form-grid tool-form-grid--three">
+          <label><span>Design name</span><input name="design" data-pretender-field maxlength="100" required></label>
+          <label><span>Nation and age</span><input name="nation" data-pretender-field maxlength="100"></label>
+          <label><span>Ruleset</span><input name="ruleset" data-pretender-field value="Dominions {{ site.data.dominions_library.game_version }}, unmodded" maxlength="140"></label>
+          <label><span>Chassis</span><input name="chassis" data-pretender-field maxlength="100"></label>
+          <label><span>Awakening</span><select name="awakening" data-pretender-field><option>Awake</option><option>Dormant</option><option>Imprisoned</option><option>Other or modded</option></select></label>
+          <label><span>Dominion score</span><input name="dominion" data-pretender-field type="number" min="0" max="20" value="6"></label>
+        </div></fieldset>
+
+        <fieldset class="tool-fieldset"><legend>Purchased magic paths</legend><div class="tool-table-wrap"><table class="tool-table path-design-table"><thead><tr><th>F</th><th>A</th><th>W</th><th>E</th><th>S</th><th>D</th><th>N</th><th>G</th><th>B</th></tr></thead><tbody><tr>{% assign paths = "f,a,w,e,s,d,n,g,b" | split: "," %}{% for path in paths %}<td><input name="path-{{ path }}" data-pretender-field type="number" min="0" max="20" value="0" aria-label="{{ path | upcase }} path level"></td>{% endfor %}</tr></tbody></table></div></fieldset>
+
+        <fieldset class="tool-fieldset"><legend>Scales</legend><div class="tool-form-grid tool-form-grid--three">
+          <label><span>Order ↔ Turmoil</span><select name="scale-order" data-pretender-field><option>Order 3</option><option>Order 2</option><option>Order 1</option><option selected>Neutral</option><option>Turmoil 1</option><option>Turmoil 2</option><option>Turmoil 3</option></select></label>
+          <label><span>Productivity ↔ Sloth</span><select name="scale-productivity" data-pretender-field><option>Productivity 3</option><option>Productivity 2</option><option>Productivity 1</option><option selected>Neutral</option><option>Sloth 1</option><option>Sloth 2</option><option>Sloth 3</option></select></label>
+          <label><span>Heat ↔ Cold</span><select name="scale-temperature" data-pretender-field><option>Heat 3</option><option>Heat 2</option><option>Heat 1</option><option selected>Neutral</option><option>Cold 1</option><option>Cold 2</option><option>Cold 3</option></select></label>
+          <label><span>Growth ↔ Death</span><select name="scale-growth" data-pretender-field><option>Growth 3</option><option>Growth 2</option><option>Growth 1</option><option selected>Neutral</option><option>Death 1</option><option>Death 2</option><option>Death 3</option></select></label>
+          <label><span>Luck ↔ Misfortune</span><select name="scale-luck" data-pretender-field><option>Luck 3</option><option>Luck 2</option><option>Luck 1</option><option selected>Neutral</option><option>Misfortune 1</option><option>Misfortune 2</option><option>Misfortune 3</option></select></label>
+          <label><span>Magic ↔ Drain</span><select name="scale-magic" data-pretender-field><option>Magic 3</option><option>Magic 2</option><option>Magic 1</option><option selected>Neutral</option><option>Drain 1</option><option>Drain 2</option><option>Drain 3</option></select></label>
+        </div></fieldset>
+
+        <fieldset class="tool-fieldset"><legend>Purpose and failure branch</legend><div class="tool-form-grid tool-form-grid--two">
+          <label><span>Sacred roster</span><textarea name="sacreds" data-pretender-field placeholder="Which units, commanders, summons, or sacred mages use the bless"></textarea></label>
+          <label><span>Bless effects and intended jobs</span><textarea name="bless" data-pretender-field placeholder="Record the chosen effects and what each is meant to solve"></textarea></label>
+          <label><span>Scale reasoning</span><textarea name="scaleReason" data-pretender-field placeholder="Income, resources, recruitment, events, research, national preference…"></textarea></label>
+          <label><span>Awakening and expansion role</span><textarea name="expansion" data-pretender-field placeholder="Expansion, site search, research, forging, dormant arrival, imprisoned timing…"></textarea></label>
+          <label><span>Path access and research goals</span><textarea name="pathGoals" data-pretender-field placeholder="Boosters, rituals, globals, summons, combat packages, or diversity targets"></textarea></label>
+          <label><span>Weaknesses and failure branch</span><textarea name="failure" data-pretender-field placeholder="What fails if expansion stalls, sacreds underperform, timing slips, or the Pretender dies?"></textarea></label>
+          <label><span>Test record</span><textarea name="tests" data-pretender-field placeholder="Ruleset, map, turns tested, observed result, and required changes"></textarea></label>
+          <label><span>Other notes</span><textarea name="notes" data-pretender-field></textarea></label>
+        </div></fieldset>
+
+        <div class="tool-actions"><button class="button button--primary" type="submit">Build design record</button><button class="button button--quiet" type="button" data-record-copy>Copy design</button><button class="button button--quiet" type="button" data-record-export>Export JSON</button><label class="button button--quiet tool-file-button">Import JSON<input type="file" accept="application/json,.json" data-record-import></label><button class="button button--quiet" type="button" data-record-clear>Clear saved design</button></div>
+      </form>
+      <h2>Pretender record</h2><div class="tool-output" data-record-output aria-live="polite"></div><p class="search-count" data-record-status>The design is saved only in this browser.</p>
+    </article>
+    <aside class="sidebar"><h2>Pretender reference</h2><nav><a href="{{ '/dominions/library/books/book-iii/' | relative_url }}">Pretenders, Dominion, scales, and blessings</a><a href="{{ '/dominions/library/books/book-v/#b5-acquiring-and-increasing-paths' | relative_url }}">Path access</a><a href="{{ '/dominions/tools/nation-finder/' | relative_url }}">Nation finder</a><a href="{{ '/dominions/tools/build-sheet/' | relative_url }}">Research build sheet</a><a href="{{ '/dominions/tools/' | relative_url }}">All Dominions tools</a></nav><div class="notice"><p><strong>No automatic score:</strong> design points, bless value, expansion strength, and matchup quality are deliberately left to the player and the current game interface.</p></div></aside>
+  </div>
+</section>

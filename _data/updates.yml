@@ -1,4 +1,10 @@
 - date: 27 August 2026
+  title: Recoverable tool records and library progress
+  description: Pretender design, diplomacy, mod manifests, multiplayer sessions, and Knowledge Library progress can now be saved locally and moved between browsers with JSON exports.
+  url: /tools/
+  type: Tools
+
+- date: 27 August 2026
   title: TheHoboKingdom consolidation and expansion
   description: Edition 26 metadata, full-site search, clearer status labels, stronger project records, and a refreshed homepage.
   url: /projects/

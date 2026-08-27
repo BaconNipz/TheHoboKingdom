@@ -1,0 +1,65 @@
+---
+title: Mod manifest and freeze tool
+description: Build a local, versioned mod manifest with exact files, dependencies, load order, test status, known interactions, and recovery notes.
+nav_section: tools
+extra_js: /assets/toolkit.js
+---
+
+<section class="page-hero">
+  <div class="shell">
+    <div class="breadcrumbs"><a href="{{ '/tools/' | relative_url }}">Tools</a><span>/</span><span>Mod manifest</span></div>
+    <p class="eyebrow">Version and recovery record</p>
+    <h1>Freeze the setup that actually worked.</h1>
+    <p class="lead">Record exact versions, files, sides, dependencies, order, tests, problems, and the last recoverable baseline without claiming that an untested combination is safe.</p>
+    <div class="content-badges"><span class="content-badge content-badge--strategy">Cross-project tool</span><span class="content-badge content-badge--research">Test status required</span></div>
+  </div>
+</section>
+
+<section class="section shell">
+  <div class="content-grid">
+    <article class="content">
+      <form class="tool-form" data-mod-manifest>
+        <fieldset class="tool-fieldset"><legend>Profile identity</legend>
+          <div class="tool-form-grid tool-form-grid--three">
+            <label><span>Pack or profile name</span><input name="name" data-manifest-field maxlength="100" placeholder="World, server, campaign, or pack" required></label>
+            <label><span>Game</span><input name="game" data-manifest-field maxlength="80" placeholder="Vintage Story, Minecraft, Dominions 6…"></label>
+            <label><span>Profile version</span><input name="profileVersion" data-manifest-field maxlength="40" placeholder="v1.0, 2026-08-27…"></label>
+            <label><span>Game version</span><input name="gameVersion" data-manifest-field maxlength="60" placeholder="Exact installed version"></label>
+            <label><span>Loader or platform</span><input name="loader" data-manifest-field maxlength="80" placeholder="Forge, Fabric, native mod loader…"></label>
+            <label><span>Current status</span><select name="status" data-manifest-field><option>Building</option><option>Testing</option><option>Stable</option><option>Known issues</option><option>Retired</option></select></label>
+            <label><span>Host or server</span><input name="host" data-manifest-field maxlength="100" placeholder="Server owner, provider, or local host"></label>
+            <label><span>Freeze date</span><input name="freezeDate" data-manifest-field type="date"></label>
+            <label><span>Connection or profile reference</span><input name="reference" data-manifest-field maxlength="140" placeholder="Profile code, server name, folder, or launcher instance"></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="tool-fieldset"><legend>Mods in exact load order</legend>
+          <div class="tool-table-wrap">
+            <table class="tool-table manifest-table">
+              <thead><tr><th>#</th><th>Mod</th><th>Version</th><th>Exact file or source</th><th>Side</th><th>Test state</th><th>Dependencies and interactions</th><th>Notes</th><th></th></tr></thead>
+              <tbody data-manifest-rows></tbody>
+            </table>
+          </div>
+          <button class="button button--quiet" type="button" data-manifest-add>Add mod row</button>
+        </fieldset>
+
+        <fieldset class="tool-fieldset"><legend>Compatibility and recovery</legend>
+          <div class="tool-form-grid tool-form-grid--two">
+            <label><span>Known working combinations</span><textarea name="working" data-manifest-field placeholder="What was tested together, on which side, and what succeeded"></textarea></label>
+            <label><span>Known issues and suspected conflicts</span><textarea name="issues" data-manifest-field placeholder="Crash conditions, broken recipes, desync, load-order sensitivity…"></textarea></label>
+            <label><span>Recovery baseline</span><textarea name="recovery" data-manifest-field placeholder="Last known-good profile, backup location, rollback steps, or required save copy"></textarea></label>
+            <label><span>Update procedure</span><textarea name="updates" data-manifest-field placeholder="Backup, change one component, test, record result, then freeze a new profile"></textarea></label>
+          </div>
+        </fieldset>
+
+        <div class="tool-actions"><button class="button button--primary" type="submit">Build frozen manifest</button><button class="button button--quiet" type="button" data-record-copy>Copy manifest</button><button class="button button--quiet" type="button" data-record-export>Export JSON</button><label class="button button--quiet tool-file-button">Import JSON<input type="file" accept="application/json,.json" data-record-import></label><button class="button button--quiet" type="button" data-record-clear>Clear saved manifest</button></div>
+      </form>
+      <h2>Frozen manifest</h2>
+      <div class="tool-output" data-record-output aria-live="polite"></div>
+      <p class="search-count" data-record-status>The working manifest is saved only in this browser.</p>
+    </article>
+    <aside class="sidebar"><h2>Related records</h2><nav><a href="{{ '/tools/session-record/' | relative_url }}">Multiplayer session record</a><a href="{{ '/vintage-story/' | relative_url }}">Vintage Story project</a><a href="{{ '/minecraft/' | relative_url }}">Minecraft project</a><a href="{{ '/dominions/tools/game-settings/' | relative_url }}">Dominions settings record</a><a href="{{ '/tools/' | relative_url }}">All tools</a></nav><div class="notice"><p><strong>Compatibility boundary:</strong> “Stable” records a completed test under the entered versions. It is not a promise that later updates, different load orders, or different client and server files will work.</p></div></aside>
+  </div>
+</section>
+
+<template data-manifest-row-template><tr data-manifest-row><th data-row-number></th><td><input data-manifest-col="name" aria-label="Mod name"></td><td><input data-manifest-col="version" aria-label="Mod version"></td><td><input data-manifest-col="file" aria-label="Exact mod file or source"></td><td><select data-manifest-col="side" aria-label="Required side"><option>Both</option><option>Client</option><option>Server</option><option>Single-player only</option></select></td><td><select data-manifest-col="test" aria-label="Test status"><option>Untested</option><option>Loads</option><option>Tested</option><option>Known issue</option><option>Disabled</option></select></td><td><input data-manifest-col="dependencies" aria-label="Dependencies and interactions"></td><td><input data-manifest-col="notes" aria-label="Mod notes"></td><td><button class="table-row-remove" type="button" data-row-remove aria-label="Remove mod row">×</button></td></tr></template>
