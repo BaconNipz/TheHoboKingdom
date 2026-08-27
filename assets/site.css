@@ -147,15 +147,22 @@ h3 {
 }
 
 .brand-mark {
-  display: grid;
+  display: block;
   width: 2.4rem;
   height: 2.4rem;
-  place-items: center;
+  overflow: hidden;
   border: 1px solid rgba(214, 167, 86, 0.46);
-  border-radius: 50%;
-  color: var(--gold-bright);
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
+  border-radius: 0.48rem;
+  background: #f2f0e7;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.24);
+}
+
+.brand-mark img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.48);
 }
 
 .site-nav {
@@ -687,6 +694,49 @@ h3 {
 
 .page-hero .lead {
   margin-bottom: 0;
+}
+
+.about-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  align-items: center;
+  gap: clamp(3rem, 8vw, 8rem);
+}
+
+.about-hero-copy {
+  min-width: 0;
+}
+
+.identity-card {
+  width: min(100%, 280px);
+  margin: 0;
+  justify-self: end;
+}
+
+.identity-mark-frame {
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 1;
+  border: 1px solid rgba(214, 167, 86, 0.42);
+  border-radius: var(--radius-lg);
+  background: #f2f0e7;
+  box-shadow: var(--shadow);
+}
+
+.identity-mark-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.38);
+}
+
+.identity-card figcaption {
+  margin-top: 0.8rem;
+  color: var(--quiet);
+  font-size: 0.78rem;
+  line-height: 1.5;
+  text-align: center;
 }
 
 .breadcrumbs {
@@ -1440,7 +1490,8 @@ textarea:focus {
   }
 
   .hero-grid,
-  .content-grid {
+  .content-grid,
+  .about-hero {
     grid-template-columns: 1fr;
   }
 
@@ -1450,6 +1501,11 @@ textarea:focus {
 
   .hero-panel {
     max-width: 560px;
+  }
+
+  .identity-card {
+    width: min(58vw, 220px);
+    justify-self: start;
   }
 
   .sidebar {
