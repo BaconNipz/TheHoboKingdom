@@ -1,0 +1,41 @@
+---
+title: Dominions 6 random magic odds calculator
+description: Estimate the chance that independent, uniform Dominions 6 random-magic slots produce at least one acceptable result across a recruitment run.
+nav_section: guides
+extra_js: /assets/dominions-tools.js
+---
+
+<section class="page-hero">
+  <div class="shell">
+    <div class="breadcrumbs"><a href="{{ '/guides/' | relative_url }}">Guides</a><span>/</span><a href="{{ '/dominions/tools/' | relative_url }}">Dominions tools</a><span>/</span><span>Random magic odds</span></div>
+    <p class="eyebrow">Recruitment probability</p>
+    <h1>Know how long the rare path may take.</h1>
+    <p class="lead">Estimate one mage and a full recruitment run when each random slot is independent and every listed outcome is equally likely.</p>
+    <div class="content-badges"><span class="content-badge content-badge--strategy">Probability model</span><span class="content-badge content-badge--research">Assumptions required</span></div>
+  </div>
+</section>
+
+<section class="section shell">
+  <div class="content-grid">
+    <article class="content">
+      <form class="tool-form" data-random-magic>
+        <div class="tool-form-grid tool-form-grid--two">
+          <label><span>Random slots per mage</span><input name="slots" type="number" min="1" max="20" value="1" required></label>
+          <label><span>Chance each slot occurs</span><input name="occurrence" type="number" min="0" max="100" step="0.01" value="100" required><small>Use 100 for a guaranteed random or 10 for a 10% random.</small></label>
+          <label><span>Acceptable outcomes in the random pool</span><input name="desired" type="number" min="0" max="100" value="1" required></label>
+          <label><span>Total equally likely outcomes in the pool</span><input name="possible" type="number" min="1" max="100" value="4" required></label>
+          <label><span>Mages recruited</span><input name="mages" type="number" min="1" max="10000" value="10" required></label>
+          <label><span>Result label</span><input name="label" maxlength="80" value="Desired random path"></label>
+        </div>
+        <div class="tool-actions"><button class="button button--primary" type="submit">Calculate odds</button><button class="button button--quiet" type="reset">Reset</button></div>
+      </form>
+
+      <h2>Probability estimate</h2>
+      <div class="tool-output" data-random-output aria-live="polite"></div>
+
+      <h2>Use only when the pool matches</h2>
+      <p>The model assumes independent slots, uniform outcomes, and replacement between rolls. Do not use it unchanged for linked randoms, non-uniform weights, paths excluded by an earlier roll, all-path randoms with a different structure, or modded recruitment that changes the pool.</p>
+    </article>
+    <aside class="sidebar"><h2>Path planning</h2><nav><a href="{{ '/dominions/library/books/book-v/#b5-acquiring-and-increasing-paths' | relative_url }}">Acquiring paths</a><a href="{{ '/dominions/library/books/book-v/#b5-primary-and-secondary-paths' | relative_url }}">Primary and secondary paths</a><a href="{{ '/dominions/tools/research-planner/' | relative_url }}">Research planner</a><a href="{{ '/dominions/tools/site-search/' | relative_url }}">Site-search coverage</a><a href="{{ '/dominions/tools/' | relative_url }}">All tools</a></nav></aside>
+  </div>
+</section>

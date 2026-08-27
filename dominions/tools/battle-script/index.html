@@ -1,0 +1,67 @@
+---
+title: Dominions 6 battle script builder
+description: Build and save a Dominions 6 commander script with equipment, gems, positioning, five orders, fallback behaviour, protection, and retreat policy.
+nav_section: guides
+extra_js: /assets/dominions-tools.js
+---
+
+<section class="page-hero">
+  <div class="shell">
+    <div class="breadcrumbs"><a href="{{ '/guides/' | relative_url }}">Guides</a><span>/</span><a href="{{ '/dominions/tools/' | relative_url }}">Dominions tools</a><span>/</span><span>Battle script</span></div>
+    <p class="eyebrow">Commander order worksheet</p>
+    <h1>Write the failure branch beside the five orders.</h1>
+    <p class="lead">Record what the commander carries, where they stand, what each scripted round is meant to achieve, and what should happen after the script ends.</p>
+    <div class="content-badges"><span class="content-badge content-badge--strategy">Local planning record</span></div>
+  </div>
+</section>
+
+<section class="section shell">
+  <div class="content-grid">
+    <article class="content">
+      <form class="tool-form" data-battle-script>
+        <fieldset class="tool-fieldset">
+          <legend>Commander and package</legend>
+          <div class="tool-form-grid tool-form-grid--two">
+            <label><span>Battle or plan label</span><input name="battle" data-script-field maxlength="100" placeholder="Army, province, opponent, or test"></label>
+            <label><span>Commander</span><input name="commander" data-script-field maxlength="100" placeholder="Name and unit type"></label>
+            <label><span>Role</span><input name="role" data-script-field placeholder="Buffer, battlefield clearer, communion master, thug, support…"></label>
+            <label><span>Paths and relevant statistics</span><input name="paths" data-script-field placeholder="F2 A1, 15 reinvigoration, 18 MR…"></label>
+            <label><span>Items and carried gems</span><textarea name="equipment" data-script-field placeholder="Items, path boosters, gem types and amounts"></textarea></label>
+            <label><span>Position, squad, and bodyguards</span><textarea name="position" data-script-field placeholder="Rear centre, five bodyguards, separate from other masters…"></textarea></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="tool-fieldset">
+          <legend>Five scripted orders</legend>
+          <div class="tool-form-grid tool-form-grid--two">
+            <label><span>Order 1</span><input name="order1" data-script-field placeholder="Spell or command — purpose"></label>
+            <label><span>Order 2</span><input name="order2" data-script-field placeholder="Spell or command — purpose"></label>
+            <label><span>Order 3</span><input name="order3" data-script-field placeholder="Spell or command — purpose"></label>
+            <label><span>Order 4</span><input name="order4" data-script-field placeholder="Spell or command — purpose"></label>
+            <label><span>Order 5</span><input name="order5" data-script-field placeholder="Spell or command — purpose"></label>
+            <label><span>Post-script behaviour</span><input name="postscript" data-script-field placeholder="Cast spells, stay behind troops, retreat…"></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="tool-fieldset">
+          <legend>Package audit</legend>
+          <div class="tool-form-grid tool-form-grid--two">
+            <label><span>Threat being answered</span><textarea name="threat" data-script-field placeholder="Exact damage, defence, control, or timing problem"></textarea></label>
+            <label><span>Screen and preparation time</span><textarea name="screen" data-script-field placeholder="What prevents contact before the package is ready?"></textarea></label>
+            <label><span>Gem policy and expected cost</span><textarea name="gems" data-script-field placeholder="Cost per battle, reserve, bait policy, and resupply"></textarea></label>
+            <label><span>Failure branch</span><textarea name="failure" data-script-field placeholder="What happens if a buff fails, range is wrong, resistance appears, or a communion threshold is lost?"></textarea></label>
+            <label><span>Retreat and recovery</span><textarea name="retreat" data-script-field placeholder="Friendly retreat province, survival priority, replacement plan"></textarea></label>
+            <label><span>Test record</span><textarea name="test" data-script-field placeholder="Ruleset, test opponent, result, and change required"></textarea></label>
+          </div>
+        </fieldset>
+
+        <div class="tool-actions"><button class="button button--primary" type="submit">Build script record</button><button class="button button--quiet" type="button" data-tool-copy>Copy record</button><button class="button button--quiet" type="button" data-script-clear>Clear saved script</button></div>
+      </form>
+
+      <h2>Script record</h2>
+      <div class="tool-output" data-script-output aria-live="polite"></div>
+      <p class="search-count" data-script-status>The working script is saved only in this browser.</p>
+    </article>
+    <aside class="sidebar"><h2>Battle planning</h2><nav><a href="{{ '/dominions/library/books/book-iv/#b4-part-vi-orders-scripts-and-the-spellcasting-ai' | relative_url }}">Orders and spell AI</a><a href="{{ '/dominions/library/books/book-v/#b5-battlefield-package-worksheet' | relative_url }}">Battlefield package worksheet</a><a href="{{ '/dominions/tools/communion-planner/' | relative_url }}">Communion planner</a><a href="{{ '/dominions/tools/gem-budget/' | relative_url }}">Gem treasury planner</a><a href="{{ '/dominions/tools/' | relative_url }}">All tools</a></nav></aside>
+  </div>
+</section>

@@ -1,0 +1,85 @@
+---
+title: Dominions 6 turn planner and audit
+description: A locally saved Dominions 6 turn checklist covering reports, recruitment, research, magic, movement, provinces, diplomacy, and submission.
+nav_section: guides
+extra_js: /assets/dominions-tools.js
+---
+
+<section class="page-hero">
+  <div class="shell">
+    <div class="breadcrumbs"><a href="{{ '/guides/' | relative_url }}">Guides</a><span>/</span><a href="{{ '/dominions/tools/' | relative_url }}">Dominions tools</a><span>/</span><span>Turn planner</span></div>
+    <p class="eyebrow">Order-writing checklist</p>
+    <h1>Finish the turn that was meant to be submitted.</h1>
+    <p class="lead">Keep reports, recruitment, magic, movement, province work, diplomacy, and the final file check in one locally saved audit.</p>
+    <div class="content-badges"><span class="content-badge content-badge--strategy">Local checklist</span></div>
+  </div>
+</section>
+
+<section class="section shell">
+  <div class="content-grid">
+    <article class="content">
+      <form class="tool-form" data-turn-planner>
+        <div class="tool-form-grid tool-form-grid--two">
+          <label><span>Game and nation</span><input name="game" data-turn-field maxlength="100" placeholder="Game — Nation"></label>
+          <label><span>Turn</span><input name="turn" data-turn-field type="number" min="1" value="1"></label>
+        </div>
+
+        <div class="turn-progress" aria-live="polite"><progress data-turn-progress max="100" value="0"></progress><strong data-turn-progress-label>0 of 0 checks complete</strong></div>
+
+        <div class="checklist-grid">
+          <fieldset class="checklist-group"><legend>Reports and intelligence</legend>
+            <label class="checklist-item"><input data-turn-item type="checkbox" value="Read every message, event, and attached transfer"><span>Read every message, event, and attached transfer.</span></label>
+            <label class="checklist-item"><input data-turn-item type="checkbox" value="Review every battle and assassination report"><span>Review battles and assassinations; note the cause rather than only the outcome.</span></label>
+            <label class="checklist-item"><input data-turn-item type="checkbox" value="Check scouting, enemy movement, new forts, and exposed commanders"><span>Check scouting, enemy movement, new forts, and exposed commanders.</span></label>
+            <label class="checklist-item"><input data-turn-item type="checkbox" value="Update borders, threats, diplomacy, and likely timing attacks"><span>Update borders, threats, diplomacy, and likely timing attacks.</span></label>
+          </fieldset>
+
+          <fieldset class="checklist-group"><legend>Treasury and recruitment</legend>
+            <label class="checklist-item"><input data-turn-item type="checkbox" value="Check income, upkeep, treasury, and near-term commitments"><span>Check income, upkeep, treasury, and near-term commitments.</span></label>
+            <label class="checklist-item"><input data-turn-item type="checkbox" value="Review every fort's recruitment queue and binding capacity"><span>Review every fort's queue: gold, resources, RP, CP, HP, and limits.</span></label>
+            <label class="checklist-item"><input data-turn-item type="checkbox" value="Recruit required commanders before filling optional troop queues"><span>Recruit required commanders before filling optional troop queues.</span></label>
+            <label class="checklist-item"><input data-turn-item type="checkbox" value="Check Province Defence, mercenaries, and infrastructure spending"><span>Check Province Defence, mercenaries, and infrastructure spending.</span></label>
+          </fieldset>
+
+          <fieldset class="checklist-group"><legend>Research and magic</legend>
+            <label class="checklist-item"><input data-turn-item type="checkbox" value="Confirm the active research target and displayed monthly output"><span>Confirm the research target and displayed monthly output.</span></label>
+            <label class="checklist-item"><input data-turn-item type="checkbox" value="Account for every mage leaving research"><span>Account for every mage searching, forging, moving, casting, or fighting.</span></label>
+            <label class="checklist-item"><input data-turn-item type="checkbox" value="Review rituals, legal targets, range, laboratories, and random resolution order"><span>Review rituals, targets, range, laboratories, and random caster order.</span></label>
+            <label class="checklist-item"><input data-turn-item type="checkbox" value="Check forging, boosters, empowerment, gems, and Blood slaves"><span>Check forging, boosters, empowerment, gems, and Blood slaves.</span></label>
+            <label class="checklist-item"><input data-turn-item type="checkbox" value="Assign site searches and record completed path coverage"><span>Assign site searches and record completed path coverage.</span></label>
+          </fieldset>
+
+          <fieldset class="checklist-group"><legend>Movement and battles</legend>
+            <label class="checklist-item"><input data-turn-item type="checkbox" value="Confirm every commander order and legal movement route"><span>Confirm every commander order and legal movement route.</span></label>
+            <label class="checklist-item"><input data-turn-item type="checkbox" value="Review leadership, squad assignment, formations, and bodyguards"><span>Review leadership, squads, formations, and bodyguards.</span></label>
+            <label class="checklist-item"><input data-turn-item type="checkbox" value="Audit five-order scripts, gems, communion thresholds, and post-script behaviour"><span>Audit scripts, gems, communions, and post-script behaviour.</span></label>
+            <label class="checklist-item"><input data-turn-item type="checkbox" value="Check supply, siege status, storm orders, and friendly retreat provinces"><span>Check supply, sieges, storm orders, and friendly retreat provinces.</span></label>
+            <label class="checklist-item"><input data-turn-item type="checkbox" value="Check remote attacks, assassinations, and movement timing together"><span>Check remote attacks, assassinations, and movement timing together.</span></label>
+          </fieldset>
+
+          <fieldset class="checklist-group"><legend>Provinces and state</legend>
+            <label class="checklist-item"><input data-turn-item type="checkbox" value="Check tax traces, unrest, population damage, and recruitment shutdown"><span>Check tax traces, unrest, population damage, and recruitment shutdown.</span></label>
+            <label class="checklist-item"><input data-turn-item type="checkbox" value="Review construction, demolition, temples, laboratories, and fort timing"><span>Review construction, demolition, temples, laboratories, and fort timing.</span></label>
+            <label class="checklist-item"><input data-turn-item type="checkbox" value="Inspect dominion pressure, preaching, Throne claims, and exposed sacred recruitment"><span>Inspect dominion pressure, preaching, Throne claims, and sacred recruitment.</span></label>
+            <label class="checklist-item"><input data-turn-item type="checkbox" value="Check raiding exposure, province ownership, and end-of-turn vulnerabilities"><span>Check raiding exposure, ownership, and end-of-turn vulnerabilities.</span></label>
+          </fieldset>
+
+          <fieldset class="checklist-group"><legend>Submission and administration</legend>
+            <label class="checklist-item"><input data-turn-item type="checkbox" value="Resolve diplomacy, trades, promises, and extension requests"><span>Resolve diplomacy, trades, promises, and extension requests.</span></label>
+            <label class="checklist-item"><input data-turn-item type="checkbox" value="Reopen critical provinces and armies for a final order audit"><span>Reopen critical provinces and armies for a final order audit.</span></label>
+            <label class="checklist-item"><input data-turn-item type="checkbox" value="End the turn, confirm the order file, and submit the correct revision"><span>End the turn, confirm the order file, and submit the correct revision.</span></label>
+            <label class="checklist-item"><input data-turn-item type="checkbox" value="Confirm the server or host received the turn before the deadline"><span>Confirm the server or host received the turn before the deadline.</span></label>
+          </fieldset>
+        </div>
+
+        <label><span>Turn notes and unresolved decisions</span><textarea name="notes" data-turn-field placeholder="Decisions still waiting, diplomatic replies, replacement plans, or next-turn reminders"></textarea></label>
+        <div class="tool-actions"><button class="button button--primary" type="button" data-turn-copy>Copy audit</button><button class="button button--quiet" type="button" data-turn-complete>Mark all complete</button><button class="button button--quiet" type="button" data-turn-reset>Start a fresh turn</button></div>
+      </form>
+
+      <h2>Current audit</h2>
+      <div class="tool-output" data-turn-output aria-live="polite"></div>
+      <p class="search-count" data-turn-status>Checklist state is saved only in this browser.</p>
+    </article>
+    <aside class="sidebar"><h2>Turn reference</h2><nav><a href="{{ '/dominions/library/books/field-reference/#field-order-writing-audit' | relative_url }}">Order-writing audit</a><a href="{{ '/dominions/library/books/book-i/#b1-the-complete-63-step-hosting-sequence' | relative_url }}">63-step hosting sequence</a><a href="{{ '/dominions/guides/first-game-and-hosting/' | relative_url }}">Starting and hosting</a><a href="{{ '/dominions/tools/battle-script/' | relative_url }}">Battle script builder</a><a href="{{ '/dominions/tools/' | relative_url }}">All tools</a></nav></aside>
+  </div>
+</section>

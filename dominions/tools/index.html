@@ -1,26 +1,85 @@
 ---
 title: Dominions 6 tools
-description: Practical client-side planning tools for Dominions 6 nations, research, build sheets, and multiplayer settings.
+description: Thirteen practical client-side tools for Dominions 6 nations, economy, recruitment, magic, battles, turns, research, multiplayer, and victory planning.
 nav_section: guides
 ---
 
-<section class="page-hero">
+<section class="page-hero tool-index-hero">
   <div class="shell">
     <div class="breadcrumbs"><a href="{{ '/guides/' | relative_url }}">Guides</a><span>/</span><a href="{{ '/dominions/' | relative_url }}">Dominions 6</a><span>/</span><span>Tools</span></div>
-    <p class="eyebrow">Planning tools</p>
-    <h1>Keep the plan beside the evidence.</h1>
-    <p class="lead">These tools organise information already chosen by the player. They do not silently invent a Pretender, research route, throne count, or game rule.</p>
-    <div class="content-badges"><span class="content-badge content-badge--strategy">Planning aids</span><span class="content-badge content-badge--official">Official catalogue data</span></div>
+    <p class="eyebrow">Dominions 6 field toolkit</p>
+    <h1>Plan the turn without hiding the assumptions.</h1>
+    <p class="lead">Thirteen tools for choosing a nation, checking an economy, budgeting an army, planning magic, writing orders, and keeping a multiplayer campaign organised.</p>
+    <div class="meta-row">
+      <span class="status status--active">13 working tools</span>
+      <span class="meta-chip">Dominions {{ site.data.dominions_library.game_version }}</span>
+      <span class="meta-chip">Runs in the browser</span>
+      <span class="meta-chip">No account required</span>
+    </div>
   </div>
 </section>
 
-<section class="section shell">
-  <div class="tool-grid">
-    <article class="tool-card"><h3>Nation finder and comparison</h3><p>Search all 102 official-manual summaries, filter by age, and place up to three nations beside one another.</p><a class="text-link" href="{{ '/dominions/tools/nation-finder/' | relative_url }}">Open the nation finder →</a></article>
-    <article class="tool-card"><h3>Research breakpoint planner</h3><p>Estimate the hosting cycle on which a target finishes after temporary researcher losses have been counted.</p><a class="text-link" href="{{ '/dominions/tools/research-planner/' | relative_url }}">Open the planner →</a></article>
-    <article class="tool-card"><h3>Research build sheet</h3><p>Record the ruleset, mage pool, route, delivery package, timing, branch condition, and intended end state.</p><a class="text-link" href="{{ '/dominions/tools/build-sheet/' | relative_url }}">Open the build sheet →</a></article>
-    <article class="tool-card"><h3>Multiplayer settings record</h3><p>Prepare one plain-text source for the map, participants, mods, Thrones, hosting schedule, and table rules.</p><a class="text-link" href="{{ '/dominions/tools/game-settings/' | relative_url }}">Open the settings record →</a></article>
-  </div>
+<section class="section shell tool-index">
+  <nav class="tool-jump-nav" aria-label="Tool categories">
+    <a href="#selection">Selection and plans</a>
+    <a href="#economy">Economy and recruitment</a>
+    <a href="#magic">Magic and probability</a>
+    <a href="#campaign">Turns and multiplayer</a>
+    <a href="#quick-reference">Quick reference</a>
+  </nav>
 
-  <div class="notice tool-notice"><p><strong>Local by design:</strong> form contents and recent selections stay in the browser on the device being used. Nothing is sent to TheHoboKingdom.</p></div>
+  <section class="tool-category" id="selection">
+    <div class="tool-category-heading"><div><p class="eyebrow">Selection and plans</p><h2>Choose the nation and write down the idea.</h2></div><p>These tools organise choices. Their output is a record or comparison, not an automatic claim that one strategy is correct.</p></div>
+    <div class="tool-grid">
+      <article class="tool-card"><div class="tool-card-topline"><span class="tool-card-code">01</span><span class="content-badge content-badge--official">Official catalogue</span></div><h3>Nation finder and comparison</h3><p>Search all 102 official-manual summaries, filter by age, and place up to three nations beside one another.</p><a class="text-link" href="{{ '/dominions/tools/nation-finder/' | relative_url }}">Open the nation finder →</a></article>
+      <article class="tool-card"><div class="tool-card-topline"><span class="tool-card-code">02</span><span class="content-badge content-badge--strategy">Planning record</span></div><h3>Research build sheet</h3><p>Record the ruleset, mage pool, route, delivery package, timing, branch condition, and intended end state.</p><a class="text-link" href="{{ '/dominions/tools/build-sheet/' | relative_url }}">Open the build sheet →</a></article>
+      <article class="tool-card"><div class="tool-card-topline"><span class="tool-card-code">03</span><span class="content-badge content-badge--strategy">Local worksheet</span></div><h3>Battle script builder</h3><p>Prepare five scripted orders, equipment, gems, positioning, protection, fallback behaviour, and retreat policy for one commander.</p><a class="text-link" href="{{ '/dominions/tools/battle-script/' | relative_url }}">Build a battle script →</a></article>
+    </div>
+  </section>
+
+  <section class="tool-category" id="economy">
+    <div class="tool-category-heading"><div><p class="eyebrow">Economy and recruitment</p><h2>Measure what the province and treasury can support.</h2></div><p>Official formulas are identified directly. Values affected by hidden intermediate rounding remain estimates, with the game interface treated as final.</p></div>
+    <div class="tool-grid">
+      <article class="tool-card"><div class="tool-card-topline"><span class="tool-card-code">04</span><span class="content-badge content-badge--official">Official formula</span></div><h3>Province economy calculator</h3><p>Estimate income, unrest retention, local resources, and recruitment shutdown from population, scales, Administration, and unrest.</p><a class="text-link" href="{{ '/dominions/tools/economy-calculator/' | relative_url }}">Calculate a province →</a></article>
+      <article class="tool-card"><div class="tool-card-topline"><span class="tool-card-code">05</span><span class="content-badge content-badge--official">Rules-based estimate</span></div><h3>Recruitment and upkeep planner</h3><p>Total gold, resources, Recruitment Points, Commander Points, Holy Points, and estimated monthly and annual upkeep.</p><a class="text-link" href="{{ '/dominions/tools/recruitment-planner/' | relative_url }}">Plan a recruitment queue →</a></article>
+      <article class="tool-card"><div class="tool-card-topline"><span class="tool-card-code">06</span><span class="content-badge content-badge--strategy">Treasury projection</span></div><h3>Gem treasury planner</h3><p>Project every gem path and Blood slave stock after income, recurring use, one-off spending, and a chosen reserve.</p><a class="text-link" href="{{ '/dominions/tools/gem-budget/' | relative_url }}">Project the treasury →</a></article>
+    </div>
+  </section>
+
+  <section class="tool-category" id="magic">
+    <div class="tool-category-heading"><div><p class="eyebrow">Magic and probability</p><h2>Plan the breakpoint, caster, and magical economy.</h2></div><p>The calculators expose their assumptions and link to the library chapters that own the complete rule.</p></div>
+    <div class="tool-grid">
+      <article class="tool-card"><div class="tool-card-topline"><span class="tool-card-code">07</span><span class="content-badge content-badge--strategy">Planning estimate</span></div><h3>Research breakpoint planner</h3><p>Estimate the hosting cycle on which a target finishes after temporary researcher losses have been counted.</p><a class="text-link" href="{{ '/dominions/tools/research-planner/' | relative_url }}">Estimate a breakpoint →</a></article>
+      <article class="tool-card"><div class="tool-card-topline"><span class="tool-card-code">08</span><span class="content-badge content-badge--official">Threshold rules</span></div><h3>Communion planner</h3><p>Check path bonuses, participant count, threshold resilience, and approximate slave fatigue for a Communion, Sabbath, or Chorus.</p><a class="text-link" href="{{ '/dominions/tools/communion-planner/' | relative_url }}">Plan a communion →</a></article>
+      <article class="tool-card"><div class="tool-card-topline"><span class="tool-card-code">09</span><span class="content-badge content-badge--strategy">Probability model</span></div><h3>Random magic odds</h3><p>Estimate the chance that independent, uniform random slots produce at least one acceptable path across a recruitment run.</p><a class="text-link" href="{{ '/dominions/tools/random-magic/' | relative_url }}">Calculate recruitment odds →</a></article>
+      <article class="tool-card"><div class="tool-card-topline"><span class="tool-card-code">10</span><span class="content-badge content-badge--strategy">Coverage record</span></div><h3>Magic-site coverage planner</h3><p>Record the highest search level completed in one province across all nine paths and identify the remaining gaps.</p><a class="text-link" href="{{ '/dominions/tools/site-search/' | relative_url }}">Audit site-search coverage →</a></article>
+    </div>
+  </section>
+
+  <section class="tool-category" id="campaign">
+    <div class="tool-category-heading"><div><p class="eyebrow">Turns and multiplayer</p><h2>Keep the campaign from losing information.</h2></div><p>Turn state stays on the current device. Exportable text can be pasted into a game channel, save folder, or campaign record.</p></div>
+    <div class="tool-grid">
+      <article class="tool-card"><div class="tool-card-topline"><span class="tool-card-code">11</span><span class="content-badge content-badge--strategy">Local checklist</span></div><h3>Turn planner and audit</h3><p>Work through reports, recruitment, research, magic, movement, province management, diplomacy, and final submission.</p><a class="text-link" href="{{ '/dominions/tools/turn-planner/' | relative_url }}">Open the turn planner →</a></article>
+      <article class="tool-card"><div class="tool-card-topline"><span class="tool-card-code">12</span><span class="content-badge content-badge--strategy">Campaign record</span></div><h3>Multiplayer settings record</h3><p>Prepare one source for the map, participants, mods, Thrones, hosting schedule, table rules, and administration.</p><a class="text-link" href="{{ '/dominions/tools/game-settings/' | relative_url }}">Build the settings record →</a></article>
+      <article class="tool-card"><div class="tool-card-topline"><span class="tool-card-code">13</span><span class="content-badge content-badge--strategy">Victory accounting</span></div><h3>Throne victory tracker</h3><p>Count claimed points, controlled Thrones, ready claim orders, target points, and the remaining path to Ascension.</p><a class="text-link" href="{{ '/dominions/tools/throne-tracker/' | relative_url }}">Track Ascension Points →</a></article>
+    </div>
+  </section>
+
+  <section class="tool-category" id="quick-reference">
+    <div class="tool-category-heading"><div><p class="eyebrow">Table-side reference</p><h2>The notation used across the toolkit.</h2></div><p>Short labels stay compact in exported records. The linked library chapters contain the full explanations and exceptions.</p></div>
+    <div class="reference-key-grid">
+      <article class="reference-key"><h3>Magic paths</h3><dl><div><dt>F</dt><dd>Fire</dd></div><div><dt>A</dt><dd>Air</dd></div><div><dt>W</dt><dd>Water</dd></div><div><dt>E</dt><dd>Earth</dd></div><div><dt>S</dt><dd>Astral</dd></div><div><dt>D</dt><dd>Death</dd></div><div><dt>N</dt><dd>Nature</dd></div><div><dt>G</dt><dd>Glamour</dd></div><div><dt>B</dt><dd>Blood</dd></div><div><dt>H</dt><dd>Holy</dd></div></dl></article>
+      <article class="reference-key"><h3>Research schools</h3><dl><div><dt>Alt</dt><dd>Alteration</dd></div><div><dt>Evo</dt><dd>Evocation</dd></div><div><dt>Con</dt><dd>Construction</dd></div><div><dt>Ench</dt><dd>Enchantment</dd></div><div><dt>Tha</dt><dd>Thaumaturgy</dd></div><div><dt>Blood</dt><dd>Blood Magic</dd></div><div><dt>Div</dt><dd>Divine</dd></div></dl></article>
+      <article class="reference-key"><h3>Common capacity labels</h3><dl><div><dt>G</dt><dd>Gold</dd></div><div><dt>Res</dt><dd>Resources</dd></div><div><dt>RP</dt><dd>Recruitment or Research Points, according to context</dd></div><div><dt>CP</dt><dd>Commander Points</dd></div><div><dt>HP</dt><dd>Holy Points</dd></div><div><dt>AP</dt><dd>Ascension Points</dd></div></dl></article>
+    </div>
+
+    <div class="tool-reference-links">
+      <a class="link-card" href="{{ '/dominions/library/books/field-reference/' | relative_url }}"><span><strong>Turn and Economy Quick Reference</strong><small>Hosting spine, income, resources, recruitment, upkeep, forts, supplies, sites, and order audit.</small></span><span aria-hidden="true">→</span></a>
+      <a class="link-card" href="{{ '/dominions/library/books/book-v/' | relative_url }}"><span><strong>Foundation Book V: Magic</strong><small>Research, gems, combat magic, paths, communions, rituals, forging, globals, and blood.</small></span><span aria-hidden="true">→</span></a>
+      <a class="link-card" href="{{ '/dominions/library/glossary/' | relative_url }}"><span><strong>Knowledge Library glossary</strong><small>Definitions and permanent links for rules, interface terms, abbreviations, and community language.</small></span><span aria-hidden="true">→</span></a>
+      <a class="link-card" href="{{ '/dominions/library/research/' | relative_url }}"><span><strong>Open research register</strong><small>Questions that remain unsettled, the evidence already gathered, and the tests still required.</small></span><span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <div class="notice tool-notice"><p><strong>Local by design:</strong> saved forms and checklist state stay in the browser on the device being used. Nothing is sent to TheHoboKingdom. Modded games can change costs, objects, paths, and special rules, so the selected ruleset should always be recorded.</p></div>
 </section>

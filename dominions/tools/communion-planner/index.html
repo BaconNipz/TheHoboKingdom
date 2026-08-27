@@ -1,0 +1,43 @@
+---
+title: Dominions 6 communion planner
+description: Check Dominions 6 Communion, Sabbath, or Chorus path bonuses, thresholds, participants, attrition, and approximate fatigue distribution.
+nav_section: guides
+extra_js: /assets/dominions-tools.js
+---
+
+<section class="page-hero">
+  <div class="shell">
+    <div class="breadcrumbs"><a href="{{ '/guides/' | relative_url }}">Guides</a><span>/</span><a href="{{ '/dominions/tools/' | relative_url }}">Dominions tools</a><span>/</span><span>Communion planner</span></div>
+    <p class="eyebrow">Threshold and fatigue audit</p>
+    <h1>Count the slaves before trusting the script.</h1>
+    <p class="lead">Check the current path bonus, the effect of expected losses, participants in one spell, and the fatigue pressure placed on each slave.</p>
+    <div class="content-badges"><span class="content-badge content-badge--official">Official threshold structure</span><span class="content-badge content-badge--research">Rounding estimate</span></div>
+  </div>
+</section>
+
+<section class="section shell">
+  <div class="content-grid">
+    <article class="content">
+      <form class="tool-form" data-communion-planner>
+        <div class="tool-form-grid tool-form-grid--two">
+          <label><span>Communion type</span><select name="type"><option>Astral Communion</option><option>Blood Sabbath</option><option>Chorus</option></select></label>
+          <label><span>Active slaves</span><input name="slaves" type="number" min="0" max="512" value="4" required></label>
+          <label><span>Expected slave losses before the critical spell</span><input name="losses" type="number" min="0" max="512" value="1" required></label>
+          <label><span>Masters casting into this slave pool</span><input name="masters" type="number" min="1" max="100" value="2" required></label>
+          <label><span>Master's base level in the relevant known path</span><input name="base-path" type="number" min="0" max="20" value="2" required></label>
+          <label><span>Critical spell path requirement</span><input name="requirement" type="number" min="0" max="20" value="4" required></label>
+          <label><span>Resolved spell fatigue before distribution</span><input name="fatigue" type="number" min="0" step="0.1" value="100" required></label>
+          <label><span>Slave path relative to boosted master</span><select name="relative"><option value="0.5">Higher than master — ×0.5</option><option value="1">Equal to master — ×1</option><option value="2" selected>Lower, but at least half — ×2</option><option value="4">Lower than half — ×4</option></select></label>
+        </div>
+        <div class="tool-actions"><button class="button button--primary" type="submit">Audit communion</button><button class="button button--quiet" type="reset">Reset</button></div>
+      </form>
+
+      <h2>Communion estimate</h2>
+      <div class="tool-output" data-communion-output aria-live="polite"></div>
+
+      <h2>What this does not model</h2>
+      <p>The fatigue entry must already reflect the caster's paths, encumbrance, spell requirements, gems, and other modifiers. Shared self-buffs, reinvigoration, unconscious slaves, type-specific effects, and backlash are not simulated. Exact rounding remains assigned to controlled testing.</p>
+    </article>
+    <aside class="sidebar"><h2>Communion reference</h2><nav><a href="{{ '/dominions/library/books/book-v/#b5-the-level-bonus' | relative_url }}">Level thresholds</a><a href="{{ '/dominions/library/books/book-v/#b5-base-fatigue-distribution' | relative_url }}">Fatigue distribution</a><a href="{{ '/dominions/library/books/book-v/#b5-common-communion-failures' | relative_url }}">Common failures</a><a href="{{ '/dominions/tools/battle-script/' | relative_url }}">Battle script builder</a><a href="{{ '/dominions/tools/' | relative_url }}">All tools</a></nav></aside>
+  </div>
+</section>

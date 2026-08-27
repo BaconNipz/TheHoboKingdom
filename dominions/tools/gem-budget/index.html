@@ -1,0 +1,51 @@
+---
+title: Dominions 6 gem treasury planner
+description: Project Dominions 6 gem and Blood slave stocks after monthly income, recurring commitments, one-off spending, and reserves.
+nav_section: guides
+extra_js: /assets/dominions-tools.js
+---
+
+<section class="page-hero">
+  <div class="shell">
+    <div class="breadcrumbs"><a href="{{ '/guides/' | relative_url }}">Guides</a><span>/</span><a href="{{ '/dominions/tools/' | relative_url }}">Dominions tools</a><span>/</span><span>Gem treasury</span></div>
+    <p class="eyebrow">Magical stock and flow</p>
+    <h1>Budget the war, not just the next spell.</h1>
+    <p class="lead">Project all eight gem types—including Glamour—and Blood slaves through a chosen number of turns while preserving an emergency reserve.</p>
+    <div class="content-badges"><span class="content-badge content-badge--strategy">Treasury projection</span></div>
+  </div>
+</section>
+
+<section class="section shell">
+  <div class="content-grid">
+    <article class="content">
+      <form class="tool-form" data-gem-budget>
+        <div class="tool-form-grid tool-form-grid--two">
+          <label><span>Projection length in turns</span><input name="turns" type="number" min="1" max="120" value="6" required></label>
+          <label><span>Plan label</span><input name="label" maxlength="80" value="Six-turn treasury plan"></label>
+        </div>
+        <div class="tool-table-wrap">
+          <table class="tool-table gem-table">
+            <thead><tr><th>Path</th><th>Current</th><th>Income / turn</th><th>One-off spend</th><th>Spend / turn</th><th>Reserve</th></tr></thead>
+            <tbody>
+              <tr data-gem-row data-path="Fire" data-code="F"><th>F · Fire</th><td><input data-gem-value="current" aria-label="Current Fire gems" type="number" min="0" value="0"></td><td><input data-gem-value="income" aria-label="Fire income per turn" type="number" min="0" value="0"></td><td><input data-gem-value="oneoff" aria-label="One-off Fire spend" type="number" min="0" value="0"></td><td><input data-gem-value="recurring" aria-label="Fire spend per turn" type="number" min="0" value="0"></td><td><input data-gem-value="reserve" aria-label="Fire reserve" type="number" min="0" value="0"></td></tr>
+              <tr data-gem-row data-path="Air" data-code="A"><th>A · Air</th><td><input data-gem-value="current" aria-label="Current Air gems" type="number" min="0" value="0"></td><td><input data-gem-value="income" aria-label="Air income per turn" type="number" min="0" value="0"></td><td><input data-gem-value="oneoff" aria-label="One-off Air spend" type="number" min="0" value="0"></td><td><input data-gem-value="recurring" aria-label="Air spend per turn" type="number" min="0" value="0"></td><td><input data-gem-value="reserve" aria-label="Air reserve" type="number" min="0" value="0"></td></tr>
+              <tr data-gem-row data-path="Water" data-code="W"><th>W · Water</th><td><input data-gem-value="current" aria-label="Current Water gems" type="number" min="0" value="0"></td><td><input data-gem-value="income" aria-label="Water income per turn" type="number" min="0" value="0"></td><td><input data-gem-value="oneoff" aria-label="One-off Water spend" type="number" min="0" value="0"></td><td><input data-gem-value="recurring" aria-label="Water spend per turn" type="number" min="0" value="0"></td><td><input data-gem-value="reserve" aria-label="Water reserve" type="number" min="0" value="0"></td></tr>
+              <tr data-gem-row data-path="Earth" data-code="E"><th>E · Earth</th><td><input data-gem-value="current" aria-label="Current Earth gems" type="number" min="0" value="0"></td><td><input data-gem-value="income" aria-label="Earth income per turn" type="number" min="0" value="0"></td><td><input data-gem-value="oneoff" aria-label="One-off Earth spend" type="number" min="0" value="0"></td><td><input data-gem-value="recurring" aria-label="Earth spend per turn" type="number" min="0" value="0"></td><td><input data-gem-value="reserve" aria-label="Earth reserve" type="number" min="0" value="0"></td></tr>
+              <tr data-gem-row data-path="Astral" data-code="S"><th>S · Astral</th><td><input data-gem-value="current" aria-label="Current Astral pearls" type="number" min="0" value="0"></td><td><input data-gem-value="income" aria-label="Astral income per turn" type="number" min="0" value="0"></td><td><input data-gem-value="oneoff" aria-label="One-off Astral spend" type="number" min="0" value="0"></td><td><input data-gem-value="recurring" aria-label="Astral spend per turn" type="number" min="0" value="0"></td><td><input data-gem-value="reserve" aria-label="Astral reserve" type="number" min="0" value="0"></td></tr>
+              <tr data-gem-row data-path="Death" data-code="D"><th>D · Death</th><td><input data-gem-value="current" aria-label="Current Death gems" type="number" min="0" value="0"></td><td><input data-gem-value="income" aria-label="Death income per turn" type="number" min="0" value="0"></td><td><input data-gem-value="oneoff" aria-label="One-off Death spend" type="number" min="0" value="0"></td><td><input data-gem-value="recurring" aria-label="Death spend per turn" type="number" min="0" value="0"></td><td><input data-gem-value="reserve" aria-label="Death reserve" type="number" min="0" value="0"></td></tr>
+              <tr data-gem-row data-path="Nature" data-code="N"><th>N · Nature</th><td><input data-gem-value="current" aria-label="Current Nature gems" type="number" min="0" value="0"></td><td><input data-gem-value="income" aria-label="Nature income per turn" type="number" min="0" value="0"></td><td><input data-gem-value="oneoff" aria-label="One-off Nature spend" type="number" min="0" value="0"></td><td><input data-gem-value="recurring" aria-label="Nature spend per turn" type="number" min="0" value="0"></td><td><input data-gem-value="reserve" aria-label="Nature reserve" type="number" min="0" value="0"></td></tr>
+              <tr data-gem-row data-path="Glamour" data-code="G"><th>G · Glamour</th><td><input data-gem-value="current" aria-label="Current Glamour gems" type="number" min="0" value="0"></td><td><input data-gem-value="income" aria-label="Glamour income per turn" type="number" min="0" value="0"></td><td><input data-gem-value="oneoff" aria-label="One-off Glamour spend" type="number" min="0" value="0"></td><td><input data-gem-value="recurring" aria-label="Glamour spend per turn" type="number" min="0" value="0"></td><td><input data-gem-value="reserve" aria-label="Glamour reserve" type="number" min="0" value="0"></td></tr>
+              <tr data-gem-row data-path="Blood slaves" data-code="B"><th>B · Blood slaves</th><td><input data-gem-value="current" aria-label="Current Blood slaves" type="number" min="0" value="0"></td><td><input data-gem-value="income" aria-label="Blood slave income per turn" type="number" min="0" value="0"></td><td><input data-gem-value="oneoff" aria-label="One-off Blood slave spend" type="number" min="0" value="0"></td><td><input data-gem-value="recurring" aria-label="Blood slave spend per turn" type="number" min="0" value="0"></td><td><input data-gem-value="reserve" aria-label="Blood slave reserve" type="number" min="0" value="0"></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tool-actions"><button class="button button--primary" type="submit">Project treasury</button><button class="button button--quiet" type="button" data-tool-copy>Copy projection</button><button class="button button--quiet" type="reset">Reset</button></div>
+      </form>
+
+      <h2>Projection</h2>
+      <div class="tool-output" data-gem-output aria-live="polite"></div>
+      <p class="search-count" data-gem-status>Alchemy, events, site loss, and newly found income are not added automatically.</p>
+    </article>
+    <aside class="sidebar"><h2>Magic economy</h2><nav><a href="{{ '/dominions/library/books/book-v/#b5-stock-flow-and-capacity' | relative_url }}">Stock, flow, and capacity</a><a href="{{ '/dominions/library/books/book-v/#b5-a-battle-gem-budget' | relative_url }}">Battle gem budgets</a><a href="{{ '/dominions/library/books/book-v/#b5-reserve-doctrine' | relative_url }}">Reserve doctrine</a><a href="{{ '/dominions/tools/battle-script/' | relative_url }}">Battle script builder</a><a href="{{ '/dominions/tools/' | relative_url }}">All tools</a></nav></aside>
+  </div>
+</section>
