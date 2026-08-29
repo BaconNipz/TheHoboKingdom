@@ -14,7 +14,32 @@ if (searchPanel) {
   let loadingPromise = null;
   let debounceTimer = null;
 
+  const sha256 = async (bytes) => [...new Uint8Array(await crypto.subtle.digest("SHA-256", bytes))]
+    .map((value) => value.toString(16).padStart(2, "0"))
+    .join("");
+
   const readIndex = async (response, url) => {
+    if (url.endsWith(".index.json")) {
+      const manifest = await response.json();
+      if (manifest.kind !== "dominions-library-search-index" || !Array.isArray(manifest.parts)) {
+        throw new Error("Library search manifest is invalid.");
+      }
+      const baseUrl = new URL(url, window.location.href);
+      const parts = await Promise.all(manifest.parts.map(async (part) => {
+        const partResponse = await fetch(new URL(part.file, baseUrl));
+        if (!partResponse.ok) throw new Error("Library search index could not be loaded.");
+        const bytes = await partResponse.arrayBuffer();
+        if (part.sha256 && await sha256(bytes) !== part.sha256) {
+          throw new Error("Library search index failed its integrity check.");
+        }
+        const entries = JSON.parse(new TextDecoder().decode(bytes));
+        if (!Array.isArray(entries)) throw new Error("Library search index part is invalid.");
+        return entries;
+      }));
+      const entries = parts.flat();
+      if (entries.length !== manifest.entry_count) throw new Error("Library search index is incomplete.");
+      return entries;
+    }
     if (!url.endsWith(".gz")) return response.json();
     const bytes = await response.arrayBuffer();
     try {

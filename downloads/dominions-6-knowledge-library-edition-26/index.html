@@ -12,13 +12,13 @@ og_image: /assets/images/dominions-6-library-edition-26.png
       <span aria-hidden="true">/</span>
       <span>Dominions 6 Knowledge Library</span>
     </div>
-    <p class="eyebrow">{{ site.data.dominions_library.edition_label }}</p>
-    <h1>Download Progress Edition {{ site.data.dominions_library.edition }}.</h1>
-    <p class="lead">The complete {{ site.data.dominions_library.pdf_page_count }}-page reader's edition for offline reading, printing, or archiving.</p>
+    <p class="eyebrow">Progress Edition 26</p>
+    <h1>Download Progress Edition 26.</h1>
+    <p class="lead">The complete 793-page reader's edition, retained as a stable rollback release.</p>
     <div class="meta-row">
       <span class="status status--stable">Verified release</span>
-      <span class="meta-chip">{{ site.data.dominions_library.pdf_size }} PDF</span>
-      <span class="meta-chip">{{ site.data.dominions_library.published }}</span>
+      <span class="meta-chip">3.48 MB PDF</span>
+      <span class="meta-chip">26 August 2026</span>
     </div>
   </div>
 </section>
@@ -26,12 +26,12 @@ og_image: /assets/images/dominions-6-library-edition-26.png
 <section class="section shell">
   <div class="content-grid">
     <div class="content">
-      <h2>{{ site.data.dominions_library.edition_label }}</h2>
+      <h2>Progress Edition 26</h2>
       <p>This release completes the core patrol-detection curve and gives firmer source notes for survivor morale, fatigue recovery, harassment, mounted targeting, combat gems, communions, hostile movement, Raid, pillage, and binding NAPs. All sixteen books, the glossary, reading paths, research register, and linked navigation remain included.</p>
-      <button class="button button--primary" type="button" data-pdf-download>Download Edition {{ site.data.dominions_library.edition }} PDF</button>
+      <button class="button button--primary" type="button" data-pdf-download>Download Edition 26 PDF</button>
       <p data-pdf-status aria-live="polite">Ready.</p>
       <div class="notice">
-        <p><strong>Integrity:</strong> SHA-256 <code>{{ site.data.dominions_library.sha256 }}</code>.</p>
+        <p><strong>Integrity:</strong> SHA-256 <code>8ca17b3a452b876b0950cd5dcc12290dc07e778b0ef5685f0a754e9235c7a10c</code>.</p>
       </div>
     </div>
     <aside class="sidebar">
@@ -50,7 +50,7 @@ og_image: /assets/images/dominions-6-library-edition-26.png
   const button = document.querySelector("[data-pdf-download]");
   const status = document.querySelector("[data-pdf-status]");
   const parts = ["part-000.bin", "part-001.bin", "part-002.bin", "part-003.bin", "part-004.bin", "part-005.bin"];
-  const expectedHash = "{{ site.data.dominions_library.sha256 }}";
+  const expectedHash = "8ca17b3a452b876b0950cd5dcc12290dc07e778b0ef5685f0a754e9235c7a10c";
   const hex = (buffer) => [...new Uint8Array(buffer)].map((byte) => byte.toString(16).padStart(2, "0")).join("");
 
   button.addEventListener("click", async () => {
@@ -65,7 +65,7 @@ og_image: /assets/images/dominions-6-library-edition-26.png
       if (digest !== expectedHash) throw new Error("The PDF integrity check failed.");
       const link = document.createElement("a");
       link.href = URL.createObjectURL(pdf);
-      link.download = "dominions-6-knowledge-library-progress-edition-{{ site.data.dominions_library.edition }}.pdf";
+      link.download = "dominions-6-knowledge-library-progress-edition-26.pdf";
       document.body.append(link);
       link.click();
       link.remove();

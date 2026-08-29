@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "edition": "Progress Edition 27",
+  "kind": "dominions-library-search-index",
+  "entry_count": 2524,
+  "storage": "transparent-json-parts",
+  "parts": [
+    {
+      "file": "search-index.part-000.json",
+      "part": 1,
+      "entries": 315,
+      "first_section_id": "guide-reader-s-guide-and-concordance",
+      "last_section_id": "b2-need-not-eat-is-the-decisive-explicit-tag",
+      "sha256": "5fe839a9bb77697f8180fa614c57ac53d203e1b25fae146e5e836056f637e178"
+    },
+    {
+      "file": "search-index.part-001.json",
+      "part": 2,
+      "entries": 316,
+      "first_section_id": "b2-logistics-audit-for-unusual-units",
+      "last_section_id": "b4-build-the-effective-line",
+      "sha256": "068e9597a971e052aeb59f5426332fdeda803ae6f7db642b0836bfc2c4acb7a7"
+    },
+    {
+      "file": "search-index.part-002.json",
+      "part": 3,
+      "entries": 315,
+      "first_section_id": "b4-roles-rather-than-tiers",
+      "last_section_id": "b5-counter-layers",
+      "sha256": "d8318348b2fc4cf677c8ba9ea6ce8106d2f78f13b6af1ffab522dfe40b9b9947"
+    },
+    {
+      "file": "search-index.part-003.json",
+      "part": 4,
+      "entries": 316,
+      "first_section_id": "b5-resistance-is-not-a-complete-counter",
+      "last_section_id": "b7-national-spells-and-rituals",
+      "sha256": "f9fd5fa02fae807a607586543ca09c6e209a310fbf08d83aee06130c92e978d1"
+    },
+    {
+      "file": "search-index.part-004.json",
+      "part": 5,
+      "entries": 315,
+      "first_section_id": "b7-national-access-is-not-castability",
+      "last_section_id": "b8-a-mod-can-change-an-ongoing-game",
+      "sha256": "59c172af69f4584dcda1d958c6d6823d76507336e5be9f86f71d66378c994e50"
+    },
+    {
+      "file": "search-index.part-005.json",
+      "part": 6,
+      "entries": 316,
+      "first_section_id": "b8-part-ii-project-structure-and-the-first-working-mod",
+      "last_section_id": "b9-18-1-hidden-spells",
+      "sha256": "526f6926f915402dfdd021ab0488afdc7e36f0766a05a27216b7a2cf902bc9f6"
+    },
+    {
+      "file": "search-index.part-006.json",
+      "part": 7,
+      "entries": 315,
+      "first_section_id": "b9-18-2-divine-items",
+      "last_section_id": "b11-67-charm-enslave-transformation-and-control-loss",
+      "sha256": "8adb083650754815f2997421fd63f0961d4d62ff009375a5a86049723ff9ae57"
+    },
+    {
+      "file": "search-index.part-007.json",
+      "part": 8,
+      "entries": 316,
+      "first_section_id": "b11-part-xii-master-ability-and-condition-register",
+      "last_section_id": "b14-what-this-unlocks",
+      "sha256": "dc0bddcc57914d93837710864d5160aad7f8793cdeb54cf779d103e9890b02c3"
+    }
+  ]
+}

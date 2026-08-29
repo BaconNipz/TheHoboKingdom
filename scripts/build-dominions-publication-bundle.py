@@ -32,8 +32,20 @@ DOCUMENT_SLUGS = {
     "b14": "book-xiv",
 }
 
+# Website anchors are public URLs. Keep aliases here when an editorial heading
+# changes but the old fragment must continue to land on the same section.
+LEGACY_SECTION_ALIASES = {
+    "b7-the-nation-dossier-method-and-middle-age-arcoscephale":
+        "b7-the-nation-dossier-method-middle-age-arcoscephale-marignon-and-pyrene",
+}
+
 
 def read_json(path: Path):
+    if not path.exists() and path.suffix == ".json":
+        compressed = path.with_suffix(path.suffix + ".gz")
+        if compressed.exists():
+            with gzip.open(compressed, "rt", encoding="utf-8") as source:
+                return json.load(source)
     return json.loads(path.read_text(encoding="utf-8"))
 
 
@@ -166,6 +178,8 @@ def main() -> int:
     redirects_by_target: dict[str, list[str]] = {}
     for redirect in redirects:
         redirects_by_target.setdefault(redirect["to"], []).append(redirect["from"])
+    for alias, target in LEGACY_SECTION_ALIASES.items():
+        redirects_by_target.setdefault(target, []).append(alias)
 
     output.mkdir(parents=True, exist_ok=True)
     documents_output = output / "documents"

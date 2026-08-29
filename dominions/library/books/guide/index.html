@@ -4,7 +4,7 @@ description: "How the collection is organised, where each subject lives, and the
 nav_section: guides
 extra_css: /assets/dominions-library.css
 extra_js: /assets/dominions-library.js
-og_image: /assets/images/dominions-6-library-edition-26.png
+og_image: /assets/images/dominions-6-library-edition-27.png
 ---
 
 <section class="page-hero library-page-hero">
@@ -14,13 +14,13 @@ og_image: /assets/images/dominions-6-library-edition-26.png
       <a href="/dominions/library/">Knowledge Library</a><span aria-hidden="true">/</span>
       <span>Reader's Guide and Concordance</span>
     </div>
-    <p class="eyebrow">Progress Edition 26</p>
+    <p class="eyebrow">Progress Edition 27</p>
     <h1>Reader's Guide and Concordance</h1>
     <p class="lead">How the collection is organised, where each subject lives, and the quickest route to a dependable answer.</p>
     <div class="meta-row">
       <span class="status status--stable">Published reference</span>
       <span class="meta-chip">Dominions 6.36</span>
-      <span class="meta-chip">11,199 words</span>
+      <span class="meta-chip">11,354 words</span>
       <span class="meta-chip">62 sections</span>
     </div>
   </div>
@@ -2217,9 +2217,9 @@ og_image: /assets/images/dominions-6-library-edition-26.png
 <td>Combat</td>
 <td>What is the exact current survivor bonus in morale checks?</td>
 <td>Rout thresholds influence squad sizing, standards, and casualty tolerance.</td>
-<td>Current official correction or published statistical reproduction.</td>
+<td>Current community formula supplies <code>round(5 x surviving proportion)</code>; a current raw boundary set and separate commander treatment are still required.</td>
 <td>b4-test-9-morale-survivor-bonus</td>
-<td>queued</td>
+<td>in-progress</td>
 </tr>
 <tr class="even">
 <td>R-020</td>
@@ -2227,9 +2227,9 @@ og_image: /assets/images/dominions-6-library-edition-26.png
 <td>Combat</td>
 <td>How much fatigue do active units recover while conscious under ordinary conditions?</td>
 <td>Fatigue breakpoints shape armour, melee endurance, and spell-support value.</td>
-<td>Current official rule or frame-by-frame published reproduction.</td>
+<td>Current community reference supplies one per active round plus Reinvigoration; a frame-by-frame 6.36 reproduction remains required.</td>
 <td>b4-test-12-ordinary-fatigue-recovery</td>
-<td>queued</td>
+<td>in-progress</td>
 </tr>
 <tr class="odd">
 <td>R-021</td>
@@ -2237,9 +2237,9 @@ og_image: /assets/images/dominions-6-library-edition-26.png
 <td>Combat</td>
 <td>What is the exact harassment accumulation and decay model?</td>
 <td>Defence collapse and swarm counters depend on more than the visible attack value.</td>
-<td>Current official statement or published instrumented reproduction.</td>
+<td>Official accumulation is resolved; a Dominions 5 decay constant is retained only as a regression hypothesis for a current instrumented reproduction.</td>
 <td>b4-test-2-harassment-decay</td>
-<td>queued</td>
+<td>in-progress</td>
 </tr>
 <tr class="even">
 <td>R-022</td>
@@ -2257,9 +2257,9 @@ og_image: /assets/images/dominions-6-library-edition-26.png
 <td>Mounted combat</td>
 <td>What are the full current mounted carry, targeting, and movement calculations?</td>
 <td>Rider and mount statistics otherwise produce misleading army comparisons.</td>
-<td>Official manual corrections and current structured data.</td>
+<td>Official targeting and component rules are resolved; carry, mixed-component movement, and exceptional modifier order remain open.</td>
 <td>b4-test-7-mounted-targeting</td>
-<td>queued</td>
+<td>in-progress</td>
 </tr>
 <tr class="even">
 <td>R-024</td>
@@ -2267,9 +2267,9 @@ og_image: /assets/images/dominions-6-library-edition-26.png
 <td>Magic</td>
 <td>What thresholds govern optional combat-gem use and refusal?</td>
 <td>A scripted spell package can fail because the caster conserves a gem.</td>
-<td>Official AI rule or published reproducible battle set.</td>
+<td>Official 6.12, 6.15, and 6.30 corrections bound the historical thresholds; a current reproducible battle set remains required.</td>
 <td>b5-test-3-combat-gem-spending</td>
-<td>queued</td>
+<td>in-progress</td>
 </tr>
 <tr class="odd">
 <td>R-025</td>
@@ -2287,9 +2287,9 @@ og_image: /assets/images/dominions-6-library-edition-26.png
 <td>Communions</td>
 <td>What current edge cases govern shared self-buffs, collapse, and automatic communion items?</td>
 <td>Communion failure can destroy the most valuable mage concentration in an army.</td>
-<td>Official corrections and published reproducible battle reports.</td>
+<td>Manual rules and official 6.12-6.30 corrections resolve the core; automatic-item, form-change, and forced-removal behaviour remain open.</td>
 <td>b5-communion-audit</td>
-<td>queued</td>
+<td>in-progress</td>
 </tr>
 <tr class="odd">
 <td>R-027</td>
@@ -2297,9 +2297,9 @@ og_image: /assets/images/dominions-6-library-edition-26.png
 <td>Movement</td>
 <td>What is the exact interception probability and battle location when hostile forces swap provinces?</td>
 <td>Movement prediction determines reinforcement and retreat planning.</td>
-<td>Current official rule or published map-and-save reproduction.</td>
+<td>A published chassis-value algorithm supplies a precise hypothesis; a 6.36 map-and-save reproduction remains required.</td>
 <td>b6-movement-and-interception</td>
-<td>queued</td>
+<td>in-progress</td>
 </tr>
 <tr class="even">
 <td>R-028</td>
@@ -2307,9 +2307,9 @@ og_image: /assets/images/dominions-6-library-edition-26.png
 <td>Patrol</td>
 <td>What are the current patrol-detection distributions across stealth and patrol modifiers?</td>
 <td>Counter-raiding and scout survival depend on risk rather than a binary threshold.</td>
-<td>Published current statistical reproduction.</td>
+<td>The official open-ended 2d25 formula has been enumerated directly from D=-60 to +60; exceptional contributors remain regression tests.</td>
 <td>b6-patrol-and-stealth</td>
-<td>queued</td>
+<td>completed</td>
 </tr>
 <tr class="odd">
 <td>R-029</td>
@@ -2317,9 +2317,9 @@ og_image: /assets/images/dominions-6-library-edition-26.png
 <td>Raiding</td>
 <td>What are the current Raid and pillage output functions?</td>
 <td>Economic warfare cannot be compared honestly without expected return and population damage.</td>
-<td>Current official documentation or published repeated outcomes.</td>
+<td>Official legality and sequence are resolved; historical exact-output formulas are now 6.36 reproduction predicates rather than current law.</td>
 <td>b6-raid-order</td>
-<td>queued</td>
+<td>in-progress</td>
 </tr>
 <tr class="even">
 <td>R-030</td>
@@ -2327,9 +2327,9 @@ og_image: /assets/images/dominions-6-library-edition-26.png
 <td>Diplomacy</td>
 <td>Which binding-NAP edge cases occur under every diplomacy setting?</td>
 <td>Interface-enforced treaties must not be described through informal multiplayer custom.</td>
-<td>Official setting documentation and published current reproduction.</td>
+<td>Official 6.01-6.30 exceptions are versioned; the complete binding, nonbinding, and absent action matrix remains open.</td>
 <td>b6-binding-diplomacy</td>
-<td>queued</td>
+<td>in-progress</td>
 </tr>
 <tr class="odd">
 <td>R-031</td>
@@ -2486,10 +2486,10 @@ og_image: /assets/images/dominions-6-library-edition-26.png
 <td>P0</td>
 <td>Experience</td>
 <td>Does a current five-star unit receive a cumulative +2 or +3 Hit Points from experience?</td>
-<td>A public veteran calculator must not conceal the conflict between the official incremental table and current community reference.</td>
-<td>Current 6.36 controlled unit or engine export.</td>
+<td>A public veteran calculator must not conceal a version conflict.</td>
+<td>Official 6.13 changed veteran HP to +1 at each star from the third onward, 6.14 corrected XP HP-stat handling, and the current manual repeats the three increments.</td>
 <td>b11-54-experience-thresholds</td>
-<td>queued</td>
+<td>completed</td>
 </tr>
 <tr class="odd">
 <td>R-047</td>
@@ -2565,21 +2565,21 @@ og_image: /assets/images/dominions-6-library-edition-26.png
 <td>R-054</td>
 <td>P2</td>
 <td>Summons</td>
-<td>Which exact weighted unit identities satisfy the eighteen named monster-tag selectors, and what do the six remaining raw selectors mean?</td>
-<td>A selector name improves lookup, but exact candidates and odds still matter for planning.</td>
+<td>Which unit identities satisfy the 25 unresolved selection- or tag-based summon relations?</td>
+<td>A spell record is incomplete when it names a selector but not the possible summoned units.</td>
 <td>Exact-version engine export or published reproducible selector resolution.</td>
 <td>b12-summons</td>
-<td>in-progress</td>
+<td>queued</td>
 </tr>
 <tr class="odd">
 <td>R-055</td>
 <td>P2</td>
 <td>Object labels</td>
-<td>Which of the sixteen derived item and site property labels can be replaced with stronger source wording?</td>
-<td>Every field is readable, but filters must still distinguish source labels from editorial expansions.</td>
+<td>What are the authoritative human labels for remaining source-native item and site property fields?</td>
+<td>Public filters should be readable without pretending that an inferred label is official.</td>
 <td>Current UI wording, official manuals, and exact-version object export compared field by field.</td>
 <td>b12-maintenance</td>
-<td>in-progress</td>
+<td>queued</td>
 </tr>
 <tr class="even">
 <td>R-056</td>
@@ -2616,7 +2616,7 @@ og_image: /assets/images/dominions-6-library-edition-26.png
 </ul>
 <p>These are not requests for the player to perform labour. They are publication limits.</p>
 <h2 id="guide-research-order">Research order<a class="heading-link" href="#guide-research-order" aria-label="Link to Research order">#</a></h2>
-<p>R-001 is resolved by Books XIII and XIV. R-002 through R-005 are resolved by the independent DE-Divinitus integrity publication and are cross-linked through Book IX without absorbing that publication into the encyclopedia. R-006, R-007, R-009, R-015 through R-018 are resolved in Books II and III at their stated evidence tiers. R-010 and R-013 are in progress; R-008, R-011, R-012, and R-014 remain queued behind reliable reproduction or better structured evidence. Edition 23 supplies their narrow test predicates and safe operational fallbacks. Edition 24 changes the voice of the reader corpus without changing those research statuses. Edition 25 advances R-054 and R-055, closes the realm-expansion subtask, and leaves R-053 queued for an exact population-type export. The remaining items no longer block website publication. Combat, magic, and campaign questions R-019 through R-030 follow when evidence is available; R-031 is resolved in the 6.35 object register, while R-057 can advance alongside documentation maintenance.</p>
+<p>R-001 is resolved by Books XIII and XIV. R-002 through R-005 are resolved by the independent DE-Divinitus integrity publication and are cross-linked through Book IX without absorbing that publication into the encyclopedia. R-006, R-007, R-009, and R-015 through R-018 are resolved in Books II and III at their stated evidence tiers. R-010 and R-013 are in progress; R-008, R-011, R-012, and R-014 remain queued behind reliable reproduction or better structured evidence. Edition 23 supplies their narrow test predicates and safe operational fallbacks. Edition 24 changes the voice of the reader corpus without changing those statuses. Edition 25 advances R-054 and R-055, closes the realm-expansion subtask, and leaves R-053 queued for an exact population-type export. Edition 26 works through R-019 to R-030: R-028 is completed by direct enumeration of the official patrol formula; R-019 to R-021, R-023, R-024, R-026, R-027, R-029, and R-030 are in progress with sharper evidence boundaries and reproducible predicates; R-022 and R-025 remain queued. Edition 27 closes R-046 from the official 6.13-6.14 patch boundary and current manual. R-031 is resolved in the 6.35 object register, while R-057 can advance alongside documentation maintenance.</p>
 <h1 id="guide-part-vii-maintenance-rules">Part VII: Maintenance Rules<a class="heading-link" href="#guide-part-vii-maintenance-rules" aria-label="Link to Part VII: Maintenance Rules">#</a></h1>
 <h2 id="guide-adding-a-section">Adding a section<a class="heading-link" href="#guide-adding-a-section" aria-label="Link to Adding a section">#</a></h2>
 <p>When new material is written:</p>
@@ -2696,7 +2696,7 @@ og_image: /assets/images/dominions-6-library-edition-26.png
         <a href="/dominions/library/">Complete library</a>
         <a href="/dominions/library/glossary/">Glossary</a>
         <a href="/dominions/library/research/">Research register</a>
-        <a href="/downloads/dominions-6-knowledge-library-edition-26/">Edition 26 PDF</a>
+        <a href="/downloads/dominions-6-knowledge-library-edition-27/">Edition 27 PDF</a>
       </nav>
     </aside>
   </div>

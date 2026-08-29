@@ -4,7 +4,7 @@ description: "Army organisation, formations, attacks, protection, morale, fatigu
 nav_section: guides
 extra_css: /assets/dominions-library.css
 extra_js: /assets/dominions-library.js
-og_image: /assets/images/dominions-6-library-edition-26.png
+og_image: /assets/images/dominions-6-library-edition-27.png
 ---
 
 <section class="page-hero library-page-hero">
@@ -14,13 +14,13 @@ og_image: /assets/images/dominions-6-library-edition-26.png
       <a href="/dominions/library/">Knowledge Library</a><span aria-hidden="true">/</span>
       <span>Foundation Book IV</span>
     </div>
-    <p class="eyebrow">Progress Edition 26</p>
+    <p class="eyebrow">Progress Edition 27</p>
     <h1>Foundation Book IV: Armies and Battle</h1>
     <p class="lead">Army organisation, formations, attacks, protection, morale, fatigue, magic, afflictions, and battle analysis.</p>
     <div class="meta-row">
       <span class="status status--stable">Published reference</span>
       <span class="meta-chip">Dominions 6.36</span>
-      <span class="meta-chip">13,001 words</span>
+      <span class="meta-chip">13,226 words</span>
       <span class="meta-chip">178 sections</span>
     </div>
   </div>
@@ -176,108 +176,131 @@ og_image: /assets/images/dominions-6-library-edition-26.png
   <div class="library-reader-grid">
     <article class="content library-prose">
 {% raw %}
-<h1 id="b4-foundation-book-iv-armies-and-battle">Foundation Book IV: Armies and Battle<a class="heading-link" href="#b4-foundation-book-iv-armies-and-battle" aria-label="Link to Foundation Book IV: Armies and Battle">#</a></h1><h2 id="b4-why-battles-need-a-systems-view">Why battles need a systems view<a class="heading-link" href="#b4-why-battles-need-a-systems-view" aria-label="Link to Why battles need a systems view">#</a></h2><p>Dominions 6 battles are not decided by a single comparison between two armies. They are decided by a sequence of contacts, checks, delays, target choices, damage rolls, fatigue thresholds, morale failures, and retreat outcomes. A force can possess more gold value, more bodies, and more nominal damage yet still lose because it reaches the wrong part of the field, exhausts itself, exposes its commanders, or begins routing before its strength can be applied.</p>
+<h1 id="b4-foundation-book-iv-armies-and-battle">Foundation Book IV: Armies and Battle<a class="heading-link" href="#b4-foundation-book-iv-armies-and-battle" aria-label="Link to Foundation Book IV: Armies and Battle">#</a></h1>
+<h2 id="b4-why-battles-need-a-systems-view">Why battles need a systems view<a class="heading-link" href="#b4-why-battles-need-a-systems-view" aria-label="Link to Why battles need a systems view">#</a></h2>
+<p>Dominions 6 battles are not decided by a single comparison between two armies. They are decided by a sequence of contacts, checks, delays, target choices, damage rolls, fatigue thresholds, morale failures, and retreat outcomes. A force can possess more gold value, more bodies, and more nominal damage yet still lose because it reaches the wrong part of the field, exhausts itself, exposes its commanders, or begins routing before its strength can be applied.</p>
 <blockquote>
 <p><strong>Foundation rule:</strong> An army is not a collection of units. It is a timed delivery system for damage, control, morale pressure, and magic.</p>
 </blockquote>
 <p>The early chapters make the Army Setup screen and battle replay readable. Later chapters deal with formation timing, combat arithmetic, counter design, and the difference between winning one battle and preserving a force for the next. The manual explains much of the arithmetic unusually well, but it does not expose every targeting weight, pathfinding choice, cooldown, or rounding step. Hidden values stay labelled as such.</p>
-<h2 id="b4-edition-note">Edition note<a class="heading-link" href="#b4-edition-note" aria-label="Link to Edition note">#</a></h2><p>The ruleset and evidence terms come from Book I. Book IV owns battlefield resolution: hit checks, damage, protection, fatigue, morale, retreat, and the combat side of spellcasting. Book V uses those rules to build magical strategy rather than printing them again. Exact DE and Divinitus object changes belong to Book IX and the later nation dossiers.</p>
-<h2 id="b4-current-version-corrections-that-matter">Current-version corrections that matter<a class="heading-link" href="#b4-current-version-corrections-that-matter" aria-label="Link to Current-version corrections that matter">#</a></h2><p>Several post-manual changes materially affect battle analysis:</p>
+<h2 id="b4-edition-note">Edition note<a class="heading-link" href="#b4-edition-note" aria-label="Link to Edition note">#</a></h2>
+<p>The ruleset and evidence terms come from Book I. Book IV owns battlefield resolution: hit checks, damage, protection, fatigue, morale, retreat, and the combat side of spellcasting. Book V uses those rules to build magical strategy rather than printing them again. Exact DE and Divinitus object changes belong to Book IX and the later nation dossiers.</p>
+<h2 id="b4-current-version-corrections-that-matter">Current-version corrections that matter<a class="heading-link" href="#b4-current-version-corrections-that-matter" aria-label="Link to Current-version corrections that matter">#</a></h2>
+<p>Several post-manual changes materially affect battle analysis:</p>
 <table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th>Version</th>
 <th>Current rule or correction</th>
 <th>Practical consequence</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>6.23</td>
 <td>Fear can reduce morale by no more than the Fear value, with an absolute maximum reduction of 10</td>
 <td>Older descriptions can overstate rapid morale collapse</td>
 </tr>
-<tr>
+<tr class="even">
 <td>6.23</td>
 <td>Floating mounts are no longer impeded by non-floating riders</td>
 <td>Mixed rider-and-mount movement should be judged from the current unit</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>6.23</td>
 <td>Spellcasters do not receive the multiple-weapon fatigue penalty</td>
 <td>Armed mages should not be analysed with the ordinary extra-weapon fatigue rule</td>
 </tr>
-<tr>
+<tr class="even">
 <td>6.25</td>
 <td>Fatigue from flying and trampling was corrected for non-mounted units</td>
 <td>Old replays or tests may understate the cost of repeated mobility and trampling</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>6.25</td>
 <td>Battlefield-wide spells cannot normally be cast indoors; holy spells are excepted</td>
 <td>Fort interiors and many assassination fields require different spell plans</td>
 </tr>
-<tr>
+<tr class="even">
 <td>6.31</td>
 <td>Regeneration now follows its percentage accurately rather than old hit-point brackets</td>
 <td>Current healing estimates should use the displayed percentage</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>6.34</td>
 <td>Temporary battle effects are correctly removed from Twiceborn units</td>
 <td>Persistent-state assumptions from older replays can be wrong</td>
 </tr>
-<tr>
+<tr class="even">
 <td>6.35</td>
 <td>Innate spellcasters no longer skip their script after recovering from unconsciousness</td>
 <td>Script evaluation for innate casters must use current behaviour</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>6.35</td>
 <td>Units that automatically regain mounts now do so at the end of the turn</td>
 <td>Post-battle mount recovery affects the next turn’s readiness</td>
 </tr>
-<tr>
+<tr class="even">
 <td>6.36</td>
 <td>Rust now takes effect even when the attack causes no HP damage</td>
 <td>Zero final damage does not prove that an equipment-degrading rider failed</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>Patch corrections do not invalidate the manual’s combat structure. They identify the places where an otherwise sound model produces the wrong current result.</p>
-<h2 id="b4-finding-the-right-section">Finding the right section<a class="heading-link" href="#b4-finding-the-right-section" aria-label="Link to Finding the right section">#</a></h2><p>For the first few battles, concentrate on reading unit cards, forming squads, protecting commanders, placing the line, understanding fatigue and morale, and reviewing the replay. The deeper combat chapters become valuable when a matchup turns on shields, repel, trampling, magic resistance, contact geometry, or a precise rout threshold.</p>
-<span class="anchor-alias" id="b4-battle-groups" aria-hidden="true"></span><h1 id="b4-part-i-what-a-battle-decides">Part I: What a Battle Decides<a class="heading-link" href="#b4-part-i-what-a-battle-decides" aria-label="Link to Part I: What a Battle Decides">#</a></h1><h2 id="b4-victory-is-normally-a-rout">Victory is normally a rout<a class="heading-link" href="#b4-victory-is-normally-a-rout" aria-label="Link to Victory is normally a rout">#</a></h2><p>A Dominions battle is generally fought until one side leaves the field. It is not necessary to kill every enemy. Squads rout when they fail morale checks, all eligible troops rout when their eligible commanders are gone, and an army automatically routs after losing 75% of its weighted total hit points.</p>
+<h2 id="b4-finding-the-right-section">Finding the right section<a class="heading-link" href="#b4-finding-the-right-section" aria-label="Link to Finding the right section">#</a></h2>
+<p>For the first few battles, concentrate on reading unit cards, forming squads, protecting commanders, placing the line, understanding fatigue and morale, and reviewing the replay. The deeper combat chapters become valuable when a matchup turns on shields, repel, trampling, magic resistance, contact geometry, or a precise rout threshold.</p>
+<span id="b4-battle-groups" class="anchor-alias" aria-hidden="true"></span>
+<h1 id="b4-part-i-what-a-battle-decides">Part I: What a Battle Decides<a class="heading-link" href="#b4-part-i-what-a-battle-decides" aria-label="Link to Part I: What a Battle Decides">#</a></h1>
+<h2 id="b4-victory-is-normally-a-rout">Victory is normally a rout<a class="heading-link" href="#b4-victory-is-normally-a-rout" aria-label="Link to Victory is normally a rout">#</a></h2>
+<p>A Dominions battle is generally fought until one side leaves the field. It is not necessary to kill every enemy. Squads rout when they fail morale checks, all eligible troops rout when their eligible commanders are gone, and an army automatically routs after losing 75% of its weighted total hit points.</p>
 <p>This produces four different outcomes that the word “win” can conceal:</p>
 <table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th>Outcome</th>
 <th>Field result</th>
 <th>Strategic result</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>Clean victory</td>
 <td>Enemy routs with few friendly losses</td>
 <td>Force remains ready to expand, raid, or fight again</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Pyrrhic victory</td>
 <td>Enemy routs after severe friendly losses</td>
 <td>Province gained, campaign tempo lost</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Productive defeat</td>
 <td>Friendly force routs after destroying valuable enemy assets</td>
 <td>Field lost, exchange may still improve the war</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Catastrophic defeat</td>
 <td>Command, mages, or retreat routes fail</td>
 <td>Army value is destroyed rather than merely displaced</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>Kills are an incomplete measure. A spell that causes no direct kills may still win by exhausting, immobilising, frightening, or separating an army. A cheap line can succeed by holding long enough for decisive magic, even if it dies. A killer with an impressive summary can still fail strategically by chasing irrelevant bodies while the centre collapses.</p>
-<h2 id="b4-the-five-layers-of-battle">The five layers of battle<a class="heading-link" href="#b4-the-five-layers-of-battle" aria-label="Link to The five layers of battle">#</a></h2><p>Every battle can be read through five layers:</p>
-<ol>
+<h2 id="b4-the-five-layers-of-battle">The five layers of battle<a class="heading-link" href="#b4-the-five-layers-of-battle" aria-label="Link to The five layers of battle">#</a></h2>
+<p>Every battle can be read through five layers:</p>
+<ol type="1">
 <li><strong>Delivery:</strong> whether a unit, weapon, spell, or aura reaches a relevant target.</li>
 <li><strong>Conversion:</strong> whether contact becomes a hit, failed resistance check, damage, fatigue, or control effect.</li>
 <li><strong>Persistence:</strong> whether the effect survives protection, resistance, regeneration, recovery, or replacement.</li>
@@ -285,63 +308,65 @@ og_image: /assets/images/dominions-6-library-edition-26.png
 <li><strong>Preservation:</strong> whether the surviving force retreats safely, retains mounts and commanders, and can fight again.</li>
 </ol>
 <p>Most poor diagnoses stop at conversion: “the weapon could not hurt the armour.” Expert diagnosis starts earlier and ends later. The weapon may never have reached the armoured target. The armour may have worked until fatigue enabled armour-defeating hits. The troops may have routed while still physically healthy. The retreat may have converted a recoverable loss into annihilation.</p>
-<h2 id="b4-the-open-ended-random-roll">The open-ended random roll<a class="heading-link" href="#b4-the-open-ended-random-roll" aria-label="Link to The open-ended random roll">#</a></h2><p>Dominions commonly uses a <strong>DRN</strong>, an open-ended two-die roll:</p>
-<pre><code class="language-text">DRN = 2d6, open-ended
-</code></pre>
+<h2 id="b4-the-open-ended-random-roll">The open-ended random roll<a class="heading-link" href="#b4-the-open-ended-random-roll" aria-label="Link to The open-ended random roll">#</a></h2>
+<p>Dominions commonly uses a <strong>DRN</strong>, an open-ended two-die roll:</p>
+<pre class="text"><code>DRN = 2d6, open-ended</code></pre>
 <p>When a die shows 6, one is subtracted, the die is rolled again, and the new result is added. Another 6 continues the process. Extreme results are rare, but they remain possible.</p>
 <p>The actor normally has to exceed the opposing value. At equal listed values, the actor’s chance is about 46%, not 50%, because a tied result fails unless the particular rule awards ties differently.</p>
 <table>
 <thead>
-<tr>
-<th align="right">Acting value minus opposing value</th>
-<th align="right">Approximate success</th>
+<tr class="header">
+<th style="text-align: right;">Acting value minus opposing value</th>
+<th style="text-align: right;">Approximate success</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="right">-10</td>
-<td align="right">3%</td>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">-10</td>
+<td style="text-align: right;">3%</td>
 </tr>
-<tr>
-<td align="right">-8</td>
-<td align="right">6%</td>
+<tr class="even">
+<td style="text-align: right;">-8</td>
+<td style="text-align: right;">6%</td>
 </tr>
-<tr>
-<td align="right">-6</td>
-<td align="right">11%</td>
+<tr class="odd">
+<td style="text-align: right;">-6</td>
+<td style="text-align: right;">11%</td>
 </tr>
-<tr>
-<td align="right">-4</td>
-<td align="right">18%</td>
+<tr class="even">
+<td style="text-align: right;">-4</td>
+<td style="text-align: right;">18%</td>
 </tr>
-<tr>
-<td align="right">-2</td>
-<td align="right">30%</td>
+<tr class="odd">
+<td style="text-align: right;">-2</td>
+<td style="text-align: right;">30%</td>
 </tr>
-<tr>
-<td align="right">0</td>
-<td align="right">46%</td>
+<tr class="even">
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">46%</td>
 </tr>
-<tr>
-<td align="right">+2</td>
-<td align="right">62%</td>
+<tr class="odd">
+<td style="text-align: right;">+2</td>
+<td style="text-align: right;">62%</td>
 </tr>
-<tr>
-<td align="right">+4</td>
-<td align="right">76%</td>
+<tr class="even">
+<td style="text-align: right;">+4</td>
+<td style="text-align: right;">76%</td>
 </tr>
-<tr>
-<td align="right">+6</td>
-<td align="right">86%</td>
+<tr class="odd">
+<td style="text-align: right;">+6</td>
+<td style="text-align: right;">86%</td>
 </tr>
-<tr>
-<td align="right">+8</td>
-<td align="right">92%</td>
+<tr class="even">
+<td style="text-align: right;">+8</td>
+<td style="text-align: right;">92%</td>
 </tr>
-<tr>
-<td align="right">+10</td>
-<td align="right">95%</td>
+<tr class="odd">
+<td style="text-align: right;">+10</td>
+<td style="text-align: right;">95%</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>This curve creates three lessons:</p>
 <ul>
 <li>small statistical advantages matter;</li>
@@ -349,111 +374,129 @@ og_image: /assets/images/dominions-6-library-edition-26.png
 <li>repetition turns modest probability into reliable pressure.</li>
 </ul>
 <p>An extra point of Attack, Defence, morale, penetration, or resistance is not a decorative improvement. Its value depends on the current difference and on how many times the comparison occurs.</p>
-<h2 id="b4-long-battles">Long battles<a class="heading-link" href="#b4-long-battles" aria-label="Link to Long battles">#</a></h2><p>The ordinary expectation is that one force breaks well before the hard limit. When it does not:</p>
+<h2 id="b4-long-battles">Long battles<a class="heading-link" href="#b4-long-battles" aria-label="Link to Long battles">#</a></h2>
+<p>The ordinary expectation is that one force breaks well before the hard limit. When it does not:</p>
 <table>
+<colgroup>
+<col style="width: 57%" />
+<col style="width: 42%" />
+</colgroup>
 <thead>
-<tr>
-<th align="right">Battle turn</th>
+<tr class="header">
+<th style="text-align: right;">Battle turn</th>
 <th>Event</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="right">100</td>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">100</td>
 <td>Twilight: battle enchantments and temporary magic effects end; berserk ends; Precision suffers -2; Glamour magic receives +1</td>
 </tr>
-<tr>
-<td align="right">150</td>
+<tr class="even">
+<td style="text-align: right;">150</td>
 <td>Attacker routs; Darkness imposes -3 Attack, Defence, and Precision, or daylight replaces it in a night battle</td>
 </tr>
-<tr>
-<td align="right">170</td>
+<tr class="odd">
+<td style="text-align: right;">170</td>
 <td>Defender routs</td>
 </tr>
-<tr>
-<td align="right">200</td>
+<tr class="even">
+<td style="text-align: right;">200</td>
 <td>All remaining units are killed</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>The attacker carries a long-battle clock. Stall plans, fatigue traps, regeneration contests, and endless summoning must be judged against role and side. A plan that “cannot lose” in ordinary exchanges can still lose to that clock.</p>
-<span class="anchor-alias" id="b4-weapon-profiles" aria-hidden="true"></span><h1 id="b4-part-ii-reading-a-unit">Part II: Reading a Unit<a class="heading-link" href="#b4-part-ii-reading-a-unit" aria-label="Link to Part II: Reading a Unit">#</a></h1><h2 id="b4-a-stat-line-is-a-conditional-promise">A stat line is a conditional promise<a class="heading-link" href="#b4-a-stat-line-is-a-conditional-promise" aria-label="Link to A stat line is a conditional promise">#</a></h2><p>A unit’s displayed statistics describe what it can do before formation, fatigue, leadership, terrain, blesses, spells, injuries, and the enemy intervene. The useful question is not “Is this unit good?” It is:</p>
+<span id="b4-weapon-profiles" class="anchor-alias" aria-hidden="true"></span>
+<h1 id="b4-part-ii-reading-a-unit">Part II: Reading a Unit<a class="heading-link" href="#b4-part-ii-reading-a-unit" aria-label="Link to Part II: Reading a Unit">#</a></h1>
+<h2 id="b4-a-stat-line-is-a-conditional-promise">A stat line is a conditional promise<a class="heading-link" href="#b4-a-stat-line-is-a-conditional-promise" aria-label="Link to A stat line is a conditional promise">#</a></h2>
+<p>A unit’s displayed statistics describe what it can do before formation, fatigue, leadership, terrain, blesses, spells, injuries, and the enemy intervene. The useful question is not “Is this unit good?” It is:</p>
 <blockquote>
 <p>Under the expected battlefield conditions, which job can this unit perform repeatedly and at acceptable cost?</p>
 </blockquote>
-<h2 id="b4-the-first-pass-unit-card">The first-pass unit card<a class="heading-link" href="#b4-the-first-pass-unit-card" aria-label="Link to The first-pass unit card">#</a></h2><p>For a first evaluation, record:</p>
+<h2 id="b4-the-first-pass-unit-card">The first-pass unit card<a class="heading-link" href="#b4-the-first-pass-unit-card" aria-label="Link to The first-pass unit card">#</a></h2>
+<p>For a first evaluation, record:</p>
 <table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th>Field</th>
 <th>Main question</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>Hit Points</td>
 <td>How much damage can the body absorb, and how does HP weighting affect rout?</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Size</td>
 <td>How many fit in a square, what can be reached, displaced, mounted, or trampled?</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Strength</td>
 <td>How much melee damage, carrying capacity, siege force, and trample damage is available?</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Attack</td>
 <td>How reliably do directed melee attacks beat Defence?</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Defence</td>
 <td>How reliably are directed melee attacks avoided before harassment and fatigue?</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Protection</td>
 <td>How much physical damage is removed, and where are helmet and armour coverage weak?</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Precision</td>
 <td>How tightly do missiles and spells cluster around the target square?</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Morale</td>
 <td>How long does the squad remain coherent under losses and fear?</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Magic Resistance</td>
 <td>How well are binary magical effects resisted?</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Encumbrance</td>
 <td>How quickly do attacks and spellcasting degrade the unit?</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Combat Speed</td>
 <td>How quickly does the unit cross the field and finish movement cooldowns?</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Map Move</td>
 <td>How useful is the unit in the campaign rather than one isolated battle?</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Resistances</td>
 <td>Which elemental, poison, sleep, or other damage families are reduced?</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Weapons</td>
 <td>Reach, attack and defence modifiers, damage type, number of attacks, and special effects</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Armour and shield</td>
 <td>Body and head protection, Defence penalties, Parry, and shield Protection</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Abilities</td>
 <td>The rules that may dominate the ordinary statistics</td>
 </tr>
-</tbody></table>
-<h2 id="b4-build-the-effective-line">Build the effective line<a class="heading-link" href="#b4-build-the-effective-line" aria-label="Link to Build the effective line">#</a></h2><p>The displayed line should be converted into an <strong>effective line</strong> for the planned battle:</p>
-<pre><code class="language-text">effective Attack
+</tbody>
+</table>
+<h2 id="b4-build-the-effective-line">Build the effective line<a class="heading-link" href="#b4-build-the-effective-line" aria-label="Link to Build the effective line">#</a></h2>
+<p>The displayed line should be converted into an <strong>effective line</strong> for the planned battle:</p>
+<pre class="text"><code>effective Attack
 = displayed Attack
   + weapon and spell modifiers
   - fatigue penalty
@@ -466,82 +509,93 @@ effective Defence
   - armour and shield penalties already represented where displayed
   - fatigue penalty
   - harassment
-  - rout penalty
-</code></pre>
+  - rout penalty</code></pre>
 <p>The same method applies to morale, protection, speed, and resistance. A Defence 16 unit that expects to reach 60 fatigue and receive six rapid attacks is not a Defence 16 problem. A Protection 20 unit facing armour-negating shock is not a Protection 20 target. A Morale 15 squad led badly, mixed improperly, and placed in a sparse line may begin the battle far below the headline value.</p>
-<h2 id="b4-roles-rather-than-tiers">Roles rather than tiers<a class="heading-link" href="#b4-roles-rather-than-tiers" aria-label="Link to Roles rather than tiers">#</a></h2><p>Common battlefield roles include:</p>
+<h2 id="b4-roles-rather-than-tiers">Roles rather than tiers<a class="heading-link" href="#b4-roles-rather-than-tiers" aria-label="Link to Roles rather than tiers">#</a></h2>
+<p>Common battlefield roles include:</p>
 <table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th>Role</th>
 <th>Primary success condition</th>
 <th>Common failure</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>Line holder</td>
 <td>Occupies contact space long enough for the plan to mature</td>
 <td>Dies or routs before support resolves</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Damage dealer</td>
 <td>Converts attacks into relevant damage quickly</td>
 <td>Attacks the wrong defence layer or cannot reach</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Flanker</td>
 <td>Reaches exposed sides or rear</td>
 <td>Targeting, zones of control, or congestion redirects it</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Screen</td>
 <td>Absorbs arrows, charges, spells, or first contact cheaply</td>
 <td>Causes friendly obstruction or premature army rout</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Missile unit</td>
 <td>Applies damage or effects before melee contact</td>
 <td>Range, Precision, shields, armour, or friendly fire</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Tramper</td>
 <td>Converts size, speed, and mass into repeated displacement and AP damage</td>
 <td>Fatigue, high Defence, anti-large damage, or friendly congestion</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Bodyguard</td>
 <td>Prevents assassination or rear access to a commander</td>
 <td>Too few, badly placed, or inappropriate against area effects</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Buffer</td>
 <td>Raises friendly effective statistics before contact</td>
 <td>Casts too late, wrong targets, or is interrupted</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Controller</td>
 <td>Restricts movement, actions, morale, or targeting</td>
 <td>Resistance, immunity, range, or poor spell selection</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Finisher</td>
 <td>Exploits fatigue, rout, or broken protection</td>
 <td>Arrives before the target is softened</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Summoner</td>
 <td>Adds bodies, time, and replacement HP during battle</td>
 <td>Exhausts, summons too slowly, or feeds rout weighting</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Commander</td>
 <td>Maintains leadership, formation, morale, and orders</td>
 <td>Exposed command death collapses the army</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>A unit can occupy several roles, but every additional assumption increases the ways the plan can fail.</p>
-<h2 id="b4-cost-must-include-the-campaign">Cost must include the campaign<a class="heading-link" href="#b4-cost-must-include-the-campaign" aria-label="Link to Cost must include the campaign">#</a></h2><p>Gold, resources, Recruitment Points, Holy Points, Commander Points, fort access, mage turns, gems, and map mobility all belong in unit valuation. A body that is exceptionally efficient in one battle may still be a poor campaign unit if it is capital-limited, slow to recruit, unable to reach the front, or dependent on a scarce mage package.</p>
-<span class="anchor-alias" id="b4-part-iii-commanders-squads-leadership-and-army-organisation" aria-hidden="true"></span><h1 id="b4-part-iii-command-squads-and-army-construction">Part III: Command, Squads, and Army Construction<a class="heading-link" href="#b4-part-iii-command-squads-and-army-construction" aria-label="Link to Part III: Command, Squads, and Army Construction">#</a></h1><h2 id="b4-squads-are-the-unit-of-morale-and-orders">Squads are the unit of morale and orders<a class="heading-link" href="#b4-squads-are-the-unit-of-morale-and-orders" aria-label="Link to Squads are the unit of morale and orders">#</a></h2><p>A commander can lead up to five squads. Each squad receives its own formation, position, and order, and calculates morale separately. Dividing an army into squads is a tactical choice, not clerical organisation.</p>
+<h2 id="b4-cost-must-include-the-campaign">Cost must include the campaign<a class="heading-link" href="#b4-cost-must-include-the-campaign" aria-label="Link to Cost must include the campaign">#</a></h2>
+<p>Gold, resources, Recruitment Points, Holy Points, Commander Points, fort access, mage turns, gems, and map mobility all belong in unit valuation. A body that is exceptionally efficient in one battle may still be a poor campaign unit if it is capital-limited, slow to recruit, unable to reach the front, or dependent on a scarce mage package.</p>
+<span id="b4-part-iii-commanders-squads-leadership-and-army-organisation" class="anchor-alias" aria-hidden="true"></span>
+<h1 id="b4-part-iii-command-squads-and-army-construction">Part III: Command, Squads, and Army Construction<a class="heading-link" href="#b4-part-iii-command-squads-and-army-construction" aria-label="Link to Part III: Command, Squads, and Army Construction">#</a></h1>
+<h2 id="b4-squads-are-the-unit-of-morale-and-orders">Squads are the unit of morale and orders<a class="heading-link" href="#b4-squads-are-the-unit-of-morale-and-orders" aria-label="Link to Squads are the unit of morale and orders">#</a></h2>
+<p>A commander can lead up to five squads. Each squad receives its own formation, position, and order, and calculates morale separately. Dividing an army into squads is a tactical choice, not clerical organisation.</p>
 <p>Splitting troops can:</p>
 <ul>
 <li>produce different target orders;</li>
@@ -558,79 +612,91 @@ effective Defence
 <li>more scripts and positions create more opportunities for error;</li>
 <li>a commander’s death can still remove every squad under that command from coherent control.</li>
 </ul>
-<h2 id="b4-leadership-and-squad-morale">Leadership and squad morale<a class="heading-link" href="#b4-leadership-and-squad-morale" aria-label="Link to Leadership and squad morale">#</a></h2><p>The manual defines leadership bands:</p>
+<h2 id="b4-leadership-and-squad-morale">Leadership and squad morale<a class="heading-link" href="#b4-leadership-and-squad-morale" aria-label="Link to Leadership and squad morale">#</a></h2>
+<p>The manual defines leadership bands:</p>
 <table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 30%" />
+<col style="width: 30%" />
+</colgroup>
 <thead>
-<tr>
-<th align="right">Base Leadership</th>
+<tr class="header">
+<th style="text-align: right;">Base Leadership</th>
 <th>Squad allowance before penalty</th>
 <th>Morale effect</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="right">10</td>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">10</td>
 <td>One squad already penalised</td>
 <td>-1 with one squad; another -1 to all squads for each extra squad</td>
 </tr>
-<tr>
-<td align="right">50</td>
+<tr class="even">
+<td style="text-align: right;">50</td>
 <td>Two squads</td>
 <td>0 for one or two; -1 to all for each further squad</td>
 </tr>
-<tr>
-<td align="right">100</td>
+<tr class="odd">
+<td style="text-align: right;">100</td>
 <td>Three squads</td>
 <td>+1 for up to three; each squad above three reduces the bonus by 1</td>
 </tr>
-<tr>
-<td align="right">150</td>
+<tr class="even">
+<td style="text-align: right;">150</td>
 <td>Four squads</td>
 <td>+2 for up to four; a fifth reduces all to +1</td>
 </tr>
-<tr>
-<td align="right">200</td>
+<tr class="odd">
+<td style="text-align: right;">200</td>
 <td>Five squads</td>
 <td>+3 to all five</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>These morale effects use the commander’s <strong>base leadership band</strong>. Experience can increase capacity without moving the commander into a better morale band.</p>
 <p>Experience modifies leadership capacity:</p>
 <table>
 <thead>
-<tr>
-<th align="right">Experience level</th>
-<th align="right">Normal leadership bonus</th>
-<th align="right">Poor leader bonus</th>
+<tr class="header">
+<th style="text-align: right;">Experience level</th>
+<th style="text-align: right;">Normal leadership bonus</th>
+<th style="text-align: right;">Poor leader bonus</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="right">1</td>
-<td align="right">+25</td>
-<td align="right">+5</td>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">+25</td>
+<td style="text-align: right;">+5</td>
 </tr>
-<tr>
-<td align="right">2</td>
-<td align="right">+50</td>
-<td align="right">+10</td>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">+50</td>
+<td style="text-align: right;">+10</td>
 </tr>
-<tr>
-<td align="right">3</td>
-<td align="right">+50</td>
-<td align="right">+10</td>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">+50</td>
+<td style="text-align: right;">+10</td>
 </tr>
-<tr>
-<td align="right">4</td>
-<td align="right">+50</td>
-<td align="right">+10</td>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">+50</td>
+<td style="text-align: right;">+10</td>
 </tr>
-<tr>
-<td align="right">5</td>
-<td align="right">+50</td>
-<td align="right">+10</td>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">+50</td>
+<td style="text-align: right;">+10</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>This distinction matters when a veteran commander can physically hold a large force but still supplies the original weak morale environment.</p>
-<span class="anchor-alias" id="b4-leadership" aria-hidden="true"></span><h2 id="b4-special-leadership">Special leadership<a class="heading-link" href="#b4-special-leadership" aria-label="Link to Special leadership">#</a></h2><p>Undead and demons require undead leadership. Magic beings require magic leadership. A unit that is both undead and magical uses undead leadership for command.</p>
+<span id="b4-leadership" class="anchor-alias" aria-hidden="true"></span>
+<h2 id="b4-special-leadership">Special leadership<a class="heading-link" href="#b4-special-leadership" aria-label="Link to Special leadership">#</a></h2>
+<p>Undead and demons require undead leadership. Magic beings require magic leadership. A unit that is both undead and magical uses undead leadership for command.</p>
 <p>Mixing categories can reduce morale:</p>
 <ul>
 <li>one undisciplined unit makes the squad undisciplined and imposes -1 morale;</li>
@@ -638,7 +704,8 @@ effective Defence
 <li>mixing demons with ordinary units imposes -1 morale.</li>
 </ul>
 <p>An army can fit under the displayed numeric capacity while still being illegally or badly commanded.</p>
-<h2 id="b4-command-redundancy">Command redundancy<a class="heading-link" href="#b4-command-redundancy" aria-label="Link to Command redundancy">#</a></h2><p>If every eligible commander is killed or routed, the troops rout. A large army under one fragile commander has a single structural hit point.</p>
+<h2 id="b4-command-redundancy">Command redundancy<a class="heading-link" href="#b4-command-redundancy" aria-label="Link to Command redundancy">#</a></h2>
+<p>If every eligible commander is killed or routed, the troops rout. A large army under one fragile commander has a single structural hit point.</p>
 <p>Command redundancy asks:</p>
 <ul>
 <li>How many eligible commanders can remain if the front commander dies?</li>
@@ -648,7 +715,9 @@ effective Defence
 <li>Does a redundant commander carry enough leadership to prevent an immediate secondary failure?</li>
 </ul>
 <p>Redundancy is not obtained merely by adding an unrelated scout. The replacement must be eligible to command the affected units and must survive in a relevant position.</p>
-<span class="anchor-alias" id="b4-taskmasters" aria-hidden="true"></span><h2 id="b4-standards-inspiration-and-taskmasters">Standards, inspiration, and taskmasters<a class="heading-link" href="#b4-standards-inspiration-and-taskmasters" aria-label="Link to Standards, inspiration, and taskmasters">#</a></h2><p>Squad morale can receive:</p>
+<span id="b4-taskmasters" class="anchor-alias" aria-hidden="true"></span>
+<h2 id="b4-standards-inspiration-and-taskmasters">Standards, inspiration, and taskmasters<a class="heading-link" href="#b4-standards-inspiration-and-taskmasters" aria-label="Link to Standards, inspiration, and taskmasters">#</a></h2>
+<p>Squad morale can receive:</p>
 <ul>
 <li>home-province bonus;</li>
 <li>friendly-dominion bonus;</li>
@@ -659,8 +728,9 @@ effective Defence
 </ul>
 <p>Standards and Inspiration are not substitutes for correct formation and command. They improve the morale comparison after the triggering condition occurs. They do not prevent command death, excessive fatigue, paralysis, or an automatic 75% army rout.</p>
 <p>Taskmasters are primarily relevant to slave leadership and the specific units they govern. A label such as “slave”, “undisciplined”, “mindless”, or “magic being” must be read as an engine category with its own command implications, not as flavour text.</p>
-<h2 id="b4-the-command-audit">The command audit<a class="heading-link" href="#b4-the-command-audit" aria-label="Link to The command audit">#</a></h2><p>Before every important battle:</p>
-<ol>
+<h2 id="b4-the-command-audit">The command audit<a class="heading-link" href="#b4-the-command-audit" aria-label="Link to The command audit">#</a></h2>
+<p>Before every important battle:</p>
+<ol type="1">
 <li>Count squads under every commander.</li>
 <li>Check the commander’s base leadership band.</li>
 <li>Check ordinary, magic, and undead capacity separately.</li>
@@ -669,7 +739,11 @@ effective Defence
 <li>Protect the commanders whose loss triggers the widest collapse.</li>
 <li>Verify that retreating commanders have friendly destinations.</li>
 </ol>
-<span class="anchor-alias" id="b4-part-v-formations-placement-and-contact" aria-hidden="true"></span><h1 id="b4-part-iv-formation-density-and-placement">Part IV: Formation, Density, and Placement<a class="heading-link" href="#b4-part-iv-formation-density-and-placement" aria-label="Link to Part IV: Formation, Density, and Placement">#</a></h1><span class="anchor-alias" id="b4-square-capacity" aria-hidden="true"></span><h2 id="b4-the-square">The square<a class="heading-link" href="#b4-the-square" aria-label="Link to The square">#</a></h2><p>A battlefield square normally holds ten size points. Three size-3 humans fit because nine size points are used. Formation Fighter permits greater density.</p>
+<span id="b4-part-v-formations-placement-and-contact" class="anchor-alias" aria-hidden="true"></span>
+<h1 id="b4-part-iv-formation-density-and-placement">Part IV: Formation, Density, and Placement<a class="heading-link" href="#b4-part-iv-formation-density-and-placement" aria-label="Link to Part IV: Formation, Density, and Placement">#</a></h1>
+<span id="b4-square-capacity" class="anchor-alias" aria-hidden="true"></span>
+<h2 id="b4-the-square">The square<a class="heading-link" href="#b4-the-square" aria-label="Link to The square">#</a></h2>
+<p>A battlefield square normally holds ten size points. Three size-3 humans fit because nine size points are used. Formation Fighter permits greater density.</p>
 <p>Density changes:</p>
 <ul>
 <li>the number of melee attacks that can be delivered from a square;</li>
@@ -680,54 +754,66 @@ effective Defence
 <li>missile hit probability through size points in the target square.</li>
 </ul>
 <p>There is no universally best density. Dense troops convert frontage into attacks; sparse troops convert frontage into area coverage and reduced clustering.</p>
-<span class="anchor-alias" id="b4-formation-fighter" aria-hidden="true"></span><h2 id="b4-formation-types">Formation types<a class="heading-link" href="#b4-formation-types" aria-label="Link to Formation types">#</a></h2><table>
+<span id="b4-formation-fighter" class="anchor-alias" aria-hidden="true"></span>
+<h2 id="b4-formation-types">Formation types<a class="heading-link" href="#b4-formation-types" aria-label="Link to Formation types">#</a></h2>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 25%" />
+<col style="width: 18%" />
+</colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th>Formation</th>
 <th>Shape</th>
 <th>Requirement</th>
-<th align="right">Morale effect</th>
+<th style="text-align: right;">Morale effect</th>
 <th>Main use</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>Box</td>
 <td>Compact block</td>
 <td>Any disciplined squad</td>
-<td align="right">0</td>
+<td style="text-align: right;">0</td>
 <td>Depth, compact defence, concentrated movement</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Line</td>
 <td>One rank</td>
 <td>Good commander</td>
-<td align="right">0</td>
+<td style="text-align: right;">0</td>
 <td>Maximum frontage and simultaneous contact</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Double line</td>
 <td>Two ranks</td>
 <td>Good commander</td>
-<td align="right">0</td>
+<td style="text-align: right;">0</td>
 <td>Balance of frontage and replacement depth</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Sparse line</td>
 <td>Line with empty squares</td>
 <td>Good commander</td>
-<td align="right">-1</td>
+<td style="text-align: right;">-1</td>
 <td>Wide screen, reduced clustering</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Skirmish</td>
 <td>Checkerboard</td>
 <td>Any; forced for undisciplined</td>
-<td align="right">-1</td>
+<td style="text-align: right;">-1</td>
 <td>Separation, missile or area-risk management</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>Skirmisher removes the -1 morale penalty from skirmish and sparse line. Tight Rein allows a commander’s undisciplined units to use disciplined formations and specific orders.</p>
-<h2 id="b4-frontage-and-depth">Frontage and depth<a class="heading-link" href="#b4-frontage-and-depth" aria-label="Link to Frontage and depth">#</a></h2><p>A wide line places more weapons into early contact, which is valuable when:</p>
+<h2 id="b4-frontage-and-depth">Frontage and depth<a class="heading-link" href="#b4-frontage-and-depth" aria-label="Link to Frontage and depth">#</a></h2>
+<p>A wide line places more weapons into early contact, which is valuable when:</p>
 <ul>
 <li>the squad wins individual exchanges;</li>
 <li>weapon reach or repel rewards simultaneous coverage;</li>
@@ -743,7 +829,8 @@ effective Defence
 <li>the formation must absorb displacement.</li>
 </ul>
 <p>The trade is temporal. Width spends bodies early. Depth reserves bodies for later.</p>
-<h2 id="b4-placement-is-a-timing-instruction">Placement is a timing instruction<a class="heading-link" href="#b4-placement-is-a-timing-instruction" aria-label="Link to Placement is a timing instruction">#</a></h2><p>The Army Setup position determines where a squad begins, not where it is guaranteed to fight. A rear squad on Attack Rear may meet a screening unit. A forward mage can still spend several actions preparing a spell. A fast unit behind a slow block can waste its speed in congestion.</p>
+<h2 id="b4-placement-is-a-timing-instruction">Placement is a timing instruction<a class="heading-link" href="#b4-placement-is-a-timing-instruction" aria-label="Link to Placement is a timing instruction">#</a></h2>
+<p>The Army Setup position determines where a squad begins, not where it is guaranteed to fight. A rear squad on Attack Rear may meet a screening unit. A forward mage can still spend several actions preparing a spell. A fast unit behind a slow block can waste its speed in congestion.</p>
 <p>Placement should answer:</p>
 <ul>
 <li>Which squad should make first contact?</li>
@@ -753,7 +840,8 @@ effective Defence
 <li>Where will a summoned unit appear relative to the line?</li>
 <li>If the enemy deploys at the opposite extreme, does the timing still work?</li>
 </ul>
-<h2 id="b4-staggered-contact">Staggered contact<a class="heading-link" href="#b4-staggered-contact" aria-label="Link to Staggered contact">#</a></h2><p>Staggering is created through position, speed, formation, and Hold orders. It can:</p>
+<h2 id="b4-staggered-contact">Staggered contact<a class="heading-link" href="#b4-staggered-contact" aria-label="Link to Staggered contact">#</a></h2>
+<p>Staggering is created through position, speed, formation, and Hold orders. It can:</p>
 <ul>
 <li>let buffs resolve before the valuable line enters danger;</li>
 <li>make a cheap screen absorb the first charge;</li>
@@ -762,7 +850,8 @@ effective Defence
 <li>keep a finisher away from the initial harassment.</li>
 </ul>
 <p>It can also fail by feeding squads separately into a stronger enemy. A stagger is useful only if the earlier wave creates time or degradation that the later wave can exploit.</p>
-<h2 id="b4-formation-checklist">Formation checklist<a class="heading-link" href="#b4-formation-checklist" aria-label="Link to Formation checklist">#</a></h2><ul>
+<h2 id="b4-formation-checklist">Formation checklist<a class="heading-link" href="#b4-formation-checklist" aria-label="Link to Formation checklist">#</a></h2>
+<ul>
 <li>Does width or depth serve the unit’s actual weapon and role?</li>
 <li>Does the chosen formation impose a morale penalty?</li>
 <li>Can the commander legally provide that formation?</li>
@@ -771,47 +860,57 @@ effective Defence
 <li>Will rear or flank placement expose command?</li>
 <li>Is the contact schedule robust to enemy deployment on either side?</li>
 </ul>
-<span class="anchor-alias" id="b4-part-vi-orders-scripts-and-the-spellcasting-ai" aria-hidden="true"></span><h1 id="b4-part-v-orders-and-scripting">Part V: Orders and Scripting<a class="heading-link" href="#b4-part-v-orders-and-scripting" aria-label="Link to Part V: Orders and Scripting">#</a></h1><span class="anchor-alias" id="b4-squads" aria-hidden="true"></span><span class="anchor-alias" id="b4-targeting-orders" aria-hidden="true"></span><h2 id="b4-squad-orders">Squad orders<a class="heading-link" href="#b4-squad-orders" aria-label="Link to Squad orders">#</a></h2><p>General squad orders include:</p>
+<span id="b4-part-vi-orders-scripts-and-the-spellcasting-ai" class="anchor-alias" aria-hidden="true"></span>
+<h1 id="b4-part-v-orders-and-scripting">Part V: Orders and Scripting<a class="heading-link" href="#b4-part-v-orders-and-scripting" aria-label="Link to Part V: Orders and Scripting">#</a></h1>
+<span id="b4-squads" class="anchor-alias" aria-hidden="true"></span> <span id="b4-targeting-orders" class="anchor-alias" aria-hidden="true"></span>
+<h2 id="b4-squad-orders">Squad orders<a class="heading-link" href="#b4-squad-orders" aria-label="Link to Squad orders">#</a></h2>
+<p>General squad orders include:</p>
 <table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th>Order</th>
 <th>Behaviour</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>None</td>
 <td>The combat AI decides</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Attack</td>
 <td>Advance and fight toward the selected target category</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Fire</td>
 <td>Use missile weapons against the selected target category</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Guard Commander</td>
 <td>Remain near and protect the commander; eligible guards may appear in assassination battles</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Hold and Attack</td>
 <td>Hold for two rounds, firing if able, then attack</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Hold and Fire</td>
 <td>Hold for two rounds, then fire and move into range as required</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Fire and Keep Distance</td>
 <td>Fire while attempting to preserve distance</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Retreat</td>
 <td>Behave as routing and attempt to leave</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>The common target categories are:</p>
 <ul>
 <li>none or random;</li>
@@ -823,7 +922,8 @@ effective Defence
 <li>Rearmost.</li>
 </ul>
 <p>Target orders express preference rather than a teleporting command. Zones of control, blocked paths, range, target availability, and the unit’s current contact can prevent the preferred target from being reached.</p>
-<h2 id="b4-rear-is-not-a-destination">“Rear” is not a destination<a class="heading-link" href="#b4-rear-is-not-a-destination" aria-label="Link to “Rear” is not a destination">#</a></h2><p>Attack Rear selects a rearward target according to the engine’s targeting and pathing. It does not guarantee commander assassination. The squad can:</p>
+<h2 id="b4-rear-is-not-a-destination">“Rear” is not a destination<a class="heading-link" href="#b4-rear-is-not-a-destination" aria-label="Link to “Rear” is not a destination">#</a></h2>
+<p>Attack Rear selects a rearward target according to the engine’s targeting and pathing. It does not guarantee commander assassination. The squad can:</p>
 <ul>
 <li>collide with a screen;</li>
 <li>be caught by zones of control;</li>
@@ -832,8 +932,10 @@ effective Defence
 <li>lose its target and retarget.</li>
 </ul>
 <p>Rear pressure is a system made from mobility, placement, survival, and target access. The order is one component.</p>
-<h2 id="b4-hold-is-exactly-two-rounds">Hold is exactly two rounds<a class="heading-link" href="#b4-hold-is-exactly-two-rounds" aria-label="Link to Hold is exactly two rounds">#</a></h2><p>Hold and Attack and Hold and Fire delay for two rounds. They do not create an indefinite wait. A plan requiring a longer delay must use starting distance, speed, obstacles, spell timing, or a different unit rather than assuming that repeated holding exists for squads.</p>
-<h2 id="b4-commander-scripts">Commander scripts<a class="heading-link" href="#b4-commander-scripts" aria-label="Link to Commander scripts">#</a></h2><p>A commander can receive five specific orders followed by a general order.</p>
+<h2 id="b4-hold-is-exactly-two-rounds">Hold is exactly two rounds<a class="heading-link" href="#b4-hold-is-exactly-two-rounds" aria-label="Link to Hold is exactly two rounds">#</a></h2>
+<p>Hold and Attack and Hold and Fire delay for two rounds. They do not create an indefinite wait. A plan requiring a longer delay must use starting distance, speed, obstacles, spell timing, or a different unit rather than assuming that repeated holding exists for squads.</p>
+<h2 id="b4-commander-scripts">Commander scripts<a class="heading-link" href="#b4-commander-scripts" aria-label="Link to Commander scripts">#</a></h2>
+<p>A commander can receive five specific orders followed by a general order.</p>
 <p>Specific orders include:</p>
 <ul>
 <li>Hold one turn;</li>
@@ -852,7 +954,8 @@ effective Defence
 <li>Retreat.</li>
 </ul>
 <p>If a named spell lacks the required gems or a valid target in range, the caster can fall back to an AI-selected spell. A script is a preferred branch, not an infallible playback.</p>
-<h2 id="b4-conservative-gem-use">Conservative gem use<a class="heading-link" href="#b4-conservative-gem-use" aria-label="Link to Conservative gem use">#</a></h2><p>Conservative gem use makes a mage spend gems sparingly and primarily on scripted spells. It can prevent waste in routine fights, but it can also withhold power from an unscripted emergency. The setting belongs in the battle plan:</p>
+<h2 id="b4-conservative-gem-use">Conservative gem use<a class="heading-link" href="#b4-conservative-gem-use" aria-label="Link to Conservative gem use">#</a></h2>
+<p>Conservative gem use makes a mage spend gems sparingly and primarily on scripted spells. It can prevent waste in routine fights, but it can also withhold power from an unscripted emergency. The setting belongs in the battle plan:</p>
 <ul>
 <li>scripted gem expenditure;</li>
 <li>intended post-script behaviour;</li>
@@ -860,8 +963,9 @@ effective Defence
 <li>value of gems compared with the force at risk.</li>
 </ul>
 <p>“Save gems” is not automatically conservative when the result is the loss of the mage carrying them.</p>
-<h2 id="b4-script-construction">Script construction<a class="heading-link" href="#b4-script-construction" aria-label="Link to Script construction">#</a></h2><p>A robust script is built in this order:</p>
-<ol>
+<h2 id="b4-script-construction">Script construction<a class="heading-link" href="#b4-script-construction" aria-label="Link to Script construction">#</a></h2>
+<p>A robust script is built in this order:</p>
+<ol type="1">
 <li><strong>State the battle objective.</strong> Hold, kill, rout, delay, break a siege, extract a raider, or destroy a specific asset.</li>
 <li><strong>State the enemy defence layers.</strong> Protection, Defence, shields, resistance, MR, regeneration, size, morale, mobility.</li>
 <li><strong>Assign answers.</strong> Each important defence layer needs a delivery mechanism.</li>
@@ -872,41 +976,48 @@ effective Defence
 <li><strong>Protect command and retreat.</strong></li>
 <li><strong>Test both attacker and defender sides.</strong></li>
 </ol>
-<h2 id="b4-timing-templates">Timing templates<a class="heading-link" href="#b4-timing-templates" aria-label="Link to Timing templates">#</a></h2><h3 id="b4-screen-and-strike">Screen and strike<a class="heading-link" href="#b4-screen-and-strike" aria-label="Link to Screen and strike">#</a></h3><ul>
+<h2 id="b4-timing-templates">Timing templates<a class="heading-link" href="#b4-timing-templates" aria-label="Link to Timing templates">#</a></h2>
+<h3 id="b4-screen-and-strike">Screen and strike<a class="heading-link" href="#b4-screen-and-strike" aria-label="Link to Screen and strike">#</a></h3>
+<ul>
 <li>cheap or resistant screen forward;</li>
 <li>decisive troops delayed or placed behind;</li>
 <li>buffers script enabling effects;</li>
 <li>damage package begins as contact fixes the enemy.</li>
 </ul>
 <p>Failure: the screen routs so early that morale or pathing disrupts the strike.</p>
-<h3 id="b4-armour-break">Armour break<a class="heading-link" href="#b4-armour-break" aria-label="Link to Armour break">#</a></h3><ul>
+<h3 id="b4-armour-break">Armour break<a class="heading-link" href="#b4-armour-break" aria-label="Link to Armour break">#</a></h3>
+<ul>
 <li>hold the line;</li>
 <li>apply armour-piercing, armour-negating, rust, Strength, or fatigue pressure;</li>
 <li>commit ordinary damage after the protection layer has been weakened.</li>
 </ul>
 <p>Failure: the anti-armour component targets the wrong bodies or arrives after the line collapses.</p>
-<h3 id="b4-fatigue-collapse">Fatigue collapse<a class="heading-link" href="#b4-fatigue-collapse" aria-label="Link to Fatigue collapse">#</a></h3><ul>
+<h3 id="b4-fatigue-collapse">Fatigue collapse<a class="heading-link" href="#b4-fatigue-collapse" aria-label="Link to Fatigue collapse">#</a></h3>
+<ul>
 <li>survive early damage;</li>
 <li>impose heat, cold, shock, spell fatigue, trampling cost, repeated attack cost, or exhaustion;</li>
 <li>exploit falling Attack and Defence;</li>
 <li>finish unconscious targets.</li>
 </ul>
 <p>Failure: the enemy kills faster than fatigue accumulates or possesses sufficient resistance and reinvigoration.</p>
-<h3 id="b4-morale-break">Morale break<a class="heading-link" href="#b4-morale-break" aria-label="Link to Morale break">#</a></h3><ul>
+<h3 id="b4-morale-break">Morale break<a class="heading-link" href="#b4-morale-break" aria-label="Link to Morale break">#</a></h3>
+<ul>
 <li>cause heavy losses or fear near selected squads;</li>
 <li>remove leadership or standards;</li>
 <li>force repeated checks;</li>
 <li>preserve enough mobile pressure to turn rout into strategic loss.</li>
 </ul>
 <p>Failure: mindless, berserk, high-morale, or well-led troops ignore the intended pressure.</p>
-<h3 id="b4-rear-disruption">Rear disruption<a class="heading-link" href="#b4-rear-disruption" aria-label="Link to Rear disruption">#</a></h3><ul>
+<h3 id="b4-rear-disruption">Rear disruption<a class="heading-link" href="#b4-rear-disruption" aria-label="Link to Rear disruption">#</a></h3>
+<ul>
 <li>occupy the main line;</li>
 <li>send suitable mobile units around or over it;</li>
 <li>threaten fragile command and casters;</li>
 <li>prevent the rear force from being intercepted or stranded.</li>
 </ul>
 <p>Failure: Attack Rear is treated as a guarantee rather than a pathfinding preference.</p>
-<h2 id="b4-script-audit">Script audit<a class="heading-link" href="#b4-script-audit" aria-label="Link to Script audit">#</a></h2><ul>
+<h2 id="b4-script-audit">Script audit<a class="heading-link" href="#b4-script-audit" aria-label="Link to Script audit">#</a></h2>
+<ul>
 <li>Are all named spells researched?</li>
 <li>Does each caster have the correct gems?</li>
 <li>Are path boosts active before the spell that requires them?</li>
@@ -918,7 +1029,9 @@ effective Defence
 <li>Is every commander protected during preparation time?</li>
 <li>Does the plan survive an enemy Hold, flank deployment, or fast charge?</li>
 </ul>
-<h1 id="b4-part-vi-movement-contact-and-time">Part VI: Movement, Contact, and Time<a class="heading-link" href="#b4-part-vi-movement-contact-and-time" aria-label="Link to Part VI: Movement, Contact, and Time">#</a></h1><h2 id="b4-combat-speed-and-cooldown">Combat speed and cooldown<a class="heading-link" href="#b4-combat-speed-and-cooldown" aria-label="Link to Combat speed and cooldown">#</a></h2><p>A move of one square costs roughly one point of combat speed; diagonal movement costs about 50% more. Units act individually. After moving or striking they receive a cooldown. A strike generally creates a long cooldown of about a round; movement creates a shorter cooldown influenced mainly by combat speed with some randomness.</p>
+<h1 id="b4-part-vi-movement-contact-and-time">Part VI: Movement, Contact, and Time<a class="heading-link" href="#b4-part-vi-movement-contact-and-time" aria-label="Link to Part VI: Movement, Contact, and Time">#</a></h1>
+<h2 id="b4-combat-speed-and-cooldown">Combat speed and cooldown<a class="heading-link" href="#b4-combat-speed-and-cooldown" aria-label="Link to Combat speed and cooldown">#</a></h2>
+<p>A move of one square costs roughly one point of combat speed; diagonal movement costs about 50% more. Units act individually. After moving or striking they receive a cooldown. A strike generally creates a long cooldown of about a round; movement creates a shorter cooldown influenced mainly by combat speed with some randomness.</p>
 <p>When adjacent units are ready, the one whose cooldown finishes first attacks. Combat speed affects more than time to contact. It influences:</p>
 <ul>
 <li>path crossing;</li>
@@ -928,9 +1041,11 @@ effective Defence
 <li>whether a fast unit can exploit a displaced or newly exposed square.</li>
 </ul>
 <p>It does not multiply melee attacks as though every point were an attack-speed statistic.</p>
-<h2 id="b4-zones-of-control">Zones of control<a class="heading-link" href="#b4-zones-of-control" aria-label="Link to Zones of control">#</a></h2><p>An adjacent enemy creates a zone of control that normally halts movement. Routing units ignore zones of control.</p>
+<h2 id="b4-zones-of-control">Zones of control<a class="heading-link" href="#b4-zones-of-control" aria-label="Link to Zones of control">#</a></h2>
+<p>An adjacent enemy creates a zone of control that normally halts movement. Routing units ignore zones of control.</p>
 <p>Zones of control turn screens into spatial tools. A cheap body can stop or redirect a more valuable unit even if it cannot defeat that unit. Conversely, a fast flanker that touches the wrong enemy may lose its strategic role.</p>
-<h2 id="b4-displacement">Displacement<a class="heading-link" href="#b4-displacement" aria-label="Link to Displacement">#</a></h2><p>A unit at least three size points larger than each displaced unit can enter an otherwise full square by displacing smaller occupants, at an additional cost of one combat-speed point. Non-routing tramplers avoid displacing friendly units because doing so would harm them.</p>
+<h2 id="b4-displacement">Displacement<a class="heading-link" href="#b4-displacement" aria-label="Link to Displacement">#</a></h2>
+<p>A unit at least three size points larger than each displaced unit can enter an otherwise full square by displacing smaller occupants, at an additional cost of one combat-speed point. Non-routing tramplers avoid displacing friendly units because doing so would harm them.</p>
 <p>Displacement can:</p>
 <ul>
 <li>break a neat line;</li>
@@ -939,7 +1054,9 @@ effective Defence
 <li>change targeting and adjacency;</li>
 <li>move victims even when trample damage is avoided.</li>
 </ul>
-<span class="anchor-alias" id="b4-obstacles" aria-hidden="true"></span><h2 id="b4-obstacles-and-battlefield-terrain">Obstacles and battlefield terrain<a class="heading-link" href="#b4-obstacles-and-battlefield-terrain" aria-label="Link to Obstacles and battlefield terrain">#</a></h2><p>Obstacles, gates, walls, caves, water, storms, darkness, and indoor battlefields can alter legal movement and spell use. The manual establishes the large rules but not every pathfinding weight. Exact obstacle navigation belongs to map-specific observation and tests.</p>
+<span id="b4-obstacles" class="anchor-alias" aria-hidden="true"></span>
+<h2 id="b4-obstacles-and-battlefield-terrain">Obstacles and battlefield terrain<a class="heading-link" href="#b4-obstacles-and-battlefield-terrain" aria-label="Link to Obstacles and battlefield terrain">#</a></h2>
+<p>Obstacles, gates, walls, caves, water, storms, darkness, and indoor battlefields can alter legal movement and spell use. The manual establishes the large rules but not every pathfinding weight. Exact obstacle navigation belongs to map-specific observation and tests.</p>
 <p>Treat battlefield terrain as a component of the script:</p>
 <ul>
 <li>Can the wide line physically deploy?</li>
@@ -949,24 +1066,26 @@ effective Defence
 <li>Does darkness penalise the army more than its opponent?</li>
 <li>Is the weather changing fire, cold, Precision, or storm-dependent abilities?</li>
 </ul>
-<h1 id="b4-part-vii-melee-resolution">Part VII: Melee Resolution<a class="heading-link" href="#b4-part-vii-melee-resolution" aria-label="Link to Part VII: Melee Resolution">#</a></h1><h2 id="b4-the-hit-check">The hit check<a class="heading-link" href="#b4-the-hit-check" aria-label="Link to The hit check">#</a></h2><p>For a directed melee attack:</p>
-<pre><code class="language-text">Attack roll  = Attack + DRN - fatigue penalty
-Defence roll = Defence + DRN - fatigue penalty
-</code></pre>
+<h1 id="b4-part-vii-melee-resolution">Part VII: Melee Resolution<a class="heading-link" href="#b4-part-vii-melee-resolution" aria-label="Link to Part VII: Melee Resolution">#</a></h1>
+<h2 id="b4-the-hit-check">The hit check<a class="heading-link" href="#b4-the-hit-check" aria-label="Link to The hit check">#</a></h2>
+<p>For a directed melee attack:</p>
+<pre class="text"><code>Attack roll  = Attack + DRN - fatigue penalty
+Defence roll = Defence + DRN - fatigue penalty</code></pre>
 <p>The attacker must exceed the defender. The defender wins ties.</p>
 <p>Fatigue penalties are:</p>
-<pre><code class="language-text">Defence penalty = floor(Fatigue / 10)
-Attack penalty  = floor(Fatigue / 20)
-</code></pre>
+<pre class="text"><code>Defence penalty = floor(Fatigue / 10)
+Attack penalty  = floor(Fatigue / 20)</code></pre>
 <p>Defence collapses twice as quickly as Attack. This asymmetry is one reason fatigue turns stable lines into sudden massacres.</p>
-<span class="anchor-alias" id="b4-armour-and-protection" aria-hidden="true"></span><span class="anchor-alias" id="b4-part-ix-protection-damage-and-survival" aria-hidden="true"></span><h2 id="b4-damage-and-protection">Damage and protection<a class="heading-link" href="#b4-damage-and-protection" aria-label="Link to Damage and protection">#</a></h2><p>After a hit:</p>
-<pre><code class="language-text">Damage roll     = Strength + weapon Damage + DRN
+<span id="b4-armour-and-protection" class="anchor-alias" aria-hidden="true"></span> <span id="b4-part-ix-protection-damage-and-survival" class="anchor-alias" aria-hidden="true"></span>
+<h2 id="b4-damage-and-protection">Damage and protection<a class="heading-link" href="#b4-damage-and-protection" aria-label="Link to Damage and protection">#</a></h2>
+<p>After a hit:</p>
+<pre class="text"><code>Damage roll     = Strength + weapon Damage + DRN
 Protection roll = relevant Protection + DRN
-                  + shield Protection on a shield hit
-</code></pre>
+                  + shield Protection on a shield hit</code></pre>
 <p>Damage is inflicted only when the damage roll exceeds the protection roll.</p>
 <p>The displayed damage figure for a weapon may already incorporate Strength and weapon rules in the interface. The formula explains resolution; it should not be used to add Strength twice to a value already presented as final damage.</p>
-<h2 id="b4-shields-avoidance-and-absorption">Shields: avoidance and absorption<a class="heading-link" href="#b4-shields-avoidance-and-absorption" aria-label="Link to Shields: avoidance and absorption">#</a></h2><p>A shield has:</p>
+<h2 id="b4-shields-avoidance-and-absorption">Shields: avoidance and absorption<a class="heading-link" href="#b4-shields-avoidance-and-absorption" aria-label="Link to Shields: avoidance and absorption">#</a></h2>
+<p>A shield has:</p>
 <ul>
 <li>Defence implications included in the unit’s effective Defence;</li>
 <li>a Parry value;</li>
@@ -974,40 +1093,43 @@ Protection roll = relevant Protection + DRN
 </ul>
 <p>If the attack beats Defence but not Defence plus Parry, it is a <strong>shield hit</strong> and shield Protection is added to the protection roll. If it also beats Defence plus Parry, it is a <strong>clean hit</strong> and the shield does not add Protection.</p>
 <p>Shields create two defensive layers:</p>
-<ol>
+<ol type="1">
 <li>a wider band in which an attack strikes the shield;</li>
 <li>added protection when that occurs.</li>
 </ol>
 <p>They are not a flat chance to cancel all attacks.</p>
-<h2 id="b4-armour-defeating-protection-rolls">Armour-defeating protection rolls<a class="heading-link" href="#b4-armour-defeating-protection-rolls" aria-label="Link to Armour-defeating protection rolls">#</a></h2><p>An unusually low protection die can produce an armour-defeating hit that bypasses 25% of protection:</p>
+<h2 id="b4-armour-defeating-protection-rolls">Armour-defeating protection rolls<a class="heading-link" href="#b4-armour-defeating-protection-rolls" aria-label="Link to Armour-defeating protection rolls">#</a></h2>
+<p>An unusually low protection die can produce an armour-defeating hit that bypasses 25% of protection:</p>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th>Target state</th>
 <th>Protection die results that qualify</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>Below 50 fatigue</td>
 <td>2</td>
 </tr>
-<tr>
+<tr class="even">
 <td>50 or more fatigue</td>
 <td>2-3</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>100 or more fatigue</td>
 <td>2-4</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Immobilised or unconscious</td>
 <td>Treated as 100 fatigue</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>Protection remains valuable, but fatigue increases the tail risk that heavy armour is partly bypassed. This is another mechanism by which fatigue converts time into lethality.</p>
-<h2 id="b4-shield-damage">Shield damage<a class="heading-link" href="#b4-shield-damage" aria-label="Link to Shield damage">#</a></h2><p>Shield resistance is:</p>
-<pre><code class="language-text">shield resistance = shield Protection + 5 if magical
-</code></pre>
+<h2 id="b4-shield-damage">Shield damage<a class="heading-link" href="#b4-shield-damage" aria-label="Link to Shield damage">#</a></h2>
+<p>Shield resistance is:</p>
+<pre class="text"><code>shield resistance = shield Protection + 5 if magical</code></pre>
 <p>Break force uses the incoming damage before ordinary protection:</p>
 <ul>
 <li>slashing attacks receive +50% for shield breaking;</li>
@@ -1017,31 +1139,34 @@ Protection roll = relevant Protection + DRN
 <li>a damaged shield hit again has a 25% chance to break.</li>
 </ul>
 <p>A damaged shield loses 20% of its Protection; a broken shield loses 50%. Damaged magical shields repair after battle, but a broken magical shield is permanently destroyed. Mundane shields require spare provincial resources for repair.</p>
-<h2 id="b4-hit-locations-and-reach">Hit locations and reach<a class="heading-link" href="#b4-hit-locations-and-reach" aria-label="Link to Hit locations and reach">#</a></h2><p>The ordinary hit-location distribution is:</p>
+<h2 id="b4-hit-locations-and-reach">Hit locations and reach<a class="heading-link" href="#b4-hit-locations-and-reach" aria-label="Link to Hit locations and reach">#</a></h2>
+<p>The ordinary hit-location distribution is:</p>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th>Location</th>
-<th align="right">Chance</th>
+<th style="text-align: right;">Chance</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>Torso</td>
-<td align="right">50%</td>
+<td style="text-align: right;">50%</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Arms</td>
-<td align="right">20%</td>
+<td style="text-align: right;">20%</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Legs</td>
-<td align="right">20%</td>
+<td style="text-align: right;">20%</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Head</td>
-<td align="right">10%</td>
+<td style="text-align: right;">10%</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>Reach limits which locations can be struck:</p>
 <ul>
 <li>head requires attacker size plus weapon length at least target size;</li>
@@ -1050,41 +1175,49 @@ Protection roll = relevant Protection + DRN
 </ul>
 <p>Some low-bodied monsters are easier to reach. An attacker significantly larger than the target shifts the normal distribution toward head hits: head rises to 20% and legs fall to 10%. For mounted attackers, mount size is used for this comparison.</p>
 <p>Damage to an arm, leg, or non-essential head is capped at half the target’s maximum HP during melee resolution. Location still matters greatly because affliction type and armour coverage depend on it.</p>
-<h2 id="b4-weapon-damage-types">Weapon damage types<a class="heading-link" href="#b4-weapon-damage-types" aria-label="Link to Weapon damage types">#</a></h2><table>
+<h2 id="b4-weapon-damage-types">Weapon damage types<a class="heading-link" href="#b4-weapon-damage-types" aria-label="Link to Weapon damage types">#</a></h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th>Type</th>
 <th>Effect</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>Blunt</td>
 <td>+25% damage on head hits before protection; +25% shield-breaking force</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Slashing</td>
 <td>+25% damage after protection; +50% shield-breaking force; can sever a struck limb or head when the hit costs at least half maximum HP</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Piercing</td>
 <td>Reduces protection by 15%</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Armour Piercing</td>
 <td>Reduces protection by 50%</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Piercing plus Armour Piercing</td>
 <td>Total protection reduction of 65%</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Armour Negating</td>
 <td>Ignores ordinary protection entirely</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>Two-handed weapons add 125% of Strength rather than the ordinary Strength contribution to damage.</p>
 <p>Weapons with several damage types can select among them according to the weapon definition. A label such as slash/pierce should not be analysed as if both protection modifications always apply simultaneously.</p>
-<h2 id="b4-underwater-weapon-penalties">Underwater weapon penalties<a class="heading-link" href="#b4-underwater-weapon-penalties" aria-label="Link to Underwater weapon penalties">#</a></h2><p>Underwater:</p>
+<h2 id="b4-underwater-weapon-penalties">Underwater weapon penalties<a class="heading-link" href="#b4-underwater-weapon-penalties" aria-label="Link to Underwater weapon penalties">#</a></h2>
+<p>Underwater:</p>
 <ul>
 <li>slashing and blunt attacks receive an Attack penalty equal to weapon length;</li>
 <li>piercing attacks receive no such penalty;</li>
@@ -1092,7 +1225,8 @@ Protection roll = relevant Protection + DRN
 <li>flails receive another -1.</li>
 </ul>
 <p>A weapon that works well on land can become a liability underwater even when the unit itself can breathe.</p>
-<h2 id="b4-multiple-weapons-and-attacks">Multiple weapons and attacks<a class="heading-link" href="#b4-multiple-weapons-and-attacks" aria-label="Link to Multiple weapons and attacks">#</a></h2><p>A unit wielding several ordinary weapons suffers an Attack penalty equal to the sum of their lengths. Ambidextrous offsets this penalty. Bonus and natural weapons do not create the ordinary multiple-weapon penalty.</p>
+<h2 id="b4-multiple-weapons-and-attacks">Multiple weapons and attacks<a class="heading-link" href="#b4-multiple-weapons-and-attacks" aria-label="Link to Multiple weapons and attacks">#</a></h2>
+<p>A unit wielding several ordinary weapons suffers an Attack penalty equal to the sum of their lengths. Ambidextrous offsets this penalty. Bonus and natural weapons do not create the ordinary multiple-weapon penalty.</p>
 <p>Each additional wielded weapon after the first adds one Encumbrance. Current official rules exempt spellcasters from the multiple-weapon <strong>fatigue</strong> penalty, but not from every possible attack interaction of the weapons themselves.</p>
 <p>Multiple attacks matter because they:</p>
 <ul>
@@ -1102,17 +1236,19 @@ Protection roll = relevant Protection + DRN
 <li>trigger more defensive and strikeback effects;</li>
 <li>spend fatigue and expose the attacker to repel interactions.</li>
 </ul>
-<h2 id="b4-harassment">Harassment<a class="heading-link" href="#b4-harassment" aria-label="Link to Harassment">#</a></h2><p>Every directed melee attack against a unit gives one point of harassment penalty. Each point reduces Defence by one. The penalty decays over time by a percentage rather than disappearing all at once.</p>
+<h2 id="b4-harassment">Harassment<a class="heading-link" href="#b4-harassment" aria-label="Link to Harassment">#</a></h2>
+<p>Every directed melee attack against a unit gives one point of harassment penalty. Each point reduces Defence by one. The penalty decays over time by a percentage rather than disappearing all at once.</p>
 <ul>
 <li>a weapon with multiple attacks gives harassment per attack;</li>
 <li>ranged and area-effect attacks do not;</li>
 <li>rider and mount are separate harassment targets.</li>
 </ul>
 <p>Harassment is why a crowd of weak attackers can make a high-Defence elite vulnerable to the attack that matters. The weak attacks need not cause damage to create value.</p>
-<p>The precise decay function is not stated in the manual and remains <strong>test pending</strong> for this library.</p>
-<h2 id="b4-repel">Repel<a class="heading-link" href="#b4-repel" aria-label="Link to Repel">#</a></h2><p>When the defender’s weapon is longer, it automatically attempts to repel the directed melee attack.</p>
+<p>The precise Dominions 6 decay function is not stated in the manual. A published Dominions 5 result multiplied the remaining penalty by 95% every <code>16/375</code> of a round, removing roughly 70% over a fully idle round. That old value is a useful regression-test hypothesis, not a Dominions 6 rule. Edition 27 leaves the current decay test pending.</p>
+<h2 id="b4-repel">Repel<a class="heading-link" href="#b4-repel" aria-label="Link to Repel">#</a></h2>
+<p>When the defender’s weapon is longer, it automatically attempts to repel the directed melee attack.</p>
 <p>The sequence is:</p>
-<ol>
+<ol type="1">
 <li>a repel attack-and-defence comparison occurs;</li>
 <li>if the repel attack would hit, the attacker makes a morale comparison;</li>
 <li>failure aborts the attack;</li>
@@ -1120,13 +1256,13 @@ Protection roll = relevant Protection + DRN
 <li>if the repel causes any damage, it is capped at one and the original attack then continues.</li>
 </ol>
 <p>The morale comparison is:</p>
-<pre><code class="language-text">attacker = Morale + DRN - weapon-length difference
-repeller = 10 + DRN + half the margin by which the repel attack won
-</code></pre>
+<pre class="text"><code>attacker = Morale + DRN - weapon-length difference
+repeller = 10 + DRN + half the margin by which the repel attack won</code></pre>
 <p>The repelling unit acquires a lingering -2 repel penalty after repeated repel attempts; it decays with time. Size-6 or larger giants count their weapons as one length longer for repel.</p>
 <p>Repel combines Attack, weapon length, morale, and tempo. A long weapon on an inaccurate, exhausted unit is not automatically good at repelling attacks.</p>
-<h2 id="b4-melee-resolution-order">Melee resolution order<a class="heading-link" href="#b4-melee-resolution-order" aria-label="Link to Melee resolution order">#</a></h2><p>The manual gives this useful order:</p>
-<ol>
+<h2 id="b4-melee-resolution-order">Melee resolution order<a class="heading-link" href="#b4-melee-resolution-order" aria-label="Link to Melee resolution order">#</a></h2>
+<p>The manual gives this useful order:</p>
+<ol type="1">
 <li>Determine target, including rider or mount.</li>
 <li>Resolve early strikeback effects such as Awe or petrifying gaze; abort if the attacker becomes immobilised.</li>
 <li>Resolve repel.</li>
@@ -1139,16 +1275,19 @@ repeller = 10 + DRN + half the margin by which the repel attack won
 <li>Deal damage, including shield consequences.</li>
 </ol>
 <p>If damage redistribution kills the attacker at step nine, the attack is not retroactively cancelled.</p>
-<span class="anchor-alias" id="b4-friendly-fire" aria-hidden="true"></span><span class="anchor-alias" id="b4-part-viii-missile-combat" aria-hidden="true"></span><h1 id="b4-part-viii-missiles-and-ranged-delivery">Part VIII: Missiles and Ranged Delivery<a class="heading-link" href="#b4-part-viii-missiles-and-ranged-delivery" aria-label="Link to Part VIII: Missiles and Ranged Delivery">#</a></h1><span class="anchor-alias" id="b4-missile-deviation" aria-hidden="true"></span><h2 id="b4-deviation">Deviation<a class="heading-link" href="#b4-deviation" aria-label="Link to Deviation">#</a></h2><p>A projectile begins to deviate when range exceeds roughly half Precision minus two.</p>
+<span id="b4-friendly-fire" class="anchor-alias" aria-hidden="true"></span> <span id="b4-part-viii-missile-combat" class="anchor-alias" aria-hidden="true"></span>
+<h1 id="b4-part-viii-missiles-and-ranged-delivery">Part VIII: Missiles and Ranged Delivery<a class="heading-link" href="#b4-part-viii-missiles-and-ranged-delivery" aria-label="Link to Part VIII: Missiles and Ranged Delivery">#</a></h1>
+<span id="b4-missile-deviation" class="anchor-alias" aria-hidden="true"></span>
+<h2 id="b4-deviation">Deviation<a class="heading-link" href="#b4-deviation" aria-label="Link to Deviation">#</a></h2>
+<p>A projectile begins to deviate when range exceeds roughly half Precision minus two.</p>
 <p>The manual gives:</p>
-<pre><code class="language-text">deviation = range x 1.25 / Precision
-</code></pre>
+<pre class="text"><code>deviation = range x 1.25 / Precision</code></pre>
 <p>Precision above 10 receives double value for the excess: Precision 12 is treated as 14 for this purpose.</p>
 <p>The formula is best read as expected scatter around a targeted square rather than a direct chance to hit one individual.</p>
-<h2 id="b4-the-square-hit-check">The square hit check<a class="heading-link" href="#b4-the-square-hit-check" aria-label="Link to The square hit check">#</a></h2><p>After a projectile reaches a square, a target is selected with size weighting. The hit comparison is:</p>
-<pre><code class="language-text">attacker = DRN + half the size points in the square + 2 if the weapon is magical
-defender = DRN + twice shield Parry - Fatigue / 20
-</code></pre>
+<h2 id="b4-the-square-hit-check">The square hit check<a class="heading-link" href="#b4-the-square-hit-check" aria-label="Link to The square hit check">#</a></h2>
+<p>After a projectile reaches a square, a target is selected with size weighting. The hit comparison is:</p>
+<pre class="text"><code>attacker = DRN + half the size points in the square + 2 if the weapon is magical
+defender = DRN + twice shield Parry - Fatigue / 20</code></pre>
 <p>The attacker must exceed the defender.</p>
 <p>This produces several non-obvious results:</p>
 <ul>
@@ -1158,15 +1297,16 @@ defender = DRN + twice shield Parry - Fatigue / 20
 <li>fatigue reduces missile defence;</li>
 <li>magical missiles gain accuracy at the square-hit stage.</li>
 </ul>
-<h2 id="b4-ranged-damage">Ranged damage<a class="heading-link" href="#b4-ranged-damage" aria-label="Link to Ranged damage">#</a></h2><p>Missile damage then uses the ordinary damage-versus-protection structure. Many missiles add half Strength rather than full Strength. Crossbows and similar weapons often gain armour-piercing properties. Lightning is commonly armour negating; fire is commonly armour piercing. The actual weapon definition controls the result.</p>
+<h2 id="b4-ranged-damage">Ranged damage<a class="heading-link" href="#b4-ranged-damage" aria-label="Link to Ranged damage">#</a></h2>
+<p>Missile damage then uses the ordinary damage-versus-protection structure. Many missiles add half Strength rather than full Strength. Crossbows and similar weapons often gain armour-piercing properties. Lightning is commonly armour negating; fire is commonly armour piercing. The actual weapon definition controls the result.</p>
 <p>Missiles can hit friendly units. Screens, line width, range, and the timing of melee contact all affect friendly-fire risk.</p>
-<h2 id="b4-evaluating-archery">Evaluating archery<a class="heading-link" href="#b4-evaluating-archery" aria-label="Link to Evaluating archery">#</a></h2><p>Archery value is the product of:</p>
-<pre><code class="language-text">number of shots
+<h2 id="b4-evaluating-archery">Evaluating archery<a class="heading-link" href="#b4-evaluating-archery" aria-label="Link to Evaluating archery">#</a></h2>
+<p>Archery value is the product of:</p>
+<pre class="text"><code>number of shots
 x probability of relevant square delivery
 x probability of hitting a body
 x probability of defeating protection
-x strategic value of the target
-</code></pre>
+x strategic value of the target</code></pre>
 <p>“Many arrows” can be useful without many kills if they:</p>
 <ul>
 <li>damage shields;</li>
@@ -1176,7 +1316,8 @@ x strategic value of the target
 <li>force the enemy into a resistant but less efficient composition.</li>
 </ul>
 <p>They can also be almost irrelevant against the wrong armour and shield layer.</p>
-<h2 id="b4-ranged-audit">Ranged audit<a class="heading-link" href="#b4-ranged-audit" aria-label="Link to Ranged audit">#</a></h2><ul>
+<h2 id="b4-ranged-audit">Ranged audit<a class="heading-link" href="#b4-ranged-audit" aria-label="Link to Ranged audit">#</a></h2>
+<ul>
 <li>Is the target category likely to select the intended units?</li>
 <li>Is range beyond the accurate envelope?</li>
 <li>Are friendly troops about to enter the target squares?</li>
@@ -1185,7 +1326,10 @@ x strategic value of the target
 <li>Does Hold and Fire change the contact schedule usefully?</li>
 <li>Would a wider or sparser formation improve delivery or survival?</li>
 </ul>
-<span class="anchor-alias" id="b4-part-iv-size-mounts-trampling-and-battlefield-movement" aria-hidden="true"></span><h1 id="b4-part-ix-mounts-trampling-and-size">Part IX: Mounts, Trampling, and Size<a class="heading-link" href="#b4-part-ix-mounts-trampling-and-size" aria-label="Link to Part IX: Mounts, Trampling, and Size">#</a></h1><h2 id="b4-rider-and-mount-are-separate">Rider and mount are separate<a class="heading-link" href="#b4-rider-and-mount-are-separate" aria-label="Link to Rider and mount are separate">#</a></h2><p>Dominions 6 treats rider and mount as separate targets with separate HP, statistics, attacks, morale interactions, and afflictions. Area effects and lightning can hit both.</p>
+<span id="b4-part-iv-size-mounts-trampling-and-battlefield-movement" class="anchor-alias" aria-hidden="true"></span>
+<h1 id="b4-part-ix-mounts-trampling-and-size">Part IX: Mounts, Trampling, and Size<a class="heading-link" href="#b4-part-ix-mounts-trampling-and-size" aria-label="Link to Part IX: Mounts, Trampling, and Size">#</a></h1>
+<h2 id="b4-rider-and-mount-are-separate">Rider and mount are separate<a class="heading-link" href="#b4-rider-and-mount-are-separate" aria-label="Link to Rider and mount are separate">#</a></h2>
+<p>Dominions 6 treats rider and mount as separate targets with separate HP, statistics, attacks, morale interactions, and afflictions. Area effects and lightning can hit both.</p>
 <p>An evaluation of cavalry asks:</p>
 <ul>
 <li>what protects the rider;</li>
@@ -1195,27 +1339,30 @@ x strategic value of the target
 <li>whether equipment affects one or both;</li>
 <li>how replacement and mount recovery work after battle.</li>
 </ul>
-<h2 id="b4-hitting-mounted-units">Hitting mounted units<a class="heading-link" href="#b4-hitting-mounted-units" aria-label="Link to Hitting mounted units">#</a></h2><p>The mount becomes more likely to be targeted when much larger than the rider:</p>
+<h2 id="b4-hitting-mounted-units">Hitting mounted units<a class="heading-link" href="#b4-hitting-mounted-units" aria-label="Link to Hitting mounted units">#</a></h2>
+<p>The mount becomes more likely to be targeted when much larger than the rider:</p>
 <table>
 <thead>
-<tr>
-<th align="right">Mount size advantage</th>
+<tr class="header">
+<th style="text-align: right;">Mount size advantage</th>
 <th>Additional mount targeting rule</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="right">3</td>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">3</td>
 <td>25%</td>
 </tr>
-<tr>
-<td align="right">4</td>
+<tr class="even">
+<td style="text-align: right;">4</td>
 <td>50%</td>
 </tr>
-<tr>
-<td align="right">5 or more</td>
+<tr class="odd">
+<td style="text-align: right;">5 or more</td>
 <td>75%</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>Otherwise:</p>
 <ul>
 <li>missiles have a 50% chance to target the mount;</li>
@@ -1223,18 +1370,22 @@ x strategic value of the target
 <li>otherwise mount chance is <code>30% + 10% x mount size - 10% x reach</code>, with a 10% minimum.</li>
 </ul>
 <p>Trample always targets the mount. Area effects and lightning hit both components.</p>
-<h2 id="b4-mounted-combat">Mounted combat<a class="heading-link" href="#b4-mounted-combat" aria-label="Link to Mounted combat">#</a></h2><p>Both rider and mount can attack. A rider using a two-handed weapon while mounted receives -3 Attack. Skilled Rider improves the mount’s morale and Defence; the amount of usable Defence is affected by mount armour Encumbrance.</p>
+<p>These targeting rules are official. The remaining mounted research question concerns carry, mixed-component movement, and the order in which every exceptional modifier is applied; it no longer treats ordinary target selection as wholly unknown.</p>
+<h2 id="b4-mounted-combat">Mounted combat<a class="heading-link" href="#b4-mounted-combat" aria-label="Link to Mounted combat">#</a></h2>
+<p>Both rider and mount can attack. A rider using a two-handed weapon while mounted receives -3 Attack. Skilled Rider improves the mount’s morale and Defence; the amount of usable Defence is affected by mount armour Encumbrance.</p>
 <p>Magic items on the rider do not automatically apply every effect to the mount. The item or effect must say so. Mount armour uses the barding slot where available.</p>
-<h2 id="b4-mounted-morale">Mounted morale<a class="heading-link" href="#b4-mounted-morale" aria-label="Link to Mounted morale">#</a></h2><p>Fear can affect rider and mount. If the rider routs, the mount leaves with the rider. If only the mount breaks, the rider can be thrown and the mount routs. Falling damage is an open-ended armour-negating comparison based on size difference; chariots avoid ordinary falling damage.</p>
+<h2 id="b4-mounted-morale">Mounted morale<a class="heading-link" href="#b4-mounted-morale" aria-label="Link to Mounted morale">#</a></h2>
+<p>Fear can affect rider and mount. If the rider routs, the mount leaves with the rider. If only the mount breaks, the rider can be thrown and the mount routs. Falling damage is an open-ended armour-negating comparison based on size difference; chariots avoid ordinary falling damage.</p>
 <p>A normal riderless mount routs. A mount with the relevant bravery can remain. The battle summary and replay should be inspected at component level because “cavalry loss” may mean a dead rider, lost mount, or temporary separation.</p>
-<h2 id="b4-mount-recovery">Mount recovery<a class="heading-link" href="#b4-mount-recovery" aria-label="Link to Mount recovery">#</a></h2><p>A surviving rider without a mount can claim a matching riderless mount. Otherwise the rider returns home and can be recruited again at half cost while retaining identity, experience, and afflictions. Suitable intelligent mounts can return in a similar fashion.</p>
+<h2 id="b4-mount-recovery">Mount recovery<a class="heading-link" href="#b4-mount-recovery" aria-label="Link to Mount recovery">#</a></h2>
+<p>A surviving rider without a mount can claim a matching riderless mount. Otherwise the rider returns home and can be recruited again at half cost while retaining identity, experience, and afflictions. Suitable intelligent mounts can return in a similar fashion.</p>
 <p>Mounted commanders remain and can use Reclaim Mount or claim a suitable unit. Some units automatically regain mounts. As of 6.35, automatic recovery occurs at the end of the turn, ensuring the new turn begins mounted.</p>
-<span class="anchor-alias" id="b4-trample" aria-hidden="true"></span><h2 id="b4-trampling">Trampling<a class="heading-link" href="#b4-trampling" aria-label="Link to Trampling">#</a></h2><p>A trampler entering a square displaces the smaller units to adjacent squares. Each victim checks:</p>
-<pre><code class="language-text">Defence - floor(Fatigue / 10) against 3d6
-</code></pre>
+<span id="b4-trample" class="anchor-alias" aria-hidden="true"></span>
+<h2 id="b4-trampling">Trampling<a class="heading-link" href="#b4-trampling" aria-label="Link to Trampling">#</a></h2>
+<p>A trampler entering a square displaces the smaller units to adjacent squares. Each victim checks:</p>
+<pre class="text"><code>Defence - floor(Fatigue / 10) against 3d6</code></pre>
 <p>On failure:</p>
-<pre><code class="language-text">trample damage = 7 + trampler Size
-</code></pre>
+<pre class="text"><code>trample damage = 7 + trampler Size</code></pre>
 <p>The damage is armour piercing. An ethereal trampler deals half normal trample damage. A victim that passes the Defence check is still displaced and takes one damage. A trampled unit always takes at least one damage regardless of protection.</p>
 <p>Trampling is simultaneously:</p>
 <ul>
@@ -1245,7 +1396,8 @@ x strategic value of the target
 <li>fatigue expenditure;</li>
 <li>formation disruption.</li>
 </ul>
-<h2 id="b4-trample-failure-modes">Trample failure modes<a class="heading-link" href="#b4-trample-failure-modes" aria-label="Link to Trample failure modes">#</a></h2><p>Tramplers are vulnerable to:</p>
+<h2 id="b4-trample-failure-modes">Trample failure modes<a class="heading-link" href="#b4-trample-failure-modes" aria-label="Link to Trample failure modes">#</a></h2>
+<p>Tramplers are vulnerable to:</p>
 <ul>
 <li>high Defence before fatigue;</li>
 <li>targets too large to trample;</li>
@@ -1257,16 +1409,18 @@ x strategic value of the target
 <li>mount targeting when the trampler is a mount.</li>
 </ul>
 <p>Trampling weak units can look dominant while exhausting the trampler for the decisive contact.</p>
-<span class="anchor-alias" id="b4-critical-hits" aria-hidden="true"></span><span class="anchor-alias" id="b4-encumbrance" aria-hidden="true"></span><h1 id="b4-part-x-fatigue-recovery-and-collapse">Part X: Fatigue, Recovery, and Collapse<a class="heading-link" href="#b4-part-x-fatigue-recovery-and-collapse" aria-label="Link to Part X: Fatigue, Recovery, and Collapse">#</a></h1><h2 id="b4-the-hidden-battle-economy">The hidden battle economy<a class="heading-link" href="#b4-the-hidden-battle-economy" aria-label="Link to The hidden battle economy">#</a></h2><p>Fatigue is a stock accumulated by actions and effects. It reduces combat performance before it causes unconsciousness:</p>
-<pre><code class="language-text">Defence penalty = floor(Fatigue / 10)
-Attack penalty  = floor(Fatigue / 20)
-</code></pre>
+<span id="b4-critical-hits" class="anchor-alias" aria-hidden="true"></span> <span id="b4-encumbrance" class="anchor-alias" aria-hidden="true"></span>
+<h1 id="b4-part-x-fatigue-recovery-and-collapse">Part X: Fatigue, Recovery, and Collapse<a class="heading-link" href="#b4-part-x-fatigue-recovery-and-collapse" aria-label="Link to Part X: Fatigue, Recovery, and Collapse">#</a></h1>
+<h2 id="b4-the-hidden-battle-economy">The hidden battle economy<a class="heading-link" href="#b4-the-hidden-battle-economy" aria-label="Link to The hidden battle economy">#</a></h2>
+<p>Fatigue is a stock accumulated by actions and effects. It reduces combat performance before it causes unconsciousness:</p>
+<pre class="text"><code>Defence penalty = floor(Fatigue / 10)
+Attack penalty  = floor(Fatigue / 20)</code></pre>
 <p>At 50 fatigue, Defence has fallen by 5 and Attack by 2. At 90, the penalties are 9 and 4. A unit can remain upright while its original stat line has ceased to exist.</p>
-<h2 id="b4-gaining-fatigue">Gaining fatigue<a class="heading-link" href="#b4-gaining-fatigue" aria-label="Link to Gaining fatigue">#</a></h2><p>Ordinary melee attacks add current Encumbrance. Spellcasting adds:</p>
-<pre><code class="language-text">listed spell fatigue / (1 + path skill above minimum)
+<h2 id="b4-gaining-fatigue">Gaining fatigue<a class="heading-link" href="#b4-gaining-fatigue" aria-label="Link to Gaining fatigue">#</a></h2>
+<p>Ordinary melee attacks add current Encumbrance. Spellcasting adds:</p>
+<pre class="text"><code>listed spell fatigue / (1 + path skill above minimum)
 + base Encumbrance
-+ twice armour Encumbrance
-</code></pre>
++ twice armour Encumbrance</code></pre>
 <p>The listed spell component is divided by excess path skill. The Encumbrance component is not.</p>
 <p>Other sources include:</p>
 <ul>
@@ -1277,42 +1431,47 @@ Attack penalty  = floor(Fatigue / 20)
 <li>special weapons, spells, and auras;</li>
 <li>extreme battlefield conditions.</li>
 </ul>
-<h2 id="b4-thresholds">Thresholds<a class="heading-link" href="#b4-thresholds" aria-label="Link to Thresholds">#</a></h2><table>
+<h2 id="b4-thresholds">Thresholds<a class="heading-link" href="#b4-thresholds" aria-label="Link to Thresholds">#</a></h2>
+<table>
 <thead>
-<tr>
-<th align="right">Fatigue</th>
+<tr class="header">
+<th style="text-align: right;">Fatigue</th>
 <th>Consequence</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="right">Every 10</td>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">Every 10</td>
 <td>-1 Defence</td>
 </tr>
-<tr>
-<td align="right">Every 20</td>
+<tr class="even">
+<td style="text-align: right;">Every 20</td>
 <td>-1 Attack</td>
 </tr>
-<tr>
-<td align="right">50+</td>
+<tr class="odd">
+<td style="text-align: right;">50+</td>
 <td>More protection rolls can become armour defeating</td>
 </tr>
-<tr>
-<td align="right">100</td>
+<tr class="even">
+<td style="text-align: right;">100</td>
 <td>Unit falls unconscious</td>
 </tr>
-<tr>
-<td align="right">Below 100 again</td>
+<tr class="odd">
+<td style="text-align: right;">Below 100 again</td>
 <td>Unit can regain consciousness</td>
 </tr>
-<tr>
-<td align="right">200</td>
+<tr class="even">
+<td style="text-align: right;">200</td>
 <td>Additional fatigue damage begins converting to HP damage</td>
 </tr>
-</tbody></table>
-<p>An unconscious unit recovers five fatigue per turn until it falls below 100. Reinvigoration and battle effects can accelerate recovery according to their rules. The manual does not fully specify every ordinary recovery interaction while active; any claim beyond the stated five-point unconscious recovery should be verified in the current executable.</p>
+</tbody>
+</table>
+<p>An unconscious unit recovers five fatigue per turn until it falls below 100. Reinvigoration and battle effects can accelerate recovery according to their rules. The manual does not fully specify ordinary recovery while a unit remains active.</p>
+<p>The current community reference states that every active unit removes one fatigue per combat round and then adds its Reinvigoration. This is the best current working rule, but the page does not publish a version-matched frame-by-frame reproduction. Edition 27 therefore labels it <strong>current community reference</strong>, while the five-point unconscious rule remains official.</p>
 <p>At 200 fatigue, each further 50 fatigue damage produces one HP damage. A smaller remainder produces a chance equal to two percent per fatigue point.</p>
-<h2 id="b4-fatigue-as-offence">Fatigue as offence<a class="heading-link" href="#b4-fatigue-as-offence" aria-label="Link to Fatigue as offence">#</a></h2><p>Fatigue warfare can defeat protection without directly ignoring it:</p>
-<ol>
+<h2 id="b4-fatigue-as-offence">Fatigue as offence<a class="heading-link" href="#b4-fatigue-as-offence" aria-label="Link to Fatigue as offence">#</a></h2>
+<p>Fatigue warfare can defeat protection without directly ignoring it:</p>
+<ol type="1">
 <li>Defence falls.</li>
 <li>More attacks hit.</li>
 <li>Armour-defeating protection results become more frequent.</li>
@@ -1321,16 +1480,19 @@ Attack penalty  = floor(Fatigue / 20)
 <li>The stationary target receives concentrated attacks.</li>
 </ol>
 <p>This is why reinvigoration, low Encumbrance, resistance, and relief effects are offensive enablers as well as defensive statistics.</p>
-<h2 id="b4-fatigue-budget">Fatigue budget<a class="heading-link" href="#b4-fatigue-budget" aria-label="Link to Fatigue budget">#</a></h2><p>For a key unit, estimate:</p>
-<pre><code class="language-text">starting fatigue
+<h2 id="b4-fatigue-budget">Fatigue budget<a class="heading-link" href="#b4-fatigue-budget" aria-label="Link to Fatigue budget">#</a></h2>
+<p>For a key unit, estimate:</p>
+<pre class="text"><code>starting fatigue
 + scripted action costs
 + expected contact costs
 + environmental and enemy pressure
 - recovery
-= fatigue at decisive turn
-</code></pre>
+= fatigue at decisive turn</code></pre>
 <p>The number need not be exact to expose a bad plan. A mage expected to cast five expensive spells in heavy armour or a trampler expected to cross the field and overrun many squares may already be committed past useful performance.</p>
-<span class="anchor-alias" id="b4-berserk" aria-hidden="true"></span><span class="anchor-alias" id="b4-mindless-troops" aria-hidden="true"></span><h1 id="b4-part-xi-morale-fear-rout-and-retreat">Part XI: Morale, Fear, Rout, and Retreat<a class="heading-link" href="#b4-part-xi-morale-fear-rout-and-retreat" aria-label="Link to Part XI: Morale, Fear, Rout, and Retreat">#</a></h1><h2 id="b4-squad-morale">Squad morale<a class="heading-link" href="#b4-squad-morale" aria-label="Link to Squad morale">#</a></h2><p>Squad morale begins from the members’ average and receives applicable modifiers:</p>
+<span id="b4-berserk" class="anchor-alias" aria-hidden="true"></span> <span id="b4-mindless-troops" class="anchor-alias" aria-hidden="true"></span>
+<h1 id="b4-part-xi-morale-fear-rout-and-retreat">Part XI: Morale, Fear, Rout, and Retreat<a class="heading-link" href="#b4-part-xi-morale-fear-rout-and-retreat" aria-label="Link to Part XI: Morale, Fear, Rout, and Retreat">#</a></h1>
+<h2 id="b4-squad-morale">Squad morale<a class="heading-link" href="#b4-squad-morale" aria-label="Link to Squad morale">#</a></h2>
+<p>Squad morale begins from the members’ average and receives applicable modifiers:</p>
 <ul>
 <li>+1 in the home province;</li>
 <li>+1 in friendly dominion;</li>
@@ -1341,7 +1503,8 @@ Attack penalty  = floor(Fatigue / 20)
 <li>temporary magic morale.</li>
 </ul>
 <p>Magic morale can range from -10 to +1. Negative magic morale recovers gradually, approximately one point every two rounds; positive magic morale persists.</p>
-<h2 id="b4-when-squads-check">When squads check<a class="heading-link" href="#b4-when-squads-check" aria-label="Link to When squads check">#</a></h2><p>A squad can check morale when:</p>
+<h2 id="b4-when-squads-check">When squads check<a class="heading-link" href="#b4-when-squads-check" aria-label="Link to When squads check">#</a></h2>
+<p>A squad can check morale when:</p>
 <ul>
 <li>it suffers heavy losses since its last check and has at least 20% overall casualties;</li>
 <li>it has four or fewer members and any member is damaged that round;</li>
@@ -1351,40 +1514,48 @@ Attack penalty  = floor(Fatigue / 20)
 </ul>
 <p>At most one ordinary morale check occurs for a squad in a round.</p>
 <p>For this purpose, a <strong>wound</strong> is a damage event that leaves a unit at no more than 80% of normal HP. Heavy losses are one wound per two squad members.</p>
-<h2 id="b4-the-morale-comparison">The morale comparison<a class="heading-link" href="#b4-the-morale-comparison" aria-label="Link to The morale comparison">#</a></h2><p>The manual gives:</p>
-<pre><code class="language-text">morale roll = squad Morale + DRN + survivor bonus from 0 to 5
-fear roll   = 14 + DRN
-</code></pre>
+<h2 id="b4-the-morale-comparison">The morale comparison<a class="heading-link" href="#b4-the-morale-comparison" aria-label="Link to The morale comparison">#</a></h2>
+<p>The manual gives:</p>
+<pre class="text"><code>morale roll = squad Morale + DRN + survivor bonus from 0 to 5
+fear roll   = 14 + DRN</code></pre>
 <p>The squad routs when the fear roll is greater. Under this wording, a tie is safe.</p>
-<p>The exact calculation of the 0-5 survivor bonus is not fully exposed and remains <strong>test pending</strong>.</p>
-<span class="anchor-alias" id="b4-army-rout" aria-hidden="true"></span><h2 id="b4-army-level-rout">Army-level rout<a class="heading-link" href="#b4-army-level-rout" aria-label="Link to Army-level rout">#</a></h2><p>At 50% weighted army HP loss, surviving squads begin checking every turn. At 75%, the army automatically routs.</p>
+<p>The current community formula is:</p>
+<pre class="text"><code>survivor bonus = nearest whole number of
+(5 x surviving proportion of the original squad)</code></pre>
+<p>That matches the manual’s <code>0-5</code> description, but the published page does not supply a current raw test set and notes uncertainty for commanders. Edition 27 therefore records the formula as a <strong>current community reference</strong>, not an official or reproduced result. Boundary rounding and commander handling remain test pending.</p>
+<span id="b4-army-rout" class="anchor-alias" aria-hidden="true"></span>
+<h2 id="b4-army-level-rout">Army-level rout<a class="heading-link" href="#b4-army-level-rout" aria-label="Link to Army-level rout">#</a></h2>
+<p>At 50% weighted army HP loss, surviving squads begin checking every turn. At 75%, the army automatically routs.</p>
 <p>The army total weights some bodies differently:</p>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th>Body type</th>
-<th align="right">HP weight</th>
+<th style="text-align: right;">HP weight</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>Ordinary unit</td>
-<td align="right">100%</td>
+<td style="text-align: right;">100%</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Mount</td>
-<td align="right">25%</td>
+<td style="text-align: right;">25%</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Province Defence</td>
-<td align="right">25%</td>
+<td style="text-align: right;">25%</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Slave</td>
-<td align="right">50%</td>
+<td style="text-align: right;">50%</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>This weighting affects how a screen, summon, mount, or PD contingent contributes to army-wide collapse. It does not tell whether that body is tactically useful.</p>
-<h2 id="b4-fear">Fear<a class="heading-link" href="#b4-fear" aria-label="Link to Fear">#</a></h2><p>Fear can reduce magic morale and force squad or individual checks. Current official rules cap morale reduction at the Fear effect’s value and at an absolute ten points.</p>
+<h2 id="b4-fear">Fear<a class="heading-link" href="#b4-fear" aria-label="Link to Fear">#</a></h2>
+<p>Fear can reduce magic morale and force squad or individual checks. Current official rules cap morale reduction at the Fear effect’s value and at an absolute ten points.</p>
 <p>Fear is strongest when combined with:</p>
 <ul>
 <li>existing casualties;</li>
@@ -1396,9 +1567,11 @@ fear roll   = 14 + DRN
 </ul>
 <p>It is weaker against mindless units, berserk behaviour, high morale, strong leadership, and effects that prevent or mitigate fear.</p>
 <p>Frighten-like limited effects can reduce morale by no more than their stated amount and do not automatically create every broader Fear interaction. Exact effect text matters.</p>
-<h2 id="b4-routing-units">Routing units<a class="heading-link" href="#b4-routing-units" aria-label="Link to Routing units">#</a></h2><p>A routing unit suffers -4 Defence and spends its activity moving toward a friendly battlefield edge. It ignores zones of control. Poison, burning, bleeding, and similar pending damage can still kill it after it leaves.</p>
+<h2 id="b4-routing-units">Routing units<a class="heading-link" href="#b4-routing-units" aria-label="Link to Routing units">#</a></h2>
+<p>A routing unit suffers -4 Defence and spends its activity moving toward a friendly battlefield edge. It ignores zones of control. Poison, burning, bleeding, and similar pending damage can still kill it after it leaves.</p>
 <p>Mindless units do not rout normally. Without eligible leadership, they can become immobile, attack adjacent enemies, and have a one-third chance per turn to dissolve. Magic or undead troops without the required leadership rout.</p>
-<h2 id="b4-retreat-destination">Retreat destination<a class="heading-link" href="#b4-retreat-destination" aria-label="Link to Retreat destination">#</a></h2><p>Each commander has a 75% chance to make a smart retreat. A commander in native terrain receives a second 50% chance after failure.</p>
+<h2 id="b4-retreat-destination">Retreat destination<a class="heading-link" href="#b4-retreat-destination" aria-label="Link to Retreat destination">#</a></h2>
+<p>Each commander has a 75% chance to make a smart retreat. A commander in native terrain receives a second 50% chance after failure.</p>
 <p>A smart commander:</p>
 <ul>
 <li>retreats into a friendly fort in the same province if available;</li>
@@ -1412,8 +1585,10 @@ fear roll   = 14 + DRN
 <li>skirmish morale penalty applies.</li>
 </ul>
 <p>Leaderless troops or troops that fail to follow make individual smart checks at 50%, with the native-terrain second chance still applying.</p>
-<h2 id="b4-retreat-while-defending-a-fort">Retreat while defending a fort<a class="heading-link" href="#b4-retreat-while-defending-a-fort" aria-label="Link to Retreat while defending a fort">#</a></h2><p>Units retreating while defending their fort hide inside if the battle is won and they made a smart retreat. If the battle is lost, all such units are killed. Non-smart defenders are killed. Commanders are always smart in this special case, and lone units gain another 50% opportunity.</p>
-<h2 id="b4-preservation-audit">Preservation audit<a class="heading-link" href="#b4-preservation-audit" aria-label="Link to Preservation audit">#</a></h2><p>Before committing:</p>
+<h2 id="b4-retreat-while-defending-a-fort">Retreat while defending a fort<a class="heading-link" href="#b4-retreat-while-defending-a-fort" aria-label="Link to Retreat while defending a fort">#</a></h2>
+<p>Units retreating while defending their fort hide inside if the battle is won and they made a smart retreat. If the battle is lost, all such units are killed. Non-smart defenders are killed. Commanders are always smart in this special case, and lone units gain another 50% opportunity.</p>
+<h2 id="b4-preservation-audit">Preservation audit<a class="heading-link" href="#b4-preservation-audit" aria-label="Link to Preservation audit">#</a></h2>
+<p>Before committing:</p>
 <ul>
 <li>Which adjacent provinces are friendly?</li>
 <li>Is a friendly fort available?</li>
@@ -1424,7 +1599,10 @@ fear roll   = 14 + DRN
 <li>Is a fort defence an all-or-nothing trap?</li>
 <li>Does a nominal victory preserve the force for the next operation?</li>
 </ul>
-<span class="anchor-alias" id="b4-damage-reversal" aria-hidden="true"></span><span class="anchor-alias" id="b4-fire-and-cold" aria-hidden="true"></span><span class="anchor-alias" id="b4-part-xii-resistances-special-damage-and-status-effects" aria-hidden="true"></span><h1 id="b4-part-xii-resistances-and-special-damage">Part XII: Resistances and Special Damage<a class="heading-link" href="#b4-part-xii-resistances-and-special-damage" aria-label="Link to Part XII: Resistances and Special Damage">#</a></h1><h2 id="b4-resistance">Resistance<a class="heading-link" href="#b4-resistance" aria-label="Link to Resistance">#</a></h2><p>Elemental resistance works like an additional protection layer against its damage family, followed by percentage reduction. Each point corresponds to twice that percentage; resistance 50 gives immunity.</p>
+<span id="b4-damage-reversal" class="anchor-alias" aria-hidden="true"></span> <span id="b4-fire-and-cold" class="anchor-alias" aria-hidden="true"></span> <span id="b4-part-xii-resistances-special-damage-and-status-effects" class="anchor-alias" aria-hidden="true"></span>
+<h1 id="b4-part-xii-resistances-and-special-damage">Part XII: Resistances and Special Damage<a class="heading-link" href="#b4-part-xii-resistances-and-special-damage" aria-label="Link to Part XII: Resistances and Special Damage">#</a></h1>
+<h2 id="b4-resistance">Resistance<a class="heading-link" href="#b4-resistance" aria-label="Link to Resistance">#</a></h2>
+<p>Elemental resistance works like an additional protection layer against its damage family, followed by percentage reduction. Each point corresponds to twice that percentage; resistance 50 gives immunity.</p>
 <p>For elemental fatigue effects, resistance counts at double strength when reducing the fatigue component.</p>
 <p>Resistance is not interchangeable with protection:</p>
 <ul>
@@ -1432,25 +1610,25 @@ fear roll   = 14 + DRN
 <li>poison resistance reduces initial poison application but not the later duration of poison already received;</li>
 <li>immunity thresholds and special interactions differ by damage family.</li>
 </ul>
-<h2 id="b4-fire-and-burning">Fire and burning<a class="heading-link" href="#b4-fire-and-burning" aria-label="Link to Fire and burning">#</a></h2><p>Fire is commonly armour piercing. The chance to catch fire is:</p>
-<pre><code class="language-text">pre-protection fire damage x 4%
-</code></pre>
+<h2 id="b4-fire-and-burning">Fire and burning<a class="heading-link" href="#b4-fire-and-burning" aria-label="Link to Fire and burning">#</a></h2>
+<p>Fire is commonly armour piercing. The chance to catch fire is:</p>
+<pre class="text"><code>pre-protection fire damage x 4%</code></pre>
 <p>Fire fatigue counts as one-third for this ignition calculation.</p>
 <p>A burning unit suffers <code>(1dSize) / 2</code> damage, rounded up, each round: a size-8 unit rolls <code>1d8</code>, then halves the result. Fire Resistance 5 halves burning damage. The chance to extinguish is:</p>
-<pre><code class="language-text">25% + Fire Resistance + 5% per Cold scale + 100% in rain
-</code></pre>
+<pre class="text"><code>25% + Fire Resistance + 5% per Cold scale + 100% in rain</code></pre>
 <p>with a minimum of 1%. Fire vulnerability is negative resistance. Fire Resistance 10 or more, chill aura, Mistform, and Ethereal prevent burning.</p>
-<h2 id="b4-cold-and-freezing">Cold and freezing<a class="heading-link" href="#b4-cold-and-freezing" aria-label="Link to Cold and freezing">#</a></h2><p>A freezing unit suffers 2d6 additional fatigue each round until it thaws.</p>
+<h2 id="b4-cold-and-freezing">Cold and freezing<a class="heading-link" href="#b4-cold-and-freezing" aria-label="Link to Cold and freezing">#</a></h2>
+<p>A freezing unit suffers 2d6 additional fatigue each round until it thaws.</p>
 <p>The thaw chance is:</p>
-<pre><code class="language-text">25% + Cold Resistance + 5% per Heat scale
-</code></pre>
+<pre class="text"><code>25% + Cold Resistance + 5% per Heat scale</code></pre>
 <p>with a minimum of 1%. Cold Resistance 10 or more, heat aura, and Ethereal prevent freezing.</p>
 <p>Fire and cold affect both damage and fatigue.</p>
-<h2 id="b4-bleeding">Bleeding<a class="heading-link" href="#b4-bleeding" aria-label="Link to Bleeding">#</a></h2><p>Profuse bleeding inflicts:</p>
-<pre><code class="language-text">10 fatigue + 5% of maximum HP per round
-</code></pre>
+<h2 id="b4-bleeding">Bleeding<a class="heading-link" href="#b4-bleeding" aria-label="Link to Bleeding">#</a></h2>
+<p>Profuse bleeding inflicts:</p>
+<pre class="text"><code>10 fatigue + 5% of maximum HP per round</code></pre>
 <p>The chance to stop is 10% plus regeneration. Underwater combat halves the chance that bleeding stops; it does not halve the listed damage.</p>
-<h2 id="b4-poison">Poison<a class="heading-link" href="#b4-poison" aria-label="Link to Poison">#</a></h2><p>Poison is stored and then applied over time, approximately ten percent of the remaining total per round as evenly as possible.</p>
+<h2 id="b4-poison">Poison<a class="heading-link" href="#b4-poison" aria-label="Link to Poison">#</a></h2>
+<p>Poison is stored and then applied over time, approximately ten percent of the remaining total per round as evenly as possible.</p>
 <p>Poison also reduces Attack and Defence by 25% for each full maximum-HP dose currently stored, capped at 50%. The penalty falls as stored poison is consumed.</p>
 <p>Poison Resistance reduces the initial amount. It does not shorten poison already received.</p>
 <p>This delay makes poison strategically unusual:</p>
@@ -1460,29 +1638,32 @@ fear roll   = 14 + DRN
 <li>retreating poison victims can be lost after leaving;</li>
 <li>regeneration and healing do not simply erase the stored schedule.</li>
 </ul>
-<h2 id="b4-shock-and-stun">Shock and stun<a class="heading-link" href="#b4-shock-and-stun" aria-label="Link to Shock and stun">#</a></h2><p>Shock can stun. The chance is:</p>
-<pre><code class="language-text">5% + half the percentage of maximum HP lost to the hit
-</code></pre>
+<h2 id="b4-shock-and-stun">Shock and stun<a class="heading-link" href="#b4-shock-and-stun" aria-label="Link to Shock and stun">#</a></h2>
+<p>Shock can stun. The chance is:</p>
+<pre class="text"><code>5% + half the percentage of maximum HP lost to the hit</code></pre>
 <p>Shock Resistance protects against shock damage and receives the elemental-resistance treatment against fatigue effects. Twist Fate and similar effects must be evaluated with current patch behaviour rather than old assumptions.</p>
-<h2 id="b4-acid-and-rust">Acid and rust<a class="heading-link" href="#b4-acid-and-rust" aria-label="Link to Acid and rust">#</a></h2><p>Iron equipment can rust:</p>
+<h2 id="b4-acid-and-rust">Acid and rust<a class="heading-link" href="#b4-acid-and-rust" aria-label="Link to Acid and rust">#</a></h2>
+<p>Iron equipment can rust:</p>
 <ul>
 <li>rust chance is pre-protection acid damage times 4%;</li>
 <li>armour can be damaged based on damage before armour after shield interaction;</li>
 <li>rusty weapons have a chance to become damaged when used.</li>
 </ul>
 <p>A damaged weapon suffers -2 damage, or -1 if blunt. Rust converts repeated minor exposure into declining equipment quality. Since 6.36, the rust effect can apply even when the attack causes no HP damage; inspect equipment state rather than using the health bar as a proxy for the secondary effect.</p>
-<h2 id="b4-life-drain">Life drain<a class="heading-link" href="#b4-life-drain" aria-label="Link to Life drain">#</a></h2><p>Full life drain:</p>
+<h2 id="b4-life-drain">Life drain<a class="heading-link" href="#b4-life-drain" aria-label="Link to Life drain">#</a></h2>
+<p>Full life drain:</p>
 <ul>
 <li>heals half the damage;</li>
 <li>removes fatigue equal to twice the damage;</li>
 <li>can raise HP to 150% of maximum plus ten.</li>
 </ul>
 <p>Weapons with partial life drain treat only the first five points of damage as drain; further damage is ordinary. Lifeless targets take only 25% of the post-protection drain result and do not heal the attacker. A lifeless attacker can still receive the ordinary benefit of its own life-draining attack.</p>
-<h2 id="b4-paralysis">Paralysis<a class="heading-link" href="#b4-paralysis" aria-label="Link to Paralysis">#</a></h2><p>Paralysis duration is:</p>
-<pre><code class="language-text">(damage - Size) / 2
-</code></pre>
+<h2 id="b4-paralysis">Paralysis<a class="heading-link" href="#b4-paralysis" aria-label="Link to Paralysis">#</a></h2>
+<p>Paralysis duration is:</p>
+<pre class="text"><code>(damage - Size) / 2</code></pre>
 <p>Repeated paralysis uses the larger duration and can add limited damage from the overlap. Size acts as a defence even when ordinary protection is not the main check.</p>
-<h2 id="b4-false-damage">False damage<a class="heading-link" href="#b4-false-damage" aria-label="Link to False damage">#</a></h2><p>Illusions and many Glamour effects cause false damage. It:</p>
+<h2 id="b4-false-damage">False damage<a class="heading-link" href="#b4-false-damage" aria-label="Link to False damage">#</a></h2>
+<p>Illusions and many Glamour effects cause false damage. It:</p>
 <ul>
 <li>can kill when real plus false damage reaches HP;</li>
 <li>causes no ordinary afflictions except death;</li>
@@ -1491,7 +1672,9 @@ fear roll   = 14 + DRN
 <li>dissipates at two per round if all enemy Glamour mages are dead.</li>
 </ul>
 <p>Current official rules make false damage count toward HP-based rout. A force can be routed by damage that later disappears.</p>
-<span class="anchor-alias" id="b4-clouds-and-persistent-area-effects" aria-hidden="true"></span><h2 id="b4-clouds-and-auras">Clouds and auras<a class="heading-link" href="#b4-clouds-and-auras" aria-label="Link to Clouds and auras">#</a></h2><p>Cloud effects are armour negating and decay by roughly one level per round. Clouds of the same type do not ordinarily overlap; they spread and can increase level only within their limits. Heat and frost clouds cancel one another.</p>
+<span id="b4-clouds-and-persistent-area-effects" class="anchor-alias" aria-hidden="true"></span>
+<h2 id="b4-clouds-and-auras">Clouds and auras<a class="heading-link" href="#b4-clouds-and-auras" aria-label="Link to Clouds and auras">#</a></h2>
+<p>Cloud effects are armour negating and decay by roughly one level per round. Clouds of the same type do not ordinarily overlap; they spread and can increase level only within their limits. Heat and frost clouds cancel one another.</p>
 <p>Monster auras commonly create level-one clouds that can accumulate to level two. Spells and items can create stronger clouds.</p>
 <p>Clouds transform position and time into damage. The important questions are:</p>
 <ul>
@@ -1501,48 +1684,54 @@ fear roll   = 14 + DRN
 <li>whether the cloud moves, spreads, cancels, or decays;</li>
 <li>whether friendly troops are also exposed.</li>
 </ul>
-<span class="anchor-alias" id="b4-disease" aria-hidden="true"></span><span class="anchor-alias" id="b4-immortality-and-return" aria-hidden="true"></span><span class="anchor-alias" id="b4-part-xiii-afflictions-regeneration-and-healing" aria-hidden="true"></span><span class="anchor-alias" id="b4-regeneration" aria-hidden="true"></span><h1 id="b4-part-xiii-afflictions-regeneration-and-lasting-loss">Part XIII: Afflictions, Regeneration, and Lasting Loss<a class="heading-link" href="#b4-part-xiii-afflictions-regeneration-and-lasting-loss" aria-label="Link to Part XIII: Afflictions, Regeneration, and Lasting Loss">#</a></h1><h2 id="b4-affliction-chance">Affliction chance<a class="heading-link" href="#b4-affliction-chance" aria-label="Link to Affliction chance">#</a></h2><p>When a hit causes damage, the basic chance of an affliction equals the percentage of maximum HP lost to that blow. A hit taking 20% of maximum HP produces a 20% base chance. Damage beyond 100% can produce several affliction opportunities.</p>
+<span id="b4-disease" class="anchor-alias" aria-hidden="true"></span> <span id="b4-immortality-and-return" class="anchor-alias" aria-hidden="true"></span> <span id="b4-part-xiii-afflictions-regeneration-and-healing" class="anchor-alias" aria-hidden="true"></span> <span id="b4-regeneration" class="anchor-alias" aria-hidden="true"></span>
+<h1 id="b4-part-xiii-afflictions-regeneration-and-lasting-loss">Part XIII: Afflictions, Regeneration, and Lasting Loss<a class="heading-link" href="#b4-part-xiii-afflictions-regeneration-and-lasting-loss" aria-label="Link to Part XIII: Afflictions, Regeneration, and Lasting Loss">#</a></h1>
+<h2 id="b4-affliction-chance">Affliction chance<a class="heading-link" href="#b4-affliction-chance" aria-label="Link to Affliction chance">#</a></h2>
+<p>When a hit causes damage, the basic chance of an affliction equals the percentage of maximum HP lost to that blow. A hit taking 20% of maximum HP produces a 20% base chance. Damage beyond 100% can produce several affliction opportunities.</p>
 <p>The chance that an affliction is major is:</p>
-<pre><code class="language-text">affliction chance / 1.5
-</code></pre>
+<pre class="text"><code>affliction chance / 1.5</code></pre>
 <p>capped at 33%.</p>
 <p>Regeneration reduces affliction risk. Since 6.31, regeneration follows its displayed percentage accurately rather than the older HP brackets.</p>
-<h2 id="b4-location-pools">Location pools<a class="heading-link" href="#b4-location-pools" aria-label="Link to Location pools">#</a></h2><table>
+<h2 id="b4-location-pools">Location pools<a class="heading-link" href="#b4-location-pools" aria-label="Link to Location pools">#</a></h2>
+<table>
 <thead>
-<tr>
+<tr class="header">
 <th>Location</th>
 <th>Minor examples</th>
 <th>Major examples</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>Any</td>
 <td>Battle Fright, Profuse Bleeding</td>
 <td>-</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Head</td>
 <td>Eye Loss, Mute</td>
 <td>Dementia, Feebleminded, Blind</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Chest</td>
 <td>Chest Wound, Never-Healing Wound</td>
 <td>Diseased</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Arm</td>
 <td>Weakened</td>
 <td>Lost Arm</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Leg</td>
 <td>Limp</td>
 <td>Crippled</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>Profuse Bleeding is temporary. Most other afflictions persist until an eligible healing mechanism succeeds.</p>
-<h2 id="b4-campaign-consequences">Campaign consequences<a class="heading-link" href="#b4-campaign-consequences" aria-label="Link to Campaign consequences">#</a></h2><p>Affliction valuation depends on the unit:</p>
+<h2 id="b4-campaign-consequences">Campaign consequences<a class="heading-link" href="#b4-campaign-consequences" aria-label="Link to Campaign consequences">#</a></h2>
+<p>Affliction valuation depends on the unit:</p>
 <ul>
 <li>lost limbs can remove weapons or slots;</li>
 <li>lost eyes impair Precision and combat;</li>
@@ -1552,88 +1741,104 @@ fear roll   = 14 + DRN
 <li>disease creates ongoing attrition.</li>
 </ul>
 <p>Troops with a limp can become crippled during long marches. Crippled troops can die while marching. An army that wins but accumulates movement injuries may cease to be an operational army.</p>
-<span class="anchor-alias" id="b4-healing" aria-hidden="true"></span><h2 id="b4-healing-categories">Healing categories<a class="heading-link" href="#b4-healing-categories" aria-label="Link to Healing categories">#</a></h2><p>Recuperation, healer abilities, immortality interactions, transformation, and specific sites or spells do not all heal the same afflictions under the same conditions. Undead and lifeless beings are commonly excluded from ordinary affliction healing. Item-caused afflictions can require removal of the item.</p>
+<span id="b4-healing" class="anchor-alias" aria-hidden="true"></span>
+<h2 id="b4-healing-categories">Healing categories<a class="heading-link" href="#b4-healing-categories" aria-label="Link to Healing categories">#</a></h2>
+<p>Recuperation, healer abilities, immortality interactions, transformation, and specific sites or spells do not all heal the same afflictions under the same conditions. Undead and lifeless beings are commonly excluded from ordinary affliction healing. Item-caused afflictions can require removal of the item.</p>
 <p>The safe method is to inspect the exact ability and target category rather than use “healing” as one universal mechanic.</p>
-<span class="anchor-alias" id="b4-part-xiv-battlefield-magic" aria-hidden="true"></span><span class="anchor-alias" id="b4-spell-targeting" aria-hidden="true"></span><h1 id="b4-part-xiv-battle-magic-within-the-army">Part XIV: Battle Magic within the Army<a class="heading-link" href="#b4-part-xiv-battle-magic-within-the-army" aria-label="Link to Part XIV: Battle Magic within the Army">#</a></h1><h2 id="b4-scope">Scope<a class="heading-link" href="#b4-scope" aria-label="Link to Scope">#</a></h2><p>The complete spell, communion, ritual, and research system belongs in Foundation Book V. This part establishes the combat mechanics required to understand an army that includes mages.</p>
-<h2 id="b4-preparation-and-recovery">Preparation and recovery<a class="heading-link" href="#b4-preparation-and-recovery" aria-label="Link to Preparation and recovery">#</a></h2><p>Most spells have a casting time of about one round:</p>
+<span id="b4-part-xiv-battlefield-magic" class="anchor-alias" aria-hidden="true"></span> <span id="b4-spell-targeting" class="anchor-alias" aria-hidden="true"></span>
+<h1 id="b4-part-xiv-battle-magic-within-the-army">Part XIV: Battle Magic within the Army<a class="heading-link" href="#b4-part-xiv-battle-magic-within-the-army" aria-label="Link to Part XIV: Battle Magic within the Army">#</a></h1>
+<h2 id="b4-scope">Scope<a class="heading-link" href="#b4-scope" aria-label="Link to Scope">#</a></h2>
+<p>The complete spell, communion, ritual, and research system belongs in Foundation Book V. This part establishes the combat mechanics required to understand an army that includes mages.</p>
+<h2 id="b4-preparation-and-recovery">Preparation and recovery<a class="heading-link" href="#b4-preparation-and-recovery" aria-label="Link to Preparation and recovery">#</a></h2>
+<p>Most spells have a casting time of about one round:</p>
 <ul>
 <li>approximately half is preparation;</li>
 <li>approximately half is recovery.</li>
 </ul>
 <p>Battle enchantments and gem-costing spells often take longer. If the caster is damaged during preparation, interruption chance is:</p>
-<pre><code class="language-text">percentage of maximum HP lost + 25%
-</code></pre>
+<pre class="text"><code>percentage of maximum HP lost + 25%</code></pre>
 <p>Combat Caster and Mindless halve this chance. Innate spellcasters require no preparation and ignore ordinary casting-time differences. As of 6.35, an innate caster that falls unconscious and later recovers continues its script correctly.</p>
-<h2 id="b4-spell-accuracy">Spell accuracy<a class="heading-link" href="#b4-spell-accuracy" aria-label="Link to Spell accuracy">#</a></h2><p>Spell delivery resembles missile delivery:</p>
-<pre><code class="language-text">spell aiming Precision = caster Precision + spell Precision
-</code></pre>
+<h2 id="b4-spell-accuracy">Spell accuracy<a class="heading-link" href="#b4-spell-accuracy" aria-label="Link to Spell accuracy">#</a></h2>
+<p>Spell delivery resembles missile delivery:</p>
+<pre class="text"><code>spell aiming Precision = caster Precision + spell Precision</code></pre>
 <p>Range, scatter, target-square density, area, and friendly position all matter. A spell with excellent listed damage can be a poor answer if it arrives late, lands unpredictably, or covers the wrong area.</p>
-<span class="anchor-alias" id="b4-magic-resistance-contests" aria-hidden="true"></span><span class="anchor-alias" id="b4-penetration" aria-hidden="true"></span><h2 id="b4-magic-resistance">Magic resistance<a class="heading-link" href="#b4-magic-resistance" aria-label="Link to Magic resistance">#</a></h2><p>When “Magic resistance negates” applies:</p>
-<pre><code class="language-text">caster penetration
+<span id="b4-magic-resistance-contests" class="anchor-alias" aria-hidden="true"></span> <span id="b4-penetration" class="anchor-alias" aria-hidden="true"></span>
+<h2 id="b4-magic-resistance">Magic resistance<a class="heading-link" href="#b4-magic-resistance" aria-label="Link to Magic resistance">#</a></h2>
+<p>When “Magic resistance negates” applies:</p>
+<pre class="text"><code>caster penetration
 = 11 + DRN + half additional skill above the spell requirement
 
 target resistance
-= Magic Resistance + DRN + half target skill in the spell path
-</code></pre>
+= Magic Resistance + DRN + half target skill in the spell path</code></pre>
 <p>The caster wins ties.</p>
 <p>“Easily negates” gives the caster -4 penetration. “Hard to resist” gives +4.</p>
 <p>Excess path skill and relevant boosters improve penetration, while path-skilled targets can receive extra resistance against effects in that path.</p>
-<h2 id="b4-spell-fatigue">Spell fatigue<a class="heading-link" href="#b4-spell-fatigue" aria-label="Link to Spell fatigue">#</a></h2><p>For a spell with listed fatigue:</p>
-<pre><code class="language-text">path fatigue
+<h2 id="b4-spell-fatigue">Spell fatigue<a class="heading-link" href="#b4-spell-fatigue" aria-label="Link to Spell fatigue">#</a></h2>
+<p>For a spell with listed fatigue:</p>
+<pre class="text"><code>path fatigue
 = listed fatigue / (1 + caster skill - minimum required skill)
 
 casting encumbrance
-= base Encumbrance + 2 x armour Encumbrance
-</code></pre>
+= base Encumbrance + 2 x armour Encumbrance</code></pre>
 <p>The Encumbrance cost is paid per cast and is not reduced by excess skill. Heavy armour can make a high-path mage collapse even when the printed spell cost appears manageable.</p>
-<span class="anchor-alias" id="b4-battlefield-enchantments" aria-hidden="true"></span><h2 id="b4-battle-enchantments">Battle enchantments<a class="heading-link" href="#b4-battle-enchantments" aria-label="Link to Battle enchantments">#</a></h2><p>Battle enchantments can affect the whole battlefield or continuously alter the battle. They end when their caster dies. At Twilight, all battle enchantments and temporary magical effects are removed.</p>
+<span id="b4-battlefield-enchantments" class="anchor-alias" aria-hidden="true"></span>
+<h2 id="b4-battle-enchantments">Battle enchantments<a class="heading-link" href="#b4-battle-enchantments" aria-label="Link to Battle enchantments">#</a></h2>
+<p>Battle enchantments can affect the whole battlefield or continuously alter the battle. They end when their caster dies. At Twilight, all battle enchantments and temporary magical effects are removed.</p>
 <p>Current indoor rules prevent most battlefield-wide spells from being cast indoors; holy battlefield-wide spells are excepted. A fort-storming plan must distinguish gate, exterior, and interior conditions.</p>
-<h2 id="b4-magic-as-a-package">Magic as a package<a class="heading-link" href="#b4-magic-as-a-package" aria-label="Link to Magic as a package">#</a></h2><p>A useful battlefield-magic package identifies:</p>
+<h2 id="b4-magic-as-a-package">Magic as a package<a class="heading-link" href="#b4-magic-as-a-package" aria-label="Link to Magic as a package">#</a></h2>
+<p>A useful battlefield-magic package identifies:</p>
 <table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th>Component</th>
 <th>Question</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>Research</td>
 <td>Is every required spell available now?</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Access</td>
 <td>Which mages can cast it without hypothetical boosters?</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Gems</td>
 <td>How many battles can the package sustain?</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Timing</td>
 <td>On which turn does each effect resolve?</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Delivery</td>
 <td>Which square or target category receives it?</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Protection</td>
 <td>How does the caster survive preparation?</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Fatigue</td>
 <td>What remains after the script?</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Redundancy</td>
 <td>What happens if one caster dies or is interrupted?</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Counter</td>
 <td>Which resistance, battlefield condition, or enemy script defeats it?</td>
 </tr>
-</tbody></table>
-<h2 id="b4-the-fifth-order-problem">The fifth-order problem<a class="heading-link" href="#b4-the-fifth-order-problem" aria-label="Link to The fifth-order problem">#</a></h2><p>After five specific orders, the general order governs. Many battle plans are excellent for five actions and incoherent thereafter. The post-script state must be designed:</p>
+</tbody>
+</table>
+<h2 id="b4-the-fifth-order-problem">The fifth-order problem<a class="heading-link" href="#b4-the-fifth-order-problem" aria-label="Link to The fifth-order problem">#</a></h2>
+<p>After five specific orders, the general order governs. Many battle plans are excellent for five actions and incoherent thereafter. The post-script state must be designed:</p>
 <ul>
 <li>should the mage remain behind troops;</li>
 <li>advance to reach targets;</li>
@@ -1643,8 +1848,12 @@ casting encumbrance
 <li>avoid walking into melee?</li>
 </ul>
 <p>The sixth action is often where a nominal support mage becomes an expensive casualty.</p>
-<span class="anchor-alias" id="b4-part-xvi-siege-storming-retreat-and-pursuit" aria-hidden="true"></span><h1 id="b4-part-xv-sieges-storming-and-battle-context">Part XV: Sieges, Storming, and Battle Context<a class="heading-link" href="#b4-part-xv-sieges-storming-and-battle-context" aria-label="Link to Part XV: Sieges, Storming, and Battle Context">#</a></h1><h2 id="b4-siege-arithmetic">Siege arithmetic<a class="heading-link" href="#b4-siege-arithmetic" aria-label="Link to Siege arithmetic">#</a></h2><p>The wall-reduction formulas, repair modifiers, and supply progression belong to Book II and the field reference. Book IV begins where the battle problem starts: only the correct siege orders contribute, and reaching zero wall integrity makes storming available on the next relevant order.</p>
-<h2 id="b4-storm-sequence">Storm sequence<a class="heading-link" href="#b4-storm-sequence" aria-label="Link to Storm sequence">#</a></h2><p>Storming occurs after any other battle in the province. A relieving or intercepting battle can weaken or destroy the besieger before the fort assault.</p>
+<span id="b4-part-xvi-siege-storming-retreat-and-pursuit" class="anchor-alias" aria-hidden="true"></span>
+<h1 id="b4-part-xv-sieges-storming-and-battle-context">Part XV: Sieges, Storming, and Battle Context<a class="heading-link" href="#b4-part-xv-sieges-storming-and-battle-context" aria-label="Link to Part XV: Sieges, Storming, and Battle Context">#</a></h1>
+<h2 id="b4-siege-arithmetic">Siege arithmetic<a class="heading-link" href="#b4-siege-arithmetic" aria-label="Link to Siege arithmetic">#</a></h2>
+<p>The wall-reduction formulas, repair modifiers, and supply progression belong to Book II and the field reference. Book IV begins where the battle problem starts: only the correct siege orders contribute, and reaching zero wall integrity makes storming available on the next relevant order.</p>
+<h2 id="b4-storm-sequence">Storm sequence<a class="heading-link" href="#b4-storm-sequence" aria-label="Link to Storm sequence">#</a></h2>
+<p>Storming occurs after any other battle in the province. A relieving or intercepting battle can weaken or destroy the besieger before the fort assault.</p>
 <p>If a commander ordered to Storm Castle is killed before the storming battle, troops under that commander do not participate in the storm.</p>
 <p>This creates a two-battle problem:</p>
 <ul>
@@ -1653,7 +1862,8 @@ casting encumbrance
 <li>account for changed gems, fatigue resets, casualties, and command structure;</li>
 <li>respect indoor restrictions.</li>
 </ul>
-<h2 id="b4-gates-and-constrained-contact">Gates and constrained contact<a class="heading-link" href="#b4-gates-and-constrained-contact" aria-label="Link to Gates and constrained contact">#</a></h2><p>Fort battles compress frontage and change pathing. Large formations can be delayed by gates, while concentrated area effects can gain value. Exact fort layouts vary and should be inspected in the replay or test game.</p>
+<h2 id="b4-gates-and-constrained-contact">Gates and constrained contact<a class="heading-link" href="#b4-gates-and-constrained-contact" aria-label="Link to Gates and constrained contact">#</a></h2>
+<p>Fort battles compress frontage and change pathing. Large formations can be delayed by gates, while concentrated area effects can gain value. Exact fort layouts vary and should be inspected in the replay or test game.</p>
 <p>A storm script copied from an open field is suspect until it answers:</p>
 <ul>
 <li>which units pass through the gate first;</li>
@@ -1662,77 +1872,88 @@ casting encumbrance
 <li>how defenders exploit interior depth;</li>
 <li>where retreating defenders go.</li>
 </ul>
-<h2 id="b4-siege-supply">Siege supply<a class="heading-link" href="#b4-siege-supply" aria-label="Link to Siege supply">#</a></h2><p>A fort’s storage is divided by the number of consecutive siege turns. Storage 300 yields 300, 150, 100, 75, then 60 supply in the first five months. Starvation and disease can weaken a garrison before the storm without changing its roster.</p>
+<h2 id="b4-siege-supply">Siege supply<a class="heading-link" href="#b4-siege-supply" aria-label="Link to Siege supply">#</a></h2>
+<p>A fort’s storage is divided by the number of consecutive siege turns. Storage 300 yields 300, 150, 100, 75, then 60 supply in the first five months. Starvation and disease can weaken a garrison before the storm without changing its roster.</p>
 <p>The battle card should include starvation, disease, fatigue-related afflictions, and any shortage of replacement equipment.</p>
-<span class="anchor-alias" id="b4-part-xv-counter-construction-and-battle-analysis" aria-hidden="true"></span><h1 id="b4-part-xvi-counter-construction">Part XVI: Counter Construction<a class="heading-link" href="#b4-part-xvi-counter-construction" aria-label="Link to Part XVI: Counter Construction">#</a></h1><h2 id="b4-counters-are-layered">Counters are layered<a class="heading-link" href="#b4-counters-are-layered" aria-label="Link to Counters are layered">#</a></h2><p>A counter should state which layer it attacks:</p>
+<span id="b4-part-xv-counter-construction-and-battle-analysis" class="anchor-alias" aria-hidden="true"></span>
+<h1 id="b4-part-xvi-counter-construction">Part XVI: Counter Construction<a class="heading-link" href="#b4-part-xvi-counter-construction" aria-label="Link to Part XVI: Counter Construction">#</a></h1>
+<h2 id="b4-counters-are-layered">Counters are layered<a class="heading-link" href="#b4-counters-are-layered" aria-label="Link to Counters are layered">#</a></h2>
+<p>A counter should state which layer it attacks:</p>
 <table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th>Enemy layer</th>
 <th>Candidate answers</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>High Defence</td>
 <td>Harassment, area effects, trampling, immobilisation, fatigue</td>
 </tr>
-<tr>
+<tr class="even">
 <td>High Protection</td>
 <td>Armour piercing, armour negating, Strength, rust, fatigue, MR effects</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Shields</td>
 <td>High Attack for clean hits, shield breaking, area effects, armour negation</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Regeneration</td>
 <td>Burst damage, decay, disease where applicable, paralysis, control, morale</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>High MR</td>
 <td>More penetration, non-MR damage, fatigue, mundane control</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Elemental resistance</td>
 <td>Different damage family, physical damage, MR effects, morale</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Massed low-HP troops</td>
 <td>Area damage, clouds, trampling, fear</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Giants</td>
 <td>Anti-large damage, repeated attacks, control, poison where relevant</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Flyers and rear pressure</td>
 <td>Bodyguards, rear screens, protected redundancy, anti-air or area control</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Mages</td>
 <td>Fast contact, missiles, interruption, assassins, battlefield conditions, resistance</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Summon spam</td>
 <td>Area damage, fatigue control, source elimination, long-battle clock</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Fear</td>
 <td>Morale, leadership, standards, mindless or berserk counters, source removal</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Tramplers</td>
 <td>Defence, size, fatigue, anti-large damage, spacing</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>The counter must then pass four tests:</p>
-<ol>
+<ol type="1">
 <li><strong>Access:</strong> the nation can produce it in time.</li>
 <li><strong>Delivery:</strong> it reaches the intended target.</li>
 <li><strong>Scale:</strong> enough instances exist for the enemy force.</li>
 <li><strong>Survival:</strong> it remains functional until its work is done.</li>
 </ol>
-<h2 id="b4-avoid-nominal-counters">Avoid nominal counters<a class="heading-link" href="#b4-avoid-nominal-counters" aria-label="Link to Avoid nominal counters">#</a></h2><p>An armour-negating spell is not a counter to armour if:</p>
+<h2 id="b4-avoid-nominal-counters">Avoid nominal counters<a class="heading-link" href="#b4-avoid-nominal-counters" aria-label="Link to Avoid nominal counters">#</a></h2>
+<p>An armour-negating spell is not a counter to armour if:</p>
 <ul>
 <li>research is not complete;</li>
 <li>only one fragile caster can use it;</li>
@@ -1743,7 +1964,8 @@ casting encumbrance
 <li>indoor conditions prohibit the package.</li>
 </ul>
 <p>The correct unit of strategy is the delivered package, not the tooltip.</p>
-<h2 id="b4-counter-counter-planning">Counter-counter planning<a class="heading-link" href="#b4-counter-counter-planning" aria-label="Link to Counter-counter planning">#</a></h2><p>After selecting the answer, ask how the opponent adapts:</p>
+<h2 id="b4-counter-counter-planning">Counter-counter planning<a class="heading-link" href="#b4-counter-counter-planning" aria-label="Link to Counter-counter planning">#</a></h2>
+<p>After selecting the answer, ask how the opponent adapts:</p>
 <ul>
 <li>changes formation;</li>
 <li>adds resistance;</li>
@@ -1755,7 +1977,9 @@ casting encumbrance
 <li>refuses the battle.</li>
 </ul>
 <p>An expert plan is not one unbeatable script. It is a branch with a tolerable response to the most likely counter.</p>
-<h1 id="b4-part-xvii-battle-replay-as-evidence">Part XVII: Battle Replay as Evidence<a class="heading-link" href="#b4-part-xvii-battle-replay-as-evidence" aria-label="Link to Part XVII: Battle Replay as Evidence">#</a></h1><h2 id="b4-why-the-summary-is-insufficient">Why the summary is insufficient<a class="heading-link" href="#b4-why-the-summary-is-insufficient" aria-label="Link to Why the summary is insufficient">#</a></h2><p>The summary reports numbers present, kills, and losses. It does not by itself explain:</p>
+<h1 id="b4-part-xvii-battle-replay-as-evidence">Part XVII: Battle Replay as Evidence<a class="heading-link" href="#b4-part-xvii-battle-replay-as-evidence" aria-label="Link to Part XVII: Battle Replay as Evidence">#</a></h1>
+<h2 id="b4-why-the-summary-is-insufficient">Why the summary is insufficient<a class="heading-link" href="#b4-why-the-summary-is-insufficient" aria-label="Link to Why the summary is insufficient">#</a></h2>
+<p>The summary reports numbers present, kills, and losses. It does not by itself explain:</p>
 <ul>
 <li>who made first contact;</li>
 <li>which spells were interrupted;</li>
@@ -1767,8 +1991,9 @@ casting encumbrance
 <li>which damage occurred after retreat.</li>
 </ul>
 <p>Kills reward the last damaging event, not every enabling action.</p>
-<h2 id="b4-first-replay-method">First replay method<a class="heading-link" href="#b4-first-replay-method" aria-label="Link to First replay method">#</a></h2><p>For a new player:</p>
-<ol>
+<h2 id="b4-first-replay-method">First replay method<a class="heading-link" href="#b4-first-replay-method" aria-label="Link to First replay method">#</a></h2>
+<p>For a new player:</p>
+<ol type="1">
 <li>Pause at deployment.</li>
 <li>Use F1 to inspect all units and commanders.</li>
 <li>Use F2 to inspect weather and dominion.</li>
@@ -1779,7 +2004,8 @@ casting encumbrance
 <li>Record the first irreversible failure.</li>
 </ol>
 <p>Useful replay controls include pause, speed changes, grid display, F1 unit list, F2 weather and dominion, and battle-log detail levels one through four.</p>
-<h2 id="b4-the-first-irreversible-failure">The first irreversible failure<a class="heading-link" href="#b4-the-first-irreversible-failure" aria-label="Link to The first irreversible failure">#</a></h2><p>The decisive event is often earlier than the visible rout:</p>
+<h2 id="b4-the-first-irreversible-failure">The first irreversible failure<a class="heading-link" href="#b4-the-first-irreversible-failure" aria-label="Link to The first irreversible failure">#</a></h2>
+<p>The decisive event is often earlier than the visible rout:</p>
 <ul>
 <li>a buff was interrupted;</li>
 <li>a screen made contact one round early;</li>
@@ -1791,138 +2017,151 @@ casting encumbrance
 <li>a retreat province was enemy-controlled.</li>
 </ul>
 <p>Finding the earliest event that made later failure likely produces a reusable lesson. Recording only the final kill does not.</p>
-<h2 id="b4-replay-worksheet">Replay worksheet<a class="heading-link" href="#b4-replay-worksheet" aria-label="Link to Replay worksheet">#</a></h2><table>
+<h2 id="b4-replay-worksheet">Replay worksheet<a class="heading-link" href="#b4-replay-worksheet" aria-label="Link to Replay worksheet">#</a></h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th>Stage</th>
 <th>Record</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>Deployment</td>
 <td>Side, positions, formations, squad sizes, command</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Conditions</td>
 <td>Weather, scales, darkness, storm, indoor or underwater</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Opening</td>
 <td>First spells, first shots, first movement</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Contact</td>
 <td>Turn and location of each squad’s contact</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Degradation</td>
 <td>Fatigue, poison, rust, afflictions, lost mounts, shield damage</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Cohesion</td>
 <td>First morale check, first rout, commander loss</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Resolution</td>
 <td>Automatic rout, long-battle event, or decisive destruction</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Retreat</td>
 <td>Destinations, post-retreat deaths, trapped units</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Strategic result</td>
 <td>Province, gems, mages, commanders, readiness next turn</td>
 </tr>
-</tbody></table>
-<h2 id="b4-do-not-learn-from-one-roll">Do not learn from one roll<a class="heading-link" href="#b4-do-not-learn-from-one-roll" aria-label="Link to Do not learn from one roll">#</a></h2><p>Open-ended dice produce tails. A controlled comparison should be repeated enough times to distinguish a structural advantage from one improbable result. The goal is not to eliminate randomness. It is to learn whether the plan remains acceptable across it.</p>
-<h1 id="b4-part-xviii-active-mod-ruleset">Part XVIII: Active Mod Ruleset<a class="heading-link" href="#b4-part-xviii-active-mod-ruleset" aria-label="Link to Part XVIII: Active Mod Ruleset">#</a></h1><h2 id="b4-what-the-supplied-files-establish">What the supplied files establish<a class="heading-link" href="#b4-what-the-supplied-files-establish" aria-label="Link to What the supplied files establish">#</a></h2><p>The frozen combined ruleset loads:</p>
-<ol>
+</tbody>
+</table>
+<h2 id="b4-do-not-learn-from-one-roll">Do not learn from one roll<a class="heading-link" href="#b4-do-not-learn-from-one-roll" aria-label="Link to Do not learn from one roll">#</a></h2>
+<p>Open-ended dice produce tails. A controlled comparison should be repeated enough times to distinguish a structural advantage from one improbable result. The goal is not to eliminate randomness. It is to learn whether the plan remains acceptable across it.</p>
+<h1 id="b4-part-xviii-active-mod-ruleset">Part XVIII: Active Mod Ruleset<a class="heading-link" href="#b4-part-xviii-active-mod-ruleset" aria-label="Link to Part XVIII: Active Mod Ruleset">#</a></h1>
+<h2 id="b4-what-the-supplied-files-establish">What the supplied files establish<a class="heading-link" href="#b4-what-the-supplied-files-establish" aria-label="Link to What the supplied files establish">#</a></h2>
+<p>The frozen combined ruleset loads:</p>
+<ol type="1">
 <li><code>DomEnhanced2_16.dm</code>;</li>
 <li><code>Divinitus_1.15.3_DE.dm</code>.</li>
 </ol>
 <p>Direct source counts demonstrate the scale of object-level battle changes.</p>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th>Command family</th>
-<th align="right">DE 2.16</th>
-<th align="right">Divinitus 1.15.3 DE</th>
+<th style="text-align: right;">DE 2.16</th>
+<th style="text-align: right;">Divinitus 1.15.3 DE</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>New monsters</td>
-<td align="right">3,553</td>
-<td align="right">346</td>
+<td style="text-align: right;">3,553</td>
+<td style="text-align: right;">346</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Selected existing monsters</td>
-<td align="right">4,227</td>
-<td align="right">373</td>
+<td style="text-align: right;">4,227</td>
+<td style="text-align: right;">373</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>New weapons</td>
-<td align="right">389</td>
-<td align="right">34</td>
+<td style="text-align: right;">389</td>
+<td style="text-align: right;">34</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Selected existing weapons</td>
-<td align="right">142</td>
-<td align="right">0</td>
+<td style="text-align: right;">142</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Selected spells</td>
-<td align="right">2,816</td>
-<td align="right">17</td>
+<td style="text-align: right;">2,816</td>
+<td style="text-align: right;">17</td>
 </tr>
-<tr>
+<tr class="even">
 <td>New spell blocks</td>
-<td align="right">0</td>
-<td align="right">26</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">26</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Attack edits</td>
-<td align="right">2,038</td>
-<td align="right">276</td>
+<td style="text-align: right;">2,038</td>
+<td style="text-align: right;">276</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Defence edits</td>
-<td align="right">2,114</td>
-<td align="right">278</td>
+<td style="text-align: right;">2,114</td>
+<td style="text-align: right;">278</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Protection edits</td>
-<td align="right">1,612</td>
-<td align="right">238</td>
+<td style="text-align: right;">1,612</td>
+<td style="text-align: right;">238</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Morale edits</td>
-<td align="right">1,692</td>
-<td align="right">229</td>
+<td style="text-align: right;">1,692</td>
+<td style="text-align: right;">229</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Encumbrance edits</td>
-<td align="right">1,186</td>
-<td align="right">163</td>
+<td style="text-align: right;">1,186</td>
+<td style="text-align: right;">163</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Mount assignments</td>
-<td align="right">178</td>
-<td align="right">9</td>
+<td style="text-align: right;">178</td>
+<td style="text-align: right;">9</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Skilled Rider edits</td>
-<td align="right">437</td>
-<td align="right">1</td>
+<td style="text-align: right;">437</td>
+<td style="text-align: right;">1</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Trample assignments</td>
-<td align="right">39</td>
-<td align="right">12</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">12</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>Counts are syntactic occurrences, not numbers of distinct final objects. Repeated selections, copied statistics, inherited fields, and later load-order edits can change the effective count.</p>
-<h2 id="b4-what-the-files-do-not-establish">What the files do not establish<a class="heading-link" href="#b4-what-the-files-do-not-establish" aria-label="Link to What the files do not establish">#</a></h2><p>The supplied <code>.dm</code> files create and alter monsters, weapons, spells, items, sites, nations, blessings, and object abilities. They do not present a global rewrite of the engine’s DRN, ordinary Attack-versus-Defence equation, ten-size-point square capacity, 75% army-rout rule, or general retreat algorithm.</p>
+<h2 id="b4-what-the-files-do-not-establish">What the files do not establish<a class="heading-link" href="#b4-what-the-files-do-not-establish" aria-label="Link to What the files do not establish">#</a></h2>
+<p>The supplied <code>.dm</code> files create and alter monsters, weapons, spells, items, sites, nations, blessings, and object abilities. They do not present a global rewrite of the engine’s DRN, ordinary Attack-versus-Defence equation, ten-size-point square capacity, 75% army-rout rule, or general retreat algorithm.</p>
 <p>Accordingly:</p>
 <ul>
 <li>the foundation mechanics remain the starting model;</li>
@@ -1930,17 +2169,18 @@ casting encumbrance
 <li>unmodded balance conclusions cannot be transferred merely because the core formula is unchanged;</li>
 <li>Divinitus loads second and can overwrite shared selections made by DE.</li>
 </ul>
-<h2 id="b4-modded-battle-analysis-rule">Modded battle-analysis rule<a class="heading-link" href="#b4-modded-battle-analysis-rule" aria-label="Link to Modded battle-analysis rule">#</a></h2><p>For a combined guide:</p>
-<pre><code class="language-text">engine mechanic
+<h2 id="b4-modded-battle-analysis-rule">Modded battle-analysis rule<a class="heading-link" href="#b4-modded-battle-analysis-rule" aria-label="Link to Modded battle-analysis rule">#</a></h2>
+<p>For a combined guide:</p>
+<pre class="text"><code>engine mechanic
 + effective DE object
 + later Divinitus overwrite
 + national availability
 + current patch correction
-= claim that can be published
-</code></pre>
+= claim that can be published</code></pre>
 <p>The name of an object is not enough. A DE or Divinitus version may share a familiar name while changing damage, paths, fatigue, attack count, resistances, abilities, or recruitment.</p>
-<h2 id="b4-foundation-versus-faction-work">Foundation versus faction work<a class="heading-link" href="#b4-foundation-versus-faction-work" aria-label="Link to Foundation versus faction work">#</a></h2><p>Book IV does not declare any specific modded faction or god optimal. It supplies the method used later:</p>
-<ol>
+<h2 id="b4-foundation-versus-faction-work">Foundation versus faction work<a class="heading-link" href="#b4-foundation-versus-faction-work" aria-label="Link to Foundation versus faction work">#</a></h2>
+<p>Book IV does not declare any specific modded faction or god optimal. It supplies the method used later:</p>
+<ol type="1">
 <li>extract the final combined roster;</li>
 <li>classify roles;</li>
 <li>calculate effective combat lines;</li>
@@ -1948,7 +2188,9 @@ casting encumbrance
 <li>test scripts;</li>
 <li>record match-ups and counters.</li>
 </ol>
-<h1 id="b4-part-xix-controlled-test-programme">Part XIX: Controlled-Test Programme<a class="heading-link" href="#b4-part-xix-controlled-test-programme" aria-label="Link to Part XIX: Controlled-Test Programme">#</a></h1><h2 id="b4-test-standard">Test standard<a class="heading-link" href="#b4-test-standard" aria-label="Link to Test standard">#</a></h2><p>Every test record should include:</p>
+<h1 id="b4-part-xix-controlled-test-programme">Part XIX: Controlled-Test Programme<a class="heading-link" href="#b4-part-xix-controlled-test-programme" aria-label="Link to Part XIX: Controlled-Test Programme">#</a></h1>
+<h2 id="b4-test-standard">Test standard<a class="heading-link" href="#b4-test-standard" aria-label="Link to Test standard">#</a></h2>
+<p>Every test record should include:</p>
 <ul>
 <li>Dominions version;</li>
 <li>exact mod list and load order;</li>
@@ -1965,7 +2207,8 @@ casting encumbrance
 <li>replay or log notes.</li>
 </ul>
 <p>Change one important variable at a time.</p>
-<h2 id="b4-test-1-drn-tie-direction">Test 1: DRN tie direction<a class="heading-link" href="#b4-test-1-drn-tie-direction" aria-label="Link to Test 1: DRN tie direction">#</a></h2><p>Purpose: verify tie behaviour in Attack, MR, and morale checks.</p>
+<h2 id="b4-test-1-drn-tie-direction">Test 1: DRN tie direction<a class="heading-link" href="#b4-test-1-drn-tie-direction" aria-label="Link to Test 1: DRN tie direction">#</a></h2>
+<p>Purpose: verify tie behaviour in Attack, MR, and morale checks.</p>
 <p>Method:</p>
 <ul>
 <li>create equal-value opposed cases;</li>
@@ -1973,36 +2216,42 @@ casting encumbrance
 <li>record explicit equal totals;</li>
 <li>confirm which side wins each rule’s tie.</li>
 </ul>
-<h2 id="b4-test-2-harassment-decay">Test 2: Harassment decay<a class="heading-link" href="#b4-test-2-harassment-decay" aria-label="Link to Test 2: Harassment decay">#</a></h2><p>Purpose: measure the hidden decay rate.</p>
+<h2 id="b4-test-2-harassment-decay">Test 2: Harassment decay<a class="heading-link" href="#b4-test-2-harassment-decay" aria-label="Link to Test 2: Harassment decay">#</a></h2>
+<p>Purpose: measure the hidden decay rate.</p>
 <p>Method:</p>
 <ul>
 <li>expose one high-Defence unit to a known burst of harmless directed attacks;</li>
 <li>stop new attacks through controlled spacing;</li>
 <li>inspect Defence or logs over time;</li>
 <li>repeat across different initial penalties.</li>
+<li>compare the result with the historical Dominions 5 hypothesis of a 5% reduction every <code>16/375</code> of a round without assuming that value survived into Dominions 6.</li>
 </ul>
-<h2 id="b4-test-3-cooldown-and-combat-speed">Test 3: Cooldown and combat speed<a class="heading-link" href="#b4-test-3-cooldown-and-combat-speed" aria-label="Link to Test 3: Cooldown and combat speed">#</a></h2><p>Purpose: distinguish movement time, recovery, and attack cadence.</p>
+<h2 id="b4-test-3-cooldown-and-combat-speed">Test 3: Cooldown and combat speed<a class="heading-link" href="#b4-test-3-cooldown-and-combat-speed" aria-label="Link to Test 3: Cooldown and combat speed">#</a></h2>
+<p>Purpose: distinguish movement time, recovery, and attack cadence.</p>
 <p>Method:</p>
 <ul>
 <li>compare otherwise identical units with controlled Combat Speed;</li>
 <li>record timestamps for steps and attacks;</li>
 <li>repeat with diagonal movement and no movement.</li>
 </ul>
-<h2 id="b4-test-4-formation-fighter-density">Test 4: Formation Fighter density<a class="heading-link" href="#b4-test-4-formation-fighter-density" aria-label="Link to Test 4: Formation Fighter density">#</a></h2><p>Purpose: document exact square capacity at several ability values and sizes.</p>
+<h2 id="b4-test-4-formation-fighter-density">Test 4: Formation Fighter density<a class="heading-link" href="#b4-test-4-formation-fighter-density" aria-label="Link to Test 4: Formation Fighter density">#</a></h2>
+<p>Purpose: document exact square capacity at several ability values and sizes.</p>
 <p>Method:</p>
 <ul>
 <li>deploy uniform squads in each formation;</li>
 <li>count bodies per square;</li>
 <li>repeat with mixed sizes.</li>
 </ul>
-<h2 id="b4-test-5-repel-sequence">Test 5: Repel sequence<a class="heading-link" href="#b4-test-5-repel-sequence" aria-label="Link to Test 5: Repel sequence">#</a></h2><p>Purpose: confirm current repel bonuses, lingering penalty, giant length, and magic-weapon interaction.</p>
+<h2 id="b4-test-5-repel-sequence">Test 5: Repel sequence<a class="heading-link" href="#b4-test-5-repel-sequence" aria-label="Link to Test 5: Repel sequence">#</a></h2>
+<p>Purpose: confirm current repel bonuses, lingering penalty, giant length, and magic-weapon interaction.</p>
 <p>Method:</p>
 <ul>
 <li>use non-damaging or highly protected targets;</li>
 <li>vary weapon length, Attack, morale, size, and interval between attacks;</li>
 <li>record repel rolls at log level four.</li>
 </ul>
-<h2 id="b4-test-6-shield-damage-and-repair">Test 6: Shield damage and repair<a class="heading-link" href="#b4-test-6-shield-damage-and-repair" aria-label="Link to Test 6: Shield damage and repair">#</a></h2><p>Purpose: verify current rounding and post-battle repair.</p>
+<h2 id="b4-test-6-shield-damage-and-repair">Test 6: Shield damage and repair<a class="heading-link" href="#b4-test-6-shield-damage-and-repair" aria-label="Link to Test 6: Shield damage and repair">#</a></h2>
+<p>Purpose: verify current rounding and post-battle repair.</p>
 <p>Method:</p>
 <ul>
 <li>strike known mundane and magical shields with controlled slash and blunt damage;</li>
@@ -2010,70 +2259,82 @@ casting encumbrance
 <li>vary available provincial resources;</li>
 <li>inspect the next turn.</li>
 </ul>
-<h2 id="b4-test-7-mounted-targeting">Test 7: Mounted targeting<a class="heading-link" href="#b4-test-7-mounted-targeting" aria-label="Link to Test 7: Mounted targeting">#</a></h2><p>Purpose: reproduce target weights for rider, mount, reach, missiles, and area effects.</p>
+<h2 id="b4-test-7-mounted-targeting">Test 7: Mounted targeting<a class="heading-link" href="#b4-test-7-mounted-targeting" aria-label="Link to Test 7: Mounted targeting">#</a></h2>
+<p>Purpose: reproduce target weights for rider, mount, reach, missiles, and area effects.</p>
 <p>Method:</p>
 <ul>
 <li>use fixed rider size and several mount sizes;</li>
 <li>count hundreds of directed attacks;</li>
 <li>repeat with different weapon lengths and missiles.</li>
 </ul>
-<h2 id="b4-test-8-trample-fatigue">Test 8: Trample fatigue<a class="heading-link" href="#b4-test-8-trample-fatigue" aria-label="Link to Test 8: Trample fatigue">#</a></h2><p>Purpose: measure current flying and trampling fatigue after the 6.25 correction.</p>
+<h2 id="b4-test-8-trample-fatigue">Test 8: Trample fatigue<a class="heading-link" href="#b4-test-8-trample-fatigue" aria-label="Link to Test 8: Trample fatigue">#</a></h2>
+<p>Purpose: measure current flying and trampling fatigue after the 6.25 correction.</p>
 <p>Method:</p>
 <ul>
 <li>compare mounted and non-mounted tramplers;</li>
 <li>control Encumbrance, distance, number of victims, and resistance;</li>
 <li>record fatigue per displacement.</li>
 </ul>
-<h2 id="b4-test-9-morale-survivor-bonus">Test 9: Morale survivor bonus<a class="heading-link" href="#b4-test-9-morale-survivor-bonus" aria-label="Link to Test 9: Morale survivor bonus">#</a></h2><p>Purpose: derive the manual’s 0-5 survivor bonus.</p>
+<h2 id="b4-test-9-morale-survivor-bonus">Test 9: Morale survivor bonus<a class="heading-link" href="#b4-test-9-morale-survivor-bonus" aria-label="Link to Test 9: Morale survivor bonus">#</a></h2>
+<p>Purpose: derive the manual’s 0-5 survivor bonus.</p>
 <p>Method:</p>
 <ul>
 <li>create squads at controlled original and remaining sizes;</li>
 <li>force identical checks;</li>
 <li>extract morale totals from detailed logs;</li>
-<li>test whether the bonus depends on count, fraction, or another condition.</li>
+<li>test the current community hypothesis <code>round(5 x surviving proportion)</code> at every rounding boundary;</li>
+<li>test commanders separately from squads.</li>
 </ul>
-<h2 id="b4-test-10-army-hp-rout-weights">Test 10: Army HP rout weights<a class="heading-link" href="#b4-test-10-army-hp-rout-weights" aria-label="Link to Test 10: Army HP rout weights">#</a></h2><p>Purpose: verify mounts, slaves, and PD weighting in mixed armies.</p>
+<h2 id="b4-test-10-army-hp-rout-weights">Test 10: Army HP rout weights<a class="heading-link" href="#b4-test-10-army-hp-rout-weights" aria-label="Link to Test 10: Army HP rout weights">#</a></h2>
+<p>Purpose: verify mounts, slaves, and PD weighting in mixed armies.</p>
 <p>Method:</p>
 <ul>
 <li>construct armies with one weighted category at a time;</li>
 <li>cause controlled casualties;</li>
 <li>record the first 50% checks and 75% automatic rout.</li>
 </ul>
-<h2 id="b4-test-11-retreat-intelligence">Test 11: Retreat intelligence<a class="heading-link" href="#b4-test-11-retreat-intelligence" aria-label="Link to Test 11: Retreat intelligence">#</a></h2><p>Purpose: confirm smart-retreat rates and priority.</p>
+<h2 id="b4-test-11-retreat-intelligence">Test 11: Retreat intelligence<a class="heading-link" href="#b4-test-11-retreat-intelligence" aria-label="Link to Test 11: Retreat intelligence">#</a></h2>
+<p>Purpose: confirm smart-retreat rates and priority.</p>
 <p>Method:</p>
 <ul>
 <li>provide a fort, friendly province, and enemy province;</li>
 <li>repeat commander retreats in native and non-native terrain;</li>
 <li>separately test leaderless troops and undisciplined followers.</li>
 </ul>
-<h2 id="b4-test-12-ordinary-fatigue-recovery">Test 12: Ordinary fatigue recovery<a class="heading-link" href="#b4-test-12-ordinary-fatigue-recovery" aria-label="Link to Test 12: Ordinary fatigue recovery">#</a></h2><p>Purpose: resolve active-unit recovery not fully specified by the manual.</p>
+<h2 id="b4-test-12-ordinary-fatigue-recovery">Test 12: Ordinary fatigue recovery<a class="heading-link" href="#b4-test-12-ordinary-fatigue-recovery" aria-label="Link to Test 12: Ordinary fatigue recovery">#</a></h2>
+<p>Purpose: resolve active-unit recovery not fully specified by the manual.</p>
 <p>Method:</p>
 <ul>
 <li>give controlled fatigue without further actions;</li>
 <li>compare active, unconscious, reinvigorated, and spellcasting units;</li>
 <li>log fatigue every round.</li>
+<li>test the current community hypothesis of one point per active round plus Reinvigoration against the official five-point unconscious recovery.</li>
 </ul>
-<h2 id="b4-test-13-regeneration-and-rounding">Test 13: Regeneration and rounding<a class="heading-link" href="#b4-test-13-regeneration-and-rounding" aria-label="Link to Test 13: Regeneration and rounding">#</a></h2><p>Purpose: reproduce the post-6.31 percentage rule.</p>
+<h2 id="b4-test-13-regeneration-and-rounding">Test 13: Regeneration and rounding<a class="heading-link" href="#b4-test-13-regeneration-and-rounding" aria-label="Link to Test 13: Regeneration and rounding">#</a></h2>
+<p>Purpose: reproduce the post-6.31 percentage rule.</p>
 <p>Method:</p>
 <ul>
 <li>use several maximum HP values and regeneration percentages;</li>
 <li>inflict constant damage;</li>
 <li>record healing across many rounds.</li>
 </ul>
-<h2 id="b4-test-14-false-damage-and-rout">Test 14: False damage and rout<a class="heading-link" href="#b4-test-14-false-damage-and-rout" aria-label="Link to Test 14: False damage and rout">#</a></h2><p>Purpose: verify current HP-rout contribution and dissipation.</p>
+<h2 id="b4-test-14-false-damage-and-rout">Test 14: False damage and rout<a class="heading-link" href="#b4-test-14-false-damage-and-rout" aria-label="Link to Test 14: False damage and rout">#</a></h2>
+<p>Purpose: verify current HP-rout contribution and dissipation.</p>
 <p>Method:</p>
 <ul>
 <li>apply only false damage;</li>
 <li>kill all hostile Glamour mages at controlled times;</li>
 <li>record morale triggers and two-per-round removal.</li>
 </ul>
-<h2 id="b4-test-15-indoor-battlefield-magic">Test 15: Indoor battlefield magic<a class="heading-link" href="#b4-test-15-indoor-battlefield-magic" aria-label="Link to Test 15: Indoor battlefield magic">#</a></h2><p>Purpose: catalogue which whole-field effects remain legal.</p>
+<h2 id="b4-test-15-indoor-battlefield-magic">Test 15: Indoor battlefield magic<a class="heading-link" href="#b4-test-15-indoor-battlefield-magic" aria-label="Link to Test 15: Indoor battlefield magic">#</a></h2>
+<p>Purpose: catalogue which whole-field effects remain legal.</p>
 <p>Method:</p>
 <ul>
 <li>attempt ordinary, holy, start-of-battle, innate, and item-created field effects in fort interiors and assassination maps;</li>
 <li>record script fallback and gem use.</li>
 </ul>
-<h2 id="b4-test-16-modded-regression-suite">Test 16: Modded regression suite<a class="heading-link" href="#b4-test-16-modded-regression-suite" aria-label="Link to Test 16: Modded regression suite">#</a></h2><p>Purpose: detect future DE or Divinitus changes that invalidate published packages.</p>
+<h2 id="b4-test-16-modded-regression-suite">Test 16: Modded regression suite<a class="heading-link" href="#b4-test-16-modded-regression-suite" aria-label="Link to Test 16: Modded regression suite">#</a></h2>
+<p>Purpose: detect future DE or Divinitus changes that invalidate published packages.</p>
 <p>Method:</p>
 <ul>
 <li>preserve a small set of representative battles;</li>
@@ -2081,50 +2342,60 @@ casting encumbrance
 <li>compare unit IDs, final fields, scripts, and outcomes;</li>
 <li>classify differences as source edits, load-order overwrites, or engine changes.</li>
 </ul>
-<h1 id="b4-part-xx-operational-checklists">Part XX: Operational Checklists<a class="heading-link" href="#b4-part-xx-operational-checklists" aria-label="Link to Part XX: Operational Checklists">#</a></h1><h2 id="b4-pre-battle-audit">Pre-battle audit<a class="heading-link" href="#b4-pre-battle-audit" aria-label="Link to Pre-battle audit">#</a></h2><h3 id="b4-objective">Objective<a class="heading-link" href="#b4-objective" aria-label="Link to Objective">#</a></h3><ul>
+<h1 id="b4-part-xx-operational-checklists">Part XX: Operational Checklists<a class="heading-link" href="#b4-part-xx-operational-checklists" aria-label="Link to Part XX: Operational Checklists">#</a></h1>
+<h2 id="b4-pre-battle-audit">Pre-battle audit<a class="heading-link" href="#b4-pre-battle-audit" aria-label="Link to Pre-battle audit">#</a></h2>
+<h3 id="b4-objective">Objective<a class="heading-link" href="#b4-objective" aria-label="Link to Objective">#</a></h3>
+<ul>
 <li>What must the battle accomplish?</li>
 <li>Is taking the province enough?</li>
 <li>Which enemy assets matter most?</li>
 <li>What friendly losses are acceptable?</li>
 </ul>
-<h3 id="b4-command">Command<a class="heading-link" href="#b4-command" aria-label="Link to Command">#</a></h3><ul>
+<h3 id="b4-command">Command<a class="heading-link" href="#b4-command" aria-label="Link to Command">#</a></h3>
+<ul>
 <li>Are all troop categories legally led?</li>
 <li>Are squad-count morale penalties understood?</li>
 <li>Is there useful command redundancy?</li>
 <li>Are key commanders protected?</li>
 </ul>
-<h3 id="b4-formation">Formation<a class="heading-link" href="#b4-formation" aria-label="Link to Formation">#</a></h3><ul>
+<h3 id="b4-formation">Formation<a class="heading-link" href="#b4-formation" aria-label="Link to Formation">#</a></h3>
+<ul>
 <li>Which squad contacts first?</li>
 <li>Is width, depth, or spacing appropriate?</li>
 <li>Are undisciplined restrictions active?</li>
 <li>Will friendly units obstruct one another?</li>
 </ul>
-<h3 id="b4-script">Script<a class="heading-link" href="#b4-script" aria-label="Link to Script">#</a></h3><ul>
+<h3 id="b4-script">Script<a class="heading-link" href="#b4-script" aria-label="Link to Script">#</a></h3>
+<ul>
 <li>Are spells researched and gems carried?</li>
 <li>Are targets in range?</li>
 <li>What happens after five orders?</li>
 <li>What happens if the named spell fails?</li>
 <li>Are indoor, underwater, storm, or darkness restrictions checked?</li>
 </ul>
-<h3 id="b4-defence-layers">Defence layers<a class="heading-link" href="#b4-defence-layers" aria-label="Link to Defence layers">#</a></h3><ul>
+<h3 id="b4-defence-layers">Defence layers<a class="heading-link" href="#b4-defence-layers" aria-label="Link to Defence layers">#</a></h3>
+<ul>
 <li>What answers Protection?</li>
 <li>What answers Defence?</li>
 <li>What answers shields?</li>
 <li>What answers resistance and MR?</li>
 <li>What answers regeneration, size, flight, fear, or mindlessness?</li>
 </ul>
-<h3 id="b4-persistence">Persistence<a class="heading-link" href="#b4-persistence" aria-label="Link to Persistence">#</a></h3><ul>
+<h3 id="b4-persistence">Persistence<a class="heading-link" href="#b4-persistence" aria-label="Link to Persistence">#</a></h3>
+<ul>
 <li>When does fatigue become dangerous?</li>
 <li>Can the line survive until the decisive turn?</li>
 <li>Are poison, bleeding, clouds, or rust cumulative threats?</li>
 </ul>
-<h3 id="b4-preservation">Preservation<a class="heading-link" href="#b4-preservation" aria-label="Link to Preservation">#</a></h3><ul>
+<h3 id="b4-preservation">Preservation<a class="heading-link" href="#b4-preservation" aria-label="Link to Preservation">#</a></h3>
+<ul>
 <li>Where will the army retreat?</li>
 <li>Are routes friendly after simultaneous movement?</li>
 <li>Is the fort battle an annihilation risk?</li>
 <li>Can the force fight again next turn?</li>
 </ul>
-<h2 id="b4-post-battle-audit">Post-battle audit<a class="heading-link" href="#b4-post-battle-audit" aria-label="Link to Post-battle audit">#</a></h2><ol>
+<h2 id="b4-post-battle-audit">Post-battle audit<a class="heading-link" href="#b4-post-battle-audit" aria-label="Link to Post-battle audit">#</a></h2>
+<ol type="1">
 <li>What was the first irreversible failure?</li>
 <li>Did placement produce the intended contact order?</li>
 <li>Which scripts completed?</li>
@@ -2136,7 +2407,8 @@ casting encumbrance
 <li>Which losses occurred during retreat or from delayed damage?</li>
 <li>What is the smallest change likely to improve the result?</li>
 </ol>
-<h2 id="b4-new-player-minimum">New-player minimum<a class="heading-link" href="#b4-new-player-minimum" aria-label="Link to New-player minimum">#</a></h2><p>Before ending a turn with an important army:</p>
+<h2 id="b4-new-player-minimum">New-player minimum<a class="heading-link" href="#b4-new-player-minimum" aria-label="Link to New-player minimum">#</a></h2>
+<p>Before ending a turn with an important army:</p>
 <ul>
 <li>assign every troop to a legal commander;</li>
 <li>separate units that need different orders;</li>
@@ -2146,59 +2418,70 @@ casting encumbrance
 <li>inspect likely retreat provinces;</li>
 <li>view the replay even after an easy victory.</li>
 </ul>
-<h1 id="b4-part-xxi-essays">Part XXI: Essays<a class="heading-link" href="#b4-part-xxi-essays" aria-label="Link to Part XXI: Essays">#</a></h1><h2 id="b4-essay-i-morale-and-the-shape-of-defeat">Essay I: Morale and the Shape of Defeat<a class="heading-link" href="#b4-essay-i-morale-and-the-shape-of-defeat" aria-label="Link to Essay I: Morale and the Shape of Defeat">#</a></h2><p>Dominions gives armies bodies, weapons, armour, and magic, but it ends most battles through cohesion. This is not a cosmetic concession to realism. It is the mechanism that connects local violence to army-level outcomes.</p>
+<h1 id="b4-part-xxi-essays">Part XXI: Essays<a class="heading-link" href="#b4-part-xxi-essays" aria-label="Link to Part XXI: Essays">#</a></h1>
+<h2 id="b4-essay-i-morale-and-the-shape-of-defeat">Essay I: Morale and the Shape of Defeat<a class="heading-link" href="#b4-essay-i-morale-and-the-shape-of-defeat" aria-label="Link to Essay I: Morale and the Shape of Defeat">#</a></h2>
+<p>Dominions gives armies bodies, weapons, armour, and magic, but it ends most battles through cohesion. This is not a cosmetic concession to realism. It is the mechanism that connects local violence to army-level outcomes.</p>
 <p>A soldier’s HP asks whether the body can continue. Squad morale asks whether a group still accepts the battle. Command asks whether that group remains part of an army. Army HP asks whether the whole force has absorbed so much destruction that continued resistance is no longer possible. Retreat then asks whether defeat remains recoverable.</p>
 <p>These layers explain why two identical casualty totals can have different results. Ten losses spread among several large, well-led squads may be tolerable. The same losses concentrated in a small forward squad can trigger a rout, expose a flank, and place fear next to another squad. The second squad then checks under worse conditions. Once movement turns away from the enemy, Defence falls, zones of control no longer matter, and the enemy converts retreat into further damage.</p>
 <p>Morale has geometry. A fear aura beside one squad is not the same as a global numerical debuff. A standard supports a particular command structure. A commander killed behind the line can matter more than a warrior killed at the front. A sparse formation’s -1 seems modest until it moves an already marginal squad down the DRN curve.</p>
 <p>The strategic conclusion is not as simple as “buy morale.” The army needs a controlled way to fail. Squads can be divided so that one rout stays local. Command can be duplicated. Valuable troops can be kept from taking the first casualty threshold. Fear can be attacked at its source. Retreat provinces can be preserved so a rout displaces the army instead of destroying it.</p>
 <p>The strongest armies are not those that never fail a morale check. Random rolls and extreme effects make that impossible. They are armies whose first failure does not automatically become total defeat.</p>
-<h2 id="b4-essay-ii-fatigue-the-hidden-battle-economy">Essay II: Fatigue, the Hidden Battle Economy<a class="heading-link" href="#b4-essay-ii-fatigue-the-hidden-battle-economy" aria-label="Link to Essay II: Fatigue, the Hidden Battle Economy">#</a></h2><p>Gold buys the unit and resources equip it, but fatigue determines how long the purchased statistics remain real.</p>
+<h2 id="b4-essay-ii-fatigue-the-hidden-battle-economy">Essay II: Fatigue, the Hidden Battle Economy<a class="heading-link" href="#b4-essay-ii-fatigue-the-hidden-battle-economy" aria-label="Link to Essay II: Fatigue, the Hidden Battle Economy">#</a></h2>
+<p>Gold buys the unit and resources equip it, but fatigue determines how long the purchased statistics remain real.</p>
 <p>A fresh high-Defence unit can look nearly untouchable. Every ten fatigue removes one Defence. Directed attacks add harassment. At fifty fatigue, the same body suffers five less Defence and a broader range of armour-defeating protection results. At one hundred it falls unconscious. The transition is not gradual in battlefield effect: a stable formation can appear to hold, then collapse rapidly as many members cross the same thresholds.</p>
 <p>Fatigue also binds ordinary troops and mages into one system. Heavy armour protects a caster from arrows but charges twice its armour Encumbrance on every spell. A trampler destroys light infantry but pays for movement and trampling. A berserker produces more offence but continues accumulating cost. Fire, cold, shock, bleeding, and spell effects can attack the fatigue stock even when direct HP damage is unimpressive.</p>
 <p>This makes time a resource. A cheap screen may buy three rounds for buffs, or force the enemy to spend three rounds attacking and building Encumbrance fatigue. A resistant line does not need an immediate kill if every exchange makes the next one more favourable. Reinvigoration does more than extend endurance; it preserves Attack, Defence, casting, and the reliability of protection.</p>
 <p>A proper comparison between two units includes their fatigue over time. “Who wins the first attack?” is often less important than “Who still has a functioning stat line on the tenth?”</p>
-<h2 id="b4-essay-iii-formation-is-the-management-of-time">Essay III: Formation Is the Management of Time<a class="heading-link" href="#b4-essay-iii-formation-is-the-management-of-time" aria-label="Link to Essay III: Formation Is the Management of Time">#</a></h2><p>Formation appears spatial, but its principal strategic effect is temporal. It decides how many bodies enter contact now, how many wait, which square receives area damage, how long replacements take to arrive, and when a fast unit becomes trapped behind a slow one.</p>
+<h2 id="b4-essay-iii-formation-is-the-management-of-time">Essay III: Formation Is the Management of Time<a class="heading-link" href="#b4-essay-iii-formation-is-the-management-of-time" aria-label="Link to Essay III: Formation Is the Management of Time">#</a></h2>
+<p>Formation appears spatial, but its principal strategic effect is temporal. It decides how many bodies enter contact now, how many wait, which square receives area damage, how long replacements take to arrive, and when a fast unit becomes trapped behind a slow one.</p>
 <p>A line spends frontage early. It seeks simultaneous contact and converts many weapons into immediate checks. A box stores bodies behind the first rank. It may accept less initial damage output in exchange for depth and protection of the centre. A sparse line spreads risk and coverage but pays morale and density costs. A skirmish pattern gives each square room yet can allow enemies to penetrate or surround.</p>
 <p>Placement adds another time instruction. Forward deployment advances the squad’s personal clock. Hold adds two rounds. Combat speed changes travel and cooldown. The enemy’s placement changes the actual meeting point. The resulting schedule determines whether a buff precedes contact, whether arrows receive three volleys or one, and whether a finisher arrives against fresh or fatigued targets.</p>
 <p>This is why copying a formation without copying its purpose fails. “Put infantry in a line” is not a rule. A line is correct when early frontage is worth more than depth and clustering risk. “Put mages at the rear” is incomplete. The rear can be exposed to flyers, and excessive distance can place spells out of range.</p>
 <p>Formation is best designed as a timeline: first contact, second contact, decisive effect, expected rout. The map is the clock face.</p>
-<h2 id="b4-essay-iv-protection-is-a-probability-distribution">Essay IV: Protection Is a Probability Distribution<a class="heading-link" href="#b4-essay-iv-protection-is-a-probability-distribution" aria-label="Link to Essay IV: Protection Is a Probability Distribution">#</a></h2><p>Protection is often treated as subtraction: damage fifteen against protection twenty should do nothing. Dominions instead rolls both sides, permits open-ended results, distinguishes body and head, applies weapon types, includes shield hits, and allows low protection rolls to become armour defeating.</p>
+<h2 id="b4-essay-iv-protection-is-a-probability-distribution">Essay IV: Protection Is a Probability Distribution<a class="heading-link" href="#b4-essay-iv-protection-is-a-probability-distribution" aria-label="Link to Essay IV: Protection Is a Probability Distribution">#</a></h2>
+<p>Protection is often treated as subtraction: damage fifteen against protection twenty should do nothing. Dominions instead rolls both sides, permits open-ended results, distinguishes body and head, applies weapon types, includes shield hits, and allows low protection rolls to become armour defeating.</p>
 <p>Protection changes the damage distribution. It reduces ordinary damage and makes severe results rarer, but it does not create a hard wall. The tail can still contain clean shield bypasses, head hits, high damage rolls, armour-piercing reductions, and armour defeat caused by fatigue.</p>
 <p>This perspective improves both defence and offence. Adding protection to an already protected unit may still matter if it removes many ordinary wounds and their affliction chances. Against that unit, a large number of weak attacks may be poor at direct damage but valuable for harassment and fatigue. A smaller number of armour-negating attacks may attack the correct layer but fail if their delivery is unreliable.</p>
 <p>The important question becomes: which part of the distribution must change? If ordinary hits are killing the line, more protection or shields may work. If rare head hits kill expensive sacreds, helmet coverage, Luck, body count, or regeneration may matter. If fatigue is widening the armour-defeating tail, reinvigoration may preserve effective protection better than another armour point.</p>
 <p>The defence layer is never just the number printed beside the shield icon.</p>
-<h2 id="b4-essay-v-scripting-under-uncertainty">Essay V: Scripting under Uncertainty<a class="heading-link" href="#b4-essay-v-scripting-under-uncertainty" aria-label="Link to Essay V: Scripting under Uncertainty">#</a></h2><p>A Dominions script is neither direct control nor a prophecy. It is a commitment made before seeing exact enemy deployment and resolved through range, targets, pathing, fatigue, damage, and AI fallback.</p>
+<h2 id="b4-essay-v-scripting-under-uncertainty">Essay V: Scripting under Uncertainty<a class="heading-link" href="#b4-essay-v-scripting-under-uncertainty" aria-label="Link to Essay V: Scripting under Uncertainty">#</a></h2>
+<p>A Dominions script is neither direct control nor a prophecy. It is a commitment made before seeing exact enemy deployment and resolved through range, targets, pathing, fatigue, damage, and AI fallback.</p>
 <p>This makes scripting a form of robust planning. A brittle script succeeds brilliantly in one anticipated battle and fails when the enemy deploys one formation-width away. A robust script may sacrifice theoretical perfection to retain useful behaviour across several plausible enemy plans.</p>
 <p>Robustness begins with dependencies. If spell four requires spell one to boost a path, the caster must survive the preparation time, spend the correct fatigue, and still have a legal target. If a screen must hold for three rounds, its morale and matchup must support that duration. If a flier must kill commanders, the path must remain open and the flier must ignore irrelevant rear targets.</p>
 <p>Failure branches should be written deliberately. When the target is absent, what will the AI cast? When the caster is interrupted, does the army still have resistance? When the enemy holds, do friendly damage spells fire into empty space or remain useful? After five orders, does the mage stay safe?</p>
 <p>The ideal script is not the one with the most exact sequence. It is the one whose likely deviations remain acceptable.</p>
-<h2 id="b4-essay-vi-winning-the-battle-saving-the-army">Essay VI: Winning the Battle, Saving the Army<a class="heading-link" href="#b4-essay-vi-winning-the-battle-saving-the-army" aria-label="Link to Essay VI: Winning the Battle, Saving the Army">#</a></h2><p>Field victory is one event in a campaign. The surviving commanders, mages, mounts, gems, afflictions, and retreat routes determine whether the event creates lasting advantage.</p>
+<h2 id="b4-essay-vi-winning-the-battle-saving-the-army">Essay VI: Winning the Battle, Saving the Army<a class="heading-link" href="#b4-essay-vi-winning-the-battle-saving-the-army" aria-label="Link to Essay VI: Winning the Battle, Saving the Army">#</a></h2>
+<p>Field victory is one event in a campaign. The surviving commanders, mages, mounts, gems, afflictions, and retreat routes determine whether the event creates lasting advantage.</p>
 <p>An army that wins with its commanders dead can become stranded or badly organised. A force that routs into friendly territory may remain a strategic asset. A cavalry army can retain riders while losing mounts and tempo. Poison and bleeding can kill units after their visible escape. A failed fort defence can annihilate every unit that had nowhere to retreat.</p>
 <p>Preservation begins before battle. Friendly adjacent provinces are part of army design. Command redundancy protects against battlefield collapse and the reorganisation that follows. Gem expenditure should reflect the value at risk. A commander carrying a laboratory’s worth of gems is a caster and a moving treasury.</p>
 <p>There are moments when preservation should be sacrificed. Destroying a unique enemy global caster, breaking a throne defence, or exhausting the only relief army may justify severe losses. The decision should be explicit. “The replay said victory” is not a strategic valuation.</p>
 <p>The useful post-battle question is: how much future action did this result purchase? Provinces, siege turns, mage survival, research continuity, and readiness belong in the answer.</p>
-<h2 id="b4-essay-vii-combined-arms-as-counter-architecture">Essay VII: Combined Arms as Counter Architecture<a class="heading-link" href="#b4-essay-vii-combined-arms-as-counter-architecture" aria-label="Link to Essay VII: Combined Arms as Counter Architecture">#</a></h2><p>Combined arms is sometimes described as variety for its own sake. In Dominions it is better understood as a set of linked answers to layered defences.</p>
+<h2 id="b4-essay-vii-combined-arms-as-counter-architecture">Essay VII: Combined Arms as Counter Architecture<a class="heading-link" href="#b4-essay-vii-combined-arms-as-counter-architecture" aria-label="Link to Essay VII: Combined Arms as Counter Architecture">#</a></h2>
+<p>Combined arms is sometimes described as variety for its own sake. In Dominions it is better understood as a set of linked answers to layered defences.</p>
 <p>A conventional line may hold space but fail against heavy armour. Mages may negate armour but require time and protection. Archers may interrupt the enemy’s mages but fail against shields. Flyers may threaten command but need the centre fixed in place. Fear may rout ordinary troops but do little to mindless bodies. Each component covers a failure mode of another.</p>
 <p>Combined arms works when every component follows the same timing plan. A screen that dies before the debuff resolves has not supported the mage. A flanker that arrives before the centre engages can be surrounded. An armour-breaking effect cast after the damage line routs is irrelevant.</p>
 <p>Combined arms also imposes organisational costs: more commander types, more scripts, more recruitment gates, more research branches, and more ways to misdeploy. Variety becomes strength only when every component has a named job and a dependency it satisfies.</p>
 <p>The aim is not maximum variety. We want the smallest useful combination: enough distinct mechanisms to answer the expected defences, all delivered on one coherent clock.</p>
-<h1 id="b4-sources-and-open-questions">Sources and Open Questions<a class="heading-link" href="#b4-sources-and-open-questions" aria-label="Link to Sources and Open Questions">#</a></h1><h2 id="b4-principal-sources">Principal sources<a class="heading-link" href="#b4-principal-sources" aria-label="Link to Principal sources">#</a></h2><ul>
+<h1 id="b4-sources-and-open-questions">Sources and Open Questions<a class="heading-link" href="#b4-sources-and-open-questions" aria-label="Link to Sources and Open Questions">#</a></h1>
+<h2 id="b4-principal-sources">Principal sources<a class="heading-link" href="#b4-principal-sources" aria-label="Link to Principal sources">#</a></h2>
+<ul>
 <li>Illwinter, <em>Dominions 6 Manual</em>, revision 2, especially the statistics, special abilities, Army Setup, Combat, afflictions, sieges, retreats, and Battle Magic sections.</li>
 <li>Illwinter, <em>Dominions 6 Modding Manual</em>, version 6.34.</li>
-<li><a href="https://www.illwinter.com/dom6/docs.html" target="_blank" rel="noreferrer">Illwinter Dominions 6 documentation</a>.</li>
-<li><a href="https://www.illwinter.com/dom6/changes.html" target="_blank" rel="noreferrer">Illwinter Dominions 6 changes</a>.</li>
-<li><a href="https://store.steampowered.com/app/2511500/Dominions_6__Rise_of_the_Pantokrator/" target="_blank" rel="noreferrer">Dominions 6 official Steam page</a>.</li>
+<li><a href="https://www.illwinter.com/dom6/docs.html">Illwinter Dominions 6 documentation</a>.</li>
+<li><a href="https://www.illwinter.com/dom6/changes.html">Illwinter Dominions 6 changes</a>.</li>
+<li><a href="https://store.steampowered.com/app/2511500/Dominions_6__Rise_of_the_Pantokrator/">Dominions 6 official Steam page</a>.</li>
 <li>Supplied <code>DomEnhanced2_16.dm</code>.</li>
 <li>Supplied <code>Divinitus_1.15.3_DE.dm</code>.</li>
 </ul>
 <p>Current community references are used to identify test questions and terminology, not to override the manual or current official corrections without evidence.</p>
-<h2 id="b4-open-questions">Open questions<a class="heading-link" href="#b4-open-questions" aria-label="Link to Open questions">#</a></h2><p>The following still require controlled current-game tests:</p>
+<h2 id="b4-open-questions">Open questions<a class="heading-link" href="#b4-open-questions" aria-label="Link to Open questions">#</a></h2>
+<p>The following still require controlled current-game tests:</p>
 <ul>
 <li>exact harassment decay;</li>
 <li>complete cooldown constants;</li>
 <li>Formation Fighter capacity at every value and mixed size;</li>
-<li>the exact survivor bonus in morale checks;</li>
-<li>active-unit fatigue recovery outside the manual’s explicit unconscious rule;</li>
+<li>current-version reproduction of the survivor-bonus rounding boundaries and commander handling;</li>
+<li>frame-by-frame current-version confirmation of active-unit fatigue recovery outside the manual’s explicit unconscious rule;</li>
 <li>some obstacle and targeting weights;</li>
 <li>full mounted carry and movement arithmetic;</li>
 <li>precise current rounding in shield damage, regeneration, paralysis, and several special effects;</li>
@@ -2357,7 +2640,7 @@ casting encumbrance
         <a href="/dominions/library/">Complete library</a>
         <a href="/dominions/library/glossary/">Glossary</a>
         <a href="/dominions/library/research/">Research register</a>
-        <a href="/downloads/dominions-6-knowledge-library-edition-26/">Edition 26 PDF</a>
+        <a href="/downloads/dominions-6-knowledge-library-edition-27/">Edition 27 PDF</a>
       </nav>
     </aside>
   </div>

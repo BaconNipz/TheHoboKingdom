@@ -4,7 +4,7 @@ description: "A structured reference layer for spells, items, summons, sites, Th
 nav_section: guides
 extra_css: /assets/dominions-library.css
 extra_js: /assets/dominions-library.js
-og_image: /assets/images/dominions-6-library-edition-26.png
+og_image: /assets/images/dominions-6-library-edition-27.png
 ---
 
 <section class="page-hero library-page-hero">
@@ -14,13 +14,13 @@ og_image: /assets/images/dominions-6-library-edition-26.png
       <a href="/dominions/library/">Knowledge Library</a><span aria-hidden="true">/</span>
       <span>Foundation Book XII</span>
     </div>
-    <p class="eyebrow">Progress Edition 26</p>
+    <p class="eyebrow">Progress Edition 27</p>
     <h1>Foundation Book XII: Base-Game Objects and the Searchable Reference Layer</h1>
     <p class="lead">A structured reference layer for spells, items, summons, sites, Thrones, mercenaries, Pretenders, and other base objects.</p>
     <div class="meta-row">
       <span class="status status--stable">Published reference</span>
       <span class="meta-chip">Dominions 6.36</span>
-      <span class="meta-chip">8,675 words</span>
+      <span class="meta-chip">8,672 words</span>
       <span class="meta-chip">95 sections</span>
     </div>
   </div>
@@ -586,11 +586,11 @@ og_image: /assets/images/dominions-6-library-edition-26.png
 <tr class="even">
 <td>Negative monster tag</td>
 <td>Engine chooses from a tagged group</td>
-<td>Current tag name is recorded where the pinned table defines it; exact weighted membership remains separate</td>
+<td>Raw selector is retained and marked unresolved unless the current table is known</td>
 </tr>
 </tbody>
 </table>
-<p>The first build had twenty-five selection-based relations without a complete explanation. Edition 25 resolves one through the Inspector’s fixed Dwarf table and names the monster-tag selector for eighteen more. These include Longdead, Soulless, Random Bug, Random Animal, Ghoul, Lesser Horror, and Horror. The pinned export still does not expose their complete weighted unit membership, so it records the selector without inventing candidate odds. Six relations remain genuinely unresolved: five use raw selector -26 and one uses -18, neither of which appears in the pinned monster-tag or fixed-summon tables.</p>
+<p>The first build had twenty-five selection-based relations without a complete explanation. Edition 25 resolves one through the Inspector’s fixed Dwarf table and names the monster-tag selector for eighteen more. These include Longdead, Soulless, Random Bug, Random Animal, Ghoul, Lesser Horror, and Horror. The pinned export still does not expose their complete weighted unit membership, so it records the selector without inventing candidate odds. Six relations remain genuinely unresolved: five use raw selector <code>-26</code> and one uses <code>-18</code>, neither of which appears in the pinned monster-tag or fixed-summon tables.</p>
 <h2 id="b12-26-quantity-and-scaling">26. Quantity and scaling<a class="heading-link" href="#b12-26-quantity-and-scaling" aria-label="Link to 26. Quantity and scaling">#</a></h2>
 <p>The source carries an extracted effect count, but exact quantity can also depend on caster level, special effect rules, random selection, terrain, or a chained effect. The first register preserves the raw count and target relationship without converting every case into a prose formula.</p>
 <p>A later verified quantity layer should distinguish:</p>
@@ -1301,8 +1301,8 @@ og_image: /assets/images/dominions-6-library-edition-26.png
 <li><code>website/base-object-register.json</code> - 4,196 versioned records plus realm expansion, selector records, and property-label provenance.</li>
 <li><code>website/base-object-register.schema.json</code> - publication contract.</li>
 <li><code>tools/build_base_object_register.py</code> - pinned, reproducible importer.</li>
-<li><code>37-edition-25-object-layer-maintenance.md</code> - Edition 25 evidence and validation record.</li>
 <li><code>18-foundation-coverage-gap-audit.md</code> - ownership and G-03 definition.</li>
+<li><code>37-edition-25-object-layer-maintenance.md</code> - Edition 25 evidence and validation record.</li>
 <li>Book III - canonical Pretender and special-dominion rules.</li>
 <li>Book V - canonical magic, research, ritual, and forging method.</li>
 <li>Book VI - canonical Throne, mercenary, and campaign strategy.</li>
@@ -1394,7 +1394,7 @@ og_image: /assets/images/dominions-6-library-edition-26.png
         <a href="/dominions/library/">Complete library</a>
         <a href="/dominions/library/glossary/">Glossary</a>
         <a href="/dominions/library/research/">Research register</a>
-        <a href="/downloads/dominions-6-knowledge-library-edition-26/">Edition 26 PDF</a>
+        <a href="/downloads/dominions-6-knowledge-library-edition-27/">Edition 27 PDF</a>
       </nav>
     </aside>
   </div>

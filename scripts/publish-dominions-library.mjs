@@ -10,9 +10,9 @@ const publicationMetadata = Object.fromEntries(
     .filter(Boolean)
     .map((match) => [match[1], match[2]]),
 );
-// Edition 26 updated the complete PDF. The website reference layer is still
-// generated from the last complete structured corpus, retained under edition-25.
-const sourceRoot = path.join(repositoryRoot, "docs", "dominions-library-source", "edition-25", "generated");
+// The public reader and its structured data are generated from the matching
+// complete Edition 27 corpus retained in the repository.
+const sourceRoot = path.join(repositoryRoot, "docs", "dominions-library-source", "edition-27", "generated");
 const libraryRoot = path.join(repositoryRoot, "dominions", "library");
 const bookRoot = path.join(libraryRoot, "books");
 const dataRoot = path.join(libraryRoot, "data");
@@ -61,7 +61,7 @@ const blurbs = {
   b4: "Army organisation, formations, attacks, protection, morale, fatigue, magic, afflictions, and battle analysis.",
   b5: "Research planning, paths, gems, rituals, forging, communions, blood magic, globals, and magical logistics.",
   b6: "Expansion, tempo, intelligence, movement, raiding, sieges, diplomacy, Thrones, and campaign decision-making.",
-  b7: "A framework for understanding nations without reducing them to a single build or opening script.",
+  b7: "A reproducible nation-dossier method with full Middle Age Arcoscephale, Marignon, and Pyrène chapters.",
   b8: "The mod parser, object identity, commands, events, compatibility, validation, and release engineering.",
   b9: "A separate rules and compatibility reference for Dominions Enhanced 2.16 and Divinitus 1.15.3 DE.",
   b10: "Installation, game creation, interface use, turn submission, multiplayer hosting, recovery, and administration.",
@@ -186,7 +186,7 @@ const landing = `${frontMatter("Dominions 6 Knowledge Library", "My searchable, 
 </section>
 
 <section class="section shell library-section">
-  <div class="library-search-panel" data-library-search data-index-url="/dominions/library/data/search-index.json.gz">
+  <div class="library-search-panel" data-library-search data-index-url="/dominions/library/data/search-index.index.json">
     <div>
       <p class="eyebrow">Search the full collection</p>
       <h2>Search for the rule you need.</h2>
@@ -220,6 +220,8 @@ const landing = `${frontMatter("Dominions 6 Knowledge Library", "My searchable, 
     <article class="library-tool-card"><h3>Research register</h3><p>57 verification questions with priorities, status, importance, and the most reliable route to an answer.</p><a class="button button--quiet" href="/dominions/library/research/">Open the register</a></article>
     <article class="library-tool-card"><h3>Field toolkit</h3><p>Eighteen tools cover pinned base-game records, nations, Pretenders, economy, recruitment, magic, battle plans, turns, diplomacy, research, reading progress, multiplayer records, and Throne victories.</p><a class="button button--quiet" href="/dominions/tools/">Open the tools</a></article>
     <article class="library-tool-card"><h3>Edition ${editionNumber} PDF</h3><p>The complete ${pdfPageCount}-page library for offline reading, archiving, printing, or sharing outside the website.</p><a class="button button--quiet" href="${pdfDownload}">Download the PDF</a></article>
+    <article class="library-tool-card"><h3>MA Marignon dossier</h3><p>A compact nine-page field guide to Fiery Justice: roster, paths, opening priorities, research, battlefield packages, Pretenders, and matchups.</p><a class="button button--quiet" href="/downloads/dominions-6-ma-marignon-nation-dossier-edition-27.pdf">Download the dossier</a></article>
+    <article class="library-tool-card"><h3>MA Pyrène dossier</h3><p>A compact nine-page field guide to the Time of the Akelarre: recruitment geography, magic, Blood economy, force packages, and counters.</p><a class="button button--quiet" href="/downloads/dominions-6-ma-pyrene-nation-dossier-edition-27.pdf">Download the dossier</a></article>
   </div>
 
   <div class="library-heading" id="complete-shelf">

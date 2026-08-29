@@ -59,7 +59,7 @@ for (const category of ["spell", "item", "unit", "pretender", "summon", "site", 
 
 const manifestSections = manifest.documents.reduce((total, document) => total + document.sectionCount, 0);
 if (manifest.documents.length !== 16) failures.push(`Library manifest has ${manifest.documents.length} documents instead of 16`);
-if (manifestSections !== 2466) failures.push(`Library manifest has ${manifestSections} sections instead of 2,466`);
+if (manifestSections !== 2524) failures.push(`Library manifest has ${manifestSections} sections instead of 2,524`);
 
 if (failures.length) {
   console.error("Toolkit integrity failures:");
