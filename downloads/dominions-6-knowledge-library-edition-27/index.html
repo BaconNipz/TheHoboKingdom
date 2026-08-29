@@ -33,6 +33,29 @@ og_image: /assets/images/dominions-6-library-edition-27.png
       <div class="notice">
         <p><strong>Integrity:</strong> SHA-256 <code>{{ site.data.dominions_library.sha256 }}</code>.</p>
       </div>
+
+      <h2 id="smaller-readers">Choose a smaller reader</h2>
+      <p>The 807-page omnibus remains the master edition. These four files divide the same release into practical reading volumes without removing the evidence notes or open questions.</p>
+      <div class="link-list">
+        {% for reader in site.data.dominions_library.split_readers %}
+        <a class="link-card" href="{{ reader.url | relative_url }}">
+          <span>
+            <strong>{{ reader.title }}</strong>
+            <small>{{ reader.description }} {{ reader.pages }} pages · {{ reader.size }}.</small>
+          </span>
+          <span aria-hidden="true">PDF</span>
+        </a>
+        {% endfor %}
+      </div>
+
+      <div class="notice">
+        <p><strong>Split-reader integrity:</strong></p>
+        <ul>
+          {% for reader in site.data.dominions_library.split_readers %}
+          <li>{{ reader.title }}: <code>{{ reader.sha256 }}</code></li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
     <aside class="sidebar">
       <h2>Continue reading online</h2>
@@ -41,6 +64,7 @@ og_image: /assets/images/dominions-6-library-edition-27.png
         <a href="{{ '/dominions/library/books/book-vii/' | relative_url }}">Book VII nation dossiers</a>
         <a href="{{ '/downloads/dominions-6-ma-marignon-nation-dossier-edition-27.pdf' | relative_url }}">MA Marignon dossier</a>
         <a href="{{ '/downloads/dominions-6-ma-pyrene-nation-dossier-edition-27.pdf' | relative_url }}">MA Pyrène dossier</a>
+        <a href="{{ '/downloads/dominions-6-turn-and-economy-quick-reference-edition-27.pdf' | relative_url }}">Quick reference</a>
         <a href="{{ '/dominions/library/research/' | relative_url }}">Research register</a>
       </nav>
     </aside>

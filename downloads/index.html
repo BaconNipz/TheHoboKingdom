@@ -34,6 +34,16 @@ nav_section: downloads
         </a>
       </div>
 
+      <h2>Edition 27 companion readers</h2>
+      <div class="link-list">
+        {% for reader in site.data.dominions_library.split_readers %}
+        <a class="link-card" href="{{ reader.url | relative_url }}">
+          <span><strong>{{ reader.title }}</strong><small>{{ reader.description }} {{ reader.pages }} pages · {{ reader.size }}.</small></span>
+          <span aria-hidden="true">PDF</span>
+        </a>
+        {% endfor %}
+      </div>
+
       <h2>Previous edition</h2>
       <div class="link-list">
         <a class="link-card" href="{{ '/downloads/dominions-6-knowledge-library-edition-26/' | relative_url }}">
