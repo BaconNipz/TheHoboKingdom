@@ -1,0 +1,33 @@
+edition: 27
+updated: 31 August 2026
+total_nations: 102
+completed:
+  - age: middle
+    age_label: Middle Age
+    slug: arcoscephale
+    name: "Arcoscephale, The Old Kingdom"
+    subtitle: "The Old Kingdom"
+    web_url: /dominions/library/books/book-vii/#b7-part-ii-middle-age-arcoscephale-the-old-kingdom
+    pdf_url: /downloads/dominions-6-middle-age-nation-compendium-volume-1-edition-27.pdf
+    pdf_label: Volume I PDF
+    ruleset: "Base game, Dominions Enhanced 2.16, and Divinitus 1.15.3 DE"
+  - age: middle
+    age_label: Middle Age
+    slug: marignon
+    name: "Marignon, Fiery Justice"
+    subtitle: "Fiery Justice"
+    web_url: /dominions/library/books/book-vii/#b7-part-xvi-middle-age-marignon-fiery-justice
+    pdf_url: /downloads/dominions-6-ma-marignon-nation-dossier-edition-27.pdf
+    pdf_label: Standalone PDF
+    ruleset: "Unmodded Dominions 6"
+  - age: middle
+    age_label: Middle Age
+    slug: pyrene
+    name: "Pyrène, Time of the Akelarre"
+    subtitle: "Time of the Akelarre"
+    web_url: /dominions/library/books/book-vii/#b7-part-xvii-middle-age-pyrene-time-of-the-akelarre
+    pdf_url: /downloads/dominions-6-ma-pyrene-nation-dossier-edition-27.pdf
+    pdf_label: Standalone PDF
+    ruleset: "Unmodded Dominions 6"
+in_progress: []
+next_batch: "The next Middle Age batch has not been named yet. A nation remains an official-summary entry until its full dossier is finished and published."

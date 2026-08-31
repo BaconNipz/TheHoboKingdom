@@ -4,6 +4,11 @@ description: Browse the official Dominions 6 nations in the Early, Middle, and L
 nav_section: projects
 ---
 
+{% assign completed_dossiers = site.data.dominions_dossiers.completed %}
+{% assign early_dossiers = completed_dossiers | where: 'age', 'early' %}
+{% assign middle_dossiers = completed_dossiers | where: 'age', 'middle' %}
+{% assign late_dossiers = completed_dossiers | where: 'age', 'late' %}
+
 <section class="page-hero">
   <div class="shell">
     <div class="breadcrumbs">
@@ -19,7 +24,8 @@ nav_section: projects
     <div class="meta-row">
       <span class="status status--stable">Official manual</span>
       <span class="meta-chip">Manual revision 2</span>
-      <span class="meta-chip">Updated 2 August 2026</span>
+      <span class="meta-chip">{{ completed_dossiers.size }} full dossiers</span>
+      <span class="meta-chip">Updated {{ site.data.dominions_dossiers.updated }}</span>
     </div>
     <div class="content-badges"><span class="content-badge content-badge--official">Official-manual catalogue</span></div>
   </div>
@@ -52,6 +58,40 @@ nav_section: projects
         </a>
       </div>
 
+      <h2 id="dossier-progress">Nation dossier progress</h2>
+      <p>The catalogue covers every official nation, but a short manual summary is not the same thing as a full dossier. The count below only moves when the roster, magic access, opening, research, army packages, Pretender choices, matchups, and evidence record have actually been published.</p>
+
+      <div class="dossier-progress" aria-labelledby="dossier-progress">
+        <div class="dossier-progress-heading">
+          <strong>{{ completed_dossiers.size }} of {{ site.data.dominions_dossiers.total_nations }} complete</strong>
+          <span>Edition {{ site.data.dominions_dossiers.edition }}</span>
+        </div>
+        <progress value="{{ completed_dossiers.size }}" max="{{ site.data.dominions_dossiers.total_nations }}">{{ completed_dossiers.size }} of {{ site.data.dominions_dossiers.total_nations }}</progress>
+        <div class="dossier-age-counts">
+          <span>Early Age <strong>{{ early_dossiers.size }} / {{ site.data.dominions_nations.early.size }}</strong></span>
+          <span>Middle Age <strong>{{ middle_dossiers.size }} / {{ site.data.dominions_nations.middle.size }}</strong></span>
+          <span>Late Age <strong>{{ late_dossiers.size }} / {{ site.data.dominions_nations.late.size }}</strong></span>
+        </div>
+      </div>
+
+      <div class="dossier-list">
+        {% for dossier in completed_dossiers %}
+        <article>
+          <span class="content-badge content-badge--tested">Full dossier</span>
+          <h3>{{ dossier.age_label }} {{ dossier.name }}</h3>
+          <p>{{ dossier.ruleset }}</p>
+          <div class="nation-card-links">
+            <a href="{{ dossier.web_url | relative_url }}">Read on the site</a>
+            <a href="{{ dossier.pdf_url | relative_url }}">{{ dossier.pdf_label }}</a>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+
+      <div class="notice">
+        <p><strong>Next batch:</strong> {{ site.data.dominions_dossiers.next_batch }}</p>
+      </div>
+
       <h2>Source</h2>
       <div class="notice">
         <p>The nation names, titles, and page numbers come from the Nation Index in Illwinter's <a href="https://www.illwinter.com/dom6/dom6manual.pdf">Dominions 6 manual, revision 2</a>. I have shortened each official introduction into a catalogue summary.</p>
@@ -64,6 +104,8 @@ nav_section: projects
         <a href="{{ '/dominions/nations/early-age/' | relative_url }}">Early Age</a>
         <a href="{{ '/dominions/nations/middle-age/' | relative_url }}">Middle Age</a>
         <a href="{{ '/dominions/nations/late-age/' | relative_url }}">Late Age</a>
+        <a href="#dossier-progress">Dossier progress</a>
+        <a href="{{ '/dominions/library/books/book-vii/' | relative_url }}">Nation dossier book</a>
         <a href="{{ '/dominions/guides/first-game-and-hosting/' | relative_url }}">Starting a game</a>
         <a href="{{ '/dominions/' | relative_url }}">Dominions hub</a>
       </nav>

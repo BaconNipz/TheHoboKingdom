@@ -1,6 +1,6 @@
 ---
 title: Search
-description: Search TheHoboKingdom projects, guides, tools, downloads, and every indexed section of the Dominions 6 Knowledge Library.
+description: Search TheHoboKingdom projects, guides, tools, downloads, every indexed Dominions 6 Library section, and the complete base-game reference catalogue.
 nav_section: search
 extra_js: /assets/site-search.js
 ---
@@ -9,15 +9,15 @@ extra_js: /assets/site-search.js
   <div class="shell">
     <p class="eyebrow">Search the site</p>
     <h1>Find the page without digging through the menus.</h1>
-    <p class="lead">This searches the main site and all {{ site.data.dominions_library.website_section_count }} indexed sections in the Dominions 6 Knowledge Library.</p>
+    <p class="lead">This searches the main site, all {{ site.data.dominions_library.website_section_count }} indexed Library sections, and all 5,340 records in the Dominions 6 base-game catalogue.</p>
   </div>
 </section>
 
-<section class="section shell" data-site-search data-library-index-url="{{ '/dominions/library/data/search-index.index.json' | relative_url }}">
+<section class="section shell" data-site-search data-library-index-url="{{ '/dominions/library/data/search-index.index.json' | relative_url }}" data-reference-catalogue-url="{{ '/dominions/tools/reference/data/catalogue.json.gz' | relative_url }}">
   <div class="search-controls">
     <label class="search-query">
       <span>Search words</span>
-      <input type="search" data-site-search-query placeholder="Try AURA, fatigue, modpack, StalkerNet…" autocomplete="off">
+      <input type="search" data-site-search-query placeholder="Try Fireball, fatigue, AURA, or ID 272…" autocomplete="off">
     </label>
     <label>
       <span>Project</span>
@@ -31,11 +31,26 @@ extra_js: /assets/site-search.js
       <span>Type</span>
       <select data-site-search-type>
         <option value="all">All types</option>
+        <option value="Reference record">Reference records</option>
         {% assign types = site.data.search | map: 'type' | uniq | sort %}
         {% for type in types %}<option value="{{ type | escape }}">{{ type }}</option>{% endfor %}
       </select>
     </label>
   </div>
+
+  <p class="search-shortcut">Press <kbd>/</kbd> or <kbd>Ctrl</kbd> + <kbd>K</kbd> to open search from anywhere on the site.</p>
+
+  <details class="search-refine" data-reference-filter-panel>
+    <summary>Filter the Dominions base-game records</summary>
+    <div class="search-reference-controls">
+      <label><span>Record type</span><select data-reference-search-category><option value="">All record types</option><option value="spell">Spells</option><option value="item">Magic items</option><option value="unit">Referenced units</option><option value="pretender">Pretender forms</option><option value="summon">Summon relations</option><option value="site">Magic sites</option><option value="throne">Thrones</option><option value="mercenary">Mercenary companies</option></select></label>
+      <label><span>Magic path</span><select data-reference-search-path><option value="">All paths</option><option value="F">Fire</option><option value="A">Air</option><option value="W">Water</option><option value="E">Earth</option><option value="S">Astral</option><option value="D">Death</option><option value="N">Nature</option><option value="G">Glamour</option><option value="B">Blood</option><option value="H">Holy</option></select></label>
+      <label><span>Research school</span><select data-reference-search-school><option value="">All schools</option><option value="Conjuration">Conjuration</option><option value="Alteration">Alteration</option><option value="Evocation">Evocation</option><option value="Construction">Construction</option><option value="Enchantment">Enchantment</option><option value="Thaumaturgy">Thaumaturgy</option><option value="Blood">Blood</option><option value="Divine">Divine</option><option value="Unresearchable">Unresearchable</option></select></label>
+      <label><span>Era availability</span><select data-reference-search-era><option value="">All or not era-bound</option><option value="EA">Early Age</option><option value="MA">Middle Age</option><option value="LA">Late Age</option></select></label>
+      <label><span>Evidence state</span><select data-reference-search-evidence><option value="">All evidence states</option><option value="source-confirmed">Source confirmed</option><option value="source-confirmed-reference">Confirmed reference</option><option value="source-confirmed-selection-group">Confirmed selection group</option><option value="source-confirmed-with-unresolved-selection">Confirmed with an unresolved selection</option></select></label>
+    </div>
+    <p>These filters only narrow the pinned vanilla catalogue. Library and main-site results remain separate, and modded records are not mixed into the base-game register.</p>
+  </details>
 
   <p class="search-count" data-site-search-count aria-live="polite">Showing every main-site entry.</p>
 
@@ -52,6 +67,13 @@ extra_js: /assets/site-search.js
     </article>
     {% endfor %}
   </div>
+
+  <div class="search-section-heading search-section-heading--reference">
+    <h2>Dominions 6 base-game records</h2>
+    <p>Spells, items, referenced units, Pretenders, summons, sites, Thrones, and mercenaries.</p>
+  </div>
+  <p class="search-library-status" data-reference-search-status aria-live="polite">Enter at least two characters or choose a record filter.</p>
+  <div class="search-result-list" data-reference-search-results></div>
 
   <div class="search-section-heading search-section-heading--library">
     <h2>Dominions 6 library sections</h2>

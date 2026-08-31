@@ -1,0 +1,8 @@
+{% assign project = include.project %}
+<section class="shell project-status-strip" aria-label="{{ project.title }} project status">
+  <dl>
+    <div><dt>Current phase</dt><dd>{{ project.phase }}</dd></div>
+    <div><dt>Next milestone</dt><dd>{{ project.next }}</dd></div>
+    <div><dt>Last public update</dt><dd>{{ project.updated }}</dd></div>
+  </dl>
+</section>

@@ -1,0 +1,56 @@
+---
+title: Local tool data
+description: Review, export, restore, and clear the records saved by TheHoboKingdom tools in the current browser.
+nav_section: tools
+extra_js: /assets/tool-data.js
+---
+
+<section class="page-hero tool-index-hero">
+  <div class="shell">
+    <div class="breadcrumbs"><a href="{{ '/tools/' | relative_url }}">Tools</a><span aria-hidden="true">/</span><span>Local data</span></div>
+    <p class="eyebrow">Browser-only backup centre</p>
+    <h1>See what is saved before changing devices.</h1>
+    <p class="lead">This page gathers the records saved by TheHoboKingdom tools in this browser. It can export them as one dated file or restore a previous backup without sending the contents to the site.</p>
+    <div class="meta-row">
+      <span class="status status--active">Local data only</span>
+      <span class="meta-chip">Bundle schema 1</span>
+      <span class="meta-chip">No account required</span>
+    </div>
+  </div>
+</section>
+
+<section class="section shell" data-tool-data-manager>
+  <div class="local-data-summary" aria-label="Local data summary">
+    <article><span>Saved areas</span><strong data-tool-data-count>Checking…</strong></article>
+    <article><span>Approximate size</span><strong data-tool-data-size>Checking…</strong></article>
+    <article><span>Last full export</span><strong data-tool-data-exported>Not recorded</strong></article>
+  </div>
+
+  <section class="local-data-actions" aria-labelledby="backup-heading">
+    <div>
+      <p class="eyebrow">Complete backup</p>
+      <h2 id="backup-heading">Move every saved record together.</h2>
+      <p>Export first, then keep the JSON file somewhere you control. Restoring in “empty areas only” mode will not overwrite a record already saved in this browser.</p>
+    </div>
+    <div class="local-data-controls">
+      <button class="button button--primary" type="button" data-tool-data-export>Export all saved data</button>
+      <label class="button button--quiet local-data-file">Choose a backup<input type="file" accept="application/json,.json" data-tool-data-import></label>
+      <label><span>Restore mode</span><select data-tool-data-mode><option value="missing">Fill empty areas only</option><option value="replace">Replace matching records</option></select></label>
+      <button class="button button--quiet" type="button" data-tool-data-restore disabled>Restore selected backup</button>
+    </div>
+    <p class="tool-status" data-tool-data-status aria-live="polite">No backup file selected.</p>
+    <div class="local-data-preview" data-tool-data-preview hidden></div>
+  </section>
+
+  <div class="section-heading local-data-heading">
+    <div><p class="eyebrow">This browser</p><h2>Recognised saved areas</h2></div>
+    <p>Each entry names its data format and last recorded save time.</p>
+  </div>
+  <div class="local-data-list" data-tool-data-records></div>
+
+  <div class="notice local-data-boundary">
+    <p><strong>Boundary:</strong> exported files may contain private multiplayer notes, agreements, player names, server details, or personal planning. The site never uploads the file, but anyone given the downloaded copy can read it.</p>
+  </div>
+
+  <noscript><div class="notice"><p>JavaScript is needed to inspect browser storage. The individual tools and any JSON files already exported remain unchanged.</p></div></noscript>
+</section>

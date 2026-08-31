@@ -55,6 +55,7 @@ const toolkitStorageLoad = (key) => {
 const toolkitStorageSave = (key, data, status) => {
   try {
     window.localStorage.setItem(key, JSON.stringify(data));
+    window.thkStorageMarkUpdated?.(key);
     status.textContent = "Saved in this browser.";
   } catch {
     status.textContent = "Browser storage is unavailable. Export the record before leaving this page.";
@@ -136,6 +137,7 @@ const toolkitWireRecord = ({
   root.querySelector("[data-record-clear]").addEventListener("click", async () => {
     if (!window.confirm("Clear this saved record from the current browser? Export it first if it may be needed later.")) return;
     window.localStorage.removeItem(storageKey);
+    window.thkStorageForget?.(storageKey);
     await reset();
     await build();
     output.textContent = "";

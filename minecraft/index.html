@@ -2,7 +2,10 @@
 title: Minecraft
 description: The Minecraft modpacks I build for our group, with installation notes, progression changes, and exact version records.
 nav_section: projects
+project_id: minecraft
 ---
+
+{% assign project_record = site.data.projects | where: 'id', page.project_id | first %}
 
 <section class="page-hero">
   <div class="shell">
@@ -15,14 +18,14 @@ nav_section: projects
     <h1>Minecraft</h1>
     <p class="lead">These are the large modpacks I put together for our group. They add a lot more to do, but Minecraft should still feel like Minecraft underneath it all.</p>
     <div class="meta-row">
-      <span class="status status--active">Active</span>
+      {% include project-meta.html project=project_record %}
       <span class="meta-chip">Forge</span>
       <span class="meta-chip">CurseForge</span>
       <span class="meta-chip">Modpacks</span>
-      <span class="meta-chip">Updated 27 August 2026</span>
     </div>
   </div>
 </section>
+{% include project-status.html project=project_record %}
 
 <section class="section shell">
   <div class="content-grid">

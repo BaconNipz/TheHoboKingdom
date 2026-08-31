@@ -169,6 +169,7 @@ if (buildSheet) {
     const data = Object.fromEntries(fields.map((field) => [field.name, field.value]));
     try {
       window.localStorage.setItem(storageKey, JSON.stringify(data));
+      window.thkStorageMarkUpdated?.(storageKey);
       status.textContent = "Saved in this browser.";
     } catch {
       status.textContent = "Browser storage is unavailable. The sheet can still be copied.";
@@ -194,6 +195,7 @@ if (buildSheet) {
     if (!window.confirm("Clear the saved build sheet on this device?")) return;
     fields.forEach((field) => { field.value = ""; });
     window.localStorage.removeItem(storageKey);
+    window.thkStorageForget?.(storageKey);
     output.textContent = "";
     status.textContent = "The saved sheet was cleared.";
   });
@@ -231,6 +233,7 @@ if (settingsForm) {
     const data = Object.fromEntries(fields.map((field) => [field.name, field.value]));
     try {
       window.localStorage.setItem(storageKey, JSON.stringify(data));
+      window.thkStorageMarkUpdated?.(storageKey);
       status.textContent = "Saved in this browser.";
     } catch {
       status.textContent = "Browser storage is unavailable. The record can still be copied.";
@@ -260,6 +263,7 @@ if (settingsForm) {
     if (!window.confirm("Clear the saved multiplayer settings on this device?")) return;
     settingsForm.reset();
     window.localStorage.removeItem(storageKey);
+    window.thkStorageForget?.(storageKey);
     output.textContent = "";
     status.textContent = "The saved settings record was cleared.";
   });
@@ -558,6 +562,7 @@ if (siteSearch) {
     };
     try {
       window.localStorage.setItem(storageKey, JSON.stringify(data));
+      window.thkStorageMarkUpdated?.(storageKey);
     } catch {
       status.textContent = "Browser storage is unavailable. The record can still be copied.";
     }
@@ -617,6 +622,7 @@ if (siteSearch) {
   siteSearch.querySelector("[data-tool-copy]").addEventListener("click", () => copyOutput(output, status));
   siteSearch.addEventListener("reset", () => window.setTimeout(() => {
     window.localStorage.removeItem(storageKey);
+    window.thkStorageForget?.(storageKey);
     build();
   }, 0));
   build();
@@ -650,6 +656,7 @@ if (battleScript) {
     const data = Object.fromEntries(fields.map((field) => [field.name, field.value]));
     try {
       window.localStorage.setItem(storageKey, JSON.stringify(data));
+      window.thkStorageMarkUpdated?.(storageKey);
       status.textContent = "Saved in this browser.";
     } catch {
       status.textContent = "Browser storage is unavailable. The script can still be copied.";
@@ -689,6 +696,7 @@ if (battleScript) {
     if (!window.confirm("Clear the saved battle script on this device?")) return;
     fields.forEach((field) => { field.value = ""; });
     window.localStorage.removeItem(storageKey);
+    window.thkStorageForget?.(storageKey);
     build();
     status.textContent = "The saved battle script was cleared.";
   });
@@ -713,6 +721,7 @@ if (turnPlanner) {
     };
     try {
       window.localStorage.setItem(storageKey, JSON.stringify(data));
+      window.thkStorageMarkUpdated?.(storageKey);
       status.textContent = "Checklist state saved in this browser.";
     } catch {
       status.textContent = "Browser storage is unavailable. The audit can still be copied.";

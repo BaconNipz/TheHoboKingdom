@@ -2,7 +2,10 @@
 title: Vintage Story
 description: Notes from our three-player Vintage Story world, including roles, progress, mods, server setup, and fixes.
 nav_section: projects
+project_id: vintage-story
 ---
+
+{% assign project_record = site.data.projects | where: 'id', page.project_id | first %}
 
 <section class="page-hero">
   <div class="shell">
@@ -11,13 +14,13 @@ nav_section: projects
     <h1>Vintage Story</h1>
     <p class="lead">This is the record for our three-player world: who handles what, how far we reached, which mods we used, and what needs fixing before we try again.</p>
     <div class="meta-row">
-      <span class="status status--active">Multiplayer trial</span>
+      {% include project-meta.html project=project_record %}
       <span class="meta-chip">Recorded on 1.22.3</span>
       <span class="meta-chip">Modded</span>
-      <span class="meta-chip">Updated 27 August 2026</span>
     </div>
   </div>
 </section>
+{% include project-status.html project=project_record %}
 
 <section class="section shell">
   <div class="content-grid">
