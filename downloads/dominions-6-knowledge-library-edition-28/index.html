@@ -1,0 +1,107 @@
+---
+title: Dominions 6 Knowledge Library — Edition 28 PDF
+description: Download the complete 811-page Progress Edition 28 PDF.
+nav_section: downloads
+og_image: /assets/images/dominions-6-library-edition-28.png
+---
+
+<section class="page-hero">
+  <div class="shell">
+    <div class="breadcrumbs">
+      <a href="{{ '/downloads/' | relative_url }}">Downloads</a>
+      <span aria-hidden="true">/</span>
+      <span>Dominions 6 Knowledge Library</span>
+    </div>
+    <p class="eyebrow">{{ site.data.dominions_library.edition_label }}</p>
+    <h1>Download Progress Edition {{ site.data.dominions_library.edition }}.</h1>
+    <p class="lead">The complete {{ site.data.dominions_library.pdf_page_count }}-page reader's edition for offline reading, printing, or archiving.</p>
+    <div class="meta-row">
+      <span class="status status--stable">Verified release</span>
+      <span class="meta-chip">{{ site.data.dominions_library.pdf_size }} PDF</span>
+      <span class="meta-chip">{{ site.data.dominions_library.published }}</span>
+    </div>
+  </div>
+</section>
+
+<section class="section shell">
+  <div class="content-grid">
+    <div class="content">
+      <h2>{{ site.data.dominions_library.edition_label }}</h2>
+      <p>This release separates Glamour, Invisibility, Unseen, Blur, Displacement, Illusion, and Spiritform by their actual rule paths. It records the current −10 Invisibility penalty against the revision-2 manual's older −9 wording, advances the stacking register, and adds a controlled Hall-of-Fame observation protocol without promoting inherited formulas.</p>
+      <button class="button button--primary" type="button" data-pdf-download>Download Edition {{ site.data.dominions_library.edition }} PDF</button>
+      <p data-pdf-status aria-live="polite">Ready.</p>
+      <div class="notice">
+        <p><strong>Integrity:</strong> SHA-256 <code>{{ site.data.dominions_library.sha256 }}</code>.</p>
+      </div>
+
+      <h2 id="smaller-readers">Choose a smaller reader</h2>
+      <p>The {{ site.data.dominions_library.pdf_page_count }}-page omnibus remains the master edition. These four files divide the same release into practical reading volumes without removing the evidence notes or open questions.</p>
+      <div class="link-list">
+        {% for reader in site.data.dominions_library.split_readers %}
+        <a class="link-card" href="{{ reader.url | relative_url }}">
+          <span>
+            <strong>{{ reader.title }}</strong>
+            <small>{{ reader.description }} {{ reader.pages }} pages · {{ reader.size }}.</small>
+          </span>
+          <span aria-hidden="true">PDF</span>
+        </a>
+        {% endfor %}
+      </div>
+
+      <div class="notice">
+        <p><strong>Split-reader integrity:</strong></p>
+        <ul>
+          {% for reader in site.data.dominions_library.split_readers %}
+          <li>{{ reader.title }}: <code>{{ reader.sha256 }}</code></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <aside class="sidebar">
+      <h2>Continue reading online</h2>
+      <nav>
+        <a href="{{ '/dominions/library/' | relative_url }}">Knowledge Library</a>
+        <a href="{{ '/dominions/library/books/book-vii/' | relative_url }}">Book VII nation dossiers</a>
+        <a href="{{ '/downloads/dominions-6-ma-marignon-nation-dossier-edition-27.pdf' | relative_url }}">MA Marignon dossier</a>
+        <a href="{{ '/downloads/dominions-6-ma-pyrene-nation-dossier-edition-27.pdf' | relative_url }}">MA Pyrène dossier</a>
+        <a href="{{ '/downloads/dominions-6-turn-and-economy-quick-reference-edition-28.pdf' | relative_url }}">Quick reference</a>
+        <a href="{{ '/dominions/library/research/' | relative_url }}">Research register</a>
+      </nav>
+    </aside>
+  </div>
+</section>
+
+<script>
+(() => {
+  const button = document.querySelector("[data-pdf-download]");
+  const status = document.querySelector("[data-pdf-status]");
+  const parts = ["part-000.bin", "part-001.bin", "part-002.bin", "part-003.bin", "part-004.bin", "part-005.bin"];
+  const expectedHash = "{{ site.data.dominions_library.sha256 }}";
+  const hex = (buffer) => [...new Uint8Array(buffer)].map((byte) => byte.toString(16).padStart(2, "0")).join("");
+
+  button.addEventListener("click", async () => {
+    button.disabled = true;
+    status.textContent = "Putting the PDF together…";
+    try {
+      const responses = await Promise.all(parts.map((part) => fetch(part)));
+      if (responses.some((response) => !response.ok)) throw new Error("A PDF segment could not be loaded.");
+      const chunks = await Promise.all(responses.map((response) => response.arrayBuffer()));
+      const pdf = new Blob(chunks, { type: "application/pdf" });
+      const digest = hex(await crypto.subtle.digest("SHA-256", await pdf.arrayBuffer()));
+      if (digest !== expectedHash) throw new Error("The PDF integrity check failed.");
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(pdf);
+      link.download = "dominions-6-knowledge-library-progress-edition-{{ site.data.dominions_library.edition }}.pdf";
+      document.body.append(link);
+      link.click();
+      link.remove();
+      window.setTimeout(() => URL.revokeObjectURL(link.href), 1000);
+      status.textContent = "Download started. The file passed its integrity check.";
+    } catch (error) {
+      status.textContent = error.message || "The PDF could not be prepared. Try again.";
+    } finally {
+      button.disabled = false;
+    }
+  });
+})();
+</script>

@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0.0",
+  "edition": "Progress Edition 28",
+  "generated_on": "2026-08-30",
+  "ruleset": {
+    "game": "Dominions 6",
+    "game_version": "6.36",
+    "mods": []
+  },
+  "verification": {
+    "verified_on": "2026-08-30",
+    "main_manual": {
+      "version": "revision 2",
+      "sha256": "65f430fd97c9f27285d63b797b43bc7fe3844241fdf40230b1d25a901ab9f33f",
+      "url": "https://www.illwinter.com/dom6/dom6manual.pdf"
+    },
+    "modding_manual": {
+      "version": "6.36",
+      "sha256": "9d4a7d2c5101679de7080455ceebed41b25a1e9beba275985e293183269399cf",
+      "url": "https://www.illwinter.com/dom6/dom6modman.pdf"
+    },
+    "current_description_source": {
+      "version": "6.35",
+      "commit": "cfac4311bc0b58053b8dead7bffbc036ba9bd5dc",
+      "url": "https://github.com/larzm42/dom6inspector/tree/cfac4311bc0b58053b8dead7bffbc036ba9bd5dc"
+    },
+    "patch_check": "The official 6.36 announcement contains no perception-family correction."
+  },
+  "version_conflicts": [
+    {
+      "subject": "Invisibility melee Attack penalty",
+      "historical_value": -9,
+      "historical_source": "main manual revision 2",
+      "current_value": -10,
+      "current_source": "Modding Manual 6.36",
+      "publication_rule": "Use -10 for the live 6.36 baseline and retain -9 only as superseded wording."
+    }
+  ],
+  "effects": [
+    {
+      "id": "glamour-trait",
+      "rule_paths": ["strategic-concealment", "image-selection"],
+      "summary": "Cannot be discovered by scouts, adds 25 only to existing Stealth, and grants Mirror Image.",
+      "status": "category-resolved",
+      "open_item": "R-058"
+    },
+    {
+      "id": "invisibility",
+      "rule_paths": ["strategic-patrol-detection", "melee-attack-penalty"],
+      "summary": "Spirit Sight is the documented patrol counter; melee attackers without Spirit Sight suffer -10 Attack.",
+      "status": "resolved"
+    },
+    {
+      "id": "unseen",
+      "rule_paths": ["temporary-invisibility"],
+      "summary": "Uses Invisible behaviour and ends when hit.",
+      "status": "resolved"
+    },
+    {
+      "id": "blur",
+      "rule_paths": ["melee-attack-penalty"],
+      "summary": "Applies -2 Attack; True Sight, Spirit Sight, and blindness ignore it.",
+      "status": "resolved"
+    },
+    {
+      "id": "displacement",
+      "rule_paths": ["first-strike-penalty", "melee-attack-penalty"],
+      "summary": "Applies -10 on the first strike and -5 thereafter; the same three counters ignore it; it does not stack with Blur or Invisibility.",
+      "status": "resolved"
+    },
+    {
+      "id": "mirror-image",
+      "rule_paths": ["image-selection"],
+      "summary": "Attacks select among the unit and its images; the current spell description says True Sight does not negate the images.",
+      "status": "partially-resolved",
+      "open_item": "R-058"
+    },
+    {
+      "id": "illusion-class",
+      "rule_paths": ["technical-creature-class"],
+      "summary": "Spiritform-like class that remains susceptible to illusion magic despite Mindless.",
+      "status": "category-resolved"
+    },
+    {
+      "id": "spiritform-class",
+      "rule_paths": ["technical-creature-class"],
+      "summary": "Spirit-like class with specified immunities and no generic concealment rule.",
+      "status": "category-resolved"
+    }
+  ],
+  "open_research": [
+    {
+      "id": "R-058",
+      "question": "Do Spirit Sight or blindness alter innate Glamour's Mirror Image resolution, and which non-scout information channels reveal Glamour units in friendly provinces?",
+      "route": "Published controlled 6.36 battle and strategic detection matrix."
+    }
+  ]
+}

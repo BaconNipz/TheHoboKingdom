@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import gzip
+import hashlib
 import html
 import json
 import re
@@ -78,20 +79,90 @@ def excerpt(text: str, limit: int = 240) -> str:
 
 
 def compress_large_json(directory: Path, threshold: int = 700_000) -> None:
-    for path in directory.glob("*.json"):
-        if path.stat().st_size <= threshold:
-            continue
-        compressed_path = path.with_suffix(path.suffix + ".gz")
-        with path.open("rb") as source, compressed_path.open("wb") as destination:
-            with gzip.GzipFile(
-                filename="",
-                mode="wb",
-                fileobj=destination,
-                compresslevel=9,
-                mtime=0,
-            ) as archive:
-                shutil.copyfileobj(source, archive)
-        path.unlink()
+    for _ in range(3):
+        large_paths = [
+            path for path in directory.glob("*.json")
+            if path.stat().st_size > threshold
+        ]
+        if not large_paths:
+            return
+        for path in large_paths:
+            compressed_path = path.with_suffix(path.suffix + ".gz")
+            with path.open("rb") as source, compressed_path.open("wb") as destination:
+                with gzip.GzipFile(
+                    filename="",
+                    mode="wb",
+                    fileobj=destination,
+                    compresslevel=9,
+                    mtime=0,
+                ) as archive:
+                    shutil.copyfileobj(source, archive)
+            path.unlink()
+    remaining = [
+        path.name for path in directory.glob("*.json")
+        if path.stat().st_size > threshold
+    ]
+    if remaining:
+        raise RuntimeError(f"Large JSON compression did not converge: {remaining}")
+
+
+def write_partitioned_search_index(
+    output: Path,
+    entries: list[dict],
+    edition: str,
+    part_count: int = 8,
+) -> None:
+    parts = []
+    total = len(entries)
+    for part_index in range(part_count):
+        start = part_index * total // part_count
+        end = (part_index + 1) * total // part_count
+        chunk = entries[start:end]
+        filename = f"search-index.part-{part_index:03d}.json"
+        path = output / filename
+        write_json(path, chunk)
+        payload = path.read_bytes()
+        parts.append({
+            "file": filename,
+            "part": part_index + 1,
+            "entries": len(chunk),
+            "first_section_id": chunk[0]["id"] if chunk else None,
+            "last_section_id": chunk[-1]["id"] if chunk else None,
+            "sha256": hashlib.sha256(payload).hexdigest(),
+        })
+    write_json(output / "search-index.index.json", {
+        "schema_version": "1.0",
+        "edition": edition,
+        "kind": "dominions-library-search-index",
+        "entry_count": total,
+        "storage": "transparent-json-parts",
+        "parts": parts,
+    })
+
+
+def read_search_index(directory: Path) -> list[dict]:
+    raw = directory / "search-index.json"
+    if raw.exists() or raw.with_suffix(raw.suffix + ".gz").exists():
+        return read_json(raw)
+
+    index_path = directory / "search-index.index.json"
+    index = read_json(index_path)
+    entries = []
+    for part in index["parts"]:
+        part_path = directory / part["file"]
+        payload = part_path.read_bytes()
+        expected_hash = part.get("sha256")
+        if expected_hash and hashlib.sha256(payload).hexdigest() != expected_hash:
+            raise ValueError(f"Search index hash mismatch: {part_path}")
+        chunk = json.loads(payload)
+        if isinstance(chunk, dict):
+            chunk = chunk["entries"]
+        if len(chunk) != part["entries"]:
+            raise ValueError(f"Search index entry-count mismatch: {part_path}")
+        entries.extend(chunk)
+    if len(entries) != index["entry_count"]:
+        raise ValueError(f"Search index total mismatch: {index_path}")
+    return entries
 
 
 def render_document(
@@ -215,7 +286,7 @@ def main() -> int:
             previous_documents[previous["id"]] = read_json(
                 reuse_from / "documents" / f"{previous['id']}.json"
             )
-        for entry in read_json(reuse_from / "search-index.json"):
+        for entry in read_search_index(reuse_from):
             previous_search_by_document.setdefault(entry["documentId"], []).append(entry)
 
     for document in content_index["documents"]:
@@ -312,7 +383,7 @@ def main() -> int:
         "edition": edition_name,
         "documents": manifest_documents,
     })
-    write_json(output / "search-index.json", search_index, compact=True)
+    write_partitioned_search_index(output, search_index, edition_name)
     write_json(output / "link-map.json", link_map, compact=True)
     compress_large_json(output)
 

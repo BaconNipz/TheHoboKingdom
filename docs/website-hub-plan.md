@@ -50,7 +50,7 @@ Every guide should include its scope, supported version or mod context, update d
 
 ### Content pass
 
-1. Maintain and expand the Dominions reference. The three-age catalogue and starting-game guide were added on 2 August 2026; Edition 27 of the complete Knowledge Library and its first standalone nation dossiers followed on 28 August 2026.
+1. Maintain and expand the Dominions reference. The three-age catalogue and starting-game guide were added on 2 August 2026; Edition 27 of the complete Knowledge Library and its first standalone nation dossiers followed on 28 August 2026, and Edition 28's perception and ability-evidence pass followed on 30 August 2026.
 2. Publish the complete StalkerNet release history. The confirmed v4.3.0-v4.3.6 chain now has a public changelog; older milestones remain to be recovered.
 3. Record the Minecraft Forge modpack and installation process. The design and troubleshooting records are public; the exact pack manifest remains pending.
 4. Add safe public D&D campaign and character material. The completed Stormwreck Isle arc and public resource structure are now available.
@@ -63,7 +63,7 @@ Completed on 27 August 2026:
 - Extended search across the main site and the Dominions library index.
 - Added related project and guide routes throughout the active hubs.
 - Added the StalkerNet changelog and clearer release records.
-- Updated the current Dominions cover and social-sharing image to Edition 27.
+- Updated the current Dominions cover and social-sharing image to Edition 28.
 - Added an Atom update feed and sitemap.
 - Added consistent official, tested, strategy, modded, research, and playtest labels.
 - Added browser-local reading history, section-link copying, and reading progress to the Dominions library.

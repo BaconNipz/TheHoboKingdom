@@ -4,7 +4,7 @@ description: "Unit classes, special abilities, experience, heroic abilities, con
 nav_section: guides
 extra_css: /assets/dominions-library.css
 extra_js: /assets/dominions-library.js
-og_image: /assets/images/dominions-6-library-edition-27.png
+og_image: /assets/images/dominions-6-library-edition-28.png
 ---
 
 <section class="page-hero library-page-hero">
@@ -14,14 +14,14 @@ og_image: /assets/images/dominions-6-library-edition-27.png
       <a href="/dominions/library/">Knowledge Library</a><span aria-hidden="true">/</span>
       <span>Foundation Book XI</span>
     </div>
-    <p class="eyebrow">Progress Edition 27</p>
+    <p class="eyebrow">Progress Edition 28</p>
     <h1>Foundation Book XI - Units, Abilities, Experience, and Conditions</h1>
     <p class="lead">Unit classes, special abilities, experience, heroic abilities, conditions, counters, and stacking behaviour.</p>
     <div class="meta-row">
       <span class="status status--stable">Published reference</span>
       <span class="meta-chip">Dominions 6.36</span>
-      <span class="meta-chip">13,185 words</span>
-      <span class="meta-chip">107 sections</span>
+      <span class="meta-chip">14,199 words</span>
+      <span class="meta-chip">110 sections</span>
     </div>
   </div>
 </section>
@@ -118,7 +118,7 @@ og_image: /assets/images/dominions-6-library-edition-27.png
 {% raw %}
 <h1 id="b11-foundation-book-xi-units-abilities-experience-and-conditions">Foundation Book XI - Units, Abilities, Experience, and Conditions<a class="heading-link" href="#b11-foundation-book-xi-units-abilities-experience-and-conditions" aria-label="Link to Foundation Book XI - Units, Abilities, Experience, and Conditions">#</a></h1>
 <h2 id="b11-a-systematic-reference-for-reading-every-unit">A Systematic Reference for Reading Every Unit<a class="heading-link" href="#b11-a-systematic-reference-for-reading-every-unit" aria-label="Link to A Systematic Reference for Reading Every Unit">#</a></h2>
-<p>Baseline: Dominions 6.36; vanilla rules unless a ruleset is named; research edition 20 August 2026. Structured object examples remain pinned to the auditable 6.35 Inspector snapshot.</p>
+<p>Baseline: Dominions 6.36; vanilla rules unless a ruleset is named; research edition 30 August 2026. Structured object examples remain pinned to the auditable 6.35 Inspector snapshot.</p>
 <h2 id="b11-1-purpose">1. Purpose<a class="heading-link" href="#b11-1-purpose" aria-label="Link to 1. Purpose">#</a></h2>
 <p>A Dominions unit is not defined by its attack, defence, protection, and hit points alone. Its type determines who can command it, which spells can affect it, whether it consumes supplies, how it heals, what happens when leadership disappears, and sometimes whether it can cross a border at all. Its special abilities add another layer of exceptions. Experience changes the same body over time. Afflictions and other conditions may then change it again.</p>
 <p>Book XI is where unit facts are looked up and interpreted. It should answer five questions quickly:</p>
@@ -159,7 +159,7 @@ og_image: /assets/images/dominions-6-library-edition-27.png
 </tr>
 <tr class="even">
 <td>MM</td>
-<td>Official Modding Manual, version 6.34</td>
+<td>Official Modding Manual, version 6.36</td>
 <td>Engine-facing ability names, parameters, categories, and technical relationships</td>
 </tr>
 <tr class="odd">
@@ -191,6 +191,7 @@ og_image: /assets/images/dominions-6-library-edition-27.png
 </table>
 <p>An evidence label applies to the defined fact, not to every possible consequence. For example, the official manual defines Ethereal as causing three quarters of nonmagical strikes to miss. The recommendation to use inexpensive magical weapons against an ethereal raider is doctrine derived from that fact, not an additional official rule.</p>
 <p>The public baseline is Dominions 6.36, released on 17 August 2026 UTC. The main manual is older than several current changes. Notable ability-facing corrections include exact percentage regeneration in 6.31; Spiritform protection from bleeding, frozen, and burning conditions in 6.30; Disease Resistance applying to disease spells in 6.27; restored script continuity for innate spellcasters after temporary unconsciousness in 6.35; and corrected swimming-mount river crossing, charm allegiance, and mounted recruitment state in 6.36. These corrections are integrated where relevant and retained in the version notes near the end.</p>
+<p>The live Modding Manual now identifies itself as version 6.36. Book XI uses that current file for ability semantics. Book XIV’s larger command-locator export remains tied to its declared 6.34 extraction until the whole token and page-locator set is rebuilt; that older extraction is not used to settle the perception rules below.</p>
 <h1 id="b11-part-i-how-to-read-an-ability">Part I: How to Read an Ability<a class="heading-link" href="#b11-part-i-how-to-read-an-ability" aria-label="Link to Part I: How to Read an Ability">#</a></h1>
 <span id="b11-unit-reading" class="anchor-alias" aria-hidden="true"></span>
 <h2 id="b11-3-begin-with-the-body-not-the-icon">3. Begin with the Body, Not the Icon<a class="heading-link" href="#b11-3-begin-with-the-body-not-the-icon" aria-label="Link to 3. Begin with the Body, Not the Icon">#</a></h2>
@@ -325,6 +326,63 @@ og_image: /assets/images/dominions-6-library-edition-27.png
 <li><strong>unknown or object-specific:</strong> the interface or a controlled test is required.</li>
 </ul>
 <p>When a stacking rule is not explicit, the safe record is not “stacks” or “does not stack.” The safe record is “stacking unverified.” This matters because many expensive designs fail not from weak ingredients but from buying the same non-stacking benefit twice.</p>
+<h3 id="b11-6-1-confirmed-current-cases">6.1 Confirmed Current Cases<a class="heading-link" href="#b11-6-1-confirmed-current-cases" aria-label="Link to 6.1 Confirmed Current Cases">#</a></h3>
+<p>Source type does not determine stacking by itself. A form, item, bless, or spell supplies an effect, but the receiving effect’s own rule decides whether values add, compete, replace one another, or resolve as separate layers.</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Effect or family</th>
+<th>Current rule</th>
+<th>Evidence</th>
+<th>Planning consequence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Standard</td>
+<td>Multiple standards in one squad do not stack; only the highest value counts</td>
+<td>MM 6.36, <code>#standard</code></td>
+<td>A second lower Standard in the same squad adds no morale bonus</td>
+</tr>
+<tr class="even">
+<td>Inspiring Researcher</td>
+<td>Only the highest value in a province counts</td>
+<td>MM 6.36, <code>#inspiringres</code></td>
+<td>Several copies improve coverage or redundancy, not the province bonus</td>
+</tr>
+<tr class="odd">
+<td>Blur, Displacement, and Invisibility</td>
+<td>Displacement does not stack with Blur or Invisibility</td>
+<td>UI description in the pinned 6.35 Inspector snapshot; no 6.36 patch changes this family</td>
+<td>Do not budget for additive melee Attack penalties from these states</td>
+</tr>
+<tr class="even">
+<td>Experience thresholds</td>
+<td>Earned bonuses accumulate at the published star thresholds</td>
+<td>OM plus the official 6.13 and 6.14 corrections</td>
+<td>Later stars retain earlier threshold gains</td>
+</tr>
+<tr class="odd">
+<td>Horror Mark</td>
+<td>Repeated marking can deepen the same condition</td>
+<td>OM</td>
+<td>Treat severity as cumulative state, not duplicate independent icons</td>
+</tr>
+<tr class="even">
+<td>Different defence families</td>
+<td>Each defence keeps its own resolution step unless an explicit rule merges or replaces it</td>
+<td>OM and D</td>
+<td>Protection, resistance, miss chance, morale gates, and recovery are not one additive statistic</td>
+</tr>
+</tbody>
+</table>
+<p>This closes the assumption that all same-named benefits stack merely because they come from different sources. It does not establish a global item-versus-bless-versus-spell precedence rule. Unlisted abilities remain ability-specific, and form or source loss still requires a separate lifetime check.</p>
 <h2 id="b11-7-counters-are-usually-gate-removal">7. Counters Are Usually Gate Removal<a class="heading-link" href="#b11-7-counters-are-usually-gate-removal" aria-label="Link to 7. Counters Are Usually Gate Removal">#</a></h2>
 <p>An ability creates value by imposing a gate. Ethereal asks for magical attacks. Awe asks attackers to pass a morale check. Regeneration asks for enough damage, disablement, or attrition to overcome recovery. Flying asks for protection of vulnerable rear areas and attention to storm interaction. Stealth asks for patrol coverage and information discipline.</p>
 <p>The cleanest counter normally removes the gate at an acceptable cost. It does not need to destroy the target in isolation. A counter record should identify:</p>
@@ -388,7 +446,7 @@ og_image: /assets/images/dominions-6-library-edition-27.png
 <h3 id="b11-17-2-stone-being">17.2 Stone Being<a class="heading-link" href="#b11-17-2-stone-being" aria-label="Link to 17.2 Stone Being">#</a></h3>
 <p>Stone Being identifies creatures that interact with stone-specific effects. It should not be used as a shorthand for Inanimate unless both are displayed or confirmed. Material appearance is not a reliable substitute for tags.</p>
 <h3 id="b11-17-3-illusion">17.3 Illusion<a class="heading-link" href="#b11-17-3-illusion" aria-label="Link to 17.3 Illusion">#</a></h3>
-<p>Illusion marks an illusory being and can affect how specialised sight or anti-illusion effects interact with it. The tag is distinct from Glamour, Invisibility, and Ethereal. Glamour creates a defensive mirror-image effect and strategic concealment; an Illusion is a creature type.</p>
+<p>Illusion marks an illusory being. The 6.36 Modding Manual defines it as a Spiritform-like technical class whose members can still be affected by illusion magic even when Mindless. The tag is distinct from Glamour, Invisibility, Unseen, and Ethereal. Glamour creates strategic concealment and a mirror-image defence; Illusion classifies the creature.</p>
 <h3 id="b11-17-4-horror">17.4 Horror<a class="heading-link" href="#b11-17-4-horror" aria-label="Link to 17.4 Horror">#</a></h3>
 <p>Lesser Horror, Greater Horror, and Doom Horror identify horror classes. They influence horror-related targeting and behaviour. Horror Mark does not turn its bearer into a Horror; it makes the bearer a preferred future victim of horror attacks.</p>
 <h3 id="b11-17-5-sacred-holy-divine-being-pretender-and-prophet">17.5 Sacred, Holy, Divine Being, Pretender, and Prophet<a class="heading-link" href="#b11-17-5-sacred-holy-divine-being-pretender-and-prophet" aria-label="Link to 17.5 Sacred, Holy, Divine Being, Pretender, and Prophet">#</a></h3>
@@ -523,10 +581,61 @@ og_image: /assets/images/dominions-6-library-edition-27.png
 <p>Spy permits intelligence and unrest-oriented covert work. Assassin creates assassination attempts. Seduction, Corruption, Dream Seduction, and related abilities use distinct target restrictions, events, checks, and failure battles. They should not be generalised from the word “assassin.”</p>
 <p>The operational procedure is in <a href="/dominions/library/books/book-x/#b10-orders">Book X’s strategic-order reference</a>; strategic use and patrol counterplay are in <a href="/dominions/library/books/book-vi/#b6-patrol-and-stealth">Book VI</a>. Book XI supplies the reading rule: check the exact ability, target class, location, patience requirement, and consequence of failure.</p>
 <h2 id="b11-31-glamour-invisibility-unseen-and-illusion">31. Glamour, Invisibility, Unseen, and Illusion<a class="heading-link" href="#b11-31-glamour-invisibility-unseen-and-illusion" aria-label="Link to 31. Glamour, Invisibility, Unseen, and Illusion">#</a></h2>
-<p>Glamour produces a mirror-image defence in combat and conceals a unit in friendly provinces. The official manual states that ordinary attacks can remove images, while magical or specialised perception changes the interaction. Invisibility and Unseen are separate concealment abilities. Illusion is a creature class. None should be substituted for another merely because the sprite is hard to see.</p>
-<p>The correct counter family is perception plus suitable attacks, but exact eligibility matters. Spirit Sight, True Sight, and other specialised senses do not necessarily answer every concealment effect in exactly the same way.</p>
+<p>These names cover four different rule paths. The 6.36 documentation and pinned current-description layer establish the following division.</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Effect</th>
+<th>Strategic-map rule</th>
+<th>Combat rule</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Glamour trait</td>
+<td>Cannot be discovered by scouts; the main manual describes Glamour units as undetectable in friendly provinces. If the unit already has Stealth, the trait adds 25; it does not grant Stealth by itself</td>
+<td>Grants a mirror-image defence</td>
+<td>Mirror Image is an image-selection defence, not the Invisibility Attack penalty</td>
+</tr>
+<tr class="even">
+<td>Invisibility</td>
+<td>A sneaking invisible unit can be found only by patrollers with Spirit Sight</td>
+<td>Melee attackers suffer −10 Attack unless they have Spirit Sight</td>
+<td>The revision-2 main manual’s −9 is older wording; MM 6.36 supplies the live value</td>
+</tr>
+<tr class="odd">
+<td>Unseen</td>
+<td>Inherits the documented Invisible behaviour</td>
+<td>Ends when the unit is hit</td>
+<td>The current Invisibility spell grants Unseen, so its invisibility can end on a hit</td>
+</tr>
+<tr class="even">
+<td>Illusion class</td>
+<td>No generic strategic concealment follows from the class alone</td>
+<td>Spiritform-like technical class; illusion magic can affect it despite Mindless</td>
+<td>It is a creature class, not a miss-chance synonym</td>
+</tr>
+<tr class="odd">
+<td>Spiritform class</td>
+<td>No generic strategic concealment follows from the class alone</td>
+<td>Spirit-like class with specific immunities, including the documented Stoneskin and Polymorph examples</td>
+<td>It supplies no generic Invisibility or Mirror Image rule</td>
+</tr>
+</tbody>
+</table>
+<p>Blur and Displacement belong to the same practical counter search but remain separate battle states. Blur applies a −2 melee Attack penalty. Displacement applies −10 to the first strike against each affected unit and −5 thereafter; its current description says it does not stack with Blur or Invisibility. True Sight, Spirit Sight, and blindness ignore Blur and Displacement. The current Mirror Image spell description separately states that True Sight does not negate its images.</p>
+<p>The category-level R-048 question is therefore complete at an Official plus current-description tier. Two narrower runtime questions remain in R-058: whether Spirit Sight or blindness changes innate Glamour’s Mirror Image resolution, and which strategic information channels other than the documented scout and patrol cases reveal a Glamour unit in a friendly province.</p>
 <h2 id="b11-32-darkvision-spirit-sight-true-sight-and-blindness">32. Darkvision, Spirit Sight, True Sight, and Blindness<a class="heading-link" href="#b11-32-darkvision-spirit-sight-true-sight-and-blindness" aria-label="Link to 32. Darkvision, Spirit Sight, True Sight, and Blindness">#</a></h2>
-<p>Darkvision reduces or avoids darkness penalties according to its value. Spirit Sight detects or interacts with spiritual and ethereal threats. True Sight counters specified forms of deception. Blind units lack normal vision but may possess compensating senses.</p>
+<p>Darkvision reduces darkness penalties according to its value; 100 is perfect Darkvision. It does not help a blind unit and does not itself answer Invisibility, Glamour, Blur, Displacement, Illusion, or Spiritform.</p>
+<p>Spirit Sight removes darkness penalties, sees invisible units, and is the explicit strategic patrol requirement for finding sneaking Invisible units. The current UI description also says it sees invisible and glamoured units for what they are. True Sight sees through illusions and glamour and removes penalties when attacking Invisible or glamour-enchanted targets such as Blur. The pinned UI descriptions confirm that both Spirit Sight and True Sight ignore Blur and Displacement.</p>
+<p>Blindness is not a superior version of either sight ability. A blind attacker already operates without normal vision, so the official descriptions exempt it from additional Invisibility, Blur, and Displacement penalties. Blindness does not thereby grant strategic detection, illuminate darkness, reveal scouts, or remove every illusion effect.</p>
 <p>Sight is an attack-enabling system. A unit can have an excellent nominal Attack or Precision score and still deliver poorly when darkness or concealment denies reliable contact. Conversely, specialised sight has little value when the opponent offers no corresponding gate. Its price belongs to the matchup.</p>
 <h1 id="b11-part-vi-defence-recovery-and-persistence">Part VI: Defence, Recovery, and Persistence<a class="heading-link" href="#b11-part-vi-defence-recovery-and-persistence" aria-label="Link to Part VI: Defence, Recovery, and Persistence">#</a></h1>
 <h2 id="b11-33-resistances-are-typed-defences">33. Resistances Are Typed Defences<a class="heading-link" href="#b11-33-resistances-are-typed-defences" aria-label="Link to 33. Resistances Are Typed Defences">#</a></h2>
@@ -805,6 +914,16 @@ og_image: /assets/images/dominions-6-library-edition-27.png
 <p>The Hall of Fame ranks commanders that survive many battles or kill many enemies. Non-Pretender commanders in the Hall receive a heroic ability, shown by a yellow star in a red circle, and that ability improves while the commander remains listed. Unique beings such as Elemental Royalty cannot enter. Pretenders do not receive an ordinary heroic ability through this system.</p>
 <p>The hosting sequence updates the Hall of Fame and graphs before heroic abilities improve. That timing can matter when a commander enters, leaves, or rises within the list.</p>
 <p>The main manual does not publish the full current scoring formula, ability selection weights, or growth formulas. Exact heroic arithmetic circulating online is community reverse engineering, much of it inherited from Dominions 5. It should be used as a hypothesis and planning aid, not as a current official contract.</p>
+<h3 id="b11-57-1-edition-28-formula-boundary">57.1 Edition 28 Formula Boundary<a class="heading-link" href="#b11-57-1-edition-28-formula-boundary" aria-label="Link to 57.1 Edition 28 Formula Boundary">#</a></h3>
+<p>R-047 advances from queued to in progress, but no formula is promoted. The official evidence establishes eligibility, the existence and growth of a heroic ability while listed, and the hosting position of the Hall-of-Fame update. It does not expose the score weights for battles, kills, survival, rank ties, heroic-family selection, or per-turn growth.</p>
+<p>A publishable 6.36 formula now requires a raw observation series rather than another prose summary. The Edition 28 source bundle includes <code>data/edition-28-hall-of-fame-observation-template.csv</code> with fields for version, seed, commander identity, Pretender and unique status, battles, kills, rank before and after hosting, heroic family, displayed value before and after hosting, survival, Hall membership, and screenshot or save evidence. Tests should hold map, Hall size, unit type, opponent, battle count, and kill allocation constant while changing one factor at a time.</p>
+<p>The first series should answer three smaller questions in order:</p>
+<ol type="1">
+<li>whether zero-kill survival and credited kills make separable score contributions;</li>
+<li>how exact ties are ordered when otherwise identical commanders enter on the same hosting;</li>
+<li>whether a displayed heroic value changes once per hosting, once per Hall update, or by an ability-specific schedule.</li>
+</ol>
+<p>Until that series or an engine-backed trace exists, the community families below remain a discovery aid and the exact formulas remain withheld.</p>
 <h2 id="b11-58-community-derived-heroic-families">58. Community-Derived Heroic Families<a class="heading-link" href="#b11-58-community-derived-heroic-families" aria-label="Link to 58. Community-Derived Heroic Families">#</a></h2>
 <p>Older reverse engineering identifies common heroic families such as Strength, Battle Prowess, Lightning Reflexes, Iron Will, Valor, Tough Skin, Heroic Toughness, Heroic Quickness, Precision, Endurance, Obesity, and Extraordinary Agility. Rarer reported families include Awesome Presence, Battle Bellow, Legendary Command of Undead, Adept Research, Third Eye, Daftness, Cruelty, Soul Butcher, Fast Casting, and Troll Blood.</p>
 <p>The practical descriptions are safer than exact old formulas:</p>
@@ -2042,34 +2161,40 @@ og_image: /assets/images/dominions-6-library-edition-27.png
 <tr class="even">
 <td>P1</td>
 <td>Which Hall-of-Fame scoring and heroic-growth formulas remain unchanged in 6.36?</td>
-<td>Reproducible current tests or engine-backed reverse engineering</td>
-<td>Community families described; formulas withheld from official register</td>
+<td>Reproducible current tests or engine-backed reverse engineering using the Edition 28 observation template</td>
+<td>In progress; official boundary and controlled series defined, formulas withheld</td>
 </tr>
 <tr class="odd">
-<td>P1</td>
+<td>Completed</td>
 <td>How do current perception abilities divide Glamour, Invisibility, Unseen, Illusion, and Spiritform targets?</td>
-<td>Controlled matrix with one effect at a time</td>
-<td>Family guidance only</td>
+<td>Current official 6.36 definitions plus pinned current descriptions; narrower runtime edges split to R-058</td>
+<td>Category division resolved without treating the effects as synonyms</td>
 </tr>
 <tr class="even">
 <td>P1</td>
 <td>Which ability sources stack, use best-only, or replace one another across form, item, bless, and spell?</td>
 <td>Targeted tests and live descriptions</td>
-<td>Standard confirmed best-only; others record ability-specific caveats</td>
+<td>In progress; Standard, Inspiring Researcher, experience, Horror Mark, and the Blur/Displacement/Invisibility group classified</td>
 </tr>
 <tr class="odd">
+<td>P1</td>
+<td>Do Spirit Sight or blindness alter innate Glamour’s Mirror Image resolution, and which non-scout information channels reveal Glamour units in friendly provinces?</td>
+<td>Published controlled 6.36 battle and strategic detection matrix</td>
+<td>Queued as R-058; no category-level claim depends on the result</td>
+</tr>
+<tr class="even">
 <td>P2</td>
 <td>What are the exact current passive XP exceptions for Mindless units and special sites or items?</td>
 <td>Controlled monthly observation and current data export</td>
 <td>Official general gain and battle sources published</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>P2</td>
 <td>Which condition immunities follow from each technical class versus a separate hidden tag?</td>
 <td>Current object export plus controlled spell matrix</td>
 <td>Only explicit official relationships published</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>P2</td>
 <td>How do mount loss, Reclaim Mount, automatic return, and shape changes transfer experience and conditions?</td>
 <td>Controlled mounted commander series under 6.36</td>
@@ -2082,7 +2207,7 @@ og_image: /assets/images/dominions-6-library-edition-27.png
 <ul>
 <li><a href="https://www.illwinter.com/dom6/docs.html">Illwinter’s Dominions 6 documentation page</a></li>
 <li><a href="https://www.illwinter.com/dom6/dom6manual.pdf">Dominions 6 Manual, revision 2</a></li>
-<li><a href="https://www.illwinter.com/dom6/dom6modman.pdf">Dominions 6 Modding Manual, version 6.34</a></li>
+<li><a href="https://www.illwinter.com/dom6/dom6modman.pdf">Dominions 6 Modding Manual, version 6.36</a></li>
 <li><a href="https://steamcommunity.com/app/2511500/announcements/">Official Dominions 6 announcements and change notes</a></li>
 </ul>
 <h3 id="b11-community-references">Community references<a class="heading-link" href="#b11-community-references" aria-label="Link to Community references">#</a></h3>
@@ -2093,6 +2218,16 @@ og_image: /assets/images/dominions-6-library-edition-27.png
 <li><a href="https://steamcommunity.com/app/2511500/discussions/0/4139438760462545927/">Dominions 6 Heroic Quickness discussion</a></li>
 </ul>
 <p>The community sources are retained for taxonomy, test leads, and older reverse engineering. They do not override the current official manual, patch notes, or a reproducible 6.36 result.</p>
+<h3 id="b11-edition-28-perception-evidence-record">Edition 28 Perception Evidence Record<a class="heading-link" href="#b11-edition-28-perception-evidence-record" aria-label="Link to Edition 28 Perception Evidence Record">#</a></h3>
+<ul>
+<li>ruleset: unmodded Dominions 6.36;</li>
+<li>verified: 30 August 2026;</li>
+<li>official main manual revision 2 SHA-256: <code>65f430fd97c9f27285d63b797b43bc7fe3844241fdf40230b1d25a901ab9f33f</code>;</li>
+<li>official Modding Manual 6.36 SHA-256: <code>9d4a7d2c5101679de7080455ceebed41b25a1e9beba275985e293183269399cf</code>;</li>
+<li>current-description layer: pinned 6.35 Inspector commit <code>cfac4311bc0b58053b8dead7bffbc036ba9bd5dc</code>;</li>
+<li>patch check: official 6.36 announcement reviewed; no perception-family correction found;</li>
+<li>unresolved runtime edge: R-058 only.</li>
+</ul>
 <h2 id="b11-76-closing-reference">76. Closing Reference<a class="heading-link" href="#b11-76-closing-reference" aria-label="Link to 76. Closing Reference">#</a></h2>
 <p>A complete unit reading has six layers:</p>
 <p><code>class -&gt; command -&gt; movement -&gt; ability -&gt; development -&gt; condition</code></p>
@@ -2189,7 +2324,7 @@ og_image: /assets/images/dominions-6-library-edition-27.png
         <a href="/dominions/library/">Complete library</a>
         <a href="/dominions/library/glossary/">Glossary</a>
         <a href="/dominions/library/research/">Research register</a>
-        <a href="/downloads/dominions-6-knowledge-library-edition-27/">Edition 27 PDF</a>
+        <a href="/downloads/dominions-6-knowledge-library-edition-28/">Edition 28 PDF</a>
       </nav>
     </aside>
   </div>

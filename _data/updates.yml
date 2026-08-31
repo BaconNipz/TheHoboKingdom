@@ -47,6 +47,13 @@
   type: Site
   project: TheHoboKingdom
 
+- date: 30 August 2026
+  title: Dominions 6 Knowledge Library — Edition 28
+  description: Resolved the perception-category matrix, recorded the live Invisibility value against older wording, advanced ability stacking, and added a Hall-of-Fame observation protocol across the 811-page book and searchable site.
+  url: /downloads/dominions-6-knowledge-library-edition-28/
+  type: Library
+  project: Dominions 6
+
 - date: 29 August 2026
   title: Edition 27 split reader set
   description: Divided the 807-page master book into core rules, Middle Age nation, technical, and quick-reference PDFs while keeping the omnibus unchanged.

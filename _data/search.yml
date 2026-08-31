@@ -19,12 +19,12 @@
   type: Library
   keywords: rules strategy modding evidence books glossary
 
-- title: Dominions 6 Knowledge Library — Progress Edition 27 PDF
-  description: The current complete 807-page reader's edition for offline reading, archiving, printing, or sharing.
-  url: /downloads/dominions-6-knowledge-library-edition-27/
+- title: Dominions 6 Knowledge Library — Progress Edition 28 PDF
+  description: The current complete 811-page reader's edition for offline reading, archiving, printing, or sharing.
+  url: /downloads/dominions-6-knowledge-library-edition-28/
   project: Dominions 6
   type: Download
-  keywords: edition 27 pdf current release offline sha256
+  keywords: edition 28 pdf current release offline sha256 perception glamour invisibility hall of fame
 
 - title: Middle Age Marignon nation dossier
   description: A nine-page Edition 27 field guide to Fiery Justice, with roster, paths, opening, research, battlefield packages, Pretenders, and matchups.
@@ -39,6 +39,13 @@
   project: Dominions 6
   type: Download
   keywords: pyrene pyrène akelarre middle age nation dossier strategy blood sorgina akerbeltz bishop monk
+
+- title: Dominions 6 Knowledge Library — Progress Edition 27 PDF
+  description: The previous complete reader's edition, kept as a rollback copy.
+  url: /downloads/dominions-6-knowledge-library-edition-27/
+  project: Dominions 6
+  type: Download
+  keywords: edition 27 pdf archive rollback previous release
 
 - title: Dominions 6 Knowledge Library — Progress Edition 26 PDF
   description: The previous complete reader's edition, kept as the rollback copy.

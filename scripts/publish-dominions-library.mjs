@@ -11,8 +11,8 @@ const publicationMetadata = Object.fromEntries(
     .map((match) => [match[1], match[2]]),
 );
 // The public reader and its structured data are generated from the matching
-// complete Edition 27 corpus retained in the repository.
-const sourceRoot = path.join(repositoryRoot, "docs", "dominions-library-source", "edition-27", "generated");
+// complete Edition 28 corpus retained in the repository.
+const sourceRoot = path.join(repositoryRoot, "docs", "dominions-library-source", "edition-28", "generated");
 const libraryRoot = path.join(repositoryRoot, "dominions", "library");
 const bookRoot = path.join(libraryRoot, "books");
 const dataRoot = path.join(libraryRoot, "data");
@@ -217,7 +217,7 @@ const landing = `${frontMatter("Dominions 6 Knowledge Library", "My searchable, 
   </div>
   <div class="library-tool-grid">
     <article class="library-tool-card"><h3>Glossary</h3><p>106 rules, interface terms, abbreviations, and pieces of community language, each linked to its full explanation.</p><a class="button button--quiet" href="/dominions/library/glossary/">Open the glossary</a></article>
-    <article class="library-tool-card"><h3>Research register</h3><p>57 verification questions with priorities, status, importance, and the most reliable route to an answer.</p><a class="button button--quiet" href="/dominions/library/research/">Open the register</a></article>
+    <article class="library-tool-card"><h3>Research register</h3><p>${research.items.length} verification questions with priorities, status, importance, and the most reliable route to an answer.</p><a class="button button--quiet" href="/dominions/library/research/">Open the register</a></article>
     <article class="library-tool-card"><h3>Field toolkit</h3><p>Eighteen tools cover pinned base-game records, nations, Pretenders, economy, recruitment, magic, battle plans, turns, diplomacy, research, reading progress, multiplayer records, and Throne victories.</p><a class="button button--quiet" href="/dominions/tools/">Open the tools</a></article>
     <article class="library-tool-card"><h3>Edition ${editionNumber} PDF</h3><p>The complete ${pdfPageCount}-page library for offline reading, archiving, printing, or sharing outside the website.</p><a class="button button--quiet" href="${pdfDownload}">Download the PDF</a></article>
     <article class="library-tool-card"><h3>MA Marignon dossier</h3><p>A compact nine-page field guide to Fiery Justice: roster, paths, opening priorities, research, battlefield packages, Pretenders, and matchups.</p><a class="button button--quiet" href="/downloads/dominions-6-ma-marignon-nation-dossier-edition-27.pdf">Download the dossier</a></article>
