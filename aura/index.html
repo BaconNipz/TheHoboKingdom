@@ -2,7 +2,10 @@
 title: AURA
 description: My development record for AURA, the Adaptive Utility for Real-world Advancement self-development RPG.
 nav_section: projects
+project_id: aura
 ---
+
+{% assign project_record = site.data.projects | where: 'id', page.project_id | first %}
 
 <section class="page-hero">
   <div class="shell">
@@ -11,13 +14,13 @@ nav_section: projects
     <h1>Turning real progress into an RPG.</h1>
     <p class="lead">I built AURA to turn goals, habits, and useful skills into quests, levels, rewards, titles, and a character that changes with the person using it.</p>
     <div class="meta-row">
-      <span class="status status--active">Working prototype</span>
+      {% include project-meta.html project=project_record %}
       <span class="meta-chip">Version 2 tested</span>
       <span class="meta-chip">Mobile application</span>
-      <span class="meta-chip">Updated 27 August 2026</span>
     </div>
   </div>
 </section>
+{% include project-status.html project=project_record %}
 
 <section class="section shell">
   <div class="content-grid">

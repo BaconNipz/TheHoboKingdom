@@ -1,0 +1,40 @@
+---
+title: Updates
+description: The complete dated history of public TheHoboKingdom releases, tools, guides, archives, and site changes.
+nav_section: projects
+extra_js: /assets/updates.js
+---
+
+<section class="page-hero">
+  <div class="shell">
+    <p class="eyebrow">Complete public history</p>
+    <h1>Every recorded site update.</h1>
+    <p class="lead">The homepage only shows the latest work. This page keeps the full record, including older releases that have since been replaced.</p>
+  </div>
+</section>
+
+<section class="section shell" data-update-archive>
+  <div class="search-controls update-filters">
+    <label class="search-query"><span>Search updates</span><input type="search" data-update-query autocomplete="off" placeholder="Try Edition 27, tools, StalkerNet…"></label>
+    <label><span>Project</span><select data-update-project><option value="all">All projects</option>{% assign update_projects = site.data.updates | map: 'project' | uniq | sort %}{% for project in update_projects %}<option value="{{ project | escape }}">{{ project }}</option>{% endfor %}</select></label>
+    <label><span>Type</span><select data-update-type><option value="all">All types</option>{% assign update_types = site.data.updates | map: 'type' | uniq | sort %}{% for type in update_types %}<option value="{{ type | escape }}">{{ type }}</option>{% endfor %}</select></label>
+  </div>
+
+  <p class="search-count" data-update-count aria-live="polite">Showing all {{ site.data.updates.size }} recorded updates.</p>
+
+  <div class="update-archive-list">
+    {% for update in site.data.updates %}
+    <article class="update-archive-entry" data-update-entry data-project="{{ update.project | escape }}" data-type="{{ update.type | escape }}" data-search="{{ update.title | append: ' ' | append: update.description | append: ' ' | append: update.project | append: ' ' | append: update.type | downcase | escape }}">
+      <div class="update-archive-date"><time datetime="{{ update.date | date_to_xmlschema }}">{{ update.date }}</time><span>{{ update.project }}</span></div>
+      <div>
+        <div class="search-result-meta"><span>{{ update.type }}</span><span>{{ update.project }}</span></div>
+        <h2><a href="{{ update.url | relative_url }}">{{ update.title }}</a></h2>
+        <p>{{ update.description }}</p>
+      </div>
+      <span class="update-arrow" aria-hidden="true">→</span>
+    </article>
+    {% endfor %}
+  </div>
+
+  <div class="notice update-archive-note"><p><strong>Record boundary:</strong> dates describe public website changes, not every private research, writing, testing, or development session behind them.</p></div>
+</section>

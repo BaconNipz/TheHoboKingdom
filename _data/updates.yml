@@ -1,95 +1,160 @@
+- date: 31 August 2026
+  title: One status record for every main project page
+  description: Connected each project hub to the shared phase, next milestone, status, and update date used by the homepage and project directory.
+  url: /projects/
+  type: Site
+  project: TheHoboKingdom
+
+- date: 31 August 2026
+  title: Complete update archive
+  description: Added a permanent history of public releases and site changes, with project, type, and text filters generated from the same record as the homepage and feed.
+  url: /updates/
+  type: Site
+  project: TheHoboKingdom
+
+- date: 31 August 2026
+  title: Mobile tool and accessibility pass
+  description: Rebuilt wide tool tables as labelled phone-sized cards, enlarged touch controls, strengthened focus and save feedback, and added reduced-motion support.
+  url: /tools/
+  type: Site
+  project: TheHoboKingdom
+
+- date: 31 August 2026
+  title: One backup for every saved tool record
+  description: Added a local-data manager for thirteen recognised browser records, with save dates, per-record exports, safe restore modes, and one complete versioned backup.
+  url: /tools/data/
+  type: Tools
+  project: TheHoboKingdom
+
+- date: 31 August 2026
+  title: Nation dossier progress made public
+  description: Added a 3-of-102 dossier register and marked Arcoscephale, Marignon, and Pyrène inside the age catalogue with direct web and PDF links.
+  url: /dominions/nations/#dossier-progress
+  type: Library
+  project: Dominions 6
+
+- date: 31 August 2026
+  title: Page-aware correction and fault reports
+  description: Added a report route that carries the exact page into prepared factual corrections, tool faults, broken-link reports, and focused improvement requests.
+  url: /report/
+  type: Site
+  project: TheHoboKingdom
+
+- date: 31 August 2026
+  title: One search for the full Dominions reference layer
+  description: Joined the 5,340 base-game records to the main search, with exact IDs, aliases, record filters, shareable searches, and a site-wide keyboard shortcut.
+  url: /search/
+  type: Site
+  project: TheHoboKingdom
+
 - date: 29 August 2026
   title: Edition 27 split reader set
   description: Divided the 807-page master book into core rules, Middle Age nation, technical, and quick-reference PDFs while keeping the omnibus unchanged.
   url: /downloads/dominions-6-knowledge-library-edition-27/#smaller-readers
   type: Library
+  project: Dominions 6
 
 - date: 28 August 2026
   title: Dominions 6 Knowledge Library — Edition 27
   description: Published the 807-page book, a fully refreshed searchable website layer, and standalone Middle Age Marignon and Pyrène nation dossiers.
   url: /dominions/library/
   type: Library
+  project: Dominions 6
 
 - date: 27 August 2026
   title: A full website writing pass
   description: Rewrote the public pages, tool instructions, status messages, and search entries in a plainer house voice. The Knowledge Library books themselves were left untouched.
   url: /about/
   type: Site
+  project: TheHoboKingdom
 
 - date: 27 August 2026
   title: Base-game catalogue and battle-planning tools
   description: Added a 5,340-record Dominions catalogue, a full army worksheet, and a named Throne register with sources, assumptions, intelligence age, and failure notes.
   url: /dominions/tools/
   type: Tools
+  project: Dominions 6
 
 - date: 27 August 2026
   title: Tool records that can be backed up
   description: Pretender designs, diplomacy notes, mod manifests, multiplayer sessions, and Library progress can now be saved in the browser and exported as JSON.
   url: /tools/
   type: Tools
+  project: TheHoboKingdom
 
 - date: 27 August 2026
   title: TheHoboKingdom brought up to date
   description: Updated Edition 26 details, added full-site search, revised the status labels and project pages, and refreshed the homepage.
   url: /projects/
   type: Site
+  project: TheHoboKingdom
 
 - date: 27 August 2026
   title: Dominions 6 toolkit expanded
   description: Thirteen tools covered nation choice, economy, recruitment, gems, magic, battle scripts, turn checks, research, multiplayer settings, and Throne planning at this stage.
   url: /dominions/tools/
   type: Tools
+  project: Dominions 6
 
 - date: 27 August 2026
   title: AURA and Vintage Story pages
   description: Gave the working AURA prototype and our three-player Vintage Story notes their own permanent pages.
   url: /aura/
   type: Projects
+  project: Multiple projects
 
 - date: 27 August 2026
   title: More campaign, tabletop, and Zone pages
   description: Added permanent pages for Stormwreck Isle, Z-Land, The Last of Us fan expansion, StalkerNet history, and Stalkers' Ends.
   url: /dnd/campaign-chronicles/stormwreck-isle/
   type: Archive
+  project: Multiple projects
 
 - date: 26 August 2026
   title: Dominions 6 Knowledge Library — Edition 26
   description: The complete 793-page PDF, with the core patrol-detection curve and firmer source notes for battle, movement, magic, and diplomacy rules.
   url: /dominions/library/
   type: Library
+  project: Dominions 6
 
 - date: 25 August 2026
   title: Dominions 6 Knowledge Library — Edition 25
   description: Sixteen linked books, 2,466 searchable sections, expanded object data, glossary, research register, reading paths, and the complete PDF.
   url: /dominions/library/
   type: Library
+  project: Dominions 6
 
 - date: 2 August 2026
   title: Dominions nations by age
   description: All 102 nations from the official manual now have a place across the Early, Middle, and Late Ages.
   url: /dominions/nations/
   type: Reference
+  project: Dominions 6
 
 - date: 2 August 2026
   title: Starting a Dominions 6 game
   description: Manual-based steps for creating a world, choosing settings, joining the official lobby, and ending a turn.
   url: /dominions/guides/first-game-and-hosting/
   type: Guide
+  project: Dominions 6
 
 - date: 2 August 2026
   title: Middle Age research builds expanded
   description: Breakpoint planning, six build families, mage-turn accounting, MA Arcoscephale, and mod adaptation.
   url: /dominions/guides/middle-age-research-builds/
   type: Guide
+  project: Dominions 6
 
 - date: 23 July 2026
   title: The first full site structure
   description: Added shared navigation, the project directory, the guide index, and permanent folder-based addresses.
   url: /projects/
   type: Site
+  project: TheHoboKingdom
 
 - date: 23 July 2026
   title: StalkerNet project record
   description: Recorded the v4.3.6 working fallback and its current feature set on a permanent page.
   url: /stalker/stalkernet/
   type: Project
+  project: S.T.A.L.K.E.R.

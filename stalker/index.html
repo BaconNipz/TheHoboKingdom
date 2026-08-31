@@ -2,7 +2,10 @@
 title: S.T.A.L.K.E.R.
 description: My StalkerNet project, working recovery builds, Zone references, S.T.A.L.K.E.R. modding notes, and short fiction.
 nav_section: projects
+project_id: stalker
 ---
+
+{% assign project_record = site.data.projects | where: 'id', page.project_id | first %}
 
 <section class="page-hero">
   <div class="shell">
@@ -15,13 +18,13 @@ nav_section: projects
     <h1>S.T.A.L.K.E.R.</h1>
     <p class="lead">This is where I keep StalkerNet, its recovery builds, my Zone reference work, modding notes, fixes, and fiction.</p>
     <div class="meta-row">
-      <span class="status status--active">Active</span>
+      {% include project-meta.html project=project_record %}
       <span class="meta-chip">Application</span>
       <span class="meta-chip">Modding</span>
-      <span class="meta-chip">Last updated 27 August 2026</span>
     </div>
   </div>
 </section>
+{% include project-status.html project=project_record %}
 
 <section class="section shell">
   <div class="content-grid">

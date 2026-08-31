@@ -2,7 +2,10 @@
 title: Dungeons & Dragons
 description: Our Dungeons & Dragons campaign records, characters, handouts, homebrew, and table references.
 nav_section: projects
+project_id: dnd
 ---
+
+{% assign project_record = site.data.projects | where: 'id', page.project_id | first %}
 
 <section class="page-hero">
   <div class="shell">
@@ -15,14 +18,14 @@ nav_section: projects
     <h1>Dungeons & Dragons</h1>
     <p class="lead">This is the public side of our campaigns: completed events, homebrew, printable references, and player material that no longer contains hidden GM notes.</p>
     <div class="meta-row">
-      <span class="status status--active">Active</span>
+      {% include project-meta.html project=project_record %}
       <span class="meta-chip">Campaigns</span>
       <span class="meta-chip">Characters</span>
       <span class="meta-chip">Homebrew</span>
-      <span class="meta-chip">Updated 27 August 2026</span>
     </div>
   </div>
 </section>
+{% include project-status.html project=project_record %}
 
 <section class="section shell">
   <div class="content-grid">

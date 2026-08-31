@@ -2,7 +2,10 @@
 title: Baldur's Gate 3
 description: A space I have kept for future Baldur's Gate 3 mod collections, party builds, and co-op notes.
 nav_section: projects
+project_id: bg3
 ---
+
+{% assign project_record = site.data.projects | where: 'id', page.project_id | first %}
 
 <section class="page-hero">
   <div class="shell">
@@ -15,10 +18,11 @@ nav_section: projects
     <h1>Baldur's Gate 3</h1>
     <p class="lead">I have kept this section for future mod collections, party builds, and co-op notes. It will stay in the planned list until I have something worth publishing.</p>
     <div class="meta-row">
-      <span class="status status--planned">Planned</span>
+      {% include project-meta.html project=project_record %}
     </div>
   </div>
 </section>
+{% include project-status.html project=project_record %}
 
 <section class="section shell">
   <div class="empty-state">

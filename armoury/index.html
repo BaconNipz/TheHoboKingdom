@@ -2,7 +2,10 @@
 title: Armoury & History
 description: My planned articles, transcripts, sources, specifications, and research notes for historical arms and armour videos.
 nav_section: projects
+project_id: armoury
 ---
+
+{% assign project_record = site.data.projects | where: 'id', page.project_id | first %}
 
 <section class="page-hero">
   <div class="shell">
@@ -10,9 +13,10 @@ nav_section: projects
     <p class="eyebrow">Planned history collection</p>
     <h1>Armoury &amp; History</h1>
     <p class="lead">This will hold the research behind my historical arms and armour videos, beginning with the Sten.</p>
-    <div class="meta-row"><span class="status status--planned">Planned</span><span class="meta-chip">Video companions</span><span class="meta-chip">Sources</span><span class="meta-chip">Transcripts</span></div>
+    <div class="meta-row">{% include project-meta.html project=project_record %}<span class="meta-chip">Video companions</span><span class="meta-chip">Sources</span><span class="meta-chip">Transcripts</span></div>
   </div>
 </section>
+{% include project-status.html project=project_record %}
 
 <section class="section shell">
   <div class="content-grid">

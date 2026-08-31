@@ -26,6 +26,11 @@ jobs:
         run: |
           node --check assets/dominions-tools.js
           node --check assets/dominions-reference.js
+          node --check assets/site.js
+          node --check assets/site-search.js
+          node --check assets/report.js
+          node --check assets/tool-data.js
+          node --check assets/updates.js
           node --check assets/toolkit.js
           node --check scripts/build-dominions-reference.mjs
           node scripts/build-dominions-reference.mjs --check

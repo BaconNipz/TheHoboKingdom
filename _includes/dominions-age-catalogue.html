@@ -1,4 +1,5 @@
 {% assign nations = site.data.dominions_nations[page.age_key] %}
+{% assign age_dossiers = site.data.dominions_dossiers.completed | where: 'age', page.age_key %}
 <section class="page-hero">
   <div class="shell">
     <div class="breadcrumbs">
@@ -16,8 +17,9 @@
     <div class="meta-row">
       <span class="status status--stable">Official manual</span>
       <span class="meta-chip">{{ nations.size }} nations</span>
+      <span class="meta-chip">{{ age_dossiers.size }} full dossiers</span>
       <span class="meta-chip">Manual revision 2</span>
-      <span class="meta-chip">Updated 2 August 2026</span>
+      <span class="meta-chip">Updated {{ site.data.dominions_dossiers.updated }}</span>
     </div>
   </div>
 </section>
@@ -31,10 +33,18 @@
 
       <div class="nation-grid" id="nations">
         {% for nation in nations %}
-          <article class="nation-card" id="{{ nation.slug }}">
+          {% assign dossier = age_dossiers | where: 'slug', nation.slug | first %}
+          <article class="nation-card{% if dossier %} nation-card--dossier{% endif %}" id="{{ nation.slug }}">
+            {% if dossier %}<span class="dossier-status dossier-status--complete">Full dossier published</span>{% else %}<span class="dossier-status">Official summary only</span>{% endif %}
             <h2>{{ nation.name }}</h2>
             <p>{{ nation.summary }}</p>
-            <a class="nation-source" href="https://www.illwinter.com/dom6/dom6manual.pdf#page={{ nation.manual_page }}">Official manual, page {{ nation.manual_page }}</a>
+            <div class="nation-card-links">
+              <a class="nation-source" href="https://www.illwinter.com/dom6/dom6manual.pdf#page={{ nation.manual_page }}">Official manual, page {{ nation.manual_page }}</a>
+              {% if dossier %}
+                <a href="{{ dossier.web_url | relative_url }}">Read the full dossier</a>
+                <a href="{{ dossier.pdf_url | relative_url }}">{{ dossier.pdf_label }}</a>
+              {% endif %}
+            </div>
           </article>
         {% endfor %}
       </div>
@@ -47,6 +57,7 @@
         <a href="{{ '/dominions/nations/middle-age/' | relative_url }}">Middle Age</a>
         <a href="{{ '/dominions/nations/late-age/' | relative_url }}">Late Age</a>
         <a href="{{ '/dominions/nations/' | relative_url }}">All ages</a>
+        <a href="{{ '/dominions/nations/' | relative_url }}#dossier-progress">Dossier progress</a>
         <a href="{{ '/dominions/' | relative_url }}">Dominions hub</a>
       </nav>
     </aside>

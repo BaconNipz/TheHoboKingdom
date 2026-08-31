@@ -2,8 +2,11 @@
 title: Dominions 6
 description: My Dominions 6 Knowledge Library, nation catalogue, guides, tools, campaign notes, and modding work.
 nav_section: projects
+project_id: dominions
 og_image: /assets/images/dominions-6-library-edition-27.png
 ---
+
+{% assign project_record = site.data.projects | where: 'id', page.project_id | first %}
 
 <section class="page-hero">
   <div class="shell">
@@ -16,14 +19,14 @@ og_image: /assets/images/dominions-6-library-edition-27.png
     <h1>Dominions 6</h1>
     <p class="lead">Dominions is the largest part of this site. I keep the Knowledge Library here alongside the nation catalogue, shorter guides, tools, mod notes, and multiplayer work.</p>
     <div class="meta-row">
-      <span class="status status--active">Active</span>
+      {% include project-meta.html project=project_record %}
       <span class="meta-chip">102 nations</span>
       <span class="meta-chip">Guides</span>
       <span class="meta-chip">Modding</span>
-      <span class="meta-chip">Last updated 29 August 2026</span>
     </div>
   </div>
 </section>
+{% include project-status.html project=project_record %}
 
 <section class="section shell">
   <div class="content-grid">
@@ -40,7 +43,7 @@ og_image: /assets/images/dominions-6-library-edition-27.png
         <a class="link-card" href="{{ '/dominions/nations/' | relative_url }}">
           <span>
             <strong>Nations by age</strong>
-            <small>Browse all 102 nations from the official manual across the Early, Middle, and Late Ages.</small>
+            <small>Browse all 102 official-manual summaries and see which nations now have a complete web and PDF dossier.</small>
           </span>
           <span aria-hidden="true">→</span>
         </a>
@@ -125,10 +128,10 @@ og_image: /assets/images/dominions-6-library-edition-27.png
 
       <h2>Next additions</h2>
       <ul>
-        <li>Deeper object catalogues for spells, items, summons, Pretenders, Thrones, and sites.</li>
+        <li>Reverse links and patch refreshes for the 5,340-record base-game catalogue.</li>
         <li>Further closure of the open questions recorded in the research register.</li>
         <li>Mod, event, and map-making references built from Illwinter's technical manuals.</li>
-        <li>The remaining nation dossiers, linked to the existing age catalogue and the shared rules reference.</li>
+        <li>The next Middle Age nation-dossier batch, tracked through the <a href="{{ '/dominions/nations/' | relative_url }}#dossier-progress">public dossier index</a>.</li>
         <li>A permanent diplomacy-overhaul design record once the feasible systems have been confirmed.</li>
       </ul>
     </div>

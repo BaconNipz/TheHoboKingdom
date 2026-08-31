@@ -2,7 +2,10 @@
 title: Tabletop projects
 description: My tabletop expansions, quick-start material, printables, and board-game projects.
 nav_section: projects
+project_id: tabletop
 ---
+
+{% assign project_record = site.data.projects | where: 'id', page.project_id | first %}
 
 <section class="page-hero">
   <div class="shell">
@@ -15,14 +18,14 @@ nav_section: projects
     <h1>Tabletop projects</h1>
     <p class="lead">These are my expansions, quick-start guides, printable pieces, and other tabletop projects that do not belong in the Dungeons & Dragons archive.</p>
     <div class="meta-row">
-      <span class="status status--active">Active</span>
+      {% include project-meta.html project=project_record %}
       <span class="meta-chip">Printables</span>
       <span class="meta-chip">Board games</span>
       <span class="meta-chip">TTRPG</span>
-      <span class="meta-chip">Updated 27 August 2026</span>
     </div>
   </div>
 </section>
+{% include project-status.html project=project_record %}
 
 <section class="section shell">
   <div class="content-grid">

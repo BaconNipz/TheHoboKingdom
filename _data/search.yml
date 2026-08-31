@@ -1,3 +1,17 @@
+- title: Report a problem
+  description: Prepare a factual correction, tool fault, broken-page report, or focused improvement request with the exact page address attached.
+  url: /report/
+  project: TheHoboKingdom
+  type: Site
+  keywords: report correction evidence bug broken link fault issue request github
+
+- title: Complete update archive
+  description: Every recorded public release, tool, guide, archive, and site change, filterable by project and type.
+  url: /updates/
+  project: TheHoboKingdom
+  type: Archive
+  keywords: update history changelog release revision archive date project feed
+
 - title: Dominions 6 Knowledge Library
   description: Sixteen linked books, searchable reference sections, guided paths, glossary, research register, and the current PDF.
   url: /dominions/library/
@@ -34,11 +48,11 @@
   keywords: edition 26 pdf archive rollback previous release
 
 - title: Dominions 6 nations by age
-  description: All 102 official-manual nations across the Early, Middle, and Late Ages.
+  description: All 102 official-manual nations across the three ages, with a public index of completed full dossiers.
   url: /dominions/nations/
   project: Dominions 6
   type: Reference
-  keywords: nation catalogue early middle late age manual
+  keywords: nation catalogue early middle late age manual dossier progress arcoscephale marignon pyrene pyrène
 
 - title: Starting a Dominions 6 game
   description: World creation, participants, settings, the official lobby, first-turn controls, and hosting.
@@ -188,11 +202,18 @@
   keywords: library reading progress study books sections plan export edition 27
 
 - title: TheHoboKingdom tools
-  description: Planning, campaign, mod, and reference tools that save their working data in the current browser.
+  description: Planning, campaign, mod, reference, and backup tools that keep their working data in the current browser.
   url: /tools/
   project: TheHoboKingdom
   type: Tool
-  keywords: tools local private export json recovery planning records
+  keywords: tools local private export import json recovery planning records backup data manager
+
+- title: Local tool data manager
+  description: Review thirteen recognised saved areas and export or restore them together as one versioned browser-only backup.
+  url: /tools/data/
+  project: TheHoboKingdom
+  type: Tool
+  keywords: local browser storage data backup restore import export json privacy version migration device
 
 - title: Mod manifest and freeze tool
   description: Record the exact game, loader, mod files, dependencies, side, load order, test state, and last working copy.

@@ -263,6 +263,7 @@ const readRecent = () => {
 const writeRecent = (items) => {
   try {
     window.localStorage.setItem(recentKey, JSON.stringify(items));
+    window.thkStorageMarkUpdated?.(recentKey);
   } catch {
     // Reading history is optional and stays on this device.
   }
