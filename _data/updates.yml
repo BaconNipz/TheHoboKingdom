@@ -165,3 +165,9 @@
   url: /stalker/stalkernet/
   type: Project
   project: S.T.A.L.K.E.R.
+- date: 8 September 2026
+  title: Dominions 6 Knowledge Library — Edition 29 web release
+  description: Added nine source-backed Middle Age nation dossiers, their standalone readers, and an expanded 2,857-section searchable library while keeping unresolved engine behaviour visibly open.
+  url: /dominions/library/
+  type: Library
+  project: Dominions 6

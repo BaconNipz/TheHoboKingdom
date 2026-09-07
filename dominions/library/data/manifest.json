@@ -1,13 +1,13 @@
 {
-  "edition": "Progress Edition 28",
+  "edition": "Progress Edition 29 web release",
   "documents": [
     {
       "id": "guide",
       "slug": "guide",
       "title": "Reader's Guide and Concordance",
       "shortTitle": "Reader's Guide and Concordance",
-      "sectionCount": 62,
-      "wordCount": 11460
+      "sectionCount": 63,
+      "wordCount": 12959
     },
     {
       "id": "b1",
@@ -70,8 +70,8 @@
       "slug": "book-vii",
       "title": "Foundation Book VII: Nations",
       "shortTitle": "Foundation Book VII",
-      "sectionCount": 376,
-      "wordCount": 24496
+      "sectionCount": 705,
+      "wordCount": 61039
     },
     {
       "id": "b8",

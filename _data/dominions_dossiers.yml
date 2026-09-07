@@ -1,5 +1,5 @@
-edition: 27
-updated: 31 August 2026
+edition: 29
+updated: 8 September 2026
 total_nations: 102
 completed:
   - age: middle
@@ -20,6 +20,15 @@ completed:
     pdf_url: /downloads/dominions-6-ma-marignon-nation-dossier-edition-27.pdf
     pdf_label: Standalone PDF
     ruleset: "Unmodded Dominions 6"
+  - {age: middle, age_label: Middle Age, slug: ulm, name: "Ulm, Forges of Ulm", subtitle: "Forges of Ulm", web_url: "/dominions/library/books/book-vii/#b7-part-xviii-middle-age-ulm-forges-of-ulm", pdf_url: "/downloads/dominions-6-ma-ulm-nation-dossier-edition-29.pdf", pdf_label: "Standalone PDF", ruleset: "Unmodded Dominions 6"}
+  - {age: middle, age_label: Middle Age, slug: man, name: "Man, Tower of Avalon", subtitle: "Tower of Avalon", web_url: "/dominions/library/books/book-vii/#b7-part-xix-middle-age-man-tower-of-avalon", pdf_url: "/downloads/dominions-6-ma-man-nation-dossier-edition-29.pdf", pdf_label: "Standalone PDF", ruleset: "Unmodded Dominions 6"}
+  - {age: middle, age_label: Middle Age, slug: abysia, name: "Abysia, Blood and Fire", subtitle: "Blood and Fire", web_url: "/dominions/library/books/book-vii/#b7-part-xx-middle-age-abysia-blood-and-fire", pdf_url: "/downloads/dominions-6-ma-abysia-nation-dossier-edition-29.pdf", pdf_label: "Standalone PDF", ruleset: "Unmodded Dominions 6"}
+  - {age: middle, age_label: Middle Age, slug: pythium, name: "Pythium, Emerald Empire", subtitle: "Emerald Empire", web_url: "/dominions/library/books/book-vii/#b7-part-xxi-middle-age-pythium-emerald-empire", pdf_url: "/downloads/dominions-6-ma-pythium-nation-dossier-edition-29.pdf", pdf_label: "Standalone PDF", ruleset: "Unmodded Dominions 6"}
+  - {age: middle, age_label: Middle Age, slug: eriu, name: "Eriu, Last of the Tuatha", subtitle: "Last of the Tuatha", web_url: "/dominions/library/books/book-vii/#b7-part-xxii-middle-age-eriu-last-of-the-tuatha", pdf_url: "/downloads/dominions-6-ma-eriu-nation-dossier-edition-29.pdf", pdf_label: "Standalone PDF", ruleset: "Unmodded Dominions 6"}
+  - {age: middle, age_label: Middle Age, slug: agartha, name: "Agartha, Golem Cult", subtitle: "Golem Cult", web_url: "/dominions/library/books/book-vii/#b7-part-xxiii-middle-age-agartha-golem-cult", pdf_url: "/downloads/dominions-6-ma-agartha-nation-dossier-edition-29.pdf", pdf_label: "Standalone PDF", ruleset: "Unmodded Dominions 6"}
+  - {age: middle, age_label: Middle Age, slug: uruk, name: "Uruk, City States", subtitle: "City States", web_url: "/dominions/library/books/book-vii/#b7-part-xxiv-middle-age-uruk-city-states", pdf_url: "/downloads/dominions-6-ma-uruk-nation-dossier-edition-29.pdf", pdf_label: "Standalone PDF", ruleset: "Unmodded Dominions 6"}
+  - {age: middle, age_label: Middle Age, slug: ashdod, name: "Ashdod, Reign of the Anakim", subtitle: "Reign of the Anakim", web_url: "/dominions/library/books/book-vii/#b7-part-xxv-middle-age-ashdod-reign-of-the-anakim", pdf_url: "/downloads/dominions-6-ma-ashdod-nation-dossier-edition-29.pdf", pdf_label: "Standalone PDF", ruleset: "Unmodded Dominions 6"}
+  - {age: middle, age_label: Middle Age, slug: tien-chi, name: "T'ien Ch'i, Imperial Bureaucracy", subtitle: "Imperial Bureaucracy", web_url: "/dominions/library/books/book-vii/#b7-part-xxvi-middle-age-t-ien-ch-i-imperial-bureaucracy", pdf_url: "/downloads/dominions-6-ma-tien-chi-nation-dossier-edition-29.pdf", pdf_label: "Standalone PDF", ruleset: "Unmodded Dominions 6"}
   - age: middle
     age_label: Middle Age
     slug: pyrene
@@ -30,4 +39,4 @@ completed:
     pdf_label: Standalone PDF
     ruleset: "Unmodded Dominions 6"
 in_progress: []
-next_batch: "The next Middle Age batch has not been named yet. A nation remains an official-summary entry until its full dossier is finished and published."
+next_batch: "The next source-complete Middle Age nation will be selected after the Edition 29 website release. Engine-dependent questions remain parked until hands-on testing resumes."

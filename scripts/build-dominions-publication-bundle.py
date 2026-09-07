@@ -327,12 +327,20 @@ def main() -> int:
         previous = previous_documents.get(document_id)
         reusable = bool(
             previous
-            and previous.get("sectionCount") == published_document["sectionCount"]
-            and previous.get("wordCount") == published_document["wordCount"]
+            and (
+                document_id not in {"guide", "b7"}
+                or (
+                    previous.get("sectionCount") == published_document["sectionCount"]
+                    and previous.get("wordCount") == published_document["wordCount"]
+                )
+            )
         )
         if reusable:
             published_document["html"] = previous["html"]
             published_document["toc"] = previous["toc"]
+            if document_id not in {"guide", "b7"}:
+                published_document["sectionCount"] = previous["sectionCount"]
+                published_document["wordCount"] = previous["wordCount"]
         write_json(
             documents_output / f"{document_id}.json",
             published_document,
