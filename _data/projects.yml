@@ -74,10 +74,10 @@
   mark: D20
   status: active
   status_label: Active
-  updated: 27 August 2026
+  updated: 13 September 2026
   description: Our campaign records, characters, handouts, homebrew, and the references we use at the table.
-  phase: Public archive pass
-  next: Player-safe campaign chronicles
+  phase: Campaign archive and table tools
+  next: Character-specific references and further player-safe chronicles
   tags:
     - Campaigns
     - Homebrew
@@ -88,10 +88,10 @@
   mark: TT
   status: active
   status_label: Active
-  updated: 27 August 2026
+  updated: 13 September 2026
   description: "My Z-Land material and The Last of Us: Escape the Dark fan expansion."
-  phase: Playtest material
-  next: Versioned project records and printables
+  phase: Playtest material and table tools
+  next: Versioned Z-Land and Last of Us printable releases
   tags:
     - Printables
     - Design

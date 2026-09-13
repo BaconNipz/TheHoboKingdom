@@ -11,11 +11,18 @@ const newTools = [
   { route: "dominions/tools/battle-plan", selector: "data-battle-plan", searchUrl: "/dominions/tools/battle-plan/" },
   { route: "dominions/tools/throne-tracker", selector: "data-throne-plan", searchUrl: "/dominions/tools/throne-tracker/" },
 ];
+const tabletopTools = [
+  { route: "dnd/tools/character-builder", selector: "data-character-builder", storageKey: "thk-dnd-character-builder-v1", searchUrl: "/dnd/tools/character-builder/" },
+  { route: "dnd/tools/session-chronicle", selector: "data-chronicle-builder", storageKey: "thk-dnd-session-chronicle-v1", searchUrl: "/dnd/tools/session-chronicle/" },
+  { route: "tabletop/tools/initiative-tracker", selector: "data-initiative-tracker", storageKey: "thk-tabletop-initiative-v1", searchUrl: "/tabletop/tools/initiative-tracker/" },
+  { route: "tabletop/tools/handout-builder", selector: "data-handout-builder", storageKey: "thk-tabletop-handout-v1", searchUrl: "/tabletop/tools/handout-builder/" },
+];
 
 const sharedHub = readFileSync("tools/index.html", "utf8");
 const dominionsHub = readFileSync("dominions/tools/index.html", "utf8");
 const search = readFileSync("_data/search.yml", "utf8");
 const toolkit = readFileSync("assets/toolkit.js", "utf8");
+const tabletopToolkit = readFileSync("assets/tabletop-tools.js", "utf8");
 const manifest = JSON.parse(readFileSync("dominions/library/data/manifest.json", "utf8"));
 const referencePage = readFileSync("dominions/tools/reference/index.html", "utf8");
 const referenceScript = readFileSync("assets/dominions-reference.js", "utf8");
@@ -50,8 +57,32 @@ for (const tool of newTools) {
   if (!search.includes(`url: ${tool.searchUrl}`)) failures.push(`Missing search entry: ${tool.searchUrl}`);
 }
 
+for (const tool of tabletopTools) {
+  const page = `${tool.route}/index.html`;
+  if (!existsSync(page)) {
+    failures.push(`Missing tabletop tool page: ${page}`);
+    continue;
+  }
+  const source = readFileSync(page, "utf8");
+  if (!source.includes("extra_js: /assets/tabletop-tools.js")) failures.push(`Missing tabletop tool script front matter: ${page}`);
+  if (!source.includes(tool.selector)) failures.push(`Missing page hook: ${tool.selector}`);
+  if (!source.includes("data-record-export") || !source.includes("data-record-import")) failures.push(`Missing export or import control: ${page}`);
+  if (!tabletopToolkit.includes(`[${tool.selector}]`)) failures.push(`Missing tabletop JavaScript hook: ${tool.selector}`);
+  if (!tabletopToolkit.includes(tool.storageKey)) failures.push(`Missing local storage record: ${tool.storageKey}`);
+  if (!search.includes(`url: ${tool.searchUrl}`)) failures.push(`Missing search entry: ${tool.searchUrl}`);
+}
+
 for (const route of ["/tools/mod-manifest/", "/tools/session-record/"]) {
   if (!sharedHub.includes(route)) failures.push(`Shared tools hub does not link ${route}`);
+}
+for (const route of ["/dnd/tools/", "/tabletop/tools/"]) {
+  if (!sharedHub.includes(route)) failures.push(`Shared tools hub does not link ${route}`);
+}
+for (const [hub, routes] of [
+  [readFileSync("dnd/tools/index.html", "utf8"), ["/dnd/tools/character-builder/", "/dnd/tools/session-chronicle/", "/tabletop/tools/"]],
+  [readFileSync("tabletop/tools/index.html", "utf8"), ["/tabletop/tools/initiative-tracker/", "/tabletop/tools/handout-builder/", "/dnd/tools/"]],
+]) {
+  for (const route of routes) if (!hub.includes(route)) failures.push(`D&D or tabletop tools hub does not link ${route}`);
 }
 for (const route of ["/dominions/tools/reference/", "/dominions/tools/pretender-design/", "/dominions/tools/battle-plan/", "/dominions/tools/diplomacy-log/", "/dominions/tools/throne-tracker/", "/dominions/tools/library-reading/"]) {
   if (!dominionsHub.includes(route)) failures.push(`Dominions tools hub does not link ${route}`);
@@ -59,7 +90,7 @@ for (const route of ["/dominions/tools/reference/", "/dominions/tools/pretender-
 
 const dominionsCardCount = [...dominionsHub.matchAll(/class="tool-card-code"/g)].length;
 if (dominionsCardCount !== 18) failures.push(`Dominions hub has ${dominionsCardCount} numbered cards instead of 18`);
-if (!sharedHub.includes("21 working tools")) failures.push("Shared tools hub does not report 21 working tools");
+if (!sharedHub.includes("25 working tools")) failures.push("Shared tools hub does not report 25 working tools");
 
 if (!referencePage.includes("extra_js: /assets/dominions-reference.js")) failures.push("Reference page does not load its catalogue script");
 if (!referencePage.includes("data-reference-catalogue")) failures.push("Reference page is missing its catalogue root");
@@ -92,7 +123,10 @@ if (!search.includes("url: /tools/data/")) failures.push("Search discovery is mi
 if (!toolDataPage.includes("data-tool-data-manager")) failures.push("Local-data page is missing its manager root");
 if (!toolDataScript.includes("thehobokingdom-local-data")) failures.push("Local-data manager is missing its bundle schema");
 const managedStorageAreas = [...toolDataScript.matchAll(/\{ key: "thk-/g)].length;
-if (managedStorageAreas !== 13) failures.push(`Local-data manager recognises ${managedStorageAreas} areas instead of 13`);
+if (managedStorageAreas !== 17) failures.push(`Local-data manager recognises ${managedStorageAreas} areas instead of 17`);
+for (const file of ["downloads/dnd-5e-character-record-sheet.pdf", "downloads/dnd-5e-quick-character-sheet.pdf"]) {
+  if (!existsSync(file)) failures.push(`Printable D&D sheet is missing: ${file}`);
+}
 if (!siteScript.includes("thkStorageMarkUpdated")) failures.push("Tool save dates are not tracked site-wide");
 if (!siteScript.includes("annotateToolTable")) failures.push("Tool tables are not labelled for the mobile card layout");
 if (!siteStyles.includes("prefers-reduced-motion: reduce")) failures.push("Reduced-motion support is missing");
@@ -123,4 +157,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log("Checked 21 site tools, thirteen managed browser records, the 5,340-record catalogue and main-search connection, and the current 16-document Library manifest.");
+console.log("Checked 25 site tools, seventeen managed browser records, the D&D and tabletop printable set, the 5,340-record catalogue and main-search connection, and the current 16-document Library manifest.");

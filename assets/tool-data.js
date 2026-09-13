@@ -7,6 +7,10 @@ if (toolDataManager) {
   const registry = [
     { key: "thk-mod-manifest-v1", name: "Mod manifest", version: 1, url: "/tools/mod-manifest/", description: "Game, loader, exact files, dependencies, order, test state, and recovery notes." },
     { key: "thk-shared-session-record-v1", name: "Multiplayer session record", version: 1, url: "/tools/session-record/", description: "Players, roles, connection details, decisions, progress, problems, and next jobs." },
+    { key: "thk-dnd-character-builder-v1", name: "D&D character builder", version: 1, url: "/dnd/tools/character-builder/", description: "Character identity, abilities, saves, skills, combat values, attacks, equipment, features, spells, and notes." },
+    { key: "thk-dnd-session-chronicle-v1", name: "D&D campaign chronicle", version: 1, url: "/dnd/tools/session-chronicle/", description: "Player-safe events, party records, decisions, discoveries, consequences, and separate GM-only preparation." },
+    { key: "thk-tabletop-initiative-v1", name: "Tabletop initiative tracker", version: 1, url: "/tabletop/tools/initiative-tracker/", description: "Round, turn order, health or state, defence, conditions, concentration, and encounter notes." },
+    { key: "thk-tabletop-handout-v1", name: "Tabletop handout", version: 1, url: "/tabletop/tools/handout-builder/", description: "A printable letter, notice, field report, clue, item record, or clean table reference." },
     { key: "thk-dominions-pretender-design-v1", name: "Pretender design", version: 1, url: "/dominions/tools/pretender-design/", description: "Chassis, paths, scales, bless, purpose, tests, and failure branch." },
     { key: "thk-dominions-diplomacy-log-v1", name: "Diplomacy log", version: 1, url: "/dominions/tools/diplomacy-log/", description: "Relationships, evidence, agreements, expiry turns, obligations, and private notes." },
     { key: "thk-dominions-library-reading-v1", name: "Library reading tracker", version: 1, url: "/dominions/tools/library-reading/", description: "Completed sections, priorities, notes, and the next place to continue." },

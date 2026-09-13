@@ -1,3 +1,10 @@
+- date: 13 September 2026
+  title: D&amp;D and tabletop tools opened
+  description: Added a browser-local 5e character builder, campaign chronicle maker, initiative tracker, in-world handout maker, and two original printable character-sheet PDFs.
+  url: /dnd/tools/
+  type: Tools
+  project: Multiple projects
+
 - date: 31 August 2026
   title: One status record for every main project page
   description: Connected each project hub to the shared phase, next milestone, status, and update date used by the homepage and project directory.
