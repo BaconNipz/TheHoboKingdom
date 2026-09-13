@@ -216,7 +216,7 @@
   keywords: tools local private export import json recovery planning records backup data manager
 
 - title: Local tool data manager
-  description: Review thirteen recognised saved areas and export or restore them together as one versioned browser-only backup.
+  description: Review seventeen recognised saved areas and export or restore them together as one versioned browser-only backup.
   url: /tools/data/
   project: TheHoboKingdom
   type: Tool
@@ -320,12 +320,68 @@
   type: Collection
   keywords: printable character journal reference player handout
 
+- title: D&D tools
+  description: Original printable character sheets and browser-only tools for characters, campaign chronicles, encounters, and handouts.
+  url: /dnd/tools/
+  project: Dungeons & Dragons
+  type: Tool
+  keywords: dnd 5e tools character builder creator printable pdf sheet campaign session chronicle initiative handout local
+
+- title: D&D 5e character builder
+  description: Build and save a 5e-compatible character record, calculate basic modifiers, print it, or export it as JSON.
+  url: /dnd/tools/character-builder/
+  project: Dungeons & Dragons
+  type: Tool
+  keywords: character creator builder ability score modifier save skill proficiency armour class hit points spell attack save dc json
+
+- title: D&D campaign chronicle builder
+  description: Record a session and keep the player-safe public chronicle separate from GM-only preparation.
+  url: /dnd/tools/session-chronicle/
+  project: Dungeons & Dragons
+  type: Tool
+  keywords: campaign session log chronicle party gm notes private public decisions rewards consequences recap
+
+- title: D&D 5e-compatible character record PDF
+  description: Original three-page printable sheet for character details, skills, combat, equipment, features, and spellcasting.
+  url: /downloads/dnd-5e-character-record-sheet.pdf
+  project: Dungeons & Dragons
+  type: Download
+  keywords: printable pdf blank character sheet 5e spell sheet equipment features
+
+- title: D&D 5e-compatible quick character sheet PDF
+  description: Original one-page printable sheet for one-shots, companions, side characters, and simple builds.
+  url: /downloads/dnd-5e-quick-character-sheet.pdf
+  project: Dungeons & Dragons
+  type: Download
+  keywords: printable pdf blank quick character sheet 5e one shot companion npc
+
 - title: Tabletop projects
   description: My expansions, quick-start material, printable references, and tabletop work outside the D&D archive.
   url: /tabletop/
   project: Tabletop
   type: Project
   keywords: board game ttrpg printables design
+
+- title: Tabletop tools
+  description: Browser-only tools for initiative, conditions, printable handouts, and shared campaign work.
+  url: /tabletop/tools/
+  project: Tabletop
+  type: Tool
+  keywords: tabletop ttrpg tool initiative conditions combat round handout printable local
+
+- title: Initiative and condition tracker
+  description: Track initiative, rounds, turns, health, defence, conditions, concentration, and encounter notes in the browser.
+  url: /tabletop/tools/initiative-tracker/
+  project: Tabletop
+  type: Tool
+  keywords: initiative tracker round turn order hp health defence armor armour condition concentration encounter combat
+
+- title: Tabletop handout maker
+  description: Turn a letter, notice, clue, field report, or item record into a printable in-world handout.
+  url: /tabletop/tools/handout-builder/
+  project: Tabletop
+  type: Tool
+  keywords: handout generator maker printable pdf letter notice clue field report item prop
 
 - title: Z-Land quick-start project
   description: My playtest narration, infection overview, characters, handouts, and plans for the first sessions.

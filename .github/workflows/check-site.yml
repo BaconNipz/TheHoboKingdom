@@ -32,6 +32,8 @@ jobs:
           node --check assets/tool-data.js
           node --check assets/updates.js
           node --check assets/toolkit.js
+          node --check assets/tabletop-tools.js
+          python3 -m py_compile scripts/build-dnd-character-sheets.py
           node --check scripts/build-dominions-reference.mjs
           node scripts/build-dominions-reference.mjs --check
           node scripts/check-toolkit.mjs

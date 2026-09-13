@@ -1,0 +1,98 @@
+---
+title: D&D 5e character builder
+description: Build and save a 5e-compatible character record, calculate basic modifiers, print it, or export it as JSON.
+nav_section: tools
+extra_js: /assets/tabletop-tools.js
+---
+
+<section class="page-hero">
+  <div class="shell">
+    <div class="breadcrumbs"><a href="{{ '/dnd/' | relative_url }}">Dungeons &amp; Dragons</a><span>/</span><a href="{{ '/dnd/tools/' | relative_url }}">Tools</a><span>/</span><span>Character builder</span></div>
+    <p class="eyebrow">Local character record</p>
+    <h1>Build the character you chose.</h1>
+    <p class="lead">Enter the options used at your table. The page calculates ability modifiers, proficiency bonus, initiative, saving throws, skills, passive Perception, spell attack and save DC from the values you provide.</p>
+    <div class="content-badges"><span class="content-badge content-badge--strategy">5e compatible</span><span class="content-badge content-badge--tested">Saved in this browser</span></div>
+  </div>
+</section>
+
+<section class="section shell">
+  <form class="tool-form tabletop-tool-form" data-character-builder>
+    <fieldset class="tool-fieldset"><legend>Character</legend>
+      <div class="tool-form-grid tool-form-grid--three">
+        <label><span>Character name</span><input name="name" data-character-field maxlength="100" required></label>
+        <label><span>Player</span><input name="player" data-character-field maxlength="100"></label>
+        <label><span>Campaign</span><input name="campaign" data-character-field maxlength="120"></label>
+        <label><span>Class and subclass</span><input name="class" data-character-field maxlength="120" placeholder="Fighter 3 / Rogue 2"></label>
+        <label><span>Level</span><input name="level" data-character-field type="number" min="1" max="20" value="1"></label>
+        <label><span>Species or ancestry</span><input name="species" data-character-field maxlength="100"></label>
+        <label><span>Background</span><input name="background" data-character-field maxlength="100"></label>
+        <label><span>Alignment or outlook</span><input name="alignment" data-character-field maxlength="80"></label>
+        <label><span>Experience</span><input name="xp" data-character-field type="number" min="0" value="0"></label>
+      </div>
+    </fieldset>
+
+    <fieldset class="tool-fieldset"><legend>Ability scores and saves</legend>
+      <div class="ability-builder-grid">
+        {% assign abilities = "strength:Strength,dexterity:Dexterity,constitution:Constitution,intelligence:Intelligence,wisdom:Wisdom,charisma:Charisma" | split: "," %}
+        {% for ability in abilities %}{% assign pair = ability | split: ":" %}<section class="ability-builder-card"><h2>{{ pair[1] }}</h2><label><span>Score</span><input name="{{ pair[0] }}" data-character-ability="{{ pair[0] }}" type="number" min="1" max="30" value="10"></label><p>Modifier <strong data-character-mod="{{ pair[0] }}">+0</strong></p><label class="inline-check"><input name="save_{{ pair[0] }}" data-character-save="{{ pair[0] }}" type="checkbox"><span>Save proficiency</span></label><p>Saving throw <strong data-character-save-total="{{ pair[0] }}">+0</strong></p></section>{% endfor %}
+      </div>
+    </fieldset>
+
+    <fieldset class="tool-fieldset"><legend>Combat</legend>
+      <div class="tool-form-grid tool-form-grid--five">
+        <label><span>Armour Class</span><input name="ac" data-character-field type="number" min="0" value="10"></label>
+        <label><span>Speed</span><input name="speed" data-character-field maxlength="30" value="30 ft"></label>
+        <label><span>Maximum HP</span><input name="hp_max" data-character-field type="number" min="0" value="1"></label>
+        <label><span>Current HP</span><input name="hp_current" data-character-field type="number" min="0" value="1"></label>
+        <label><span>Temporary HP</span><input name="hp_temp" data-character-field type="number" min="0" value="0"></label>
+        <label><span>Hit dice</span><input name="hit_dice" data-character-field maxlength="40" placeholder="5d8"></label>
+        <label><span>Initiative bonus</span><input name="initiative_extra" data-character-field type="number" value="0"><small>Added to Dexterity modifier.</small></label>
+        <label><span>Proficiency override</span><input name="proficiency_override" data-character-field type="number" placeholder="Automatic"><small>Leave blank for the level-based value.</small></label>
+        <label><span>Passive Perception bonus</span><input name="passive_extra" data-character-field type="number" value="0"></label>
+        <label><span>Death-save notes</span><input name="death_saves" data-character-field maxlength="80" placeholder="Successes, failures, special rules"></label>
+      </div>
+      <div class="calculated-strip" aria-live="polite"><span>Proficiency <strong data-character-proficiency>+2</strong></span><span>Initiative <strong data-character-initiative>+0</strong></span><span>Passive Perception <strong data-character-passive>10</strong></span></div>
+    </fieldset>
+
+    <fieldset class="tool-fieldset"><legend>Skills</legend>
+      <p class="tool-fieldset-note">Choose proficiency or expertise, then add any other bonus granted by the character. Expertise doubles the current proficiency bonus.</p>
+      <div class="skill-builder-grid" data-character-skills>
+        {% assign skills = "Acrobatics:dexterity,Animal Handling:wisdom,Arcana:intelligence,Athletics:strength,Deception:charisma,History:intelligence,Insight:wisdom,Intimidation:charisma,Investigation:intelligence,Medicine:wisdom,Nature:intelligence,Perception:wisdom,Performance:charisma,Persuasion:charisma,Religion:intelligence,Sleight of Hand:dexterity,Stealth:dexterity,Survival:wisdom" | split: "," %}
+        {% for skill in skills %}{% assign pair = skill | split: ":" %}<label class="skill-builder-row"><span>{{ pair[0] }} <small>({{ pair[1] | slice: 0, 3 | upcase }})</small></span><select data-skill-rank="{{ pair[0] | slugify }}" data-skill-ability="{{ pair[1] }}"><option value="0">None</option><option value="1">Proficient</option><option value="2">Expertise</option></select><input data-skill-extra="{{ pair[0] | slugify }}" type="number" value="0" aria-label="{{ pair[0] }} other bonus"><strong data-skill-total="{{ pair[0] | slugify }}">+0</strong></label>{% endfor %}
+      </div>
+    </fieldset>
+
+    <fieldset class="tool-fieldset"><legend>Attacks and actions</legend>
+      <div class="tool-table-wrap"><table class="tool-table"><thead><tr><th>Name</th><th>Attack or DC</th><th>Damage or effect</th><th>Range</th><th>Notes</th><th></th></tr></thead><tbody data-character-attacks></tbody></table></div>
+      <button class="button button--quiet" type="button" data-character-add-attack>Add attack or action</button>
+    </fieldset>
+
+    <fieldset class="tool-fieldset"><legend>Spellcasting</legend>
+      <div class="tool-form-grid tool-form-grid--three">
+        <label><span>Spellcasting ability</span><select name="spell_ability" data-character-field><option value="">None</option><option value="intelligence">Intelligence</option><option value="wisdom">Wisdom</option><option value="charisma">Charisma</option></select></label>
+        <label><span>Other spell attack bonus</span><input name="spell_attack_extra" data-character-field type="number" value="0"></label>
+        <label><span>Other spell save DC bonus</span><input name="spell_dc_extra" data-character-field type="number" value="0"></label>
+      </div>
+      <div class="calculated-strip"><span>Spell attack <strong data-character-spell-attack>—</strong></span><span>Spell save DC <strong data-character-spell-dc>—</strong></span></div>
+      <label><span>Cantrips and spells</span><textarea name="spells" data-character-field placeholder="Record prepared or known spells, slots, ritual notes, and the source book if useful."></textarea></label>
+    </fieldset>
+
+    <fieldset class="tool-fieldset"><legend>What the character carries and knows</legend>
+      <div class="tool-form-grid tool-form-grid--two">
+        <label><span>Features, traits, and boons</span><textarea name="features" data-character-field></textarea></label>
+        <label><span>Equipment and treasure</span><textarea name="equipment" data-character-field></textarea></label>
+        <label><span>Proficiencies and languages</span><textarea name="proficiencies" data-character-field></textarea></label>
+        <label><span>Appearance and personality</span><textarea name="personality" data-character-field></textarea></label>
+        <label><span>Allies, organisations, and contacts</span><textarea name="allies" data-character-field></textarea></label>
+        <label><span>Backstory and campaign notes</span><textarea name="notes" data-character-field></textarea></label>
+      </div>
+    </fieldset>
+
+    <div class="tool-actions"><button class="button button--primary" type="submit">Update character record</button><button class="button button--quiet" type="button" data-character-print>Print or save as PDF</button><button class="button button--quiet" type="button" data-record-export>Export JSON</button><label class="button button--quiet tool-file-button">Import JSON<input type="file" accept="application/json,.json" data-record-import></label><button class="button button--quiet" type="button" data-record-clear>Clear saved character</button></div>
+  </form>
+  <p class="tool-status" data-record-status aria-live="polite">The character is saved in this browser as you work.</p>
+  <section class="character-print-sheet" data-character-output aria-live="polite"></section>
+  <div class="tool-notice"><strong>Rules boundary:</strong> this builder supports the arithmetic shared by modern 5e play. It does not contain a catalogue of paid classes, species, backgrounds, feats, spells, or equipment. Enter the choices from the rules your table owns and uses.</div>
+</section>
+
+<template data-character-attack-template><tr data-character-attack-row><td><input data-attack-field="name"></td><td><input data-attack-field="attack"></td><td><input data-attack-field="damage"></td><td><input data-attack-field="range"></td><td><input data-attack-field="notes"></td><td><button class="table-row-remove" type="button" data-row-remove>×</button></td></tr></template>
