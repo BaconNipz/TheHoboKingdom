@@ -110,7 +110,7 @@ def write_partitioned_search_index(
     output: Path,
     entries: list[dict],
     edition: str,
-    part_count: int = 8,
+    part_count: int = 12,
 ) -> None:
     parts = []
     total = len(entries)

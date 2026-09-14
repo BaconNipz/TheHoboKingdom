@@ -1,0 +1,238 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thehobokingdom.com/schemas/dominions-base-object-register.schema.json",
+  "title": "TheHoboKingdom Dominions 6 Base-Game Object Register",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "edition",
+    "ruleset",
+    "sources",
+    "counts",
+    "records"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "edition": {
+      "type": "string"
+    },
+    "generated_on": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "ruleset": {
+      "type": "object",
+      "required": [
+        "game",
+        "game_version",
+        "mods"
+      ],
+      "properties": {
+        "game": {
+          "const": "Dominions 6"
+        },
+        "game_version": {
+          "const": "6.35"
+        },
+        "mods": {
+          "type": "array",
+          "maxItems": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "evidence_key": {
+      "type": "object"
+    },
+    "scope": {
+      "type": "object"
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 2
+    },
+    "counts": {
+      "type": "object",
+      "required": [
+        "spells",
+        "items",
+        "summons",
+        "pretenders",
+        "thrones",
+        "sites",
+        "mercenaries",
+        "independents",
+        "special_dominions"
+      ],
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+    "records": {
+      "type": "object",
+      "required": [
+        "spells",
+        "items",
+        "summons",
+        "pretenders",
+        "thrones",
+        "sites",
+        "mercenaries",
+        "independents",
+        "special_dominions"
+      ],
+      "properties": {
+        "spells": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "object_type",
+              "name",
+              "ruleset",
+              "evidence_status",
+              "source_ids",
+              "canonical_section_id",
+              "record_hash"
+            ]
+          }
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "object_type",
+              "name",
+              "ruleset",
+              "evidence_status",
+              "source_ids",
+              "canonical_section_id",
+              "record_hash"
+            ]
+          }
+        },
+        "pretenders": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "object_type",
+              "name",
+              "ruleset",
+              "evidence_status",
+              "source_ids",
+              "canonical_section_id",
+              "record_hash"
+            ]
+          }
+        },
+        "thrones": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "object_type",
+              "name",
+              "ruleset",
+              "evidence_status",
+              "source_ids",
+              "canonical_section_id",
+              "record_hash"
+            ]
+          }
+        },
+        "sites": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "object_type",
+              "name",
+              "ruleset",
+              "evidence_status",
+              "source_ids",
+              "canonical_section_id",
+              "record_hash"
+            ]
+          }
+        },
+        "mercenaries": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "object_type",
+              "name",
+              "ruleset",
+              "evidence_status",
+              "source_ids",
+              "canonical_section_id",
+              "record_hash"
+            ]
+          }
+        },
+        "independents": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "object_type",
+              "name",
+              "ruleset",
+              "evidence_status",
+              "source_ids",
+              "canonical_section_id",
+              "record_hash"
+            ]
+          }
+        },
+        "special_dominions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "object_type",
+              "name",
+              "ruleset",
+              "evidence_status",
+              "source_ids",
+              "canonical_section_id",
+              "record_hash"
+            ]
+          }
+        },
+        "summons": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "object_type",
+              "spell_id",
+              "spell_name",
+              "ruleset",
+              "evidence_status",
+              "source_ids",
+              "canonical_section_id",
+              "record_hash"
+            ]
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

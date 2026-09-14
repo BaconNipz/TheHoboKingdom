@@ -1,3 +1,10 @@
+- date: 14 September 2026
+  title: Dominions 6 Knowledge Library — Edition 30 Middle Age collection
+  description: Completed Book VII coverage for all 37 unmodded Middle Age nations, rebuilt the searchable library to 3,646 sections, and published 36 compact standalone dossier PDFs. Engine-dependent claims remain open rather than being filled with estimates.
+  url: /dominions/library/books/book-vii/
+  type: Library
+  project: Dominions 6
+
 - date: 13 September 2026
   title: D&amp;D and tabletop tools opened
   description: Added a browser-local 5e character builder, campaign chronicle maker, initiative tracker, in-world handout maker, and two original printable character-sheet PDFs.

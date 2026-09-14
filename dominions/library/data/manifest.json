@@ -1,5 +1,5 @@
 {
-  "edition": "Progress Edition 29 web release",
+  "edition": "Edition 30 web release",
   "documents": [
     {
       "id": "guide",
@@ -7,7 +7,7 @@
       "title": "Reader's Guide and Concordance",
       "shortTitle": "Reader's Guide and Concordance",
       "sectionCount": 63,
-      "wordCount": 12959
+      "wordCount": 13233
     },
     {
       "id": "b1",
@@ -70,8 +70,8 @@
       "slug": "book-vii",
       "title": "Foundation Book VII: Nations",
       "shortTitle": "Foundation Book VII",
-      "sectionCount": 705,
-      "wordCount": 61039
+      "sectionCount": 1494,
+      "wordCount": 122309
     },
     {
       "id": "b8",
@@ -103,7 +103,7 @@
       "title": "Foundation Book XI - Units, Abilities, Experience, and Conditions",
       "shortTitle": "Foundation Book XI",
       "sectionCount": 110,
-      "wordCount": 14199
+      "wordCount": 14257
     },
     {
       "id": "b12",
@@ -118,16 +118,16 @@
       "slug": "book-xiii",
       "title": "Foundation Book XIII: Version History and the Official Patch Ledger",
       "shortTitle": "Foundation Book XIII",
-      "sectionCount": 87,
-      "wordCount": 8852
+      "sectionCount": 88,
+      "wordCount": 8764
     },
     {
       "id": "b14",
       "slug": "book-xiv",
       "title": "Foundation Book XIV: The Command and Terminology Lexicon",
       "shortTitle": "Foundation Book XIV",
-      "sectionCount": 114,
-      "wordCount": 25082
+      "sectionCount": 113,
+      "wordCount": 24817
     }
   ]
 }
