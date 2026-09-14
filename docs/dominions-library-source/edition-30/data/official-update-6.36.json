@@ -1,0 +1,21 @@
+{
+  "appnews": {
+    "appid": 2511500,
+    "newsitems": [
+      {
+        "gid": "693143486970465344",
+        "title": "Dominions 6.36",
+        "url": "https://steamcommunity.com/games/2511500/announcements/detail/693143486970465344",
+        "is_external_url": false,
+        "author": "johan",
+        "contents": "This update adds a touchscreen mode, useful for when you want to play using a touchscreen and with no or little keyboard use. With this mode enabled a long-click will be changed into a right click and scrolling can be done by everywhere by dragging. See the popup in settings for more hints on using the touchscreen mode.\n\nThere is also a few small features added as well as a bunch of bugs fixed, most importantly a battle replay inconsistency that sometimes occurred after watching a previous battle past round 99.\n\n[b]General[/b]\n[list]\n[*] Touchscreen mode\n[*] Right click to raise/lower PD by 10\n[*] Right click on 't' for 'y'\n[*] Use up/down keys to swap research targets\n[*] Added ? help on research screen\n[*] Press 's' to hide temp summons in battle overview\n[*] New sprite for Mountain Vila\n[*] Fix for some commanders having an incorrect sprite when unmounted\n[*] Research scoregraph could fail to show leader at the top\n[*] Fix for Shark Attack / Morrigans being affected by death of vegetation\n[*] Gift of water breathing ability can now protect against Lost Land\n[*] Swimming mounts are now enough to cross rivers\n[*] Perpetual Storm increased move cost in caves/underwater too\n[*] Cancel load pretender loaded bless effects anyway, fixed\n[*] Rust didn't take effect when causing no damage at all\n[*] Changing items on blood sacrificer no longer removes order\n[*] Battle replay inconsistency could occur if watching previous battle past round 99\n[*] If a knight is charmed in a tavern encounter, his mount will now also change side afterwards\n[*] Repeat recruited mounted commanders could sometime cost gold to remove from queue\n[*] Space can now be used to clear filter when selecting a spell\n[*] Fix for telporting indeps trying to go into cave walls\n[*] Event fixes\n[*] Typo and stat fixes\n[/list]\n\n[b]Modding / Map Making[/b]\n[list]\n[*] New event commands: #healaffmount, #gainaffmount, #req_provnbr, #newnbor, #remnbor\n[*] Added spec2 bitmask for spell modding\n[*] Better at clearing stuff when changing between mods\n[/list]",
+        "feedlabel": "Community Announcements",
+        "date": 1786974385,
+        "feedname": "steam_community_announcements",
+        "feed_type": 1,
+        "appid": 2511500
+      }
+    ],
+    "count": 1
+  }
+}

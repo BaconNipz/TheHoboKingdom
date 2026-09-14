@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thehobokingdom.com/dominions/library/schemas/command-lexicon.schema.json",
+  "title": "Dominions 6 command lexicon",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "edition",
+    "ruleset",
+    "sources",
+    "summary",
+    "commands",
+    "aliases",
+    "patch_reconciliation"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "edition": {
+      "type": "string"
+    },
+    "generated_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "ruleset": {
+      "type": "object"
+    },
+    "scope": {
+      "type": "object"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "summary": {
+      "type": "object"
+    },
+    "commands": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "command",
+          "documentation_status",
+          "domains",
+          "manual_entries",
+          "record_hash"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^(cmd|term)-"
+          },
+          "command": {
+            "type": "string",
+            "pattern": "^#"
+          },
+          "documentation_status": {
+            "enum": [
+              "defined",
+              "reference-only",
+              "mentioned-only"
+            ]
+          },
+          "domains": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "manual_entries": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "record_hash": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "patch_reconciliation": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "additionalProperties": true
+}

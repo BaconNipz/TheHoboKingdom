@@ -1,0 +1,8 @@
+effect_or_family,source_scope,current_rule,evidence,verification_date,status,test_boundary
+Standard,"form; item; bless; spell if any source grants the same ability","Only the highest Standard in a squad counts; multiple Standards do not stack","MM 6.36 #standard",2026-08-30,confirmed,"Source removal and squad reassignment change which value is present"
+Inspiring Researcher,"unit; form; item or other grant if present","Only the highest value in a province counts","MM 6.36 #inspiringres",2026-08-30,confirmed,"Coverage and redundancy remain useful but do not increase the province value"
+Blur/Displacement/Invisibility,"spell; item; innate state","Displacement does not stack with Blur or Invisibility","Pinned 6.35 current descriptions; no 6.36 patch change",2026-08-30,confirmed,"Other concealment and image effects require separate rules"
+Experience thresholds,"persistent unit development","Published threshold bonuses accumulate","OM; official 6.13 and 6.14 corrections",2026-08-30,confirmed,"Transformation and mount-state transfer remains R-052"
+Horror Mark,"persistent condition","Repeated marking can deepen severity","OM",2026-08-30,confirmed,"Exact event or attack distributions remain object-specific"
+Different defence families,"mixed","Separate rule gates resolve separately unless an explicit rule merges or replaces them","OM; derived system model",2026-08-30,bounded,"No arithmetic addition is inferred across unlike defences"
+Unlisted ability,"form; item; bless; spell","No universal stacking or precedence rule","Evidence boundary",2026-08-30,test-pending,"Read the exact ability description or run a one-variable current test"

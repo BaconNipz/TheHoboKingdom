@@ -24,14 +24,17 @@ nav_section: downloads
           </span>
           <span aria-hidden="true">PDF</span>
         </a>
-        <a class="link-card" href="{{ '/downloads/dominions-6-ma-marignon-nation-dossier-edition-27.pdf' | relative_url }}">
-          <span><strong>Middle Age Marignon — Nation Dossier</strong><small>Nine-page Edition 27 field guide for Fiery Justice.</small></span>
+      </div>
+
+      <h2 id="middle-age-dossiers">Middle Age nation dossiers</h2>
+      <p>Book VII contains all 37 unmodded Middle Age nations. These compact Edition 30 PDFs cover the 36 standalone field readers; Arcoscephale remains part of the larger Book VII foundation chapter.</p>
+      <div class="link-list">
+        {% for dossier in site.data.dominions_library.middle_age_dossiers %}
+        <a class="link-card" href="{{ '/downloads/dominions-6-ma-' | append: dossier.slug | append: '-nation-dossier-edition-30.pdf' | relative_url }}">
+          <span><strong>Middle Age {{ dossier.name }} — Nation Dossier</strong><small>Edition 30 · unmodded Dominions 6.37 reference.</small></span>
           <span aria-hidden="true">PDF</span>
         </a>
-        <a class="link-card" href="{{ '/downloads/dominions-6-ma-pyrene-nation-dossier-edition-27.pdf' | relative_url }}">
-          <span><strong>Middle Age Pyrène — Nation Dossier</strong><small>Nine-page Edition 27 field guide for the Time of the Akelarre.</small></span>
-          <span aria-hidden="true">PDF</span>
-        </a>
+        {% endfor %}
       </div>
 
       <h2>D&amp;D printables</h2>

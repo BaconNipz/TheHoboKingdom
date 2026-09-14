@@ -1,19 +1,56 @@
-edition: "29"
-edition_label: "Progress Edition 29 web release"
+edition: "30"
+edition_label: "Edition 30 web release"
 pdf_edition: "28"
-game_version: "6.36"
+game_version: "6.37"
 de_version: "2.16"
 divinitus_version: "1.15.3 DE"
 book_count: "16"
-website_section_count: "2,857"
-word_count: "264,306"
+website_section_count: "3,646"
+word_count: "325,555"
 pdf_page_count: "811"
 pdf_size: "3.53 MB"
-published: "8 September 2026"
+published: "14 September 2026"
 download_url: "/downloads/dominions-6-knowledge-library-edition-28/"
 cover_image: "/assets/images/dominions-6-library-edition-28.png"
 sha256: "1772cfdeee023abe13931f431808f2c4a1f1f22fe6298457028667f3072ec777"
-website_note: "The searchable Edition 29 website contains 2,857 indexed sections and twelve complete Middle Age dossiers. Edition 28 remains the latest complete omnibus PDF while the next omnibus is assembled."
+website_note: "The searchable Edition 30 website contains 3,646 indexed sections and complete dossiers for all 37 unmodded Middle Age nations. Edition 28 remains the latest complete omnibus PDF while the next omnibus is assembled."
+middle_age_dossiers:
+  - { name: "Marignon", slug: "marignon" }
+  - { name: "Pyrène", slug: "pyrene" }
+  - { name: "Ulm", slug: "ulm" }
+  - { name: "Man", slug: "man" }
+  - { name: "Abysia", slug: "abysia" }
+  - { name: "Pythium", slug: "pythium" }
+  - { name: "Eriu", slug: "eriu" }
+  - { name: "Agartha", slug: "agartha" }
+  - { name: "Uruk", slug: "uruk" }
+  - { name: "Ashdod", slug: "ashdod" }
+  - { name: "T'ien Ch'i", slug: "tien-chi" }
+  - { name: "Machaka", slug: "machaka" }
+  - { name: "Shinuyama", slug: "shinuyama" }
+  - { name: "C'tis", slug: "ctis" }
+  - { name: "Pangaea", slug: "pangaea" }
+  - { name: "Vanheim", slug: "vanheim" }
+  - { name: "Caelum", slug: "caelum" }
+  - { name: "Phlegra", slug: "phlegra" }
+  - { name: "Asphodel", slug: "asphodel" }
+  - { name: "Ermor", slug: "ermor" }
+  - { name: "Sceleria", slug: "sceleria" }
+  - { name: "Na'Ba", slug: "na-ba" }
+  - { name: "Ind", slug: "ind" }
+  - { name: "Bandar Log", slug: "bandar-log" }
+  - { name: "Nazca", slug: "nazca" }
+  - { name: "Mictlan", slug: "mictlan" }
+  - { name: "Xibalba", slug: "xibalba" }
+  - { name: "Phaeacia", slug: "phaeacia" }
+  - { name: "Vanarus", slug: "vanarus" }
+  - { name: "Jotunheim", slug: "jotunheim" }
+  - { name: "Nidavangr", slug: "nidavangr" }
+  - { name: "Ys", slug: "ys" }
+  - { name: "Pelagia", slug: "pelagia" }
+  - { name: "Oceania", slug: "oceania" }
+  - { name: "Atlantis", slug: "atlantis" }
+  - { name: "R'lyeh", slug: "rlyeh" }
 split_readers:
   - title: "Core Rules and Strategy"
     description: "The Reader's Guide and Foundation Books I-VI."

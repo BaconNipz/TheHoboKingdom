@@ -304,7 +304,7 @@ const catalogue = {
   evidenceKey: source.evidence_key,
   coverage: {
     statement: "Spells, items, sites, Thrones, Pretender forms, summon relations, and mercenaries come from the pinned base-game object register. Referenced units are only units named by those records; they are not an exhaustive national troop and commander catalogue.",
-    currentLibraryBaseline: "Dominions 6.36",
+    currentLibraryBaseline: "Dominions 6.37",
   },
   counts,
   totalRecords: records.length,

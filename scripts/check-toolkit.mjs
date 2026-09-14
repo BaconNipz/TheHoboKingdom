@@ -108,8 +108,8 @@ if (!reportScript.includes("factual-correction.md") || !reportScript.includes("t
 for (const template of ["factual-correction.md", "tool-fault.md", "broken-page-or-link.md", "focused-improvement.md"]) {
   if (!existsSync(`.github/ISSUE_TEMPLATE/${template}`)) failures.push(`Missing issue template: ${template}`);
 }
-const completedDossiers = [...dossierData.matchAll(/^\s{2}- age:/gm)].length;
-if (completedDossiers !== 3) failures.push(`Dossier register has ${completedDossiers} completed entries instead of 3`);
+const completedDossiers = [...dossierData.matchAll(/^\s{2}- .*age:\s*middle/gm)].length;
+if (completedDossiers !== 37) failures.push(`Dossier register has ${completedDossiers} completed entries instead of 37`);
 if (!nationIndex.includes('id="dossier-progress"')) failures.push("Nation index is missing the dossier progress section");
 if (!nationCatalogue.includes("nation-card--dossier")) failures.push("Age catalogues do not mark completed dossiers");
 for (const anchor of ["b7-part-ii-middle-age-arcoscephale-the-old-kingdom", "b7-part-xvi-middle-age-marignon-fiery-justice", "b7-part-xvii-middle-age-pyrene-time-of-the-akelarre"]) {
@@ -142,14 +142,14 @@ for (const page of ["dominions/index.html", "aura/index.html", "vintage-story/in
 if (reference.totalRecords !== reference.records.length) failures.push("Reference total does not match the record array");
 if (reference.totalRecords !== 5340) failures.push(`Reference catalogue has ${reference.totalRecords} records instead of 5,340`);
 if (reference.ruleset?.game_version !== "6.35") failures.push("Reference catalogue does not expose its pinned 6.35 ruleset");
-if (reference.coverage?.currentLibraryBaseline !== "Dominions 6.36") failures.push("Reference catalogue does not expose the current 6.36 library baseline");
+if (reference.coverage?.currentLibraryBaseline !== "Dominions 6.37") failures.push("Reference catalogue does not expose the current 6.37 library baseline");
 for (const category of ["spell", "item", "unit", "pretender", "summon", "site", "throne", "mercenary"]) {
   if (!reference.counts?.[category]) failures.push(`Reference catalogue is missing category: ${category}`);
 }
 
 const manifestSections = manifest.documents.reduce((total, document) => total + document.sectionCount, 0);
 if (manifest.documents.length !== 16) failures.push(`Library manifest has ${manifest.documents.length} documents instead of 16`);
-if (manifestSections !== 2857) failures.push(`Library manifest has ${manifestSections} sections instead of 2,857`);
+if (manifestSections !== 3646) failures.push(`Library manifest has ${manifestSections} sections instead of 3,646`);
 
 if (failures.length) {
   console.error("Toolkit integrity failures:");

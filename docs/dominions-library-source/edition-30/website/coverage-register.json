@@ -1,0 +1,499 @@
+{
+  "schema_version": "1.0.0",
+  "edition_audited": "Progress Edition 24",
+  "audit_date": "2026-08-25",
+  "baseline": {
+    "game": "Dominions 6",
+    "game_version": "6.36",
+    "object_snapshot_version": "6.35",
+    "main_manual": "revision 2",
+    "modding_manual_version": "6.34",
+    "event_manual_version": "6.29",
+    "map_manual_version": "6.26",
+    "dominions_enhanced": "2.16",
+    "divinitus_de": "1.15.3"
+  },
+  "status_definitions": {
+    "complete": "The subject has a canonical home and sufficient foundational treatment.",
+    "substantially_complete": "The reusable foundation and structured records exist; explicit edge cases remain recorded for later evidence.",
+    "distributed": "Distinct books own different mechanical, tactical, strategic, or procedural layers.",
+    "underdeveloped": "The subject exists but lacks a major practical or reference layer.",
+    "structured_data_gap": "Methods exist in prose, but exhaustive versioned object records do not.",
+    "planned_dossier_work": "The general method exists; nation-specific applications remain to be written.",
+    "verification_pending": "The question exists in the research register but lacks reliable resolution.",
+    "intentionally_excluded": "The official source is the better home unless a concrete project creates a need."
+  },
+  "canonical_owners": [
+    {
+      "domain_id": "ruleset_timing",
+      "subjects": [
+        "ruleset",
+        "evidence",
+        "hosting sequence",
+        "turn timing"
+      ],
+      "primary_home": "Book I",
+      "secondary_homes": [
+        "Turn and Economy Quick Reference"
+      ],
+      "guard": "Do not create another anatomy-of-a-turn chapter."
+    },
+    {
+      "domain_id": "economy_state",
+      "subjects": [
+        "gold",
+        "population",
+        "resources",
+        "recruitment",
+        "upkeep",
+        "supply",
+        "infrastructure",
+        "province defence",
+        "siege arithmetic"
+      ],
+      "primary_home": "Book II",
+      "secondary_homes": [
+        "Turn and Economy Quick Reference",
+        "Book VI campaign consequences"
+      ],
+      "guard": "Keep exact economic and siege arithmetic in Book II."
+    },
+    {
+      "domain_id": "pretender_religion",
+      "subjects": [
+        "Pretender design",
+        "design points",
+        "awakening",
+        "dominion",
+        "scales",
+        "blessings",
+        "Call God",
+        "immortality"
+      ],
+      "primary_home": "Book III",
+      "secondary_homes": [
+        "Book VII national builds",
+        "Book IX exact DE changes"
+      ],
+      "guard": "Dossiers apply Pretender theory; they do not re-teach it."
+    },
+    {
+      "domain_id": "battle",
+      "subjects": [
+        "unit reading",
+        "army construction",
+        "battle orders",
+        "formations",
+        "combat resolution",
+        "morale",
+        "fatigue",
+        "retreat"
+      ],
+      "primary_home": "Book IV",
+      "secondary_homes": [
+        "Book VI campaign application",
+        "Book VII national army packages"
+      ],
+      "guard": "Do not duplicate combat formulas or general scripting outside Book IV."
+    },
+    {
+      "domain_id": "magic",
+      "subjects": [
+        "research",
+        "paths",
+        "gems",
+        "communions",
+        "rituals",
+        "global enchantments",
+        "forging",
+        "late-game magic"
+      ],
+      "primary_home": "Book V",
+      "secondary_homes": [
+        "Book IV battle-spell arithmetic",
+        "Book VII national research branches"
+      ],
+      "guard": "Use object records for exhaustive spell and item coverage."
+    },
+    {
+      "domain_id": "campaign_strategy",
+      "subjects": [
+        "expansion",
+        "intelligence",
+        "logistics",
+        "raiding",
+        "war",
+        "sieges",
+        "diplomacy",
+        "Thrones",
+        "recovery",
+        "turn discipline"
+      ],
+      "primary_home": "Book VI",
+      "secondary_homes": [
+        "Books I-V for underlying mechanics"
+      ],
+      "guard": "Do not create another general strategy compendium."
+    },
+    {
+      "domain_id": "nation_dossiers",
+      "subjects": [
+        "nation method",
+        "national rosters",
+        "national research",
+        "national army packages",
+        "national Pretender families"
+      ],
+      "primary_home": "Book VII series",
+      "secondary_homes": [
+        "Books I-VI by cross-reference"
+      ],
+      "guard": "A dossier adds only national facts, applications, mod deltas, matchups, and tests."
+    },
+    {
+      "domain_id": "generic_modding",
+      "subjects": [
+        "mod syntax method",
+        "events",
+        "maps",
+        "AI scaffolding",
+        "compatibility",
+        "testing"
+      ],
+      "primary_home": "Book VIII",
+      "secondary_homes": [
+        "Book IX exact mod findings"
+      ],
+      "guard": "Generic method stays in Book VIII; exact DE and Divinitus inventories stay in Book IX."
+    },
+    {
+      "domain_id": "de_divinitus",
+      "subjects": [
+        "DE 2.16",
+        "Divinitus 1.15.3 DE",
+        "load order",
+        "collisions",
+        "exact source inventory"
+      ],
+      "primary_home": "Book IX",
+      "secondary_homes": [
+        "Book VII national consequences"
+      ],
+      "guard": "Do not repeat exact inventories or collision findings in later books."
+    },
+    {
+      "domain_id": "retrieval",
+      "subjects": [
+        "reading paths",
+        "glossary",
+        "concordance",
+        "navigation"
+      ],
+      "primary_home": "Reader's Guide",
+      "secondary_homes": [],
+      "guard": "Navigation definitions remain short and never replace the authoritative section."
+    },
+    {
+      "domain_id": "player_operations",
+      "subjects": [
+        "interface",
+        "game creation",
+        "hosting",
+        "player files",
+        "shortcuts",
+        "strategic map orders"
+      ],
+      "primary_home": "Book X",
+      "secondary_homes": [
+        "Existing operational checklists by cross-reference"
+      ],
+      "guard": "Book X explains procedure and interface; it does not re-teach the underlying systems."
+    },
+    {
+      "domain_id": "unit_ability_reference",
+      "subjects": [
+        "unit classes",
+        "special abilities",
+        "experience",
+        "heroic abilities",
+        "conditions"
+      ],
+      "primary_home": "Book XI",
+      "secondary_homes": [
+        "Book IV combat consequences",
+        "Website ability register"
+      ],
+      "guard": "Define and index abilities; link to Book IV for combat derivations."
+    },
+    {
+      "domain_id": "base_game_objects",
+      "subjects": [
+        "spells",
+        "items",
+        "summons",
+        "Pretender forms",
+        "Thrones",
+        "sites",
+        "mercenaries",
+        "special dominions"
+      ],
+      "primary_home": "Foundation Book XII and website structured data layer",
+      "secondary_homes": [
+        "Strategic interpretation and selected examples in Books II-VI"
+      ],
+      "guard": "Exhaustive coverage belongs in records and filters, not replicated tables or essays."
+    },
+    {
+      "domain_id": "official_patch_history",
+      "subjects": [
+        "official releases",
+        "version deltas",
+        "patch classification",
+        "stale-guide repair",
+        "command chronology"
+      ],
+      "primary_home": "Foundation Book XIII and official patch ledger",
+      "secondary_homes": [
+        "Current-rule corrections in the affected canonical books",
+        "Book XIV command reconciliation"
+      ],
+      "guard": "Book XIII owns chronology and maintenance; system books retain current rule explanations; Book XIV owns command retrieval and patch-to-manual reconciliation."
+    },
+    {
+      "domain_id": "official_command_lexicon",
+      "subjects": [
+        "official command spellings",
+        "syntax locators",
+        "manual context",
+        "command templates",
+        "message substitutions",
+        "patch-to-manual reconciliation"
+      ],
+      "primary_home": "Foundation Book XIV and website command lexicon",
+      "secondary_homes": [
+        "Book VIII design and validation method",
+        "Book XIII command chronology"
+      ],
+      "guard": "Book XIV locates and reconciles the language; it does not duplicate Book VIII's design guidance or Book XIII's release history."
+    }
+  ],
+  "gaps": [
+    {
+      "gap_id": "G-01",
+      "priority": "P0",
+      "title": "Player operations, interface, setup, and hosting",
+      "status": "complete",
+      "proposed_home": "Foundation Book X",
+      "action": "Maintain the completed procedural volume against later interface, hosting, network, and strategic-order changes.",
+      "exclusions": [
+        "hosting-sequence rewrite",
+        "economy rewrite",
+        "Pretender-design rewrite",
+        "battle-scripting rewrite",
+        "multiplayer-strategy rewrite"
+      ]
+    },
+    {
+      "gap_id": "G-02",
+      "priority": "P1",
+      "title": "Unit classes, abilities, experience, and conditions",
+      "status": "complete",
+      "proposed_home": "Foundation Book XI and website ability register",
+      "action": "Maintain the completed interpretive volume and versioned records against current patches, engine exports, and verified ability tests."
+    },
+    {
+      "gap_id": "G-03",
+      "priority": "P1",
+      "title": "Unmodded base-game object database",
+      "status": "substantially_complete",
+      "proposed_home": "Foundation Book XII and TheHoboKingdom website data layer",
+      "action": "Maintain the 4,196-record 6.35 register; resolve independent population types, 25 selection-based summon relations, remaining human labels, and realm-to-nation expansions when exact evidence becomes available."
+    },
+    {
+      "gap_id": "G-04",
+      "priority": "P1",
+      "title": "Complete official patch ledger",
+      "status": "substantially_complete",
+      "proposed_home": "Foundation Book XIII and website official patch ledger",
+      "action": "Maintain the complete 32-announcement, 1,090-record ledger through version 6.36; finish editorial review of 250 lower-confidence derived classifications and ingest future official updates without weakening source-completeness assertions."
+    },
+    {
+      "gap_id": "G-05",
+      "priority": "P2",
+      "title": "Remaining nation dossiers",
+      "status": "planned_dossier_work",
+      "proposed_home": "Book VII series",
+      "action": "Apply the existing dossier method after shared procedural and data foundations are in place."
+    },
+    {
+      "gap_id": "G-06",
+      "priority": "P2",
+      "title": "Searchable mod-command lexicon",
+      "status": "substantially_complete",
+      "proposed_home": "Foundation Book XIV and website developer reference",
+      "action": "Maintain the 1,609-token official-manual register, 97 template aliases, and complete 226-token patch reconciliation; advance the 60 reference-only, nine mention-only, and five 6.36 patch-only entries only when stronger evidence becomes available."
+    }
+  ],
+  "current_patch_assignments": [
+    {
+      "version": "6.35",
+      "change": "Map and score graphs reveal on victory",
+      "home": "Book VI - Score graphs",
+      "treatment": "Completed in Book VI for Progress Edition 18"
+    },
+    {
+      "version": "6.35",
+      "change": "AI better at keeping important mages safe",
+      "home": "Book VI - Current AI capabilities",
+      "treatment": "Completed in Book VI for Progress Edition 18"
+    },
+    {
+      "version": "6.35",
+      "change": "Teleport-move commanders can leave besieged forts",
+      "home": "Book VI - Movement and siege operations",
+      "treatment": "Completed in Book VI with Book I and Book X links"
+    },
+    {
+      "version": "6.35",
+      "change": "F1 pillage filter and related interface changes",
+      "home": "Book X",
+      "treatment": "Completed in Book X; exact L filter recorded"
+    },
+    {
+      "version": "6.35",
+      "change": "Innate spellcaster script, automatic mount return, bodyguard, supply display, Enchanted Blood, and teleport corrections",
+      "home": "Book XI - Current ability-facing patch notes",
+      "treatment": "Version-labelled definitions and counter caveats"
+    },
+    {
+      "version": "6.35",
+      "change": "Gnu units and summons; Throne of Violence",
+      "home": "Book XII base-game object register and relevant dossiers",
+      "treatment": "Structured records"
+    },
+    {
+      "version": "6.36",
+      "change": "Bless-load cancellation and blessing interaction audit",
+      "home": "Book III",
+      "treatment": "Setup correction integrated; R-016 completed with adjacent engine-state questions kept separate"
+    },
+    {
+      "version": "6.36",
+      "change": "Rust on zero-damage attacks",
+      "home": "Book IV",
+      "treatment": "Secondary-effect boundary integrated"
+    },
+    {
+      "version": "6.36",
+      "change": "Lost Land protection, Perpetual Storm movement, swimming-mount river crossing, charm, and mounted recruitment",
+      "home": "Books VI and XI",
+      "treatment": "Movement, environment, allegiance, and queue rules integrated without universal mount-transfer inference"
+    },
+    {
+      "version": "6.36",
+      "change": "Touchscreen and interface shortcuts",
+      "home": "Book X",
+      "treatment": "Current operating controls integrated"
+    },
+    {
+      "version": "6.36",
+      "change": "Changing a blood sacrificer's items preserves the order",
+      "home": "Independent Blood Magic research paper",
+      "treatment": "Operational correction integrated without duplicating the universal sacrifice rules"
+    },
+    {
+      "version": "6.36",
+      "change": "Five new event commands and spell spec2 bitmask",
+      "home": "Books VIII, XIII, and XIV",
+      "treatment": "Provenance recorded; full command syntax remains pending official documentation"
+    }
+  ],
+  "targeted_existing_home_additions": [
+    {
+      "subject": "Province corpses, visibility, and corpse-dependent actions",
+      "home": "Book II",
+      "boundary": "Keep special-order procedure in Book X and spell records in the object database.",
+      "status": "completed_in_progress_edition_18"
+    },
+    {
+      "subject": "Victory-time score-graph reveal in version 6.35",
+      "home": "Book VI",
+      "boundary": "One version-labelled correction.",
+      "status": "completed_in_progress_edition_18"
+    },
+    {
+      "subject": "Teleport movement out of besieged forts in version 6.35",
+      "home": "Book VI",
+      "boundary": "Add the current exception without duplicating hosting timing.",
+      "status": "completed_in_progress_edition_18"
+    },
+    {
+      "subject": "AI preservation of important mages in version 6.35",
+      "home": "Book VI",
+      "boundary": "Record as a limited improvement rather than a general competence claim.",
+      "status": "completed_in_progress_edition_18"
+    },
+    {
+      "subject": "Current Growth and Death income percentage",
+      "home": "Book II, with field-reference and Book III applications",
+      "boundary": "Use the newer official default without duplicating the scale analysis.",
+      "status": "completed_in_progress_edition_19"
+    },
+    {
+      "subject": "Current Order and Turmoil resource percentage",
+      "home": "Book II, with field-reference and Book III applications",
+      "boundary": "Keep integer rounding separate under R-008.",
+      "status": "completed_in_progress_edition_19"
+    },
+    {
+      "subject": "Ordinary dominion checks and religious hosting order",
+      "home": "Book III",
+      "boundary": "Keep exact turn order in Book I and same-turn Throne ownership in Book III.",
+      "status": "completed_in_progress_edition_19"
+    },
+    {
+      "subject": "Call God threshold, contribution, modifiers, timing, and return boundaries",
+      "home": "Book III",
+      "boundary": "Keep community-tested formulas and current community routing or placement explicitly labelled; use the test suite only for regression and evidence upgrades.",
+      "status": "completed_in_progress_edition_22"
+    },
+    {
+      "subject": "Same-turn Throne claim, claimant death, conquest, siege, storming, and victory",
+      "home": "Book III, with Book I timing and Book VI campaign applications",
+      "boundary": "Keep exact simultaneous winning-total ties separate until reproduced under the current game.",
+      "status": "completed_in_progress_edition_22"
+    },
+    {
+      "subject": "Ordinary Commander Point pool, fort bonuses, and multi-turn commander cost",
+      "home": "Book II, with field-reference and Reader's Guide routes",
+      "boundary": "Keep unrest reductions under R-011 and do not turn commander throughput into a second recruitment chapter.",
+      "status": "completed_in_progress_edition_21"
+    },
+    {
+      "subject": "Sacred-Slave and mounted-component upkeep",
+      "home": "Book II",
+      "boundary": "Retain shapechanged upkeep and fractional monthly aggregation under R-010 until current evidence resolves them.",
+      "status": "advanced_in_progress_edition_21"
+    },
+    {
+      "subject": "Need Not Eat and transformation out of Starving",
+      "home": "Book II",
+      "boundary": "Keep generic commander feeding priority under R-013 rather than inferring universal commander immunity.",
+      "status": "advanced_in_progress_edition_21"
+    },
+    {
+      "subject": "Weather, age, unit-class, and condition lookups",
+      "home": "Book XI",
+      "boundary": "Link combat consequences to Book IV."
+    }
+  ],
+  "pre_draft_gate": [
+    "Search the Reader's Guide, subject index, content index, and synonyms.",
+    "Identify the canonical owner.",
+    "Classify the proposal as a correction, application, reference record, procedure, or genuinely new system.",
+    "Write a one-paragraph delta statement.",
+    "Create a cross-reference instead if no meaningful delta exists.",
+    "Run exact and semantic duplicate checks after drafting.",
+    "Update this register, redirects, and relevant research items before publication."
+  ]
+}
