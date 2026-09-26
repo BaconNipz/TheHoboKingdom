@@ -1,105 +1,105 @@
 {
   "schema_version": "1.0",
-  "edition": "Progress Edition 30",
+  "edition": "Edition 31",
   "kind": "dominions-library-search-index",
-  "entry_count": 3646,
+  "entry_count": 4591,
   "storage": "transparent-json-parts",
   "parts": [
     {
       "file": "search-index.part-000.json",
       "part": 1,
-      "entries": 303,
+      "entries": 382,
       "first_section_id": "guide-reader-s-guide-and-concordance",
-      "last_section_id": "b2-patrolling",
-      "sha256": "b9182cfb31b75ff96255885108cb54a09c3253c1f88512e726633a7934d1a061"
+      "last_section_id": "b2-building-checklist",
+      "sha256": "9ea43131352b33fee3500ab0a71d2e78139a9bfd54f87e494c8a57c5d375e5cd"
     },
     {
       "file": "search-index.part-001.json",
       "part": 2,
-      "entries": 304,
-      "first_section_id": "b2-community-sub-formulas",
-      "last_section_id": "b3-essay-iii-a-bless-is-a-roster-contract",
-      "sha256": "88de3026fff4bca1318549786350678c2f26d6659042f5bb645b2c7cb94897f6"
+      "entries": 383,
+      "first_section_id": "b2-end-of-host-checklist",
+      "last_section_id": "b4-test-7-mounted-targeting",
+      "sha256": "08d08a452848a9b24e92ffe7e9cb1712013056eb71ec33c1a526144582af049b"
     },
     {
       "file": "search-index.part-002.json",
       "part": 3,
-      "entries": 304,
-      "first_section_id": "b3-essay-iv-awake-power-and-deferred-power",
-      "last_section_id": "b5-construction-tiers",
-      "sha256": "7c5574d7aea8f8ef4328986255be132ffdea0b716de192546618497de9eeaa6b"
+      "entries": 382,
+      "first_section_id": "b4-test-8-trample-fatigue",
+      "last_section_id": "b6-s7-intelligence-channels",
+      "sha256": "da4745c663d558f5c6a7e8a024b0d5d52b6b7b3d991feaac95c0869c43080cdd"
     },
     {
       "file": "search-index.part-003.json",
       "part": 4,
-      "entries": 304,
-      "first_section_id": "b5-base-item-cost-by-path-requirement",
-      "last_section_id": "b7-healing",
-      "sha256": "e340ef6adc7d5252f707acf16b9f52a3bc59f823ef10455a96139f5cc62dd74d"
+      "entries": 383,
+      "first_section_id": "b6-s8-siege-arithmetic",
+      "last_section_id": "b7-marignon-pretender-families",
+      "sha256": "d421322bfd9c3bf9ae6b518ab47ae0f377c2241568b8b3bbddfeeffcdc947e49"
     },
     {
       "file": "search-index.part-004.json",
       "part": 5,
-      "entries": 304,
-      "first_section_id": "b7-recruitable-commander-roster",
-      "last_section_id": "b7-marignon-opening-priorities",
-      "sha256": "ae8110a195d47d2ebf0776a6e0fae948271ce0856e9fddaef58c5aac2ed4f098"
+      "entries": 382,
+      "first_section_id": "b7-marignon-matchup-and-failure-matrix",
+      "last_section_id": "b7-forest-recruitment-package",
+      "sha256": "73352b081f7f9494be7371ff09b44dd9a3e247f09812a0c49e4025b8b4ad20e8"
     },
     {
       "file": "search-index.part-005.json",
       "part": 6,
-      "entries": 304,
-      "first_section_id": "b7-expansion-packages-to-test",
-      "last_section_id": "b7-ashdod-national-item-boundary",
-      "sha256": "1ad923e8ff54e81be4ae4e04f52a4e382f6208574e58df295b14c8a424e10f0e"
+      "entries": 383,
+      "first_section_id": "b7-spider-cavalry-package",
+      "last_section_id": "b7-na-ba-pretender-families",
+      "sha256": "12a1debf9f2e438f57e3c0b4d51436c1b561c5b87a53951869ec9337f30d3957"
     },
     {
       "file": "search-index.part-006.json",
       "part": 7,
-      "entries": 303,
-      "first_section_id": "b7-ashdod-national-hero-records",
-      "last_section_id": "b7-caelum-capital-queue-control",
-      "sha256": "653097650f2ef65a1fcf045f9d90bdb6190db049b3f4da0c3deaab77f63079e2"
+      "entries": 383,
+      "first_section_id": "b7-na-ba-matchup-and-failure-matrix",
+      "last_section_id": "b7-part-lii-early-age-arcoscephale-golden-era",
+      "sha256": "fb6412aa1b062645bb00e94c3cdd340d0d6b141f7e650da9660debf1d680895a"
     },
     {
       "file": "search-index.part-007.json",
       "part": 8,
-      "entries": 304,
-      "first_section_id": "b7-caelum-recruitable-magic-access",
-      "last_section_id": "b7-xibalba-pretender-families",
-      "sha256": "3cf26a3bbb6ae80e836462da4617eb4902e0fa671912a356870a6f9532e95eed"
+      "entries": 382,
+      "first_section_id": "b7-early-age-arcoscephale-one-page-command-brief",
+      "last_section_id": "b7-early-age-ur-recruitment-geography",
+      "sha256": "438db5bce253fdbde31617adce6081802efc68b4fe0a7f361c4124ed44d328d0"
     },
     {
       "file": "search-index.part-008.json",
       "part": 9,
-      "entries": 304,
-      "first_section_id": "b7-xibalba-matchup-and-failure-matrix",
-      "last_section_id": "b8-clearrec-is-a-major-operation",
-      "sha256": "75e1df738edbdc7b82676293e92020f0627c5eb85d19feeda0b56e6207b63787"
+      "entries": 383,
+      "first_section_id": "b7-early-age-ur-commander-roster",
+      "last_section_id": "b7-early-age-niefelheim-national-spell-map",
+      "sha256": "3b8c89958fafa8317e32242d6626332538e5402f21736a7f3ebc85003a8aea14"
     },
     {
       "file": "search-index.part-009.json",
       "part": 10,
-      "entries": 304,
-      "first_section_id": "b8-ordinary-foreign-terrain-fort-and-site-recruitment",
-      "last_section_id": "b9-23-website-architecture",
-      "sha256": "3302c7844fab314a0361d0f7ed45b51b6bdd7250586397cc27fbc6c75af21f98"
+      "entries": 382,
+      "first_section_id": "b7-early-age-niefelheim-national-item-boundary",
+      "last_section_id": "b8-components",
+      "sha256": "5a9bb5cad711fc719aad1b2c527f2b133951a7735262fb5739e304455a2ad5de"
     },
     {
       "file": "search-index.part-010.json",
       "part": 11,
-      "entries": 304,
-      "first_section_id": "b9-23-1-core-entities",
-      "last_section_id": "b11-essay-v-evidence-boundaries-are-part-of-expert-play",
-      "sha256": "ab23cd5186ae241d0b3883fffccbd8948a671be0417d5e9d33afae0b36903676"
+      "entries": 383,
+      "first_section_id": "b8-load-test",
+      "last_section_id": "b11-17-plant-stone-being-illusion-horror-and-divine-status",
+      "sha256": "280692dd4832d2264c06cb3a225163a5d9451bdfe13e1b13bf0beeecf56ea625"
     },
     {
       "file": "search-index.part-011.json",
       "part": 12,
-      "entries": 304,
-      "first_section_id": "b11-part-xv-version-notes-open-questions-and-sources",
+      "entries": 383,
+      "first_section_id": "b11-17-1-plant",
       "last_section_id": "b14-what-this-unlocks",
-      "sha256": "883efc5bc6138ba3350da25963972c391b5f7476ceb176b1e605fc23187e3a87"
+      "sha256": "518607618325edea2ce48663dddefc12017efc3205b786b45bd2f6f54f1661be"
     }
   ]
 }

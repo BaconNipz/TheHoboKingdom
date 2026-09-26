@@ -23,10 +23,10 @@ from navigation import (  # noqa: E402
 
 
 EDITION = {
-    "name": "Progress Edition 30",
-    "status": "review",
-    "published_on": None,
-    "last_edited": "2026-09-14",
+    "name": "Edition 31",
+    "status": "published",
+    "published_on": "2026-09-26",
+    "last_edited": "2026-09-26",
     "source_verified_on": "2026-09-14",
     "game_baseline": "Dominions 6.37",
     "mod_baselines": ["Dominions Enhanced 2.16", "Divinitus 1.15.3 DE"],
@@ -163,7 +163,7 @@ _REMAINING_MA_RANGES = [
     ("b7-part-xlviii-middle-age-pelagia-triton-kings", "b7-part-xlix-middle-age-oceania-mermidons", "pelagia"),
     ("b7-part-xlix-middle-age-oceania-mermidons", "b7-part-l-middle-age-atlantis-kings-of-the-deep", "oceania"),
     ("b7-part-l-middle-age-atlantis-kings-of-the-deep", "b7-part-li-middle-age-r-lyeh-fallen-star", "atlantis"),
-    ("b7-part-li-middle-age-r-lyeh-fallen-star", "b7-dossier-source-register", "rlyeh"),
+    ("b7-part-li-middle-age-r-lyeh-fallen-star", "b7-part-lii-early-age-arcoscephale-golden-era", "rlyeh"),
 ]
 NATION_DOSSIER_RANGES.extend(
     {
@@ -260,6 +260,19 @@ def nation_metadata(record, records) -> tuple[list[str], list[str]]:
             )
         if start <= record.ordinal < end:
             return list(dossier["tags"]), list(dossier["rulesets"])
+    # Early Age dossiers are generated as one continuous block.  Use the
+    # nearest level-one heading so later batches do not require another long
+    # manually maintained range table.
+    prior = [item for item in records if item.ordinal <= record.ordinal]
+    for heading in reversed(prior):
+        if heading.level != 1:
+            continue
+        match = re.match(r"Part [^:]+: Early Age ([^,]+),", heading.title)
+        if match:
+            slug = re.sub(r"[^a-z0-9]+", "-", match.group(1).lower()).strip("-")
+            slug = {"tir-na-n-og": "tir-na-nog", "pyr-ne": "pyrene", "r-lyeh": "rlyeh", "t-ien-ch-i": "tien-chi", "c-tis": "ctis"}.get(slug, slug)
+            return ["nations", f"nation-{slug}", "age-early", "ruleset-unmodded"], ["dom6-6.37-unmodded"]
+        break
     return [], []
 
 

@@ -1,6 +1,6 @@
-# Dominions 6 Knowledge Library - Progress Edition 30
+# Dominions 6 Knowledge Library - Edition 31
 
-This directory is the reconstructed canonical source for Progress Edition 30. It combines the complete Edition 28 source archive, the later Edition 29 publication and R-058 records, the Dominions 6.37 baseline correction, and the completed 37-nation Middle Age Book VII checkpoint. It remains under review and has not been published.
+This directory contains the Edition 31 source published on 26 September 2026. It combines the complete Edition 28 archive, the Edition 29 publication and R-058 records, the Dominions 6.37 baseline correction, all 37 Middle Age dossiers, and all 35 Early Age dossiers. The complete 1,338-page omnibus is built from this corpus.
 
 ## Release baseline
 
@@ -11,11 +11,11 @@ This directory is the reconstructed canonical source for Progress Edition 30. It
 - structured base-game records pinned to the declared 6.35 Inspector export;
 - Dominions Enhanced 2.16 and Divinitus 1.15.3 DE kept as separately labelled rulesets.
 
-The reconstructed reader contains sixteen documents, 3,646 indexed sections, and 325,553 words. Edition 28's perception matrix, current Invisibility correction, stacking evidence, Hall-of-Fame observation boundary, and five-star veteran Hit Point correction remain part of the collection.
+The reader contains sixteen documents, 4,591 indexed sections, and 393,838 words. Edition 28's perception matrix, current Invisibility correction, stacking evidence, Hall-of-Fame observation boundary, and five-star veteran Hit Point correction remain part of the collection.
 
-Book VII now covers all 37 unmodded Middle Age nations, with nation-aware retrieval metadata and standalone readers for the nineteen nations added in the final expansion. Engine-dependent claims and the hands-on testing queue remain parked.
+Book VII now covers all 35 unmodded Early Age nations and all 37 unmodded Middle Age nations. Every Early Age dossier has a standalone Edition 31 reader. Engine-dependent claims and the hands-on testing queue remain parked.
 
-The final incremental checkpoint retained a 3,606-section export but not the revised Markdown for ten unchanged foundation books. This reconstruction restores those books from the last complete canonical archive and regenerates the index from the source actually present here. The resulting 3,646-section reader is the reproducible publication candidate; the older 3,606-section export is retained only as an audit record and is not presented as rebuildable source.
+The final incremental Edition 30 checkpoint retained a 3,606-section export but not the revised Markdown for ten unchanged foundation books. The reconstruction restored those books and produced a reproducible 3,646-section Edition 30 reader. Edition 31 builds directly from that recovered source and expands the searchable layer to 4,591 sections.
 
 ## Build
 

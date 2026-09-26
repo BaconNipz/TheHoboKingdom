@@ -62,7 +62,7 @@ const blurbs = {
   b4: "Army organisation, formations, attacks, protection, morale, fatigue, magic, afflictions, and battle analysis.",
   b5: "Research planning, paths, gems, rituals, forging, communions, blood magic, globals, and magical logistics.",
   b6: "Expansion, tempo, intelligence, movement, raiding, sieges, diplomacy, Thrones, and campaign decision-making.",
-  b7: "A reproducible nation-dossier method with complete chapters for all 37 unmodded Middle Age nations and clearly marked open questions.",
+  b7: "A reproducible nation-dossier method with complete chapters for all 35 Early Age and 37 Middle Age nations, with the open questions kept visible.",
   b8: "The mod parser, object identity, commands, events, compatibility, validation, and release engineering.",
   b9: "A separate rules and compatibility reference for Dominions Enhanced 2.16 and Divinitus 1.15.3 DE.",
   b10: "Installation, game creation, interface use, turn submission, multiplayer hosting, recovery, and administration.",
@@ -220,8 +220,9 @@ const landing = `${frontMatter("Dominions 6 Knowledge Library", "My searchable, 
     <article class="library-tool-card"><h3>Glossary</h3><p>106 rules, interface terms, abbreviations, and pieces of community language, each linked to its full explanation.</p><a class="button button--quiet" href="/dominions/library/glossary/">Open the glossary</a></article>
     <article class="library-tool-card"><h3>Research register</h3><p>${research.items.length} verification questions with priorities, status, importance, and the most reliable route to an answer.</p><a class="button button--quiet" href="/dominions/library/research/">Open the register</a></article>
     <article class="library-tool-card"><h3>Field toolkit</h3><p>Eighteen tools cover pinned base-game records, nations, Pretenders, economy, recruitment, magic, battle plans, turns, diplomacy, research, reading progress, multiplayer records, and Throne victories.</p><a class="button button--quiet" href="/dominions/tools/">Open the tools</a></article>
-    <article class="library-tool-card"><h3>Edition ${pdfEditionNumber} omnibus PDF</h3><p>The complete ${pdfPageCount}-page Edition ${pdfEditionNumber} library remains available for offline reading while the expanded Edition ${editionNumber} web release is assembled into its next omnibus.</p><a class="button button--quiet" href="${pdfDownload}">Download the omnibus</a></article>
-    <article class="library-tool-card"><h3>Complete Middle Age collection</h3><p>Book VII now covers every unmodded Middle Age nation. Each chapter keeps its source boundary, strategic judgement, and unresolved mechanics visible.</p><a class="button button--quiet" href="/dominions/library/books/book-vii/">Open Book VII</a></article>
+    <article class="library-tool-card"><h3>Edition ${pdfEditionNumber} omnibus PDF</h3><p>The complete ${pdfPageCount}-page Edition ${pdfEditionNumber} library contains this release's full reader corpus for offline reading.</p><a class="button button--quiet" href="${pdfDownload}">Download the omnibus</a></article>
+    <article class="library-tool-card"><h3>Early and Middle Age collections</h3><p>Book VII now covers every unmodded Early Age and Middle Age nation. Each chapter keeps its source boundary, strategic judgement, and unresolved mechanics visible.</p><a class="button button--quiet" href="/dominions/library/books/book-vii/">Open Book VII</a></article>
+    <article class="library-tool-card"><h3>Early Age dossier PDFs</h3><p>All 35 Edition 31 field readers are available separately for offline use.</p><a class="button button--quiet" href="/downloads/#early-age-dossiers">Browse the Early Age dossiers</a></article>
     <article class="library-tool-card"><h3>Middle Age dossier PDFs</h3><p>Thirty-six compact Edition 30 field readers are available separately for offline use. Arcoscephale remains the larger foundation chapter inside Book VII.</p><a class="button button--quiet" href="/downloads/#middle-age-dossiers">Browse the dossiers</a></article>
   </div>
 

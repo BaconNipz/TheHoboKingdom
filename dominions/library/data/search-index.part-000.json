@@ -5233,5 +5233,1359 @@
     "evidence": [],
     "excerpt": "The main manual gives individual patrol strength as: Flying units use 30 in place of Map Move. Commanders are doubled. Undisciplined and Mindless units are halved. The total search strength is reduced by half the province's unrest, capped…",
     "searchText": "patrolling foundation book ii: economy, provinces, and the machinery of state general all the main manual gives individual patrol strength as: flying units use 30 in place of map move. commanders are doubled. undisciplined and mindless units are halved. the total search strength is reduced by half the province's unrest, capped at 100, and gains province defence patrol strength beginning at pd 15. the same patrol force must often satisfy several tasks: - lower unrest; - protect blood hunters; - discover scouts, spies, and raiders; - remain strong enough to survive a discovery battle; - avoid destroying too much population. high nominal patrol strength is not the same as a safe patrol. a stealth force that is discovered may still defeat the patrol."
+  },
+  {
+    "id": "b2-community-sub-formulas",
+    "title": "Community sub-formulas",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 3,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "expert"
+    ],
+    "evidence": [],
+    "excerpt": "Current community documentation describes a multi-stage unrest reduction process involving: 1. a baseline affected by friendly candles and PD; 2. an Order/Turmoil-dependent proportional reduction; 3. patrolling. It also reports that unrest…",
+    "searchText": "community sub-formulas foundation book ii: economy, provinces, and the machinery of state general expert current community documentation describes a multi-stage unrest reduction process involving: 1. a baseline affected by friendly candles and pd; 2. an order/turmoil-dependent proportional reduction; 3. patrolling. it also reports that unrest reduces recruitment points and commander points by one percent per point, with the commander point reduction rounded down. the current page states the result but does not publish a 6.36 boundary table, save, or test setup. the precise breakpoints remain queued under r-011. that wording admits two materially different readings for a small integer pool: round down the amount lost , or round down the capacity remaining . for a one-point commander point pool, the first reading preserves the point until the recruitment shutdown; the second can remove it as soon as unrest rises above zero. the page does not state which intermediate is rounded and does not provide the small-pool observations needed to decide between them. if the intended community rule is \"round down the amount lost,\" its test predictions are: ordinary pool first predicted loss second predicted loss capacity before unrest 100 ---: ---: ---: ---: 1 unrest 100 - 1 2 unrest 50 unrest 100 1 from unrest 50-99 3 unrest 34 unrest 67 1 from unrest 67-99 this is a candidate boundary table , not a promoted game rule. its value is diagnostic: a single version-labelled observation at one of those thresholds can support or reject the interpretation far more efficiently than an anecdote from a high-unrest province. this distinction matters most for the tiny commander point pool. a one-point rounding decision can change a mage from a one-month recruit into a multi-month project. until the breakpoints are reproduced, use three tiers of certainty: claim publication state --- --- unrest 100 or more prohibits ordinary unit and commander recruitment official unrest reduces ordinary recruitment points before shutdown current community reference unrest also reduces commander points current community reference exact first-loss threshold for a 1-, 2-, or 3-point pool test pending the recruitment screen is authoritative for orders. a written forecast near an unrest boundary should preserve a spare month rather than assuming the most favourable rounding."
+  },
+  {
+    "id": "b2-pillaging-and-raiding",
+    "title": "Pillaging and raiding",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "strategy",
+      "modding"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Pillage: - raises unrest; - kills population; - reduces supplies; - gives gold and temporary food to the pillaging army; - becomes stronger with larger, faster, and larger-sized forces; - particularly favours barbarians and units with…",
+    "searchText": "pillaging and raiding foundation book ii: economy, provinces, and the machinery of state strategy modding all pillage: - raises unrest; - kills population; - reduces supplies; - gives gold and temporary food to the pillaging army; - becomes stronger with larger, faster, and larger-sized forces; - particularly favours barbarians and units with fear. the temporary supplies last one month. a raid combines movement with reduced-strength pillage. it requires a commander with pillager and an army with map move 20 or more. only pillager units contribute, at half pillage strength, and the force must win any resulting battle before pillaging succeeds."
+  },
+  {
+    "id": "b2-strategic-uses",
+    "title": "Strategic uses",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 3,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Pillage and raid actions can: - suppress income before step 38; - raise a fort province toward recruitment shutdown; - damage future population and supplies; - feed an army for the current month; - force patrols and defensive movement; -…",
+    "searchText": "strategic uses foundation book ii: economy, provinces, and the machinery of state general all pillage and raid actions can: - suppress income before step 38; - raise a fort province toward recruitment shutdown; - damage future population and supplies; - feed an army for the current month; - force patrols and defensive movement; - create tax-trace breaks. they can also destroy value that the attacker expects to conquer. the action is most coherent when denial matters more than future ownership."
+  },
+  {
+    "id": "b2-part-vi-supplies-armies-and-logistics",
+    "title": "Part VI: Supplies, Armies, and Logistics",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 1,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "",
+    "searchText": "part vi: supplies, armies, and logistics foundation book ii: economy, provinces, and the machinery of state general all"
+  },
+  {
+    "id": "b2-supply-is-a-location-check",
+    "title": "Supply is a location check",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Supply is not a national stock. An army consumes the supply available in its current situation. The decisive logistical questions are: - Where will the army be when starvation resolves? - Which fort projects the highest supply there? -…",
+    "searchText": "supply is a location check foundation book ii: economy, provinces, and the machinery of state general all supply is not a national stock. an army consumes the supply available in its current situation. the decisive logistical questions are: - where will the army be when starvation resolves? - which fort projects the highest supply there? - what scales and population will remain after conquest, battle, and pillage? - is the army outside a fort, inside a fort, or trapped in a siege? - which units consume supply despite appearing small or inexpensive?"
+  },
+  {
+    "id": "b2-population-based-supply",
+    "title": "Population-based supply",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "economy"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Growth or Death modifies the result first. Temperature deviation modifies it second. Population Base supply before scales ---: ---: 3,000 100 7,500 250 15,000 500 21,000 600 30,000 750 The lower marginal supply above 15,000 mirrors the…",
+    "searchText": "population-based supply foundation book ii: economy, provinces, and the machinery of state economy all growth or death modifies the result first. temperature deviation modifies it second. population base supply before scales ---: ---: 3,000 100 7,500 250 15,000 500 21,000 600 30,000 750 the lower marginal supply above 15,000 mirrors the declining rp value of very large populations."
+  },
+  {
+    "id": "b2-fort-based-supply",
+    "title": "Fort-based supply",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "infrastructure"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "The manual's stated formula is: The maximum distance is four. Only the largest nearby fort contribution applies.",
+    "searchText": "fort-based supply foundation book ii: economy, provinces, and the machinery of state infrastructure all the manual's stated formula is: the maximum distance is four. only the largest nearby fort contribution applies."
+  },
+  {
+    "id": "b2-official-internal-conflict",
+    "title": "Official internal conflict",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 3,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "The same manual also prints a distance multiplier table of 400%, 200%, 133%, 100%, and 80% at distance zero through four. Those percentages correspond to Administration x 4 / (Distance + 1), not the printed multiplier of six. Its worked…",
+    "searchText": "official internal conflict foundation book ii: economy, provinces, and the machinery of state general all the same manual also prints a distance multiplier table of 400%, 200%, 133%, 100%, and 80% at distance zero through four. those percentages correspond to administration x 4 / (distance + 1), not the printed multiplier of six. its worked example gives only 30 supply from an administration-30 castle at distance three, agreeing with the table but disagreeing with the formula, which produces 45. distance printed admin x 6 formula for admin 30 printed percentage table for admin 30 ---: ---: ---: 0 180 120 1 90 60 2 60 about 40 3 45 30 4 36 24 a second official sentence says an administration-50 fort contributes 150 to an adjacent province. that agrees with the multiplier-of-six formula at distance one and disagrees with the percentage table. the manual contains two internally coherent calculations, each supported by at least one example. the current community population reference uses the multiplier-of-six formula and gives a palisades example at distance two. it is useful corroboration but not a published controlled reproduction across all five distances. r-012 remains open. these three representations cannot all be correct under the same definition of distance. the safe publication policy is: - preserve the formula as the stated rule; - describe the example conflict; - use the in-game displayed supply for operational orders; - reproduce every distance from zero through four in 6.36. for forecasts, the two printed systems can be carried as a documentary interval: this interval is not a claim that the executable must lie between the two. it is a compact way to expose how much of a supply plan depends on the unresolved multiplier. the disagreement is a constant one-third of the larger candidate, so an army that fits only under x6 is not safely supplied by the documents alone. the range, the four-province limit, and the rule that only the single highest nearby fort contribution applies are not part of the conflict."
+  },
+  {
+    "id": "b2-supply-usage",
+    "title": "Supply usage",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "The main manual describes usage by physical size: Unit Ordinary supply use --- ---: Size 0 0 Size 1-2 0.5 Size 3 1 Size 4 2 Size 5 3 Size 6 4 Animals use half the ordinary amount. Rider and mount both consume supply. Nature magic…",
+    "searchText": "supply usage foundation book ii: economy, provinces, and the machinery of state general all the main manual describes usage by physical size: unit ordinary supply use --- ---: size 0 0 size 1-2 0.5 size 3 1 size 4 2 size 5 3 size 6 4 animals use half the ordinary amount. rider and mount both consume supply. nature magic indirectly contributes 10 supply per path level. special abilities, forms, national rules, and modded effects can change ordinary expectations."
+  },
+  {
+    "id": "b2-starvation-selection-and-effects",
+    "title": "Starvation selection and effects",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "When usage exceeds supply, the engine selects troops whose combined usage is approximately the deficit. First selection: - the unit becomes Starving; - morale falls by 4; - disease chance is 5%. Selection while already Starving: - disease…",
+    "searchText": "starvation selection and effects foundation book ii: economy, provinces, and the machinery of state general all when usage exceeds supply, the engine selects troops whose combined usage is approximately the deficit. first selection: - the unit becomes starving; - morale falls by 4; - disease chance is 5%. selection while already starving: - disease chance rises to 50%. appropriate survival skill: - 50% chance to be completely unaffected; - a separate 50% chance to avoid disease. when supply becomes sufficient, starving ends. disease does not."
+  },
+  {
+    "id": "b2-timing",
+    "title": "Timing",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 3,
+    "topics": [
+      "timing"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Starvation resolves at step 40, after all ordinary battles and immediately before upkeep. A newly overextended army normally fights this month's battle without the new Starving condition, then carries the penalty into the next order phase.…",
+    "searchText": "timing foundation book ii: economy, provinces, and the machinery of state timing all starvation resolves at step 40, after all ordinary battles and immediately before upkeep. a newly overextended army normally fights this month's battle without the new starving condition, then carries the penalty into the next order phase. this makes starvation a delayed logistical debt. it is easy to ignore after a victory and expensive when the next battle arrives."
+  },
+  {
+    "id": "b2-commander-uncertainty",
+    "title": "Commander uncertainty",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 3,
+    "topics": [
+      "modding",
+      "command-lexicon"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Commanders are commonly described as being fed before troops. That is a priority claim, not the same thing as categorical immunity. The main manual does not grant all commanders a general exemption, and no current controlled sample has…",
+    "searchText": "commander uncertainty foundation book ii: economy, provinces, and the machinery of state modding command-lexicon all commanders are commonly described as being fed before troops. that is a priority claim, not the same thing as categorical immunity. the main manual does not grant all commanders a general exemption, and no current controlled sample has exhausted the troop pool and shown the commander-selection boundary. generic commander immunity remains test pending. the wording fed first is safest read as a ranking within the eligible selection pool. it cannot support never starves : once the deficit exceeds the consumption of lower-priority eligible units, the selection process must either reach commanders, leave part of the deficit unmatched, or apply another undocumented exception. no source in the current evidence set demonstrates which branch occurs. animals being described as fed last is the same kind of priority claim, not proof that every animal starves before any ordinary troop."
+  },
+  {
+    "id": "b2-need-not-eat-is-the-decisive-explicit-tag",
+    "title": "Need Not Eat is the decisive explicit tag",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 3,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "The official Modding Manual gives a firmer rule for individual objects: neednoteat means the monster consumes no supplies and cannot starve. It also explains how to create a creature that still consumes supplies but cannot starve, proving…",
+    "searchText": "need not eat is the decisive explicit tag foundation book ii: economy, provinces, and the machinery of state general all the official modding manual gives a firmer rule for individual objects: neednoteat means the monster consumes no supplies and cannot starve. it also explains how to create a creature that still consumes supplies but cannot starve, proving that consumption and starvation eligibility are distinct properties. the pinned 6.35 object snapshot reinforces that distinction: - 985 rows carry need not eat; - 47 rows combine need not eat with appetite; - several undead and demon rows do not carry the need not eat field explicitly. object counts include helpers and non-recruitable forms, so they are not army demographics. their value is structural: class labels such as undead, demon, inanimate, or commander cannot safely substitute for the actual food and starvation fields. official update 6.18 adds the transformation boundary: changing into a non-eating entity removes the starving condition. the correction does not document the reverse direction, temporary battle shapes, or a universal commander-priority rule. r-013 remains in progress. official update 6.35 repaired supply usage failing to refresh when magic items were changed. the supply formula did not change, but the correction affects how evidence should be gathered. screenshots or observations from earlier versions may show a stale usage total after equipment changes. under the 6.36 baseline, recheck the current supply usage after equipping or removing any item that affects size, appetite, supply production, a mount, or a form. the corrected display is the intended operational total, although it still does not prove selection priority."
+  },
+  {
+    "id": "b2-logistics-audit-for-unusual-units",
+    "title": "Logistics audit for unusual units",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 3,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "expert"
+    ],
+    "evidence": [],
+    "excerpt": "For any expensive commander, mount, transformed unit, or summoned army, inspect in this order: 1. current Supply Usage; 2. Need Not Eat or Appetite on every component; 3. rider and mount separately; 4. current Starving and Disease…",
+    "searchText": "logistics audit for unusual units foundation book ii: economy, provinces, and the machinery of state general expert for any expensive commander, mount, transformed unit, or summoned army, inspect in this order: 1. current supply usage; 2. need not eat or appetite on every component; 3. rider and mount separately; 4. current starving and disease conditions; 5. survival skill in the destination terrain; 6. whether a shape change occurred before starvation resolution; 7. the displayed fort and population supply in the destination. this avoids the two most common category errors: assuming that a unit which consumes supply must be able to starve, and assuming that a unit which cannot starve contributes no supply burden."
+  },
+  {
+    "id": "b2-siege-supply",
+    "title": "Siege supply",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "infrastructure"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "A besieged fort uses Supply Storage divided by the number of consecutive siege turns: Example for 300 storage: Siege turn Interior supply ---: ---: 1 300 2 150 3 100 4 75 5 60 10 30 This is different from Administration-based supply…",
+    "searchText": "siege supply foundation book ii: economy, provinces, and the machinery of state infrastructure all a besieged fort uses supply storage divided by the number of consecutive siege turns: example for 300 storage: siege turn interior supply ---: ---: 1 300 2 150 3 100 4 75 5 60 10 30 this is different from administration-based supply projection. storage sustains defenders inside the fort; administration helps the surrounding province network."
+  },
+  {
+    "id": "b2-siege-logistics-as-a-clock",
+    "title": "Siege logistics as a clock",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 3,
+    "topics": [
+      "infrastructure"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Even an unbreached wall can become untenable through: - falling interior supplies; - cumulative starvation; - disease; - upkeep and lost exterior income; - inability to recruit or move normally; - the approach of a storm force. The fort's…",
+    "searchText": "siege logistics as a clock foundation book ii: economy, provinces, and the machinery of state infrastructure all even an unbreached wall can become untenable through: - falling interior supplies; - cumulative starvation; - disease; - upkeep and lost exterior income; - inability to recruit or move normally; - the approach of a storm force. the fort's wall clock and supply clock should be tracked separately."
+  },
+  {
+    "id": "b2-part-vii-infrastructure",
+    "title": "Part VII: Infrastructure",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 1,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "",
+    "searchText": "part vii: infrastructure foundation book ii: economy, provinces, and the machinery of state general all"
+  },
+  {
+    "id": "b2-forts-temples-and-laboratories",
+    "title": "Forts, temples, and laboratories",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "infrastructure"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Each building converts a province in a different dimension. Building Converts the province into --- --- Fort A protected recruitment, resource, tax, and logistics node Temple A dominion-production and preaching node Laboratory A research,…",
+    "searchText": "forts, temples, and laboratories foundation book ii: economy, provinces, and the machinery of state infrastructure all each building converts a province in a different dimension. building converts the province into --- --- fort a protected recruitment, resource, tax, and logistics node temple a dominion-production and preaching node laboratory a research, ritual, forging, gem, item, and site-access node the standard temple and laboratory each cost 600 gold. fort stages have separate costs and times. nations and terrain can alter all of these."
+  },
+  {
+    "id": "b2-construction-timing",
+    "title": "Construction timing",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "timing",
+      "infrastructure"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Buildings complete at hosting step 35. This is later than: - research at step 2; - recruitment at step 3; - forging at step 5; - preaching and Throne claims at steps 6-8; - rituals at step 10; - site searching at step 14; - ordinary…",
+    "searchText": "construction timing foundation book ii: economy, provinces, and the machinery of state timing infrastructure all buildings complete at hosting step 35. this is later than: - research at step 2; - recruitment at step 3; - forging at step 5; - preaching and throne claims at steps 6-8; - rituals at step 10; - site searching at step 14; - ordinary battles and storming at steps 26-27. this gives the following results: - a new lab cannot support research, forging, or ritual casting that month; - a new temple cannot improve that month's ordinary preaching; - a new fort cannot expand this month's recruitment or protect against battles already fought; - infrastructure is operational from the following order phase."
+  },
+  {
+    "id": "b2-construction-and-demolition",
+    "title": "Construction and demolition",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "infrastructure"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Officially: - any commander can construct a fort; - a sacred commander is required for a temple; - a mage is required for a laboratory; - any commander can demolish a fort or laboratory; - demolition takes one month; - temples cannot be…",
+    "searchText": "construction and demolition foundation book ii: economy, provinces, and the machinery of state infrastructure all officially: - any commander can construct a fort; - a sacred commander is required for a temple; - a mage is required for a laboratory; - any commander can demolish a fort or laboratory; - demolition takes one month; - temples cannot be demolished by order; - enemy temples are destroyed automatically upon conquest; - a fort cannot be demolished while under siege. the construction order itself consumes the commander's month. the economic cost includes both gold and commander-time."
+  },
+  {
+    "id": "b2-standard-fort-progression",
+    "title": "Standard fort progression",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "infrastructure"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Fort Stage cost Stage time Admin Commander Points Recruitment bonus Storage Wall --- ---: ---: ---: ---: ---: ---: ---: Palisades 1,000 5 15 +0 +50% 150 200 Fortress 600 3 30 +1 +75% 750 500 Castle 600 3 45 +1 +100% 2,500 1,000 Citadel 600…",
+    "searchText": "standard fort progression foundation book ii: economy, provinces, and the machinery of state infrastructure all fort stage cost stage time admin commander points recruitment bonus storage wall --- ---: ---: ---: ---: ---: ---: ---: palisades 1,000 5 15 +0 +50% 150 200 fortress 600 3 30 +1 +75% 750 500 castle 600 3 45 +1 +100% 2,500 1,000 citadel 600 3 60 +2 +125% 7,500 1,500 grand citadel 1,000 5 70 +2 +150% 10,000 2,000 statistics replace the previous stage rather than adding to it. the standard maximum is: - early age: fortress; - middle age: castle; - late age: citadel. primitive and advanced national access can differ. masons can construct one level above the ordinary national limit. a grand citadel requires citadel access and a mason."
+  },
+  {
+    "id": "b2-fort-valuation",
+    "title": "Fort valuation",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "infrastructure"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "A fort can create: 1. full local resource use; 2. adjacent resource draw; 3. local income through Administration; 4. Recruitment Point bonus; 5. Commander Point bonus; 6. regional supply; 7. siege storage; 8. wall integrity and protected…",
+    "searchText": "fort valuation foundation book ii: economy, provinces, and the machinery of state infrastructure all a fort can create: 1. full local resource use; 2. adjacent resource draw; 3. local income through administration; 4. recruitment point bonus; 5. commander point bonus; 6. regional supply; 7. siege storage; 8. wall integrity and protected interior; 9. national recruitment access; 10. a tax-trace anchor; 11. a secure laboratory or temple location; 12. a movement and reinforcement node. no single payback formula captures all twelve."
+  },
+  {
+    "id": "b2-fort-question-set",
+    "title": "Fort question set",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 3,
+    "topics": [
+      "infrastructure"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Before construction: - Which units and commanders become recruitable? - Which local pool will bind after the fort is complete? - How many adjacent potential resources are eligible? - Does another planned fort remove a major donor? - What…",
+    "searchText": "fort question set foundation book ii: economy, provinces, and the machinery of state infrastructure all before construction: - which units and commanders become recruitable? - which local pool will bind after the fort is complete? - how many adjacent potential resources are eligible? - does another planned fort remove a major donor? - what tax region will this fort anchor? - what routes and provinces fall within supply range? - how many turns until the first new mage or army leaves? - can the province be held during construction? - is the builder's command-turn scarce? - what military force is delayed by the gold payment?"
+  },
+  {
+    "id": "b2-laboratories",
+    "title": "Laboratories",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Official functions: - permit Research; - permit ritual casting; - permit access to the national pool of gems, slaves, and items; - serve as gem collection points; - enable site functions that require a lab. Laboratories are strategic…",
+    "searchText": "laboratories foundation book ii: economy, provinces, and the machinery of state general all official functions: - permit research; - permit ritual casting; - permit access to the national pool of gems, slaves, and items; - serve as gem collection points; - enable site functions that require a lab. laboratories are strategic concentration points. losing one can strand mages away from the national pool even when the nation still owns gems elsewhere."
+  },
+  {
+    "id": "b2-laboratory-risk",
+    "title": "Laboratory risk",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 3,
+    "topics": [
+      "infrastructure"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "A lab attracts: - researchers; - gems and slaves; - forged items; - ritual casters; - valuable site recruits. The 600-gold structure can protect assets worth far more than its price. Defence should be based on the value concentrated there,…",
+    "searchText": "laboratory risk foundation book ii: economy, provinces, and the machinery of state infrastructure all a lab attracts: - researchers; - gems and slaves; - forged items; - ritual casters; - valuable site recruits. the 600-gold structure can protect assets worth far more than its price. defence should be based on the value concentrated there, not only the cost of replacing the laboratory."
+  },
+  {
+    "id": "b2-temples",
+    "title": "Temples",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "infrastructure"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Official functions: - ordinary dominion spread for most nations; - preaching bonus; - Blood Sacrifice access where the nation allows it; - religious and national mechanics tied to temple count or location. Only one temple can exist in a…",
+    "searchText": "temples foundation book ii: economy, provinces, and the machinery of state infrastructure all official functions: - ordinary dominion spread for most nations; - preaching bonus; - blood sacrifice access where the nation allows it; - religious and national mechanics tied to temple count or location. only one temple can exist in a province. capture destroys an enemy temple automatically. temples belong fully to the dominion volume, but their economic effect begins here: - they cost gold and sacred commander-time; - maximum dominion and holy points can affect sacred throughput; - temple loss can weaken recruitment, candles, preaching, and special national systems; - temples in exposed provinces can be destroyed without a separate demolition delay."
+  },
+  {
+    "id": "b2-part-viii-siege-and-fort-control",
+    "title": "Part VIII: Siege and Fort Control",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 1,
+    "topics": [
+      "infrastructure"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "",
+    "searchText": "part viii: siege and fort control foundation book ii: economy, provinces, and the machinery of state infrastructure all"
+  },
+  {
+    "id": "b2-province-exterior-and-fort-interior",
+    "title": "Province exterior and fort interior",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "infrastructure"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "A besieged province can have divided control: - the besieger controls the exterior; - the defender retains the fort interior; - armies, laboratories, temples, and recruitment must be interpreted by location and ownership rules rather than…",
+    "searchText": "province exterior and fort interior foundation book ii: economy, provinces, and the machinery of state infrastructure all a besieged province can have divided control: - the besieger controls the exterior; - the defender retains the fort interior; - armies, laboratories, temples, and recruitment must be interpreted by location and ownership rules rather than a single flag. this partial ownership affects: - income and recruitment; - movement and retreat; - assassination and stealth; - supply; - siege contribution; - the eventual reclaim-province step."
+  },
+  {
+    "id": "b2-reducing-walls",
+    "title": "Reducing walls",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Official formulas: Flying doubles both contributions. Repair penalties: - Mindless: one-eighth of calculated value; - Animal: half; - Undisciplined: half. Only forces whose commanders remain on Maintain Siege contribute.",
+    "searchText": "reducing walls foundation book ii: economy, provinces, and the machinery of state general all official formulas: flying doubles both contributions. repair penalties: - mindless: one-eighth of calculated value; - animal: half; - undisciplined: half. only forces whose commanders remain on maintain siege contribute."
+  },
+  {
+    "id": "b2-squaring-rewards-strength",
+    "title": "Squaring rewards strength",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 3,
+    "topics": [
+      "strategy"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Strength-squared means one stronger unit can contribute more than several weaker units with the same total linear Strength. Strength Reduction contribution Base repair contribution ---: ---: ---: 5 25 12.5 10 100 50 15 225 112.5 20 400 200…",
+    "searchText": "squaring rewards strength foundation book ii: economy, provinces, and the machinery of state strategy all strength-squared means one stronger unit can contribute more than several weaker units with the same total linear strength. strength reduction contribution base repair contribution ---: ---: ---: 5 25 12.5 10 100 50 15 225 112.5 20 400 200 30 900 450 flying doubles the result. special siege abilities and modded values can further alter practical contribution."
+  },
+  {
+    "id": "b2-wall-resolution",
+    "title": "Wall resolution",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 3,
+    "topics": [
+      "timing"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Each turn: - total reduction is compared with total repair; - the difference damages or repairs wall integrity; - repair cannot exceed original wall integrity; - an unbesieged damaged fort fully restores. The defender receives exact wall…",
+    "searchText": "wall resolution foundation book ii: economy, provinces, and the machinery of state timing all each turn: - total reduction is compared with total repair; - the difference damages or repairs wall integrity; - repair cannot exceed original wall integrity; - an unbesieged damaged fort fully restores. the defender receives exact wall information. the attacker normally receives a descriptive estimate, creating an information problem around the storm date."
+  },
+  {
+    "id": "b2-storm-timing",
+    "title": "Storm timing",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "timing"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "A fort can be stormed only after wall integrity reaches zero and the next order phase presents the Storm Castle order. Storming resolves at step 27, after movement battles at step 26. This has several immediate consequences: 1. a relieving…",
+    "searchText": "storm timing foundation book ii: economy, provinces, and the machinery of state timing all a fort can be stormed only after wall integrity reaches zero and the next order phase presents the storm castle order. storming resolves at step 27, after movement battles at step 26. this has several immediate consequences: 1. a relieving army may arrive; 2. the besiegers fight it first; 3. surviving storm commanders and assigned troops attack the fort; 4. a storm commander killed before the gate battle contributes no troops to the storm. maintain siege and storm castle are commander orders. a commander performing another action does not supply siege strength merely because it remains in the province."
+  },
+  {
+    "id": "b2-fort-defenders",
+    "title": "Fort defenders",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "infrastructure"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Forts supply Castle Guards and Wall Defenders: - their number depends on fort level; - they replenish for each fight like PD; - they add repair strength; - Wall Defenders have unlimited ammunition, extra range, and wall protection; - they…",
+    "searchText": "fort defenders foundation book ii: economy, provinces, and the machinery of state infrastructure all forts supply castle guards and wall defenders: - their number depends on fort level; - they replenish for each fight like pd; - they add repair strength; - wall defenders have unlimited ammunition, extra range, and wall protection; - they are fort defence, not the same system as province defence. the shared word “defence” is a recurring source of confusion: term meaning --- --- province defence gold-purchased local force attached to province control wall integrity or fort defence damage required before storming castle guards and wall defenders fort-generated troops in a storm battle unit defence skill tactical chance to avoid melee attacks"
+  },
+  {
+    "id": "b2-part-ix-province-defence",
+    "title": "Part IX: Province Defence",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 1,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "",
+    "searchText": "part ix: province defence foundation book ii: economy, provinces, and the machinery of state general all"
+  },
+  {
+    "id": "b2-cost-curve",
+    "title": "Cost curve",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "The first point is free. Every later point costs its new level. PD Total cost Additional cost from prior listed row ---: ---: ---: 1 0 - 5 14 14 6 20 6 10 54 34 15 119 65 20 209 90 25 324 115 30 464 140 40 819 355 50 1,274 455 100 5,049…",
+    "searchText": "cost curve foundation book ii: economy, provinces, and the machinery of state general all the first point is free. every later point costs its new level. pd total cost additional cost from prior listed row ---: ---: ---: 1 0 - 5 14 14 6 20 6 10 54 34 15 119 65 20 209 90 25 324 115 30 464 140 40 819 355 50 1,274 455 100 5,049 3,775 the convex curve means “another ten pd” is not a consistent investment. going from 1 to 10 costs 54; going from 40 to 50 costs 455."
+  },
+  {
+    "id": "b2-what-pd-provides",
+    "title": "What PD provides",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Officially: - level 1 provides a commander and troops; - further levels add troops; - level 20 adds new commander and troop types; - additional benefits occur at 10, 15, and 20; - every full 10 points reduces unrest by 1 per turn; -…",
+    "searchText": "what pd provides foundation book ii: economy, provinces, and the machinery of state general all officially: - level 1 provides a commander and troops; - further levels add troops; - level 20 adds new commander and troop types; - additional benefits occur at 10, 15, and 20; - every full 10 points reduces unrest by 1 per turn; - stealth detection begins at 15; - patrol strength is pd - 14 from that point; - maximum pd is 100; - no upkeep is charged; - the force fully returns after battle if the province is retained. the actual roster is national. one nation's pd may deter a raider that walks through another nation's equal investment."
+  },
+  {
+    "id": "b2-population-support-and-permanence",
+    "title": "Population support and permanence",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "economy"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Each PD point requires 10 population. Unsupported PD is reduced at hosting step 61. PD cannot be voluntarily lowered. It is reduced by: - insufficient population; - capture, which wipes it; - disciple-game relinquishment, which removes…",
+    "searchText": "population support and permanence foundation book ii: economy, provinces, and the machinery of state economy all each pd point requires 10 population. unsupported pd is reduced at hosting step 61. pd cannot be voluntarily lowered. it is reduced by: - insufficient population; - capture, which wipes it; - disciple-game relinquishment, which removes 25%; - special exceptions for some populationless nations. because the spending is irreversible while control is retained, excessive pd can trap gold in the wrong place after a border moves."
+  },
+  {
+    "id": "b2-roles-of-pd",
+    "title": "Roles of PD",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "",
+    "searchText": "roles of pd foundation book ii: economy, provinces, and the machinery of state general all"
+  },
+  {
+    "id": "b2-raid-tax",
+    "title": "Raid tax",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 3,
+    "topics": [
+      "strategy",
+      "modding"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Low or moderate PD forces an attacker to bring a credible commander and force rather than a single opportunist.",
+    "searchText": "raid tax foundation book ii: economy, provinces, and the machinery of state strategy modding all low or moderate pd forces an attacker to bring a credible commander and force rather than a single opportunist."
+  },
+  {
+    "id": "b2-alarm-and-information",
+    "title": "Alarm and information",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 3,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "A battle report reveals attacker composition, script, and direction. Even a losing PD force can improve the next decision.",
+    "searchText": "alarm and information foundation book ii: economy, provinces, and the machinery of state general all a battle report reveals attacker composition, script, and direction. even a losing pd force can improve the next decision."
+  },
+  {
+    "id": "b2-unrest-control",
+    "title": "Unrest control",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 3,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Every ten points creates recurring unrest reduction, though buying PD solely for this purpose must be compared with a mobile patrol.",
+    "searchText": "unrest control foundation book ii: economy, provinces, and the machinery of state general all every ten points creates recurring unrest reduction, though buying pd solely for this purpose must be compared with a mobile patrol."
+  },
+  {
+    "id": "b2-stealth-detection",
+    "title": "Stealth detection",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 3,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "From 15 onward PD contributes patrol strength. Detection is not capture; the revealed stealth force may still win.",
+    "searchText": "stealth detection foundation book ii: economy, provinces, and the machinery of state general all from 15 onward pd contributes patrol strength. detection is not capture; the revealed stealth force may still win."
+  },
+  {
+    "id": "b2-battle-support",
+    "title": "Battle support",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 3,
+    "topics": [
+      "combat"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "PD can combine with a local army, fort defenders, terrain, and battle magic. Its expendability can buy time for mages whose spells decide the fight.",
+    "searchText": "battle support foundation book ii: economy, provinces, and the machinery of state combat all pd can combine with a local army, fort defenders, terrain, and battle magic. its expendability can buy time for mages whose spells decide the fight."
+  },
+  {
+    "id": "b2-why-pd-is-not-an-army",
+    "title": "Why PD is not an army",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "PD: - cannot move; - cannot choose a different strategic target; - cannot retreat into a future offensive; - may have poor leadership, morale, equipment, or formation; - scales in gold cost faster than it scales in quality; - disappears on…",
+    "searchText": "why pd is not an army foundation book ii: economy, provinces, and the machinery of state general all pd: - cannot move; - cannot choose a different strategic target; - cannot retreat into a future offensive; - may have poor leadership, morale, equipment, or formation; - scales in gold cost faster than it scales in quality; - disappears on capture. high pd can still be correct at a throne, capital approach, blood centre, or mage concentration. the decision must price the attack it is intended to defeat."
+  },
+  {
+    "id": "b2-community-thresholds",
+    "title": "Community thresholds",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 3,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Some guides recommend values such as 6 or 11 to prevent particular event outcomes or deter generic raiders. Such numbers are rules of thumb, not universal mechanics. Event pools, nation, mods, map settings, and attacker design can change…",
+    "searchText": "community thresholds foundation book ii: economy, provinces, and the machinery of state general all some guides recommend values such as 6 or 11 to prevent particular event outcomes or deter generic raiders. such numbers are rules of thumb, not universal mechanics. event pools, nation, mods, map settings, and attacker design can change the result."
+  },
+  {
+    "id": "b2-part-x-sites-gems-and-magical-capital",
+    "title": "Part X: Sites, Gems, and Magical Capital",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 1,
+    "topics": [
+      "scales",
+      "magic"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "",
+    "searchText": "part x: sites, gems, and magical capital foundation book ii: economy, provinces, and the machinery of state scales magic all"
+  },
+  {
+    "id": "b2-site-frequency-and-terrain",
+    "title": "Site frequency and terrain",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "modding"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "The main manual states that sites are more common in terrain such as: - forests; - wastes; - deep seas; - mountains and unusual cave terrain. They are less common in plains and farmlands. This is a probability, not a guarantee. Search…",
+    "searchText": "site frequency and terrain foundation book ii: economy, provinces, and the machinery of state modding all the main manual states that sites are more common in terrain such as: - forests; - wastes; - deep seas; - mountains and unusual cave terrain. they are less common in plains and farmlands. this is a probability, not a guarantee. search planning should combine: - terrain; - path availability; - prior searches; - national site frequency; - opportunity cost of the mage-turn; - value of remote search spells; - safety of the searching mage."
+  },
+  {
+    "id": "b2-search-difficulty",
+    "title": "Search difficulty",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Hidden sites have difficulty 1 through 4. A mage manually searching a path finds sites in that path up to the mage's level. Path 4 is the highest ordinary requirement. Examples: - N1 finds difficulty-1 Nature sites. - N3 finds difficulty…",
+    "searchText": "search difficulty foundation book ii: economy, provinces, and the machinery of state general all hidden sites have difficulty 1 through 4. a mage manually searching a path finds sites in that path up to the mage's level. path 4 is the highest ordinary requirement. examples: - n1 finds difficulty-1 nature sites. - n3 finds difficulty 1-3 nature sites. - n4 finds every nature site detectable by ordinary path search. - an n3 mage says nothing about fire, death, or glamour sites. remote path-search rituals reveal all sites of their path. acashic knowledge reveals all paths."
+  },
+  {
+    "id": "b2-site-benefits-and-harms",
+    "title": "Site benefits and harms",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Sites may provide: - monthly gems; - gold; - resources or supplies; - units and commanders; - laboratories, temples, forts, or discounts; - rituals or enter-site orders; - path bonuses; - scale or dominion effects; - unrest, disease,…",
+    "searchText": "site benefits and harms foundation book ii: economy, provinces, and the machinery of state general all sites may provide: - monthly gems; - gold; - resources or supplies; - units and commanders; - laboratories, temples, forts, or discounts; - rituals or enter-site orders; - path bonuses; - scale or dominion effects; - unrest, disease, population loss, or other harms. a harmful undiscovered site can still operate. discovery explains a problem; it does not necessarily create it."
+  },
+  {
+    "id": "b2-ownership-and-national-recruitment",
+    "title": "Ownership and national recruitment",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 3,
+    "topics": [
+      "economy",
+      "nations"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "A captured site that recruits another nation's national unit does not normally grant that recruit to the conqueror. The conqueror can still collect the site's gem income where applicable. Some sites require a laboratory before recruitment…",
+    "searchText": "ownership and national recruitment foundation book ii: economy, provinces, and the machinery of state economy nations all a captured site that recruits another nation's national unit does not normally grant that recruit to the conqueror. the conqueror can still collect the site's gem income where applicable. some sites require a laboratory before recruitment or another function becomes available."
+  },
+  {
+    "id": "b2-gem-income-and-mage-turn-economy",
+    "title": "Gem income and mage-turn economy",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "timing",
+      "economy",
+      "magic"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Gems accumulate nationally and can be converted into: - rituals; - summons; - forged items; - empowerment; - battle magic; - global enchantments; - trades and diplomacy. The site-search decision has an expected-value structure: The formula…",
+    "searchText": "gem income and mage-turn economy foundation book ii: economy, provinces, and the machinery of state timing economy magic all gems accumulate nationally and can be converted into: - rituals; - summons; - forged items; - empowerment; - battle magic; - global enchantments; - trades and diplomacy. the site-search decision has an expected-value structure: the formula is not intended to assign fake precision. it identifies the relevant terms. a single rare site can dominate the average, and information about a searched path has future value even when nothing is found."
+  },
+  {
+    "id": "b2-search-records",
+    "title": "Search records",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 3,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Every serious game benefits from recording: - province; - terrain; - path searched; - manual or remote method; - path level; - discovered sites; - remaining unsearched paths; - laboratory requirement; - hostile or passive effects. Without…",
+    "searchText": "search records foundation book ii: economy, provinces, and the machinery of state general all every serious game benefits from recording: - province; - terrain; - path searched; - manual or remote method; - path level; - discovered sites; - remaining unsearched paths; - laboratory requirement; - hostile or passive effects. without a record, mages repeat searches or leave valuable paths untouched."
+  },
+  {
+    "id": "b2-part-xi-blood-economy",
+    "title": "Part XI: Blood Economy",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 1,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "",
+    "searchText": "part xi: blood economy foundation book ii: economy, provinces, and the machinery of state general all"
+  },
+  {
+    "id": "b2-blood-slaves-are-produced-not-passively-collected",
+    "title": "Blood slaves are produced, not passively collected",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Blood magic substitutes an active extraction system for ordinary gem-site income. Blood Hunting consumes a commander order and damages the province through unrest and possible population loss or attacks. The economic chain is:",
+    "searchText": "blood slaves are produced, not passively collected foundation book ii: economy, provinces, and the machinery of state general all blood magic substitutes an active extraction system for ordinary gem-site income. blood hunting consumes a commander order and damages the province through unrest and possible population loss or attacks. the economic chain is:"
+  },
+  {
+    "id": "b2-official-hunting-checks",
+    "title": "Official hunting checks",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "The main manual gives: All three must succeed. If they do: If any fails: At 7,500 population, the population check reaches a nominal 100%. At Blood 3, the Blood check reaches a nominal 100%. Existing unrest can still cause failure. Site…",
+    "searchText": "official hunting checks foundation book ii: economy, provinces, and the machinery of state general all the main manual gives: all three must succeed. if they do: if any fails: at 7,500 population, the population check reaches a nominal 100%. at blood 3, the blood check reaches a nominal 100%. existing unrest can still cause failure. site frequency changes average yield by 0.5 slaves for every five percentage points away from 50%."
+  },
+  {
+    "id": "b2-dominion-and-retaliation",
+    "title": "Dominion and retaliation",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "dominion"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Commoners may attack Blood Hunters. Strong friendly dominion makes the sacrifice appear religiously legitimate; the manual states that dominion 10 leaves almost no resistance. The risk extends beyond lost slaves: - the hunter can be…",
+    "searchText": "dominion and retaliation foundation book ii: economy, provinces, and the machinery of state dominion all commoners may attack blood hunters. strong friendly dominion makes the sacrifice appear religiously legitimate; the manual states that dominion 10 leaves almost no resistance. the risk extends beyond lost slaves: - the hunter can be injured or killed; - bodyguards consume gold, supply, and patrol capacity; - a hidden enemy can exploit the concentration; - hostile dominion can make a previously safe centre unstable."
+  },
+  {
+    "id": "b2-the-blood-province-cycle",
+    "title": "The blood-province cycle",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "A functioning centre balances: 1. hunters create slaves and unrest; 2. patrols remove unrest and detect hostile infiltrators; 3. population and income absorb the damage; 4. labs provide pool access and ritual logistics; 5. forts or armies…",
+    "searchText": "the blood-province cycle foundation book ii: economy, provinces, and the machinery of state general all a functioning centre balances: 1. hunters create slaves and unrest; 2. patrols remove unrest and detect hostile infiltrators; 3. population and income absorb the damage; 4. labs provide pool access and ritual logistics; 5. forts or armies protect the investment; 6. replacement hunters and patrollers sustain throughput. if patrol strength is insufficient, unrest reduces success, income, resources, and eventually recruitment. adding more hunters can then reduce total output."
+  },
+  {
+    "id": "b2-rule-of-thumb-versus-rule",
+    "title": "Rule of thumb versus rule",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 3,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Community guides often estimate that roughly 25 patrol strength supports each Blood-3-equivalent hunter under ordinary conditions. This is a planning heuristic, not an official fixed ratio. Patrol efficiency, population loss, unrest,…",
+    "searchText": "rule of thumb versus rule foundation book ii: economy, provinces, and the machinery of state general all community guides often estimate that roughly 25 patrol strength supports each blood-3-equivalent hunter under ordinary conditions. this is a planning heuristic, not an official fixed ratio. patrol efficiency, population loss, unrest, dominion, site frequency, hunter abilities, and national mechanics change the result."
+  },
+  {
+    "id": "b2-measuring-the-blood-economy",
+    "title": "Measuring the blood economy",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Useful records: Measure Purpose --- --- Slaves per hunter-turn Compares extraction efficiency Unrest before and after hosting Reveals patrol shortfall Population trend Detects hidden long-term collapse Lost research per month Prices…",
+    "searchText": "measuring the blood economy foundation book ii: economy, provinces, and the machinery of state general all useful records: measure purpose --- --- slaves per hunter-turn compares extraction efficiency unrest before and after hosting reveals patrol shortfall population trend detects hidden long-term collapse lost research per month prices mage-turn diversion patrol gold and upkeep prices support force hunter and lab losses prices security failures slaves converted to effects distinguishes stockpiling from power the goal is not the largest slave count. it is the most decisive magical output produced without collapsing the rest of the state."
+  },
+  {
+    "id": "b2-part-xii-economic-timing-through-hosting",
+    "title": "Part XII: Economic Timing Through Hosting",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 1,
+    "topics": [
+      "timing"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "",
+    "searchText": "part xii: economic timing through hosting foundation book ii: economy, provinces, and the machinery of state timing all"
+  },
+  {
+    "id": "b2-the-state-economy-chain",
+    "title": "The state-economy chain",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "modding"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "The most important monthly sequence is: Step Event Economic reading ---: --- --- 3 Recruitment Existing infrastructure and local capacity create units first. 18 Blood Hunting Slaves and hunting unrest are generated early. 24-27 Movement,…",
+    "searchText": "the state-economy chain foundation book ii: economy, provinces, and the machinery of state modding all the most important monthly sequence is: step event economic reading ---: --- --- 3 recruitment existing infrastructure and local capacity create units first. 18 blood hunting slaves and hunting unrest are generated early. 24-27 movement, battles, storming control and siege state change. 29-33 events and later battles income provinces can still be altered. 35 construction new buildings become part of the end-state, too late for earlier production. 37 pillage immediate population, unrest, and supply damage occurs. 38 income collection uses the post-conquest, post-pillage state and tax trace. 39 unrest changes patrolling, order, and related adjustments primarily prepare next month. 40 starvation armies acquire logistical penalties after battle. 41 upkeep recurring military costs are charged after income. 42-44 dominion and site effects longer-term provincial state changes arrive. 53-54 reclaim and conscription late ownership correction and automatic pd prepare the next turn. 61 unsupported pd reduction population-depleted provinces lose excess pd at the end."
+  },
+  {
+    "id": "b2-worked-timing-cases",
+    "title": "Worked timing cases",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "timing"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "",
+    "searchText": "worked timing cases foundation book ii: economy, provinces, and the machinery of state timing all"
+  },
+  {
+    "id": "b2-emergency-recruitment-under-attack",
+    "title": "Emergency recruitment under attack",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 3,
+    "topics": [
+      "economy"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "- Units are queued during the order phase. - Recruitment resolves at step 3. - An enemy army arrives and fights at step 26. - The new units defend. - They had no opportunity to receive a new strategic order.",
+    "searchText": "emergency recruitment under attack foundation book ii: economy, provinces, and the machinery of state economy all - units are queued during the order phase. - recruitment resolves at step 3. - an enemy army arrives and fights at step 26. - the new units defend. - they had no opportunity to receive a new strategic order."
+  },
+  {
+    "id": "b2-new-laboratory-under-invasion",
+    "title": "New laboratory under invasion",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 3,
+    "topics": [
+      "infrastructure"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "- A mage is ordered to build a lab. - Research, forging, rituals, and battles all occur before step 35. - The lab completes only if the builder and province still satisfy the construction result. - Its practical magical use begins next…",
+    "searchText": "new laboratory under invasion foundation book ii: economy, provinces, and the machinery of state infrastructure all - a mage is ordered to build a lab. - research, forging, rituals, and battles all occur before step 35. - the lab completes only if the builder and province still satisfy the construction result. - its practical magical use begins next order phase."
+  },
+  {
+    "id": "b2-pillage-before-collection",
+    "title": "Pillage before collection",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 3,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "- A province changes hands at step 26. - The winner pillages at step 37 if the relevant order succeeds. - Pillage damage occurs before income at step 38. - The new owner may collect less than the pre-battle province panel suggested.",
+    "searchText": "pillage before collection foundation book ii: economy, provinces, and the machinery of state general all - a province changes hands at step 26. - the winner pillages at step 37 if the relevant order succeeds. - pillage damage occurs before income at step 38. - the new owner may collect less than the pre-battle province panel suggested."
+  },
+  {
+    "id": "b2-patrol-after-income",
+    "title": "Patrol after income",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 3,
+    "topics": [
+      "economy"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "- A Blood Hunt at step 18 raises unrest. - Income is collected at step 38. - Patrol and ordinary unrest alterations occur at step 39. - The province may pay reduced income this month even if the patrol restores order moments later.",
+    "searchText": "patrol after income foundation book ii: economy, provinces, and the machinery of state economy all - a blood hunt at step 18 raises unrest. - income is collected at step 38. - patrol and ordinary unrest alterations occur at step 39. - the province may pay reduced income this month even if the patrol restores order moments later."
+  },
+  {
+    "id": "b2-siege-relief-before-storm",
+    "title": "Siege relief before storm",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 3,
+    "topics": [
+      "infrastructure"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "- The wall was already at zero when orders were written. - A relief army moves and battles at step 26. - Surviving storm commanders attack at step 27. - Defeating or killing them in the relief battle prevents or weakens the storm.",
+    "searchText": "siege relief before storm foundation book ii: economy, provinces, and the machinery of state infrastructure all - the wall was already at zero when orders were written. - a relief army moves and battles at step 26. - surviving storm commanders attack at step 27. - defeating or killing them in the relief battle prevents or weakens the storm."
+  },
+  {
+    "id": "b2-part-xiii-strategic-frameworks",
+    "title": "Part XIII: Strategic Frameworks",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 1,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "",
+    "searchText": "part xiii: strategic frameworks foundation book ii: economy, provinces, and the machinery of state general all"
+  },
+  {
+    "id": "b2-expansion-income-versus-expansion-burden",
+    "title": "Expansion income versus expansion burden",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "economy",
+      "strategy",
+      "nations"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "A conquered province can provide: - income; - resources; - Recruitment Points; - supplies; - independents; - sites; - tax trace; - movement position. It also creates: - a border to defend; - unrest to manage; - commander travel; -…",
+    "searchText": "expansion income versus expansion burden foundation book ii: economy, provinces, and the machinery of state economy strategy nations all a conquered province can provide: - income; - resources; - recruitment points; - supplies; - independents; - sites; - tax trace; - movement position. it also creates: - a border to defend; - unrest to manage; - commander travel; - potential tax isolation; - a target for raids; - a possible need for pd, patrol, lab, temple, or fort. the correct expansion measure is not provinces per turn alone. it is useful, connected, defensible economic mass acquired per loss and per commander-turn."
+  },
+  {
+    "id": "b2-infrastructure-tempo",
+    "title": "Infrastructure tempo",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Infrastructure has a delay chain: A fort whose first mage reaches the front in twelve months belongs to a different strategic horizon than emergency troops recruited now.",
+    "searchText": "infrastructure tempo foundation book ii: economy, provinces, and the machinery of state general all infrastructure has a delay chain: a fort whose first mage reaches the front in twelve months belongs to a different strategic horizon than emergency troops recruited now."
+  },
+  {
+    "id": "b2-fort-now-test",
+    "title": "Fort-now test",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 3,
+    "topics": [
+      "infrastructure",
+      "research-control"
+    ],
+    "audience": [
+      "expert"
+    ],
+    "evidence": [],
+    "excerpt": "Build when most of the following are true: - the commander or troop roster is valuable; - capacity will be used continuously; - the location anchors tax or supply; - the province can be defended through construction; - the expected game…",
+    "searchText": "fort-now test foundation book ii: economy, provinces, and the machinery of state infrastructure research-control expert build when most of the following are true: - the commander or troop roster is valuable; - capacity will be used continuously; - the location anchors tax or supply; - the province can be defended through construction; - the expected game horizon allows military conversion; - no nearer timing attack requires the gold; - resource geometry is favourable; - the nation needs another mage or commander stream. delay when: - the war is decided before completion; - the site cannot be held; - the desired roster remains gold-limited elsewhere; - adjacent forts remove most resource gain; - the builder or gold has a more urgent conversion."
+  },
+  {
+    "id": "b2-mage-turn-accounting",
+    "title": "Mage-turn accounting",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "timing"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "A mage can usually do one major strategic job per month: - research; - search; - forge; - cast a ritual; - Blood Hunt; - build a lab; - move; - participate in battle; - perform a special order. The cost of a ritual is not limited to gems.…",
+    "searchText": "mage-turn accounting foundation book ii: economy, provinces, and the machinery of state timing all a mage can usually do one major strategic job per month: - research; - search; - forge; - cast a ritual; - blood hunt; - build a lab; - move; - participate in battle; - perform a special order. the cost of a ritual is not limited to gems. it also includes: this accounting becomes decisive for small mage corps and blood nations."
+  },
+  {
+    "id": "b2-static-and-mobile-gold",
+    "title": "Static and mobile gold",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "economy"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Gold can become: - static power: PD, forts, temples, labs; - mobile power: troops, commanders, mercenaries; - productive power: mages, researchers, infrastructure; - religious power: temples, priests, sacred throughput; - insurance:…",
+    "searchText": "static and mobile gold foundation book ii: economy, provinces, and the machinery of state economy all gold can become: - static power: pd, forts, temples, labs; - mobile power: troops, commanders, mercenaries; - productive power: mages, researchers, infrastructure; - religious power: temples, priests, sacred throughput; - insurance: treasury reserve. an efficient state carries a deliberate mix. too much static power loses the field. too much mobile power can lack replacement, research, and safe logistics. too much productive power can die before repayment."
+  },
+  {
+    "id": "b2-denial-and-recovery",
+    "title": "Denial and recovery",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "units-abilities"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "Economic warfare targets conversion rather than ownership alone. High-value actions include: - cutting a tax trace; - besieging a mage fort; - raising unrest to 100; - killing the patrols of a blood centre; - taking a lab with stored items…",
+    "searchText": "denial and recovery foundation book ii: economy, provinces, and the machinery of state units-abilities all economic warfare targets conversion rather than ownership alone. high-value actions include: - cutting a tax trace; - besieging a mage fort; - raising unrest to 100; - killing the patrols of a blood centre; - taking a lab with stored items or positioned casters; - forcing an army into poor supply; - damaging population that supports pd and rp; - building an adjacent fort that changes resource geometry; - repeatedly raiding the same reconstruction corridor. recovery priorities: 1. restore tax trace and province control; 2. prevent recruitment shutdown; 3. preserve or rebuild irreplaceable mage production; 4. feed armies and halt disease; 5. reconnect labs and gem access; 6. replace mobile defence before rebuilding luxury infrastructure."
+  },
+  {
+    "id": "b2-part-xiv-new-player-operational-guide",
+    "title": "Part XIV: New-Player Operational Guide",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 1,
+    "topics": [
+      "de-divinitus"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "",
+    "searchText": "part xiv: new-player operational guide foundation book ii: economy, provinces, and the machinery of state de-divinitus all"
+  },
+  {
+    "id": "b2-first-turn-provincial-reading",
+    "title": "First-turn provincial reading",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "timing"
+    ],
+    "audience": [
+      "beginner"
+    ],
+    "evidence": [],
+    "excerpt": "For each owned province: 1. Read population, income, resources, supplies, unrest, terrain, and PD. 2. Identify whether income has a valid fort trace. 3. Check the recruit roster before buying infrastructure. 4. Note site searches already…",
+    "searchText": "first-turn provincial reading foundation book ii: economy, provinces, and the machinery of state timing beginner for each owned province: 1. read population, income, resources, supplies, unrest, terrain, and pd. 2. identify whether income has a valid fort trace. 3. check the recruit roster before buying infrastructure. 4. note site searches already completed. 5. compare the province's best role with its exposed position."
+  },
+  {
+    "id": "b2-recruitment-checklist",
+    "title": "Recruitment checklist",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "economy"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "- Is the unit recruitable here? - Is gold available now? - Are resources sufficient? - Are Recruitment Points sufficient? - Is a commander using the local Commander Point? - Is the unit sacred or limited? - Will unrest reach or remain at…",
+    "searchText": "recruitment checklist foundation book ii: economy, provinces, and the machinery of state economy all - is the unit recruitable here? - is gold available now? - are resources sufficient? - are recruitment points sufficient? - is a commander using the local commander point? - is the unit sacred or limited? - will unrest reach or remain at 100? - is the army's future supply sufficient? - is there leadership for the recruited troop type? - does the queue create a usable army package?"
+  },
+  {
+    "id": "b2-army-logistics-checklist",
+    "title": "Army logistics checklist",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "- Current Supply Usage. - Destination population and scales. - Highest nearby fort contribution. - Expected pillage or ownership change. - Survival skills. - Mounted and large-unit consumption. - Existing Starving or disease conditions. -…",
+    "searchText": "army logistics checklist foundation book ii: economy, provinces, and the machinery of state general all - current supply usage. - destination population and scales. - highest nearby fort contribution. - expected pillage or ownership change. - survival skills. - mounted and large-unit consumption. - existing starving or disease conditions. - siege interior versus exterior. - retreat province supply."
+  },
+  {
+    "id": "b2-building-checklist",
+    "title": "Building checklist",
+    "documentId": "b2",
+    "documentTitle": "Foundation Book II: Economy, Provinces, and the Machinery of State",
+    "documentSlug": "book-ii",
+    "level": 2,
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "all"
+    ],
+    "evidence": [],
+    "excerpt": "- Correct constructor type. - Gold after recruitment and reserve. - Completion date. - Step-35 timing. - Province security. - Roster or magical function unlocked. - Tax, supply, and resource geometry. - Commander-turn cost.",
+    "searchText": "building checklist foundation book ii: economy, provinces, and the machinery of state general all - correct constructor type. - gold after recruitment and reserve. - completion date. - step-35 timing. - province security. - roster or magical function unlocked. - tax, supply, and resource geometry. - commander-turn cost."
   }
 ]

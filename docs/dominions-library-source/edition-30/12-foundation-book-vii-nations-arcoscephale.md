@@ -13617,6 +13617,7737 @@ The dossier does not claim exact expansion counts, formation performance, script
 
 <!-- GENERATED REMAINING MA DOSSIERS END -->
 
+<!-- GENERATED EARLY AGE DOSSIERS START -->
+
+# Part LII: Early Age Arcoscephale, Golden Era
+
+## Early Age Arcoscephale one-page command brief
+
+Early Age Arcoscephale converts bronze-age combined arms, gifted philosophers, Mystics, Icarids, and sacred Pegasus Riders into expansion, research, and strategic pressure. The pinned roster resolves 12 commander identities and 8 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 8 active nation-restricted spell records. Its chief planning risks are capital pressure, expensive specialists, random-path dependence, and keeping research aligned with field support.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Arcoscephale evidence and ruleset
+
+This dossier covers unmodded Early Age Arcoscephale on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 5, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Arcoscephale object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Arcoscephale conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Arcoscephale recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 8 | 7 | Direct pinned membership rows |
+| Regional or coastal | 1 | 0 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 4 | 1 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Arcoscephale commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 431 | Scout | none | 0 |
+| 1076 | Myrmidon Champion | none | 100 |
+| 1081 | Charioteer Commander | none | 75 |
+| 3197 | Melissa | N1 H1; random: 100% ×1 mask 8448 link 1 | 10 |
+| 1083 | Icarid Champion | none | 75 |
+| 1071 | Sceptic | none | 10 |
+| 311 | Mystic | S1; random: 100% ×1 mask 3712 link 1; 50% ×1 mask 128 link 1; 50% ×1 mask 512 link 1; 50% ×1 mask 1024 link 1 | 10 |
+| 1072 | Engineer | none | 10 |
+| 1070 | Philosopher | none | 10 |
+| 1606 | Mage Engineer | A1 E1; random: 100% ×1 mask 3968 link 1 | 10 |
+| 1650 | Oreiad | A2 E1 N3; random: 100% ×1 mask 9984 link 1; 10% ×1 mask 9984 link 1 | 10 |
+| 1075 | Wind Lord | H1 | 100 |
+
+
+## Early Age Arcoscephale troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 50 | Slinger | 10 | 0 | 7 | ordinary body |
+| 201 | Peltast | 10 | 0 | 10 | ordinary body |
+| 199 | Cardaces | 10 | 0 | 10 | ordinary body |
+| 1077 | Myrmidon | 13 | 0 | 13 | ordinary body |
+| 1079 | Charioteer | 10 | 0 | 10 | ordinary body |
+| 1078 | Charioteer | 10 | 0 | 10 | ordinary body |
+| 1082 | Icarid | 12 | 0 | 13 | flying |
+| 1074 | Wind Rider | 13 | 0 | 14 | sacred |
+
+
+## Early Age Arcoscephale mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 3197 | Melissa | N1 H1; random: 100% ×1 mask 8448 link 1 | 10 |
+| 311 | Mystic | S1; random: 100% ×1 mask 3712 link 1; 50% ×1 mask 128 link 1; 50% ×1 mask 512 link 1; 50% ×1 mask 1024 link 1 | 10 |
+| 1606 | Mage Engineer | A1 E1; random: 100% ×1 mask 3968 link 1 | 10 |
+| 1650 | Oreiad | A2 E1 N3; random: 100% ×1 mask 9984 link 1; 10% ×1 mask 9984 link 1 | 10 |
+| 1075 | Wind Lord | H1 | 100 |
+
+
+The highest fixed recruitable paths resolved in these rows are Air 2, Earth 1, Astral 1, Nature 3, Holy 1. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Arcoscephale capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 75 | Akademeia | no gem field | Philosopher |
+| 74 | Lykeion | E2 | Mage Engineer |
+| 73 | Mount Cephalos | A2, S2 | Oreiad, Wind Lord, Wind Rider |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Arcoscephale national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 253 | Monster Boar | Conjuration 5 | N3 | 10 |
+| 254 | Summon Hound of Twilight | Conjuration 5 | E2 D1 | 3 |
+| 255 | Sow Dragon Teeth | Enchantment 6 | E2 | 1 |
+| 256 | Bind Keres | Conjuration 6 | D2 | 12 |
+| 269 | Craft Keledone | Construction 6 | E2 S2 | 5 |
+| 270 | Forge Brass Bull | Construction 6 | F3 E3 | 25 |
+| 274 | Awaken Hamadryad | Enchantment 5 | N4 | 25 |
+| 369 | Procession of the Underworld | Conjuration 5 | D3 | 13 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Arcoscephale national item boundary
+
+| ID | Item | Construction | Paths | Link |
+| ---: | --- | ---: | --- | --- |
+| 261 | Stymphalian Wings | 7 | E4 | rebate |
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Arcoscephale hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 954 | Son of Titans | none | assignment only; timing unresolved |
+| 1073 | Maker of the Maze | F1 A1 W1 E3 | assignment only; timing unresolved |
+| 1089 | Monster in the Maze | none | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Arcoscephale army identities
+
+- Sacred roster: Wind Rider.
+- Flying roster: Icarid.
+- Aquatic or amphibious roster: no aquatic or amphibious troop identified in the reconciled recruit rows.
+- Core identity: bronze-age combined arms, gifted philosophers, Mystics, Icarids, and sacred Pegasus Riders.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Arcoscephale opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Arcoscephale fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Arcoscephale, the most likely planning failure is capital pressure, expensive specialists, random-path dependence, and keeping research aligned with field support. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Arcoscephale research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Arcoscephale magic-access ladder
+
+The fixed-path ceiling is Air 2, Earth 1, Astral 1, Nature 3, Holy 1. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Arcoscephale battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Arcoscephale Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Arcoscephale matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Arcoscephale monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Arcoscephale unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Arcoscephale source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LIII: Early Age Mekone, Brazen Giants
+
+## Early Age Mekone one-page command brief
+
+Early Age Mekone converts a small core of Exalted Gigantes and Cyclope smiths supported by numerous human helots into expansion, research, and strategic pressure. The pinned roster resolves 9 commander identities and 7 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 7 active nation-restricted spell records. Its chief planning risks are giant replacement speed, unrest and administration, gold concentration, and the gap between elite and slave troops.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Mekone evidence and ruleset
+
+This dossier covers unmodded Early Age Mekone on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 6, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Mekone object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Mekone conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Mekone recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 6 | 7 | Direct pinned membership rows |
+| Regional or coastal | 0 | 0 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 3 | 0 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Mekone commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 3107 | Perioeci Scout | none | 0 |
+| 3108 | Neodamode Commander | none | 75 |
+| 3111 | Lochos | none | 100 |
+| 3114 | Geronte | H1; random: 100% ×1 mask 1152 link 1 | 50 |
+| 3115 | Ephor | F1 E1 H1; random: 100% ×1 mask 1408 link 1 | 50 |
+| 3116 | Archon | F1 E1 H1; random: 100% ×1 mask 1408 link 2 | 50 |
+| 3112 | Polemarch | F2 E2 | 150 |
+| 3117 | Basileus | F2 W1 E2 H2; random: 100% ×1 mask 1920 link 1; 10% ×1 mask 1920 link 1 | 100 |
+| 3118 | Elder Cyclops | F2 A1 E2; random: 100% ×1 mask 1920 link 1; 10% ×1 mask 1920 link 1 | 50 |
+
+
+## Early Age Mekone troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 3100 | Perioeci Peltast | 10 | 0 | 10 | ordinary body |
+| 3101 | Helote Peltast | 10 | 0 | 7 | ordinary body |
+| 3103 | Helote Ekdromos | 10 | 0 | 7 | ordinary body |
+| 3105 | Helote Hoplite | 10 | 0 | 7 | ordinary body |
+| 3109 | Gigante Ekdromos | 30 | 3 | 13 | ordinary body |
+| 3110 | Gigante Hoplite | 30 | 3 | 13 | ordinary body |
+| 3120 | Discobolus | 32 | 3 | 11 | ordinary body |
+
+
+## Early Age Mekone mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 3114 | Geronte | H1; random: 100% ×1 mask 1152 link 1 | 50 |
+| 3115 | Ephor | F1 E1 H1; random: 100% ×1 mask 1408 link 1 | 50 |
+| 3116 | Archon | F1 E1 H1; random: 100% ×1 mask 1408 link 2 | 50 |
+| 3112 | Polemarch | F2 E2 | 150 |
+| 3117 | Basileus | F2 W1 E2 H2; random: 100% ×1 mask 1920 link 1; 10% ×1 mask 1920 link 1 | 100 |
+| 3118 | Elder Cyclops | F2 A1 E2; random: 100% ×1 mask 1920 link 1; 10% ×1 mask 1920 link 1 | 50 |
+
+
+The highest fixed recruitable paths resolved in these rows are Fire 2, Air 1, Water 1, Earth 2, Holy 2. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Mekone capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 194 | City of Gold and Marble | A1, E1 | Polemarch, Basileus |
+| 195 | Forge of the Cyclopes | F2, E2 | Elder Cyclops |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Mekone national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 254 | Summon Hound of Twilight | Conjuration 5 | E2 D1 | 3 |
+| 255 | Sow Dragon Teeth | Enchantment 6 | E2 | 1 |
+| 256 | Bind Keres | Conjuration 6 | D2 | 12 |
+| 263 | Blessing of the God-slayer | Enchantment 0 | W1 H1 | 5 |
+| 264 | Gigantomachia | Thaumaturgy 7 | E4 F4 | 60 |
+| 270 | Forge Brass Bull | Construction 6 | F3 E3 | 25 |
+| 369 | Procession of the Underworld | Conjuration 5 | D3 | 13 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Mekone national item boundary
+
+| ID | Item | Construction | Paths | Link |
+| ---: | --- | ---: | --- | --- |
+| 133 | God-Slayer Spear | 3 | E1 | restricted |
+| 172 | Golden Hoplon | 5 | F2 | rebate |
+| 249 | Elemental Armor | 5 | E2 F1 | rebate |
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Mekone hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 3122 | King of Pallene | F2 E3 H2 | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Mekone army identities
+
+- Sacred roster: no sacred troop identified in the reconciled recruit rows.
+- Flying roster: no flying troop identified in the reconciled recruit rows.
+- Aquatic or amphibious roster: no aquatic or amphibious troop identified in the reconciled recruit rows.
+- Core identity: a small core of Exalted Gigantes and Cyclope smiths supported by numerous human helots.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Mekone opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Mekone fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Mekone, the most likely planning failure is giant replacement speed, unrest and administration, gold concentration, and the gap between elite and slave troops. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Mekone research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Mekone magic-access ladder
+
+The fixed-path ceiling is Fire 2, Air 1, Water 1, Earth 2, Holy 2. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Mekone battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Mekone Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Mekone matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Mekone monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Mekone unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Mekone source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LIV: Early Age Pangaea, Age of Revelry
+
+## Early Age Pangaea one-page command brief
+
+Early Age Pangaea converts forest recruitment, plentiful revelers, centaurs and minotaurs, and strong Nature magic from the Panii into expansion, research, and strategic pressure. The pinned roster resolves 8 commander identities and 12 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 6 active nation-restricted spell records. Its chief planning risks are undisciplined troops, forest dependence, supply, blood-hunting opportunity cost, and protecting expensive mages.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Pangaea evidence and ruleset
+
+This dossier covers unmodded Early Age Pangaea on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 7, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Pangaea object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Pangaea conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Pangaea recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 8 | 11 | Direct pinned membership rows |
+| Regional or coastal | 0 | 0 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 0 | 1 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Pangaea commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 430 | Black Harpy | none | 10 |
+| 2485 | Satyr Commander | none | 50 |
+| 1534 | Minotaur Lord | none | 75 |
+| 2158 | Centauride Hierophantide | H1; random: 100% ×1 mask 8704 link 1 | 50 |
+| 231 | Centaur Hierophant | H1; random: 100% ×1 mask 9216 link 1 | 50 |
+| 2187 | Dryad | N1 G1 H2 | 50 |
+| 2487 | Dryad Mother | N2 G1 H2; random: 100% ×1 mask 17920 link 1; 10% ×1 mask 26112 link 1 | 50 |
+| 1535 | Pan | E1 N4 B1; random: 100% ×1 mask 33792 link 1; 10% ×1 mask 41984 link 1 | 100 |
+
+
+## Early Age Pangaea troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 239 | Harpy | 7 | 0 | 8 | flying, stealthy |
+| 227 | Satyr Sneak | 12 | 1 | 9 | stealthy |
+| 228 | Satyr | 12 | 1 | 9 | stealthy |
+| 1532 | Satyr Warrior | 14 | 1 | 10 | ordinary body |
+| 708 | Reveler | 15 | 2 | 12 | stealthy |
+| 234 | Minotaur | 25 | 4 | 13 | ordinary body |
+| 1533 | Minotaur Warrior | 27 | 4 | 14 | ordinary body |
+| 2156 | Centauride | 18 | 3 | 11 | stealthy |
+| 27 | Centaur | 20 | 3 | 11 | stealthy |
+| 2157 | Centauride Warrior | 18 | 3 | 12 | stealthy |
+| 1704 | Centaur Warrior | 22 | 3 | 12 | stealthy |
+| 769 | White Centaur | 23 | 3 | 12 | sacred, stealthy |
+
+
+## Early Age Pangaea mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 2158 | Centauride Hierophantide | H1; random: 100% ×1 mask 8704 link 1 | 50 |
+| 231 | Centaur Hierophant | H1; random: 100% ×1 mask 9216 link 1 | 50 |
+| 2187 | Dryad | N1 G1 H2 | 50 |
+| 2487 | Dryad Mother | N2 G1 H2; random: 100% ×1 mask 17920 link 1; 10% ×1 mask 26112 link 1 | 50 |
+| 1535 | Pan | E1 N4 B1; random: 100% ×1 mask 33792 link 1; 10% ×1 mask 41984 link 1 | 100 |
+
+
+The highest fixed recruitable paths resolved in these rows are Earth 1, Nature 4, Glamour 1, Blood 1, Holy 2. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Pangaea capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 118 | The Grove of Gaia | N6 | White Centaur |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Pangaea national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 253 | Monster Boar | Conjuration 5 | N3 | 10 |
+| 274 | Awaken Hamadryad | Enchantment 5 | N4 | 25 |
+| 337 | Grow Fortress | Alteration 0 | N4 | 35 |
+| 424 | Tune of Fear | Enchantment 0 | N1 | 0 |
+| 425 | Tune of Growth | Enchantment 0 | N1 | 0 |
+| 426 | Tune of Dancing Death | Enchantment 0 | N1 | 0 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Pangaea national item boundary
+
+| ID | Item | Construction | Paths | Link |
+| ---: | --- | ---: | --- | --- |
+| 38 | Thorn Spear | 3 | N1 | rebate |
+| 39 | Thorn Staff | 3 | N1 | rebate |
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Pangaea hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 540 | White Minotaur | H2 | assignment only; timing unresolved |
+| 614 | Harpy Queen | A2 N2 | assignment only; timing unresolved |
+| 2246 | Blessed Couple | W1 E1 D1 N3 H2 | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Pangaea army identities
+
+- Sacred roster: White Centaur.
+- Flying roster: Harpy.
+- Aquatic or amphibious roster: no aquatic or amphibious troop identified in the reconciled recruit rows.
+- Core identity: forest recruitment, plentiful revelers, centaurs and minotaurs, and strong Nature magic from the Panii.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Pangaea opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Pangaea fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Pangaea, the most likely planning failure is undisciplined troops, forest dependence, supply, blood-hunting opportunity cost, and protecting expensive mages. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Pangaea research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Pangaea magic-access ladder
+
+The fixed-path ceiling is Earth 1, Nature 4, Glamour 1, Blood 1, Holy 2. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Pangaea battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Pangaea Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Pangaea matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Pangaea monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Pangaea unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Pangaea source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LV: Early Age Ermor, New Faith
+
+## Early Age Ermor one-page command brief
+
+Early Age Ermor converts disciplined legionnaires, lizard auxiliaries, Augurs, and a powerful priesthood divided between old and new religious traditions into expansion, research, and strategic pressure. The pinned roster resolves 12 commander identities and 13 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 1 active nation-restricted spell records. Its chief planning risks are mage and priest turn pressure, communion safety, capital recruitment, and keeping the army supplied as it expands.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Ermor evidence and ruleset
+
+This dossier covers unmodded Early Age Ermor on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 8, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Ermor object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Ermor conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Ermor recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 8 | 12 | Direct pinned membership rows |
+| Regional or coastal | 2 | 0 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 2 | 1 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Ermor commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 426 | Scout | none | 0 |
+| 428 | Assassin | none | 0 |
+| 671 | Centurion | none | 100 |
+| 1386 | Legatus Legionis | none | 150 |
+| 1112 | Bishop of the Sacred Shroud | H2 | 10 |
+| 1113 | Acolyte | H1 | 10 |
+| 1114 | Augur | F1 S1 | 10 |
+| 1115 | Augur Elder | F2 S1 D2; random: 100% ×1 mask 6528 link 1; 10% ×1 mask 6528 link 1 | 10 |
+| 1109 | Flamen | F1 H1; random: 100% ×1 mask 10112 link 1 | 0 |
+| 1110 | Pontifex | F1 H2 | 50 |
+| 3691 | Praefectus Equitum | H1 | 100 |
+| 1111 | Arch Bishop of the Sacred Shroud | H3 | 10 |
+
+
+## Early Age Ermor troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 50 | Slinger | 10 | 0 | 7 | ordinary body |
+| 1100 | Leve | 10 | 0 | 10 | ordinary body |
+| 1101 | Accensus | 10 | 0 | 8 | ordinary body |
+| 1102 | Rorarus | 10 | 0 | 10 | ordinary body |
+| 1103 | Hastatus | 10 | 0 | 11 | ordinary body |
+| 1104 | Principe | 11 | 0 | 12 | ordinary body |
+| 1105 | Triarius | 12 | 0 | 13 | ordinary body |
+| 2 | Standard | 10 | 0 | 10 | ordinary body |
+| 1106 | Lizard Auxiliare | 11 | 5 | 9 | ordinary body |
+| 1107 | Equite | 10 | 0 | 11 | ordinary body |
+| 11 | Retiarius | 12 | 0 | 14 | ordinary body |
+| 12 | Gladiator | 12 | 0 | 14 | ordinary body |
+| 1108 | Equite of the Sacred Shroud | 13 | 0 | 13 | sacred |
+
+
+## Early Age Ermor mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 1112 | Bishop of the Sacred Shroud | H2 | 10 |
+| 1113 | Acolyte | H1 | 10 |
+| 1114 | Augur | F1 S1 | 10 |
+| 1115 | Augur Elder | F2 S1 D2; random: 100% ×1 mask 6528 link 1; 10% ×1 mask 6528 link 1 | 10 |
+| 1109 | Flamen | F1 H1; random: 100% ×1 mask 10112 link 1 | 0 |
+| 1110 | Pontifex | F1 H2 | 50 |
+| 3691 | Praefectus Equitum | H1 | 100 |
+| 1111 | Arch Bishop of the Sacred Shroud | H3 | 10 |
+
+
+The highest fixed recruitable paths resolved in these rows are Fire 2, Astral 1, Death 2, Holy 3. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Ermor capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 77 | Temple of the Shroud | F3, S3 | Praefectus Equitum, Arch Bishop of the Sacred Shroud, Equite of the Sacred Shroud |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Ermor national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 275 | Contact Lar | Conjuration 5 | N1 | 16 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Ermor national item boundary
+
+| ID | Item | Construction | Paths | Link |
+| ---: | --- | ---: | --- | --- |
+| 252 | Shroud of the Battle Saint | 5 | S1 | rebate |
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Ermor hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 1586 | Pontifex Maximus | F2 S2 H3 | assignment only; timing unresolved |
+| 1587 | Primate | H4 | assignment only; timing unresolved |
+| 3123 | Gladiatrix | none | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Ermor army identities
+
+- Sacred roster: Equite of the Sacred Shroud.
+- Flying roster: no flying troop identified in the reconciled recruit rows.
+- Aquatic or amphibious roster: no aquatic or amphibious troop identified in the reconciled recruit rows.
+- Core identity: disciplined legionnaires, lizard auxiliaries, Augurs, and a powerful priesthood divided between old and new religious traditions.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Ermor opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Ermor fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Ermor, the most likely planning failure is mage and priest turn pressure, communion safety, capital recruitment, and keeping the army supplied as it expands. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Ermor research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Ermor magic-access ladder
+
+The fixed-path ceiling is Fire 2, Astral 1, Death 2, Holy 3. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Ermor battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Ermor Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Ermor matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Ermor monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Ermor unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Ermor source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LVI: Early Age Sauromatia, Amazon Queens
+
+## Early Age Sauromatia one-page command brief
+
+Early Age Sauromatia converts mobile tribal armies, Amazon commanders, serpent and lizard riders, hydras, and Death–Nature–Blood magic into expansion, research, and strategic pressure. The pinned roster resolves 12 commander identities and 12 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 4 active nation-restricted spell records. Its chief planning risks are light protection, poison exposure, blood-hunting costs, and coordinating several distinct troop families.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Sauromatia evidence and ruleset
+
+This dossier covers unmodded Early Age Sauromatia on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 9, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Sauromatia object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Sauromatia conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Sauromatia recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 9 | 7 | Direct pinned membership rows |
+| Regional or coastal | 0 | 0 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 3 | 5 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Sauromatia commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 426 | Scout | none | 0 |
+| 1169 | Chieftain | none | 50 |
+| 1173 | Sauromatian Manflayer | none | 100 |
+| 1174 | Warrior Priestess | H1 | 100 |
+| 1175 | Warrior Queen | none | 150 |
+| 1188 | Soothsayer | none; random: 90% ×1 mask 2048 link 1 | 10 |
+| 1180 | Spirit Guide | D1 | 10 |
+| 1181 | Enarie | S1 D2 N1 | 10 |
+| 1186 | Warrior Sorceress | N1 H1; random: 100% ×1 mask 45568 link 1 | 100 |
+| 1177 | Manflayer | none | 100 |
+| 1178 | Witch King | D3 N1 B1; random: 100% ×1 mask 45568 link 1; 10% ×1 mask 45568 link 1 | 150 |
+| 3660 | Hydra Tamer | none | 10 |
+
+
+## Early Age Sauromatia troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 1184 | Sauromatian Archer | 11 | 0 | 11 | ordinary body |
+| 1669 | Sauromatian Amazon | 10 | 0 | 12 | ordinary body |
+| 1168 | Raider | 11 | 0 | 11 | ordinary body |
+| 1167 | Lancer | 11 | 0 | 11 | ordinary body |
+| 1171 | Sauromatian Raider | 11 | 0 | 12 | ordinary body |
+| 1170 | Sauromatian Lancer | 11 | 0 | 12 | ordinary body |
+| 1172 | Sauromatian Cataphract | 11 | 0 | 12 | ordinary body |
+| 1183 | Androphag Archer | 11 | 0 | 11 | ordinary body |
+| 1176 | Androphag | 13 | 0 | 13 | sacred |
+| 1185 | Oiorpata | 11 | 0 | 13 | sacred |
+| 1831 | Hydra | 80 | 8 | 15 | ordinary body |
+| 1840 | Hydra Hatchling | 25 | 4 | 11 | ordinary body |
+
+
+## Early Age Sauromatia mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 1174 | Warrior Priestess | H1 | 100 |
+| 1188 | Soothsayer | none; random: 90% ×1 mask 2048 link 1 | 10 |
+| 1180 | Spirit Guide | D1 | 10 |
+| 1181 | Enarie | S1 D2 N1 | 10 |
+| 1186 | Warrior Sorceress | N1 H1; random: 100% ×1 mask 45568 link 1 | 100 |
+| 1178 | Witch King | D3 N1 B1; random: 100% ×1 mask 45568 link 1; 10% ×1 mask 45568 link 1 | 150 |
+
+
+The highest fixed recruitable paths resolved in these rows are Astral 1, Death 3, Nature 1, Blood 1, Holy 1. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Sauromatia capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 84 | The Great Cauldron | B2 | Manflayer, Witch King, Androphag Archer, Androphag |
+| 85 | The Bitter Stream | W1, D3 | Oiorpata |
+| 125 | The Enchanted Isle | N1 | none in explicit recruit fields |
+| 57 | Swamps of Pythia | no gem field | Hydra Tamer, Hydra, Hydra Hatchling |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Sauromatia national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 272 | Daughter of Typhon | Conjuration 8 | N5 D2 | 30 |
+| 280 | Awaken Tattoos | Enchantment 3 | N1 H1 | 0 |
+| 534 | Call Ancestor | Conjuration 1 | D1 | 0 |
+| 535 | Wrath of the Ancestors | Conjuration 7 | D1 | 1 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Sauromatia national item boundary
+
+| ID | Item | Construction | Paths | Link |
+| ---: | --- | ---: | --- | --- |
+| 269 | Hydra Skin Armor | 7 | N2 | rebate |
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Sauromatia hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 1228 | Pharmakeia | S2 D4 N4 G2 | assignment only; timing unresolved |
+| 1589 | Man Eater | D4 N1 B3 | assignment only; timing unresolved |
+| 1795 | Partholonian Sorceress | W2 D4 G3 | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Sauromatia army identities
+
+- Sacred roster: Androphag, Oiorpata.
+- Flying roster: no flying troop identified in the reconciled recruit rows.
+- Aquatic or amphibious roster: no aquatic or amphibious troop identified in the reconciled recruit rows.
+- Core identity: mobile tribal armies, Amazon commanders, serpent and lizard riders, hydras, and Death–Nature–Blood magic.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Sauromatia opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Sauromatia fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Sauromatia, the most likely planning failure is light protection, poison exposure, blood-hunting costs, and coordinating several distinct troop families. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Sauromatia research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Sauromatia magic-access ladder
+
+The fixed-path ceiling is Astral 1, Death 3, Nature 1, Blood 1, Holy 1. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Sauromatia battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Sauromatia Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Sauromatia matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Sauromatia monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Sauromatia unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Sauromatia source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LVII: Early Age Fomoria, The Cursed Ones
+
+## Early Age Fomoria one-page command brief
+
+Early Age Fomoria converts Fomorian giants, Fir Bolg infantry, Nemedian specialists, sailing, and strong Air–Death magic into expansion, research, and strategic pressure. The pinned roster resolves 10 commander identities and 11 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 6 active nation-restricted spell records. Its chief planning risks are expensive giant replacement, afflictions, storm planning, and maintaining enough ordinary bodies.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Fomoria evidence and ruleset
+
+This dossier covers unmodded Early Age Fomoria on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 10, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Fomoria object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Fomoria conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Fomoria recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 7 | 8 | Direct pinned membership rows |
+| Regional or coastal | 0 | 0 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 3 | 3 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Fomoria commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 1811 | Fir Bolg Scout | none | 0 |
+| 1815 | Fir Bolg Champion | none | 75 |
+| 2469 | Fir Bolg Druid | A1; random: 100% ×1 mask 26112 link 1 | 10 |
+| 1816 | Fomorian Scout | none | 0 |
+| 1800 | Fomorian Champion | none | 75 |
+| 1818 | Unmarked Champion | H1 | 100 |
+| 1819 | Fomorian Druid | A2 H1; random: 100% ×1 mask 29184 link 1 | 10 |
+| 1802 | Fomorian King | A3 D2 H2; random: 100% ×1 mask 21248 link 1; 10% ×1 mask 21248 link 1 | 150 |
+| 1791 | Nemedian Champion | D1 G1 H1 | 100 |
+| 1792 | Nemedian Sorceress | A1 D2 G2; random: 100% ×1 mask 29440 link 1; 10% ×1 mask 29440 link 1 | 10 |
+
+
+## Early Age Fomoria troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 1820 | Fir Bolg Militia | 13 | 0 | 9 | ordinary body |
+| 1814 | Fir Bolg Slinger | 13 | 0 | 10 | ordinary body |
+| 1812 | Fir Bolg Warrior | 13 | 0 | 11 | ordinary body |
+| 1813 | Fir Bolg Warrior | 13 | 0 | 11 | ordinary body |
+| 1796 | Fomorian Militia | 30 | 5 | 10 | ordinary body |
+| 1797 | Fomorian Javelinist | 30 | 5 | 12 | ordinary body |
+| 1798 | Fomorian Spearman | 30 | 5 | 12 | ordinary body |
+| 1799 | Fomorian Warrior | 33 | 5 | 13 | ordinary body |
+| 1817 | Unmarked | 35 | 5 | 14 | sacred |
+| 1801 | Fomorian Giant | 64 | 6 | 14 | sacred, amphibious |
+| 1790 | Nemedian Warrior | 14 | 0 | 14 | stealthy |
+
+
+## Early Age Fomoria mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 2469 | Fir Bolg Druid | A1; random: 100% ×1 mask 26112 link 1 | 10 |
+| 1818 | Unmarked Champion | H1 | 100 |
+| 1819 | Fomorian Druid | A2 H1; random: 100% ×1 mask 29184 link 1 | 10 |
+| 1802 | Fomorian King | A3 D2 H2; random: 100% ×1 mask 21248 link 1; 10% ×1 mask 21248 link 1 | 150 |
+| 1791 | Nemedian Champion | D1 G1 H1 | 100 |
+| 1792 | Nemedian Sorceress | A1 D2 G2; random: 100% ×1 mask 29440 link 1; 10% ×1 mask 29440 link 1 | 10 |
+
+
+The highest fixed recruitable paths resolved in these rows are Air 3, Death 2, Glamour 2, Holy 2. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Fomoria capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 136 | Isle of Balor | A2, W1 | Fomorian King, Unmarked, Fomorian Giant |
+| 137 | Rath Chimbaith | D2, G1 | Nemedian Champion, Nemedian Sorceress, Nemedian Warrior |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Fomoria national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 438 | Summon Black Dogs | Conjuration 2 | D2 | 5 |
+| 440 | Summon Barghests | Conjuration 4 | D2 | 7 |
+| 442 | Summon Morrigan | Conjuration 6 | D2 A1 | 5 |
+| 443 | Dance of the Morrigans | Conjuration 8 | D5 A2 | 4 |
+| 444 | Curse of Balor | Enchantment 7 | G3 D1 | 1 |
+| 1294 | Geas | Thaumaturgy 3 | G2 | 0 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Fomoria national item boundary
+
+| ID | Item | Construction | Paths | Link |
+| ---: | --- | ---: | --- | --- |
+| 139 | Spear of the Morrigan | 3 | D1 A1 | restricted |
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Fomoria hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 1793 | Nemedian Queen | A2 W2 D3 N2 G3 H2 | assignment only; timing unresolved |
+| 1794 | Last Partholonian | A2 W1 D4 G2 | assignment only; timing unresolved |
+| 1803 | Uncursed | A3 D1 N2 H2 | assignment only; timing unresolved |
+| 1804 | High King | A3 D4 H3 | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Fomoria army identities
+
+- Sacred roster: Unmarked, Fomorian Giant.
+- Flying roster: no flying troop identified in the reconciled recruit rows.
+- Aquatic or amphibious roster: Fomorian Giant.
+- Core identity: Fomorian giants, Fir Bolg infantry, Nemedian specialists, sailing, and strong Air–Death magic.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Fomoria opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Fomoria fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Fomoria, the most likely planning failure is expensive giant replacement, afflictions, storm planning, and maintaining enough ordinary bodies. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Fomoria research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Fomoria magic-access ladder
+
+The fixed-path ceiling is Air 3, Death 2, Glamour 2, Holy 2. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Fomoria battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Fomoria Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Fomoria matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Fomoria monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Fomoria unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Fomoria source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LVIII: Early Age Tir na n'Og, Land of the Ever Young
+
+## Early Age Tir na n'Og one-page command brief
+
+Early Age Tir na n'Og converts Fir Bolg ranks supporting glamour-shrouded Tuatha and Sidhe sacreds with Water–Nature–Glamour magic into expansion, research, and strategic pressure. The pinned roster resolves 9 commander identities and 6 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 2 active nation-restricted spell records. Its chief planning risks are elite scarcity, glamour counters, gold concentration, and preserving stealthy mage turns.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Tir na n'Og evidence and ruleset
+
+This dossier covers unmodded Early Age Tir na n'Og on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 11, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Tir na n'Og object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Tir na n'Og conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Tir na n'Og recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 7 | 5 | Direct pinned membership rows |
+| Regional or coastal | 0 | 0 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 2 | 1 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Tir na n'Og commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 1755 | Fir Bolg Scout | none | 0 |
+| 1750 | Fir Bolg Champion | none | 75 |
+| 2469 | Fir Bolg Druid | A1; random: 100% ×1 mask 26112 link 1 | 10 |
+| 1752 | Sidhe Champion | N1 G1 H1 | 100 |
+| 1759 | Sidhe Lord | N1 G2 H2 | 100 |
+| 1774 | Bean Sidhe | W1 N1 G1; random: 100% ×1 mask 26368 link 1 | 10 |
+| 1775 | Baobhan Sidhe | G2 | 0 |
+| 1754 | Ri | N2 G2 H2; random: 100% ×1 mask 26368 link 1; 10% ×1 mask 26368 link 1 | 150 |
+| 1773 | Tuatha Sorceress | N2 G4 H2; random: 100% ×1 mask 9984 link 1; 10% ×1 mask 26368 link 1 | 50 |
+
+
+## Early Age Tir na n'Og troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 1749 | Fir Bolg Militia | 13 | 0 | 9 | ordinary body |
+| 1758 | Fir Bolg Slinger | 13 | 0 | 10 | ordinary body |
+| 1757 | Fir Bolg Warrior | 13 | 0 | 11 | ordinary body |
+| 1756 | Fir Bolg Warrior | 13 | 0 | 11 | ordinary body |
+| 1751 | Sidhe Warrior | 13 | 0 | 12 | stealthy |
+| 1753 | Tuatha Warrior | 14 | 0 | 14 | sacred, stealthy |
+
+
+## Early Age Tir na n'Og mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 2469 | Fir Bolg Druid | A1; random: 100% ×1 mask 26112 link 1 | 10 |
+| 1752 | Sidhe Champion | N1 G1 H1 | 100 |
+| 1759 | Sidhe Lord | N1 G2 H2 | 100 |
+| 1774 | Bean Sidhe | W1 N1 G1; random: 100% ×1 mask 26368 link 1 | 10 |
+| 1775 | Baobhan Sidhe | G2 | 0 |
+| 1754 | Ri | N2 G2 H2; random: 100% ×1 mask 26368 link 1; 10% ×1 mask 26368 link 1 | 150 |
+| 1773 | Tuatha Sorceress | N2 G4 H2; random: 100% ×1 mask 9984 link 1; 10% ×1 mask 26368 link 1 | 50 |
+
+
+The highest fixed recruitable paths resolved in these rows are Air 1, Water 1, Nature 2, Glamour 4, Holy 2. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Tir na n'Og capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 133 | Tir na n'Og | G3 | Ri, Tuatha Sorceress, Tuatha Warrior |
+| 134 | Mag Mor | E1, N2 | none in explicit recruit fields |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Tir na n'Og national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 439 | Summon Cu Sidhe | Conjuration 3 | G2 | 5 |
+| 1294 | Geas | Thaumaturgy 3 | G2 | 0 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Tir na n'Og national item boundary
+
+| ID | Item | Construction | Paths | Link |
+| ---: | --- | ---: | --- | --- |
+| 46 | Shillelagh | 3 | G1 N1 | restricted |
+| 93 | Singing Sword | 7 | G2 | rebate |
+| 345 | Gossamer Cloth | 3 | G2 N1 | rebate |
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Tir na n'Og hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 1805 | Long Handed | F2 A1 N1 G2 H2 | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Tir na n'Og army identities
+
+- Sacred roster: Tuatha Warrior.
+- Flying roster: no flying troop identified in the reconciled recruit rows.
+- Aquatic or amphibious roster: no aquatic or amphibious troop identified in the reconciled recruit rows.
+- Core identity: Fir Bolg ranks supporting glamour-shrouded Tuatha and Sidhe sacreds with Water–Nature–Glamour magic.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Tir na n'Og opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Tir na n'Og fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Tir na n'Og, the most likely planning failure is elite scarcity, glamour counters, gold concentration, and preserving stealthy mage turns. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Tir na n'Og research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Tir na n'Og magic-access ladder
+
+The fixed-path ceiling is Air 1, Water 1, Nature 2, Glamour 4, Holy 2. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Tir na n'Og battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Tir na n'Og Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Tir na n'Og matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Tir na n'Og monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Tir na n'Og unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Tir na n'Og source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LIX: Early Age Marverni, Time of Druids
+
+## Early Age Marverni one-page command brief
+
+Early Age Marverni converts tribal infantry, sacred boars, noble cavalry, and Druids spanning Earth, Astral, Nature, and Water into expansion, research, and strategic pressure. The pinned roster resolves 11 commander identities and 11 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 5 active nation-restricted spell records. Its chief planning risks are light armour, morale, communion safety, random access, and turning broad magic into timely research.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Marverni evidence and ruleset
+
+This dossier covers unmodded Early Age Marverni on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 12, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Marverni object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Marverni conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Marverni recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 9 | 10 | Direct pinned membership rows |
+| Regional or coastal | 0 | 0 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 2 | 1 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Marverni commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 1209 | Marverni Scout | none | 0 |
+| 1215 | Marverni Chieftain | none | 75 |
+| 1218 | Ambibate Chieftain | none | 75 |
+| 1221 | Carnute Chieftain | none | 75 |
+| 1207 | Eponi Chieftain | none | 100 |
+| 1206 | Vergobret | H1 | 90 |
+| 1225 | Sequani Stargazer | S1 | 10 |
+| 1205 | Gutuater | N1 H1; random: 100% ×1 mask 11776 link 1 | 10 |
+| 2468 | Druid | E1 S1 H1; random: 100% ×1 mask 11776 link 1 | 50 |
+| 1223 | Boar Lord | none | 75 |
+| 1204 | Elder Druid | E2 S2 H2; random: 100% ×2 mask 11776 link 1; 10% ×1 mask 11776 link 1 | 50 |
+
+
+## Early Age Marverni troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 1210 | Marverni Horn Blower | 10 | 0 | 9 | ordinary body |
+| 1211 | Marverni Slinger | 10 | 0 | 8 | ordinary body |
+| 1212 | Marverni Javelineer | 10 | 0 | 9 | ordinary body |
+| 1213 | Marverni Bare Chested Warrior | 10 | 0 | 9 | ordinary body |
+| 1214 | Marverni Noble Warrior | 12 | 0 | 10 | ordinary body |
+| 1216 | Ambibate Bare Chested Warrior | 10 | 0 | 10 | ordinary body |
+| 1217 | Ambibate Noble Warrior | 12 | 0 | 11 | ordinary body |
+| 1219 | Carnute Bare Chested Warrior | 12 | 0 | 11 | ordinary body |
+| 1220 | Carnute Noble Warrior | 13 | 0 | 12 | ordinary body |
+| 1208 | Eponi Knight | 12 | 0 | 11 | ordinary body |
+| 1222 | Boar Warrior | 14 | 0 | 13 | sacred |
+
+
+## Early Age Marverni mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 1206 | Vergobret | H1 | 90 |
+| 1225 | Sequani Stargazer | S1 | 10 |
+| 1205 | Gutuater | N1 H1; random: 100% ×1 mask 11776 link 1 | 10 |
+| 2468 | Druid | E1 S1 H1; random: 100% ×1 mask 11776 link 1 | 50 |
+| 1204 | Elder Druid | E2 S2 H2; random: 100% ×2 mask 11776 link 1; 10% ×1 mask 11776 link 1 | 50 |
+
+
+The highest fixed recruitable paths resolved in these rows are Earth 2, Astral 2, Nature 1, Holy 2. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Marverni capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 91 | Carnutes | E2, S3, N1 | Boar Lord, Elder Druid, Boar Warrior |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Marverni national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 253 | Monster Boar | Conjuration 5 | N3 | 10 |
+| 280 | Awaken Tattoos | Enchantment 3 | N1 H1 | 0 |
+| 281 | Sounder of Boars | Conjuration 3 | N1 H1 | 15 |
+| 282 | Contact Boar of Carnutes | Conjuration 5 | N1 E1 | 7 |
+| 955 | Sloth of Bears | Conjuration 3 | N2 | 6 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Marverni national item boundary
+
+No nation restriction or rebate link appears in the pinned item rows. This does not establish live forge pricing or exclude undocumented behaviour.
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Marverni hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 1588 | Wanderer | E2 S3 N4 H2 | assignment only; timing unresolved |
+| 1843 | Antlered One | none | assignment only; timing unresolved |
+| 1849 | Blinded | E2 S4 N2 H2 | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Marverni army identities
+
+- Sacred roster: Boar Warrior.
+- Flying roster: no flying troop identified in the reconciled recruit rows.
+- Aquatic or amphibious roster: no aquatic or amphibious troop identified in the reconciled recruit rows.
+- Core identity: tribal infantry, sacred boars, noble cavalry, and Druids spanning Earth, Astral, Nature, and Water.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Marverni opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Marverni fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Marverni, the most likely planning failure is light armour, morale, communion safety, random access, and turning broad magic into timely research. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Marverni research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Marverni magic-access ladder
+
+The fixed-path ceiling is Earth 2, Astral 2, Nature 1, Holy 2. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Marverni battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Marverni Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Marverni matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Marverni monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Marverni unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Marverni source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LX: Early Age Ulm, Enigma of Steel
+
+## Early Age Ulm one-page command brief
+
+Early Age Ulm converts stealthy forest warriors, warrior-smiths, resource-efficient equipment, and unusually strong forging into expansion, research, and strategic pressure. The pinned roster resolves 5 commander identities and 10 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 0 active nation-restricted spell records. Its chief planning risks are limited magical breadth, old-age attrition, forest recruitment, and translating forged equipment into field value.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Ulm evidence and ruleset
+
+This dossier covers unmodded Early Age Ulm on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 13, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Ulm object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Ulm conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Ulm recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 4 | 9 | Direct pinned membership rows |
+| Regional or coastal | 0 | 0 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 1 | 1 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Ulm commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 2279 | Warrior Scout | none | 0 |
+| 1158 | Warrior Chief | none | 100 |
+| 1159 | Warrior Smith | E1; random: 100% ×1 mask 1920 link 1; 50% ×1 mask 1920 link 1 | 50 |
+| 1160 | Shaman | E1 H1; random: 100% ×1 mask 13440 link 1; 50% ×1 mask 13440 link 1 | 10 |
+| 1161 | Antlered Shaman | E2 N2 H1; random: 100% ×1 mask 13440 link 1; 10% ×1 mask 13440 link 1 | 50 |
+
+
+## Early Age Ulm troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 1162 | Archer | 12 | 0 | 11 | ordinary body |
+| 1163 | Warrior Maiden | 12 | 0 | 12 | stealthy |
+| 1152 | Axe Warrior | 13 | 0 | 11 | stealthy |
+| 1153 | Warrior | 13 | 0 | 11 | stealthy |
+| 1154 | Forest Warrior | 13 | 0 | 12 | ordinary body |
+| 1155 | Mountain Warrior | 13 | 0 | 12 | ordinary body |
+| 1165 | Shield Maiden | 12 | 0 | 13 | stealthy |
+| 1164 | Steel Maiden | 12 | 0 | 13 | stealthy |
+| 1156 | Iron Warrior | 14 | 0 | 13 | ordinary body |
+| 1157 | Steel Warrior | 15 | 0 | 14 | sacred |
+
+
+## Early Age Ulm mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 1159 | Warrior Smith | E1; random: 100% ×1 mask 1920 link 1; 50% ×1 mask 1920 link 1 | 50 |
+| 1160 | Shaman | E1 H1; random: 100% ×1 mask 13440 link 1; 50% ×1 mask 13440 link 1 | 10 |
+| 1161 | Antlered Shaman | E2 N2 H1; random: 100% ×1 mask 13440 link 1; 10% ×1 mask 13440 link 1 | 50 |
+
+
+The highest fixed recruitable paths resolved in these rows are Earth 2, Nature 2, Holy 1. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Ulm capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 82 | The Wheel of Pain | no gem field | Steel Warrior |
+| 83 | Irminsul | E3, D1, N2 | Antlered Shaman |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Ulm national spell map
+
+No active nation-restricted spell row was found for this nation in the pinned snapshot. Absence here is a metadata boundary, not proof that no shared or special spell exists.
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Ulm national item boundary
+
+No nation restriction or rebate link appears in the pinned item rows. This does not establish live forge pricing or exclude undocumented behaviour.
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Ulm hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 1582 | Guardian of the Tree | E2 N4 H3 | assignment only; timing unresolved |
+| 1583 | Maker of Heroes | E1 S2 D2 N1 H2 | assignment only; timing unresolved |
+| 1584 | Son of Steel | none | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Ulm army identities
+
+- Sacred roster: Steel Warrior.
+- Flying roster: no flying troop identified in the reconciled recruit rows.
+- Aquatic or amphibious roster: no aquatic or amphibious troop identified in the reconciled recruit rows.
+- Core identity: stealthy forest warriors, warrior-smiths, resource-efficient equipment, and unusually strong forging.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Ulm opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Ulm fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Ulm, the most likely planning failure is limited magical breadth, old-age attrition, forest recruitment, and translating forged equipment into field value. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Ulm research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Ulm magic-access ladder
+
+The fixed-path ceiling is Earth 2, Nature 2, Holy 1. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Ulm battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Ulm Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Ulm matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Ulm monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Ulm unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Ulm source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LXI: Early Age Pyrène, Kingdom of the Bekrydes
+
+## Early Age Pyrène one-page command brief
+
+Early Age Pyrène converts cave-linked Bekrydes, ancient giants, Cyclopes, storm-witches, and Earth–Air magic into expansion, research, and strategic pressure. The pinned roster resolves 10 commander identities and 9 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 1 active nation-restricted spell records. Its chief planning risks are regional recruitment, giant replacement, mixed body sizes, and rare-path dependence.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Pyrène evidence and ruleset
+
+This dossier covers unmodded Early Age Pyrène on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 14, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Pyrène object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Pyrène conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Pyrène recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 4 | 6 | Direct pinned membership rows |
+| Regional or coastal | 0 | 0 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 6 | 3 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Pyrène commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 3589 | Bekryde Scout | none | 0 |
+| 3590 | Bekryde Champion | none | 50 |
+| 3594 | Bekryde Commander | none | 50 |
+| 3596 | Bekryde Shaman | E1 H1; random: 100% ×1 mask 9728 link 1 | 10 |
+| 3606 | Bekryde Shepherd | none | 20 |
+| 3595 | Bebryx | H1 | 75 |
+| 3602 | Jentil | W1 E3 N1; random: 10% ×1 mask 9728 link 1 | 50 |
+| 3599 | Mairu Champion | E1 | 50 |
+| 3605 | Tartalo | none | 35 |
+| 3603 | Sorgina | A3 W1 E1 N1 H1; random: 10% ×1 mask 9984 link 1 | 10 |
+
+
+## Early Age Pyrène troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 3633 | Bekryde | 13 | 1 | 11 | ordinary body |
+| 3587 | Bekryde | 13 | 1 | 11 | ordinary body |
+| 3689 | Bekryde Hunter | 13 | 1 | 9 | ordinary body |
+| 3588 | Bekryde Warrior | 13 | 1 | 11 | ordinary body |
+| 3591 | Bekryde Infantry | 13 | 1 | 11 | ordinary body |
+| 3592 | Bekryde Heavy Infantry | 13 | 1 | 11 | ordinary body |
+| 3593 | Bebryx Guard | 15 | 1 | 12 | sacred |
+| 3597 | Mairu Warrior | 42 | 5 | 13 | ordinary body |
+| 3598 | Mairu Hurler | 40 | 5 | 13 | ordinary body |
+
+
+## Early Age Pyrène mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 3596 | Bekryde Shaman | E1 H1; random: 100% ×1 mask 9728 link 1 | 10 |
+| 3595 | Bebryx | H1 | 75 |
+| 3602 | Jentil | W1 E3 N1; random: 10% ×1 mask 9728 link 1 | 50 |
+| 3599 | Mairu Champion | E1 | 50 |
+| 3603 | Sorgina | A3 W1 E1 N1 H1; random: 10% ×1 mask 9984 link 1 | 10 |
+
+
+The highest fixed recruitable paths resolved in these rows are Air 3, Water 1, Earth 3, Nature 1, Holy 1. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Pyrène capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 219 | The Cathedral Cavern | E1 | Bekryde Shepherd, Bebryx, Bebryx Guard |
+| 220 | Grand Dolmen | E2 | Jentil, Mairu Champion, Tartalo, Mairu Warrior, Mairu Hurler |
+| 221 | Mount Anboto | A2, N1 | Sorgina |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Pyrène national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 449 | Send Aatxe | Conjuration 6 | A3 | 6 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Pyrène national item boundary
+
+| ID | Item | Construction | Paths | Link |
+| ---: | --- | ---: | --- | --- |
+| 326 | Flying Ointment | 3 | A2 N1 | restricted |
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Pyrène hero boundary
+
+No fixed hero-slot identity was resolved from attributes 139–149. Hero arrival and timing remain unscheduled.
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Pyrène army identities
+
+- Sacred roster: Bebryx Guard.
+- Flying roster: no flying troop identified in the reconciled recruit rows.
+- Aquatic or amphibious roster: no aquatic or amphibious troop identified in the reconciled recruit rows.
+- Core identity: cave-linked Bekrydes, ancient giants, Cyclopes, storm-witches, and Earth–Air magic.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Pyrène opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Pyrène fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Pyrène, the most likely planning failure is regional recruitment, giant replacement, mixed body sizes, and rare-path dependence. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Pyrène research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Pyrène magic-access ladder
+
+The fixed-path ceiling is Air 3, Water 1, Earth 3, Nature 1, Holy 1. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Pyrène battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Pyrène Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Pyrène matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Pyrène monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Pyrène unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Pyrène source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LXII: Early Age Agartha, Pale Ones
+
+## Early Age Agartha one-page command brief
+
+Early Age Agartha converts amphibious Pale Ones, sacred Ancient Ones, deep recruitment, and Earth–Fire–Death magic into expansion, research, and strategic pressure. The pinned roster resolves 10 commander identities and 12 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 9 active nation-restricted spell records. Its chief planning risks are low attack and defence, expensive sacred replacement, cave logistics, and moving effectively between land and sea.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Agartha evidence and ruleset
+
+This dossier covers unmodded Early Age Agartha on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 15, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Agartha object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Agartha conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Agartha recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 6 | 10 | Direct pinned membership rows |
+| Regional or coastal | 0 | 0 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 4 | 2 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Agartha commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 1466 | Pale One Scout | none | 0 |
+| 1463 | Pale One Commander | none | 75 |
+| 1461 | Troglodyte Lord | none | 10 |
+| 1470 | Ancient Lord | none | 100 |
+| 2491 | Engraver | E1 | 0 |
+| 1460 | Earth Reader | E2 H1; random: 100% ×1 mask 4736 link 1 | 50 |
+| 1457 | Oracle of Subterranean Waters | W1 E3 H3; random: 100% ×1 mask 1536 link 1; 10% ×1 mask 1536 link 1 | 50 |
+| 1467 | Oracle of Subterranean Fires | F1 E3 H3; random: 100% ×1 mask 1152 link 1; 10% ×1 mask 1152 link 1 | 50 |
+| 1468 | Oracle of the Dead | E3 D1 H3; random: 100% ×1 mask 5120 link 1; 10% ×1 mask 5120 link 1 | 50 |
+| 2493 | Olm Sage | W2 E1 | 50 |
+
+
+## Early Age Agartha troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 1452 | Pale One Militia | 18 | 2 | 8 | amphibious |
+| 1489 | Wet One | 18 | 2 | 10 | amphibious |
+| 1465 | Pale One | 18 | 2 | 10 | amphibious |
+| 1464 | Pale One Warrior | 18 | 2 | 10 | amphibious |
+| 1453 | Pale One Warrior | 18 | 2 | 10 | amphibious |
+| 1462 | Cavern Guard | 21 | 2 | 12 | amphibious |
+| 447 | Troglodyte | 37 | 7 | 14 | ordinary body |
+| 1488 | Ancient Stone Hurler | 42 | 3 | 11 | sacred, amphibious |
+| 1495 | Ancient Stone Hurler | 42 | 3 | 11 | sacred, amphibious |
+| 1469 | Ancient One | 40 | 3 | 12 | sacred, amphibious |
+| 1456 | Seal Guard | 44 | 3 | 13 | sacred, amphibious |
+| 2492 | Great Olm | 28 | 5 | 12 | sacred, amphibious |
+
+
+## Early Age Agartha mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 2491 | Engraver | E1 | 0 |
+| 1460 | Earth Reader | E2 H1; random: 100% ×1 mask 4736 link 1 | 50 |
+| 1457 | Oracle of Subterranean Waters | W1 E3 H3; random: 100% ×1 mask 1536 link 1; 10% ×1 mask 1536 link 1 | 50 |
+| 1467 | Oracle of Subterranean Fires | F1 E3 H3; random: 100% ×1 mask 1152 link 1; 10% ×1 mask 1152 link 1 | 50 |
+| 1468 | Oracle of the Dead | E3 D1 H3; random: 100% ×1 mask 5120 link 1; 10% ×1 mask 5120 link 1 | 50 |
+| 2493 | Olm Sage | W2 E1 | 50 |
+
+
+The highest fixed recruitable paths resolved in these rows are Fire 1, Water 2, Earth 3, Death 1, Holy 3. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Agartha capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 109 | Halls of the Oracles | no gem field | Oracle of Subterranean Waters, Oracle of Subterranean Fires, Oracle of the Dead |
+| 110 | Roots of the Earth | F1, E3 | none in explicit recruit fields |
+| 112 | The Chamber of the Seal | D1 | Seal Guard |
+| 167 | The Womb of the Earth | W1 | Olm Sage, Great Olm |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Agartha national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 600 | Bind Penumbral | Conjuration 3 | D1 E1 | 1 |
+| 605 | Revive Cavern Wights | Conjuration 3 | D1 E1 | 8 |
+| 606 | Bind Umbral | Conjuration 5 | D2 E1 | 2 |
+| 607 | Unleash Imprisoned Ones | Alteration 8 | E6 D4 | 100 |
+| 608 | Rhuax Pact | Conjuration 3 | F1 E1 | 2 |
+| 609 | Barathrus Pact | Conjuration 3 | E2 | 3 |
+| 610 | Mirror of Earth's Memories | Thaumaturgy 4 | W2 E2 | 5 |
+| 616 | Living Mercury | Enchantment 5 | W1 E1 | 6 |
+| 690 | Liquid Flames of Rhuax | Evocation 5 | F3 E1 | 0 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Agartha national item boundary
+
+No nation restriction or rebate link appears in the pinned item rows. This does not establish live forge pricing or exclude undocumented behaviour.
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Agartha hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 1458 | Earth-Blooded | F2 E5 H3 | assignment only; timing unresolved |
+| 2494 | Member of the Closed Council | W1 E4 N2 H3 | assignment only; timing unresolved |
+| 2495 | Member of the Closed Council | W2 E4 D2 H3 | assignment only; timing unresolved |
+| 2496 | Member of the Closed Council | E4 D3 H3 | assignment only; timing unresolved |
+| 1678 | Ancient Olm | W3 E3 | assignment only; timing unresolved |
+| 1772 | Olm Spawn | W1 E1 H2; random: 100% ×1 mask 5760 link 1 | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Agartha army identities
+
+- Sacred roster: Ancient Stone Hurler, Ancient Stone Hurler, Ancient One, Seal Guard, Great Olm.
+- Flying roster: no flying troop identified in the reconciled recruit rows.
+- Aquatic or amphibious roster: Pale One Militia, Wet One, Pale One, Pale One Warrior, Pale One Warrior, Cavern Guard, Ancient Stone Hurler, Ancient Stone Hurler, Ancient One, Seal Guard, Great Olm.
+- Core identity: amphibious Pale Ones, sacred Ancient Ones, deep recruitment, and Earth–Fire–Death magic.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Agartha opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Agartha fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Agartha, the most likely planning failure is low attack and defence, expensive sacred replacement, cave logistics, and moving effectively between land and sea. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Agartha research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Agartha magic-access ladder
+
+The fixed-path ceiling is Fire 1, Water 2, Earth 3, Death 1, Holy 3. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Agartha battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Agartha Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Agartha matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Agartha monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Agartha unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Agartha source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LXIII: Early Age Abysia, Children of Flame
+
+## Early Age Abysia one-page command brief
+
+Early Age Abysia converts heavily armoured heat-radiating infantry, salamanders, Anathemants, and powerful Fire–Blood magic into expansion, research, and strategic pressure. The pinned roster resolves 9 commander identities and 7 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 6 active nation-restricted spell records. Its chief planning risks are old age, heat management, limited mobility, blood-hunting costs, and answering fire resistance.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Abysia evidence and ruleset
+
+This dossier covers unmodded Early Age Abysia on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 16, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Abysia object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Abysia conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Abysia recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 5 | 5 | Direct pinned membership rows |
+| Regional or coastal | 0 | 0 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 4 | 2 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Abysia commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 429 | Slayer | none | 0 |
+| 119 | Warlord | none | 100 |
+| 214 | Beast Trainer | none | 50 |
+| 1698 | Anathemant Salamander | F2 H1 | 50 |
+| 1699 | Anathemant Dragon | F3 E1 H2 | 50 |
+| 1542 | Warlock Apprentice | B1 | 10 |
+| 1538 | Warlock | S1 B2; random: 10% ×1 mask 35968 link 1 | 10 |
+| 1537 | Demonbred | none | 0 |
+| 1536 | Anointed of Rhuax | F4 E1 H3; random: 10% ×1 mask 35968 link 1 | 150 |
+
+
+## Early Age Abysia troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 81 | Abysian Infantry | 15 | 0 | 11 | ordinary body |
+| 82 | Abysian Infantry | 15 | 0 | 11 | ordinary body |
+| 83 | Abysian Infantry | 15 | 0 | 11 | ordinary body |
+| 84 | Abysian Infantry | 15 | 0 | 11 | ordinary body |
+| 213 | Salamander | 20 | 10 | 9 | ordinary body |
+| 1661 | Misbred | 17 | 6 | 14 | flying, stealthy |
+| 1543 | Burning One | 23 | 0 | 15 | sacred |
+
+
+## Early Age Abysia mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 1698 | Anathemant Salamander | F2 H1 | 50 |
+| 1699 | Anathemant Dragon | F3 E1 H2 | 50 |
+| 1542 | Warlock Apprentice | B1 | 10 |
+| 1538 | Warlock | S1 B2; random: 10% ×1 mask 35968 link 1 | 10 |
+| 1536 | Anointed of Rhuax | F4 E1 H3; random: 10% ×1 mask 35968 link 1 | 150 |
+
+
+The highest fixed recruitable paths resolved in these rows are Fire 4, Earth 1, Astral 1, Blood 2, Holy 3. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Abysia capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 119 | The Smouldercone | F5 | Warlock Apprentice, Warlock, Demonbred, Misbred |
+| 120 | Temple of the All-Consuming Flame | F1 | Anointed of Rhuax, Burning One |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Abysia national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 317 | Summon Spectral Infantry | Conjuration 2 | D1 F1 | 5 |
+| 318 | Contact Scorpion Man | Conjuration 8 | E1 F1 | 12 |
+| 319 | Inner Furnace | Enchantment 5 | F3 | 1 |
+| 320 | Infernal Breeding | Blood 3 | B2 | 25 |
+| 690 | Liquid Flames of Rhuax | Evocation 5 | F3 E1 | 0 |
+| 850 | Hellscape | Alteration 6 | F4 | 10 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Abysia national item boundary
+
+| ID | Item | Construction | Paths | Link |
+| ---: | --- | ---: | --- | --- |
+| 97 | O'al Kan's Sceptre | 9 | F3 | rebate |
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Abysia hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 1667 | Warlock | F3 S2 B4 | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Abysia army identities
+
+- Sacred roster: Burning One.
+- Flying roster: Misbred.
+- Aquatic or amphibious roster: no aquatic or amphibious troop identified in the reconciled recruit rows.
+- Core identity: heavily armoured heat-radiating infantry, salamanders, Anathemants, and powerful Fire–Blood magic.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Abysia opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Abysia fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Abysia, the most likely planning failure is old age, heat management, limited mobility, blood-hunting costs, and answering fire resistance. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Abysia research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Abysia magic-access ladder
+
+The fixed-path ceiling is Fire 4, Earth 1, Astral 1, Blood 2, Holy 3. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Abysia battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Abysia Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Abysia matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Abysia monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Abysia unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Abysia source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LXIV: Early Age Hinnom, Sons of the Fallen
+
+## Early Age Hinnom one-page command brief
+
+Early Age Hinnom converts Rephaite and Avvite giants, human and Enkidu support, chariots, and exceptionally broad giant mage-priests into expansion, research, and strategic pressure. The pinned roster resolves 10 commander identities and 12 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 5 active nation-restricted spell records. Its chief planning risks are population and unrest damage, immense gold costs, giant upkeep, and controlling dangerous sacred elites.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Hinnom evidence and ruleset
+
+This dossier covers unmodded Early Age Hinnom on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 17, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Hinnom object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Hinnom conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Hinnom recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 8 | 11 | Direct pinned membership rows |
+| Regional or coastal | 0 | 0 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 2 | 1 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Hinnom commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 2020 | Horite Shaman | E1 D1 N1 | 10 |
+| 2024 | Avvite Scout | none | 0 |
+| 2023 | Avvite Commander | none | 100 |
+| 2016 | Qedesim | H1 | 0 |
+| 2017 | Qedesot | H1 | 10 |
+| 2013 | Acha | N2 | 10 |
+| 2014 | Ammi | none; random: 100% ×1 mask 3456 link 2 | 10 |
+| 2033 | Kohen | B1 H1; random: 100% ×1 mask 3200 link 1 | 100 |
+| 2031 | Melqart | B3 H1; random: 100% ×1 mask 3200 link 2 | 200 |
+| 2032 | Ba'al | B2 H1; random: 100% ×1 mask 3200 link 3; 10% ×1 mask 35968 link 1 | 150 |
+
+
+## Early Age Hinnom troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 2184 | Enkidu Slave | 22 | 2 | 6 | ordinary body |
+| 2018 | Horite | 25 | 2 | 13 | ordinary body |
+| 2034 | Horite Hunter | 26 | 2 | 13 | ordinary body |
+| 2019 | Horite Champion | 27 | 2 | 14 | ordinary body |
+| 2021 | Avvite Light Infantry | 24 | 1 | 12 | ordinary body |
+| 2015 | Avvite Spearman | 24 | 1 | 12 | ordinary body |
+| 2022 | Avvite Swordsman | 24 | 1 | 12 | ordinary body |
+| 2059 | Avvite Heavy Archer | 24 | 1 | 10 | ordinary body |
+| 2036 | Avvite Horn Blower | 24 | 1 | 12 | ordinary body |
+| 2035 | Avvite Charioteer | 24 | 1 | 12 | ordinary body |
+| 2037 | Dawn Guard | 25 | 1 | 13 | ordinary body |
+| 2030 | Rephaite Warrior | 55 | 3 | 14 | sacred |
+
+
+## Early Age Hinnom mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 2020 | Horite Shaman | E1 D1 N1 | 10 |
+| 2016 | Qedesim | H1 | 0 |
+| 2017 | Qedesot | H1 | 10 |
+| 2013 | Acha | N2 | 10 |
+| 2014 | Ammi | none; random: 100% ×1 mask 3456 link 2 | 10 |
+| 2033 | Kohen | B1 H1; random: 100% ×1 mask 3200 link 1 | 100 |
+| 2031 | Melqart | B3 H1; random: 100% ×1 mask 3200 link 2 | 200 |
+| 2032 | Ba'al | B2 H1; random: 100% ×1 mask 3200 link 3; 10% ×1 mask 35968 link 1 | 150 |
+
+
+The highest fixed recruitable paths resolved in these rows are Earth 1, Death 1, Nature 2, Blood 3, Holy 1. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Hinnom capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 147 | Mount Hermon | F2, E2, S1 | none in explicit recruit fields |
+| 146 | Gomorrah | B2 | Melqart, Ba'al, Rephaite Warrior |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Hinnom national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 350 | Summon Se'irim | Blood 3 | B2 | 23 |
+| 351 | Summon Shedim | Blood 4 | B3 A1 | 28 |
+| 357 | Release Lord of Civilization | Blood 9 | B8 | 177 |
+| 358 | Summon Mazzikim | Conjuration 3 | N1 | 3 |
+| 359 | Summon Lilot | Conjuration 5 | N4 | 15 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Hinnom national item boundary
+
+| ID | Item | Construction | Paths | Link |
+| ---: | --- | ---: | --- | --- |
+| 355 | Wall Shaker | 5 | A3 | rebate |
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Hinnom hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 2076 | Son of Azazel | F2 S2 B4 H2 | assignment only; timing unresolved |
+| 2077 | Son of Semyaza | N4 B3 H1 | assignment only; timing unresolved |
+| 2078 | Son of Ezekiel | A4 B3 H1 | assignment only; timing unresolved |
+| 2079 | Son of Shamshiel | F4 B3 H1 | assignment only; timing unresolved |
+| 2080 | Son of Kokabel | S4 B3 H1 | assignment only; timing unresolved |
+| 2081 | Son of Arakiel | E4 B3 H1 | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Hinnom army identities
+
+- Sacred roster: Rephaite Warrior.
+- Flying roster: no flying troop identified in the reconciled recruit rows.
+- Aquatic or amphibious roster: no aquatic or amphibious troop identified in the reconciled recruit rows.
+- Core identity: Rephaite and Avvite giants, human and Enkidu support, chariots, and exceptionally broad giant mage-priests.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Hinnom opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Hinnom fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Hinnom, the most likely planning failure is population and unrest damage, immense gold costs, giant upkeep, and controlling dangerous sacred elites. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Hinnom research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Hinnom magic-access ladder
+
+The fixed-path ceiling is Earth 1, Death 1, Nature 2, Blood 3, Holy 1. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Hinnom battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Hinnom Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Hinnom matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Hinnom monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Hinnom unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Hinnom source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LXV: Early Age Ubar, Kingdom of the Unseen
+
+## Early Age Ubar one-page command brief
+
+Early Age Ubar converts human desert forces, Ghuls, Jinnun, invisible sacred Ifrit, and a dominion that hides the capital into expansion, research, and strategic pressure. The pinned roster resolves 8 commander identities and 7 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 8 active nation-restricted spell records. Its chief planning risks are desert recruitment, invisible-unit leadership, expensive elites, and dependence on terrain and rare magic.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Ubar evidence and ruleset
+
+This dossier covers unmodded Early Age Ubar on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 18, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Ubar object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Ubar conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Ubar recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 6 | 5 | Direct pinned membership rows |
+| Regional or coastal | 1 | 2 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 2 | 2 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Ubar commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 3457 | Ubaran Scout | none | 0 |
+| 3458 | Ubaran Commander | none | 75 |
+| 3459 | Ubaran Sheikh | none | 50 |
+| 3460 | Kahin | H1; random: 100% ×1 mask 1408 link 1 | 10 |
+| 3461 | Tubba | F1 H1; random: 100% ×1 mask 1408 link 1 | 100 |
+| 3462 | Human Sahir | F1 A1; random: 100% ×1 mask 1408 link 1 | 10 |
+| 3468 | Jinn Sahir | F2 A2 G1; random: 100% ×1 mask 17792 link 1 | 10 |
+| 3469 | Jinn Emir | F1 A1 H1; random: 100% ×1 mask 17792 link 1 | 100 |
+
+
+## Early Age Ubar troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 3453 | Ubaran Desert Warrior | 10 | 0 | 10 | stealthy |
+| 3454 | Ubaran Camel Rider | 12 | 0 | 12 | stealthy |
+| 3470 | Ubaran Archer | 10 | 0 | 7 | ordinary body |
+| 3455 | Ubaran Soldier | 10 | 0 | 8 | ordinary body |
+| 3456 | Brazen Guard | 12 | 0 | 11 | ordinary body |
+| 3463 | Jinn Warrior | 19 | 1 | 12 | magic being, flying, stealthy |
+| 3477 | Ghul | 12 | 2 | 14 | demon, magic being, stealthy |
+
+
+## Early Age Ubar mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 3460 | Kahin | H1; random: 100% ×1 mask 1408 link 1 | 10 |
+| 3461 | Tubba | F1 H1; random: 100% ×1 mask 1408 link 1 | 100 |
+| 3462 | Human Sahir | F1 A1; random: 100% ×1 mask 1408 link 1 | 10 |
+| 3468 | Jinn Sahir | F2 A2 G1; random: 100% ×1 mask 17792 link 1 | 10 |
+| 3469 | Jinn Emir | F1 A1 H1; random: 100% ×1 mask 17792 link 1 | 100 |
+
+
+The highest fixed recruitable paths resolved in these rows are Fire 2, Air 2, Glamour 1, Holy 1. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Ubar capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 214 | The Three Deserts | F1, A1, D1 | none in explicit recruit fields |
+| 215 | Iram of a Thousand Pillars | F1, G1 | Jinn Sahir, Jinn Emir, Jinn Warrior, Ghul |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Ubar national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 542 | Summon Hinn | Conjuration 6 | A1 F1 | 4 |
+| 546 | Contact Marid | Conjuration 8 | W2 F4 | 60 |
+| 547 | Scorching Wind | Evocation 4 | A2 F1 | 0 |
+| 548 | Smokeless Flame | Evocation 6 | F3 A1 | 0 |
+| 551 | Feast for Ghuls | Blood 4 | B1 | 16 |
+| 552 | Summon Ghulah | Blood 5 | B1 | 31 |
+| 553 | Summon Binn | Conjuration 6 | W1 A1 | 4 |
+| 554 | Summon Si'lat | Conjuration 6 | A2 | 21 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Ubar national item boundary
+
+| ID | Item | Construction | Paths | Link |
+| ---: | --- | ---: | --- | --- |
+| 356 | Flying Carpet | 5 | A3 | rebate |
+| 419 | Mirage Crystal | 7 | G3 E2 | rebate |
+| 478 | Companion Bracelet | 5 | A2 | restricted |
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Ubar hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 3475 | Black King | F4 A4 W1 E2 G2 B2 | assignment only; timing unresolved |
+| 3484 | Mother Ghul | D2 B3 | assignment only; timing unresolved |
+| 3474 | Banu Si'lat | F1 A1 G1; random: 100% ×1 mask 17792 link 1 | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Ubar army identities
+
+- Sacred roster: no sacred troop identified in the reconciled recruit rows.
+- Flying roster: Jinn Warrior.
+- Aquatic or amphibious roster: no aquatic or amphibious troop identified in the reconciled recruit rows.
+- Core identity: human desert forces, Ghuls, Jinnun, invisible sacred Ifrit, and a dominion that hides the capital.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Ubar opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Ubar fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Ubar, the most likely planning failure is desert recruitment, invisible-unit leadership, expensive elites, and dependence on terrain and rare magic. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Ubar research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Ubar magic-access ladder
+
+The fixed-path ceiling is Fire 2, Air 2, Glamour 1, Holy 1. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Ubar battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Ubar Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Ubar matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Ubar monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Ubar unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Ubar source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LXVI: Early Age Ur, The First City
+
+## Early Age Ur one-page command brief
+
+Early Age Ur converts city and nomadic Enkidu, terrain-dependent recruitment, strong shamans, and sacred Mushussu into expansion, research, and strategic pressure. The pinned roster resolves 11 commander identities and 10 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 6 active nation-restricted spell records. Its chief planning risks are regional availability, weak armour, commander coverage, and assembling forces drawn from different terrain.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Ur evidence and ruleset
+
+This dossier covers unmodded Early Age Ur on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 19, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Ur object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Ur conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Ur recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 7 | 4 | Direct pinned membership rows |
+| Regional or coastal | 3 | 4 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 2 | 2 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Ur commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 2161 | Enkidu Scout | none | 0 |
+| 2177 | Enkidu Commander | none | 75 |
+| 2178 | Enkidu Elder | none | 90 |
+| 2182 | Gala | N1 H1 | 10 |
+| 2179 | Sal-Me | W1 N1 H1 | 10 |
+| 2268 | Gudu | H1; random: 100% ×1 mask 1280 link 2 | 10 |
+| 2180 | Ishib | W2 H2; random: 100% ×1 mask 9472 link 1 | 10 |
+| 2166 | Enkidu Chief | none | 50 |
+| 2167 | Enkidu Shaman | E2 N3; random: 100% ×1 mask 9728 link 1; 10% ×1 mask 13824 link 1 | 10 |
+| 2269 | Entu | E2 N1 H3; random: 100% ×1 mask 9984 link 1 | 10 |
+| 2181 | Ensi | W2 N1 H3; random: 100% ×1 mask 9984 link 1 | 100 |
+
+
+## Early Age Ur troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 2172 | Enkidu Soldier | 24 | 2 | 11 | ordinary body |
+| 2173 | Enkidu Horn Blower | 24 | 2 | 11 | ordinary body |
+| 2174 | Enkidu Spear Guard | 24 | 2 | 11 | ordinary body |
+| 2175 | Ur-Guard | 26 | 2 | 12 | ordinary body |
+| 2162 | Enkidu | 24 | 2 | 11 | ordinary body |
+| 2163 | Enkidu Archer | 24 | 2 | 10 | ordinary body |
+| 2164 | Enkidu Warrior | 24 | 2 | 11 | ordinary body |
+| 2165 | Enkidu Warrior | 24 | 2 | 11 | ordinary body |
+| 2176 | Enki's Chosen | 27 | 2 | 13 | sacred |
+| 2962 | Mushussu | 68 | 15 | 16 | sacred |
+
+
+## Early Age Ur mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 2182 | Gala | N1 H1 | 10 |
+| 2179 | Sal-Me | W1 N1 H1 | 10 |
+| 2268 | Gudu | H1; random: 100% ×1 mask 1280 link 2 | 10 |
+| 2180 | Ishib | W2 H2; random: 100% ×1 mask 9472 link 1 | 10 |
+| 2167 | Enkidu Shaman | E2 N3; random: 100% ×1 mask 9728 link 1; 10% ×1 mask 13824 link 1 | 10 |
+| 2269 | Entu | E2 N1 H3; random: 100% ×1 mask 9984 link 1 | 10 |
+| 2181 | Ensi | W2 N1 H3; random: 100% ×1 mask 9984 link 1 | 100 |
+
+
+The highest fixed recruitable paths resolved in these rows are Water 2, Earth 2, Nature 3, Holy 3. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Ur capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 149 | The House of Water | W2, E1 | Enki's Chosen |
+| 150 | The First City | no gem field | Entu, Ensi |
+| 151 | The Swamps of Ur | N3 | Mushussu |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Ur national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 318 | Contact Scorpion Man | Conjuration 8 | E1 F1 | 12 |
+| 360 | Summon Kusarikkus | Conjuration 4 | E1 | 4 |
+| 361 | Summon Ugallu | Conjuration 5 | A3 | 24 |
+| 362 | Call Anzus | Conjuration 7 | W2 E2 | 4 |
+| 363 | Call Apkallu | Conjuration 8 | S5 | 60 |
+| 958 | Herd of Buffaloes | Conjuration 3 | N2 | 8 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Ur national item boundary
+
+| ID | Item | Construction | Paths | Link |
+| ---: | --- | ---: | --- | --- |
+| 104 | Dawn Fang | 9 | E2 S1 | rebate |
+| 184 | Shield of the Dawn | 9 | E2 S1 | rebate |
+| 216 | Helmet of the Dawn | 9 | E2 S1 | rebate |
+| 227 | Headdress of the Bull | 5 | N1 | restricted |
+| 275 | Armor of the Dawn | 9 | E2 S1 | rebate |
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Ur hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 2432 | Entu of the Moon | W1 E1 S3 H3 | assignment only; timing unresolved |
+| 2433 | Favored of Enki | N3 H2 | assignment only; timing unresolved |
+| 2965 | Apkallu | W4 E3 N2 H3 | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Ur army identities
+
+- Sacred roster: Enki's Chosen, Mushussu.
+- Flying roster: no flying troop identified in the reconciled recruit rows.
+- Aquatic or amphibious roster: no aquatic or amphibious troop identified in the reconciled recruit rows.
+- Core identity: city and nomadic Enkidu, terrain-dependent recruitment, strong shamans, and sacred Mushussu.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Ur opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Ur fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Ur, the most likely planning failure is regional availability, weak armour, commander coverage, and assembling forces drawn from different terrain. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Ur research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Ur magic-access ladder
+
+The fixed-path ceiling is Water 2, Earth 2, Nature 3, Holy 3. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Ur battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Ur Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Ur matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Ur monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Ur unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Ur source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LXVII: Early Age Kailasa, Rise of the Ape Kings
+
+## Early Age Kailasa one-page command brief
+
+Early Age Kailasa converts large numbers of light apes directed by rare Yakshas with strong Astral–Nature–Glamour magic into expansion, research, and strategic pressure. The pinned roster resolves 8 commander identities and 10 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 15 active nation-restricted spell records. Its chief planning risks are low morale and protection, expensive sacred mages, magic leadership, and making numerous troops hold together.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Kailasa evidence and ruleset
+
+This dossier covers unmodded Early Age Kailasa on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 20, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Kailasa object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Kailasa conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Kailasa recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 6 | 8 | Direct pinned membership rows |
+| Regional or coastal | 0 | 0 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 2 | 2 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Kailasa commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 1119 | Markata Scout | none | 0 |
+| 1127 | Atavi Chieftain | none | 50 |
+| 1334 | Bandar Commander | none | 100 |
+| 1145 | Yogi | S1 | 10 |
+| 1143 | Guru | S2 N1 | 10 |
+| 2542 | Guhyaka General | H1 | 100 |
+| 1329 | Yaksha | E3 N1 G1 H1; random: 100% ×1 mask 28160 link 1; 10% ×1 mask 28160 link 1 | 50 |
+| 1330 | Yakshini | W3 N1 G1 H1; random: 100% ×1 mask 28160 link 1; 10% ×1 mask 28160 link 1 | 50 |
+
+
+## Early Age Kailasa troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 1118 | Markata | 5 | 0 | 7 | ordinary body |
+| 1120 | Markata Archer | 5 | 0 | 7 | ordinary body |
+| 1121 | Atavi Archer | 10 | 1 | 8 | stealthy |
+| 1122 | Atavi Infantry | 10 | 1 | 8 | stealthy |
+| 1130 | Light Bandar Archer | 18 | 3 | 12 | ordinary body |
+| 1333 | Bandar Warrior | 18 | 3 | 12 | ordinary body |
+| 1350 | Bandar Swordsman | 18 | 3 | 13 | ordinary body |
+| 1326 | Guhyaka | 23 | 1 | 13 | sacred, magic being |
+| 1327 | Yavana | 23 | 1 | 14 | sacred, magic being |
+| 1328 | Yavana Archer | 20 | 1 | 13 | sacred, magic being |
+
+
+## Early Age Kailasa mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 1145 | Yogi | S1 | 10 |
+| 1143 | Guru | S2 N1 | 10 |
+| 2542 | Guhyaka General | H1 | 100 |
+| 1329 | Yaksha | E3 N1 G1 H1; random: 100% ×1 mask 28160 link 1; 10% ×1 mask 28160 link 1 | 50 |
+| 1330 | Yakshini | W3 N1 G1 H1; random: 100% ×1 mask 28160 link 1; 10% ×1 mask 28160 link 1 | 50 |
+
+
+The highest fixed recruitable paths resolved in these rows are Water 3, Earth 3, Astral 2, Nature 1, Glamour 1, Holy 1. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Kailasa capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 98 | Mount Kailasa | E2 | Yavana, Yavana Archer |
+| 99 | The Lotus Garden | S2, N1, G1 | Yaksha, Yakshini |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Kailasa national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 555 | Summon Angiri | Conjuration 3 | F2 | 5 |
+| 557 | Summon Apsaras | Conjuration 3 | S2 | 3 |
+| 558 | Summon Vidyadhara | Conjuration 4 | S2 | 15 |
+| 559 | Contact Yaksha | Conjuration 4 | N2 E1 | 25 |
+| 560 | Contact Yakshini | Conjuration 4 | N2 W1 | 25 |
+| 562 | Summon Gandharvas | Conjuration 5 | S2 | 15 |
+| 563 | Summon Kimpurushas | Conjuration 5 | N2 S1 | 15 |
+| 565 | Summon Garudas | Conjuration 6 | S2 | 21 |
+| 566 | Summon Maruts | Conjuration 6 | S2 | 18 |
+| 567 | Summon Kinnara | Conjuration 6 | S3 | 25 |
+| 569 | Summon Siddha | Conjuration 7 | S4 | 35 |
+| 570 | Summon Devata | Conjuration 8 | S5 | 45 |
+| 571 | Summon Devala | Conjuration 9 | S5 | 55 |
+| 572 | Summon Rudra | Conjuration 9 | S5 | 55 |
+| 573 | Celestial Music | Thaumaturgy 6 | S3 | 1 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Kailasa national item boundary
+
+| ID | Item | Construction | Paths | Link |
+| ---: | --- | ---: | --- | --- |
+| 140 | Vajra | 5 | S2 | restricted |
+| 227 | Headdress of the Bull | 5 | N1 | restricted |
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Kailasa hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 1585 | Fallen | B3 | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Kailasa army identities
+
+- Sacred roster: Guhyaka, Yavana, Yavana Archer.
+- Flying roster: no flying troop identified in the reconciled recruit rows.
+- Aquatic or amphibious roster: no aquatic or amphibious troop identified in the reconciled recruit rows.
+- Core identity: large numbers of light apes directed by rare Yakshas with strong Astral–Nature–Glamour magic.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Kailasa opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Kailasa fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Kailasa, the most likely planning failure is low morale and protection, expensive sacred mages, magic leadership, and making numerous troops hold together. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Kailasa research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Kailasa magic-access ladder
+
+The fixed-path ceiling is Water 3, Earth 3, Astral 2, Nature 1, Glamour 1, Holy 1. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Kailasa battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Kailasa Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Kailasa matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Kailasa monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Kailasa unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Kailasa source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LXVIII: Early Age Lanka, Land of Demons
+
+## Early Age Lanka one-page command brief
+
+Early Age Lanka converts sacred Rakshasa, light ape troops, reanimated servants, and Blood–Death–Nature magic into expansion, research, and strategic pressure. The pinned roster resolves 9 commander identities and 10 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 12 active nation-restricted spell records. Its chief planning risks are blood economy, unrest, demon leadership, fire vulnerability, and expensive sacred replacement.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Lanka evidence and ruleset
+
+This dossier covers unmodded Early Age Lanka on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 21, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Lanka object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Lanka conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Lanka recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 7 | 7 | Direct pinned membership rows |
+| Regional or coastal | 0 | 0 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 2 | 3 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Lanka commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 1119 | Markata Scout | none | 0 |
+| 1127 | Atavi Chieftain | none | 50 |
+| 1761 | Bandar Commander | none | 100 |
+| 1760 | Bandaraja | none | 150 |
+| 1733 | Raktapata | B1 H1 | 10 |
+| 1734 | Yogini | D1 N2 B1 | 10 |
+| 1735 | Kala-Mukha | B1 H2; random: 100% ×1 mask 45056 link 1 | 10 |
+| 1739 | Rakshasi | D1 N1 G1 B1 H1; random: 100% ×2 mask 61440 link 1; 10% ×1 mask 61440 link 1 | 50 |
+| 1738 | Raksharaja | A2 D1 B2 H2; random: 100% ×1 mask 37120 link 1; 10% ×1 mask 45312 link 1 | 100 |
+
+
+## Early Age Lanka troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 1118 | Markata | 5 | 0 | 7 | ordinary body |
+| 1120 | Markata Archer | 5 | 0 | 7 | ordinary body |
+| 1121 | Atavi Archer | 10 | 1 | 8 | stealthy |
+| 1122 | Atavi Infantry | 10 | 1 | 8 | stealthy |
+| 1130 | Light Bandar Archer | 18 | 3 | 12 | ordinary body |
+| 1762 | Bandar Warrior | 18 | 3 | 12 | ordinary body |
+| 1763 | Kala-Mukha Warrior | 24 | 4 | 14 | sacred |
+| 1745 | Asara | 33 | 3 | 14 | sacred, demon |
+| 1746 | Anusara | 28 | 4 | 13 | sacred, demon |
+| 1747 | Palankasha | 30 | 5 | 14 | sacred, demon |
+
+
+## Early Age Lanka mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 1733 | Raktapata | B1 H1 | 10 |
+| 1734 | Yogini | D1 N2 B1 | 10 |
+| 1735 | Kala-Mukha | B1 H2; random: 100% ×1 mask 45056 link 1 | 10 |
+| 1739 | Rakshasi | D1 N1 G1 B1 H1; random: 100% ×2 mask 61440 link 1; 10% ×1 mask 61440 link 1 | 50 |
+| 1738 | Raksharaja | A2 D1 B2 H2; random: 100% ×1 mask 37120 link 1; 10% ×1 mask 45312 link 1 | 100 |
+
+
+The highest fixed recruitable paths resolved in these rows are Air 2, Death 1, Nature 2, Glamour 1, Blood 2, Holy 2. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Lanka capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 131 | Sri Pada | A1, D3 | Rakshasi, Raksharaja |
+| 132 | Lanka | N2 | Asara, Anusara, Palankasha |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Lanka national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 574 | Summon Rakshasas | Blood 1 | B1 | 8 |
+| 575 | Feast of Flesh | Blood 2 | B1 N1 | 50 |
+| 576 | Summon Asrapas | Blood 3 | B2 | 8 |
+| 577 | Summon Rakshasa Warriors | Blood 4 | B2 | 21 |
+| 578 | Summon Sandhyabalas | Blood 5 | B2 D1 | 25 |
+| 579 | Summon Dakini | Blood 6 | B4 A1 | 81 |
+| 580 | Summon Samanishada | Blood 7 | B3 D1 | 35 |
+| 581 | Summon Mandeha | Blood 8 | B5 D2 | 133 |
+| 582 | Summon Danavas | Blood 8 | B5 | 70 |
+| 583 | Summon Daitya | Blood 8 | B5 | 45 |
+| 584 | Host of Ganas | Conjuration 2 | D1 | 9 |
+| 585 | Summon Vetalas | Conjuration 5 | D2 | 10 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Lanka national item boundary
+
+| ID | Item | Construction | Paths | Link |
+| ---: | --- | ---: | --- | --- |
+| 227 | Headdress of the Bull | 5 | N1 | restricted |
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Lanka hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 1914 | Apostate Raja | H2 | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Lanka army identities
+
+- Sacred roster: Kala-Mukha Warrior, Asara, Anusara, Palankasha.
+- Flying roster: no flying troop identified in the reconciled recruit rows.
+- Aquatic or amphibious roster: no aquatic or amphibious troop identified in the reconciled recruit rows.
+- Core identity: sacred Rakshasa, light ape troops, reanimated servants, and Blood–Death–Nature magic.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Lanka opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Lanka fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Lanka, the most likely planning failure is blood economy, unrest, demon leadership, fire vulnerability, and expensive sacred replacement. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Lanka research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Lanka magic-access ladder
+
+The fixed-path ceiling is Air 2, Death 1, Nature 2, Glamour 1, Blood 2, Holy 2. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Lanka battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Lanka Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Lanka matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Lanka monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Lanka unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Lanka source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LXIX: Early Age T'ien Ch'i, Spring and Autumn
+
+## Early Age T'ien Ch'i one-page command brief
+
+Early Age T'ien Ch'i converts human combined arms, noble commanders, Masters of the Way, and broad but distributed elemental magic into expansion, research, and strategic pressure. The pinned roster resolves 9 commander identities and 11 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 12 active nation-restricted spell records. Its chief planning risks are mage-path fragmentation, capital pressure, army coordination, and matching research to the casters actually recruited.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age T'ien Ch'i evidence and ruleset
+
+This dossier covers unmodded Early Age T'ien Ch'i on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 22, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any T'ien Ch'i object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age T'ien Ch'i conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age T'ien Ch'i recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 5 | 10 | Direct pinned membership rows |
+| Regional or coastal | 3 | 0 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 2 | 1 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age T'ien Ch'i commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 426 | Scout | none | 0 |
+| 1665 | Noble Commander | none | 100 |
+| 806 | Master of the Dead | D1 H1 | 10 |
+| 3936 | Student of the Way | W1; random: 100% ×1 mask 26880 link 1 | 10 |
+| 4022 | Student of the Sword | none; random: 100% ×1 mask 10112 link 1 | 10 |
+| 3935 | Master of the Way | W1; random: 100% ×2 mask 27392 link 1 | 10 |
+| 3937 | Student of the Five Elements | none; random: 100% ×1 mask 10112 link 1 | 10 |
+| 940 | Master of the Five Elements | F1 A1 W1 E1 N1 H1; random: 100% ×1 mask 10112 link 1 | 10 |
+| 941 | Celestial Master | F1 A1 W2 S1 G1 H2; random: 100% ×1 mask 13440 link 1; 100% ×1 mask 19200 link 1; 10% ×1 mask 19200 link 1 | 10 |
+
+
+## Early Age T'ien Ch'i troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 794 | Footman | 10 | 0 | 10 | ordinary body |
+| 795 | Footman | 10 | 0 | 10 | ordinary body |
+| 796 | Footman | 10 | 0 | 10 | ordinary body |
+| 797 | Archer | 10 | 0 | 10 | ordinary body |
+| 1901 | Medium Footman | 10 | 0 | 10 | ordinary body |
+| 1904 | Medium Footman | 10 | 0 | 10 | ordinary body |
+| 928 | Heavy Footman | 10 | 0 | 10 | ordinary body |
+| 929 | Heavy Footman | 10 | 0 | 10 | ordinary body |
+| 788 | Horseman | 10 | 0 | 10 | ordinary body |
+| 927 | Noble | 12 | 0 | 13 | ordinary body |
+| 1544 | Warrior of the Five Elements | 12 | 5 | 15 | sacred |
+
+
+## Early Age T'ien Ch'i mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 806 | Master of the Dead | D1 H1 | 10 |
+| 3936 | Student of the Way | W1; random: 100% ×1 mask 26880 link 1 | 10 |
+| 4022 | Student of the Sword | none; random: 100% ×1 mask 10112 link 1 | 10 |
+| 3935 | Master of the Way | W1; random: 100% ×2 mask 27392 link 1 | 10 |
+| 3937 | Student of the Five Elements | none; random: 100% ×1 mask 10112 link 1 | 10 |
+| 940 | Master of the Five Elements | F1 A1 W1 E1 N1 H1; random: 100% ×1 mask 10112 link 1 | 10 |
+| 941 | Celestial Master | F1 A1 W2 S1 G1 H2; random: 100% ×1 mask 13440 link 1; 100% ×1 mask 19200 link 1; 10% ×1 mask 19200 link 1 | 10 |
+
+
+The highest fixed recruitable paths resolved in these rows are Fire 1, Air 1, Water 2, Earth 1, Astral 1, Death 1, Nature 1, Glamour 1, Holy 2. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age T'ien Ch'i capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 53 | The Bamboo Grove | no gem field | Master of the Five Elements, Warrior of the Five Elements |
+| 54 | The Gate of Spring and Autumn | F1, W2, S2, D1 | Celestial Master |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age T'ien Ch'i national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 286 | Celestial Chastisement | Evocation 5 | S3 | 0 |
+| 287 | Contact Huli Jing | Conjuration 6 | N2 | 30 |
+| 289 | Internal Alchemy | Alteration 5 | W2 S1 | 5 |
+| 529 | Celestial Servant | Conjuration 1 | E1 S1 | 1 |
+| 530 | Heavenly Rivers | Conjuration 3 | W1 S1 | 9 |
+| 531 | Celestial Hounds | Conjuration 4 | A1 S1 | 2 |
+| 532 | Heavenly Fires | Conjuration 5 | F1 S1 | 4 |
+| 533 | Call Celestial Soldiers | Conjuration 6 | A2 S1 | 15 |
+| 534 | Call Ancestor | Conjuration 1 | D1 | 0 |
+| 535 | Wrath of the Ancestors | Conjuration 7 | D1 | 1 |
+| 957 | Ambush of Tigers | Conjuration 3 | N2 | 9 |
+| 958 | Herd of Buffaloes | Conjuration 3 | N2 | 8 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age T'ien Ch'i national item boundary
+
+| ID | Item | Construction | Paths | Link |
+| ---: | --- | ---: | --- | --- |
+| 138 | Sword of the Five Elements | 3 | F1 W1 | restricted |
+| 284 | Armor of the Five Elements | 3 | E1 A1 | restricted |
+| 288 | Chi Shoes | 3 | A1 | rebate |
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age T'ien Ch'i hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 942 | Immortal | A1 N2 | assignment only; timing unresolved |
+| 943 | Immortal | F1 A1 W2 S3 H2 | assignment only; timing unresolved |
+| 944 | Master With The Iron Crutch | A2 S2 D2 | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age T'ien Ch'i army identities
+
+- Sacred roster: Warrior of the Five Elements.
+- Flying roster: no flying troop identified in the reconciled recruit rows.
+- Aquatic or amphibious roster: no aquatic or amphibious troop identified in the reconciled recruit rows.
+- Core identity: human combined arms, noble commanders, Masters of the Way, and broad but distributed elemental magic.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age T'ien Ch'i opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age T'ien Ch'i fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For T'ien Ch'i, the most likely planning failure is mage-path fragmentation, capital pressure, army coordination, and matching research to the casters actually recruited. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age T'ien Ch'i research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age T'ien Ch'i magic-access ladder
+
+The fixed-path ceiling is Fire 1, Air 1, Water 2, Earth 1, Astral 1, Death 1, Nature 1, Glamour 1, Holy 2. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age T'ien Ch'i battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age T'ien Ch'i Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age T'ien Ch'i matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age T'ien Ch'i monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age T'ien Ch'i unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age T'ien Ch'i source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LXX: Early Age Yomi, Oni Kings
+
+## Early Age Yomi one-page command brief
+
+Early Age Yomi converts Oni commanders and freespawn, Bakemono and human servants, and a dominion shaped by Turmoil into expansion, research, and strategic pressure. The pinned roster resolves 8 commander identities and 5 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 14 active nation-restricted spell records. Its chief planning risks are freespawn composition, unrest, demon leadership, weak mundane troops, and the opportunity cost of order and temperature choices.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Yomi evidence and ruleset
+
+This dossier covers unmodded Early Age Yomi on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 23, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Yomi object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Yomi conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Yomi recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 7 | 5 | Direct pinned membership rows |
+| Regional or coastal | 1 | 0 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 1 | 0 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Yomi commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 2467 | Bakemono Chief | none | 50 |
+| 1313 | Bandit Leader | none | 50 |
+| 1314 | Demon General | D1 | 150 |
+| 3069 | Namanari | D1 N1 | 10 |
+| 1315 | Sorcerer | E1 D1; random: 100% ×1 mask 5504 link 1 | 10 |
+| 1609 | Demon Priest | H1; random: 10% ×1 mask 5504 link 1 | 10 |
+| 1276 | Oni Shugo | D2; random: 100% ×1 mask 1408 link 1 | 35 |
+| 1316 | Dai Oni | F2 E2 D3 H1; random: 100% ×1 mask 5504 link 1; 10% ×1 mask 5504 link 1 | 60 |
+
+
+## Early Age Yomi troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 1393 | Bakemono-Sho | 9 | 0 | 9 | stealthy |
+| 1394 | Bakemono-Sho | 9 | 0 | 9 | stealthy |
+| 1395 | Bakemono Archer | 9 | 0 | 8 | stealthy |
+| 1311 | Bandit | 9 | 0 | 10 | stealthy |
+| 1312 | Bandit | 9 | 0 | 10 | stealthy |
+
+
+## Early Age Yomi mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 1314 | Demon General | D1 | 150 |
+| 3069 | Namanari | D1 N1 | 10 |
+| 1315 | Sorcerer | E1 D1; random: 100% ×1 mask 5504 link 1 | 10 |
+| 1609 | Demon Priest | H1; random: 10% ×1 mask 5504 link 1 | 10 |
+| 1276 | Oni Shugo | D2; random: 100% ×1 mask 1408 link 1 | 35 |
+| 1316 | Dai Oni | F2 E2 D3 H1; random: 100% ×1 mask 5504 link 1; 10% ×1 mask 5504 link 1 | 60 |
+
+
+The highest fixed recruitable paths resolved in these rows are Fire 2, Earth 2, Death 3, Nature 1, Holy 1. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Yomi capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 95 | Mountain of the Oni Kings | F1, A1, E1, D3 | Dai Oni |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Yomi national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 290 | Hannya Pact | Conjuration 0 | D1 | 6 |
+| 291 | Greater Hannya Pact | Conjuration 0 | D2 | 12 |
+| 292 | End of Culture | Thaumaturgy 6 | F5 | 60 |
+| 293 | End of Weakness | Alteration 6 | E2 | 1 |
+| 301 | Summon Shikome | Conjuration 4 | D2 | 5 |
+| 311 | Summon Gozu Mezu | Conjuration 6 | D3 | 6 |
+| 313 | Summon Araburu-kami | Conjuration 7 | D1 F1 | 5 |
+| 587 | Summon Kappa | Conjuration 1 | W1 N1 | 3 |
+| 589 | Summon Karasu Tengus | Conjuration 2 | N1 A1 | 2 |
+| 591 | Summon Konoha Tengus | Conjuration 3 | A1 E1 | 3 |
+| 592 | Ghost General | Conjuration 4 | D3 | 10 |
+| 594 | Contact Dai Tengu | Conjuration 5 | A2 E1 | 55 |
+| 595 | Contact Nushi | Conjuration 5 | W2 N1 | 25 |
+| 957 | Ambush of Tigers | Conjuration 3 | N2 | 9 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Yomi national item boundary
+
+No nation restriction or rebate link appears in the pinned item rows. This does not establish live forge pricing or exclude undocumented behaviour.
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Yomi hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 1671 | Ghost General | D2 | assignment only; timing unresolved |
+| 1672 | Master of the Shadow Blossom | F1 E2 D4 B1 | assignment only; timing unresolved |
+| 1673 | Devourer of Demons | F1 D1 | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Yomi army identities
+
+- Sacred roster: no sacred troop identified in the reconciled recruit rows.
+- Flying roster: no flying troop identified in the reconciled recruit rows.
+- Aquatic or amphibious roster: no aquatic or amphibious troop identified in the reconciled recruit rows.
+- Core identity: Oni commanders and freespawn, Bakemono and human servants, and a dominion shaped by Turmoil.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Yomi opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Yomi fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Yomi, the most likely planning failure is freespawn composition, unrest, demon leadership, weak mundane troops, and the opportunity cost of order and temperature choices. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Yomi research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Yomi magic-access ladder
+
+The fixed-path ceiling is Fire 2, Earth 2, Death 3, Nature 1, Holy 1. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Yomi battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Yomi Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Yomi matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Yomi monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Yomi unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Yomi source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LXXI: Early Age Caelum, Eagle Kings
+
+## Early Age Caelum one-page command brief
+
+Early Age Caelum converts flying winged troops, strong archery, cold-forged ice equipment, mammoths, and powerful Air magic into expansion, research, and strategic pressure. The pinned roster resolves 8 commander identities and 14 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 11 active nation-restricted spell records. Its chief planning risks are temperature-dependent protection, fragile troops, storm interactions, supply, and coordinating flyers with slower forces.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Caelum evidence and ruleset
+
+This dossier covers unmodded Early Age Caelum on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 24, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Caelum object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Caelum conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Caelum recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 6 | 10 | Direct pinned membership rows |
+| Regional or coastal | 0 | 0 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 2 | 4 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Caelum commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 484 | Caelian Scout | none | 0 |
+| 1288 | Sastar | none | 100 |
+| 1284 | Spire Horn Seraph | A1 | 10 |
+| 2557 | Airya Seraphine | F1 H2 | 50 |
+| 2570 | Airya Seraph | A2 W1 | 10 |
+| 1663 | Harab Seraph | A1 D1; random: 100% ×1 mask 5376 link 1 | 10 |
+| 1286 | Eagle King | A4 W1 E1 H2; random: 10% ×1 mask 1920 link 1 | 100 |
+| 2560 | Mairya Ahu | none | 50 |
+
+
+## Early Age Caelum troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 2564 | Spire Horn Militia | 10 | 0 | 8 | flying |
+| 2566 | Spire Horn Warrior | 10 | 0 | 10 | flying |
+| 2565 | Spire Horn Archer | 9 | 0 | 10 | flying |
+| 1287 | Tempest Warrior | 11 | 0 | 11 | flying |
+| 130 | Airya Light Infantry | 9 | 0 | 10 | flying |
+| 420 | Airya Infantry | 9 | 0 | 10 | flying |
+| 1285 | Iceclad | 9 | 0 | 12 | flying |
+| 1707 | Raptorian Militia | 11 | 0 | 9 | flying |
+| 1278 | Raptorian Warrior | 11 | 0 | 11 | flying |
+| 419 | Mammoth Rider | 10 | 0 | 10 | flying |
+| 127 | Blizzard Warrior | 9 | 0 | 10 | flying |
+| 1289 | Airya Temple Guard | 10 | 0 | 13 | sacred |
+| 2558 | Kavi Archer | 9 | 0 | 12 | sacred, flying |
+| 2559 | Mairya Warrior | 13 | 0 | 13 | sacred, flying, stealthy |
+
+
+## Early Age Caelum mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 1284 | Spire Horn Seraph | A1 | 10 |
+| 2557 | Airya Seraphine | F1 H2 | 50 |
+| 2570 | Airya Seraph | A2 W1 | 10 |
+| 1663 | Harab Seraph | A1 D1; random: 100% ×1 mask 5376 link 1 | 10 |
+| 1286 | Eagle King | A4 W1 E1 H2; random: 10% ×1 mask 1920 link 1 | 100 |
+
+
+The highest fixed recruitable paths resolved in these rows are Fire 1, Air 4, Water 1, Earth 1, Death 1, Holy 2. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Caelum capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 94 | Palace of the Eagle Kings | A3, W1 | Eagle King, Blizzard Warrior, Airya Temple Guard |
+| 168 | Spire Horn Mountain | A1 | Kavi Archer |
+| 169 | Ravens Vale | E1 | Mairya Ahu, Mairya Warrior |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Caelum national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 461 | Parting of the Soul | Thaumaturgy 6 | D1 A1 | 0 |
+| 462 | Call Ahurani | Conjuration 5 | S2 W1 | 12 |
+| 463 | Call Celestial Yazad | Conjuration 6 | S4 | 40 |
+| 464 | Call Fravashi | Conjuration 7 | S3 | 30 |
+| 465 | Call Amesha Spenta | Conjuration 8 | S5 | 60 |
+| 466 | Summon Yazatas | Conjuration 5 | S2 | 12 |
+| 467 | Call Daevas | Conjuration 5 | D2 F1 | 12 |
+| 468 | Call Jahi | Conjuration 5 | D3 F1 | 15 |
+| 469 | Call Yata | Conjuration 6 | D3 F2 | 40 |
+| 470 | Call of the Drugvant | Thaumaturgy 7 | D4 F1 | 15 |
+| 471 | Call Greater Daeva | Conjuration 8 | D4 F2 | 60 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Caelum national item boundary
+
+No nation restriction or rebate link appears in the pinned item rows. This does not establish live forge pricing or exclude undocumented behaviour.
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Caelum hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 1674 | Unwinged | H2 | assignment only; timing unresolved |
+| 2577 | Ahu of the Kavi | H2 | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Caelum army identities
+
+- Sacred roster: Airya Temple Guard, Kavi Archer, Mairya Warrior.
+- Flying roster: Spire Horn Militia, Spire Horn Warrior, Spire Horn Archer, Tempest Warrior, Airya Light Infantry, Airya Infantry, Iceclad, Raptorian Militia, Raptorian Warrior, Mammoth Rider, Blizzard Warrior, Kavi Archer, Mairya Warrior.
+- Aquatic or amphibious roster: no aquatic or amphibious troop identified in the reconciled recruit rows.
+- Core identity: flying winged troops, strong archery, cold-forged ice equipment, mammoths, and powerful Air magic.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Caelum opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Caelum fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Caelum, the most likely planning failure is temperature-dependent protection, fragile troops, storm interactions, supply, and coordinating flyers with slower forces. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Caelum research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Caelum magic-access ladder
+
+The fixed-path ceiling is Fire 1, Air 4, Water 1, Earth 1, Death 1, Holy 2. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Caelum battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Caelum Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Caelum matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Caelum monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Caelum unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Caelum source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LXXII: Early Age Mictlan, Reign of Blood
+
+## Early Age Mictlan one-page command brief
+
+Early Age Mictlan converts cheap tribal armies, sacred Jaguar and Eagle Warriors, mage-priests, and dominion sustained through blood sacrifice into expansion, research, and strategic pressure. The pinned roster resolves 8 commander identities and 9 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 13 active nation-restricted spell records. Its chief planning risks are blood-slave supply, priest turns, weak protection, dominion maintenance, and preventing expansion from outrunning sacrifice coverage.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Mictlan evidence and ruleset
+
+This dossier covers unmodded Early Age Mictlan on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 25, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Mictlan object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Mictlan conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Mictlan recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 4 | 7 | Direct pinned membership rows |
+| Regional or coastal | 0 | 0 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 4 | 2 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Mictlan commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 729 | Scout | none | 0 |
+| 730 | Tribal King | none | 100 |
+| 731 | Mictlan Priest | B1 H1; random: 10% ×1 mask 10880 link 1 | 10 |
+| 1361 | Nahualli | S1 N2; random: 10% ×1 mask 47104 link 1 | 10 |
+| 732 | Priest King | N2 B2 H2 | 150 |
+| 733 | Rain Priest | W2 B2 H2 | 10 |
+| 734 | Moon Priest | S2 B2 H2 | 10 |
+| 735 | High Priest of the Sun | F2 B3 H3 | 50 |
+
+
+## Early Age Mictlan troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 721 | Warrior | 10 | 0 | 10 | ordinary body |
+| 722 | Warrior | 10 | 0 | 10 | ordinary body |
+| 723 | Warrior | 10 | 0 | 10 | ordinary body |
+| 724 | Warrior | 10 | 0 | 10 | ordinary body |
+| 860 | Feathered Warrior | 10 | 0 | 11 | ordinary body |
+| 1882 | Moon Warrior | 12 | 0 | 12 | ordinary body |
+| 727 | Jaguar Warrior | 12 | 0 | 12 | sacred |
+| 726 | Eagle Warrior | 12 | 0 | 11 | sacred |
+| 725 | Sun Warrior | 12 | 0 | 13 | sacred |
+
+
+## Early Age Mictlan mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 731 | Mictlan Priest | B1 H1; random: 10% ×1 mask 10880 link 1 | 10 |
+| 1361 | Nahualli | S1 N2; random: 10% ×1 mask 47104 link 1 | 10 |
+| 732 | Priest King | N2 B2 H2 | 150 |
+| 733 | Rain Priest | W2 B2 H2 | 10 |
+| 734 | Moon Priest | S2 B2 H2 | 10 |
+| 735 | High Priest of the Sun | F2 B3 H3 | 50 |
+
+
+The highest fixed recruitable paths resolved in these rows are Fire 2, Water 2, Astral 2, Nature 2, Blood 3, Holy 3. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Mictlan capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 30 | Temple of the Land | N1 | Priest King, Eagle Warrior |
+| 31 | Temple of the Rain | W1 | Rain Priest |
+| 32 | Temple of the Moon | S1 | Moon Priest |
+| 33 | High Temple of the Sun | F2, B3 | High Priest of the Sun, Sun Warrior |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Mictlan national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 504 | Summon Jaguar Toads | Conjuration 1 | N1 H1 | 2 |
+| 505 | Summon Jaguars | Conjuration 3 | N2 H1 | 20 |
+| 506 | Summon Jade Serpents | Conjuration 4 | W2 | 3 |
+| 507 | Summon Monster Toad | Conjuration 5 | N2 | 1 |
+| 508 | Contact Couatl | Conjuration 6 | N1 S1 | 40 |
+| 509 | Summon Tlaloque | Conjuration 7 | W4 | 60 |
+| 510 | Bind Beast Bats | Blood 2 | B1 | 8 |
+| 511 | Bind Jaguar Fiends | Blood 4 | B1 F1 | 16 |
+| 512 | Contact Civateteo | Blood 5 | B2 D2 | 36 |
+| 513 | Bind Tzitzimitl | Blood 6 | B2 S2 | 10 |
+| 514 | Contact Tlahuelpuchi | Blood 6 | B3 | 42 |
+| 515 | Contact Onaqui | Blood 7 | B4 | 101 |
+| 516 | Rain of Jaguars | Blood 8 | B6 F2 | 40 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Mictlan national item boundary
+
+| ID | Item | Construction | Paths | Link |
+| ---: | --- | ---: | --- | --- |
+| 43 | Jade Knife | 3 | N1 B1 | restricted |
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Mictlan hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 933 | King of Legends | D3 B3 H3 | assignment only; timing unresolved |
+| 936 | Eagle Priest | A2 B2 H2 | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Mictlan army identities
+
+- Sacred roster: Jaguar Warrior, Eagle Warrior, Sun Warrior.
+- Flying roster: no flying troop identified in the reconciled recruit rows.
+- Aquatic or amphibious roster: no aquatic or amphibious troop identified in the reconciled recruit rows.
+- Core identity: cheap tribal armies, sacred Jaguar and Eagle Warriors, mage-priests, and dominion sustained through blood sacrifice.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Mictlan opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Mictlan fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Mictlan, the most likely planning failure is blood-slave supply, priest turns, weak protection, dominion maintenance, and preventing expansion from outrunning sacrifice coverage. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Mictlan research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Mictlan magic-access ladder
+
+The fixed-path ceiling is Fire 2, Water 2, Astral 2, Nature 2, Blood 3, Holy 3. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Mictlan battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Mictlan Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Mictlan matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Mictlan monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Mictlan unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Mictlan source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LXXIII: Early Age Xibalba, Vigil of the Sun
+
+## Early Age Xibalba one-page command brief
+
+Early Age Xibalba converts numerous stealthy flying Zotz, cave recruitment, blood hunting, and dark Water–Earth–Death–Blood magic into expansion, research, and strategic pressure. The pinned roster resolves 11 commander identities and 8 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 17 active nation-restricted spell records. Its chief planning risks are very fragile troops, cave and surface logistics, blood economy, leadership, and surviving missile fire.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Xibalba evidence and ruleset
+
+This dossier covers unmodded Early Age Xibalba on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 26, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Xibalba object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Xibalba conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Xibalba recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 9 | 7 | Direct pinned membership rows |
+| Regional or coastal | 0 | 0 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 2 | 1 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Xibalba commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 2674 | Batab | none | 75 |
+| 2675 | Ajaw | H1 | 100 |
+| 2676 | Ajaw Kan Ek' | H2 | 150 |
+| 2691 | Xibalban Scorpion Trainer | none | 50 |
+| 2678 | Chilan | E1 D1 H1 | 10 |
+| 2679 | Ah Nakom | B1 H1 | 10 |
+| 2677 | Ah K'in | F1 H1; random: 100% ×1 mask 37888 link 1 | 50 |
+| 2680 | Ah Itz | D1 B1; random: 100% ×1 mask 38144 link 1 | 10 |
+| 2681 | Camazotz | D2 B1; random: 100% ×1 mask 38144 link 1 | 10 |
+| 2684 | Ah K'in Kan Ek' | F2 E1 D1 H2; random: 100% ×1 mask 37888 link 1 | 50 |
+| 2736 | Onaqui | D3 N1 B3 H2; random: 100% ×1 mask 45184 link 1; 10% ×1 mask 45184 link 1 | 100 |
+
+
+## Early Age Xibalba troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 2668 | Xibalban Warrior | 7 | 0 | 9 | flying, stealthy |
+| 2669 | Xibalban Warrior | 7 | 0 | 9 | flying, stealthy |
+| 2670 | Xibalban Dart Thrower | 7 | 0 | 9 | flying, stealthy |
+| 2671 | Xibalban Guard | 8 | 0 | 11 | flying, stealthy |
+| 2687 | Large Scorpion | 1 | 1 | 50 | magic being, stealthy |
+| 2688 | Giant Scorpion | 5 | 5 | 50 | magic being, stealthy |
+| 2689 | Xibalban Scorpion | 16 | 12 | 15 | ordinary body |
+| 2672 | Sun Guide | 9 | 0 | 13 | sacred, flying |
+
+
+## Early Age Xibalba mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 2675 | Ajaw | H1 | 100 |
+| 2676 | Ajaw Kan Ek' | H2 | 150 |
+| 2678 | Chilan | E1 D1 H1 | 10 |
+| 2679 | Ah Nakom | B1 H1 | 10 |
+| 2677 | Ah K'in | F1 H1; random: 100% ×1 mask 37888 link 1 | 50 |
+| 2680 | Ah Itz | D1 B1; random: 100% ×1 mask 38144 link 1 | 10 |
+| 2681 | Camazotz | D2 B1; random: 100% ×1 mask 38144 link 1 | 10 |
+| 2684 | Ah K'in Kan Ek' | F2 E1 D1 H2; random: 100% ×1 mask 37888 link 1 | 50 |
+| 2736 | Onaqui | D3 N1 B3 H2; random: 100% ×1 mask 45184 link 1; 10% ×1 mask 45184 link 1 | 100 |
+
+
+The highest fixed recruitable paths resolved in these rows are Fire 2, Earth 1, Death 3, Nature 1, Blood 3, Holy 2. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Xibalba capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 174 | Cavern of the Sun | F3, E1 | Ah K'in Kan Ek', Sun Guide |
+| 175 | House of Knives | D2 | Onaqui |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Xibalba national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 505 | Summon Jaguars | Conjuration 3 | N2 H1 | 20 |
+| 510 | Bind Beast Bats | Blood 2 | B1 | 8 |
+| 511 | Bind Jaguar Fiends | Blood 4 | B1 F1 | 16 |
+| 515 | Contact Onaqui | Blood 7 | B4 | 101 |
+| 516 | Rain of Jaguars | Blood 8 | B6 F2 | 40 |
+| 517 | Theft of the Sun | Enchantment 8 | D6 F3 | 70 |
+| 518 | Summon Sacred Scorpion | Conjuration 3 | E1 D1 | 2 |
+| 519 | Break the First Soul | Blood 2 | B1 | 0 |
+| 520 | Break the Second Soul | Thaumaturgy 2 | E1 | 0 |
+| 521 | Break the Third Soul | Thaumaturgy 2 | A1 | 0 |
+| 522 | Break the Fourth Soul | Thaumaturgy 2 | D1 | 0 |
+| 523 | Gift of the First Soul | Blood 3 | B1 | 0 |
+| 524 | Gift of the Second Soul | Thaumaturgy 3 | E1 | 0 |
+| 525 | Gift of the Third Soul | Thaumaturgy 3 | A1 | 0 |
+| 526 | Gift of the Fourth Soul | Thaumaturgy 3 | D1 | 0 |
+| 527 | Summon Balam | Conjuration 7 | N4 | 60 |
+| 528 | Summon Chaac | Conjuration 8 | A4 | 75 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Xibalba national item boundary
+
+| ID | Item | Construction | Paths | Link |
+| ---: | --- | ---: | --- | --- |
+| 203 | Scorpion Crown | 7 | F3 D2 | rebate |
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Xibalba hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 2692 | Halach Uinic | F2 B1 H3 | assignment only; timing unresolved |
+| 2757 | Demon of the Bone Staff | E2 D4 B3 H3 | assignment only; timing unresolved |
+| 2758 | Demon of the Skull Staff | E2 D4 B3 H3 | assignment only; timing unresolved |
+| 2759 | Demon of Pus | F1 D3 N1 B3 H3 | assignment only; timing unresolved |
+| 2760 | Jaundice Demon | F1 D3 N1 B3 H3 | assignment only; timing unresolved |
+| 2761 | Sweeping Demon | B3 | assignment only; timing unresolved |
+| 2762 | Stabbing Demon | B3 | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Xibalba army identities
+
+- Sacred roster: Sun Guide.
+- Flying roster: Xibalban Warrior, Xibalban Warrior, Xibalban Dart Thrower, Xibalban Guard, Sun Guide.
+- Aquatic or amphibious roster: no aquatic or amphibious troop identified in the reconciled recruit rows.
+- Core identity: numerous stealthy flying Zotz, cave recruitment, blood hunting, and dark Water–Earth–Death–Blood magic.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Xibalba opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Xibalba fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Xibalba, the most likely planning failure is very fragile troops, cave and surface logistics, blood economy, leadership, and surviving missile fire. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Xibalba research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Xibalba magic-access ladder
+
+The fixed-path ceiling is Fire 2, Earth 1, Death 3, Nature 1, Blood 3, Holy 2. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Xibalba battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Xibalba Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Xibalba matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Xibalba monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Xibalba unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Xibalba source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LXXIV: Early Age C'tis, Lizard Kings
+
+## Early Age C'tis one-page command brief
+
+Early Age C'tis converts cold-blooded lizard infantry, chariots, sacred serpents, and accomplished Death–Nature mages into expansion, research, and strategic pressure. The pinned roster resolves 10 commander identities and 11 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 4 active nation-restricted spell records. Its chief planning risks are temperature, low defence, supply, poison use, and keeping expensive Sauromancers available for their competing jobs.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age C'tis evidence and ruleset
+
+This dossier covers unmodded Early Age C'tis on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 27, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any C'tis object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age C'tis conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age C'tis recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 8 | 10 | Direct pinned membership rows |
+| Regional or coastal | 0 | 0 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 2 | 1 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age C'tis commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 169 | Taskmaster | none | 50 |
+| 163 | Commander of C'tis | none | 75 |
+| 162 | Lizard Lord | none | 100 |
+| 160 | High Priest of C'tis | H2 | 50 |
+| 510 | Hierodule | H1 | 0 |
+| 170 | Lizard Shaman | S1 N1 | 10 |
+| 1387 | Reborn | D2 | 10 |
+| 161 | Sauromancer | D3 N1; random: 100% ×1 mask 14848 link 1; 10% ×1 mask 14848 link 1 | 10 |
+| 177 | Lizard King | H3 | 150 |
+| 1366 | Lizard Heir | H1 | 100 |
+
+
+## Early Age C'tis troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 168 | Militia | 11 | 5 | 7 | ordinary body |
+| 167 | C'tissian Light Infantry | 11 | 5 | 9 | ordinary body |
+| 4062 | C'tissian Medium Infantry | 11 | 5 | 9 | ordinary body |
+| 166 | City Guard | 11 | 5 | 9 | ordinary body |
+| 165 | C'tissian Heavy Infantry | 11 | 5 | 9 | ordinary body |
+| 504 | Falchioneer | 11 | 5 | 10 | ordinary body |
+| 171 | Slave Warrior | 13 | 3 | 8 | ordinary body |
+| 172 | Elite Warrior | 13 | 3 | 9 | ordinary body |
+| 173 | Runner | 12 | 3 | 8 | ordinary body |
+| 1365 | Lizard Charioteer | 13 | 5 | 11 | ordinary body |
+| 783 | Serpent Dancer | 11 | 5 | 11 | sacred |
+
+
+## Early Age C'tis mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 160 | High Priest of C'tis | H2 | 50 |
+| 510 | Hierodule | H1 | 0 |
+| 170 | Lizard Shaman | S1 N1 | 10 |
+| 1387 | Reborn | D2 | 10 |
+| 161 | Sauromancer | D3 N1; random: 100% ×1 mask 14848 link 1; 10% ×1 mask 14848 link 1 | 10 |
+| 177 | Lizard King | H3 | 150 |
+| 1366 | Lizard Heir | H1 | 100 |
+
+
+The highest fixed recruitable paths resolved in these rows are Astral 1, Death 3, Nature 1, Holy 3. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age C'tis capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 9 | The Temple City | D4, N2 | Lizard King, Lizard Heir, Serpent Dancer |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age C'tis national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 318 | Contact Scorpion Man | Conjuration 8 | E1 F1 | 12 |
+| 339 | Sacred Crocodile | Conjuration 4 | N2 W2 | 1 |
+| 459 | Summon Monster Toads | Conjuration 5 | N2 | 5 |
+| 460 | Contact Couatl | Conjuration 7 | N1 S1 | 40 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age C'tis national item boundary
+
+| ID | Item | Construction | Paths | Link |
+| ---: | --- | ---: | --- | --- |
+| 226 | The Jade Mask | 9 | D6 N3 | restricted |
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age C'tis hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 379 | Lizard Hero | none | assignment only; timing unresolved |
+| 1660 | Reassembled Prince | H2 | assignment only; timing unresolved |
+| 1708 | Consort of the Dead | S2 D4 N3 | assignment only; timing unresolved |
+| 635 | Ancient Shaman | S2 N2 H1 | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age C'tis army identities
+
+- Sacred roster: Serpent Dancer.
+- Flying roster: no flying troop identified in the reconciled recruit rows.
+- Aquatic or amphibious roster: no aquatic or amphibious troop identified in the reconciled recruit rows.
+- Core identity: cold-blooded lizard infantry, chariots, sacred serpents, and accomplished Death–Nature mages.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age C'tis opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age C'tis fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For C'tis, the most likely planning failure is temperature, low defence, supply, poison use, and keeping expensive Sauromancers available for their competing jobs. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age C'tis research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age C'tis magic-access ladder
+
+The fixed-path ceiling is Astral 1, Death 3, Nature 1, Holy 3. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age C'tis battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age C'tis Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age C'tis matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age C'tis monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age C'tis unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age C'tis source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LXXV: Early Age Machaka, Lion Kings
+
+## Early Age Machaka one-page command brief
+
+Early Age Machaka converts totemic human clans, poison archers, spider riders, war lions, elephants, and semi-divine Colossi into expansion, research, and strategic pressure. The pinned roster resolves 12 commander identities and 14 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 3 active nation-restricted spell records. Its chief planning risks are mixed recruitment, animal morale, poison exposure, trampling control, and scarce top-end commanders.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Machaka evidence and ruleset
+
+This dossier covers unmodded Early Age Machaka on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 28, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Machaka object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Machaka conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Machaka recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 9 | 10 | Direct pinned membership rows |
+| Regional or coastal | 0 | 0 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 3 | 4 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Machaka commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 2288 | Machaka Scout | none | 0 |
+| 2289 | Rhino Clan Commander | none | 75 |
+| 2290 | Lion Clan Commander | none | 100 |
+| 4134 | Gnu Clan Commander | none | 50 |
+| 2291 | Voice of Lion | N1 H1 | 50 |
+| 2292 | Hyena Clan Witch Doctor | F1 E1 D2 | 10 |
+| 2293 | Bouda | F1 E2 D2; random: 100% ×1 mask 5248 link 1 | 10 |
+| 2310 | Voice of Spider | none | 0 |
+| 2403 | Spider Clan Witch Doctor | F1 D1 N1 G1 | 10 |
+| 2295 | Spider Clan Sorcerer | F1 D1 N1 G1; random: 100% ×2 mask 29824 link 1; 10% ×1 mask 29824 link 1 | 10 |
+| 2297 | Lion Queen | F3 E1 N2 H1; random: 10% ×1 mask 9344 link 1 | 50 |
+| 2296 | Lion King | F2 E1 N3 H2; random: 10% ×1 mask 9344 link 1 | 100 |
+
+
+## Early Age Machaka troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 2126 | Pygmy | 4 | 0 | 6 | ordinary body |
+| 2298 | Machaka Militia | 10 | 0 | 8 | ordinary body |
+| 2299 | Bird Clan Archer | 10 | 0 | 8 | ordinary body |
+| 2300 | Machaka Warrior | 10 | 0 | 10 | ordinary body |
+| 2303 | Hyena Clan Warrior | 11 | 0 | 9 | ordinary body |
+| 2304 | Rhino Clan Warrior | 13 | 0 | 11 | ordinary body |
+| 2305 | Lion Clan Warrior | 12 | 0 | 12 | ordinary body |
+| 2306 | War Lion | 20 | 4 | 13 | ordinary body |
+| 4133 | Gnu Clan Cavalry | 11 | 0 | 12 | ordinary body |
+| 2307 | Elephant Rider | 13 | 0 | 10 | ordinary body |
+| 2301 | Spider Clan Archer | 9 | 0 | 8 | ordinary body |
+| 2302 | Spider Clan Warrior | 9 | 0 | 10 | ordinary body |
+| 2308 | Spider Rider | 10 | 0 | 10 | ordinary body |
+| 2309 | Lion Warrior | 22 | 1 | 14 | sacred |
+
+
+## Early Age Machaka mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 2291 | Voice of Lion | N1 H1 | 50 |
+| 2292 | Hyena Clan Witch Doctor | F1 E1 D2 | 10 |
+| 2293 | Bouda | F1 E2 D2; random: 100% ×1 mask 5248 link 1 | 10 |
+| 2403 | Spider Clan Witch Doctor | F1 D1 N1 G1 | 10 |
+| 2295 | Spider Clan Sorcerer | F1 D1 N1 G1; random: 100% ×2 mask 29824 link 1; 10% ×1 mask 29824 link 1 | 10 |
+| 2297 | Lion Queen | F3 E1 N2 H1; random: 10% ×1 mask 9344 link 1 | 50 |
+| 2296 | Lion King | F2 E1 N3 H2; random: 10% ×1 mask 9344 link 1 | 100 |
+
+
+The highest fixed recruitable paths resolved in these rows are Fire 3, Earth 2, Death 2, Nature 3, Glamour 1, Holy 2. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Machaka capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 153 | Forest of Spider | D1, N1, G1 | Spider Clan Sorcerer, Spider Clan Archer, Spider Clan Warrior, Spider Rider |
+| 154 | Great Mababwe | F1, E2 | Lion Queen, Lion King, Lion Warrior |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Machaka national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 340 | Herd of Elephants | Conjuration 3 | N2 | 20 |
+| 343 | Weavers of the Wood | Enchantment 5 | N4 | 6 |
+| 1473 | Herd of Gnus | Conjuration 3 | N2 | 5 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Machaka national item boundary
+
+| ID | Item | Construction | Paths | Link |
+| ---: | --- | ---: | --- | --- |
+| 177 | Totem Shield | 5 | D1 G1 | rebate |
+| 197 | Spirit Mask | 5 | D2 N1 | rebate |
+| 240 | Kithaironic Lion Pelt | 3 | N1 E1 | rebate |
+| 427 | Fever Fetish | 9 | F1 N1 | rebate |
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Machaka hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 952 | Hero | none | assignment only; timing unresolved |
+| 953 | King Triumphant | H3 | assignment only; timing unresolved |
+| 946 | Lady of Spiders | F1 E3 D3 G2 | assignment only; timing unresolved |
+| 1426 | Crowned Ape | H1 | assignment only; timing unresolved |
+| 1706 | Ape Oracle | N1 | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Machaka army identities
+
+- Sacred roster: Lion Warrior.
+- Flying roster: no flying troop identified in the reconciled recruit rows.
+- Aquatic or amphibious roster: no aquatic or amphibious troop identified in the reconciled recruit rows.
+- Core identity: totemic human clans, poison archers, spider riders, war lions, elephants, and semi-divine Colossi.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Machaka opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Machaka fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Machaka, the most likely planning failure is mixed recruitment, animal morale, poison exposure, trampling control, and scarce top-end commanders. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Machaka research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Machaka magic-access ladder
+
+The fixed-path ceiling is Fire 3, Earth 2, Death 2, Nature 3, Glamour 1, Holy 2. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Machaka battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Machaka Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Machaka matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Machaka monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Machaka unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Machaka source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LXXVI: Early Age Berytos, The Phoenix Empire
+
+## Early Age Berytos one-page command brief
+
+Early Age Berytos converts coastal trade, sailing human forces, Colossi, and sorcerer-queens with unusually wide magical access into expansion, research, and strategic pressure. The pinned roster resolves 5 commander identities and 9 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 7 active nation-restricted spell records. Its chief planning risks are capital dependence, expensive mages, coastal staging, sailing limits, and balancing trade income against military replacement.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Berytos evidence and ruleset
+
+This dossier covers unmodded Early Age Berytos on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 29, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Berytos object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Berytos conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Berytos recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 4 | 8 | Direct pinned membership rows |
+| Regional or coastal | 0 | 0 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 1 | 1 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Berytos commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 2252 | Berytian Scout | none | 0 |
+| 2253 | Berytian Captain | none | 100 |
+| 2265 | Berytian Priest | B1 H1; random: 100% ×1 mask 34176 link 1 | 10 |
+| 2424 | Berytian Sage | E1; random: 100% ×1 mask 768 link 1 | 10 |
+| 2266 | Bride-in-Waiting | F2 A2 E1 B2 H2; random: 100% ×1 mask 34176 link 1; 10% ×1 mask 34176 link 1 | 100 |
+
+
+## Early Age Berytos troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 2254 | Berytian Militia | 10 | 0 | 8 | ordinary body |
+| 2255 | Berytian Archer | 10 | 0 | 8 | ordinary body |
+| 2256 | Berytian Spearman | 10 | 0 | 10 | ordinary body |
+| 2257 | Berytian Soldier | 10 | 0 | 10 | ordinary body |
+| 2258 | Berytian Heavy Spearman | 10 | 0 | 11 | ordinary body |
+| 2259 | Berytian Elite Soldier | 12 | 0 | 13 | ordinary body |
+| 2260 | Berytian Lancer | 10 | 0 | 11 | ordinary body |
+| 2261 | Elephant Rider | 10 | 0 | 8 | ordinary body |
+| 2262 | Colossi Warrior | 22 | 1 | 14 | sacred |
+
+
+## Early Age Berytos mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 2265 | Berytian Priest | B1 H1; random: 100% ×1 mask 34176 link 1 | 10 |
+| 2424 | Berytian Sage | E1; random: 100% ×1 mask 768 link 1 | 10 |
+| 2266 | Bride-in-Waiting | F2 A2 E1 B2 H2; random: 100% ×1 mask 34176 link 1; 10% ×1 mask 34176 link 1 | 100 |
+
+
+The highest fixed recruitable paths resolved in these rows are Fire 2, Air 2, Earth 1, Blood 2, Holy 2. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Berytos capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 152 | Temple of Storms and Flames | F2, A3, B2 | Bride-in-Waiting, Colossi Warrior |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Berytos national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 340 | Herd of Elephants | Conjuration 3 | N2 | 20 |
+| 344 | Call Melqart | Blood 6 | B3 F2 | 99 |
+| 349 | Scapegoats | Blood 3 | B1 | 8 |
+| 351 | Summon Shedim | Blood 4 | B3 A1 | 28 |
+| 358 | Summon Mazzikim | Conjuration 3 | N1 | 3 |
+| 359 | Summon Lilot | Conjuration 5 | N4 | 15 |
+| 366 | Summon Telkhine | Conjuration 8 | W5 A2 | 69 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Berytos national item boundary
+
+No nation restriction or rebate link appears in the pinned item rows. This does not establish live forge pricing or exclude undocumented behaviour.
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Berytos hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 2429 | Bride of the Gods | F3 E1 D3 B3 H2 | assignment only; timing unresolved |
+| 2430 | King of the City | F3 A2 B3 H3 | assignment only; timing unresolved |
+| 2876 | Queen of the City | F3 A3 W3 E4 N2 H2 | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Berytos army identities
+
+- Sacred roster: Colossi Warrior.
+- Flying roster: no flying troop identified in the reconciled recruit rows.
+- Aquatic or amphibious roster: no aquatic or amphibious troop identified in the reconciled recruit rows.
+- Core identity: coastal trade, sailing human forces, Colossi, and sorcerer-queens with unusually wide magical access.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Berytos opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Berytos fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Berytos, the most likely planning failure is capital dependence, expensive mages, coastal staging, sailing limits, and balancing trade income against military replacement. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Berytos research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Berytos magic-access ladder
+
+The fixed-path ceiling is Fire 2, Air 2, Earth 1, Blood 2, Holy 2. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Berytos battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Berytos Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Berytos matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Berytos monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Berytos unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Berytos source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LXXVII: Early Age Vanheim, Age of Vanir
+
+## Early Age Vanheim one-page command brief
+
+Early Age Vanheim converts glamour-protected Vanir, sacred cavalry, sailing, blood priests, and Air–Earth dwarven smiths into expansion, research, and strategic pressure. The pinned roster resolves 5 commander identities and 7 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 3 active nation-restricted spell records. Its chief planning risks are elite scarcity, glamour counters, blood-hunting costs, sailing boundaries, and ordinary frontage.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Vanheim evidence and ruleset
+
+This dossier covers unmodded Early Age Vanheim on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 30, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Vanheim object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Vanheim conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Vanheim recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 3 | 5 | Direct pinned membership rows |
+| Regional or coastal | 0 | 0 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 2 | 2 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Vanheim commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 1512 | Van Scout | none | 0 |
+| 263 | Vanherse | A1 G1 H1 | 75 |
+| 264 | Vanjarl | A2 G1 B1 H2 | 100 |
+| 948 | Vanadrott | A2 G2 B1 H2; random: 100% ×1 mask 54528 link 1; 10% ×1 mask 54528 link 1 | 150 |
+| 323 | Dwarven Smith | E2; random: 100% ×1 mask 21888 link 1; 10% ×1 mask 21888 link 1 | 10 |
+
+
+## Early Age Vanheim troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 1679 | Serf Warrior | 10 | 0 | 8 | ordinary body |
+| 1508 | Huskarl | 13 | 0 | 11 | stealthy |
+| 1509 | Huskarl | 13 | 0 | 11 | stealthy |
+| 1510 | Hirdman | 13 | 0 | 12 | stealthy |
+| 1504 | Mounted Hirdman | 13 | 0 | 12 | stealthy |
+| 1513 | Vanhere | 15 | 0 | 15 | sacred, stealthy |
+| 463 | Fay Boar | 18 | 4 | 18 | ordinary body |
+
+
+## Early Age Vanheim mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 263 | Vanherse | A1 G1 H1 | 75 |
+| 264 | Vanjarl | A2 G1 B1 H2 | 100 |
+| 948 | Vanadrott | A2 G2 B1 H2; random: 100% ×1 mask 54528 link 1; 10% ×1 mask 54528 link 1 | 150 |
+| 323 | Dwarven Smith | E2; random: 100% ×1 mask 21888 link 1; 10% ×1 mask 21888 link 1 | 10 |
+
+
+The highest fixed recruitable paths resolved in these rows are Air 2, Earth 2, Glamour 2, Blood 1, Holy 2. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Vanheim capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 114 | Vanhalla | A2, G1 | Vanadrott, Vanhere |
+| 115 | The Halls of Andvare | E3 | Dwarven Smith, Fay Boar |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Vanheim national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 491 | Summon Dwarf of the Four Directions | Conjuration 8 | A4 E3 | 62 |
+| 492 | Summon Valkyries | Conjuration 6 | A3 D1 | 1 |
+| 493 | Awaken Draugar | Conjuration 4 | D2 | 12 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Vanheim national item boundary
+
+| ID | Item | Construction | Paths | Link |
+| ---: | --- | ---: | --- | --- |
+| 29 | Dwarven Hammer | 3 | E3 | rebate |
+| 236 | Lightweight Scale Mail | 3 | A1 | rebate |
+| 262 | Weightless Scale Mail | 7 | A1 | rebate |
+| 280 | Pebble Skin Suit | 9 | B4 E1 | rebate |
+| 361 | Cauldron of the Elven Halls | 5 | G3 | rebate |
+| 435 | Draupnir | 9 | E5 | rebate |
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Vanheim hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 590 | Vanadrott | A3 D2 G2 B2 H2 | assignment only; timing unresolved |
+| 1511 | Vanadis | F2 A2 G2 H1 | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Vanheim army identities
+
+- Sacred roster: Vanhere.
+- Flying roster: no flying troop identified in the reconciled recruit rows.
+- Aquatic or amphibious roster: no aquatic or amphibious troop identified in the reconciled recruit rows.
+- Core identity: glamour-protected Vanir, sacred cavalry, sailing, blood priests, and Air–Earth dwarven smiths.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Vanheim opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Vanheim fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Vanheim, the most likely planning failure is elite scarcity, glamour counters, blood-hunting costs, sailing boundaries, and ordinary frontage. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Vanheim research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Vanheim magic-access ladder
+
+The fixed-path ceiling is Air 2, Earth 2, Glamour 2, Blood 1, Holy 2. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Vanheim battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Vanheim Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Vanheim matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Vanheim monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Vanheim unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Vanheim source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LXXVIII: Early Age Helheim, Dusk and Death
+
+## Early Age Helheim one-page command brief
+
+Early Age Helheim converts Valkyries, Helhirding cavalry, stealth and glamour, backed by Death–Air mages into expansion, research, and strategic pressure. The pinned roster resolves 7 commander identities and 7 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 4 active nation-restricted spell records. Its chief planning risks are small elite armies, glamour counters, fragile support troops, expensive recruitment, and raiding without losing strategic concentration.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Helheim evidence and ruleset
+
+This dossier covers unmodded Early Age Helheim on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 31, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Helheim object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Helheim conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Helheim recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 4 | 5 | Direct pinned membership rows |
+| Regional or coastal | 0 | 0 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 3 | 2 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Helheim commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 1512 | Van Scout | none | 0 |
+| 1505 | Vanherse | A1 G1 H1 | 75 |
+| 1506 | Vanjarl | A2 D1 G1 H2 | 100 |
+| 1502 | Helkarl | D1 G1 H1 | 100 |
+| 1507 | Dis | A1 D1 G1 H1 | 100 |
+| 847 | Hangadrott | D3 G2 H2; random: 100% ×1 mask 21760 link 1; 10% ×1 mask 21760 link 1 | 150 |
+| 1010 | Svartalf | E2 D2; random: 100% ×1 mask 21888 link 1 | 10 |
+
+
+## Early Age Helheim troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 1679 | Serf Warrior | 10 | 0 | 8 | ordinary body |
+| 1508 | Huskarl | 13 | 0 | 11 | stealthy |
+| 1509 | Huskarl | 13 | 0 | 11 | stealthy |
+| 1510 | Hirdman | 13 | 0 | 12 | stealthy |
+| 1504 | Mounted Hirdman | 13 | 0 | 12 | stealthy |
+| 855 | Valkyrie | 13 | 0 | 12 | sacred, flying, stealthy |
+| 1503 | Helhirding | 14 | 0 | 13 | sacred, stealthy |
+
+
+## Early Age Helheim mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 1505 | Vanherse | A1 G1 H1 | 75 |
+| 1506 | Vanjarl | A2 D1 G1 H2 | 100 |
+| 1502 | Helkarl | D1 G1 H1 | 100 |
+| 1507 | Dis | A1 D1 G1 H1 | 100 |
+| 847 | Hangadrott | D3 G2 H2; random: 100% ×1 mask 21760 link 1; 10% ×1 mask 21760 link 1 | 150 |
+| 1010 | Svartalf | E2 D2; random: 100% ×1 mask 21888 link 1 | 10 |
+
+
+The highest fixed recruitable paths resolved in these rows are Air 2, Earth 2, Death 3, Glamour 2, Holy 2. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Helheim capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 59 | Helhalla | G1 | Dis, Hangadrott, Valkyrie, Helhirding |
+| 113 | Gnipahålan | E1, D4 | Svartalf |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Helheim national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 491 | Summon Dwarf of the Four Directions | Conjuration 8 | A4 E3 | 62 |
+| 492 | Summon Valkyries | Conjuration 6 | A3 D1 | 1 |
+| 493 | Awaken Draugar | Conjuration 4 | D2 | 12 |
+| 496 | Brood of Garm | Conjuration 4 | N2 | 10 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Helheim national item boundary
+
+No nation restriction or rebate link appears in the pinned item rows. This does not establish live forge pricing or exclude undocumented behaviour.
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Helheim hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 2473 | Hangadrottning | A1 D4 G2 H2 | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Helheim army identities
+
+- Sacred roster: Valkyrie, Helhirding.
+- Flying roster: Valkyrie.
+- Aquatic or amphibious roster: no aquatic or amphibious troop identified in the reconciled recruit rows.
+- Core identity: Valkyries, Helhirding cavalry, stealth and glamour, backed by Death–Air mages.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Helheim opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Helheim fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Helheim, the most likely planning failure is small elite armies, glamour counters, fragile support troops, expensive recruitment, and raiding without losing strategic concentration. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Helheim research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Helheim magic-access ladder
+
+The fixed-path ceiling is Air 2, Earth 2, Death 3, Glamour 2, Holy 2. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Helheim battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Helheim Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Helheim matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Helheim monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Helheim unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Helheim source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LXXIX: Early Age Rus, Sons of Heaven
+
+## Early Age Rus one-page command brief
+
+Early Age Rus converts human hunters and berserkers, Chud elites, sacred bear skinshifters, and Air–Nature–Fire magic into expansion, research, and strategic pressure. The pinned roster resolves 8 commander identities and 7 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 16 active nation-restricted spell records. Its chief planning risks are mixed troop quality, transformation behaviour, forest recruitment, limited armour, and distributing expensive mages.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Rus evidence and ruleset
+
+This dossier covers unmodded Early Age Rus on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 32, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Rus object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Rus conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Rus recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 5 | 5 | Direct pinned membership rows |
+| Regional or coastal | 2 | 1 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 3 | 2 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Rus commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 2984 | Scout | none | 0 |
+| 2985 | Rusian Chieftain | none | 75 |
+| 2986 | Rusian Priest | H1 | 10 |
+| 2987 | Rusian Wizard | F1 N1; random: 100% ×1 mask 11520 link 1 | 10 |
+| 3008 | Rusian Chieftain | none | 50 |
+| 3000 | Son of Heaven | F1 A1 N1 H2; random: 100% ×1 mask 10624 link 1 | 150 |
+| 3001 | Daughter of the Sun | F2 N1 H1; random: 100% ×1 mask 10624 link 1; 10% ×1 mask 10624 link 1 | 100 |
+| 2999 | Perkunu | A3 S1 N2 H1; random: 10% ×1 mask 10496 link 1 | 50 |
+
+
+## Early Age Rus troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 2989 | Rusian Hunter | 10 | 0 | 11 | stealthy |
+| 2990 | Rusian Warrior | 10 | 0 | 10 | ordinary body |
+| 2991 | Rusian Warrior | 10 | 0 | 10 | ordinary body |
+| 2993 | Chud Warrior | 17 | 2 | 13 | ordinary body |
+| 2994 | Chud Berserker | 17 | 2 | 13 | ordinary body |
+| 2992 | Chud Hunter | 17 | 2 | 13 | stealthy |
+| 2997 | Chud Skinshifter | 19 | 2 | 14 | sacred |
+
+
+## Early Age Rus mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 2986 | Rusian Priest | H1 | 10 |
+| 2987 | Rusian Wizard | F1 N1; random: 100% ×1 mask 11520 link 1 | 10 |
+| 3000 | Son of Heaven | F1 A1 N1 H2; random: 100% ×1 mask 10624 link 1 | 150 |
+| 3001 | Daughter of the Sun | F2 N1 H1; random: 100% ×1 mask 10624 link 1; 10% ×1 mask 10624 link 1 | 100 |
+| 2999 | Perkunu | A3 S1 N2 H1; random: 10% ×1 mask 10496 link 1 | 50 |
+
+
+The highest fixed recruitable paths resolved in these rows are Fire 2, Air 3, Astral 1, Nature 2, Holy 2. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Rus capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 191 | Hall of the Dawn | F1, A1 | Son of Heaven, Daughter of the Sun |
+| 189 | Pine of Skulls | S1, N1 | Chud Hunter, Chud Skinshifter |
+| 190 | Oak of Storms | A1, N1 | Perkunu |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Rus national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 321 | Summon Bears | Conjuration 3 | N1 H1 | 8 |
+| 322 | Summon Simargl | Conjuration 2 | A1 | 1 |
+| 323 | Summon Firebird | Conjuration 3 | F1 S1 | 2 |
+| 324 | Send Lady Midday | Conjuration 5 | A3 D1 | 5 |
+| 325 | Contact Sirin | Conjuration 3 | S2 | 8 |
+| 326 | Send Vodyanoy | Conjuration 4 | W2 | 20 |
+| 327 | Summon Rusalka | Conjuration 4 | W1 D1 | 16 |
+| 328 | Summon Likho | Conjuration 4 | D1 | 10 |
+| 329 | Contact Alkonost | Conjuration 4 | S2 | 15 |
+| 330 | Summon Zmey | Conjuration 5 | F2 | 5 |
+| 331 | Send Bukavac | Conjuration 5 | W4 | 5 |
+| 332 | Contact Gamayun | Conjuration 5 | S3 | 25 |
+| 333 | Contact Beregina | Conjuration 6 | W3 E1 | 35 |
+| 334 | Contact Mountain Vila | Conjuration 7 | N4 | 40 |
+| 335 | Contact Cloud Vila | Conjuration 7 | A4 | 40 |
+| 336 | Contact Leshiy | Conjuration 8 | N6 | 60 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Rus national item boundary
+
+No nation restriction or rebate link appears in the pinned item rows. This does not establish live forge pricing or exclude undocumented behaviour.
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Rus hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 1958 | Hag | A3 W1 D3 N2 | assignment only; timing unresolved |
+| 3234 | Son of the Bear | S2 N3 H2 | assignment only; timing unresolved |
+| 3241 | Daughter of the Thunder | A4 E1 N2 H1 | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Rus army identities
+
+- Sacred roster: Chud Skinshifter.
+- Flying roster: no flying troop identified in the reconciled recruit rows.
+- Aquatic or amphibious roster: no aquatic or amphibious troop identified in the reconciled recruit rows.
+- Core identity: human hunters and berserkers, Chud elites, sacred bear skinshifters, and Air–Nature–Fire magic.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Rus opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Rus fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Rus, the most likely planning failure is mixed troop quality, transformation behaviour, forest recruitment, limited armour, and distributing expensive mages. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Rus research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Rus magic-access ladder
+
+The fixed-path ceiling is Fire 2, Air 3, Astral 1, Nature 2, Holy 2. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Rus battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Rus Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Rus matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Rus monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Rus unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Rus source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LXXX: Early Age Niefelheim, Sons of Winter
+
+## Early Age Niefelheim one-page command brief
+
+Early Age Niefelheim converts frost giants, Jotun infantry, skinshifters, and Water–Death–Blood magic under a cold dominion into expansion, research, and strategic pressure. The pinned roster resolves 7 commander identities and 8 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 6 active nation-restricted spell records. Its chief planning risks are extreme gold costs, low model count, temperature, blood hunting, and replacing giants after attritional battles.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Niefelheim evidence and ruleset
+
+This dossier covers unmodded Early Age Niefelheim on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 33, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Niefelheim object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Niefelheim conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Niefelheim recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 6 | 8 | Direct pinned membership rows |
+| Regional or coastal | 0 | 0 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 1 | 1 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Niefelheim commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 786 | Jotun Scout | none | 0 |
+| 1301 | Jotun Herse | none | 75 |
+| 1299 | Jotun Jarl | H1 | 100 |
+| 1300 | Jotun Gode | H2 | 50 |
+| 553 | Jotun Skratti | W2 B2 H1; random: 100% ×1 mask 53760 link 1 | 10 |
+| 785 | Gygja | D1 G1 B1; random: 100% ×2 mask 63488 link 1; 10% ×1 mask 63488 link 1 | 50 |
+| 844 | Niefel Jarl | W3 D2 H2; random: 100% ×1 mask 20992 link 1; 10% ×1 mask 20992 link 1 | 150 |
+
+
+## Early Age Niefelheim troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 1302 | Jotun Bondi | 31 | 5 | 11 | ordinary body |
+| 1303 | Jotun Warrior | 33 | 5 | 12 | ordinary body |
+| 1304 | Jotun Warrior | 35 | 5 | 12 | ordinary body |
+| 1305 | Jotun Hurler | 33 | 5 | 12 | ordinary body |
+| 1306 | Jotun Huskarl | 35 | 5 | 13 | ordinary body |
+| 1307 | Godihuskarl | 36 | 5 | 13 | ordinary body |
+| 1308 | Jotun Hirdman | 38 | 5 | 13 | ordinary body |
+| 845 | Niefel Giant | 69 | 7 | 14 | sacred |
+
+
+## Early Age Niefelheim mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 1299 | Jotun Jarl | H1 | 100 |
+| 1300 | Jotun Gode | H2 | 50 |
+| 553 | Jotun Skratti | W2 B2 H1; random: 100% ×1 mask 53760 link 1 | 10 |
+| 785 | Gygja | D1 G1 B1; random: 100% ×2 mask 63488 link 1; 10% ×1 mask 63488 link 1 | 50 |
+| 844 | Niefel Jarl | W3 D2 H2; random: 100% ×1 mask 20992 link 1; 10% ×1 mask 20992 link 1 | 150 |
+
+
+The highest fixed recruitable paths resolved in these rows are Water 3, Death 2, Glamour 1, Blood 2, Holy 2. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Niefelheim capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 46 | Niefelheim | W4, D2 | Niefel Jarl, Niefel Giant |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Niefelheim national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 491 | Summon Dwarf of the Four Directions | Conjuration 8 | A4 E3 | 62 |
+| 494 | Seith Curse | Thaumaturgy 5 | D1 S1 | 3 |
+| 496 | Brood of Garm | Conjuration 4 | N2 | 10 |
+| 497 | Awaken Jotun Draugar | Conjuration 4 | D2 | 15 |
+| 498 | Summon Rimvaettir | Conjuration 5 | W2 | 5 |
+| 500 | Illwinter | Blood 6 | B5 W3 | 120 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Niefelheim national item boundary
+
+| ID | Item | Construction | Paths | Link |
+| ---: | --- | ---: | --- | --- |
+| 114 | The Sword of Aurgelmer | 9 | G6 | rebate |
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Niefelheim hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 1382 | Abductor | A3 W3 D3 H2 | assignment only; timing unresolved |
+| 586 | Great Hag | S3 D3 N2 G3 B3 | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Niefelheim army identities
+
+- Sacred roster: Niefel Giant.
+- Flying roster: no flying troop identified in the reconciled recruit rows.
+- Aquatic or amphibious roster: no aquatic or amphibious troop identified in the reconciled recruit rows.
+- Core identity: frost giants, Jotun infantry, skinshifters, and Water–Death–Blood magic under a cold dominion.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Niefelheim opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Niefelheim fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Niefelheim, the most likely planning failure is extreme gold costs, low model count, temperature, blood hunting, and replacing giants after attritional battles. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Niefelheim research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Niefelheim magic-access ladder
+
+The fixed-path ceiling is Water 3, Death 2, Glamour 1, Blood 2, Holy 2. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Niefelheim battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Niefelheim Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Niefelheim matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Niefelheim monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Niefelheim unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Niefelheim source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LXXXI: Early Age Muspelheim, Sons of Fire
+
+## Early Age Muspelheim one-page command brief
+
+Early Age Muspelheim converts fire giants, Jotun support, and broad Fire–Air–Death–Glamour–Blood magic in a hot dominion into expansion, research, and strategic pressure. The pinned roster resolves 5 commander identities and 3 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 5 active nation-restricted spell records. Its chief planning risks are extreme gold costs, temperature, scarce bodies, blood economy, and answering fire-resistant enemies.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Muspelheim evidence and ruleset
+
+This dossier covers unmodded Early Age Muspelheim on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 34, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Muspelheim object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Muspelheim conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Muspelheim recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 1 | 0 | Direct pinned membership rows |
+| Regional or coastal | 0 | 0 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 4 | 3 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Muspelheim commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 3972 | Muspeldottir | F1 A1 D1; random: 100% ×1 mask 6528 link 1 | 50 |
+| 3958 | Muspel Herse | H1 | 100 |
+| 3959 | Muspel Gode | F1 H2; random: 100% ×1 mask 4480 link 1 | 50 |
+| 3960 | Muspelgygja | F2 A1; random: 100% ×2 mask 22912 link 1; 10% ×1 mask 22912 link 1 | 50 |
+| 3961 | Muspel Jarl | F3 A1 D1 H2; random: 100% ×1 mask 4480 link 1; 10% ×1 mask 4480 link 1 | 150 |
+
+
+## Early Age Muspelheim troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 3969 | Muspel Huskarl | 34 | 5 | 13 | ordinary body |
+| 3970 | Muspel Hirdman | 36 | 5 | 13 | ordinary body |
+| 3971 | Muspel Giant | 63 | 7 | 14 | sacred |
+
+
+## Early Age Muspelheim mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 3972 | Muspeldottir | F1 A1 D1; random: 100% ×1 mask 6528 link 1 | 50 |
+| 3958 | Muspel Herse | H1 | 100 |
+| 3959 | Muspel Gode | F1 H2; random: 100% ×1 mask 4480 link 1 | 50 |
+| 3960 | Muspelgygja | F2 A1; random: 100% ×2 mask 22912 link 1; 10% ×1 mask 22912 link 1 | 50 |
+| 3961 | Muspel Jarl | F3 A1 D1 H2; random: 100% ×1 mask 4480 link 1; 10% ×1 mask 4480 link 1 | 150 |
+
+
+The highest fixed recruitable paths resolved in these rows are Fire 3, Air 1, Death 1, Holy 2. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Muspelheim capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 236 | Muspelheim | F1, A1 | Muspel Herse, Muspel Gode, Muspelgygja, Muspel Huskarl, Muspel Hirdman |
+| 237 | The Rift of Surtr | F2, D1 | Muspel Jarl, Muspel Giant |
+| 238 | The Meltwater Gorge | W1 | none in explicit recruit fields |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Muspelheim national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 491 | Summon Dwarf of the Four Directions | Conjuration 8 | A4 E3 | 62 |
+| 494 | Seith Curse | Thaumaturgy 5 | D1 S1 | 3 |
+| 496 | Brood of Garm | Conjuration 4 | N2 | 10 |
+| 497 | Awaken Jotun Draugar | Conjuration 4 | D2 | 15 |
+| 501 | Summon Glosos | Conjuration 3 | D2 | 10 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Muspelheim national item boundary
+
+No nation restriction or rebate link appears in the pinned item rows. This does not establish live forge pricing or exclude undocumented behaviour.
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Muspelheim hero boundary
+
+No fixed hero-slot identity was resolved from attributes 139–149. Hero arrival and timing remain unscheduled.
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Muspelheim army identities
+
+- Sacred roster: Muspel Giant.
+- Flying roster: no flying troop identified in the reconciled recruit rows.
+- Aquatic or amphibious roster: no aquatic or amphibious troop identified in the reconciled recruit rows.
+- Core identity: fire giants, Jotun support, and broad Fire–Air–Death–Glamour–Blood magic in a hot dominion.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Muspelheim opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Muspelheim fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Muspelheim, the most likely planning failure is extreme gold costs, temperature, scarce bodies, blood economy, and answering fire-resistant enemies. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Muspelheim research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Muspelheim magic-access ladder
+
+The fixed-path ceiling is Fire 3, Air 1, Death 1, Holy 2. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Muspelheim battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Muspelheim Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Muspelheim matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Muspelheim monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Muspelheim unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Muspelheim source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LXXXII: Early Age Pelagia, Pearl Kings
+
+## Early Age Pelagia one-page command brief
+
+Early Age Pelagia converts aquatic Triton clans, amphibious mermen, sacred Pearl Kings, and Water–Astral–Nature magic into expansion, research, and strategic pressure. The pinned roster resolves 12 commander identities and 13 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 0 active nation-restricted spell records. Its chief planning risks are deep-water geography, limited land projection, commander coverage, and separating aquatic from amphibious replacement.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Pelagia evidence and ruleset
+
+This dossier covers unmodded Early Age Pelagia on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 40, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Pelagia object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Pelagia conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Pelagia recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 7 | 9 | Direct pinned membership rows |
+| Regional or coastal | 4 | 3 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 2 | 1 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Pelagia commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 1050 | Merman Scout | none | 0 |
+| 1293 | Turtle Chief | none | 75 |
+| 2390 | Pelagian Captain | none | 100 |
+| 1696 | Merman Priest | H1 | 10 |
+| 1415 | Pelagian Mermage | W1; random: 100% ×1 mask 9984 link 1 | 10 |
+| 2395 | Pearl Clan Priest | H2 | 50 |
+| 2396 | Pearl Mage | W2 S1 N1; random: 100% ×1 mask 11008 link 1 | 10 |
+| 1294 | Turtle Chief | none | 75 |
+| 2811 | Pelagian Shore Commander | none | 75 |
+| 2813 | Pelagian Explorer | W1; random: 100% ×1 mask 11520 link 1 | 10 |
+| 2397 | Pearl King | W4 S1 N1 H3; random: 100% ×1 mask 10496 link 1; 10% ×1 mask 11008 link 1 | 150 |
+| 2805 | Ichtyid Pearl Mage | W1 S1 | 10 |
+
+
+## Early Age Pelagia troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 2388 | Merman Net Thrower | 10 | 1 | 10 | amphibious |
+| 1291 | Turtle Warrior | 10 | 1 | 11 | amphibious |
+| 2382 | Turtle Tribe Triton | 10 | 0 | 11 | aquatic |
+| 2383 | Shark Tribe Triton | 10 | 0 | 11 | aquatic |
+| 2384 | Pelagian Militia | 12 | 1 | 9 | aquatic |
+| 1056 | Pelagian Militia | 12 | 1 | 9 | aquatic |
+| 2385 | Pelagian Soldier | 15 | 1 | 11 | aquatic |
+| 2386 | Coral Clan Soldier | 16 | 1 | 12 | aquatic |
+| 2391 | Triton Rider | 15 | 1 | 13 | aquatic |
+| 1292 | Turtle Warrior | 10 | 1 | 11 | poor amphibian |
+| 2807 | Pelagian Shore Fighter | 10 | 1 | 10 | poor amphibian |
+| 2809 | Sideraspist | 10 | 1 | 11 | poor amphibian |
+| 2387 | Pearl Guard | 16 | 1 | 13 | sacred, aquatic |
+
+
+## Early Age Pelagia mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 1696 | Merman Priest | H1 | 10 |
+| 1415 | Pelagian Mermage | W1; random: 100% ×1 mask 9984 link 1 | 10 |
+| 2395 | Pearl Clan Priest | H2 | 50 |
+| 2396 | Pearl Mage | W2 S1 N1; random: 100% ×1 mask 11008 link 1 | 10 |
+| 2813 | Pelagian Explorer | W1; random: 100% ×1 mask 11520 link 1 | 10 |
+| 2397 | Pearl King | W4 S1 N1 H3; random: 100% ×1 mask 10496 link 1; 10% ×1 mask 11008 link 1 | 150 |
+| 2805 | Ichtyid Pearl Mage | W1 S1 | 10 |
+
+
+The highest fixed recruitable paths resolved in these rows are Water 4, Astral 1, Nature 1, Holy 3. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Pelagia capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 72 | Palace of Pearls | W4, N2 | Pearl King, Ichtyid Pearl Mage, Pearl Guard |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Pelagia national spell map
+
+No active nation-restricted spell row was found for this nation in the pinned snapshot. Absence here is a metadata boundary, not proof that no shared or special spell exists.
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Pelagia national item boundary
+
+| ID | Item | Construction | Paths | Link |
+| ---: | --- | ---: | --- | --- |
+| 18 | Coral Blade | 3 | W1 | rebate |
+| 329 | Clam of Pearls | 3 | W1 N1 | rebate |
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Pelagia hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 2806 | Wondrous | A3 W4 S3 N1 H3 | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Pelagia army identities
+
+- Sacred roster: Pearl Guard.
+- Flying roster: no flying troop identified in the reconciled recruit rows.
+- Aquatic or amphibious roster: Merman Net Thrower, Turtle Warrior, Turtle Tribe Triton, Shark Tribe Triton, Pelagian Militia, Pelagian Militia, Pelagian Soldier, Coral Clan Soldier, Triton Rider, Turtle Warrior, Pelagian Shore Fighter, Sideraspist, Pearl Guard.
+- Core identity: aquatic Triton clans, amphibious mermen, sacred Pearl Kings, and Water–Astral–Nature magic.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Pelagia opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Pelagia fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Pelagia, the most likely planning failure is deep-water geography, limited land projection, commander coverage, and separating aquatic from amphibious replacement. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Pelagia research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Pelagia magic-access ladder
+
+The fixed-path ceiling is Water 4, Astral 1, Nature 1, Holy 3. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Pelagia battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Pelagia Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Pelagia matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Pelagia monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Pelagia unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Pelagia source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LXXXIII: Early Age Oceania, Coming of the Capricorns
+
+## Early Age Oceania one-page command brief
+
+Early Age Oceania converts shapechanging Capricorns and aquatic forest forces able to work between sea and coast into expansion, research, and strategic pressure. The pinned roster resolves 8 commander identities and 6 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 1 active nation-restricted spell records. Its chief planning risks are shape resolution, coastal transition, turmoil, land reinforcement, and mixed habitat requirements.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Oceania evidence and ruleset
+
+This dossier covers unmodded Early Age Oceania on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 41, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Oceania object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Oceania conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Oceania recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 7 | 5 | Direct pinned membership rows |
+| Regional or coastal | 3 | 2 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 1 | 1 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Oceania commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 2370 | Ichtysatyr Scout | none | 0 |
+| 2372 | Ichtysatyr Commander | none | 50 |
+| 2374 | Ichtycentaur Commander | none | 100 |
+| 2392 | Aphroi Hierophant | H1; random: 100% ×1 mask 8704 link 1 | 50 |
+| 1054 | Siren | A1 W2 G2 | 0 |
+| 2861 | Haliade | W2 N2 H2; random: 100% ×1 mask 9984 link 1; 10% ×1 mask 9984 link 1 | 100 |
+| 1038 | Capricorn | W2 E1 N4; random: 100% ×1 mask 1792 link 1; 10% ×1 mask 9984 link 1 | 100 |
+| 2399 | Aphroi Lord | none | 100 |
+
+
+## Early Age Oceania troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 1041 | Ichtysatyr | 12 | 2 | 8 | amphibious, stealthy |
+| 2376 | Ichtysatyr | 12 | 2 | 9 | amphibious, stealthy |
+| 2378 | Ichtysatyr Warrior | 12 | 2 | 9 | amphibious |
+| 2380 | Ichtytaur | 30 | 4 | 12 | amphibious |
+| 1408 | Ichtycentaur | 20 | 4 | 12 | amphibious |
+| 2401 | Aphroi | 24 | 4 | 14 | sacred, amphibious |
+
+
+## Early Age Oceania mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 2392 | Aphroi Hierophant | H1; random: 100% ×1 mask 8704 link 1 | 50 |
+| 1054 | Siren | A1 W2 G2 | 0 |
+| 2861 | Haliade | W2 N2 H2; random: 100% ×1 mask 9984 link 1; 10% ×1 mask 9984 link 1 | 100 |
+| 1038 | Capricorn | W2 E1 N4; random: 100% ×1 mask 1792 link 1; 10% ×1 mask 9984 link 1 | 100 |
+
+
+The highest fixed recruitable paths resolved in these rows are Air 1, Water 2, Earth 1, Nature 4, Glamour 2, Holy 2. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Oceania capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 101 | The Grove of Aphros | W1, N4, G1 | Aphroi Lord, Aphroi |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Oceania national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 337 | Grow Fortress | Alteration 0 | N4 | 35 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Oceania national item boundary
+
+No nation restriction or rebate link appears in the pinned item rows. This does not establish live forge pricing or exclude undocumented behaviour.
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Oceania hero boundary
+
+No fixed hero-slot identity was resolved from attributes 139–149. Hero arrival and timing remain unscheduled.
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Oceania army identities
+
+- Sacred roster: Aphroi.
+- Flying roster: no flying troop identified in the reconciled recruit rows.
+- Aquatic or amphibious roster: Ichtysatyr, Ichtysatyr, Ichtysatyr Warrior, Ichtytaur, Ichtycentaur, Aphroi.
+- Core identity: shapechanging Capricorns and aquatic forest forces able to work between sea and coast.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Oceania opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Oceania fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Oceania, the most likely planning failure is shape resolution, coastal transition, turmoil, land reinforcement, and mixed habitat requirements. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Oceania research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Oceania magic-access ladder
+
+The fixed-path ceiling is Air 1, Water 2, Earth 1, Nature 4, Glamour 2, Holy 2. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Oceania battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Oceania Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Oceania matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Oceania monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Oceania unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Oceania source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LXXXIV: Early Age Therodos, Telkhine Spectre
+
+## Early Age Therodos one-page command brief
+
+Early Age Therodos converts spectral armies, Daktyloi smiths, island survivors, and a dominion that trades living population for ghosts into expansion, research, and strategic pressure. The pinned roster resolves 6 commander identities and 5 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 8 active nation-restricted spell records. Its chief planning risks are population collapse, fort placement, ghost generation, mundane infrastructure, and moving from islands into living territory.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Therodos evidence and ruleset
+
+This dossier covers unmodded Early Age Therodos on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 42, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Therodos object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Therodos conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Therodos recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 1 | 0 | Direct pinned membership rows |
+| Regional or coastal | 4 | 4 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 3 | 1 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Therodos commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 2833 | Melia | N1 H1; random: 100% ×1 mask 1792 link 1 | 100 |
+| 2830 | Therodian Scout | none | 0 |
+| 2831 | Therodian Commander | none | 75 |
+| 2835 | Kabeiros | E1; random: 100% ×1 mask 1920 link 1 | 10 |
+| 2834 | Hekateride | W2 N3 H2; random: 100% ×1 mask 9984 link 1; 10% ×1 mask 9984 link 1 | 50 |
+| 2836 | Daktyl | A1 W1 E2; random: 100% ×1 mask 6016 link 1; 10% ×1 mask 6016 link 1 | 10 |
+
+
+## Early Age Therodos troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 2827 | Therodian Archer | 10 | 0 | 8 | ordinary body |
+| 2828 | Therodian Peltast | 10 | 0 | 10 | ordinary body |
+| 2829 | Therodian Hoplite | 10 | 0 | 10 | ordinary body |
+| 2837 | Korybant | 12 | 0 | 12 | sacred |
+| 2839 | Kourete | 15 | 0 | 13 | sacred, magic being, poor amphibian |
+
+
+## Early Age Therodos mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 2833 | Melia | N1 H1; random: 100% ×1 mask 1792 link 1 | 100 |
+| 2835 | Kabeiros | E1; random: 100% ×1 mask 1920 link 1 | 10 |
+| 2834 | Hekateride | W2 N3 H2; random: 100% ×1 mask 9984 link 1; 10% ×1 mask 9984 link 1 | 50 |
+| 2836 | Daktyl | A1 W1 E2; random: 100% ×1 mask 6016 link 1; 10% ×1 mask 6016 link 1 | 10 |
+
+
+The highest fixed recruitable paths resolved in these rows are Air 1, Water 2, Earth 2, Nature 3, Holy 2. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Therodos capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 182 | Telkhinis | A1, W1, E3, D1 | Melia, Hekateride, Daktyl, Kourete |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Therodos national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 254 | Summon Hound of Twilight | Conjuration 5 | E2 D1 | 3 |
+| 255 | Sow Dragon Teeth | Enchantment 6 | E2 | 1 |
+| 256 | Bind Keres | Conjuration 6 | D2 | 12 |
+| 270 | Forge Brass Bull | Construction 6 | F3 E3 | 25 |
+| 364 | Call Ephor | Conjuration 0 | D1 | 7 |
+| 365 | Call Spectral Philosopher | Conjuration 0 | D1 | 11 |
+| 366 | Summon Telkhine | Conjuration 8 | W5 A2 | 69 |
+| 369 | Procession of the Underworld | Conjuration 5 | D3 | 13 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Therodos national item boundary
+
+No nation restriction or rebate link appears in the pinned item rows. This does not establish live forge pricing or exclude undocumented behaviour.
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Therodos hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 2871 | Kabeiride | W2 N3 H1 | assignment only; timing unresolved |
+| 2878 | Telkhine | A4 W3 E3 N3 H3 | assignment only; timing unresolved |
+| 2880 | Telkhine | A3 W3 E3 D2 N2 H2 | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Therodos army identities
+
+- Sacred roster: Korybant, Kourete.
+- Flying roster: no flying troop identified in the reconciled recruit rows.
+- Aquatic or amphibious roster: Kourete.
+- Core identity: spectral armies, Daktyloi smiths, island survivors, and a dominion that trades living population for ghosts.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Therodos opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Therodos fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Therodos, the most likely planning failure is population collapse, fort placement, ghost generation, mundane infrastructure, and moving from islands into living territory. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Therodos research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Therodos magic-access ladder
+
+The fixed-path ceiling is Air 1, Water 2, Earth 2, Nature 3, Holy 2. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Therodos battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Therodos Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Therodos matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Therodos monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Therodos unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Therodos source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LXXXV: Early Age Atlantis, Emergence of the Deep Ones
+
+## Early Age Atlantis one-page command brief
+
+Early Age Atlantis converts long-lived amphibious Deep Ones, Basalt Kings, heavy basalt weapons, and Earth–Water–Fire magic into expansion, research, and strategic pressure. The pinned roster resolves 8 commander identities and 10 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 1 active nation-restricted spell records. Its chief planning risks are resource-heavy troops, slow movement, cold-water preferences, land transition, and expensive commanders.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age Atlantis evidence and ruleset
+
+This dossier covers unmodded Early Age Atlantis on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 43, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any Atlantis object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age Atlantis conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age Atlantis recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 6 | 9 | Direct pinned membership rows |
+| Regional or coastal | 0 | 0 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 2 | 1 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age Atlantis commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 1680 | Scout | none | 0 |
+| 1694 | Coral Priest | H1 | 10 |
+| 1700 | Shambler Chief | none | 75 |
+| 1701 | Coral Commander | none | 100 |
+| 1693 | Mother of the Deep | H2 | 50 |
+| 1692 | Mage of the Deep | W2; random: 100% ×1 mask 3712 link 1; 100% ×1 mask 1664 link 1 | 10 |
+| 1695 | Basalt Queen | H3 | 200 |
+| 1702 | Basalt King | F1 W2 E3; random: 100% ×1 mask 1664 link 1; 10% ×1 mask 1664 link 1 | 10 |
+
+
+## Early Age Atlantis troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 1682 | Reef Dweller | 12 | 2 | 10 | amphibious |
+| 1681 | Atlantian Spearman | 12 | 3 | 10 | amphibious |
+| 1683 | Shambler | 22 | 7 | 11 | amphibious |
+| 1684 | War Shambler | 22 | 7 | 13 | amphibious |
+| 1685 | Coral Guard | 24 | 7 | 14 | amphibious |
+| 1686 | Deep One | 14 | 4 | 12 | amphibious |
+| 1687 | Deep One Spearman | 14 | 4 | 12 | amphibious |
+| 1688 | Shambler of the Deep | 26 | 9 | 13 | amphibious |
+| 1689 | Warrior of the Deep | 27 | 9 | 13 | amphibious |
+| 1690 | Living Pillar | 31 | 9 | 15 | sacred, amphibious |
+
+
+## Early Age Atlantis mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 1694 | Coral Priest | H1 | 10 |
+| 1693 | Mother of the Deep | H2 | 50 |
+| 1692 | Mage of the Deep | W2; random: 100% ×1 mask 3712 link 1; 100% ×1 mask 1664 link 1 | 10 |
+| 1695 | Basalt Queen | H3 | 200 |
+| 1702 | Basalt King | F1 W2 E3; random: 100% ×1 mask 1664 link 1; 10% ×1 mask 1664 link 1 | 10 |
+
+
+The highest fixed recruitable paths resolved in these rows are Fire 1, Water 2, Earth 3, Holy 3. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age Atlantis capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 128 | The Basalt City | F1, E3 | Basalt Queen, Living Pillar |
+| 129 | The Dark Crystal | W2 | Basalt King |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age Atlantis national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 370 | Summon Monster Fish | Conjuration 6 | W3 | 6 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age Atlantis national item boundary
+
+| ID | Item | Construction | Paths | Link |
+| ---: | --- | ---: | --- | --- |
+| 443 | Orb of Atlantis | 9 | W4 E1 | rebate |
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age Atlantis hero boundary
+
+No fixed hero-slot identity was resolved from attributes 139–149. Hero arrival and timing remain unscheduled.
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age Atlantis army identities
+
+- Sacred roster: Living Pillar.
+- Flying roster: no flying troop identified in the reconciled recruit rows.
+- Aquatic or amphibious roster: Reef Dweller, Atlantian Spearman, Shambler, War Shambler, Coral Guard, Deep One, Deep One Spearman, Shambler of the Deep, Warrior of the Deep, Living Pillar.
+- Core identity: long-lived amphibious Deep Ones, Basalt Kings, heavy basalt weapons, and Earth–Water–Fire magic.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age Atlantis opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age Atlantis fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For Atlantis, the most likely planning failure is resource-heavy troops, slow movement, cold-water preferences, land transition, and expensive commanders. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age Atlantis research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age Atlantis magic-access ladder
+
+The fixed-path ceiling is Fire 1, Water 2, Earth 3, Holy 3. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age Atlantis battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age Atlantis Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age Atlantis matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age Atlantis monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age Atlantis unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age Atlantis source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+# Part LXXXVI: Early Age R'lyeh, Time of Aboleths
+
+## Early Age R'lyeh one-page command brief
+
+Early Age R'lyeh converts Aboleth mind lords, enslaved aquatic peoples, mental domination, and powerful Astral–Water magic into expansion, research, and strategic pressure. The pinned roster resolves 10 commander identities and 12 troop identities across ordinary, regional, coastal, and site-linked recruitment, plus 2 active nation-restricted spell records. Its chief planning risks are magic leadership, slave morale, mindless and enslaved troop control, land access, and friendly-fire risk.
+
+The safe operating plan is to keep recruitment geography visible, buy commanders for named jobs, label every random mage, connect research to casters already owned, and preserve a replacement route before committing elite or capital-limited troops. Exact expansion parties, scripts, formations, spell targets, freespawn composition, transformation results, and combat outcomes remain open unless a source below states them directly.
+
+## Early Age R'lyeh evidence and ruleset
+
+This dossier covers unmodded Early Age R'lyeh on the Dominions 6.37 executable baseline. Player-facing rules are governed by the revision-2 official manual and official patches through 9 September 2026. Nation ID 44, roster memberships, unit fields, random masks, sites, spell restrictions, item links, and hero assignments are cross-checked against the pinned Inspector 6.35 commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`.
+
+The structured snapshot is not relabelled as live 6.37 data. The 6.37 patch's unspecified statistic corrections are not assigned to any R'lyeh object without a named official record. No runtime test, replay, save, or new test asset was used.
+
+## Early Age R'lyeh conversion chain
+
+```text
+verified recruitment and national assets
+-> provinces, forts, laboratories, temples, scouts, and replacement routes
+-> labelled fixed and random path access
+-> research, searching, forging, rituals, and battlefield support
+-> surviving armies, sieges, claims, raids, and strategic depth
+```
+
+## Early Age R'lyeh recruitment geography
+
+| Recruitment layer | Commanders | Troops | Evidence boundary |
+| --- | ---: | ---: | --- |
+| Ordinary forts | 6 | 10 | Direct pinned membership rows |
+| Regional or coastal | 2 | 1 | Non-fort and coast membership rows; exact terrain availability remains source-dependent |
+| Site-linked | 2 | 1 | Explicit site recruit fields; capital grouping follows the nation-site association |
+
+Empty ordinary rows do not prove that a nation lacks forces. Freespawn, reanimation, events, summoning, dominion effects, and special recruitment remain separate mechanisms.
+
+## Early Age R'lyeh commander roster
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 432 | Scout | none | 0 |
+| 1523 | Slave Prince | none | 100 |
+| 1527 | Slave Priest | H1 | 10 |
+| 1518 | Slave Mage | W2 S1; random: 100% ×1 mask 11776 link 1 | 10 |
+| 2886 | Grandmother | S1 H3 | 10 |
+| 1520 | Aboleth | W2 S2; random: 100% ×1 mask 19968 link 1 | 10 |
+| 1401 | Polypal Mother | H2 | 10 |
+| 2885 | Androdai | S1 H1; random: 100% ×1 mask 19968 link 1 | 10 |
+| 1521 | Mind Lord | W3 S3; random: 100% ×1 mask 19968 link 1; 10% ×1 mask 19968 link 1 | 50 |
+| 2883 | Abodai | W1 S2 D1 H1; random: 100% ×1 mask 7680 link 1 | 10 |
+
+
+## Early Age R'lyeh troop roster
+
+| ID | Unit | HP | Protection | Morale | Traits |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 1517 | Slave Trooper | 15 | 1 | 7 | aquatic |
+| 1526 | Slave Guardian | 15 | 1 | 7 | aquatic |
+| 1515 | Slave Trooper | 10 | 1 | 7 | amphibious |
+| 1524 | Slave Guardian | 10 | 1 | 7 | amphibious |
+| 335 | Slave Trooper | 12 | 2 | 7 | amphibious |
+| 1619 | Slave Guardian | 12 | 2 | 7 | amphibious |
+| 336 | Slave Guardian | 12 | 2 | 7 | amphibious |
+| 337 | Lobo Guard | 13 | 2 | 50 | magic being, amphibious |
+| 425 | Shambler Thrall | 24 | 7 | 50 | magic being, amphibious |
+| 1403 | Giboleth | 21 | 8 | 11 | magic being, aquatic |
+| 2884 | Androleth | 14 | 2 | 14 | magic being, amphibious |
+| 1522 | Gibodai | 20 | 6 | 11 | sacred, magic being, aquatic |
+
+
+## Early Age R'lyeh mage and priest portfolio
+
+| ID | Commander | Fixed and random magic | Leadership |
+| ---: | --- | --- | ---: |
+| 1527 | Slave Priest | H1 | 10 |
+| 1518 | Slave Mage | W2 S1; random: 100% ×1 mask 11776 link 1 | 10 |
+| 2886 | Grandmother | S1 H3 | 10 |
+| 1520 | Aboleth | W2 S2; random: 100% ×1 mask 19968 link 1 | 10 |
+| 1401 | Polypal Mother | H2 | 10 |
+| 2885 | Androdai | S1 H1; random: 100% ×1 mask 19968 link 1 | 10 |
+| 1521 | Mind Lord | W3 S3; random: 100% ×1 mask 19968 link 1; 10% ×1 mask 19968 link 1 | 50 |
+| 2883 | Abodai | W1 S2 D1 H1; random: 100% ×1 mask 7680 link 1 | 10 |
+
+
+The highest fixed recruitable paths resolved in these rows are Water 3, Astral 3, Death 1, Holy 3. Random masks are printed as raw pinned fields because mask interpretation, linked-roll behaviour, and live display should not be guessed. A rare result is an opportunity after recruitment, never a guaranteed research or ritual schedule.
+
+## Early Age R'lyeh capital and national sites
+
+| ID | Site | Monthly fields | Recruits recorded |
+| ---: | --- | --- | --- |
+| 116 | The Gorge of Ancient Cities | W2, E1, S3 | Mind Lord, Abodai, Gibodai |
+
+
+Site rows prove only their explicit fields. Hidden effects, event behaviour, recruitment timing, ownership transitions, and live interface grouping remain unresolved.
+
+## Early Age R'lyeh national spell map
+
+| ID | Spell | School | Requirement | Cost field |
+| ---: | --- | --- | --- | ---: |
+| 628 | Mind Vessel | Thaumaturgy 3 | S3 | 15 |
+| 629 | Enslave Sea Trolls | Thaumaturgy 5 | S3 W2 | 10 |
+
+
+Research does not create the caster, gems, slaves, corpses, laboratory, target, or free mage-turn. Every national spell remains a gated project: research, access, treasury, legal target, and opportunity cost must all be present.
+
+## Early Age R'lyeh national item boundary
+
+| ID | Item | Construction | Paths | Link |
+| ---: | --- | ---: | --- | --- |
+| 134 | Anemone Mace | 3 | W1 | restricted |
+
+
+Restriction and rebate fields establish metadata links, not displayed prices, rounding, stacking, or live forge availability. Those remain open unless the official manual supplies the exact result.
+
+## Early Age R'lyeh hero boundary
+
+| ID | Hero record | Magic | Boundary |
+| ---: | --- | --- | --- |
+| 1691 | Mind Lord | W4 S4 | assignment only; timing unresolved |
+
+
+Heroes are contingent capacity. None belongs in an opening, research, or path plan that must work every game.
+
+## Early Age R'lyeh army identities
+
+- Sacred roster: Gibodai.
+- Flying roster: no flying troop identified in the reconciled recruit rows.
+- Aquatic or amphibious roster: Slave Trooper, Slave Guardian, Slave Trooper, Slave Guardian, Slave Trooper, Slave Guardian, Slave Guardian, Lobo Guard, Shambler Thrall, Giboleth, Androleth, Gibodai.
+- Core identity: Aboleth mind lords, enslaved aquatic peoples, mental domination, and powerful Astral–Water magic.
+
+These labels help assemble testable packages; they do not establish the best formation, script, bless, target, or casualty rate.
+
+## Early Age R'lyeh opening and expansion controls
+
+1. Identify whether gold, resources, recruitment points, commander points, corpses, population, slaves, or a special national mechanism limits the first queue.
+2. Separate ordinary, regional, coastal, and site-linked recruitment before planning reinforcement.
+3. Use mundane leadership where it preserves a valuable mage-turn.
+4. Label random mages immediately and keep rare paths out of guaranteed schedules.
+5. Add scouts and retreat routes before extending beyond reliable information.
+6. Record expansion results rather than publishing an untested party size.
+
+## Early Age R'lyeh fort and recruitment doctrine
+
+Additional forts are valuable when they reproduce the commander or troop required by the next job. Regional and coastal recruitment must be evaluated where it exists rather than averaged into a fictional universal roster. Capital or site-linked units need a replacement ledger because their opportunity cost competes with every other capital-limited purchase.
+
+For R'lyeh, the most likely planning failure is magic leadership, slave morale, mindless and enslaved troop control, land access, and friendly-fire risk. The remedy is a visible queue showing location, bottleneck, expected role, and replacement time.
+
+## Early Age R'lyeh research response tree
+
+- **Fixed-path branch:** begin with spells the repeatable mage roster can cast without a random, booster, hero, or Pretender.
+- **Random-path branch:** open only after the qualifying mage is recruited and labelled.
+- **National-spell branch:** verify the exact research level, caster, cost, target, and free mage-turn from the spell table.
+- **Construction branch:** compare each forge turn against research, searching, ritual work, and army support; item metadata alone does not prove a discount.
+- **Summon or reanimation branch:** account for gems, corpses, slaves, laboratory access, leadership, and unresolved arrival behaviour.
+
+## Early Age R'lyeh magic-access ladder
+
+The fixed-path ceiling is Water 3, Astral 3, Death 1, Holy 3. Access above that line needs a named bridge: booster, empowerment, communion or chorus where legal, summoned mage, hero, Pretender, or another directly verified source. Two partial paths on different commanders cannot be combined to cast one spell.
+
+## Early Age R'lyeh battlefield packages
+
+### Line and support package
+
+Use the most replaceable suitable troops as frontage, place commanders according to actual leadership, and protect mages whose turns are needed for research or rituals. Armour, morale, fatigue, size, formation width, and the opponent decide whether the line survives.
+
+### Elite or sacred package
+
+Use sacred or elite troops only when their recruitment location, bless, priest coverage, and replacement rate justify the commitment. Capital scarcity is a strategic cost even when the unit performs well.
+
+### Mobility or habitat package
+
+Flying, stealthy, sailing, aquatic, amphibious, cave, forest, or wasteland tools must be checked against legal movement, supply, retreat, and reinforcement. A trait is not permission to ignore geography.
+
+### Mage package
+
+Script from paths actually present on the recruited commanders. Keep gem use, fatigue, friendly fire, magic resistance, battlefield size, and enemy resistances visible; no generic script is treated as verified performance.
+
+## Early Age R'lyeh Pretender families
+
+| Family | What it can solve | What it cannot conceal |
+| --- | --- | --- |
+| Missing-path bridge | Opens a named booster, ritual, or battlefield threshold | Research, gems, laboratories, and mage-turns remain required |
+| Economy and infrastructure | Funds forts, laboratories, temples, commanders, and replacements | Gold does not create local resources, gems, corpses, slaves, or commander points |
+| Sacred support | Improves a verified sacred package | Recruitment limits, priest coverage, and counters remain |
+| Awake expansion body | Reduces pressure on the starting roster | Performance depends on settings, map, chassis, scales, script, and opponents |
+| Resistance package | Covers a documented roster weakness | One resistance is not universal defence |
+
+## Early Age R'lyeh matchup and failure matrix
+
+| Enemy problem | First answer to examine | Avoid |
+| --- | --- | --- |
+| Massed light units | Replaceable width, area effects, morale pressure, and reserves | Spending every scarce elite turn on basic frontage |
+| Heavy armour | Higher damage, armour-piercing or negating magic, fatigue, and buffs | Assuming ordinary weapons solve protection unaided |
+| Accurate missiles | Screens, protection, spacing, speed, and disruption | Exposing commanders or fragile elites without guards |
+| Elemental resistance | Shift damage type and use physical or fatigue pressure | Building the complete research plan around one element |
+| Fast raiders or flyers | Scouts, local leadership, layered defence, and mobile reserves | Concentrating every commander in one army |
+| Large targets | Concentrated attacks, debuffs, control, and size-aware counters | Treating trampling or low-damage swarms as universal |
+| Underwater or land transition | Verified amphibious access, coastal staging, summons, or allies | Assuming a habitat transition works because a related unit can cross |
+
+## Early Age R'lyeh monthly audit
+
+- Which recruitment layer supplies each current army and mage role?
+- What is the active bottleneck at every fort?
+- Are random mages labelled and excluded from guaranteed schedules until present?
+- Does each research target have a legal caster and treasury?
+- Are capital, coastal, regional, freespawn, and ordinary replacements tracked separately?
+- Are scouts, laboratories, temples, leadership, supply, and retreat routes keeping pace?
+- Are heroes excluded from plans that must work every game?
+- Have uncertain mechanics remained marked as uncertain?
+
+## Early Age R'lyeh unresolved evidence boundary
+
+The dossier does not claim exact expansion counts, formation performance, script outcomes, random-path display, freespawn or reanimation composition, special-dominion timing, transformation or mount resolution, summon arrival state, item-price stacking, hero timing, stealth detection, sailing routes, underwater transition, event outcomes, or battlefield casualty ranges. Nation-specific mechanics implied by names or summaries remain qualitative unless an explicit source field settles them. R-047, R-058, and every comparable engine-dependent investigation remain parked.
+
+## Early Age R'lyeh source note
+
+- *Dominions 6 Manual*, revision 2: nation summary, visible roster, recruitment markings, national rules, and spell descriptions.
+- Official Dominions patch history through 6.37: current executable chronology; generic 6.37 statistic fixes are not assigned to unnamed objects.
+- Dominions 6 Data Inspector commit `cfac4311bc0b58053b8dead7bffbc036ba9bd5dc`: nation ID, membership rows, unit fields, random masks, sites, spell restrictions, item links, and hero assignments.
+- Strategy sections are bounded doctrine derived from verified capacity. They are not runtime test results.
+
+
+<!-- GENERATED EARLY AGE DOSSIERS END -->
+
 ## Dossier source register
 
 ### Official

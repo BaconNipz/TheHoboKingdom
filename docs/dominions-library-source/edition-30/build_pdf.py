@@ -41,7 +41,7 @@ from navigation import (
 
 
 ROOT = Path(__file__).resolve().parent
-OUTPUT = ROOT.parent / "output" / "pdf" / "dominions-6-knowledge-library-progress-edition-28.pdf"
+OUTPUT = ROOT.parent / "output" / "pdf" / "dominions-6-knowledge-library-edition-31.pdf"
 SOURCES = [ROOT / spec.filename for spec in SOURCE_SPECS]
 HEADING_CATALOG = heading_catalog(ROOT)
 BOOK_TARGETS, PART_TARGETS, SECTION_TARGETS = cross_reference_targets(HEADING_CATALOG)
@@ -386,7 +386,7 @@ def draw_cover(canvas, doc):
     canvas.setFillColor(colors.HexColor("#AEBBC9"))
     canvas.drawString(18 * mm, 17 * mm, "THEHOBOKINGDOM")
     canvas.setFillColor(GOLD)
-    canvas.drawRightString(PAGE_W - 18 * mm, 17 * mm, "PROGRESS EDITION 28")
+    canvas.drawRightString(PAGE_W - 18 * mm, 17 * mm, "EDITION 31")
     canvas.restoreState()
 
 
@@ -406,7 +406,7 @@ def draw_body(canvas, doc):
     canvas.line(18 * mm, 13 * mm, PAGE_W - 18 * mm, 13 * mm)
     canvas.setFont("DejaVuSans", 7.1)
     canvas.setFillColor(MUTED)
-    canvas.drawString(18 * mm, 8.5 * mm, "TheHoboKingdom | 30 August 2026")
+    canvas.drawString(18 * mm, 8.5 * mm, "TheHoboKingdom | 26 September 2026")
     canvas.drawRightString(PAGE_W - 18 * mm, 8.5 * mm, f"Page {doc.page}")
     canvas.restoreState()
 
@@ -729,19 +729,18 @@ def build():
             "operations, interface, setup, orders, and hosting manual; plus the systematic "
             "unit-class, ability, experience, heroic-ability, and condition reference; plus the "
             "versioned base-game object reference for spells, items, summons, Pretenders, Thrones, "
-            "sites, mercenaries, independents, and special dominions; plus the complete official "
-            "6.01-6.36 version history and 1,090-record patch ledger; plus the searchable "
-            "command and terminology lexicon covering 1,609 official-manual tokens, 97 controlled "
-            "aliases, and all 226 command-like patch tokens",
+            "sites, mercenaries, independents, and special dominions; plus the complete "
+            "official patch history and its evidence ledger; plus the searchable "
+            "command and terminology lexicon. Book VII includes 35 Early Age and 37 Middle Age dossiers",
             STYLES["cover_subtitle"],
         ),
         Spacer(1, 7 * mm),
         HRFlowable(width=44 * mm, thickness=1.4, color=GOLD, hAlign="LEFT"),
         Spacer(1, 7 * mm),
         Paragraph(
-            "<b>Progress Edition 28</b><br/>30 August 2026<br/><br/>"
+            "<b>Edition 31</b><br/>26 September 2026<br/><br/>"
             "Linked reader's edition: beginner-readable, expert-useful, "
-            "source-verifiable, and prepared for website publication.",
+            "source-verifiable, and paired with the searchable website.",
             STYLES["cover_note"],
         ),
         NextPageTemplate("Body"),
@@ -750,14 +749,9 @@ def build():
         Paragraph(
             "This reader-facing edition begins with a concordance, linked learning "
             "paths, and a research-priority register. It then presents the complete "
-            "63-step hosting "
-            "model, a turn-and-economy quick reference, the economy-and-state "
-            "foundation with the Edition 23 rounding map, upkeep-display boundaries, "
-            "unrest candidates, fort-supply evidence gate, and starvation-state audit, the full "
-            "Pretender, dominion, scales, and blessings foundation with the source-traced "
-            "awakening-evidence boundary, reconciled Call God model, and same-turn Throne state matrix, and the "
-            "armies-and-battle, magic, and strategy foundations; the complete "
-            "Arcoscephale, Marignon, and Pyrène nation dossiers; and the modding-and-scenario foundation. "
+            "hosting model and turn-and-economy field reference, followed by foundations "
+            "for economy, Pretenders, battle, magic, and strategy. Book VII includes "
+            "complete source-backed dossiers for all 35 Early Age and 37 Middle Age nations. "
             "Book VIII covers source architecture, objects, events, diplomacy "
             "reactions, AI scaffolds, maps, compatibility, and release testing. "
             "Book IX inventories Dominions Enhanced 2.16 and Divinitus 1.15.3 DE "
@@ -765,7 +759,7 @@ def build():
             "official engine rules, combined-load-order deductions, and unresolved "
             "runtime questions. It includes the complete DE global and blessing "
             "layers, Divinitus event architecture, cross-mod identity analysis, "
-            "and a practical verification register. Edition 28 resolves the category-level perception "
+            "and a practical verification register. The inherited Edition 28 work resolves the category-level perception "
             "matrix, records the live Invisibility value against superseded manual wording, advances "
             "ability-stacking evidence, and publishes a controlled Hall-of-Fame observation protocol. "
             "It preserves the direct, practical house style across the complete reader corpus and the exact evidence, "
@@ -781,7 +775,7 @@ def build():
             "a 4,196-record website data layer covering spells, items, summon relations, Pretender "
             "forms, Thrones, sites, mercenary companies, independent-coverage status, realm-expanded spell access, and special "
             "dominion systems without duplicating the strategic teaching in Books II-VI. Book XIII adds the official "
-            "version spine: all 32 public update announcements and 1,090 change records from 6.01 through 6.36, "
+            "version spine: official update announcements and a versioned change ledger, "
             "with a release chronology, source hashes, editorial classifications, canonical maintenance links, "
             "a stale-guide repair method, and a command chronology. Book XIV supplies the retrieval and "
             "reconciliation layer for command terminology: 1,609 distinct tokens from the official modding, "

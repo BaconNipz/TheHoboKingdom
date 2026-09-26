@@ -26,6 +26,17 @@ nav_section: downloads
         </a>
       </div>
 
+      <h2 id="early-age-dossiers">Early Age nation dossiers</h2>
+      <p>Book VII now contains all 35 unmodded Early Age nations. Each Edition 31 field reader keeps the roster evidence, planning advice, and unresolved mechanics separate.</p>
+      <div class="link-list">
+        {% for dossier in site.data.dominions_library.early_age_dossiers %}
+        <a class="link-card" href="{{ '/downloads/dominions-6-ea-' | append: dossier.slug | append: '-nation-dossier-edition-31.pdf' | relative_url }}">
+          <span><strong>Early Age {{ dossier.name }} — Nation Dossier</strong><small>Edition 31 · unmodded Dominions 6.37 reference.</small></span>
+          <span aria-hidden="true">PDF</span>
+        </a>
+        {% endfor %}
+      </div>
+
       <h2 id="middle-age-dossiers">Middle Age nation dossiers</h2>
       <p>Book VII contains all 37 unmodded Middle Age nations. These compact Edition 30 PDFs cover the 36 standalone field readers; Arcoscephale remains part of the larger Book VII foundation chapter.</p>
       <div class="link-list">

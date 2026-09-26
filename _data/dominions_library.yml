@@ -1,19 +1,55 @@
-edition: "30"
-edition_label: "Edition 30 web release"
-pdf_edition: "28"
+edition: "31"
+edition_label: "Edition 31 web release"
+pdf_edition: "31"
 game_version: "6.37"
 de_version: "2.16"
 divinitus_version: "1.15.3 DE"
 book_count: "16"
-website_section_count: "3,646"
-word_count: "325,555"
-pdf_page_count: "811"
-pdf_size: "3.53 MB"
-published: "14 September 2026"
-download_url: "/downloads/dominions-6-knowledge-library-edition-28/"
+website_section_count: "4,591"
+word_count: "393,838"
+pdf_page_count: "1,338"
+pdf_size: "6.44 MB"
+published: "26 September 2026"
+download_url: "/downloads/dominions-6-knowledge-library-edition-31/"
 cover_image: "/assets/images/dominions-6-library-edition-28.png"
-sha256: "1772cfdeee023abe13931f431808f2c4a1f1f22fe6298457028667f3072ec777"
-website_note: "The searchable Edition 30 website contains 3,646 indexed sections and complete dossiers for all 37 unmodded Middle Age nations. Edition 28 remains the latest complete omnibus PDF while the next omnibus is assembled."
+sha256: "d22deafb30a35521b9be3859a90bc88d94e828154d1c1cceba70f4f85449daa9"
+website_note: "The searchable Edition 31 website contains 4,591 indexed sections and complete dossiers for all 35 Early Age and 37 Middle Age nations. The Edition 31 omnibus contains the full reader corpus."
+early_age_dossiers:
+  - { name: "Arcoscephale", slug: "arcoscephale" }
+  - { name: "Mekone", slug: "mekone" }
+  - { name: "Pangaea", slug: "pangaea" }
+  - { name: "Ermor", slug: "ermor" }
+  - { name: "Sauromatia", slug: "sauromatia" }
+  - { name: "Fomoria", slug: "fomoria" }
+  - { name: "Tir na n'Og", slug: "tir-na-nog" }
+  - { name: "Marverni", slug: "marverni" }
+  - { name: "Ulm", slug: "ulm" }
+  - { name: "Pyrène", slug: "pyrene" }
+  - { name: "Agartha", slug: "agartha" }
+  - { name: "Abysia", slug: "abysia" }
+  - { name: "Hinnom", slug: "hinnom" }
+  - { name: "Ubar", slug: "ubar" }
+  - { name: "Ur", slug: "ur" }
+  - { name: "Kailasa", slug: "kailasa" }
+  - { name: "Lanka", slug: "lanka" }
+  - { name: "T'ien Ch'i", slug: "tien-chi" }
+  - { name: "Yomi", slug: "yomi" }
+  - { name: "Caelum", slug: "caelum" }
+  - { name: "Mictlan", slug: "mictlan" }
+  - { name: "Xibalba", slug: "xibalba" }
+  - { name: "C'tis", slug: "ctis" }
+  - { name: "Machaka", slug: "machaka" }
+  - { name: "Berytos", slug: "berytos" }
+  - { name: "Vanheim", slug: "vanheim" }
+  - { name: "Helheim", slug: "helheim" }
+  - { name: "Rus", slug: "rus" }
+  - { name: "Niefelheim", slug: "niefelheim" }
+  - { name: "Muspelheim", slug: "muspelheim" }
+  - { name: "Pelagia", slug: "pelagia" }
+  - { name: "Oceania", slug: "oceania" }
+  - { name: "Therodos", slug: "therodos" }
+  - { name: "Atlantis", slug: "atlantis" }
+  - { name: "R'lyeh", slug: "rlyeh" }
 middle_age_dossiers:
   - { name: "Marignon", slug: "marignon" }
   - { name: "Pyrène", slug: "pyrene" }

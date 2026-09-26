@@ -1,3 +1,17 @@
+- date: 26 September 2026
+  title: Dominions 6 Knowledge Library — Edition 31 complete book
+  description: Published the 1,338-page omnibus alongside the 4,591-section searchable reader, covering all 35 Early Age and 37 Middle Age dossiers while keeping engine-dependent questions open.
+  url: /downloads/dominions-6-knowledge-library-edition-31/
+  type: Library
+  project: Dominions 6
+
+- date: 14 September 2026
+  title: Dominions 6 Knowledge Library — Edition 31 Early Age collection
+  description: Completed Book VII coverage for all 35 unmodded Early Age nations, bringing the library to 72 complete Early and Middle Age dossiers and 4,591 searchable sections. Every Early Age nation also has a compact standalone PDF.
+  url: /dominions/library/books/book-vii/
+  type: Library
+  project: Dominions 6
+
 - date: 14 September 2026
   title: Dominions 6 Knowledge Library — Edition 30 Middle Age collection
   description: Completed Book VII coverage for all 37 unmodded Middle Age nations, rebuilt the searchable library to 3,646 sections, and published 36 compact standalone dossier PDFs. Engine-dependent claims remain open rather than being filled with estimates.

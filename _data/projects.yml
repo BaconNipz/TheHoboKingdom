@@ -5,9 +5,9 @@
   status: active
   status_label: Active
   updated: 14 September 2026
-  description: My Edition 30 Knowledge Library, official-manual nation catalogue, game guides, modding notes, and diplomacy-overhaul research.
+  description: My Edition 31 Knowledge Library, official-manual nation catalogue, game guides, modding notes, and diplomacy-overhaul research.
   phase: Official nation dossier expansion
-  next: Build the Early Age nation dossier collection while hands-on runtime tests remain parked
+  next: Build the Late Age nation dossier collection while hands-on runtime tests remain parked
   tags:
     - Guides
     - Modding

@@ -486,8 +486,10 @@ def build_one(
     body: str,
     edition: int,
     published_label: str,
+    age_label: str = "Middle Age",
+    age_code: str = "ma",
 ) -> Path:
-    output = OUTPUT_DIR / f"dominions-6-ma-{slug}-nation-dossier-edition-{edition}.pdf"
+    output = OUTPUT_DIR / f"dominions-6-{age_code}-{slug}-nation-dossier-edition-{edition}.pdf"
     doc = DossierDocTemplate(str(output), title)
     cover_frame = Frame(18 * mm, 33 * mm, PAGE_W - 36 * mm, PAGE_H - 55 * mm, id="cover")
     body_frame = Frame(doc.leftMargin, doc.bottomMargin, doc.width, doc.height, id="body")
@@ -512,7 +514,7 @@ def build_one(
     story = [
         Spacer(1, 42 * mm),
         Paragraph("DOMINIONS 6 NATION DOSSIER", STYLES["cover_kicker"]),
-        Paragraph(f"Middle Age<br/>{title}", STYLES["cover_title"]),
+        Paragraph(f"{age_label}<br/>{title}", STYLES["cover_title"]),
         Paragraph(epithet, STYLES["cover_subtitle"]),
         Spacer(1, 8 * mm),
         HRFlowable(width=44 * mm, thickness=1.4, color=GOLD, hAlign="LEFT"),
@@ -708,6 +710,18 @@ def main() -> None:
             flags=re.M,
         )
         dossiers.append((slug, title, epithet, body, 30, "Published - 14 September 2026"))
+
+    early_pattern = re.compile(r"^# Part [^:]+: Early Age ([^,]+), (.+)$", re.M)
+    early_matches = list(early_pattern.finditer(text))
+    for index, match in enumerate(early_matches):
+        title, epithet = match.group(1), match.group(2)
+        end = early_matches[index + 1].start() if index + 1 < len(early_matches) else text.index("## Dossier source register", match.end())
+        body = text[match.start():end].strip()
+        body = early_pattern.sub(f"# Early Age {title}: {epithet}", body, count=1)
+        slug = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
+        slug = {"tir-na-n-og": "tir-na-nog", "pyr-ne": "pyrene", "r-lyeh": "rlyeh", "t-ien-ch-i": "tien-chi", "c-tis": "ctis"}.get(slug, slug)
+        dossiers.append((slug, title, epithet, body, 31, "Working release - 14 September 2026", "Early Age", "ea"))
+
     outputs = [
         build_one(
             slug,
@@ -716,8 +730,9 @@ def main() -> None:
             body + "\n" + standalone_source_register(source_register, slug),
             edition,
             published_label,
+            *(extra or ()),
         )
-        for slug, title, epithet, body, edition, published_label in dossiers
+        for slug, title, epithet, body, edition, published_label, *extra in dossiers
         if args.nation in {"all", slug}
     ]
     for output in outputs:

@@ -1,5 +1,5 @@
 {
-  "edition": "Edition 30 web release",
+  "edition": "Edition 31 web release",
   "documents": [
     {
       "id": "guide",
@@ -70,8 +70,8 @@
       "slug": "book-vii",
       "title": "Foundation Book VII: Nations",
       "shortTitle": "Foundation Book VII",
-      "sectionCount": 1494,
-      "wordCount": 122309
+      "sectionCount": 2439,
+      "wordCount": 190592
     },
     {
       "id": "b8",
