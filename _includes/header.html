@@ -21,7 +21,7 @@
       <a href="{{ '/about/' | relative_url }}"{% if page.nav_section == "about" %} aria-current="page"{% endif %}>About</a>
     </nav>
     <a class="nav-search" href="{{ '/search/' | relative_url }}"{% if page.nav_section == "search" %} aria-current="page"{% endif %}>
-      <span aria-hidden="true">⌕</span>
+      <svg class="nav-search-icon" aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>
       <span>Search</span>
     </a>
   </div>
