@@ -110,13 +110,14 @@
     - Future
 
 - id: armoury
-  title: Armoury & History
+  title: The Armoury
   url: /armoury/
-  mark: AH
+  mark: AR
+  logo: /assets/images/projects/armoury-logo.webp
   status: planned
   status_label: Planned
   updated: 27 August 2026
-  description: The articles, transcripts, sources, and research notes that will sit beside my historical arms and armour videos.
+  description: My history and arms channel. The research, sources, and transcripts behind each video will live here, starting with the Sten.
   phase: First article planned
   next: Sten video companion
   tags:

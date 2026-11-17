@@ -1,18 +1,22 @@
 ---
-title: Armoury & History
-description: My planned articles, transcripts, sources, specifications, and research notes for historical arms and armour videos.
+title: The Armoury
+description: My history and arms channel, with the research, sources, transcripts, and specifications behind each video.
 nav_section: projects
 project_id: armoury
+og_image: /assets/images/projects/armoury-social.jpg
 ---
 
 {% assign project_record = site.data.projects | where: 'id', page.project_id | first %}
 
-<section class="page-hero">
+<section class="page-hero page-hero--banner">
   <div class="shell">
-    <div class="breadcrumbs"><a href="{{ '/projects/' | relative_url }}">Projects</a><span aria-hidden="true">/</span><span>Armoury &amp; History</span></div>
-    <p class="eyebrow">Planned history collection</p>
-    <h1>Armoury &amp; History</h1>
-    <p class="lead">This will hold the research behind my historical arms and armour videos, beginning with the Sten.</p>
+    <div class="breadcrumbs"><a href="{{ '/projects/' | relative_url }}">Projects</a><span aria-hidden="true">/</span><span>The Armoury</span></div>
+    <h1 class="sr-only">The Armoury</h1>
+    <figure class="hero-banner">
+      <img src="{{ '/assets/images/projects/armoury-banner.webp' | relative_url }}" srcset="{{ '/assets/images/projects/armoury-banner-1000.webp' | relative_url }} 1000w, {{ '/assets/images/projects/armoury-banner.webp' | relative_url }} 2000w" sizes="(max-width: 1240px) 100vw, 1180px" alt="The Armoury: weapons, armour, and the history behind them. A Viking-style helmet, a breastplate, a sword, and a rifle in front of castle ruins and an old map." width="2000" height="1125" fetchpriority="high">
+    </figure>
+    <p class="eyebrow">History and arms channel</p>
+    <p class="lead">My history and arms channel. This page will hold the research behind each video, beginning with the Sten.</p>
     <div class="meta-row">{% include project-meta.html project=project_record %}<span class="meta-chip">Video companions</span><span class="meta-chip">Sources</span><span class="meta-chip">Transcripts</span></div>
   </div>
 </section>

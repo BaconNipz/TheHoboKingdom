@@ -20,9 +20,7 @@
   <link rel="alternate" type="application/atom+xml" title="TheHoboKingdom updates" href="{{ '/feed.xml' | absolute_url }}">
   <link rel="icon" href="{{ site.brand_image | relative_url }}" type="image/jpeg">
   <link rel="apple-touch-icon" href="{{ site.brand_image | relative_url }}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=swap">
+  <link rel="preload" href="{{ '/assets/fonts/inter-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
   {% if page.extra_css %}<link rel="stylesheet" href="{{ page.extra_css | relative_url }}">{% endif %}
   <script>document.documentElement.classList.add('js');</script>
