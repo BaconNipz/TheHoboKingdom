@@ -13,10 +13,11 @@
     <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
     <p>{{ project.description }}</p>
   </div>
-  {% if project.phase or project.next %}
+  {% if project.phase or project.next or project.note %}
   <dl class="project-card-state">
     {% if project.phase %}<div><dt>Current phase</dt><dd>{{ project.phase }}</dd></div>{% endif %}
     {% if project.next %}<div><dt>Next</dt><dd>{{ project.next }}</dd></div>{% endif %}
+    {% if project.note %}<div><dt>Note</dt><dd>{{ project.note }}</dd></div>{% endif %}
   </dl>
   {% endif %}
   <div class="tag-row" aria-label="{{ project.title }} categories">

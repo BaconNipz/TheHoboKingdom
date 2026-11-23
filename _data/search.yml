@@ -272,7 +272,7 @@
   keywords: inventory hotbar keybind crash dependency server fix
 
 - title: S.T.A.L.K.E.R.
-  description: My StalkerNet project, Zone references, mod notes, troubleshooting, and short fiction.
+  description: My Zone references, mod notes, troubleshooting, and short fiction. Paused; StalkerNet continues on its own page.
   url: /stalker/
   project: S.T.A.L.K.E.R.
   type: Project
@@ -281,14 +281,14 @@
 - title: StalkerNet
   description: The v4.3.6 working fallback, current features, recovery history, and next jobs for my PDA application.
   url: /stalker/stalkernet/
-  project: S.T.A.L.K.E.R.
+  project: StalkerNet
   type: Project
   keywords: app pda map comms archive jobs firebase
 
 - title: StalkerNet changelog
   description: The tested recovery chain from v4.3.0 to the current v4.3.6 fallback.
   url: /stalker/stalkernet/changelog/
-  project: S.T.A.L.K.E.R.
+  project: StalkerNet
   type: Changelog
   keywords: version release recovery stable fallback
 
@@ -403,6 +403,20 @@
   project: The Armoury
   type: Project
   keywords: weapon armour history sten video channel youtube documentary transcript sources
+
+- title: A Week at a Time
+  description: My writing project. Most of the draft is done, and I am in the final steps before a full edit.
+  url: /a-week-at-a-time/
+  project: A Week at a Time
+  type: Project
+  keywords: writing book draft edit story
+
+- title: The Hollow March
+  description: My browser RPG with exploration, dialogue, and tactical combat, at a very basic first draft.
+  url: /hollow-march/
+  project: The Hollow March
+  type: Project
+  keywords: game rpg browser tactical combat dialogue exploration draft
 
 - title: Baldur's Gate 3
   description: A space I have kept for future mod collections, party builds, and co-op notes.

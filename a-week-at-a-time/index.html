@@ -1,0 +1,37 @@
+---
+title: A Week at a Time
+description: My writing project A Week at a Time. Most of the draft is done, and I am in the final steps before a full edit.
+nav_section: projects
+project_id: a-week-at-a-time
+---
+
+{% assign project_record = site.data.projects | where: 'id', page.project_id | first %}
+
+<section class="page-hero">
+  <div class="shell">
+    <div class="breadcrumbs"><a href="{{ '/projects/' | relative_url }}">Projects</a><span aria-hidden="true">/</span><span>A Week at a Time</span></div>
+    <p class="eyebrow">Writing project</p>
+    <h1>A Week at a Time</h1>
+    <p class="lead">Most of the draft is written. I am working through the final steps before I start a full edit.</p>
+    <div class="meta-row">{% include project-meta.html project=project_record %}<span class="meta-chip">Writing</span></div>
+  </div>
+</section>
+{% include project-status.html project=project_record %}
+
+<section class="section shell">
+  <div class="content-grid">
+    <article class="content">
+      <h2 id="status">Where it stands</h2>
+      <ul>
+        <li><strong>Draft:</strong> most of it is done.</li>
+        <li><strong>Now:</strong> the final steps before the edit.</li>
+        <li><strong>Next:</strong> a full edit of the finished draft.</li>
+      </ul>
+
+      <h2 id="next">What this page will hold</h2>
+      <p>I will add a summary and progress notes here as the edit moves along.</p>
+    </article>
+
+    <aside class="sidebar"><h2>A Week at a Time</h2><nav><a href="#status">Where it stands</a><a href="#next">What this page will hold</a><a href="{{ '/projects/' | relative_url }}">All projects</a></nav></aside>
+  </div>
+</section>

@@ -12,75 +12,47 @@
     - Guides
     - Modding
 
-- id: aura
-  title: AURA
-  url: /aura/
-  mark: AU
+- id: stalkernet
+  title: StalkerNet
+  url: /stalker/stalkernet/
+  mark: SN
   status: active
   status_label: Active
-  updated: 27 August 2026
-  description: My working self-development RPG, where real goals become skills, quests, classes, rewards, and long-term mastery.
-  phase: Working prototype
-  next: Substantial v3 development pass
+  updated: 23 November 2026
+  description: My S.T.A.L.K.E.R. PDA app for in-character chat, jobs, maps, and a shared Zone archive.
+  phase: Stable baseline v4.3.6
+  next: Fill the changelog gaps and write the install steps
   tags:
     - Application
-    - Progression
+    - Mobile
 
-- id: vintage-story
-  title: Vintage Story
-  url: /vintage-story/
-  mark: VS
+- id: a-week-at-a-time
+  title: A Week at a Time
+  url: /a-week-at-a-time/
+  mark: AW
   status: active
   status_label: Active
-  updated: 27 August 2026
-  description: "The record of our three-player world: roles, mods, early progress, server setup, and the fixes we still need."
-  phase: Multiplayer trial
-  next: Stable mod manifest and joining guide
+  updated: 23 November 2026
+  description: My writing project. Most of the draft is done, and I am in the final steps before a full edit.
+  phase: Finishing the draft
+  next: Full edit
   tags:
-    - Modpacks
-    - Survival
+    - Writing
 
-- id: stalker
-  title: S.T.A.L.K.E.R.
-  url: /stalker/
-  mark: SZ
+- id: armoury
+  title: The Armoury
+  url: /armoury/
+  mark: AR
+  logo: /assets/images/projects/armoury-logo.webp
   status: active
   status_label: Active
-  updated: 27 August 2026
-  description: My StalkerNet application, its working recovery builds, Zone references, modding notes, and short fiction.
-  phase: Archive expansion
-  next: Fill the remaining changelog gaps
+  updated: 23 November 2026
+  description: My YouTube history and arms channel. The Sten documentary is live, and its written companion with sources and the transcript comes next.
+  phase: Channel live
+  next: Sten companion article with sources and transcript
   tags:
-    - StalkerNet
-    - Tools
-
-- id: minecraft
-  title: Minecraft
-  url: /minecraft/
-  mark: MC
-  status: active
-  status_label: Active
-  updated: 27 August 2026
-  description: The modpacks I build for our group, with installation notes, progression changes, and exact version records.
-  phase: Building and testing
-  next: Confirmed version and mod manifest
-  tags:
-    - Modpacks
-    - Forge
-
-- id: dnd
-  title: Dungeons & Dragons
-  url: /dnd/
-  mark: D20
-  status: active
-  status_label: Active
-  updated: 13 September 2026
-  description: Our campaign records, characters, handouts, homebrew, and the references we use at the table.
-  phase: Campaign archive and table tools
-  next: Character-specific references and further player-safe chronicles
-  tags:
-    - Campaigns
-    - Homebrew
+    - History
+    - Video
 
 - id: tabletop
   title: Tabletop Projects
@@ -89,37 +61,106 @@
   status: active
   status_label: Active
   updated: 13 September 2026
-  description: "My Z-Land material and The Last of Us: Escape the Dark fan expansion."
+  description: "My fan expansion for The Last of Us: Escape the Dark and the start of my Z-Land campaign."
   phase: Playtest material and table tools
   next: Versioned Z-Land and Last of Us printable releases
   tags:
     - Printables
     - Design
 
+- id: hollow-march
+  title: The Hollow March
+  url: /hollow-march/
+  mark: HM
+  status: draft
+  status_label: Early draft
+  updated: 23 November 2026
+  description: My browser RPG with exploration, dialogue, and tactical combat. It is a very basic first draft.
+  phase: First rough draft
+  next: Reliable combat input on phone and desktop
+  tags:
+    - Game
+    - Browser
+
+- id: aura
+  title: AURA
+  url: /aura/
+  mark: AU
+  status: paused
+  status_label: Paused
+  updated: 27 August 2026
+  description: My self-development RPG, where real goals become skills, quests, classes, rewards, and long-term mastery. Development is paused.
+  phase: Paused after version 2 testing
+  next: Version 3 when I return to it
+  tags:
+    - Application
+    - Progression
+
+- id: stalker
+  title: S.T.A.L.K.E.R.
+  url: /stalker/
+  mark: SZ
+  status: paused
+  status_label: Paused
+  updated: 27 August 2026
+  description: My Zone references, modding notes, and short fiction. StalkerNet continues as its own project.
+  phase: Paused
+  next: StalkerNet work continues on its own page
+  tags:
+    - Reference
+    - Fiction
+
+- id: vintage-story
+  title: Vintage Story
+  url: /vintage-story/
+  mark: VS
+  status: set-aside
+  status_label: Set aside
+  updated: 27 August 2026
+  description: "The record of our three-player world: roles, mods, early progress, server setup, and the fixes we still need."
+  phase: Set aside
+  note: We still play this. I'm not expanding the page right now.
+  tags:
+    - Modpacks
+    - Survival
+
+- id: minecraft
+  title: Minecraft
+  url: /minecraft/
+  mark: MC
+  status: set-aside
+  status_label: Set aside
+  updated: 27 August 2026
+  description: The modpacks I build for our group, with installation notes, progression changes, and exact version records.
+  phase: Set aside
+  note: We still play this. I'm not expanding the page right now.
+  tags:
+    - Modpacks
+    - Forge
+
+- id: dnd
+  title: Dungeons & Dragons
+  url: /dnd/
+  mark: D20
+  status: set-aside
+  status_label: Set aside
+  updated: 13 September 2026
+  description: Our campaign records, characters, handouts, homebrew, and the references we use at the table.
+  phase: Set aside
+  note: We still play this. I'm not expanding the page right now.
+  tags:
+    - Campaigns
+    - Homebrew
+
 - id: bg3
   title: Baldur's Gate 3
   url: /bg3/
   mark: BG3
-  status: planned
-  status_label: Planned
+  status: set-aside
+  status_label: Set aside
   updated: 23 July 2026
   description: A space I have kept for future mod collections, party builds, and co-op notes.
-  phase: Held for later
-  next: First confirmed collection
+  phase: Set aside
+  note: We still play this. I'm not expanding the page right now.
   tags:
     - Future
-
-- id: armoury
-  title: The Armoury
-  url: /armoury/
-  mark: AR
-  logo: /assets/images/projects/armoury-logo.webp
-  status: planned
-  status_label: Planned
-  updated: 27 August 2026
-  description: My history and arms channel. The research, sources, and transcripts behind each video will live here, starting with the Sten.
-  phase: First article planned
-  next: Sten video companion
-  tags:
-    - History
-    - Video

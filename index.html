@@ -20,8 +20,8 @@ og_image: /assets/images/dominions-6-library-edition-28.png
       <p class="panel-label">Current focus</p>
       <ol class="focus-list">
         <li><span>01</span><strong>Dominions 6</strong><small>Edition {{ site.data.dominions_library.edition }} library, guides, references, and tools</small></li>
-        <li><span>02</span><strong>AURA</strong><small>My working self-development RPG prototype</small></li>
-        <li><span>03</span><strong>Vintage Story</strong><small>Notes from our multiplayer world and mod setup</small></li>
+        <li><span>02</span><strong>StalkerNet</strong><small>My S.T.A.L.K.E.R. PDA app, stable at v4.3.6</small></li>
+        <li><span>03</span><strong>A Week at a Time</strong><small>Finishing the draft before a full edit</small></li>
       </ol>
     </aside>
   </div>
@@ -36,8 +36,12 @@ og_image: /assets/images/dominions-6-library-edition-28.png
   </div>
 
   <div class="project-grid">
-    {% for project in site.data.projects limit: 6 %}
-      {% include project-card.html project=project %}
+    {% assign shown = 0 %}
+    {% for project in site.data.projects %}
+      {% if shown < 6 %}{% if project.status == "active" or project.status == "draft" %}
+        {% include project-card.html project=project %}
+        {% assign shown = shown | plus: 1 %}
+      {% endif %}{% endif %}
     {% endfor %}
   </div>
 </section>

@@ -23,9 +23,9 @@ nav_section: projects
 
   <div class="project-grid">
     {% for project in site.data.projects %}
-      {% unless project.status == "planned" %}
+      {% if project.status == "active" or project.status == "draft" %}
         {% include project-card.html project=project %}
-      {% endunless %}
+      {% endif %}
     {% endfor %}
   </div>
 </section>
@@ -34,14 +34,15 @@ nav_section: projects
   <div class="shell">
     <div class="section-heading">
       <div>
-        <p class="eyebrow">Set aside for later</p>
-        <h2>Planned projects</h2>
+        <p class="eyebrow">Not in active development</p>
+        <h2>Paused and set aside</h2>
       </div>
     </div>
+    <p class="section-intro">These pages stay online, with their guides and tools. Paused projects will continue later. We still play the set-aside games; I'm just not expanding their pages right now.</p>
 
     <div class="project-grid">
       {% for project in site.data.projects %}
-        {% if project.status == "planned" %}
+        {% if project.status == "paused" or project.status == "set-aside" or project.status == "planned" %}
           {% include project-card.html project=project %}
         {% endif %}
       {% endfor %}

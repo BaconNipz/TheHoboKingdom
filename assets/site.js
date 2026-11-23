@@ -105,3 +105,27 @@ if (reportLink) {
     reportLink.href = reportUrl.toString();
   });
 }
+
+// Looping demo clips: respect the reduced-motion setting by pausing them and offering controls.
+const motionVideos = document.querySelectorAll("video[data-motion-video]");
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+const applyMotionPreference = () => {
+  motionVideos.forEach((video) => {
+    if (reduceMotion.matches) {
+      video.removeAttribute("autoplay");
+      video.pause();
+      video.controls = true;
+    } else {
+      video.controls = false;
+      video.play().catch(() => {
+        video.controls = true;
+      });
+    }
+  });
+};
+
+if (motionVideos.length) {
+  applyMotionPreference();
+  reduceMotion.addEventListener("change", applyMotionPreference);
+}
