@@ -1,0 +1,32 @@
+---
+title: The Hollow March
+description: My browser RPG with exploration, dialogue, and tactical combat. It is a very basic first draft.
+nav_section: projects
+project_id: hollow-march
+---
+
+{% assign project_record = site.data.projects | where: 'id', page.project_id | first %}
+
+<section class="page-hero">
+  <div class="shell">
+    <div class="breadcrumbs"><a href="{{ '/projects/' | relative_url }}">Projects</a><span aria-hidden="true">/</span><span>The Hollow March</span></div>
+    <p class="eyebrow">Browser RPG</p>
+    <h1>The Hollow March</h1>
+    <p class="lead">A browser RPG with exploration, dialogue, and tactical combat. It is a very basic first draft, so expect most of it to change.</p>
+    <div class="meta-row">{% include project-meta.html project=project_record %}<span class="meta-chip">Browser game</span></div>
+  </div>
+</section>
+{% include project-status.html project=project_record %}
+
+<section class="section shell">
+  <div class="content-grid">
+    <article class="content">
+      <h2 id="status">Where it stands</h2>
+      <p>The first rough draft has exploration, dialogue, and tactical combat in place. Combat input still needs reliable testing on both phone and desktop.</p>
+
+      <div class="notice"><p><strong>Early draft:</strong> there is no public build yet. I will add screenshots here once the combat input works reliably.</p></div>
+    </article>
+
+    <aside class="sidebar"><h2>The Hollow March</h2><nav><a href="#status">Where it stands</a><a href="{{ '/projects/' | relative_url }}">All projects</a></nav></aside>
+  </div>
+</section>

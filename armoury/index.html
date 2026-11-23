@@ -1,19 +1,27 @@
 ---
-title: Armoury & History
-description: My planned articles, transcripts, sources, specifications, and research notes for historical arms and armour videos.
+title: The Armoury
+description: My history and arms channel, with the research, sources, transcripts, and specifications behind each video.
 nav_section: projects
 project_id: armoury
+og_image: /assets/images/projects/armoury-social.jpg
 ---
 
 {% assign project_record = site.data.projects | where: 'id', page.project_id | first %}
 
-<section class="page-hero">
+<section class="page-hero page-hero--banner">
   <div class="shell">
-    <div class="breadcrumbs"><a href="{{ '/projects/' | relative_url }}">Projects</a><span aria-hidden="true">/</span><span>Armoury &amp; History</span></div>
-    <p class="eyebrow">Planned history collection</p>
-    <h1>Armoury &amp; History</h1>
-    <p class="lead">This will hold the research behind my historical arms and armour videos, beginning with the Sten.</p>
-    <div class="meta-row">{% include project-meta.html project=project_record %}<span class="meta-chip">Video companions</span><span class="meta-chip">Sources</span><span class="meta-chip">Transcripts</span></div>
+    <div class="breadcrumbs"><a href="{{ '/projects/' | relative_url }}">Projects</a><span aria-hidden="true">/</span><span>The Armoury</span></div>
+    <h1 class="sr-only">The Armoury</h1>
+    <figure class="hero-banner">
+      <img src="{{ '/assets/images/projects/armoury-banner.webp' | relative_url }}" srcset="{{ '/assets/images/projects/armoury-banner-1000.webp' | relative_url }} 1000w, {{ '/assets/images/projects/armoury-banner.webp' | relative_url }} 2000w" sizes="(max-width: 1240px) 100vw, 1180px" alt="The Armoury: weapons, armour, and the history behind them. A Viking-style helmet, a breastplate, a sword, and a rifle in front of castle ruins and an old map." width="2000" height="1125" fetchpriority="high">
+    </figure>
+    <p class="eyebrow">History and arms channel</p>
+    <p class="lead">My YouTube channel on weapons, armour, and the history behind them. The first documentary, on the Sten, is live.</p>
+    <div class="button-row">
+      <a class="button button--primary" href="https://youtu.be/ZOGtpEtZl9o">Watch the Sten documentary</a>
+      <a class="button button--quiet" href="https://www.youtube.com/@thearmouryhistory">Visit the channel</a>
+    </div>
+    <div class="meta-row">{% include project-meta.html project=project_record %}<span class="meta-chip">YouTube</span><span class="meta-chip">Video companions</span><span class="meta-chip">Sources</span><span class="meta-chip">Transcripts</span></div>
   </div>
 </section>
 {% include project-status.html project=project_record %}
@@ -21,7 +29,10 @@ project_id: armoury
 <section class="section shell">
   <div class="content-grid">
     <article class="content">
-      <h2>What each article should contain</h2>
+      <h2 id="sten">First video: the Sten</h2>
+      <p>The Sten documentary is out on <a href="https://youtu.be/ZOGtpEtZl9o">YouTube</a>. Its written companion is the next addition to this page.</p>
+
+      <h2 id="companions">What each companion article will contain</h2>
       <ul>
         <li>The finished narration or transcript in readable form.</li>
         <li>A short specification table and development timeline.</li>
@@ -31,10 +42,9 @@ project_id: armoury
         <li>A corrections section so later discoveries do not require quietly rewriting history.</li>
       </ul>
 
-      <h2>First planned piece</h2>
-      <div class="notice"><p><strong>The Sten:</strong> I will publish the first article when the narration, footage list, source check, and video are finished. Until then, this page only records the plan.</p></div>
+      <div class="notice"><p><strong>The Sten companion:</strong> the video is finished. I will publish the written version once the transcript, source check, and specification table are ready.</p></div>
     </article>
 
-    <aside class="sidebar"><h2>Armoury sections</h2><nav><a href="{{ '/projects/' | relative_url }}">All projects</a><a href="{{ '/guides/' | relative_url }}">All guides</a></nav></aside>
+    <aside class="sidebar"><h2>The Armoury</h2><nav><a href="https://youtu.be/ZOGtpEtZl9o">Watch the Sten documentary</a><a href="https://www.youtube.com/@thearmouryhistory">YouTube channel</a><a href="#companions">Companion articles</a><a href="{{ '/projects/' | relative_url }}">All projects</a><a href="{{ '/guides/' | relative_url }}">All guides</a></nav></aside>
   </div>
 </section>
