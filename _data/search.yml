@@ -237,11 +237,11 @@
   keywords: multiplayer coop session players roles server connection progress backup handover
 
 - title: AURA
-  description: My working Adaptive Utility for Real-world Advancement prototype and its progression systems.
+  description: My Adaptive Utility for Real-world Advancement self-development RPG, its progression systems, and mockups of the planned screens. Paused.
   url: /aura/
   project: AURA
   type: Project
-  keywords: app quests skills attributes classes gold titles mastery level 100
+  keywords: app quests skills attributes classes gold titles mastery level 100 mockup design
 
 - title: Vintage Story
   description: "Notes from our multiplayer world: roles, early progress, mod stack, server setup, and fixes."
@@ -405,11 +405,11 @@
   keywords: weapon armour history sten video channel youtube documentary transcript sources
 
 - title: A Week at a Time
-  description: My writing project. Most of the draft is done, and I am in the final steps before a full edit.
+  description: My psychological horror short novel about Eli and his sister Mara after a rabies-like outbreak. The first draft is complete and in revision.
   url: /a-week-at-a-time/
   project: A Week at a Time
   type: Project
-  keywords: writing book draft edit story
+  keywords: writing book novel horror post-apocalyptic survival drama eli mara infected outbreak revision
 
 - title: The Hollow March
   description: My browser RPG with exploration, dialogue, and tactical combat, at a very basic first draft.

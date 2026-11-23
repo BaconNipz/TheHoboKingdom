@@ -33,11 +33,12 @@
   status: active
   status_label: Active
   updated: 23 November 2026
-  description: My writing project. Most of the draft is done, and I am in the final steps before a full edit.
-  phase: Finishing the draft
-  next: Full edit
+  description: My psychological horror short novel about a nineteen-year-old protecting his little sister after an outbreak. The first draft is complete.
+  phase: Revising the first draft
+  next: Finish the revisions
   tags:
-    - Writing
+    - Short novel
+    - Horror
 
 - id: armoury
   title: The Armoury
@@ -88,7 +89,7 @@
   mark: AU
   status: paused
   status_label: Paused
-  updated: 27 August 2026
+  updated: 23 November 2026
   description: My self-development RPG, where real goals become skills, quests, classes, rewards, and long-term mastery. Development is paused.
   phase: Paused after version 2 testing
   next: Version 3 when I return to it
